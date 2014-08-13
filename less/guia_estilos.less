@@ -1,0 +1,71 @@
+
+section.guia_estilos {
+	.row {
+		&.color {
+			&.azul {
+				.column {
+					&:nth-child(1) {
+						background: @azul_claro;
+					}
+
+					&:nth-child(2) {
+						background: @azul;
+					}
+
+					&:nth-child(3) {
+						background: @azul_oscuro;
+					}
+				}
+			}
+
+			&.naranja {
+				.column {
+					&:nth-child(1) {
+						background: @naranja_claro;
+					}
+
+					&:nth-child(2) {
+						background: @naranja;
+					}
+
+					&:nth-child(3) {
+						background: @naranja_oscuro;
+					}
+				}
+			}
+
+			&.gris {
+				.column {
+					&:nth-child(1) {
+						background: @gris_claro;
+					}
+
+					&:nth-child(2) {
+						background: @gris;
+					}
+
+					&:nth-child(3) {
+						background: @gris_oscuro;
+					}
+				}
+			}
+
+			.column {
+				height: 10rem;
+				color: @blanco;
+			}
+		}
+
+		&.header {
+			background: @header_azul;
+			color: @header_azul_claro;
+			padding: 1rem inherit;
+		}
+
+		&.footer {
+			background: @footer_gris;
+			color: @blanco;
+			padding: 1rem inherit;
+		}
+	}
+}
