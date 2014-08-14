@@ -1,3 +1,10 @@
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 body {
 	font-family: "Open Sans", sans-serif;
 }
@@ -12,19 +19,107 @@ header {
 	padding: 1.5625rem 0;
 
 	nav {
-		ul {
+		// letter-spacing: 1px;
+		& > ul {
 			list-style: none;
 			margin: 0;
 			padding: 0;
 
-			li {
+			&:before {
+				content: "";
 				display: inline-block;
+				height: 100%;
+				vertical-align: middle;
+			}
+
+			& > li {
+				display: inline-block;
+				font-family: "Oswald", sans-serif;
+				font-size: 12px;
+				line-height: 15px;
+				margin: 0 1rem;
+				text-align: left;
+				vertical-align: middle;
+				position: relative;
+				
 
 				a {
 					display: block;
 					color: @blanco;
+					text-decoration: none;
+					background: transparent;
+					border-radius: 4px;
+					padding: 10px;
+					min-height: 30;
+				}
+				/* sub */
+				& > ul {
+					margin: 0;
+					padding: .8rem .5rem .5rem;
+					list-style: none;
+					background-color: @blanco;
+					position: absolute;
+					left: 0;
+					border-radius: 4px;
+					top: 90%;
+					display: none;
+					box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.5);
+
+					li {
+						display: block;
+						border-bottom: 1px dashed fadeout(@gris_claro, 50%);
+						
+						a {
+							color: @negro;
+							display: block;
+							text-decoration: none;
+							min-width: 200px;
+							max-width: 200px;
+
+							&:hover {
+								color: @blanco;
+								background-color: @negro;
+							}
+						}
+
+						&:last-child {
+							border-bottom: none;
+						}
+					}
+
+				}
+
+				&:first-child {
+					margin-left: 0;
+				}
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				&:hover {
+					a {
+						background-color: @blanco;
+						color: @negro;
+					}
+
+					ul {
+						display: block;
+					}
 				}
 			}
 		}
+	}
+}
+
+footer {
+	background-color: @gris;
+	padding: 1rem inherit;
+	
+	p {
+		color: @blanco;
+		font-size: .7rem;
+		line-height: .9rem;
+		text-transform: uppercase;
 	}
 }
