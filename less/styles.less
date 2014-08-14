@@ -6,12 +6,13 @@
 }
 
 body {
-	font-family: "Open Sans", sans-serif;
+	font-family: @font-open;
 }
 
 h1,h2,h3,h4,h5 {
-	font-family: "Oswald", sans-serif;
+	font-family: @font-oswald;
 	font-weight: normal;
+	margin-top: 0;
 }
 
 header {
@@ -19,29 +20,21 @@ header {
 	padding: 1.5625rem 0;
 
 	nav {
-		// letter-spacing: 1px;
+		text-align: right;
 		& > ul {
 			list-style: none;
 			margin: 0;
 			padding: 0;
-
-			&:before {
-				content: "";
-				display: inline-block;
-				height: 100%;
-				vertical-align: middle;
-			}
+			.vc-container();
 
 			& > li {
-				display: inline-block;
-				font-family: "Oswald", sans-serif;
+				font-family: @font-oswald;
 				font-size: 12px;
 				line-height: 15px;
 				margin: 0 1rem;
 				text-align: left;
-				vertical-align: middle;
 				position: relative;
-				
+				.vc-element();
 
 				a {
 					display: block;
@@ -52,6 +45,7 @@ header {
 					padding: 10px;
 					min-height: 30;
 				}
+
 				/* sub */
 				& > ul {
 					margin: 0;
@@ -64,6 +58,7 @@ header {
 					top: 90%;
 					display: none;
 					box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.5);
+					z-index: @nav-sub-menu-z-index;
 
 					li {
 						display: block;
@@ -115,7 +110,7 @@ header {
 footer {
 	background-color: @gris;
 	padding: 1rem inherit;
-	
+
 	p {
 		color: @blanco;
 		font-size: .7rem;
