@@ -10,21 +10,18 @@
                     <li>
                         <a href="#">Programas para<br/>Escuelas</a>
                         <ul>
-                            <li><a href="digital-junior.php">Digital Junior</a></li>
-                            <li><a href="#">Item 2</a></li>
-                            <li><a href="#">Item 3</a></li>
-                            <li><a href="#">Item 4</a></li>
-                            <li><a href="#">Item 5</a></li>
+                            <li><a href="digital-junior-informacion.php">Digital Junior</a></li>
+                            <li><a href="#">Ciudadanía Digital</a></li>
+                            <li><a href="#">KimTech</a></li>
+                            <li><a href="#">Escuela 2.0</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#">Programa de Entes de<br/>Gobierno y R.S.E.</a>
                         <ul>
-                            <li><a href="#">Item 1</a></li>
-                            <li><a href="#">Item 2</a></li>
-                            <li><a href="#">Item 3</a></li>
-                            <li><a href="#">Item 4</a></li>
-                            <li><a href="#">Item 5</a></li>
+                            <li><a href="#">Modelo 1 a 1</a></li>
+                            <li><a href="#">Nativos Digitales</a></li>
+                            <li><a href="#">Entropía</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Prensa</a></li>
