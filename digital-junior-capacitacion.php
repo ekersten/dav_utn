@@ -20,20 +20,17 @@
             <div class="header-image"></div>
             <div class="row contenedor">
                 <div class="column medium-9 pricipal">
-                    <h1>Contenidos de certificación</h1>
+                    <h1>Capacitación Virtual</h1>
                     <ul class="breadcrumbs">
                         <li><a href="#">Programa para escuelas</a></li>
                         <li><a href="#">Digital Junior</a></li>
-                        <li>Contenidos de certificación</li>
+                        <li>Capacitación Virtual</li>
                     </ul>
-                    <blockquote>Proyecto de Certificación de Conocimientos Informáticos<br/>&ldquo;Mucho más que rendir un examen&rdquo;</blockquote>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                    <h2>¿Qué implica para el alumno contar con un certificado de infrmática de la UTN.BA?</h2>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    <p>Las actividades desarrolladas por el Departamento de Aprendizaje Visual, en el marco del Programa Digital Junior, se inspiran en nuestro convencimiento de que implementar tecnología en la escuela va más allá de que los alumnos cursen la asignatura Computación. Implica comprender los nuevos códigos digitales que manejan los alumnos y hacer un aprovechamiento positivo de los mismos, incorporando hábitos digitales en el proceso de enseñanza y aprendizaje.</p>
+                    <p>A través de nuestros talleres de capacitación docente nos proponemos acercarles nuevas tecnologías para el trabajo en el aula, ideas de aplicación y asesoramiento para su implementación. Permitiendo de este modo a los colegios diseñar un plan tecnológico, acorde a las necesidades actuales.</p>
+                    <p>Los colegios que forman parte de nuestra comunidad a través del Programa Digital Junior, pueden participar de todos los eventos y capacitaciones virtuales propuestos a continuación en forma totalmente gratuita.</p>
+                    <p><a href="">Ver detalles de la Capacitación</a></p>
+                    <p><a href="">Acceder a los talleres</a></p>
                 </div>
                 <div class="column medium-3 secundario">
                     <div class="video">
