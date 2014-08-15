@@ -16,7 +16,7 @@
     </head>
     <body>
         <?php include("includes/header.php"); ?>
-        <section class="home">
+        <section class="tipo-template nombre-seccion">
 
         </section>
         <?php include("includes/footer.php"); ?>
