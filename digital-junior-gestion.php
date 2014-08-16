@@ -33,7 +33,7 @@
                 </div>
                 <div class="column medium-3 secundario">
                     <div class="video">
-                        <img src="img/video.jpg" alt=""> <!-- reemplazar por video real -->
+                        <img src="img/video_dj.jpg" alt=""> <!-- reemplazar por video real -->
                     </div>
                     <p>El Programa <em>Digital Junior</em> le brinda los siguientes <strong>BENEFICIOS</strong></p>
                     <ul>
