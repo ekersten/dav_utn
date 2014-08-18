@@ -6,8 +6,10 @@
 			<table>
 				<tr>
 					<td>
-						<span class="icon icon-docs"></span>
-						<span class="text">Informacion General</span>
+						<a href="#">
+							<span class="icon icon-docs"></span>
+							<span class="text">Informacion General</span>
+						</a>
 					</td>
 				</tr>
 			</table>
@@ -20,8 +22,10 @@
 			<table>
 				<tr>
 					<td>
-						<span class="icon">C</span>
-						<span class="text">Contacto</span>
+						<a href="#">
+							<span class="icon">C</span>
+							<span class="text">Contacto</span>
+						</a>
 					</td>
 				</tr>
 			</table>
@@ -34,8 +38,10 @@
 			<table>
 				<tr>
 					<td>
-						<span class="icon">E</span>
-						<span class="text">Empresa</span>
+						<a href="#">
+							<span class="icon">E</span>
+							<span class="text">Empresa</span>
+						</a>
 					</td>
 				</tr>
 			</table>
@@ -48,8 +54,10 @@
 			<table>
 				<tr>
 					<td>
-						<span class="icon">N</span>
-						<span class="text">Nosotros</span>
+						<a href="#">
+							<span class="icon">N</span>
+							<span class="text">Nosotros</span>
+						</a>
 					</td>
 				</tr>
 			</table>
