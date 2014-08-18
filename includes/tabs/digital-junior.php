@@ -6,7 +6,7 @@
 			<table>
 				<tr>
 					<td>
-						<a href="#">
+						<a href="digital-junior-informacion.php">
 							<span class="icon icon-docs"></span>
 							<span class="text">Informacion General</span>
 						</a>
@@ -22,7 +22,7 @@
 			<table>
 				<tr>
 					<td>
-						<a href="#">
+						<a href="digital-junior-contenidos.php">
 							<span class="icon icon-notebook"></span>
 							<span class="text">Contenidos de certificación</span>
 						</a>
@@ -38,7 +38,7 @@
 			<table>
 				<tr>
 					<td>
-						<a href="#">
+						<a href="digital-junior-distancia.php">
 							<span class="icon icon-globe"></span>
 							<span class="text">Sistema a distancia</span>
 						</a>
@@ -54,7 +54,7 @@
 			<table>
 				<tr>
 					<td>
-						<a href="#">
+						<a href="digital-junior-materiales.php">
 							<span class="icon icon-folder"></span>
 							<span class="text">Materiales de estudio</span>
 						</a>
@@ -70,7 +70,7 @@
 			<table>
 				<tr>
 					<td>
-						<a href="#">
+						<a href="digital-junior-capacitacion.php">
 							<span class="icon icon-users"></span>
 							<span class="text">Capacitacion docente</span>
 						</a>
@@ -86,7 +86,7 @@
 			<table>
 				<tr>
 					<td>
-						<a href="#">
+						<a href="digital-junior-gestion.php">
 							<span class="icon icon-calendar"></span>
 							<span class="text">Gestión de fechas</span>
 						</a>
@@ -102,7 +102,7 @@
 			<table>
 				<tr>
 					<td>
-						<a href="#">
+						<a href="digital-junior-menciones.php">
 							<span class="icon icon-graduation"></span>
 							<span class="text">Menciones de Honor</span>
 						</a>

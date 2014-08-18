@@ -135,9 +135,105 @@
                             <td>X</td>
                             <td>X</td>
                             <td>2 meses</td>
-                            <td>Presencial</td>
+                            <td>Virtual</td>
+                            <td>Autoformacón</td>
+                            <td>General</td>
+                        </tr>
+                        <tr>
+                            <td>Creación de Videotutoriales</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>1 mes</td>
+                            <td>Virtual</td>
                             <td>Tutor</td>
-                            <td>Informática</td>
+                            <td>General</td>
+                        </tr>
+                        <tr>
+                            <td>Blog en el aula</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>1 mes</td>
+                            <td>Virtual</td>
+                            <td>Tutor</td>
+                            <td>General</td>
+                        </tr>
+                        <tr>
+                            <td>Creación de Wikis</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>1 mes</td>
+                            <td>Virtual</td>
+                            <td>Tutor</td>
+                            <td>General</td>
+                        </tr>
+                        <tr>
+                            <td>Desarrollo de Evaluaciones Interactivas</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>1 mes</td>
+                            <td>Virtual</td>
+                            <td>Tutor</td>
+                            <td>General</td>
+                        </tr>
+                        <tr>
+                            <td>Aplicaciones del Google Earth</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>1 mes</td>
+                            <td>Virtual</td>
+                            <td>Tutor</td>
+                            <td>General</td>
+                        </tr>
+                        <tr>
+                            <td>Diseño de aplicaciones en JClic</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>1 mes</td>
+                            <td>Virtual</td>
+                            <td>Tutor</td>
+                            <td>General</td>
                         </tr>
                     </table>
                 </div>

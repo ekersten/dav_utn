@@ -52,5 +52,6 @@
         </section>
         <?php include("includes/footer.php"); ?>
         <!-- local scripts -->
+        <script src="js/tabs.js"></script>
     </body>
 </html>

@@ -18,22 +18,18 @@
         <?php include("includes/header.php"); ?>
         <section class="tpl-2-col digital-junior">
             <div class="header-image"></div>
-            <div class="subnav" data-activa="2">
+            <div class="subnav" data-activa="7">
                 <?php include("includes/tabs/digital-junior.php"); ?>
             </div>
             <div class="row contenedor">
                 <div class="column medium-9 pricipal">
-                    <h1>Contenidos de certificación</h1>
+                    <h1>Menciones de honor</h1>
                     <ul class="breadcrumbs">
                         <li><a href="#">Programa para escuelas</a></li>
                         <li><a href="#">Digital Junior</a></li>
-                        <li>Contenidos de Certificación</li>
+                        <li>Menciones de Honor</li>
                     </ul>
-                    <p>Esta sección presenta Información General del Programa Digital Junior, como ser temarios y modelos de examen.</p>
-                    <p>Para acceder a dicha información deberá ingresar su clave.</p>
-                    <p><a href="#">Acceder a la Información General</a></p>
-                    <p>En caso de no ser un usuario registrado envíenos un mail para obtener su clave de ingreso:</p>
-                    <p><a href="#">Solicitud de clave de ingreso</a></p>
+                   <p>PROXIMAMENTE</p>
                 </div>
                 <div class="column medium-3 secundario">
                     <div class="video">
