@@ -11,9 +11,9 @@
                         <a href="#">Programas para<br/>Escuelas</a>
                         <ul>
                             <li><a href="digital-junior-informacion.php">Digital Junior</a></li>
-                            <li><a href="#">Ciudadanía Digital</a></li>
-                            <li><a href="#">KimTech</a></li>
-                            <li><a href="#">Escuela 2.0</a></li>
+                            <li><a href="ciudadania-informacion.php">Ciudadanía Digital</a></li>
+                            <li><a href="kimtech-informacion.php">KimTech</a></li>
+                            <li><a href="escuela-informacion.php">Escuela 2.0</a></li>
                         </ul>
                     </li>
                     <li>
