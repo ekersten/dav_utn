@@ -1,0 +1,36 @@
+section.contacto {
+	.header-image {
+		height: 200px;
+		background: url("../img/digital_junior_header.jpg") no-repeat center top;
+		background-size: cover;
+	}
+	
+	/* color de la seccion */
+	h1,h2, em {
+		color: @azul-claro;
+	}
+
+	.breadcrumbs {
+		li {
+			color: @azul-claro;
+		}
+	}
+
+	.subnav {
+		.tabs {
+			.tab {
+				&.activa, &:hover {
+					table {
+						a {
+							span {
+								color: @azul-claro;
+							}
+						}
+						
+					}
+				}
+			}
+		}
+		
+	}
+}
