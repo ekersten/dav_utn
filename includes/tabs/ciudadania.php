@@ -6,7 +6,7 @@
 			<table>
 				<tr>
 					<td>
-						<a href="digital-junior-informacion.php">
+						<a href="ciudadania-informacion.php">
 							<span class="icon icon-docs"></span>
 							<span class="text">Informacion General</span>
 						</a>
@@ -22,7 +22,7 @@
 			<table>
 				<tr>
 					<td>
-						<a href="digital-junior-contenidos.php">
+						<a href="ciudadania-opinion.php">
 							<span class="icon icon-bubbles"></span>
 							<span class="text">Opinion alumnos</span>
 						</a>
@@ -38,7 +38,7 @@
 			<table>
 				<tr>
 					<td>
-						<a href="digital-junior-distancia.php">
+						<a href="ciudadania-proyectos.php">
 							<span class="icon icon-checklist"></span>
 							<span class="text">Proyectos</span>
 						</a>
