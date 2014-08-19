@@ -6,7 +6,7 @@
         <div class="column medium-8">
             <nav>
                 <ul>
-                    <li><a href="#">Quienes<br/>Somos</a></li>
+                    <li><a href="quienes_somos.php">Quienes<br/>Somos</a></li>
                     <li>
                         <a href="#">Programas para<br/>Escuelas</a>
                         <ul>
@@ -24,8 +24,8 @@
                             <li><a href="#">Entropía</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Prensa</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <!-- <li><a href="#">Prensa</a></li> -->
+                    <li><a href="contacto.php">Contacto</a></li>
                 </ul>
             </nav>
         </div>
