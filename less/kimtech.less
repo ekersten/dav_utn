@@ -1,0 +1,36 @@
+section.kimtech {
+	.header-image {
+		height: 200px;
+		background: url("../img/digital_junior_header.jpg") no-repeat center top;
+		background-size: cover;
+	}
+	
+	/* color de la seccion */
+	h1,h2, em {
+		color: @rojo;
+	}
+
+	.breadcrumbs {
+		li {
+			color: @rojo;
+		}
+	}
+
+	.subnav {
+		.tabs {
+			.tab {
+				&.activa, &:hover {
+					table {
+						a {
+							span {
+								color: @rojo;
+							}
+						}
+						
+					}
+				}
+			}
+		}
+		
+	}
+}
