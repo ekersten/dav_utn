@@ -31,8 +31,29 @@
                     </div>
                 </div>
             </div>
+            <div class="row accesos">
+                <div class="column medium-4">
+                    <p class="icon"><span class="icon-user"></span></p>
+                    <h2>Quienes Somos</h2>
+                    <p class="texto">Una educacion media pensada en el marco señalado hace necesario el compromiso de los directivos y docentes de asumir nuevos roles para los cen-.</p>
+                    <p class="cta"><a href="#">ver <span class="mas">+</span></a></p>
+                </div>
+                <div class="column medium-4">
+                    <p class="icon"><span class="icon-book"></span></p>
+                    <h2>Programas para<br/>escuelas</h2>
+                    <p class="texto">Una educacion media pensada en el marco señalado hace necesario el compromiso de los directivos y docentes de asumir nuevos roles para los cen-.</p>
+                    <p class="cta"><a href="#">ver <span class="mas">+</span></a></p>
+                </div>
+                <div class="column medium-4">
+                    <p class="icon"><span class="icon-copy"></span></p>
+                    <h2>Programa de Entes de<br/>Gobierno y R.S.E.</h2>
+                    <p class="texto">Una educacion media pensada en el marco señalado hace necesario el compromiso de los directivos y docentes de asumir nuevos roles para los cen-.</p>
+                    <p class="cta"><a href="#">ver <span class="mas">+</span></a></p>
+                </div>
+            </div>
         </section>
         <?php include("includes/footer.php"); ?>
         <!-- local scripts -->
+        <script src="js/home.js"></script>
     </body>
 </html>
