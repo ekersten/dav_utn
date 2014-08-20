@@ -26,3 +26,6 @@
 </script> -->
 
 <!-- general scripts -->
+<script src="js/vendor/fancybox/jquery.fancybox.pack.js"></script>
+<script src="js/vendor/fancybox/helpers/jquery.fancybox-media.js"></script>
+<script src="js/dav.js"></script>
