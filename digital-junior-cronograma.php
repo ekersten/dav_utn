@@ -26,216 +26,227 @@
                         <li><a href="#">Digital Junior</a></li>
                         <li>Cronograma de Talleres de Capacitación docente</li>
                     </ul>
-                    <table border="1" width="100%">
-                        <tr>
-                            <td></td>
-                            <td>Abr</td>
-                            <td>May</td>
-                            <td>Jun</td>
-                            <td>Jul</td>
-                            <td>Ago</td>
-                            <td>Sep</td>
-                            <td>Oct</td>
-                            <td>Nov</td>
-                            <td>Dic</td>
-                            <td>Duración</td>
-                            <td>Cursada</td>
-                            <td>Tutor/Autoformación</td>
-                            <td>Destinatario</td>
-                        </tr>
-                        <tr>
-                            <td>Programación en Visual Basic .Net</td>
-                            <td>X</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>4 días</td>
-                            <td>Presencial</td>
-                            <td>Tutor</td>
-                            <td>Informática</td>
-                        </tr>
-                        <tr>
-                            <td>Scratch</td>
-                            <td></td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>2 meses</td>
-                            <td>Virtual</td>
-                            <td>Tutor</td>
-                            <td>Informática / Primario</td>
-                        </tr>
-                        <tr>
-                            <td>App Inventor</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>X</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>2 días</td>
-                            <td>Presencial</td>
-                            <td>Tutor</td>
-                            <td>Informática</td>
-                        </tr>
-                        <tr>
-                            <td>Premier</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>X</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>1 día</td>
-                            <td>Presencial</td>
-                            <td>Tutor</td>
-                            <td>Informática</td>
-                        </tr>
-                        <tr>
-                            <td>In Design</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>X</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>1 día</td>
-                            <td>Presencial</td>
-                            <td>Tutor</td>
-                            <td>Informática</td>
-                        </tr>
-                        <tr>
-                            <td>Herramienta de Google</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>2 meses</td>
-                            <td>Virtual</td>
-                            <td>Autoformacón</td>
-                            <td>General</td>
-                        </tr>
-                        <tr>
-                            <td>Creación de Videotutoriales</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>1 mes</td>
-                            <td>Virtual</td>
-                            <td>Tutor</td>
-                            <td>General</td>
-                        </tr>
-                        <tr>
-                            <td>Blog en el aula</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>1 mes</td>
-                            <td>Virtual</td>
-                            <td>Tutor</td>
-                            <td>General</td>
-                        </tr>
-                        <tr>
-                            <td>Creación de Wikis</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>1 mes</td>
-                            <td>Virtual</td>
-                            <td>Tutor</td>
-                            <td>General</td>
-                        </tr>
-                        <tr>
-                            <td>Desarrollo de Evaluaciones Interactivas</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>1 mes</td>
-                            <td>Virtual</td>
-                            <td>Tutor</td>
-                            <td>General</td>
-                        </tr>
-                        <tr>
-                            <td>Aplicaciones del Google Earth</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>1 mes</td>
-                            <td>Virtual</td>
-                            <td>Tutor</td>
-                            <td>General</td>
-                        </tr>
-                        <tr>
-                            <td>Diseño de aplicaciones en JClic</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>1 mes</td>
-                            <td>Virtual</td>
-                            <td>Tutor</td>
-                            <td>General</td>
-                        </tr>
+                    <table class="cronograma">
+                        <thead>
+                            <tr>
+                                <th class="no-border"></th>
+                                <th>Abr</th>
+                                <th>May</th>
+                                <th>Jun</th>
+                                <th>Jul</th>
+                                <th>Ago</th>
+                                <th>Sep</th>
+                                <th>Oct</th>
+                                <th>Nov</th>
+                                <th>Dic</th>
+                                <th>Duración</th>
+                                <th>Cursada</th>
+                                <th>Tutor/Autoformación</th>
+                                <th>Destinatario</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="azul">Programación en Visual Basic .Net</th>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>4 días</td>
+                                <td>Presencial</td>
+                                <td>Tutor</td>
+                                <td>Informática</td>
+                            </tr>
+                            <tr>
+                                <th class="azul">Scratch</th>
+                                <td></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>2 meses</td>
+                                <td>Virtual</td>
+                                <td>Tutor</td>
+                                <td>Informática / Primario</td>
+                            </tr>
+                            <tr>
+                                <th class="azul">App Inventor</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>2 días</td>
+                                <td>Presencial</td>
+                                <td>Tutor</td>
+                                <td>Informática</td>
+                            </tr>
+                            <tr>
+                                <th class="azul">Premier</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>1 día</td>
+                                <td>Presencial</td>
+                                <td>Tutor</td>
+                                <td>Informática</td>
+                            </tr>
+                            <tr>
+                                <th class="azul">In Design</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>1 día</td>
+                                <td>Presencial</td>
+                                <td>Tutor</td>
+                                <td>Informática</td>
+                            </tr>
+                            <tr>
+                                <th class="verde">Herramienta de Google</th>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td>2 meses</td>
+                                <td>Virtual</td>
+                                <td>Autoformacón</td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <th class="verde">Creación de Videotutoriales</th>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td>1 mes</td>
+                                <td>Virtual</td>
+                                <td>Tutor</td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <th class="verde">Blog en el aula</th>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td>1 mes</td>
+                                <td>Virtual</td>
+                                <td>Tutor</td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <th class="verde">Creación de Wikis</th>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td>1 mes</td>
+                                <td>Virtual</td>
+                                <td>Tutor</td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <th class="verde">Desarrollo de Evaluaciones Interactivas</th>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td>1 mes</td>
+                                <td>Virtual</td>
+                                <td>Tutor</td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <th class="verde">Aplicaciones del Google Earth</th>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td>1 mes</td>
+                                <td>Virtual</td>
+                                <td>Tutor</td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <th class="verde">Diseño de aplicaciones en JClic</th>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-plus"></span></td>
+                                <td>1 mes</td>
+                                <td>Virtual</td>
+                                <td>Tutor</td>
+                                <td>General</td>
+                            </tr>
+                        </tbody>
                     </table>
+                    <div class="leyenda">
+                        <ul>
+                            <li>Referencia:</li>
+                            <li class="informatica">Informática</li>
+                            <li class="general">General</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
