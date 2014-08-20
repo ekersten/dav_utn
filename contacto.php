@@ -19,65 +19,59 @@
 		<section class="tpl-2-col contacto">
 			<div class="header-image"></div>
 			<div class="row contenedor">
-				<h1>Contacto</h1>
 				<div class="column medium-9 pricipal">
 					<div class="row">
-						<div class="column medium-6">
-							<p>
-								<label>Nombre</label>
-								<input type="text" name="nombre" value="">
-							</p>
-							<p>
-								<label>Mail</label>
-								<input type="mail" name="mail" value="">
-							</p>
-							<p>
-								<label>Teléfono</label>
-								<input type="phone" name="tel" value="">
-							</p>
-							<p>
-								<label>Colegio</label>
-								<input type="text" name="colegio" value="">
-							</p>
+						<div class="column medium-12">
+							<h1>Contacto</h1>
 						</div>
-						<div class="column medium-6">
-							<p>
-								<label>Ciudad</label>
-								<input type="text" name="ciudad" value="">
-							</p>
-							<p>
-								<label>Consulta</label>
-								<textarea name="consulta" rows="4"></textarea>
-							</p>
+					</div>
+					<form action="envio.php" method="post">
+						<div class="row">
+							<div class="column medium-6">
+								<p>
+									<label>Nombre</label>
+									<input type="text" name="nombre" value="" required>
+								</p>
+								<p>
+									<label>Mail</label>
+									<input type="email" name="mail" value="" required>
+								</p>
+								<p>
+									<label>Teléfono</label>
+									<input type="phone" name="tel" value="" required>
+								</p>
+								<p>
+									<label>Colegio</label>
+									<input type="text" name="colegio" value="" required>
+								</p>
+							</div>
+							<div class="column medium-6">
+								<p>
+									<label>Ciudad</label>
+									<input type="text" name="ciudad" value="" required>
+								</p>
+								<p class="alto">
+									<label>Consulta</label>
+									<textarea name="consulta" required></textarea>
+								</p>
+							</div>
 						</div>
 						<div class="row">
-							<input type="submit" name="" value="Enviar">
-							<input type="submit" name="" value="Cancelar">
-								
-							</div>	
-					</div>
-					<!-- <ul class="breadcrumbs">
-						<li><a href="#">Programa para escuelas</a></li>
-						<li><a href="#">Digital Junior</a></li>
-						<li>Información General</li>
-					</ul> -->
-					<!-- <blockquote>Proyecto de Certificación de Conocimientos Informáticos<br/>&ldquo;Mucho más que rendir un examen&rdquo;</blockquote> -->
-					
+							<div class="column medium-12">
+								<p class="botones">
+									<input type="submit" name="" value="Enviar">
+									<input type="reset" name="" value="Cancelar">
+								</p>
+							</div>
+						</div>
+					</form>
 				</div>
 				<div class="column medium-3 secundario">
 					<h2>Datos Adicionales</h2>
-					<p>Ing. Jorge Alfredo Almiña </p>
-					<p>Director a cargo</p>
-					<p>Ing. Soledad Grisel Corrales</p>
-					<p>Coordinadora General</p>
-					<p>El Programa <em>Digital Junior</em> le brinda los siguientes <strong>BENEFICIOS</strong></p>
-					<ul>
-						<li>Contenidos Actualizados</li>
-						<li>Capacitación docente</li>
-						<li>Materiales de estudio</li>
-						<li>Certificación de conocimientos</li>
-						<li>Asesoramiento</li>
-					</ul>
+					<p class="cargo"><strong>Ing. Jorge Alfredo Almiña</strong><br/>Director a cargo</p>
+					<p class="cargo"><strong>Ing. Soledad Grisel Corrales</strong><br/>Coordinadora General</p>
+					<hr>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas perferendis suscipit magni odio tempora, repudiandae officiis! Sed eum consequatur sit enim voluptate cupiditate ad voluptatum laboriosam unde! Consequuntur, obcaecati!</p>
 				</div>
 			</div>
 		</section>
