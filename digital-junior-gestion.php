@@ -23,20 +23,37 @@
             </div>
             <div class="row contenedor">
                 <div class="column medium-9 pricipal">
-                    <h1>Gestión de Fechas > Reservas</h1>
+                    <h1>Reserva de fechas de examen</h1>
                     <ul class="breadcrumbs">
                         <li><a href="#">Programa para escuelas</a></li>
                         <li><a href="#">Digital Junior</a></li>
-                        <li>Gestión de Fechas</li>
+                        <li><a href="#">Gestión de fechas</a></li>
+                        <li>Reserva de fechas de examen</li>
                     </ul>
                     <p>Mediante la presente sección podrán informarse respecto de la organización de las fechas de examen reservadas por el colegio. Consultar el estado de la documentación previa que su colegio debe remitir e informarse sobre la asignación de horarios y profesores a sus fechas de examen.</p>
-                    <form action="">
-                        formulario
+                   <form action="#" method="post">
+                        <div class="row">
+                            <div class="column medium-6">
+                                <p>
+                                    <label>Nombre de Usuario</label>
+                                    <input type="text" name="nombre" value="" required>
+                                </p>
+                                <p>
+                                    <label>Contraseña</label>
+                                    <input type="password" name="clave" value="" required>
+                                </p>
+                                <p class="botones">
+                                    <input type="submit" name="" value="Ingresar">
+                                   
+                                </p>
+                            </div>
+                        </div>
+                        
                     </form>
                 </div>
                 <div class="column medium-3 secundario">
-                    <div class="video">
-                        <img src="img/video_dj.jpg" alt=""> <!-- reemplazar por video real -->
+                   <div class="video">
+                        <a href="https://www.youtube.com/watch?v=-dxWBb0NVbo" class="fancybox-media"><img src="img/video_dj.jpg" alt=""> </a>
                     </div>
                     <p>El Programa <em>Digital Junior</em> le brinda los siguientes <strong>BENEFICIOS</strong></p>
                     <ul>

@@ -31,18 +31,22 @@
                     </ul>
                     <p>Esta sección se encuentra habilitada únicamente para los colegios que ya han firmado su convenio de certificación.</p>
                     <p>En la misma podrán encontrar materiales teóricos-prácticos para la preparación de sus alumnos. Dentro de estos se destacan novedosas prácticas de estudio, en particular para las herramientas del paquete Office, Diseño Gráfico y Multimedial; y más de 300 modelos de examen catalogados por herramienta y nivel.</p>
-                    <ul>
-                        <li>Manuales Teóricos</li>
-                        <li>Ejercicios Prácticos</li>
-                        <li>Tests Interactivos </li>
-                        <li>Modelos de Examen</li>
-                    </ul>
-                    <p><a href="">Acceder a los Materiales de Estudio</a></p>
-
+                    
+                    <div class="column medium-6">
+                        <ul>
+                            <li>Manuales Teóricos</li>
+                            <li>Ejercicios Prácticos</li>
+                            <li>Tests Interactivos </li>
+                            <li>Modelos de Examen</li>
+                        </ul>
+                    </div>
+                    <div class="column medium-6">
+                         <p><a class="descargar medio" href="http://dav.sceu.frba.utn.edu.ar/campusvirtual/login/index.php" target="_blank">Acceder a los Materiales de Estudio</a></p>
+                    </div>
                 </div>
                 <div class="column medium-3 secundario">
-                    <div class="video">
-                        <img src="img/video_dj.jpg" alt=""> <!-- reemplazar por video real -->
+                  <div class="video">
+                        <a href="https://www.youtube.com/watch?v=-dxWBb0NVbo" class="fancybox-media"><img src="img/video_dj.jpg" alt=""> </a>
                     </div>
                     <p>El Programa <em>Digital Junior</em> le brinda los siguientes <strong>BENEFICIOS</strong></p>
                     <ul>

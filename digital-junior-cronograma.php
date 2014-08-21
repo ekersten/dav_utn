@@ -139,7 +139,7 @@
                                 <td><span class="icon icon-plus"></span></td>
                                 <td>2 meses</td>
                                 <td>Virtual</td>
-                                <td>Autoformacón</td>
+                                <td>Autoformación</td>
                                 <td>General</td>
                             </tr>
                             <tr>

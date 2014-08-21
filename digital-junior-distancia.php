@@ -35,12 +35,12 @@
                     <p>En forma adicional, Digital Junior brinda una serie de talleres de capacitación docente con el objetivo de acercar las nuevas tecnologías para el trabajo en el aula, ideas de aplicación y asesoramiento para su implementación, permitiendo de este modo a los colegios diseñar un plan tecnológico acorde a las necesidades actuales. Los colegios que forman parte de nuestra comunidad pueden participar de todos los eventos y 
                     <p>Por todo esto, cada vez son más los colegios que han visionado la importancia de la certificación en informática para sus alumnos y el prestigio de una universidad que trasciende los límites de una ciudad o región del país</p>
                     <p>Los invitamos a que nos conozcan.</p>
-                    <p><a href="">Descargar Gacetilla Informativa</a></p>
+                    <p><a class="descargar" href="img/gacetilla.pdf" target="_blank">Descargar Gacetilla Informativa</a></p>
 
                 </div>
                 <div class="column medium-3 secundario">
                     <div class="video">
-                        <img src="img/video_dj.jpg" alt=""> <!-- reemplazar por video real -->
+                        <a href="https://www.youtube.com/watch?v=-dxWBb0NVbo" class="fancybox-media"><img src="img/video_dj.jpg" alt=""> </a>
                     </div>
                     <p>El Programa <em>Digital Junior</em> le brinda los siguientes <strong>BENEFICIOS</strong></p>
                     <ul>

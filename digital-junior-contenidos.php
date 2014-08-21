@@ -29,15 +29,33 @@
                         <li><a href="#">Digital Junior</a></li>
                         <li>Contenidos de Certificación</li>
                     </ul>
-                    <p>Esta sección presenta Información General del Programa Digital Junior, como ser temarios y modelos de examen.</p>
-                    <p>Para acceder a dicha información deberá ingresar su clave.</p>
-                    <p><a href="#">Acceder a la Información General</a></p>
-                    <p>En caso de no ser un usuario registrado envíenos un mail para obtener su clave de ingreso:</p>
-                    <p><a href="#">Solicitud de clave de ingreso</a></p>
+                    <p>Esta sección presenta Información General del Programa Digital Junior, como ser temarios y modelos de examen.<br/>
+                    Para acceder a dicha información deberá ingresar su clave.</p>
+                    <form action="#" method="post">
+                        <div class="row">
+                            <div class="column medium-4 medium-centered">
+                                <p>
+                                    <label>Nombre de Usuario</label>
+                                    <input type="text" name="nombre" value="" required>
+                                </p>
+                                <p>
+                                    <label>Contraseña</label>
+                                    <input type="password" name="clave" value="" required>
+                                </p>
+                                <p class="botones">
+                                    <input type="submit" name="" value="Iniciar sesión">
+                                    <input type="reset" name="" value="Cancelar">
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </form>
+                    <p>En caso de no ser un usuario registrado envíenos un mail para obtener su clave de ingreso: <br/>
+                    <a href="mailto:dav@sceu.frba.utn.edu.ar">dav@sceu.frba.utn.edu.ar</a></p>
                 </div>
                 <div class="column medium-3 secundario">
-                    <div class="video">
-                        <img src="img/video_dj.jpg" alt=""> <!-- reemplazar por video real -->
+                   <div class="video">
+                        <a href="https://www.youtube.com/watch?v=-dxWBb0NVbo" class="fancybox-media"><img src="img/video_dj.jpg" alt=""> </a>
                     </div>
                     <p>El Programa <em>Digital Junior</em> le brinda los siguientes <strong>BENEFICIOS</strong></p>
                     <ul>
