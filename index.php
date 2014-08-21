@@ -41,7 +41,7 @@
                 <div class="column medium-4">
                     <p class="icon"><span class="icon-book"></span></p>
                     <h2>Programas para<br/>escuelas</h2>
-                    <p class="texto">Una educacion media pensada en el marco señalado hace necesario el compromiso de los directivos y docentes de asumir nuevos roles para los cen-.</p>
+                    <p class="texto">DAV se crea en la UTN.BA en el año 2002, con la misión de dar soluciones en Nuevas Tecnologías Aplicadas a la Educación de toda la Comunidad Educativa.</p>
                     <p class="cta"><a href="#">ver <span class="mas">+</span></a></p>
                 </div>
                 <div class="column medium-4">
