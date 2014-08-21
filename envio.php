@@ -29,30 +29,35 @@
 						<div class="row">
 							<div class="column medium-6">
 								<p>
-									<label>Nombre</label>
-									<input type="text" name="nombre" value="" required>
-								</p>
-								<p>
-									<label>Mail</label>
-									<input type="email" name="mail" value="" required>
-								</p>
-								<p>
-									<label>Teléfono</label>
-									<input type="phone" name="tel" value="" required>
-								</p>
-								<p>
-									<label>Colegio</label>
-									<input type="text" name="colegio" value="" required>
-								</p>
-							</div>
-							<div class="column medium-6">
-								<p>
-									<label>Ciudad</label>
-									<input type="text" name="ciudad" value="" required>
-								</p>
-								<p class="alto">
-									<label>Consulta</label>
-									<textarea name="consulta" required></textarea>
+									<?php
+										//genero la variables para guardar info del formulario
+										$nombre=$_POST['nombre'];
+										$email=$_POST['mail'];
+										$telefono=$_POST['tel'];
+										$colegio=$_POST['colegio'];
+										$ciudad=$_POST['ciudad'];
+										$consulta=$_POST['consulta'];
+
+
+										$remitente="From: $nombre <$email>";
+										// destino donde va a llegar la info
+										$destino="flavia.ursino@gmail.com";
+										// yamadatomas@gmail.com
+
+										$asunto= $nombre ." envio la siguiente consulta";
+
+										$contenido="Nombre: " . $nombre . "\r\n";
+										$contenido.="Email: " . $email. "\r\n";
+										$contenido.="Telefono: " . $telefono . "\r\n";
+										$contenido.="Colegio: " . $colegio . "\r\n";
+										$contenido.="Ciudad: " . $ciudad . "\r\n";
+										$contenido.="Consulta: " . $consulta;
+
+										// primer mail
+										mail($destino,$asunto,$contenido,$remitente);
+										echo "Gracias por escribirnos. "<br/>".   
+										A la brevedad le responderemos ";
+									?>
 								</p>
 							</div>
 						</div>
