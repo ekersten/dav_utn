@@ -41,9 +41,9 @@
 					<p>En tal sentido, consideramos que la experiencia a vivenciar por los alumnos participantes del programa, representa un valor ampliamente capitalizable para los mismos.</p>
 				</div>
 				<div class="column medium-3 secundario">
-					<div class="video">
-						<img src="img/video_ciudadania.jpg" alt=""> <!-- reemplazar por video real -->
-					</div>
+					 <div class="video">
+                        <a href="https://www.youtube.com/watch?v=mUJOdMNVtxA" class="fancybox-media"><img src="img/video_dj.jpg" alt=""> </a>
+                    </div>
 					<p>El Programa <em>Digital Junior</em> le brinda los siguientes <strong>BENEFICIOS</strong></p>
 					<ul>
 						<li>Contenidos Actualizados</li>
