@@ -48,7 +48,7 @@
                         <tbody>
                             <tr>
                                 <th class="azul">Programación en Visual Basic .Net</th>
-                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-x"></span></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -65,8 +65,8 @@
                             <tr>
                                 <th class="azul">Scratch</th>
                                 <td></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -84,7 +84,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-x"></span></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -101,7 +101,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-x"></span></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -117,7 +117,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-x"></span></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -128,15 +128,15 @@
                             </tr>
                             <tr>
                                 <th class="verde">Herramienta de Google</th>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
                                 <td>2 meses</td>
                                 <td>Virtual</td>
                                 <td>Autoformación</td>
@@ -144,15 +144,15 @@
                             </tr>
                             <tr>
                                 <th class="verde">Creación de Videotutoriales</th>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
                                 <td>1 mes</td>
                                 <td>Virtual</td>
                                 <td>Tutor</td>
@@ -160,15 +160,15 @@
                             </tr>
                             <tr>
                                 <th class="verde">Blog en el aula</th>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
                                 <td>1 mes</td>
                                 <td>Virtual</td>
                                 <td>Tutor</td>
@@ -176,15 +176,15 @@
                             </tr>
                             <tr>
                                 <th class="verde">Creación de Wikis</th>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
                                 <td>1 mes</td>
                                 <td>Virtual</td>
                                 <td>Tutor</td>
@@ -192,15 +192,15 @@
                             </tr>
                             <tr>
                                 <th class="verde">Desarrollo de Evaluaciones Interactivas</th>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
                                 <td>1 mes</td>
                                 <td>Virtual</td>
                                 <td>Tutor</td>
@@ -208,15 +208,15 @@
                             </tr>
                             <tr>
                                 <th class="verde">Aplicaciones del Google Earth</th>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
                                 <td>1 mes</td>
                                 <td>Virtual</td>
                                 <td>Tutor</td>
@@ -224,15 +224,15 @@
                             </tr>
                             <tr>
                                 <th class="verde">Diseño de aplicaciones en JClic</th>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
-                                <td><span class="icon icon-plus"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
+                                <td><span class="icon icon-x"></span></td>
                                 <td>1 mes</td>
                                 <td>Virtual</td>
                                 <td>Tutor</td>
