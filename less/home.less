@@ -1,50 +1,90 @@
 section.home {
-	.hero {
-		min-height: 488px;
-		height: 488px;
-		background: url("../img/home_dj.jpg") no-repeat center top;
-		background-size: cover;
+	.cycle-slideshow {
+		wdith: 100%;
 
-		.row {
-			min-height: 100%;
-			height: 100%;
+		.cycle-prev, .cycle-next {
+			position: absolute;
+			display: inline-block;
+			color: @gris-oscuro;
+			top: 228px;
+			font-size: 4rem;
+			border: 4px solid @gris-oscuro;
+			padding: .5rem;
+			z-index: 800;
+			text-align: center;
+			width: 4rem;
+			height: 4rem;
+			background: fade(@blanco, 75%);
+			border-radius: 50%;
+			cursor: pointer;
 
-			.column:first-child {
-				padding-left: 0;
+			span {
+				display: block;
+				line-height: 2.5rem;
 			}
+		}
 
-			.column:last-child {
-				padding-right: 0;
-			}
+		.cycle-prev {
+			left: 1.5rem;
+		}
 
-			.contenido {
-				background-color: rgba(255,255,255,.7);
-				min-height: 100%;
-				height: 100%;
-				.vc-container();
+		.cycle-next {
+			right: 1.5rem;
+		}
 
-				.interno {
-					.vc-element();
-					padding: 2rem;
 
-					h1 {
-						color: @gris-oscuro;
-						text-transform: uppercase;
-						font-size: 2.5rem;
-					}
+		.slide {
+			min-height: 488px;
+			height: 488px;
+			background-position: center top;
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 100%;
 
-					p {
-						font-family: @font-oswald;
-					}
+			.row {
+				min-height: 488px;
+				height: 488px;
 
-					a.boton {
-						display: inline-block;
-						padding: 1rem;
-						color: @blanco;
-						text-decoration: none;
-						background-color: @gris-oscuro;
-						font-size: 1.5rem;
-						font-family: @font-oswald;
+				.column:first-child {
+					padding-left: 0;
+				}
+
+				.column:last-child {
+					padding-right: 0;
+				}
+
+				.contenido {
+					background-color: rgba(255,255,255,.7);
+					min-height: 488px;
+					height: 488px;
+					position: relative;
+
+
+					.interno {
+						padding: 2rem;
+						wdith: 100%;
+						position: absolute;
+						left: 0;
+
+						h1 {
+							color: @gris-oscuro;
+							text-transform: uppercase;
+							font-size: 2.5rem;
+						}
+
+						p {
+							font-family: @font-oswald;
+						}
+
+						a.boton {
+							display: inline-block;
+							padding: 1rem;
+							color: @blanco;
+							text-decoration: none;
+							background-color: @gris-oscuro;
+							font-size: 1.5rem;
+							font-family: @font-oswald;
+						}
 					}
 				}
 			}
