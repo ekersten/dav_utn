@@ -1,0 +1,181 @@
+section.modelo1a1 {
+	.header-image {
+		height: 200px;
+		background: url("../img/digital_junior_header.jpg") no-repeat center top;
+		background-size: cover;
+	}
+	
+	/* color de la seccion */
+	h1,h2, em, a {
+		color: @azul;
+	}
+
+	.breadcrumbs {
+		li {
+			color: @azul;
+		}
+	}
+
+
+	.descargar{
+		background: @azul;
+		color: @blanco;
+		font-family: @font-oswald;
+		text-transform: uppercase;
+		padding: .4rem .6rem;
+		border: none;
+		border-radius: 4px;
+		box-shadow: 0 2px 0 0 @azul-oscuro;
+		text-decoration: none;
+
+			&.medio{
+				line-height: 100px;
+			}
+	
+	}
+	.leyenda {
+		margin: 1rem 0;
+		text-align: left;
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			li {
+				display: inline-block;
+				color: @gris-claro;
+				font-size: .8rem;
+				text-transform: uppercase;
+				margin-right: 2rem;
+				
+				&.informatica, &.general {
+					&:before {
+						content: "";
+						width: 15px;
+						height: 15px;
+						background: @negro;
+						display: inline-block;
+						margin-right: .2rem;
+						position: relative;
+						top: 3px;
+					}
+				}
+
+				&.informatica {
+					&:before {
+						background: @azul;
+					}
+				}
+
+				&.general {
+					&:before {
+						background: @verde;
+					}
+				}
+			}
+
+		}
+	}
+	table.cronograma {
+		border-collapse: collapse;
+		font-size: .8rem;
+		width: 100%;
+		margin-top: 4rem;
+
+		td, th {
+			border: 1px solid lighten(@gris-claro, 15%);
+			padding: .2rem;
+		}
+		thead {
+			th {
+				background: lighten(@gris-claro, 30%);
+				color: @gris-oscuro;
+				font-weight: normal;
+
+				&.no-border {
+					background: transparent;
+					border-left: none;
+					border-top: none;
+				}
+			}
+		}
+
+		tbody {
+			td {
+				
+				text-align: center;
+
+				.icon {
+					
+				}
+
+			}
+
+			th {
+				text-align: left;
+				color: @blanco;
+
+				&.azul {
+					background-color: @azul;
+				}
+
+				&.verde {
+					background-color: @verde;
+				}
+			}
+		}
+	}
+
+	/*formulario*/
+
+	form {
+		p {
+			margin-bottom: 1rem;
+		}
+
+		label {
+			display: block;
+			clear: both;
+			text-transform: uppercase;
+			font-size: .9rem;
+			color: @gris;
+		}
+
+		input[type=text], input[type=password]{
+			border: 1px solid lighten(@gris-claro, 20%);
+			padding: .4rem;
+			border-radius: 4px;
+			background: @blanco;
+			color: @negro;
+			font-family: @font-open;
+			font-size: .8rem;
+			width: 100%;
+			box-shadow: inset 0 4px 0 0 rgba(0,0,0,.05);
+
+			&.error {
+				border-color: @rojo-oscuro;
+				color: @rojo;
+				background: lighten(@rojo-claro, 40%)
+			}
+		}
+
+		
+		.botones {
+			text-align: center;
+		}
+
+		input[type=submit], input[type=reset] {
+			background: @azul;
+			color: @blanco;
+			font-family: @font-oswald;
+			text-transform: uppercase;
+			padding: .4rem .6rem;
+			border: none;
+			border-radius: 4px;
+			box-shadow: 0 2px 0 0 @azul-oscuro;
+			margin: 0 .3rem;
+		}
+
+	}
+}

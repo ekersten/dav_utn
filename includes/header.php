@@ -19,7 +19,7 @@
                     <li>
                         <a href="#">Programa de Entes de<br/>Gobierno y R.S.E.</a>
                         <ul>
-                            <li><a href="#">Modelo 1 a 1</a></li>
+                            <li><a href="modelo1a1.php">Modelo 1 a 1</a></li>
                             <li><a href="#">Nativos Digitales</a></li>
                             <li><a href="#">Entropía</a></li>
                         </ul>
