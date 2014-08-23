@@ -34,7 +34,7 @@
 				</div>
 				<div class="column medium-3 secundario">
 					<div class="video">
-                        <a href="https://www.youtube.com/watch?v=Y5P8q-_GKgE" class="fancybox-media"><img src="img/video_dj.jpg" alt=""> </a>
+                        <a href="https://www.youtube.com/watch?v=Y5P8q-_GKgE" class="fancybox-media"><img src="img/video_kimtech.jpg" alt=""> </a>
                     </div>
 					<p>El Programa <em>Digital Junior</em> le brinda los siguientes <strong>BENEFICIOS</strong></p>
 					<ul>
