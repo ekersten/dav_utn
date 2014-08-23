@@ -23,23 +23,22 @@
 			</div> -->
 			<div class="row contenedor">
 				<div class="column medium-9 pricipal">
-					<h1>Información General</h1>
+					<h1>Modelo 1 a 1</h1>
 					<ul class="breadcrumbs">
 						<li><a href="#">Programa de Entes de Gobierno y R.S.E</a></li>
-						<li><a href="#">Modelo 1 a 1</a></li>
-						<li>Información General</li>
+						<li>Modelo 1 a 1</li>
+						<!-- <li>Información General</li> -->
 					</ul>
-					<blockquote>Proyecto de Certificación de Conocimientos Informáticos<br/>&ldquo;Mucho más que rendir un examen&rdquo;</blockquote>
-					<p>Para nosotros la certificación en informática de los alumnos no es sólo tomar un examen, sino colaborar con Uds. en el tránsito de un proceso, con el propósito de incorporar los mejores contenidos y medios para la apropiación de la tecnología. Dicho camino les permitirá desarrollar un proyecto informático acorde al actual avance científico-tecnológico y generar un contexto que garantice la excelencia de los conocimientos de sus alumnos.</p>
-					<p>Por tal motivo, el Programa Digital Junior  aborda una serie de acciones focalizadas en cada una de las etapas que conllevan a la implementación de un Proyecto Educativo Informático. Participando en nuestra comunidad, su colegio podrá fortalecerse con nuestra estructura, experiencia, actualización e investigación, en el marco del desarrollo tecnológico aplicado a la educación.</p>
-					<p>Mediante el presente programa enlazamos a su escuela con la universidad, logrando articular contenidos y generar proyectos de corte universitario.</p>
-					<p>El Programa es gratuito para el Colegio, siendo la certificación de los alumnos la única acción arancelada.</p>
-					<h2>¿Qué implica para el alumno contar con un certificado de infrmática de la UTN.BA?</h2>
-					<p>Ya no caben dudas respecto de que en la actualidad la tecnología se encuentra inserta como elemento constitutivo y facilitador del desarrollo de las demás ciencias. Por tal motivo, indistintamente del campo profesional o actividad laboral enla que el alumno desee desarrollarse, poseer el dominio apropiado de la tecnología favorecerá su eficiencia y desarrollo.</p>
-					<p>Esto implica, que en cualquier área que el individuo se especialice, el poder acreditar sus conocimientos informáticos, implicará para el mismo una ventaja competitiva al momento de incorporarse al cada vez más exigente mercado laboral y/o al ingresar a instituciones de formación superior.</p>
-					<p>El certificado tendrá valor, en la medida que la institución que lo acredite goce de prestigio y reconocimiento en el mercado. En el caso de la UTN.BA, no sólo es una facultad, que por su propia naturaleza la convierte en una de las instituciones más aptas para evaluar conocimientos, si no que además se especializa en materia tecnológica y basa su reconocimiento en su estándar de calidad.</p>
+					<p>Las nuevas  tecnologías  son uno de los medios que más han  contribuido a  la globalización actual,  a los cambios vertiginosos y permanentes, y es por eso que su integración en la educación se ha convertido en un reto. Para generar una correcta integración de las TIC en los comienzos de la segunda década del siglo XXI es fundamental e inaplazable la formación de los docentes de cualquier área y nivel educativo. </p>
+					<p>Nuestro programa de capacitación fue pensado y diseñado para contribuir con el modelo 1 a 1 porque consideramos al docente como un agente de cambio indispensable para que se produzca la integración de las TIC en las aulas. 
+El objetivo de este modelo es que los docentes adquieran competencias para la integración de la tecnología en forma integral, en particular en las Ciencias Básicas, siendo un excelente modelo de aplicación para Matemática, Física, Química y otras áreas técnicas.</p>
+					<p>La meta es que los docentes no sean simples usuarios y consumidores de software y aplicaciones de la red, sino que adquieran conocimientos técnicos, funcionales, metodológicos y lingüísticos. Además hemos incluido en todos los trayectos formativos la creación de proyectos que se presentan en los coloquios presenciales.</p>
+					<p>El conocimiento lingüístico permite manejar el leguaje universal de la web, para no estar cautivos a los designios de las aplicaciones; permite adquirir la lógica que utilizan estos lenguajes informáticos, contribuye a la toma de decisiones y la generación de cambios para beneficios pedagógicos de las herramientas utilizadas y fomentan la actitud crítica.</p>
+					<p>&ldquo;Simplemente se trata de aprender y enseñar a leer y escribir en el lenguaje de la tecnología intelectual predominante. De este modo, la incorporación masiva de computadoras y otros medios informáticos en las aulas llegará a tener sentido social y culturalmente transformador&rdquo; ( Diego Levis, 2007).</p>
+					<p>Las computadoras por sí solas no generan ningún cambio si no están integradas a las prácticas educativas y a nuevas metodologías didácticas. Con la integración de las TIC a las prácticas educativas  se coadyuva a generar una continuidad entre la realidad que viven los alumnos fuera del aula y la que viven dentro de la escuela.</p>
+					<p>Es por eso que generamos una estrategia de formación integral de los docentes, centrada en la funcionalidad, el dominio con actitud crítica, habilidades para resolución de problemas y la creación  de materiales educativos con creatividad para que los docentes estructuren ambientes de aprendizaje de forma no tradicional fusionando las TIC con modalidades pedagógicas que estimulan el trabajo cooperativo, el trabajo en grupo y colaborativo.</p>
 				</div>
-				<div class="column medium-3 secundario">
+			<!-- 	<div class="column medium-3 secundario">
 					<div class="video">
 						<a href="https://www.youtube.com/watch?v=-dxWBb0NVbo" class="fancybox-media"><img src="img/video_dj.jpg" alt=""> </a>
 					</div>
@@ -51,7 +50,7 @@
 						<li>Certificación de conocimientos</li>
 						<li>Asesoramiento</li>
 					</ul>
-				</div>
+				</div> -->
 			</div>
 		</section>
 		<?php include("includes/footer.php"); ?>
