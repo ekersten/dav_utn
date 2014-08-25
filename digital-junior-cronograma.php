@@ -249,6 +249,30 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="column small-12">
+                    <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4 grilla">
+                        <li class="item">
+                            <h4 class="titulo">Desarrollo de evaluaciones interactivas</h4>
+                            <div class="imagen">
+                                <img src="http://placehold.it/320x320" />
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="column small-12">
+                                            <p>Este taller acerca a los docentes distintas posibilidades que brindan los blogs en el ámbito educativo. El mismo realiza un recorrido partiendo desde la creación del blog, y continuando por el agregado de diferentes recursos que suman riqueza para el aprendizaje de los alumnos.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column small-6 text-left"><p><strong>Duración:</strong><br/>1 mes</p></div>
+                                        <div class="column small-6 text-right"><p><strong>Modalidad:</strong><br/>Autoformación</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
         </section>
         <?php include("includes/footer.php"); ?>
         <!-- local scripts -->

@@ -192,6 +192,40 @@ section.digital-junior {
 			box-shadow: 0 2px 0 0 @naranja-oscuro;
 			margin: 0 .3rem;
 		}
+	}
 
+	.grilla {
+		.item {
+			.titulo {
+				text-align: center;
+				margin: 0 0 .5rem 0;
+			}
+
+			.imagen {
+				position: relative;
+				overflow: hidden;
+
+				.info {
+					background: rgba(0,0,0,.75);
+					position: absolute;
+					color: @blanco;
+					padding: .6rem;
+					bottom: -100%;
+					width: 100%;
+					transition: all .4s ease-out;
+					p {
+						font-size: .7rem;
+						line-height: .8rem;
+					}
+				}
+
+				&:hover {
+					.info {
+						bottom: 0;
+					}
+				}
+			}
+			
+		}
 	}
 }
