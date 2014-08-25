@@ -18,6 +18,9 @@
         <?php include("includes/header.php"); ?>
         <section class="tpl-2-col digital-junior">
             <div class="header-image"></div>
+            <div class="subnav" data-activa="5">
+                <?php include("includes/tabs/digital-junior.php"); ?>
+            </div>
             <div class="row contenedor">
                 <div class="column medium-12 pricipal">
                     <h1>Cronograma de Talleres de Capacitación docente</h1>
@@ -277,5 +280,6 @@
         </section>
         <?php include("includes/footer.php"); ?>
         <!-- local scripts -->
+        <script src="js/tabs.js"></script>
     </body>
 </html>
