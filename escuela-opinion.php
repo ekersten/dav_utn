@@ -25,9 +25,9 @@
 				<div class="column medium-9 pricipal">
 					<h1>Opinión alumnos</h1>
 					<ul class="breadcrumbs">
-						<li><a href="#">Programa para escuelas</a></li>
-						<li><a href="#">Escuela 2.0</a></li>
-						<li>Opinión alumnos</li>
+						<li>Programa para escuelas</li>
+						<li><a href="escuela-informacion.php">Escuela 2.0</a></li>
+						<li class="actual">Opinión alumnos</li>
 					</ul>
 					<h2>PROXIMAMENTE</h2>
 				</div>

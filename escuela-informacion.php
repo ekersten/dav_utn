@@ -25,9 +25,9 @@
 				<div class="column medium-9 pricipal">
 					<h1>Información General</h1>
 					<ul class="breadcrumbs">
-						<li><a href="#">Programa para escuelas</a></li>
-						<li><a href="#">Escuela 2.0</a></li>
-						<li>Información General</li>
+						<li>Programa para escuelas</li>
+						<li><a href="escuela-informacion.php">Escuela 2.0</a></li>
+						<li class="actual">Información General</li>
 					</ul>
 					<p>El desafío de incluir la tecnología en la educación está más vigente que nunca, sin embargo seguimos enseñando de la misma forma. Ante esta realidad cabe preguntarnos: ¿seguimos invirtiendo en equipamiento tecnológico y contenidos digitales, sosteniendo las rutinas tradicionales del docente? ¿O comenzamos a transformar la Escuela?</p>
 					<p>ESCUELA 2.0 es un programa desarrollado por la UTN.BA, pensado para transformar la Escuela  valiéndose del potencial de las nuevas tecnologías, para brindar un servicio educativo que trascienda las paredes de sus aulas. Una educación para el siglo XXI.</p>

@@ -25,10 +25,9 @@
                 <div class="column medium-9 pricipal">
                     <h1>Reserva de fechas de examen</h1>
                     <ul class="breadcrumbs">
-                        <li><a href="#">Programa para escuelas</a></li>
-                        <li><a href="#">Digital Junior</a></li>
-                        <li><a href="#">Gestión de fechas</a></li>
-                        <li>Reserva de fechas de examen</li>
+                        <li>Programa para escuelas</li>
+                        <li><a href="digital-junior-informacion.php">Digital Junior</a></li>
+                        <li class="actual">Gestión de fechas</li>
                     </ul>
                     <p>Mediante la presente sección podrán informarse respecto de la organización de las fechas de examen reservadas por el colegio. Consultar el estado de la documentación previa que su colegio debe remitir e informarse sobre la asignación de horarios y profesores a sus fechas de examen.</p>
                    <form action="#" method="post">

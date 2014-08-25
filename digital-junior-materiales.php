@@ -25,9 +25,9 @@
                 <div class="column medium-9 pricipal">
                     <h1>Materiales de Estudio</h1>
                     <ul class="breadcrumbs">
-                        <li><a href="#">Programa para escuelas</a></li>
-                        <li><a href="#">Digital Junior</a></li>
-                        <li>Materiales de Estudio</li>
+                        <li>Programa para escuelas</li>
+                        <li><a href="digital-junior-informacion.php">Digital Junior</a></li>
+                        <li class="actual">Materiales de Estudio</li>
                     </ul>
                     <p>Esta sección se encuentra habilitada únicamente para los colegios que ya han firmado su convenio de certificación.</p>
                     <p>En la misma podrán encontrar materiales teóricos-prácticos para la preparación de sus alumnos. Dentro de estos se destacan novedosas prácticas de estudio, en particular para las herramientas del paquete Office, Diseño Gráfico y Multimedial; y más de 300 modelos de examen catalogados por herramienta y nivel.</p>

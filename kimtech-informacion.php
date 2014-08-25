@@ -25,9 +25,9 @@
 				<div class="column medium-9 pricipal">
 					<h1>Información General</h1>
 					<ul class="breadcrumbs">
-						<li><a href="#">Programa para escuelas</a></li>
-						<li><a href="#">Kimtech</a></li>
-						<li>Información General</li>
+						<li>Programa para escuelas</li>
+						<li><a href="kimtech-informacion.php">Kimtech</a></li>
+						<li class="actual">Información General</li>
 					</ul>
 					<blockquote>&ldquo;La única habilidad competitiva a largo plazo es la habilidad para aprender.&rdquo;<br/> S. Paperts</blockquote>
 					<p>KIMTECH es un programa de Capacitación y Certificación en Robótica Educativa que desarrollan  alumnos y profesores del colegio, en conjunto con los especialistas de la UTN.BA.</p>

@@ -25,9 +25,9 @@
                 <div class="column medium-9 pricipal">
                     <h1>Sistema a Distancia</h1>
                     <ul class="breadcrumbs">
-                        <li><a href="#">Programa para escuelas</a></li>
-                        <li><a href="#">Digital Junior</a></li>
-                        <li>Sistema a Distancia</li>
+                        <li>Programa para escuelas</li>
+                        <li><a href="digital-junior-informacion.php">Digital Junior</a></li>
+                        <li class="actual">Sistema a Distancia</li>
                     </ul>
                     <p>El Programa Digital Junior tuvo inicio a mediados del año 2002 y prontamente se transformó en un verdadero vector de crecimiento y de actualización para los colegios miembros de Capital Federal y Gran Buenos Aires. Motivados por estos resultados, en el año 2005 se sumaron las primeras instituciones educativas del interior del país, para quienes se gestó una metodología de trabajo a distancia a los efectos de poder acompañarlos en este desafío.</p>
                     <p>Debido a la gran convocatoria de colegios que se han sumado a esta modalidad  de trabajo intensificamos nuestro compromiso, y de esta forma multiplicamos los esfuerzos para hacer cada vez más dinámico el proceso de certificación a distancia.</p>

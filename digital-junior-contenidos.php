@@ -25,9 +25,9 @@
                 <div class="column medium-9 pricipal">
                     <h1>Contenidos de certificación</h1>
                     <ul class="breadcrumbs">
-                        <li><a href="#">Programa para escuelas</a></li>
-                        <li><a href="#">Digital Junior</a></li>
-                        <li>Contenidos de Certificación</li>
+                        <li>Programa para escuelas</li>
+                        <li><a href="digital-junior-informacion.php">Digital Junior</a></li>
+                        <li class="actual">Contenidos de Certificación</li>
                     </ul>
                     <p>Esta sección presenta Información General del Programa Digital Junior, como ser temarios y modelos de examen.<br/>
                     Para acceder a dicha información deberá ingresar su clave.</p>

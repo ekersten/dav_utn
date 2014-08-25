@@ -25,9 +25,9 @@
 				<div class="column medium-9 pricipal">
 					<h1>Información General</h1>
 					<ul class="breadcrumbs">
-						<li><a href="#">Programa para escuelas</a></li>
-						<li><a href="#">Ciudadania Digital</a></li>
-						<li>Información General</li>
+						<li>Programa para escuelas</li>
+						<li><a href="ciudadania-informacion.php">Ciudadania Digital</a></li>
+						<li class="actual">Información General</li>
 					</ul>
 					
 					<p>El programa CIUDADANÍA DIGITAL es un espacio formulado para la concientización en materia de Uso responsable de Internet y las Nuevas Tecnologías. Al mismo tiempo que permite a los estudiantes conocer las tecnologías del e-learning y experimentar una propuesta de formación a distancia.</p>

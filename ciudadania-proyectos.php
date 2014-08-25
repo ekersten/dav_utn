@@ -25,9 +25,9 @@
 				<div class="column medium-9 pricipal">
 					<h1>Proyectos</h1>
 					<ul class="breadcrumbs">
-						<li><a href="#">Programa para escuelas</a></li>
-						<li><a href="#">Ciudadania Digital</a></li>
-						<li>Proyectos</li>
+						<li>Programa para escuelas</li>
+						<li><a href="ciudadania-informacion.php">Ciudadania Digital</a></li>
+						<li class="actual">Proyectos</li>
 					</ul>
 					
 					<p>A lo largo del curso hemos interactuado con los alumnos, proponiéndoles tópicos para la reflexión y el intercambio de opiniones entre pares, contenidos de formación e instancias de autoevaluación, desarrollo de trabajos de investigación, tareas individuales y colaborativas. Ejemplo de lo realizado, son los trabajos presentados por los alumnos en las clases. Algunos de los cuales queremos compartir con Uds.</p>

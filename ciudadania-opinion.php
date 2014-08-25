@@ -25,9 +25,9 @@
 				<div class="column medium-9 pricipal">
 					<h1>Opinión Alumnos</h1>
 					<ul class="breadcrumbs">
-						<li><a href="#">Programa para escuelas</a></li>
-						<li><a href="#">Ciudadania Digital</a></li>
-						<li>Opinión Alumnos</li>
+						<li>Programa para escuelas</li>
+						<li><a href="ciudadania-informacion.php">Ciudadania Digital</a></li>
+						<li class="actual">Opinión Alumnos</li>
 					</ul>
 					
 					<p>Queremos compartir con Uds. la opinión de los algunos alumnos que ya participaron de esta experiencia y los consejos que ellos quisieron dejarles a los estudiantes que decidan ser parte de la próxima edición de este curso.</p>

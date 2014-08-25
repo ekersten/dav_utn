@@ -22,9 +22,10 @@
                 <div class="column medium-12 pricipal">
                     <h1>Cronograma de Talleres de Capacitación docente</h1>
                     <ul class="breadcrumbs">
-                        <li><a href="#">Programa para escuelas</a></li>
-                        <li><a href="#">Digital Junior</a></li>
-                        <li>Cronograma de Talleres de Capacitación docente</li>
+                        <li>Programa para escuelas</li>
+                        <li><a href="digital-junior-informacion.php">Digital Junior</a></li>
+                        <li><a href="digital-junior-capacitacion.php">Capacitación Docente</a></li>
+                        <li class="actual">Cronograma de Talleres de Capacitación docente</li>
                     </ul>
                     <table class="cronograma">
                         <thead>

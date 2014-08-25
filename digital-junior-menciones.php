@@ -25,9 +25,9 @@
                 <div class="column medium-9 pricipal">
                     <h1>Menciones de honor</h1>
                     <ul class="breadcrumbs">
-                        <li><a href="#">Programa para escuelas</a></li>
-                        <li><a href="#">Digital Junior</a></li>
-                        <li>Menciones de Honor</li>
+                        <li>Programa para escuelas</li>
+                        <li><a href="digital-junior-informacion.php">Digital Junior</a></li>
+                        <li class="actual">Menciones de Honor</li>
                     </ul>
                    <p>PROXIMAMENTE</p>
                 </div>

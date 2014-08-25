@@ -23,11 +23,11 @@
             </div>
             <div class="row contenedor">
                 <div class="column medium-9 pricipal">
-                    <h1>Capacitación Virtual</h1>
+                    <h1>Capacitación Docente</h1>
                     <ul class="breadcrumbs">
-                        <li><a href="#">Programa para escuelas</a></li>
-                        <li><a href="#">Digital Junior</a></li>
-                        <li>Capacitación Virtual</li>
+                        <li>Programa para escuelas</li>
+                        <li><a href="digital-junior-informacion.php">Digital Junior</a></li>
+                        <li class="actual">Capacitación Docente</li>
                     </ul>
                     <p>Las actividades desarrolladas por el Departamento de Aprendizaje Visual, en el marco del Programa Digital Junior, se inspiran en nuestro convencimiento de que implementar tecnología en la escuela va más allá de que los alumnos cursen la asignatura Computación. Implica comprender los nuevos códigos digitales que manejan los alumnos y hacer un aprovechamiento positivo de los mismos, incorporando hábitos digitales en el proceso de enseñanza y aprendizaje.</p>
                     <p>A través de nuestros talleres de capacitación docente nos proponemos acercarles nuevas tecnologías para el trabajo en el aula, ideas de aplicación y asesoramiento para su implementación. Permitiendo de este modo a los colegios diseñar un plan tecnológico, acorde a las necesidades actuales.</p>
