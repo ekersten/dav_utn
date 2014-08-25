@@ -228,4 +228,58 @@ section.digital-junior {
 			
 		}
 	}
+	/* gestion */
+	&.gestion {
+		@color-borde: lighten(@gris-claro, 20%);
+		@border-radius: .5rem;
+		.botonera {
+			padding-right: 0;
+			z-index: 200;
+			position: relative;
+			right: -1px;
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				li {
+					background: darken(@subnav_tabs_gris, 8%);
+					padding: 1rem;
+					font-size: .9rem;
+					border-top-left-radius: @border-radius;
+					border-bottom-left-radius: @border-radius;
+					margin-bottom: .2rem;
+					border-right: 1px solid @color-borde;
+
+					&.activo {
+						background: @blanco;
+						border: 1px solid @color-borde;
+						border-right: none;
+					}
+
+					a {
+						display: block;
+						color: @gris-oscuro;
+						text-transform: uppercase;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		.contenido {
+			border: 1px solid @color-borde;
+			z-index: 100;
+			position: relative;
+			border-top-right-radius: @border-radius;
+			border-bottom-right-radius: @border-radius;
+			border-bottom-left-radius: @border-radius;
+			.seccion {
+				display: none;
+
+				h2 {
+					margin: 1rem 0;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
 }
