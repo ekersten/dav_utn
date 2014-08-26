@@ -257,13 +257,200 @@
                 <div class="column small-12">
                     <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4 grilla">
                         <li class="item">
-                            <h4 class="titulo">Desarrollo de evaluaciones interactivas</h4>
+                            <h4 class="titulo">Programación en Viasual Basic.NET</h4>
                             <div class="imagen">
-                                <img src="http://placehold.it/320x320" />
+                                <img src="img/capacitacion/visual.jpg" width="320" />
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="column small-12">
+                                            <p>Los docentes podrán familiarizarse con este lenguaje de programación orientado a objetos, y aprender a utilizar pedagógicamente los recursos tecnológicos que ofrece.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column small-6 text-left"><p><strong>Duración:</strong><br/>4 días</p></div>
+                                        <div class="column small-6 text-right"><p><strong>Modalidad:</strong><br/>Presencial</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <h4 class="titulo">Scratch</h4>
+                            <div class="imagen">
+                                <img src="img/capacitacion/scratch.jpg" width="320" />
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="column small-12">
+                                            <p>Esta herramienta está pensada para acercar la lógica de la programación a alumnos de 10 a 14 años. A partir de una interfaz iconográfica permite programar animaciones, juegos y actividades.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column small-6 text-left"><p><strong>Duración:</strong><br/>2 meses</p></div>
+                                        <div class="column small-6 text-right"><p><strong>Modalidad:</strong><br/>Virtual con tutoría</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <h4 class="titulo">App Inventor</h4>
+                            <div class="imagen">
+                                <img src="img/capacitacion/appinventor.jpg" width="320" />
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="column small-12">
+                                            <p>Esta herramienta es la secuencia de Scratch. Su capacitación tiene como objetivo guiar a los docentes para que puedan lograr el desarrollo de aplicaciones móviles junto a los alumnos de 15 a 17 años.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column small-6 text-left"><p><strong>Duración:</strong><br/>2 días</p></div>
+                                        <div class="column small-6 text-right"><p><strong>Modalidad:</strong><br/>Presencial</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <h4 class="titulo">Premier</h4>
+                            <div class="imagen">
+                                <img src="img/capacitacion/premier.jpg" width="320" />
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="column small-12">
+                                            <p>El taller brinda un acercamiento a este editor de videos, que brinda la posibilidad de integrar distintos formatos multimedia, lo que le permitirá generar actividades que estimulen el desarrollo de la creatividad de sus alumnos.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column small-6 text-left"><p><strong>Duración:</strong><br/>1 día</p></div>
+                                        <div class="column small-6 text-right"><p><strong>Modalidad:</strong><br/>Presencial</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <h4 class="titulo">In Desing</h4>
+                            <div class="imagen">
+                                <img src="img/capacitacion/indesign.jpg" width="320" />
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="column small-12">
+                                            <p>Esta herramienta de diseño y maquetación editorial le permitirá producir documentos en los que se integren textos y gráficos de manera fàcil y dinámica, lo que lo convierte en una aplicación ideal para realizar proyectos editoriales con los alumnos, como ser la revista del colegio.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column small-6 text-left"><p><strong>Duración:</strong><br/>1 día</p></div>
+                                        <div class="column small-6 text-right"><p><strong>Modalidad:</strong><br/>Presencial</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <h4 class="titulo">Herramientas Google</h4>
+                            <div class="imagen">
+                                <img src="img/capacitacion/google.jpg" width="320" />
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="column small-12">
+                                            <p>El curso aborda tres herramientas gratuitas de Google que pueden usarse en el ámbito educativo: Google Calendar, una agenda virtual que puede convertirse en agenda institucional; Google Docs, un espacio para compartir documentos y editarlos cooperativamente; y Google Grupos, una comunidad virtual muy simple de usar para la interacción entre docentes, alumnos y/o padres.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column small-6 text-left"><p><strong>Duración:</strong><br/>2 meses</p></div>
+                                        <div class="column small-6 text-right"><p><strong>Modalidad:</strong><br/>Autoformación</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <h4 class="titulo">Creación de Videotutoriales</h4>
+                            <div class="imagen">
+                                <img src="img/capacitacion/videotutoriales.jpg" width="320" />
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="column small-12">
+                                            <p>El objetivo general de este proyecto es capacitar a los docentes en la elaboración de Videotutoriales con herramientas comúnes y gratuitas. Se pretende que reconozca y comprenda y pueda instrumentar distintas formas de presentación de la información.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column small-6 text-left"><p><strong>Duración:</strong><br/>1 mes</p></div>
+                                        <div class="column small-6 text-right"><p><strong>Modalidad:</strong><br/>Autoformación</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <h4 class="titulo">Blog en el Aula</h4>
+                            <div class="imagen">
+                                <img src="img/capacitacion/blog.jpg" width="320" />
                                 <div class="info">
                                     <div class="row">
                                         <div class="column small-12">
                                             <p>Este taller acerca a los docentes distintas posibilidades que brindan los blogs en el ámbito educativo. El mismo realiza un recorrido partiendo desde la creación del blog, y continuando por el agregado de diferentes recursos que suman riqueza para el aprendizaje de los alumnos.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column small-6 text-left"><p><strong>Duración:</strong><br/>1 mes</p></div>
+                                        <div class="column small-6 text-right"><p><strong>Modalidad:</strong><br/>Autoformación</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                         <li class="item">
+                            <h4 class="titulo">Creación de Wikis</h4>
+                            <div class="imagen">
+                                <img src="img/capacitacion/wiki.jpg" width="320" />
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="column small-12">
+                                            <p>El objetivo de este curso es acercar a los docentes a apreciar y ejercitar sobre las distintas posibilidades que brindan las Wikis en el ámbito educativo.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column small-6 text-left"><p><strong>Duración:</strong><br/>1 mes</p></div>
+                                        <div class="column small-6 text-right"><p><strong>Modalidad:</strong><br/>Autoformación</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <h4 class="titulo">Desarrollo de evaluaciones interactivas</h4>
+                            <div class="imagen">
+                                <img src="img/capacitacion/evaluaciones.jpg" width="320" />
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="column small-12">
+                                            <p>A partir de este curso los docentes podrán armar sus propias evaluaciones interactivas en formato Web. La herramienta que se utilizará les permitirá trabajar con diferentes opciones, como multiples respuestas, completar, correspondencia, etc.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column small-6 text-left"><p><strong>Duración:</strong><br/>1 mes</p></div>
+                                        <div class="column small-6 text-right"><p><strong>Modalidad:</strong><br/>Autoformación</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <h4 class="titulo">Aplicaciones Google Earth</h4>
+                            <div class="imagen">
+                                <img src="img/capacitacion/earth.jpg" width="320" />
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="column small-12">
+                                            <p>Con este taller los docentes conocerán el funcionamiento de un programa informático que permite visualizar imágenes del planeta en 3D, combinando imágenes de satélite, mapas y el motor de búsqueda de Google.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column small-6 text-left"><p><strong>Duración:</strong><br/>1 mes</p></div>
+                                        <div class="column small-6 text-right"><p><strong>Modalidad:</strong><br/>Autoformación</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <h4 class="titulo">Diseño de aplicaciones en JClic</h4>
+                            <div class="imagen">
+                                <img src="img/capacitacion/jclic.jpg" width="320" />
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="column small-12">
+                                            <p>JClic es un entorno para la creación, realización y evaluación de actividades educativas multimedia, desarrollado en la plataforma Java.</p>
                                         </div>
                                     </div>
                                     <div class="row">
