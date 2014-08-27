@@ -27,7 +27,7 @@
                             <div class="contenido">
                                 <div class="interno">
                                     <h1>Digital Junior</h1>
-                                    <p>Proyecto de Certificación de Conocimientos Informaticos<br/>"Mucho más que rendir un examen"</p>
+                                    <p>Proyecto de Certificación de Conocimientos Informaticos.<br/>"Mucho más que rendir un examen".</p>
                                     <a href="digital-junior-informacion.php" class="boton">Conocer más</a>
                                 </div>
                             </div>
@@ -37,14 +37,61 @@
                 </div>
                 <!-- slide end -->
                 <!-- slide start -->
-                <div class="slide" style="background-image: url('img/home_dj.jpg');">
+                <div class="slide" style="background-image: url('img/home_ciudadania.jpg');">
                     <div class="row">
                         <div class="column medium-4 medium-push-8">
                             <div class="contenido">
                                 <div class="interno">
-                                    <h1>Digital Junior</h1>
-                                    <p>Proyecto de Certificación de Conocimientos Informaticos<br/>"Mucho más que rendir un examen"</p>
-                                    <a href="digital-junior-informacion.php" class="boton">Conocer más</a>
+                                    <h1>Ciudadania Digital</h1>
+                                    <p>Es un espacio formulado para la concientización en materia de Uso responsable de Internet y las Nuevas Tecnologías.</p>
+                                    <a href="ciudadania-informacion.php" class="boton">Conocer más</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- slide end -->
+                <div class="slide" style="background-image: url('img/home_entropia.jpg');">
+                    <div class="row">
+                        <div class="column medium-4 medium-push-8">
+                            <div class="contenido">
+                                <div class="interno">
+                                    <h1>Entropia</h1>
+                                    <p>Es un programa de capacitación y nivelación.</p>
+                                    <a href="entropia.php" class="boton">Conocer más</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- slide end -->
+                <!-- slide end -->
+                <div class="slide" style="background-image: url('img/home_escuela.jpg');">
+                    <div class="row">
+                        <div class="column medium-4 medium-push-8">
+                            <div class="contenido">
+                                <div class="interno">
+                                    <h1>Escuela 2.0</h1>
+                                    <p>Pensado para transformar la Escuela valiéndose del potencial de las nuevas tecnologías.</p>
+                                    <a href="escuela-informacion.php" class="boton">Conocer más</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- slide end -->
+                <!-- slide end -->
+                <div class="slide" style="background-image: url('img/home_kimtech.jpg');">
+                    <div class="row">
+                        <div class="column medium-4 medium-push-8">
+                            <div class="contenido">
+                                <div class="interno">
+                                    <h1>Kimtech</h1>
+                                    <p>Programa de Capacitación y Certificación en Robótica Educativa que desarrollan alumnos y profesores del colegio.</p>
+                                    <a href="kimtech-informacion.php" class="boton">Conocer más</a>
                                 </div>
                             </div>
                             
@@ -58,19 +105,19 @@
                     <p class="icon"><span class="icon-user"></span></p>
                     <h2>Quienes Somos</h2>
                     <p class="texto">Una educacion media pensada en el marco señalado hace necesario el compromiso de los directivos y docentes de asumir nuevos roles para los cen-.</p>
-                    <p class="cta"><a href="#">ver <span class="mas">+</span></a></p>
+                    <p class="cta"><a href="quienes_somos.php">ver <span class="mas">+</span></a></p>
                 </div>
                 <div class="column medium-4">
                     <p class="icon"><span class="icon-book"></span></p>
                     <h2>Programas para<br/>escuelas</h2>
                     <p class="texto">DAV se crea en la UTN.BA en el año 2002, con la misión de dar soluciones en Nuevas Tecnologías Aplicadas a la Educación de toda la Comunidad Educativa.</p>
-                    <p class="cta"><a href="#">ver <span class="mas">+</span></a></p>
+                    <p class="cta"><a href="digital-junior-informacion.php">ver <span class="mas">+</span></a></p>
                 </div>
                 <div class="column medium-4">
                     <p class="icon"><span class="icon-copy"></span></p>
                     <h2>Programa de Entes de<br/>Gobierno y R.S.E.</h2>
                     <p class="texto">Una educacion media pensada en el marco señalado hace necesario el compromiso de los directivos y docentes de asumir nuevos roles para los cen-.</p>
-                    <p class="cta"><a href="#">ver <span class="mas">+</span></a></p>
+                    <p class="cta"><a href="modelo1a1.php">ver <span class="mas">+</span></a></p>
                 </div>
             </div>
         </section>
