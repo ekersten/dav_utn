@@ -44,7 +44,7 @@ section.home {
 			.row {
 				min-height: 488px;
 				height: 488px;
-
+				
 				.column:first-child {
 					padding-left: 0;
 				}
@@ -70,6 +70,7 @@ section.home {
 							color: @gris-oscuro;
 							text-transform: uppercase;
 							font-size: 2.5rem;
+							line-height: 2.7rem;
 						}
 
 						p {
@@ -151,6 +152,27 @@ section.home {
 						bottom: 7px;
 					}
 				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1230px) {
+	section.home {
+		.cycle-slideshow {
+			.cycle-prev, .cycle-next {
+				top: auto;
+				bottom: .5rem;
+				left: 50%;
+				right: 50%;
+			}
+
+			.cycle-prev {
+				margin-left: -3rem;
+			}
+
+			.cycle-next {
+				margin-left: 3rem;
 			}
 		}
 	}
