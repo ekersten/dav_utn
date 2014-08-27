@@ -86,7 +86,7 @@
 			<table>
 				<tr>
 					<td>
-						<a href="digital-junior-gestion.php">
+						<a href="digital-junior-gestion-login.php">
 							<span class="icon icon-calendar"></span>
 							<span class="text">Gestión de fechas</span>
 						</a>

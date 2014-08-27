@@ -18,25 +18,39 @@
         <?php include("includes/header.php"); ?>
         <section class="tpl-2-col digital-junior">
             <div class="header-image"></div>
-            <div class="subnav" data-activa="5">
+            <div class="subnav" data-activa="6">
                 <?php include("includes/tabs/digital-junior.php"); ?>
             </div>
             <div class="row contenedor">
                 <div class="column medium-9 pricipal">
-                    <h1>Capacitación Docente</h1>
+                    <h1>Reserva de fechas de examen</h1>
                     <ul class="breadcrumbs">
                         <li>Programa para escuelas</li>
                         <li><a href="digital-junior-informacion.php">Digital Junior</a></li>
-                        <li class="actual">Capacitación Docente</li>
+                        <li class="actual">Gestión de fechas</li>
                     </ul>
-                    <p>Las actividades desarrolladas por el Departamento de Aprendizaje Visual, en el marco del Programa Digital Junior, se inspiran en nuestro convencimiento de que implementar tecnología en la escuela va más allá de que los alumnos cursen la asignatura Computación. Implica comprender los nuevos códigos digitales que manejan los alumnos y hacer un aprovechamiento positivo de los mismos, incorporando hábitos digitales en el proceso de enseñanza y aprendizaje.</p>
-                    <p>A través de nuestros talleres de capacitación docente nos proponemos acercarles nuevas tecnologías para el trabajo en el aula, ideas de aplicación y asesoramiento para su implementación. Permitiendo de este modo a los colegios diseñar un plan tecnológico, acorde a las necesidades actuales.</p>
-                    <p>Los colegios que forman parte de nuestra comunidad a través del Programa Digital Junior, pueden participar de todos los eventos y capacitaciones virtuales propuestos a continuación en forma totalmente gratuita.</p>
-                    <p><a class="descargar" href="digital-junior-cronograma.php">Ver detalles de la Capacitación</a>
-                   <a class="descargar" href="http://dav.sceu.frba.utn.edu.ar/campusvirtual/login/index.php" target="_blank">Acceder a los talleres</a></p>
+                    <p>Mediante la presente sección podrán informarse respecto de la organización de las fechas de examen reservadas por el colegio. Consultar el estado de la documentación previa que su colegio debe remitir e informarse sobre la asignación de horarios y profesores a sus fechas de examen.</p>
+                   <form action="digital-junior-gestion.php" method="post">
+                        <div class="row">
+                            <div class="column medium-6">
+                                <p>
+                                    <label>Nombre de Usuario</label>
+                                    <input type="text" name="nombre" value="" required>
+                                </p>
+                                <p>
+                                    <label>Contraseña</label>
+                                    <input type="password" name="clave" value="" required>
+                                </p>
+                                <p class="botones">
+                                    <input type="submit" name="" value="Ingresar">
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </form>
                 </div>
                 <div class="column medium-3 secundario">
-                    <div class="video">
+                   <div class="video">
                         <a href="https://www.youtube.com/watch?v=-dxWBb0NVbo" class="fancybox-media"><img src="img/video_dj.jpg" alt=""> </a>
                     </div>
                     <p>El Programa <em>Digital Junior</em> le brinda los siguientes <strong>BENEFICIOS</strong></p>

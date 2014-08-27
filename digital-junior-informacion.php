@@ -25,9 +25,9 @@
 				<div class="column medium-9 pricipal">
 					<h1>Información General</h1>
 					<ul class="breadcrumbs">
-						<li><a href="#">Programa para escuelas</a></li>
-						<li><a href="#">Digital Junior</a></li>
-						<li>Información General</li>
+						<li>Programa para escuelas</li>
+						<li><a href="digital-junior-informacion.php">Digital Junior</a></li>
+						<li class="actual">Información General</li>
 					</ul>
 					<blockquote>Proyecto de Certificación de Conocimientos Informáticos<br/>&ldquo;Mucho más que rendir un examen&rdquo;</blockquote>
 					<p>Para nosotros la certificación en informática de los alumnos no es sólo tomar un examen, sino colaborar con Uds. en el tránsito de un proceso, con el propósito de incorporar los mejores contenidos y medios para la apropiación de la tecnología. Dicho camino les permitirá desarrollar un proyecto informático acorde al actual avance científico-tecnológico y generar un contexto que garantice la excelencia de los conocimientos de sus alumnos.</p>

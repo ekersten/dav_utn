@@ -16,57 +16,31 @@
     </head>
     <body>
         <?php include("includes/header.php"); ?>
-        <section class="tpl-2-col digital-junior">
+        <section class="tpl-2-col digital-junior gestion">
             <div class="header-image"></div>
             <div class="subnav" data-activa="6">
                 <?php include("includes/tabs/digital-junior.php"); ?>
             </div>
             <div class="row contenedor">
-                <div class="column medium-9 pricipal">
-                    <h1>Reserva de fechas de examen</h1>
-                    <ul class="breadcrumbs">
-                        <li>Programa para escuelas</li>
-                        <li><a href="digital-junior-informacion.php">Digital Junior</a></li>
-                        <li class="actual">Gestión de fechas</li>
-                    </ul>
-                    <p>Mediante la presente sección podrán informarse respecto de la organización de las fechas de examen reservadas por el colegio. Consultar el estado de la documentación previa que su colegio debe remitir e informarse sobre la asignación de horarios y profesores a sus fechas de examen.</p>
-                   <form action="#" method="post">
-                        <div class="row">
-                            <div class="column medium-6">
-                                <p>
-                                    <label>Nombre de Usuario</label>
-                                    <input type="text" name="nombre" value="" required>
-                                </p>
-                                <p>
-                                    <label>Contraseña</label>
-                                    <input type="password" name="clave" value="" required>
-                                </p>
-                                <p class="botones">
-                                    <input type="submit" name="" value="Ingresar">
-                                   
-                                </p>
-                            </div>
-                        </div>
-                        
-                    </form>
-                </div>
-                <div class="column medium-3 secundario">
-                   <div class="video">
-                        <a href="https://www.youtube.com/watch?v=-dxWBb0NVbo" class="fancybox-media"><img src="img/video_dj.jpg" alt=""> </a>
-                    </div>
-                    <p>El Programa <em>Digital Junior</em> le brinda los siguientes <strong>BENEFICIOS</strong></p>
+                <div class="column medium-3 botonera">
                     <ul>
-                        <li>Contenidos Actualizados</li>
-                        <li>Capacitación docente</li>
-                        <li>Materiales de estudio</li>
-                        <li>Certificación de conocimientos</li>
-                        <li>Asesoramiento</li>
+                        <li><a href="#" data-seccion="reservar">Reservar Fecha</a></li>
+                        <li><a href="#" data-seccion="enviar">Enviar Documentacion</a></li>
+                        <li><a href="#" data-seccion="horarios">Organización Horaria</a></li>
+                        <li><a href="#" data-seccion="encuesta">Encuesta</a></li>
                     </ul>
+                </div>
+                <div class="column medium-9 contenido">
+                    <div class="seccion" id="reservar"><?php include("includes/gestion/reservar.php"); ?></div>
+                    <div class="seccion" id="enviar"><?php include("includes/gestion/enviar.php"); ?></div>
+                    <div class="seccion" id="horarios"><?php include("includes/gestion/horarios.php"); ?></div>
+                    <div class="seccion" id="encuesta"><?php include("includes/gestion/encuesta.php"); ?></div>
                 </div>
             </div>
         </section>
         <?php include("includes/footer.php"); ?>
         <!-- local scripts -->
         <script src="js/tabs.js"></script>
+        <script src="js/gestion.js"></script>
     </body>
 </html>

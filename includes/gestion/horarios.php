@@ -1,6 +1,19 @@
-<h2>horarios</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquid ut recusandae deserunt possimus, eveniet amet, ratione odio delectus non pariatur dicta voluptatem consequatur natus iure nobis cum asperiores laborum.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquid ut recusandae deserunt possimus, eveniet amet, ratione odio delectus non pariatur dicta voluptatem consequatur natus iure nobis cum asperiores laborum.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquid ut recusandae deserunt possimus, eveniet amet, ratione odio delectus non pariatur dicta voluptatem consequatur natus iure nobis cum asperiores laborum.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquid ut recusandae deserunt possimus, eveniet amet, ratione odio delectus non pariatur dicta voluptatem consequatur natus iure nobis cum asperiores laborum.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquid ut recusandae deserunt possimus, eveniet amet, ratione odio delectus non pariatur dicta voluptatem consequatur natus iure nobis cum asperiores laborum.</p>
+<h2>Organización horaria</h2>
+<h3>Organización de las Fechas de Examen</h3>
+<p>Aquí podrá confirmar los horarios pautados para la fecha de examen, la organización en lo que respecta a los turnos y los docentes que tomarán los exámenes al colegio.</p>
+<p>Actualizado al :	25/08/2014 </p>
+
+<table>
+	<tr>
+		<td>Fecha</td>
+		<td>Horario</td>
+		<td>Organización</td>
+		<td>Docente</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>2</td>
+		<td>3</td>
+		<td>4</td>
+	</tr>
+</table>
