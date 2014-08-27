@@ -25,8 +25,8 @@
 				<div class="column medium-9 pricipal">
 					<h1>Modelo 1 a 1</h1>
 					<ul class="breadcrumbs">
-						<li><a href="#">Programa de Entes de Gobierno y R.S.E</a></li>
-						<li>Modelo 1 a 1</li>
+						<li><a href="modelo1a1.php">Programa de Entes de Gobierno y R.S.E</a></li>
+						<li class="actual">Modelo 1 a 1</li>
 						<!-- <li>Información General</li> -->
 					</ul>
 					<p>Las nuevas  tecnologías  son uno de los medios que más han  contribuido a  la globalización actual,  a los cambios vertiginosos y permanentes, y es por eso que su integración en la educación se ha convertido en un reto. Para generar una correcta integración de las TIC en los comienzos de la segunda década del siglo XXI es fundamental e inaplazable la formación de los docentes de cualquier área y nivel educativo. </p>
