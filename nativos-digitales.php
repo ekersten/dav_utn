@@ -25,8 +25,8 @@
 				<div class="column medium-9 pricipal">
 					<h1>Nativos Digitales</h1>
 					<ul class="breadcrumbs">
-						<li><a href="#">Programa de Entes de Gobierno y R.S.E</a></li>
-						<li>Nativos Digitales</li>
+						<li><a href="modelo1a1.php">Programa de Entes de Gobierno y R.S.E</a></li>
+						<li class="actual">Nativos Digitales</li>
 						<!-- <li>Información General</li> -->
 					</ul>
 					<p>Este programa está basado en DOS principios:</p>
