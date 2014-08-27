@@ -25,8 +25,8 @@
 				<div class="column medium-9 pricipal">
 					<h1>ENTROPIA</h1>
 					<ul class="breadcrumbs">
-						<li><a href="#">Programa de Entes de Gobierno y R.S.E</a></li>
-						<li>Entropia</li>
+						<li><a href="modelo1a1.php">Programa de Entes de Gobierno y R.S.E</a></li>
+						<li class="actual">Entropia</li>
 						<!-- <li>Información General</li> -->
 					</ul>
 					<p>Entropía es un programa de capacitación y nivelación, orientado a estudiantes que se encuentran cursando el último año del nivel secundario en escuelas públicas, que propone una transformación y evolución de los procesos tradicionales de enseñanza y aprendizaje en Ciencias Básicas. Este programa es desarrollado por el DAV, en conjunto con  el  Área de Desarrollo Social de la Secretaría de Cultura y Extensión Universitaria.</p>
