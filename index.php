@@ -52,22 +52,7 @@
                     </div>
                 </div>
                 <!-- slide end -->
-                <div class="slide" style="background-image: url('img/home_entropia.jpg');">
-                    <div class="row">
-                        <div class="column medium-4 medium-push-8">
-                            <div class="contenido">
-                                <div class="interno">
-                                    <h1>Entropia</h1>
-                                    <p>Es un programa de capacitación y nivelación.</p>
-                                    <a href="entropia.php" class="boton">Conocer más</a>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <!-- slide end -->
-                <!-- slide end -->
+                <!-- slide start -->
                 <div class="slide" style="background-image: url('img/home_escuela.jpg');">
                     <div class="row">
                         <div class="column medium-4 medium-push-8">
@@ -83,7 +68,7 @@
                     </div>
                 </div>
                 <!-- slide end -->
-                <!-- slide end -->
+                <!-- slide start -->
                 <div class="slide" style="background-image: url('img/home_kimtech.jpg');">
                     <div class="row">
                         <div class="column medium-4 medium-push-8">
@@ -92,6 +77,22 @@
                                     <h1>Kimtech</h1>
                                     <p>Programa de Capacitación y Certificación en Robótica Educativa que desarrollan alumnos y profesores del colegio.</p>
                                     <a href="kimtech-informacion.php" class="boton">Conocer más</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- slide end -->
+                 <!-- slide start -->
+                <div class="slide" style="background-image: url('img/home_entropia.jpg');">
+                    <div class="row">
+                        <div class="column medium-4 medium-push-8">
+                            <div class="contenido">
+                                <div class="interno">
+                                    <h1>Entropia</h1>
+                                    <p>Es un programa de capacitación y nivelación.</p>
+                                    <a href="entropia.php" class="boton">Conocer más</a>
                                 </div>
                             </div>
                             
