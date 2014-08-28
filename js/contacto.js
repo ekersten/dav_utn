@@ -1,0 +1,3 @@
+(function($){
+	$('#formulariocontacto').validate();
+})(jquery);

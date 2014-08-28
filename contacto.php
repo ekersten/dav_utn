@@ -7,7 +7,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title>Contacto - DAV UTN</title>
-		<meta name="description" content="">
+		<meta name="description" content="Ing. Jorge Alfredo Almiña,Ing. Soledad Grisel Corrales,Medrano 951 2º piso - Capital Federal, Teléfonos: 4867-7565/7545  ">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
 		<link rel="stylesheet" href="css/dav.css">
@@ -25,7 +25,7 @@
 							<h1>Contacto</h1>
 						</div>
 					</div>
-					<form action="envio.php" method="post">
+					<form id="formulariocontacto" class="formulario" action="envio.php" method="post">
 						<div class="row">
 							<div class="column medium-6">
 								<p>
@@ -74,14 +74,13 @@
 					<p>Medrano 951 2º piso - Capital Federal <br/>
 					Teléfonos: 4867-7565/7545<br/>
 					<a href="mailto:dav@sceu.frba.utn.edu.ar">dav@sceu.frba.utn.edu.ar</a></p>
-										
-
-					
 				</div>
 			</div>
 		</section>
 		<?php include("includes/footer.php"); ?>
 		<!-- local scripts -->
-		
+		<script src="js/validate/jquery.validate.min.js"></script>
+		<script src="js/validate/messages_es.js"></script>
+		<script src="js/contacto.js"></script>
 	</body>
 </html>
