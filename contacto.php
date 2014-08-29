@@ -50,6 +50,19 @@
 									<label>Ciudad</label>
 									<input type="text" name="ciudad" value="" required>
 								</p>
+								<p>
+									<label>Programa</label>
+									<select name="programa" required>
+										<option value="Digital Junior">Digital Junior</option>
+										<option value="Ciudadanía Digital">Ciudadanía Digital</option>
+										<option value="KimTech">KimTech</option>
+										<option value="Escuela 2.0">Escuela 2.0</option>
+										<option value="Modelo 1 a 1">Modelo 1 a 1</option>
+										<option value="Entropía">Entropía</option>
+										<option value="Profesores para el Futuro">Profesores para el Futuro</option>
+										<option value="Nativos Digitales">Nativos Digitales</option>
+									</select>
+								</p>
 								<p class="alto">
 									<label>Consulta</label>
 									<textarea name="consulta" required></textarea>
