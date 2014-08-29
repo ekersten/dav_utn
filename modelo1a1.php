@@ -7,7 +7,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title>Modelo 1 a 1 - DAV UTN</title>
-		<meta name="description" content="">
+		<meta name="description" content="Las nuevas tecnologías son uno de los medios que más han contribuido a la globalización actual, a los cambios vertiginosos y permanentes, y es por eso que su integración en la educación se ha convertido en un reto. Para generar una correcta integración de las TIC en los comienzos de la segunda década del siglo XXI es fundamental e inaplazable la formación de los docentes de cualquier área y nivel educativo.">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
 		<link rel="stylesheet" href="css/dav.css">
