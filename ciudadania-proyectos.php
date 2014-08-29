@@ -33,17 +33,10 @@
 					<p>A lo largo del curso hemos interactuado con los alumnos, proponiéndoles tópicos para la reflexión y el intercambio de opiniones entre pares, contenidos de formación e instancias de autoevaluación, desarrollo de trabajos de investigación, tareas individuales y colaborativas. Ejemplo de lo realizado, son los trabajos presentados por los alumnos en las clases. Algunos de los cuales queremos compartir con Uds.</p>
 				</div>
 				<div class="column medium-3 secundario">
-					<div class="video">
+					 <div class="video">
                         <a href="https://www.youtube.com/watch?v=mUJOdMNVtxA" class="fancybox-media"><img src="img/video_ciudadania.jpg" alt=""> </a>
                     </div>
-					<p>El Programa <em>Digital Junior</em> le brinda los siguientes <strong>BENEFICIOS</strong></p>
-					<ul>
-						<li>Contenidos Actualizados</li>
-						<li>Capacitación docente</li>
-						<li>Materiales de estudio</li>
-						<li>Certificación de conocimientos</li>
-						<li>Asesoramiento</li>
-					</ul>
+					<p><em>Ciudadanía Digital</em> permite a los alumnos conocer las normas que rigen el buen uso de las NTICs, mientras aprenden los fundamentos del E-learning, interactuado en la plataforma Moodle y utilizando múltiples herramientas Web 2.0</p>
 				</div>
 			</div>
 		</section>

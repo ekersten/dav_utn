@@ -24,7 +24,7 @@
 					<td>
 						<a href="ciudadania-opinion.php">
 							<span class="icon icon-bubbles"></span>
-							<span class="text">Opinion alumnos</span>
+							<span class="text">Experiencias</span>
 						</a>
 					</td>
 				</tr>
