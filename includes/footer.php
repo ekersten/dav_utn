@@ -3,7 +3,7 @@
         <div class="column small-12">
             <div class="col"><a href="#"><img src="img/logo_utn.png" width="80" alt="Universidad Tecnológica Nacional"/></a></div>
             <div class="col texto"><p>UTN.BA Departamento de Aprendizaje Visual<br/>Facultad Regional de Buenos Aires<br/>Secretaría de Cultura y Extensión Universitaria</p></div>
-            <div class="col texto"><p>Av. Medrano 951 2&ordm; Piso<br/>Horario de Atención: Lunes a Viernes de 9 a 15 Hs.<br/>Teléfonos: (011) 4867-7565 / 7545</p></div>
+            <div class="col texto"><p>Av. Medrano 951 2&ordm; Piso - oficina 10<br/>Horario de Atención: Lunes a Viernes de 9 a 16 Hs.<br/>Teléfonos: (011) 4867-7565 / 7545</p></div>
         </div>
     </div>
 </footer>
