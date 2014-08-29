@@ -7,7 +7,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title>Profesores para Futuro - DAV UTN</title>
-		<meta name="description" content="">
+		<meta name="description" content="Es un programa que se propone brindar la capacidad de desarrollar material educativo multimedia de características interactivas para poder ser utilizado a través de soportes off line u on line, soportado en base a software libre.">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
 		<link rel="stylesheet" href="css/dav.css">
