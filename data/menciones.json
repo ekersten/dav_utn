@@ -2,7 +2,36 @@
 	"titulo": "Menciones 2013",
 	"texto": "Extendemos nuestras felicitaciones no sólo a los alumnos, sino a las autoridades y profesores de todos los colegios participantes",
 	"cover": {
-		"foto": "http://placehold.it/500x200?text=Foto del Aula Manga",
+		"src": "http://placehold.it/500x200?text=Foto del Aula Manga",
 		"texto": "Aula Magna"
-	}
+	},
+	"fotos": [
+		{
+			"src": "http://placehold.it/1024x768",
+			"colegio": "Colegio Test"
+		},
+		{
+			"src": "http://placehold.it/1024x768",
+			"colegio": "Colegio Test",
+			"ubicacion": "Capital Federal"
+		},
+		{
+			"src": "http://placehold.it/1024x768",
+			"colegio": "Colegio Test",
+			"ubicacion": "Capital Federal",
+			"mencion": "Mención de honor"
+		},
+		{
+			"src": "http://placehold.it/1024x768",
+			"colegio": "Colegio Test"
+		},
+		{
+			"src": "http://placehold.it/1024x768",
+			"colegio": "Colegio Test"
+		},
+		{
+			"src": "http://placehold.it/1024x768",
+			"colegio": "Colegio Test"
+		}
+	]
 }
