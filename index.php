@@ -84,6 +84,22 @@
                     </div>
                 </div>
                 <!-- slide end -->
+                <!-- slide start -->
+                <div class="slide" style="background-image: url('img/home_modelo1a1.jpg');">
+                    <div class="row">
+                        <div class="column medium-4 medium-push-8">
+                            <div class="contenido">
+                                <div class="interno">
+                                    <h1>Modelo 1 a 1</h1>
+                                    <p>Es un programa de capacitación y nivelación.</p>
+                                    <a href="entropia.php" class="boton">Conocer más</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- slide end -->
                  <!-- slide start -->
                 <div class="slide" style="background-image: url('img/home_entropia.jpg');">
                     <div class="row">
@@ -91,7 +107,7 @@
                             <div class="contenido">
                                 <div class="interno">
                                     <h1>Entropia</h1>
-                                    <p>Es un programa de capacitación y nivelación.</p>
+                                    <p>Una propuesta de transformación y evolución de los procesos tradicionales de enseñanza y aprendizaje de las Ciencias Básicas.</p>
                                     <a href="entropia.php" class="boton">Conocer más</a>
                                 </div>
                             </div>
@@ -105,19 +121,19 @@
                 <div class="column medium-4">
                     <p class="icon"><span class="icon-user"></span></p>
                     <h2>Quienes Somos</h2>
-                    <p class="texto">Una educacion media pensada en el marco señalado hace necesario el compromiso de los directivos y docentes de asumir nuevos roles para los cen-.</p>
+                    <p class="texto">Un grupo de profesionales  técnicos y pedagógicos con más de 25 años de experiencia en el desarrollo de programas focalizados en tecnología y educación.</p>
                     <p class="cta"><a href="quienes_somos.php">ver <span class="mas">+</span></a></p>
                 </div>
                 <div class="column medium-4">
                     <p class="icon"><span class="icon-book"></span></p>
                     <h2>Programas para<br/>escuelas</h2>
-                    <p class="texto">DAV se crea en la UTN.BA en el año 2002, con la misión de dar soluciones en Nuevas Tecnologías Aplicadas a la Educación de toda la Comunidad Educativa.</p>
+                    <p class="texto">Proyectos de Tecnología y Educación para escuelas medias y primarias, a los que las institucio- nes se suscriben en forma privada para  participar junto a su comunidad educativa.</p>
                     <p class="cta"><a href="digital-junior-informacion.php">ver <span class="mas">+</span></a></p>
                 </div>
                 <div class="column medium-4">
                     <p class="icon"><span class="icon-copy"></span></p>
                     <h2>Programa de Entes de<br/>Gobierno y R.S.E.</h2>
-                    <p class="texto">Una educacion media pensada en el marco señalado hace necesario el compromiso de los directivos y docentes de asumir nuevos roles para los cen-.</p>
+                    <p class="texto">Programas de Tecnología y Educación desarrollados a pedido de entes de gobierno o patrocinados por empresas.</p>
                     <p class="cta"><a href="modelo1a1.php">ver <span class="mas">+</span></a></p>
                 </div>
             </div>
