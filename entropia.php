@@ -7,7 +7,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title>Entropia - DAV UTN</title>
-		<meta name="description" content="">
+		<meta name="description" content="Entropía es un programa de capacitación y nivelación, orientado a estudiantes que se encuentran cursando el último año del nivel secundario en escuelas públicas, que propone una transformación y evolución de los procesos tradicionales de enseñanza y aprendizaje en Ciencias Básicas. Este programa es desarrollado por el DAV, en conjunto con el Área de Desarrollo Social de la Secretaría de Cultura y Extensión Universitaria.">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
 		<link rel="stylesheet" href="css/dav.css">
