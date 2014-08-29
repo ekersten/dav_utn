@@ -5,26 +5,31 @@
 <a class="descargar" href="img/UTN-FRBA Procedimiento Pago.doc">Procedimiento Pago</a>
 <a class="descargar" href="img/UTN-FRBA _Normativas.doc">Normativas</a>
 <p>También deberán dejar constancia, una única vez en el año, de que han tomado conocimiento de las normativas de la UTN-FRBA</p>
-<form action="" method="" >
-	<input name="normativa" type="checkbox" value="" />	<p> A través del presente, confirmo que el colegio está notificado de las Pautas y Procedimientos establecidos por la UTN-FRBA para proceder con la Certificación de los conocimientos de Informática de loa alumnos del colegio participantes del Programa Digital Junior. De igual modo asiento que el colegio establecerá la forma para notificar a los alumnos participantes, sobre las consideraciones manifiestas en el mencionado procedimiento.</p>
+<form action="" method="" class="" >
+		<p><input name="normativa" type="checkbox" value="" /> A través del presente, confirmo que el colegio está notificado de las Pautas y Procedimientos establecidos por la UTN-FRBA para proceder con la Certificación de los conocimientos de Informática de loa alumnos del colegio participantes del Programa Digital Junior. De igual modo asiento que el colegio establecerá la forma para notificar a los alumnos participantes, sobre las consideraciones manifiestas en el mencionado procedimiento.</p>
 </form>
 
 
 <p>Actualizado al :	25/08/2014 </p>
 
-<table>
-	<tr>
-		<td>Fecha</td>
-		<td>Planilla</td>
-		<td>Pago</td>
-		<td>Normativas</td>
-	</tr>
-	<tr>
-		<td>1</td>
-		<td>2</td>
-		<td>3</td>
-		<td>4</td>
-	</tr>
+<table class="listado_reservas">
+	<thead>
+		<tr>
+			<th>Fecha</th>
+			<th>Planilla</th>
+			<th>Pago</th>
+			<th>Normativas</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+	</tbody>
+	
 </table>
 
 <h3>Estado del Pago:</h3>
