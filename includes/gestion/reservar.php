@@ -8,21 +8,25 @@ Una vez completada con los datos solicitados deben enviarla por mail a la siguie
 <h3>Listado de Reservas del Colegio :</h3>
 <p>Actualizado al: 25/08/2014</p>
 <table class="listado_reservas">
-  <tr>
-    <td rowspan="2">Fecha</td>
-    <td rowspan="2">Lugar</td>
-    <td colspan="2">Cupo Exámnes</td>
-    <td rowspan="2">Aplicaciones</td>
-  </tr>
-  <tr>
-    <td>Mínimo</td>
-    <td>Máximo</td>
-  </tr>
-  <tr>
-  	<td>1</td>
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-    <td>5</td>
-  </tr>
+	<thead>
+		<tr>
+			<th rowspan="2">Fecha</th>
+			<th rowspan="2">Lugar</th>
+			<th colspan="2">Cupo Exámnes</th>
+			<th rowspan="2">Aplicaciones</th>
+		</tr>
+		<tr>
+			<th class="fin">Mínimo</th>
+			<th class="fin">Máximo</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+		</tr>
+	</tbody>
 </table>
