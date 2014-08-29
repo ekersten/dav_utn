@@ -36,6 +36,7 @@
 										$telefono=$_POST['tel'];
 										$colegio=$_POST['colegio'];
 										$ciudad=$_POST['ciudad'];
+										$programa=$_POST['programa'];
 										$consulta=$_POST['consulta'];
 
 
@@ -51,12 +52,12 @@
 										$contenido.="Telefono: " . $telefono . "\r\n";
 										$contenido.="Colegio: " . $colegio . "\r\n";
 										$contenido.="Ciudad: " . $ciudad . "\r\n";
+										$contenido.="Programa: " . $programa . "\r\n";
 										$contenido.="Consulta: " . $consulta;
 
 										// primer mail
 										mail($destino,$asunto,$contenido,$remitente);
-										echo "Gracias por escribirnos. "<br/>".   
-										A la brevedad le responderemos ";
+										echo "Gracias por escribirnos. A la brevedad le responderemos ";
 									?>
 								</p>
 							</div>
