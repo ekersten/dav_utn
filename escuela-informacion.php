@@ -7,7 +7,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title>Escuela 2.0 - DAV UTN</title>
-		<meta name="description" content="">
+		<meta name="description" content="Escuela 2.0 pone el acento en trasformar la Escuela,  impulsado un cambio estructural a través del diseño nuevas estrategias pedagógicas aprovechando las NTICs y haciendo especial hincapié en la capacitación docente.">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
 		<link rel="stylesheet" href="css/dav.css">
@@ -47,14 +47,7 @@
 					<div class="video">
                         <a href="https://www.youtube.com/watch?v=sK2yxQDI0D0" class="fancybox-media"><img src="img/video_escuela.jpg" alt=""> </a>
                     </div>
-					<p>El Programa <em>Digital Junior</em> le brinda los siguientes <strong>BENEFICIOS</strong></p>
-					<ul>
-						<li>Contenidos Actualizados</li>
-						<li>Capacitación docente</li>
-						<li>Materiales de estudio</li>
-						<li>Certificación de conocimientos</li>
-						<li>Asesoramiento</li>
-					</ul>
+					<p><em>Escuela 2.0 </em>pone el acento en trasformar la Escuela,  impulsado un cambio estructural a través del diseño nuevas estrategias pedagógicas aprovechando las NTICs y haciendo especial hincapié en la capacitación docente.</p>
 				</div>
 			</div>
 		</section>
