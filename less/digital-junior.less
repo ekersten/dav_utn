@@ -6,9 +6,11 @@ section.digital-junior {
 	}
 	
 	/* color de la seccion */
-	h1,h2, em, a {
+	h1,h2, em, a, .destacado {
 		color: @naranja;
 	}
+
+
 
 	.breadcrumbs {
 		li.actual {
@@ -142,6 +144,8 @@ section.digital-junior {
 			}
 		}
 	}
+
+
 
 	/*formulario*/
 
@@ -316,7 +320,7 @@ section.digital-junior {
 			th {
 				font-weight: normal;
 				color: @blanco;
-				background: @azul;
+				background: @naranja;
 			}
 		}
 
@@ -338,12 +342,28 @@ section.digital-junior {
 				}
 			}
 		}
+		h4{
+			color: @naranja;
+			margin-top: 2rem;
+
+			span{
+				color:@gris;
+				font-size: 0.8rem;
+				font-style: normal;
+			}
+		}
 
 		span.bajada {
 			font-size: .7rem;
 			color: @gris-claro;
 			text-transform: uppercase;
 		}
+	}
+
+	textarea{
+		resize:none;
+		width: 100%;
+
 	}
 
 	ul.opciones {
