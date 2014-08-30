@@ -6,7 +6,7 @@
 		return this.height( Math.max.apply( this, maxHeight ) );
 	};
 
-	$('.tpl-2-col .column.principal, .tpl-2-col .column.secundario').equalizeHeights();
+	// $('.tpl-2-col .column.principal, .tpl-2-col .column.secundario').equalizeHeights();
 
 	if ($('.fancybox-media').length > 0) {
 		$('.fancybox-media').fancybox({
