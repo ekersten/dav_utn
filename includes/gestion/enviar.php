@@ -1,9 +1,9 @@
 <h2>Enviar Documentación</h2>
 <h3>Documentación para la Fecha de Examen</h3>
 <p>Desde aquí podrá descargar toda la documentación necesaria para la fecha de examen.</p>
-<a class="descargar" href="img/UTN.BA Planilla Alumnos.xls">Planilla Inscripción Alumnos</a>
-<a class="descargar" href="img/UTN-FRBA Procedimiento Pago.doc">Procedimiento Pago</a>
-<a class="descargar" href="img/UTN-FRBA _Normativas.doc">Normativas</a>
+<a class="descargar" href="docs/UTN.BA Planilla Alumnos.xls">Planilla Inscripción Alumnos</a>
+<a class="descargar" href="docs/UTN-FRBA Procedimiento Pago.doc">Procedimiento Pago</a>
+<a class="descargar" href="docs/UTN-FRBA _Normativas.doc">Normativas</a>
 <p>También deberán dejar constancia, una única vez en el año, de que han tomado conocimiento de las normativas de la UTN-FRBA</p>
 <form action="" method="" class="" >
 		<p><input name="normativa" type="checkbox" value="" /> A través del presente, confirmo que el colegio está notificado de las Pautas y Procedimientos establecidos por la UTN-FRBA para proceder con la Certificación de los conocimientos de Informática de loa alumnos del colegio participantes del Programa Digital Junior. De igual modo asiento que el colegio establecerá la forma para notificar a los alumnos participantes, sobre las consideraciones manifiestas en el mencionado procedimiento.</p>

@@ -28,7 +28,7 @@
 		</div>
 	</div>
 <p>* Los campos consignados son obligatorios, con el fin de poder contactarlos y hacerles una devolución.</p>
-<p>CONTESTE LAS PREGUNTAS SELECCIONANDO EL CASILLERO QUE REPRESENTE SU OPINION, DE ACUERDO A LAS SIGUIENTES VALORACIONES :</p>
+<p><strong>CONTESTE LAS PREGUNTAS SELECCIONANDO EL CASILLERO QUE REPRESENTE SU OPINION, DE ACUERDO A LAS SIGUIENTES VALORACIONES :</strong></p>
 <p><strong> 1</strong> No Satisfactorio | <strong>2</strong> Regular | <strong>3</strong> Satisfactorio |<strong> 4</strong> Muy satisfactorio</p>
 
 <h4>1. ¿ Cuál es el nivel de satisfacción en relación a la organización de la fecha de examen ?</h4>
@@ -71,7 +71,7 @@
 		<label for="pregunta_1b4">4</label>
 	</li>
 </ul>
-<p>En caso de haber rendido bajo la modalidad a distancia, complete también :</p>
+<p><strong>En caso de haber rendido bajo la modalidad a distancia, complete también :</strong></p>
 
 <p><strong> c.</strong> Comunicaciones previas clarificando y precisando el procedimiento a seguir para el desarrollo de la fecha de examen bajo la modalidad a distancia.</p>
 <ul class="opciones">
@@ -174,7 +174,7 @@
 		<label for="pregunta_3b4">4</label>
 	</li>
 </ul>
-<p>En caso de haber rendido bajo la modalidad a distancia, conteste también:</p>
+<p><strong>En caso de haber rendido bajo la modalidad a distancia, conteste también:</strong></p>
 
 <p><strong> c.</strong> Asistencia previa a la fecha de examen en el foro.</p>
 <ul class="opciones">
@@ -196,8 +196,8 @@
 	</li>
 </ul>
 
-<h4>4. ¿ Cuál es su nivel de satisfacción en relación al equipamiento de los laboratorios ?</h4>
-<p>Completar sólo para las fechas de examen rendidas en la UTN-FRBA.</p>
+<h4>4. ¿ Cuál es su nivel de satisfacción en relación al equipamiento de los laboratorios ?<span class="normal"> Completar sólo para las fechas de examen rendidas en la UTN-FRBA.</span></h4>
+
 <ul class="opciones">
 	<li>
 		<input type="radio" name="pregunta_4a" id="pregunta_4a1" value="No Satisfactorio" />
