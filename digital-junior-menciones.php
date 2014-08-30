@@ -22,7 +22,7 @@
                 <?php include("includes/tabs/digital-junior.php"); ?>
             </div>
             <div class="row contenedor">
-                <div class="column medium-9 pricipal">
+                <div class="column medium-12 pricipal">
                     <h1>Menciones de honor</h1>
                     <ul class="breadcrumbs">
                         <li>Programa para escuelas</li>
@@ -48,8 +48,8 @@
                         </div>
                         <div class="row">
                             <div class="column small-12">
-                                <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4 fotos">
-                                    <li ng-repeat="foto in data.fotos">
+                                <ul class="small-block-grid-2 medium-block-grid-5 large-block-grid-6 fotos">
+                                    <li ng-repeat="foto in data.fotos" class="foto">
                                         <a ng-href="{{foto.src}}" class="fancybox" rel="menciones" data-colegio="{{foto.colegio}}" data-mencion="{{foto.mencion}}" data-ubicacion="{{foto.ubicacion}}" title="{{foto.colegio}}">
                                             <img ng-src="{{foto.src}}">
                                         </a>
@@ -58,19 +58,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="column medium-3 secundario">
-                    <div class="video">
-                        <a href="https://www.youtube.com/watch?v=-dxWBb0NVbo" class="fancybox-media"><img src="img/video_dj.jpg" alt=""> </a>
-                    </div>
-                    <p>El Programa <em>Digital Junior</em> le brinda los siguientes <strong>BENEFICIOS</strong></p>
-                    <ul>
-                        <li>Contenidos Actualizados</li>
-                        <li>Capacitación docente</li>
-                        <li>Materiales de estudio</li>
-                        <li>Certificación de conocimientos</li>
-                        <li>Asesoramiento</li>
-                    </ul>
                 </div>
             </div>
         </section>
