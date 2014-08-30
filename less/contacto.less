@@ -21,6 +21,12 @@ section.contacto {
 			text-transform: uppercase;
 			font-size: .9rem;
 			color: @gris;
+
+			&.error {
+				font-size: .8rem;
+				text-transform: none;
+				color: @rojo;
+			}
 		}
 
 		.alto {
@@ -30,7 +36,7 @@ section.contacto {
 			
 		}
 
-		input[type=email], input[type=text], input[type=phone], textarea, select {
+		input[type=email], input[type=text], input[type=tel], textarea, select {
 			border: 1px solid lighten(@gris-claro, 20%);
 			padding: .4rem;
 			border-radius: 4px;

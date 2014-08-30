@@ -29,30 +29,30 @@
 						<div class="row">
 							<div class="column medium-6">
 								<p>
-									<label>Nombre</label>
-									<input type="text" name="nombre" value="" required>
+									<label for="nombre">Nombre</label>
+									<input type="text" name="nombre" id="nombre" value="" required>
 								</p>
 								<p>
-									<label>Mail</label>
-									<input type="email" name="mail" value="" required>
+									<label for="mail">Mail</label>
+									<input type="email" name="mail" id="mail" value="" required>
 								</p>
 								<p>
-									<label>Teléfono</label>
-									<input type="phone" name="tel" value="" required>
+									<label for="tel">Teléfono</label>
+									<input type="tel" name="tel" id="tel" value="" required>
 								</p>
 								<p>
-									<label>Colegio</label>
-									<input type="text" name="colegio" value="" required>
+									<label for="colegio">Colegio</label>
+									<input type="text" name="colegio" id="colegio" value="" required>
 								</p>
 							</div>
 							<div class="column medium-6">
 								<p>
-									<label>Ciudad</label>
-									<input type="text" name="ciudad" value="" required>
+									<label for="ciudad">Ciudad</label>
+									<input type="text" name="ciudad" id="ciudad" value="" required>
 								</p>
 								<p>
 									<label>Programa</label>
-									<select name="programa" required>
+									<select name="programa">
 										<option value="Digital Junior">Digital Junior</option>
 										<option value="Ciudadanía Digital">Ciudadanía Digital</option>
 										<option value="KimTech">KimTech</option>
@@ -64,8 +64,8 @@
 									</select>
 								</p>
 								<p class="alto">
-									<label>Consulta</label>
-									<textarea name="consulta" required></textarea>
+									<label for="consulta">Consulta</label>
+									<textarea name="consulta" id="consulta" required></textarea>
 								</p>
 							</div>
 						</div>
