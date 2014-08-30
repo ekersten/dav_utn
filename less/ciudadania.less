@@ -1,4 +1,5 @@
 section.ciudadania {
+	@color-seccion: @verde;
 	.header-image {
 		height: 200px;
 		background: url("../img/ciudadania_header.jpg") no-repeat center top;
@@ -6,13 +7,24 @@ section.ciudadania {
 	}
 	
 	/* color de la seccion */
-	h1,h2, em, .destacado {
-		color: @verde;
+	h1,h2, .destacado {
+		color: @color-seccion;
+	}
+
+	&.tpl-2-col {
+		.secundario {
+			background: @color-seccion;
+			color: @blanco;
+
+			em {
+				color: lighten(@color-seccion, 50%);
+			}
+		}
 	}
 
 	.breadcrumbs {
 		li.actual {
-			color: @verde;
+			color: @color-seccion;
 		}
 	}
 
@@ -23,7 +35,7 @@ section.ciudadania {
 					table {
 						a {
 							span {
-								color: @verde;
+								color: @color-seccion;
 							}
 						}
 						
