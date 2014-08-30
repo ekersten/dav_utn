@@ -127,7 +127,7 @@
                 <div class="column medium-4">
                     <p class="icon"><span class="icon-book"></span></p>
                     <h2>Programas para<br/>escuelas</h2>
-                    <p class="texto">Proyectos de Tecnología y Educación para escuelas medias y primarias, a los que las institucio- nes se suscriben en forma privada para  participar junto a su comunidad educativa.</p>
+                    <p class="texto">Proyectos de Tecnología y Educación para escuelas medias y primarias, a los que las institucio- nes se suscriben en forma privada para  participar junto a su comuni- dad educativa.</p>
                     <p class="cta"><a href="digital-junior-informacion.php">ver <span class="mas">+</span></a></p>
                 </div>
                 <div class="column medium-4">
