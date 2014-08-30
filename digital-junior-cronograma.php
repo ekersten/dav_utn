@@ -22,7 +22,7 @@
                 <?php include("includes/tabs/digital-junior.php"); ?>
             </div>
             <div class="row contenedor">
-                <div class="column medium-12 pricipal">
+                <div class="column medium-12 principal">
                     <h1>Cronograma de Talleres de Capacitación docente</h1>
                     <ul class="breadcrumbs">
                         <li>Programa para escuelas</li>

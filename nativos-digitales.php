@@ -22,7 +22,7 @@
 				<?php include("includes/tabs/digital-junior.php"); ?>
 			</div> -->
 			<div class="row contenedor">
-				<div class="column medium-9 pricipal">
+				<div class="column medium-9 principal">
 					<h1>Nativos Digitales</h1>
 					<ul class="breadcrumbs">
 						<li><a href="modelo1a1.php">Programa de Entes de Gobierno y R.S.E</a></li>

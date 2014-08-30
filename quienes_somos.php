@@ -19,7 +19,7 @@
 		<section class="tpl-2-col quienes">
 			<div class="header-image"></div>
 			<div class="row contenedor">
-				<div class="column medium-9 pricipal">
+				<div class="column medium-9 principal">
 					<h1>Quienes Somos</h1>
 					<!-- <ul class="breadcrumbs">
 						<li><a href="#">Programa para escuelas</a></li>

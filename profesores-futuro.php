@@ -22,7 +22,7 @@
 				<?php include("includes/tabs/digital-junior.php"); ?>
 			</div> -->
 			<div class="row contenedor">
-				<div class="column medium-9 pricipal">
+				<div class="column medium-9 principal">
 					<h1>Profesores para el Futuro (PPF)</h1>
 					<ul class="breadcrumbs">
 						<li><a href="profesores-futuro.php">Programa de Entes de Gobierno y R.S.E</a></li>
