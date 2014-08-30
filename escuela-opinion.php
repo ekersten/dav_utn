@@ -23,11 +23,11 @@
 			</div>
 			<div class="row contenedor">
 				<div class="column medium-9 principal">
-					<h1>Opinión alumnos</h1>
+					<h1>Experiencias</h1>
 					<ul class="breadcrumbs">
 						<li>Programa para escuelas</li>
 						<li><a href="escuela-informacion.php">Escuela 2.0</a></li>
-						<li class="actual">Opinión alumnos</li>
+						<li class="actual">Experiencias</li>
 					</ul>
 					<h2>PROXIMAMENTE</h2>
 				</div>
