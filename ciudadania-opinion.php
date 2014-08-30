@@ -23,11 +23,11 @@
 			</div>
 			<div class="row contenedor">
 				<div class="column medium-9 principal">
-					<h1>Opinión Alumnos</h1>
+					<h1>Experiencias</h1>
 					<ul class="breadcrumbs">
 						<li>Programa para escuelas</li>
 						<li><a href="ciudadania-informacion.php">Ciudadania Digital</a></li>
-						<li class="actual">Opinión Alumnos</li>
+						<li class="actual">Experiencias</li>
 					</ul>
 					
 					<p>Queremos compartir con Uds. la opinión de los algunos alumnos que ya participaron de esta experiencia y los consejos que ellos quisieron dejarles a los estudiantes que decidan ser parte de la próxima edición de este curso.</p>
