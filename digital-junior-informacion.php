@@ -22,7 +22,7 @@
 				<?php include("includes/tabs/digital-junior.php"); ?>
 			</div>
 			<div class="row contenedor">
-				<div class="column medium-9 pricipal">
+				<div class="column medium-9 principal">
 					<h1>Información General</h1>
 					<ul class="breadcrumbs">
 						<li>Programa para escuelas</li>

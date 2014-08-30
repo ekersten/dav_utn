@@ -19,7 +19,7 @@
 		<section class="tpl-2-col contacto">
 			<div class="header-image"></div>
 			<div class="row contenedor">
-				<div class="column medium-9 pricipal">
+				<div class="column medium-9 principal">
 					<div class="row">
 						<div class="column medium-12">
 							<h1>Contacto</h1>

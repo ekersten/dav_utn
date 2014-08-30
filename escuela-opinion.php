@@ -22,7 +22,7 @@
 				<?php include("includes/tabs/escuela.php"); ?>
 			</div>
 			<div class="row contenedor">
-				<div class="column medium-9 pricipal">
+				<div class="column medium-9 principal">
 					<h1>Opinión alumnos</h1>
 					<ul class="breadcrumbs">
 						<li>Programa para escuelas</li>
