@@ -1,18 +1,29 @@
 section.escuela {
+	@color-seccion: @violeta;
 	.header-image {
 		height: 200px;
 		background: url("../img/escuela_header.jpg") no-repeat center top;
 		background-size: cover;
 	}
 	
-	/* color de la seccion */
-	h1,h2, em,.destacado {
-		color: @violeta;
+	h1,h2, .destacado {
+		color: @color-seccion;
+	}
+
+	&.tpl-2-col {
+		.secundario {
+			background: @color-seccion;
+			color: @blanco;
+
+			em {
+				color: lighten(@color-seccion, 50%);
+			}
+		}
 	}
 
 	.breadcrumbs {
 		li.actual {
-			color: @violeta;
+			color: @color-seccion;
 		}
 	}
 
@@ -23,7 +34,7 @@ section.escuela {
 					table {
 						a {
 							span {
-								color: @violeta;
+								color: @color-seccion;
 							}
 						}
 						
@@ -34,3 +45,6 @@ section.escuela {
 		
 	}
 }
+
+
+
