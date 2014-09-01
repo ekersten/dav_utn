@@ -42,8 +42,8 @@
 
 										$remitente="From: $nombre <$email>";
 										// destino donde va a llegar la info
-										$destino="flavia.ursino@gmail.com";
-										// yamadatomas@gmail.com
+										$destino="info@dav.sceu.frba.utn.edu.ar";
+
 
 										$asunto= $nombre ." envio la siguiente consulta";
 
