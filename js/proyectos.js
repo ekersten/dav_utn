@@ -14,7 +14,9 @@
 
 		$scope.tabClick = function(tab) {
 			$('.proyectos .tab').removeClass('activa');
+			$('.proyectos .tab-content').css('display', 'none');
 			$('#tab-' + tab).addClass('activa');
+			$('#tab-content-' + tab).css('display', 'block');
 		}
 	});
 })();
