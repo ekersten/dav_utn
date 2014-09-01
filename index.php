@@ -91,7 +91,7 @@
                             <div class="contenido">
                                 <div class="interno">
                                     <h1>Modelo 1 a 1</h1>
-                                    <p>Es un programa de capacitación y nivelación.</p>
+                                    <p>Capacitación Docente para Escuelas Técnicas.</p>
                                     <a href="entropia.php" class="boton">Conocer más</a>
                                 </div>
                             </div>
