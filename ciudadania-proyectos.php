@@ -34,14 +34,23 @@
 						<ul class="tabs">
 							<li class="tab" id="{{'tab-' + $index}}" ng-repeat="anio in data.anios | orderBy:'tab'" ng-click="tabClick($index)">{{anio.tab}}</li>
 						</ul>
-						<div id="{{'tab-content-' + $index}}" ng-repeat="anio in data.anios | orderBy:'tab'">
-							<h2>{{anio.nombre}}</h2>
-							<p>{{anio.texto}}</p>
-							<ul class="small-block-grid-2 medium-block-grid-5 large-block-grid-6 fotos">
-								<li ng-repeat="proyecto in anio.proyectos" class="proyecto">
-									{{proyecto.nombre}}
-								</li>
-							</ul>
+						<div id="{{'tab-content-' + $index}}" class="tab-content row" ng-repeat="anio in data.anios | orderBy:'tab'">
+							<div class="column small-12">
+								<h2>{{anio.nombre}}</h2>
+								<p>{{anio.texto}}</p>
+							</div>
+							<div class="proyecto row" ng-repeat="proyecto in anio.proyectos">
+								<div class="row">
+									<div class="column small-12">
+										<h4>{{proyecto.nombre}}</h4>
+										<h6>{{proyecto.sub}}</h6>
+									</div>
+								</div>
+								<div class="row">
+									<div class="column small-3"></div>
+									<div class="column small-9"></div>
+								</div>
+							</div>
 						</div>
 					</div>
 					
