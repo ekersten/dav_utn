@@ -224,5 +224,36 @@ section.tpl-2-col {
 		}
 
 	}
+}
 
+.proyectos {
+	ul.tabs {
+		width: 100%;
+		border-bottom: 1px solid @gris-claro;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			display: inline-block;
+			padding: .4rem 1rem;
+			margin-left: .4rem;
+			border: 1px solid @gris-claro;
+			border-top-left-radius: .35rem;
+			border-top-right-radius: .35rem;
+			cursor: pointer;
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			&.activa {
+				background: @gris-claro;
+			}
+		}
+	}
+
+	.tab-content {
+		display: none;
+	}
 }

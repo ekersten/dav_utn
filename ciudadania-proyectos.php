@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" ng-app="proyectos"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" ng-app="proyectos"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" ng-app="proyectos"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" ng-app="proyectos" ng-init="data_src='data/proyectos-ciudadania.json'"> <!--<![endif]-->
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -22,26 +22,55 @@
 				<?php include("includes/tabs/ciudadania.php"); ?>
 			</div>
 			<div class="row contenedor">
-				<div class="column medium-9 principal">
+				<div class="column medium-12 principal">
 					<h1>Proyectos</h1>
 					<ul class="breadcrumbs">
 						<li>Programa para escuelas</li>
 						<li><a href="ciudadania-informacion.php">Ciudadania Digital</a></li>
 						<li class="actual">Proyectos</li>
 					</ul>
-					
 					<p>A lo largo del curso hemos interactuado con los alumnos, proponiéndoles tópicos para la reflexión y el intercambio de opiniones entre pares, contenidos de formación e instancias de autoevaluación, desarrollo de trabajos de investigación, tareas individuales y colaborativas. Ejemplo de lo realizado, son los trabajos presentados por los alumnos en las clases. Algunos de los cuales queremos compartir con Uds.</p>
-				</div>
-				<div class="column medium-3 secundario">
-					 <div class="video">
-                        <a href="https://www.youtube.com/watch?v=mUJOdMNVtxA" class="fancybox-media"><img src="img/video_ciudadania.jpg" alt=""> </a>
-                    </div>
-					<p><em>Ciudadanía Digital</em> permite a los alumnos conocer las normas que rigen el buen uso de las NTICs, mientras aprenden los fundamentos del E-learning, interactuado en la plataforma Moodle y utilizando múltiples herramientas Web 2.0</p>
+					<div ng-controller="ProyectosController" class="proyectos">
+						<ul class="tabs">
+							<li class="tab" id="{{'tab-' + $index}}" ng-repeat="anio in data.anios | orderBy:'tab'" ng-click="tabClick($index)">{{anio.tab}}</li>
+						</ul>
+						<div id="{{'tab-content-' + $index}}" class="tab-content row" ng-repeat="anio in data.anios | orderBy:'tab'">
+							<div class="column small-12">
+								<div class="row">
+									<div class="column small-12">
+										<h2>{{anio.nombre}}</h2>
+										<p>{{anio.texto}}</p>
+									</div>
+								</div>
+								<div class="proyecto row" ng-repeat="proyecto in anio.proyectos">
+									<div class="column small-12">
+										<div class="row">
+											<div class="column small-12">
+												<h4>{{proyecto.nombre}}</h4>
+												<h6>{{proyecto.sub}}</h6>
+											</div>
+										</div>
+										<div class="row">
+											<div class="column small-3"><img ng-src="{{proyecto.imagen}}" alt="{{proyecto.nombre}}"></div>
+											<div class="column small-9">
+												<p><strong><ng-pluralize count="{{proyecto.autores.length}}" when="{'one': 'Autor', 'other': 'Autores'}"></ng-pluralize>:</strong> <span ng-repeat="autor in proyecto.autores">{{autor.nombre}}{{$last ? '' : ', '}}</span></p>
+												<p>{{proyecto.institucion.nombre}} - {{proyecto.institucion.ubicacion}}</p>
+												<p><a ng-href="{{proyecto.url}}">VerProyecto</a></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
 				</div>
 			</div>
 		</section>
 		<?php include("includes/footer.php"); ?>
 		<!-- local scripts -->
 		<script src="js/tabs.js"></script>
+		<script src="js/vendor/angular.min.js"></script>
+		<script src="js/proyectos.js"></script>
 	</body>
 </html>

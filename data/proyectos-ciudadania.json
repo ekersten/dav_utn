@@ -1,0 +1,96 @@
+{
+	"anios":[
+		{
+			"tab":"2011",
+			"nombre": "Proyectos Descatacados 2011",
+			"texto": "En el 2011 los alumnos trabajaron en equipos, y la consigna requería seleccionar 3 de los temas abordados a lo largo del curso, investigar y desarrollar los mismos en un blog. Con la intensión de compartir este espacio de reflexión con los compañeros del colegio que no hubieran participado de la experiencia Ciudadanía Digital.",
+			"proyectos": [
+				{
+					"nombre": "La importancia de proteger la privacidad",
+					"sub": "Herramienta de Aplicacion: Blog",
+					"autores": [
+						{
+							"nombre": "Dupont, Ximena Giselle"
+						},
+						{
+							"nombre": "Garcia Oberti, Leo Gastón"
+						},
+						{
+							"nombre": "Pefaur, Candela Amparo"
+						}
+					],
+					"institucion": {
+						"nombre":"Instituto Santísimo Sacramento",
+						"ubicacion": "C.A.B.A."
+					},
+					"imagen": "http://placehold.it/300",
+					"url": "http://proyecto.com.ar"
+				}
+			]
+		},
+		{
+			"tab":"2010",
+			"nombre": "Proyectos Descatacados 2010",
+			"texto": "En el 2010 los alumnos trabajaron en equipos, y la consigna requería seleccionar 3 de los temas abordados a lo largo del curso, investigar y desarrollar los mismos en un blog. Con la intensión de compartir este espacio de reflexión con los compañeros del colegio que no hubieran participado de la experiencia Ciudadanía Digital.",
+			"proyectos": [
+				{
+					"nombre": "La importancia de proteger la privacidad",
+					"sub": "Herramienta de Aplicacion: Blog",
+					"autores": [
+						{
+							"nombre": "Dupont, Ximena Giselle"
+						}
+					],
+					"institucion": {
+						"nombre":"Instituto Santísimo Sacramento",
+						"ubicacion": "C.A.B.A."
+					},
+					"imagen": "http://placehold.it/300",
+					"url": "http://proyecto.com.ar"
+				},
+				{
+					"nombre": "La importancia de proteger la privacidad",
+					"sub": "Herramienta de Aplicacion: Blog",
+					"autores": [
+						{
+							"nombre": "Dupont, Ximena Giselle"
+						},
+						{
+							"nombre": "Garcia Oberti, Leo Gastón"
+						},
+						{
+							"nombre": "Pefaur, Candela Amparo"
+						}
+					],
+					"institucion": {
+						"nombre":"Instituto Santísimo Sacramento",
+						"ubicacion": "C.A.B.A."
+					},
+					"imagen": "http://placehold.it/300",
+					"url": "http://proyecto.com.ar"
+				},
+				{
+					"nombre": "La importancia de proteger la privacidad",
+					"sub": "Herramienta de Aplicacion: Blog",
+					"autores": [
+						{
+							"nombre": "Dupont, Ximena Giselle"
+						},
+						{
+							"nombre": "Garcia Oberti, Leo Gastón"
+						},
+						{
+							"nombre": "Pefaur, Candela Amparo"
+						}
+					],
+					"institucion": {
+						"nombre":"Instituto Santísimo Sacramento",
+						"ubicacion": "C.A.B.A."
+					},
+					"imagen": "http://placehold.it/300",
+					"url": "http://proyecto.com.ar"
+				}
+			]
+		}
+	]
+}
