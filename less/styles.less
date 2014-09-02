@@ -248,12 +248,53 @@ section.tpl-2-col {
 			}
 
 			&.activa {
-				background: @gris-claro;
+				background: @gris;
+				color: @blanco;
 			}
 		}
 	}
 
 	.tab-content {
 		display: none;
+	}
+
+	.proyecto {
+		.inner {
+			border: 1px solid #d5d5d5;
+			border-radius: .35rem;
+			background: #f5f5f5;
+			padding: 1rem;
+
+			h4, h6 {
+				margin: 0;
+			}
+
+			h4 {
+				color: @gris;
+			}
+
+			.info {
+				margin-top: 1.2rem;
+
+				p {
+					font-size: .8rem;
+					margin: 0 0 .5rem;
+					line-height: 1.1rem;
+				}
+
+				a {
+					display: inline-block;
+					background: @gris;
+					color: @blanco;
+					padding: .3rem .4rem;
+					border-radius: .15rem;
+					text-transform: uppercase;
+					text-decoration: none;
+					font-weight: bold;
+					font-size: .65rem;
+					line-height: .65rem;
+				}
+			}
+		}
 	}
 }
