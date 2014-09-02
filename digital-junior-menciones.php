@@ -51,6 +51,19 @@
                                 </ul>
                             </div>
                         </div>
+                        <hr>
+                        <div class="row">
+                            <div class="column small-12">
+                                <p><em>{{data.felicitacion.texto}}</em></p>
+                            </div>
+                        </div>
+                        <div class="row colegios">
+                            <div class="column small-12">
+                                <ul class="small-block-grid-2">
+                                    <li ng-repeat="colegio in data.felicitacion.colegios"><strong>{{colegio.nombre}}</strong> - {{colegio.ubicacion}}</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

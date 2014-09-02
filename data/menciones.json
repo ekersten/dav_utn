@@ -65,5 +65,22 @@
 			"mini": "img/menciones/2013/mini/Colegio-Bertrand-Russell---Bandfiel,-Bs.-As.jpg",
 			"colegio": "Colegio Test"
 		}
-	]
+	],
+	"felicitacion": {
+		"texto": "Felicitamos también a los alumnos de los colegios del interior del país que han obtenido la calificación máxima en sus exámenes:",
+		"colegios": [
+			{
+				"nombre": "Colegio Evangélico Alfredo Furniss",
+				"ubicacion": "Santiago del Estero"
+			},
+			{
+				"nombre": "Colegio Evangélico Alfredo Furniss",
+				"ubicacion": "Santiago del Estero"
+			},
+			{
+				"nombre": "Colegio Evangélico Alfredo Furniss",
+				"ubicacion": "Santiago del Estero"
+			}
+		]
+	}
 }
