@@ -1,60 +1,68 @@
 {
 	"titulo": "Menciones 2013",
 	"texto": "Extendemos nuestras felicitaciones no sólo a los alumnos, sino a las autoridades y profesores de todos los colegios participantes",
-	"cover": {
-		"src": "http://placehold.it/500x200?text=Foto del Aula Manga",
-		"texto": "Aula Magna"
-	},
 	"fotos": [
 		{
-			"src": "http://placehold.it/1024x768",
-			"colegio": "Colegio Test"
+			"src": "img/menciones/2013/grande/aula-magna.jpg",
+			"mini": "img/menciones/2013/mini/aula-magna.jpg",
+			"colegio": "Aula Magna"
 		},
 		{
-			"src": "http://placehold.it/1024x768",
-			"colegio": "Colegio Test",
-			"ubicacion": "Capital Federal"
+			"src": "img/menciones/2013/grande/Colegio-Almafuerte---Bernal,-Bs.-As.jpg",
+			"mini": "img/menciones/2013/mini/Colegio-Almafuerte---Bernal,-Bs.-As.jpg",
+			"colegio": "Colegio Almafuerte",
+			"ubicacion": "Bernal"
 		},
 		{
-			"src": "http://placehold.it/1024x768",
-			"colegio": "Colegio Test",
-			"ubicacion": "Capital Federal",
+			"src": "img/menciones/2013/grande/Colegio-Bertrand-Russell---Bandfiel,-Bs.-As.jpg",
+			"mini": "img/menciones/2013/mini/Colegio-Bertrand-Russell---Bandfiel,-Bs.-As.jpg",
+			"colegio": "Colegio-Bertrand-Russell",
+			"ubicacion": "Bandfiel",
 			"mencion": "Mención de honor"
 		},
 		{
-			"src": "http://placehold.it/1024x768",
+			"src": "img/menciones/2013/grande/aula-magna.jpg",
+			"mini": "img/menciones/2013/mini/aula-magna.jpg",
 			"colegio": "Colegio Test"
 		},
 		{
-			"src": "http://placehold.it/1024x768",
+			"src": "img/menciones/2013/grande/Colegio-Almafuerte---Bernal,-Bs.-As.jpg",
+			"mini": "img/menciones/2013/mini/Colegio-Almafuerte---Bernal,-Bs.-As.jpg",
 			"colegio": "Colegio Test"
 		},
 		{
-			"src": "http://placehold.it/1024x768",
+			"src": "img/menciones/2013/grande/Colegio-Bertrand-Russell---Bandfiel,-Bs.-As.jpg",
+			"mini": "img/menciones/2013/mini/Colegio-Bertrand-Russell---Bandfiel,-Bs.-As.jpg",
 			"colegio": "Colegio Test"
 		},
 		{
-			"src": "http://placehold.it/1024x768",
+			"src": "img/menciones/2013/grande/aula-magna.jpg",
+			"mini": "img/menciones/2013/mini/aula-magna.jpg",
 			"colegio": "Colegio Test"
 		},
 		{
-			"src": "http://placehold.it/1024x768",
+			"src": "img/menciones/2013/grande/Colegio-Almafuerte---Bernal,-Bs.-As.jpg",
+			"mini": "img/menciones/2013/mini/Colegio-Almafuerte---Bernal,-Bs.-As.jpg",
 			"colegio": "Colegio Test"
 		},
 		{
-			"src": "http://placehold.it/1024x768",
+			"src": "img/menciones/2013/grande/Colegio-Bertrand-Russell---Bandfiel,-Bs.-As.jpg",
+			"mini": "img/menciones/2013/mini/Colegio-Bertrand-Russell---Bandfiel,-Bs.-As.jpg",
 			"colegio": "Colegio Test"
 		},
 		{
-			"src": "http://placehold.it/1024x768",
+			"src": "img/menciones/2013/grande/aula-magna.jpg",
+			"mini": "img/menciones/2013/mini/aula-magna.jpg",
 			"colegio": "Colegio Test"
 		},
 		{
-			"src": "http://placehold.it/1024x768",
+			"src": "img/menciones/2013/grande/Colegio-Almafuerte---Bernal,-Bs.-As.jpg",
+			"mini": "img/menciones/2013/mini/Colegio-Almafuerte---Bernal,-Bs.-As.jpg",
 			"colegio": "Colegio Test"
 		},
 		{
-			"src": "http://placehold.it/1024x768",
+			"src": "img/menciones/2013/grande/Colegio-Bertrand-Russell---Bandfiel,-Bs.-As.jpg",
+			"mini": "img/menciones/2013/mini/Colegio-Bertrand-Russell---Bandfiel,-Bs.-As.jpg",
 			"colegio": "Colegio Test"
 		}
 	]

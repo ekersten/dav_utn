@@ -36,13 +36,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="column medium-6">
-                                <figure>
-                                    <img ng-src="{{data.cover.src}}" alt="{{data.cover.texto}}">
-                                    <figcaption>{{data.cover.texto}}</figcaption>
-                                </figure>
-                            </div>
-                            <div class="column medium-6">
+                           <div class="column small-12">
                                 <p>{{data.texto}}</p>
                             </div>
                         </div>
@@ -51,7 +45,7 @@
                                 <ul class="small-block-grid-2 medium-block-grid-5 large-block-grid-6 fotos">
                                     <li ng-repeat="foto in data.fotos" class="foto">
                                         <a ng-href="{{foto.src}}" class="fancybox" rel="menciones" data-colegio="{{foto.colegio}}" data-mencion="{{foto.mencion}}" data-ubicacion="{{foto.ubicacion}}" title="{{foto.colegio}}">
-                                            <img ng-src="{{foto.src}}">
+                                            <img ng-src="{{foto.mini}}">
                                         </a>
                                     </li>
                                 </ul>
