@@ -29,7 +29,6 @@
 						<li><a href="ciudadania-informacion.php">Ciudadania Digital</a></li>
 						<li class="actual">Proyectos</li>
 					</ul>
-					<p>A lo largo del curso hemos interactuado con los alumnos, proponiéndoles tópicos para la reflexión y el intercambio de opiniones entre pares, contenidos de formación e instancias de autoevaluación, desarrollo de trabajos de investigación, tareas individuales y colaborativas. Ejemplo de lo realizado, son los trabajos presentados por los alumnos en las clases. Algunos de los cuales queremos compartir con Uds.</p>
 					<div ng-controller="ProyectosController" class="proyectos">
 						<ul class="tabs">
 							<li class="tab" id="{{'tab-' + $index}}" ng-repeat="anio in data.anios | orderBy:'tab':true" ng-click="tabClick($index)">{{anio.tab}}</li>
@@ -58,7 +57,7 @@
 														<div class="column small-8">
 															<p><strong><ng-pluralize count="{{proyecto.autores.length}}" when="{'one': 'Autor', 'other': 'Autores'}"></ng-pluralize>:</strong> <span ng-repeat="autor in proyecto.autores">{{autor.nombre}}{{$last ? '' : ', '}}</span></p>
 															<p>{{proyecto.institucion.nombre}} - {{proyecto.institucion.ubicacion}}</p>
-															<p><a ng-href="{{proyecto.url}}">Ver Proyecto</a></p>
+															<p><a ng-href="{{proyecto.url}}" target="_blank">Ver Proyecto</a></p>
 														</div>
 													</div>
 												</div>
