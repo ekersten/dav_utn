@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="css/dav.css">
         <script src="js/vendor/modernizr.js"></script>
         <!--[if lt IE 9]><script src="js/vendor/rem.min.js"></script><![endif]-->
+        <script src="js/vendor/angular.min.js"></script>
     </head>
     <body>
         <?php include("includes/header.php"); ?>
@@ -71,7 +72,6 @@
         <?php include("includes/footer.php"); ?>
         <!-- local scripts -->
         <script src="js/tabs.js"></script>
-        <script src="js/vendor/angular.min.js"></script>
         <script src="js/menciones.js"></script>
     </body>
 </html>
