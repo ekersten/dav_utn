@@ -391,6 +391,209 @@
 					"url": "http://zuber-mujica-seguridadeninternet.blogspot.com.ar/"
 				}
 			]
+		},
+		{
+			"tab":"2012",
+			"nombre": "Proyectos Descatacados 2012",
+			"texto": "En el 2012 los alumnos trabajaron en equipos, seleccionando temas abordados a lo largo del curso, investigar y desarrollamdo los mismos en un blog. Con la intensión de compartir este espacio de reflexión con los compañeros del colegio que no hubieran participado de la experiencia Ciudadanía Digital.",
+			"proyectos": [
+				{
+					"nombre": "Spam",
+					"sub": "Herramienta de Aplicación: Prezi",
+					"autores": [
+						{
+							"nombre": "ANDREO, Florencia"
+						},
+						{
+							"nombre": "NEVADO, Sofía"
+						},
+						{
+							"nombre": "BRUNETTO, Guillermina"
+						}						
+					],
+					"institucion": {
+						"nombre":"Escuela de Educación Particular Autorizada ICES",
+						"ubicacion": "Sunchales, Sta. Fe."
+					},
+					"imagen": "img/ciudadania/proyectos/2012/01.jpg",
+					"url": "http://prezi.com/soe0sfcqzimn/seguridad-informatica-spam/"
+				},
+				{
+					"nombre": "Los Spyware",
+					"sub": "Herramienta de Aplicación: Prezi",
+					"autores": [
+						{
+							"nombre": "CONSTANTINI, Martín "
+						},
+						{
+							"nombre": "CRISCI, Germán"
+						},
+						{
+							"nombre": "GLIOSCA, Santiago"
+						},
+						{
+							"nombre": "GOMEZ, Matías"
+						}
+					],
+					"institucion": {
+						"nombre":"Instituto Vuelta del Ombú",
+						"ubicacion": "Virasoro, Ctes."
+					},
+					"imagen": "img/ciudadania/proyectos/2012/02.jpg",
+					"url": "http://prezi.com/ixxum-n0-anl/los-spyware/"
+				},
+				{
+					"nombre": "Phishing",
+					"sub": "Herramienta de Aplicación: Glogster",
+					"autores": [
+						{
+							"nombre": "ORBEZO, Nicolás"
+						},
+						{
+							"nombre": "RODRIGUEZ, Benjamín"
+						},
+						{
+							"nombre": "RESIO, Valentín "
+						},
+						{
+							"nombre": "MASA, Ignacio"
+						}
+					],
+					"institucion": {
+						"nombre":"Escuela Técnica Henry Ford",
+						"ubicacion": "Ricardo Rojas, Bs.As."
+					},
+					"imagen": "img/ciudadania/proyectos/2012/03.jpg",
+					"url": "http://grupocd.edu.glogster.com/phishing/"
+				},
+				{
+					"nombre": "Contendio activo y cookies",
+					"sub": "Herramienta de Aplicación: Prezi",
+					"autores": [
+						{
+							"nombre": "PIÑEIRO, Valentina"
+						},
+						{
+							"nombre": "IRIARTE, Sofía"
+						}
+					],
+					"institucion": {
+						"nombre":"Instituto Summa",
+						"ubicacion": "C.A.B.A."
+					},
+					"imagen": "img/ciudadania/proyectos/2012/04.jpg",
+					"url": "http://prezi.com/secjloxxasii/proyecto-utn/"
+				},
+				{
+					"nombre": "El Spam",
+					"sub": "Herramienta de Aplicación: Glogster",
+					"autores": [
+						{
+							"nombre": "DEL CAMPO, Aldana"
+						},
+						{
+							"nombre": "HATCHADOURIAN, Sol"
+						}
+					],
+					"institucion": {
+						"nombre":"Instituto Summa",
+						"ubicacion": "C.A.B.A."
+					},
+					"imagen": "img/ciudadania/proyectos/2012/05.jpg",
+					"url": "http://www.glogster.com/aldisol/spam/g-6l7pievl6gk7rl2ib31oea0"
+				},
+				{
+					"nombre": "Buenos Ciudadanos Cibernéticos",
+					"sub": "Herramienta de Aplicación: Blog",
+					"autores": [
+						{
+							"nombre": "BEVILAQUA, Carolina"
+						}
+					],
+					"institucion": {
+						"nombre":"Ntra. Sra. de Fátima",
+						"ubicacion": "Del Viso, Bs. As."
+					},
+					"imagen": "img/ciudadania/proyectos/2012/06.jpg",
+					"url": "http://buenosciudadanosciberneticos.blogspot.com.ar/"
+				},
+				{
+					"nombre": "Protección contra el Malaware",
+					"sub": "Herramienta de Aplicación: Prezi",
+					"autores": [
+						{
+							"nombre": "GALLANI, Alexis"
+						},
+						{
+							"nombre": "PARMIT, Adrián"
+						},
+						{
+							"nombre": "SPERTINO, Sofía"
+						}						
+					],
+					"institucion": {
+						"nombre":"Escuela de Educación Particular Autorizada ICES",
+						"ubicacion": "Sunchales, Sta. Fe."
+					},
+					"imagen": "img/ciudadania/proyectos/2012/07.jpg",
+					"url": "http://prezi.com/mbsvmxhg_dt4/proteccion-contra-malware/"
+				},
+				{
+					"nombre": "Malaware: ¿Qué es y cómo protegerse?",
+					"sub": "Herramienta de Aplicación: Prezi",
+					"autores": [
+						{
+							"nombre": "BORZONE, Dante"
+						},
+						{
+							"nombre": "DI FRANCO, Facundo"
+						},
+						{
+							"nombre": "GAYTÁN, Joaquín"
+						},
+						{
+							"nombre": "GODOY, Javier"
+						}
+					],
+					"institucion": {
+						"nombre":"Escuela Técnica Henry Ford",
+						"ubicacion": "Ricardo Rojas, Bs.As."
+					},
+					"imagen": "img/ciudadania/proyectos/2012/08.jpg",
+					"url": "http://prezi.com/ulwuf9c8lzux/malware-que-es-y-como-protegerse/"
+				},
+				{
+					"nombre": "Tus comportamientos digitales",
+					"sub": "Herramienta de Aplicación: Glogster",
+					"autores": [
+						{
+							"nombre": "SARAVIA, Camila "
+						}
+					],
+					"institucion": {
+						"nombre":"Colegio San Martín de Tours",
+						"ubicacion": "San Fernando, Bs. As."
+					},
+					"imagen": "img/ciudadania/proyectos/2012/09.jpg",
+					"url": "http://www.yosoyunciudadanodigital.blogspot.com.ar/"
+				},
+				{
+					"nombre": "¿Qué es la Ciudadanía Digital?",
+					"sub": "Herramienta de Aplicación: Blog",
+					"autores": [
+						{
+							"nombre": "NEUHAUS, Thomas Alfons"
+						}
+					],
+					"institucion": {
+						"nombre":"Escuela Técnica Henry Ford",
+						"ubicacion": "Ricardo Rojas, Bs.As."
+					},
+					"imagen": "img/ciudadania/proyectos/2012/10.jpg",
+					"url": "http://ciudadaniadigital123.blogspot.com.ar/"
+				}
+			]
 		}
+
 	]
 }
