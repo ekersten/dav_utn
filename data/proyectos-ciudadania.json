@@ -160,223 +160,235 @@
 			"texto": "En el 2010 los alumnos trabajaron en equipos, y la consigna requería seleccionar 3 de los temas abordados a lo largo del curso, investigar y desarrollar los mismos en un blog. Con la intensión de compartir este espacio de reflexión con los compañeros del colegio que no hubieran participado de la experiencia Ciudadanía Digital.",
 			"proyectos": [
 				{
-					"nombre": "Malware",
-					"sub": "Herramienta de Aplicación: Glogster",
+					"nombre": "La importancia de proteger la privacidad",
+					"sub": "Herramienta de Aplicación: Blog",
 					"autores": [
 						{
-							"nombre": "ALMEIDA, Johana"
+							"nombre": "DUPONT, Ximena Giselle"
 						},
 						{
-							"nombre": "CURUTCHET, Mercedes"
+							"nombre": "GARCIA OBERTI, Leo Gastón"
+						},
+						{
+							"nombre": "PEFAUR, Candela Amparo"
 						}						
 					],
 					"institucion": {
-						"nombre":"Colegio San José",
-						"ubicacion": " Marcos Paz, Bs. As."
-					},
-					"imagen": "img/ciudadania/proyectos/2011/01.jpg",
-					"url": "http://www.glogster.com/ciudadaniadigital/presentacion/g-6m7bcs0fjfhr4ih5pna6na0?old_view=True"
-				},
-				{
-					"nombre": "Contra el Malware",
-					"sub": "Herramienta de Aplicación: Glogster",
-					"autores": [
-						{
-							"nombre": "MARTINEZ, Rosario"
-						},
-						{
-							"nombre": "CURUTCHET, Agustín"
-						}
-					],
-					"institucion": {
-						"nombre":"Colegio San José",
-						"ubicacion": "Marcos Paz, Bs. As."
-					},
-					"imagen": "img/ciudadania/proyectos/2011/02.jpg",
-					"url": "http://www.glogster.com/martcurut/contra-el-malware/g-6m7bqe93us86ba38r910la0?old_view=True"
-				},
-				{
-					"nombre": "Spam",
-					"sub": "Herramienta de Aplicación: Youtube",
-					"autores": [
-						{
-							"nombre": "ROSSI, Melisa"
-						},
-						{
-							"nombre": "PIÑA, Sebastían"
-						},
-						{
-							"nombre": "AGRIFOGLIO, Julieta"
-						}
-					],
-					"institucion": {
-						"nombre":"Colegio Inglés H. Watson",
+						"nombre":"Instituto Santísimo Sacramento",
 						"ubicacion": "C.A.B.A."
 					},
-					"imagen": "img/ciudadania/proyectos/2011/03.jpg",
-					"url": "https://www.youtube.com/watch?v=LuD3Mvku0zs&feature=youtu.be"
+					"imagen": "img/ciudadania/proyectos/2010/01.jpg",
+					"url": "http://laimportanciadeprotegerlaprivacidad.blogspot.com.ar/"
 				},
 				{
-					"nombre": "Seguridad Informática: Spyware",
-					"sub": "Herramienta de Aplicación: Youtube",
+					"nombre": "Responsabilidad Colectiva",
+					"sub": "Herramienta de Aplicación: Blog",
 					"autores": [
 						{
-							"nombre": "HIGA, Rocio"
+							"nombre": "GARAYCOECHEA, Marisol "
 						},
 						{
-							"nombre": "CASTRO, Yamila"
-						},
-						{
-							"nombre": "ZALAZAR, Anahí"
+							"nombre": "PLUCHINO, Eugenia"
 						}
 					],
 					"institucion": {
 						"nombre":"Colegio San José",
-						"ubicacion": "Marcos Paz, Bs. As."
+						"ubicacion": "Quilmes, Bs. As"
 					},
-					"imagen": "img/ciudadania/proyectos/2011/04.jpg",
-					"url": "https://www.youtube.com/watch?v=2bn0KKejoo0&feature=youtu.be"
+					"imagen": "img/ciudadania/proyectos/2010/02.jpg",
+					"url": "http://responsabilidadcolectiva.blogspot.com.ar/"
 				},
 				{
-					"nombre": "Seguridad Informática",
-					"sub": "Herramienta de Aplicación: Youtube",
+					"nombre": "Cómo mantenerse seguro en Internet",
+					"sub": "Herramienta de Aplicación: Blog",
 					"autores": [
 						{
-							"nombre": "CAJIGAL, Mariana"
+							"nombre": "PICEDA, Luca Ezequiel"
 						},
 						{
-							"nombre": "ITURRALDE RUVINI, Victoria"
-						}					
+							"nombre": "RUIZ MARTINEZ, Patricia Inés"
+						}
 					],
 					"institucion": {
-						"nombre":"Colegio Martín y Omar",
-						"ubicacion": "San Isidro, Bs. As."
+						"nombre":"Instituto Santísimo Sacramento",
+						"ubicacion": "C.A.B.A."
 					},
-					"imagen": "img/ciudadania/proyectos/2011/05.jpg",
-					"url": "https://www.youtube.com/watch?v=jw1Bv7kHE-0&feature=youtu.be"
+					"imagen": "img/ciudadania/proyectos/2010/03.jpg",
+					"url": "http://piceda-ruizmartinez.blogspot.com.ar/"
 				},
 				{
-					"nombre": "Malware",
-					"sub": "Herramienta de Aplicación: Prezi",
+					"nombre": "Cuidate en Internet",
+					"sub": "Herramienta de Aplicación: Blog",
 					"autores": [
 						{
-							"nombre": "SEMCHENCO, Soledad"
+							"nombre": "VERDUGO, Nicolás"
+						},
+						{
+							"nombre": "YACONO, Maria Rosa"
+						}
+					],
+					"institucion": {
+						"nombre":"Colegio Santa María",
+						"ubicacion": "Cañuelas, Bs. As."
+					},
+					"imagen": "img/ciudadania/proyectos/2010/04.jpg",
+					"url": "http://www.cuidatedeinternet.blogspot.com.ar/"
+				},
+				{
+					"nombre": "youth.awareness - conciencia.juvenil",
+					"sub": "Herramienta de Aplicación: Blog",
+					"autores": [
+						{
+							"nombre": "OTTAVIANO GUERRISI, Juan Pablo"
+						},
+						{
+							"nombre": "PASQUALINO INWINKELRIED, Romina Carla"
+						},
+						{
+							"nombre": "ROISMAN ECHART, Gonzalo Ennio"
+						}
+					],
+					"institucion": {
+						"nombre":"Colegio Inglés Horacio Watson",
+						"ubicacion": "C.A.B.A."
+					},
+					"imagen": "img/ciudadania/proyectos/2010/05.jpg",
+					"url": "http://youthawareness2010.blogspot.com.ar/"
+				},
+				{
+					"nombre": "Seguros en Internet",
+					"sub": "Herramienta de Aplicación: Blog",
+					"autores": [
+						{
+							"nombre": "RODRÍGUEZ, Micaela"
+						},
+						{
+							"nombre": "PEREZ, Lucas"
 						}						
 					],
 					"institucion": {
-						"nombre":"Colegio San José",
-						"ubicacion": "Marcos Paz, Bs. As."
+						"nombre":"Colegio Santa María",
+						"ubicacion": "Cañuelas, Bs. As."
 					},
-					"imagen": "img/ciudadania/proyectos/2011/06.jpg",
-					"url": "http://prezi.com/lxsbnx5gi-te/malware/"
+					"imagen": "img/ciudadania/proyectos/2010/06.jpg",
+					"url": "http://segurosen-internet.blogspot.com.ar/"
 				},
 				{
-					"nombre": "Copy of Protección contra malware",
-					"sub": "Herramienta de Aplicación: Prezi",
+					"nombre": "Riesgos de restarle importancia al buen uso de Internet",
+					"sub": "Herramienta de Aplicación: Blog",
 					"autores": [
 						{
-							"nombre": "CARBALLO, Sofía"
+							"nombre": "ETCHEVERE, Andrea"
 						},
 						{
-							"nombre": "PEREIRO, Gonzalo"
+							"nombre": "GOMEZ, Nicolás"
 						}
 					],
 					"institucion": {
-						"nombre":"Instituto Nuestra Sra. de Luján",
+						"nombre":"Colegio Santa María",
+						"ubicacion": "Cañuelas, Bs. As."
+					},
+					"imagen": "img/ciudadania/proyectos/2010/07.jpg",
+					"url": "http://act-ntic.blogspot.com.ar/"
+				},
+				{
+					"nombre": "Internautas-Bloggeando",
+					"sub": "Herramienta de Aplicación: Blog",
+					"autores": [
+						{
+							"nombre": "DE LUCCA, Micaela"
+						},
+						{
+							"nombre": "LOPEZ CHARIF, Manuela"
+						}
+					],
+					"institucion": {
+						"nombre":"Colegio Santa María",
+						"ubicacion": "Cañuelas, Bs. As."
+					},
+					"imagen": "img/ciudadania/proyectos/2010/08.jpg",
+					"url": "http://internautas-bloggeando.blogspot.com.ar/"
+				},
+				{
+					"nombre": "Riesgos en Internet y Seguridad Virtual",
+					"sub": "Herramienta de Aplicación: Blog",
+					"autores": [
+						{
+							"nombre": "AMAYA, Evelin"
+						},
+						{
+							"nombre": "BELLAGAMBA, Andrea"
+						},
+						{
+							"nombre": "CAMPOS, Evelin"
+						}
+					],
+					"institucion": {
+						"nombre":"Colegio San José",
+						"ubicacion": "Quilmes, Bs. As."
+					},
+					"imagen": "img/ciudadania/proyectos/2010/09.jpg",
+					"url": "http://seguridad-virtual.blogspot.com.ar/"
+				},
+				{
+					"nombre": "Privacidad y seguridad en la web",
+					"sub": "Herramienta de Aplicación: Blog",
+					"autores": [
+						{
+							"nombre": "CONTRERAS, Belén"
+						},
+						{
+							"nombre": "DE LOS SANTOS, Marisol"
+						},
+						{
+							"nombre": "DO NASCIMENTO, Cristian"
+						}
+					],
+					"institucion": {
+						"nombre":"Colegio Santa María",
+						"ubicacion": "Cañuelas, Bs. As."
+					},
+					"imagen": "img/ciudadania/proyectos/2010/10.jpg",
+					"url": "http://privacidadyseguridadenlaweb.blogspot.com.ar/"
+				},
+				{
+					"nombre": "Cómo mantenerse seguro en Internet",
+					"sub": "Herramienta de Aplicación: Blog",
+					"autores": [
+						{
+							"nombre": "NICOLAU, Agustina"
+						},
+						{
+							"nombre": "CASADO WOIÑSKI, Macarena"
+						},
+						{
+							"nombre": "NIÑO, María Eugenia"
+						}
+					],
+					"institucion": {
+						"nombre":"Colegio Dámasa Zelaya de Saavedra",
 						"ubicacion": "C.A.B.A."
 					},
-					"imagen": "img/ciudadania/proyectos/2011/07.jpg",
-					"url": "http://prezi.com/3oxbc-ab3gcu/copy-of-proteccion-contra-malware/"
+					"imagen": "img/ciudadania/proyectos/2010/11.jpg",
+					"url": "http://comomantenerseseguroeninternet.blogspot.com.ar/"
 				},
 				{
-					"nombre": "Spam",
-					"sub": "Herramienta de Aplicación: Prezi",
+					"nombre": "Seguridad en la Web",
+					"sub": "Herramienta de Aplicación: Blog",
 					"autores": [
 						{
-							"nombre": "DI LORENZO, Belén"
+							"nombre": "MUJICA, Cecilia"
 						},
 						{
-							"nombre": "JARA, Agustín"
+							"nombre": "ZUBER, Fernando Jorge"
 						}
 					],
 					"institucion": {
-						"nombre":"Colegio Martín y Omar",
-						"ubicacion": "San Isidro, Bs. As."
+						"nombre":"Colegio Santa Catalina-Cipoletti",
+						"ubicacion": "Río Negro"
 					},
-					"imagen": "img/ciudadania/proyectos/2011/08.jpg",
-					"url": "http://prezi.com/jmv21fi1eany/spam-belen-di-lorenzo-y-agustin-jara/"
-				},
-				{
-					"nombre": "Spam",
-					"sub": "Herramienta de Aplicación: Prezi",
-					"autores": [
-						{
-							"nombre": "DI LORENZO, Belén"
-						},
-						{
-							"nombre": "JARA, Agustín"
-						}
-					],
-					"institucion": {
-						"nombre":"Colegio Martín y Omar",
-						"ubicacion": "San Isidro, Bs. As."
-					},
-					"imagen": "img/ciudadania/proyectos/2011/08.jpg",
-					"url": "http://prezi.com/jmv21fi1eany/spam-belen-di-lorenzo-y-agustin-jara/"
-				},
-				{
-					"nombre": "Spam",
-					"sub": "Herramienta de Aplicación: Prezi",
-					"autores": [
-						{
-							"nombre": "DI LORENZO, Belén"
-						},
-						{
-							"nombre": "JARA, Agustín"
-						}
-					],
-					"institucion": {
-						"nombre":"Colegio Martín y Omar",
-						"ubicacion": "San Isidro, Bs. As."
-					},
-					"imagen": "img/ciudadania/proyectos/2011/08.jpg",
-					"url": "http://prezi.com/jmv21fi1eany/spam-belen-di-lorenzo-y-agustin-jara/"
-				},
-				{
-					"nombre": "Spam",
-					"sub": "Herramienta de Aplicación: Prezi",
-					"autores": [
-						{
-							"nombre": "DI LORENZO, Belén"
-						},
-						{
-							"nombre": "JARA, Agustín"
-						}
-					],
-					"institucion": {
-						"nombre":"Colegio Martín y Omar",
-						"ubicacion": "San Isidro, Bs. As."
-					},
-					"imagen": "img/ciudadania/proyectos/2011/08.jpg",
-					"url": "http://prezi.com/jmv21fi1eany/spam-belen-di-lorenzo-y-agustin-jara/"
-				},
-				{
-					"nombre": "Spam",
-					"sub": "Herramienta de Aplicación: Prezi",
-					"autores": [
-						{
-							"nombre": "DI LORENZO, Belén"
-						},
-						{
-							"nombre": "JARA, Agustín"
-						}
-					],
-					"institucion": {
-						"nombre":"Colegio Martín y Omar",
-						"ubicacion": "San Isidro, Bs. As."
-					},
-					"imagen": "img/ciudadania/proyectos/2011/08.jpg",
-					"url": "http://prezi.com/jmv21fi1eany/spam-belen-di-lorenzo-y-agustin-jara/"
+					"imagen": "img/ciudadania/proyectos/2010/12.jpg",
+					"url": "http://zuber-mujica-seguridadeninternet.blogspot.com.ar/"
 				}
 			]
 		}
