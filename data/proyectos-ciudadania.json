@@ -593,7 +593,218 @@
 					"url": "http://ciudadaniadigital123.blogspot.com.ar/"
 				}
 			]
-		}
+		},
+		{
+			"tab":"2013",
+			"nombre": "Proyectos Descatacados 2013",
+			"texto": "Les acercamos algunos de los proyectos que los alumnos de Ciudadanía Digital han desarrollado en su edición 2013. Con herramientas Web 2.0, como Blogs, Glogster y Prezi, desarrollaron espacios de reflexión para compartir con sus compañeros del colegio que no hubieran participado de la experiencia Ciudadanía Digital.",
+			"proyectos": [
+				{
+					"nombre": "Spyware",
+					"sub": "Herramienta de Aplicación: Prezi",
+					"autores": [
+						{
+							"nombre": "RUBEN, Victoria"
+						}						
+					],
+					"institucion": {
+						"nombre":"Escuela de Educación Particular Autorizada ICES",
+						"ubicacion": "Sunchales, Sta. Fe."
+					},
+					"imagen": "img/ciudadania/proyectos/2013/01.jpg",
+					"url": "http://prezi.com/hfqszztxlchb/spyware/"
+				},
+				{
+					"nombre": "Phising",
+					"sub": "Herramienta de Aplicación: Prezi",
+					"autores": [
+						{
+							"nombre": "FERNÁNDEZ MÉNDEZ, Lucía"
+						},
+						{
+							"nombre": "GONZÁLEZ AMADOR, Matías"
+						},
+						{
+							"nombre": "SCOTT, Lautaro"
+						}
+					],
+					"institucion": {
+						"nombre":"Instituto San Alfonso",
+						"ubicacion": "Bella Vista, Bs. As."
+					},
+					"imagen": "img/ciudadania/proyectos/2013/02.jpg",
+					"url": "http://prezi.com/0eqstvnj5gss/phishing/"
+				},
+				{
+					"nombre": "Phising",
+					"sub": "Herramienta de Aplicación: Glogster",
+					"autores": [
+						{
+							"nombre": "CAI, Ana María"
+						},
+						{
+							"nombre": "ROLÓN, Santiago Andrés"
+						},
+						{
+							"nombre": "TOLOZA, Martín"
+						},
+						{
+							"nombre": "VINIEGRA, Paula Rocío"
+						}
+					],
+					"institucion": {
+						"nombre":"Colegio Martín y Omar",
+						"ubicacion": "San Isidro, Bs.As."
+					},
+					"imagen": "img/ciudadania/proyectos/2013/03.jpg",
+					"url": "http://www.glogster.com/anichu24/phishing/g-6kf1cud68pu06r1vhn1j4ap"
+				},
+				{
+					"nombre": "Ciudadanía Digital",
+					"sub": "HHerramienta de Aplicación: Blog",
+					"autores": [
+						{
+							"nombre": "LÓPEZ, Juan Lautaro"
+						}
+					],
+					"institucion": {
+						"nombre":"Escuela Técnica Henry Ford",
+						"ubicacion": "Ricardo Rojas, Bs.As."
+					},
+					"imagen": "img/ciudadania/proyectos/2013/04.jpg",
+					"url": "http://digitalciudad2013.blogspot.com.ar/"
+				},
+				{
+					"nombre": "Cómo ser Buenos Ciudadanos Digitales",
+					"sub": "Herramienta de Aplicación: Blog",
+					"autores": [
+						{
+							"nombre": "CARRIZO HERLAN, Lucila Jazmín"
+						}
+					],
+					"institucion": {
+						"nombre":"Colegio Ntra. Sra. de la Misericordia",
+						"ubicacion": "San Fernando, Bs. As."
+					},
+					"imagen": "img/ciudadania/proyectos/2013/05.jpg",
+					"url": "http://ciudadaniadigitalutnultimocurso.blogspot.com.ar/"
+				},
+				{
+					"nombre": "Phising",
+					"sub": "Herramienta de Aplicación: Prezi",
+					"autores": [
+						{
+							"nombre": "GORBARAN, Camila"
+						},
+						{
+							"nombre": "MAZZOLENIS, María Emilia"
+						},
+						{
+							"nombre": "VELCOFF RODRIGUEZ, Tatiana"
+						}
+					],
+					"institucion": {
+						"nombre":"Instituto Summa",
+						"ubicacion": "C.A.B.A."
+					},
+					"imagen": "img/ciudadania/proyectos/2013/06.jpg",
+					"url": "http://prezi.com/ox3yqsk3mgdh/phishing/"
+				},
+				{
+					"nombre": "Phising",
+					"sub": "Herramienta de Aplicación: Prezi",
+					"autores": [
+						{
+							"nombre": "ALCARAZ, Lara"
+						},
+						{
+							"nombre": "MANFE, Juan Facundo"
+						},
+						{
+							"nombre": "LICIAGA, Azul"
+						},
+						{
+							"nombre": "RUIZ, Francisco"
+						}
+					],
+					"institucion": {
+						"nombre":"Instituto San Alfonso",
+						"ubicacion": "Bella Vista, Bs. As."
+					},
+					"imagen": "img/ciudadania/proyectos/2013/07.jpg",
+					"url": "http://prezi.com/k4pgqimohn7i/spyware/?utm_campaign=ending-bar-tryout&utm_medium=ending-bar&utm_source=prezi-view"
+				},
+				{
+					"nombre": "Seguridad en Internet",
+					"sub": "Herramienta de Aplicación: Prezi",
+					"autores": [
+						{
+							"nombre": "CAI, Ana María"
+						}
+					],
+					"institucion": {
+						"nombre":"Colegio Martín y Omar",
+						"ubicacion": "San Isidro, Bs. As."
+					},
+					"imagen": "img/ciudadania/proyectos/2013/08.jpg",
+					"url": "http://seguriadadeninternet.blogspot.com.ar/"
+				},
+				{
+					"nombre": "Ciudadanía Digital",
+					"sub": "Herramienta de Aplicación: Blog",
+					"autores": [
+						{
+							"nombre": "ORTEGA, Sol Priscila"
+						}
+					],
+					"institucion": {
+						"nombre":"Colegio Secundario San Pablo Norte",
+						"ubicacion": "Los Polvorines, Bs. As."
+					},
+					"imagen": "img/ciudadania/proyectos/2013/09.jpg",
+					"url": "http://ciudadaniadigitalsanpablo.blogspot.com.ar/"
+				},
+				{
+					"nombre": "Malaware",
+					"sub": "Herramienta de Aplicación: Prezi",
+					"autores": [
+						{
+							"nombre": "GELARDINI, Valentín"
+						},
+						{
+							"nombre": "GILLIG, Daniel"
+						},
+						{
+							"nombre": "GONZÁLEZ FALBO, Matías Fernando"
+						},
+						{
+							"nombre": "HIDALGO, Tomás Agustín"
+						}
+					],
+					"institucion": {
+						"nombre":"Escuela Técnica Henry Ford",
+						"ubicacion": "Ricardo Rojas, Bs.As."
+					},
+					"imagen": "img/ciudadania/proyectos/2013/10.jpg",
+					"url": "http://prezi.com/1ga1tmhsohtx/malware/"
+				},
+				{
+					"nombre": "Spam",
+					"sub": "Herramienta de Aplicación: Prezi",
+					"autores": [
+						{
+							"nombre": "BLANCO FERNANDEZ, Fernando Tomás"
+						}
+					],
+					"institucion": {
+						"nombre":"Colegio Escuela Técnica Henry Ford",
+						"ubicacion": "Ricardo Rojas, Bs.As."
+					},
+					"imagen": "img/ciudadania/proyectos/2013/11.jpg",
+					"url": "http://prezi.com/apol2ms5sd9l/spam/"
+				}
 
+			]
+		}
 	]
 }
