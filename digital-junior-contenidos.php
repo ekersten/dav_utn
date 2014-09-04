@@ -31,7 +31,7 @@
                     </ul>
                     <p>Esta sección presenta Información General del Programa Digital Junior, como ser temarios y modelos de examen.<br/>
                     Para acceder a dicha información deberá ingresar su clave.</p>
-                    <form action="#" method="post">
+                    <form action="digital-junior-contenidos2.php" method="post">
                         <div class="row">
                             <div class="column medium-4 medium-centered">
                                 <p>
