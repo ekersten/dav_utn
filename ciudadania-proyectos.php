@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" ng-app="proyectos"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" ng-app="proyectos"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" ng-app="proyectos"> <![endif]-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" ng-app="proyectos" ng-init="data_src='data/proyectos-ciudadania.json'"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" ng-app="proyectos" ng-init="data_src='data/proyectos-ciudadania.json'"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" ng-app="proyectos" ng-init="data_src='data/proyectos-ciudadania.json'"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" ng-app="proyectos" ng-init="data_src='data/proyectos-ciudadania.json'"> <!--<![endif]-->
 	<head>
 		<meta charset="utf-8">
