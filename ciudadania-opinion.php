@@ -14,6 +14,7 @@
 		<script src="js/vendor/modernizr.js"></script>
 		<!--[if lt IE 9]><script src="js/vendor/rem.min.js"></script><![endif]-->
 		<script src="js/vendor/angular.min.js"></script>
+		<script src="js/vendor/angular-sanitize.min.js"></script>
 	</head>
 	<body>
 		<?php include("includes/header.php"); ?>
@@ -32,9 +33,9 @@
 					</ul>
 					<p>Queremos compartir con Uds. la opinión de los algunos alumnos que ya participaron de esta experiencia y los consejos que ellos quisieron dejarles a los estudiantes que decidan ser parte de la próxima edición de este curso.</p>
 					<div class="experiencias" ng-controller="ExperienciasController">
-						<div class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="5000" data-cycle-pause-on-hover="true" data-cycle-slides="> .slide">
+						<div class="slider">
 							<div class="slide" ng-repeat="item in data.experiencias">
-								<div class="texto">{{item.texto}}</div>
+								<div class="texto" ng-bind-html="item.texto">{{item.texto}}</div>
 								<div class="autor">{{item.autor}}</div>
 							</div>
 						</div>
@@ -51,6 +52,7 @@
 		<?php include("includes/footer.php"); ?>
 		<!-- local scripts -->
 		<script src="js/tabs.js"></script>
+		<script src="js/vendor/jquery.cycle2.min.js"></script>
 		<script src="js/experiencias.js"></script>
 	</body>
 </html>

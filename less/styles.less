@@ -298,3 +298,44 @@ section.tpl-2-col {
 		}
 	}
 }
+
+.experiencias {
+
+	.slide {
+		background: #d6d6d6;
+		padding: 1rem;
+		border-radius: .5rem;
+
+		.texto {
+			p {
+				&:first-child {
+					position: relative;
+					&:before {
+						content: "\201C";
+						font-size: 4rem;
+						font-family: serif;
+						display: inline;
+						line-height: 1rem;
+						position: absolute;
+					}
+				}
+
+				&:last-child {
+					position: relative;
+					&:after {
+						content: "\201D";
+						font-size: 4rem;
+						font-family: serif;
+						display: inline;
+						line-height: 1rem;
+						position: absolute;
+					}
+				}
+			}
+		}
+
+		.autor {
+			text-align: right;
+		}
+	}
+}
