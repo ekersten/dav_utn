@@ -18,36 +18,17 @@
         <?php include("includes/header.php"); ?>
         <section class="tpl-2-col digital-junior">
             <div class="header-image"></div>
-            <div class="subnav" data-activa="6">
+            <div class="subnav" data-activa="2">
                 <?php include("includes/tabs/digital-junior.php"); ?>
             </div>
             <div class="row contenedor">
                 <div class="column medium-9 principal">
-                    <h1>Reserva de fechas de examen</h1>
+                    <h1>Error de login</h1>
                     <ul class="breadcrumbs">
                         <li>Programa para escuelas</li>
                         <li><a href="digital-junior-informacion.php">Digital Junior</a></li>
-                        <li class="actual">Gestión de fechas</li>
+                        <li class="actual">Contenidos de Certificación</li>
                     </ul>
-                    <p>Mediante la presente sección podrán informarse respecto de la organización de las fechas de examen reservadas por el colegio. Consultar el estado de la documentación previa que su colegio debe remitir e informarse sobre la asignación de horarios y profesores a sus fechas de examen.</p>
-                   <form action="digital-junior-login_dav_gestion.php" method="post">
-                        <div class="row">
-                            <div class="column medium-6">
-                                <p>
-                                    <label>Nombre de Usuario</label>
-                                    <input type="text" name="username" value="" required>
-                                </p>
-                                <p>
-                                    <label>Contraseña</label>
-                                    <input type="password" name="password" value="" required>
-                                </p>
-                                <p class="botones">
-                                    <input type="submit" name="" value="Ingresar">
-                                </p>
-                            </div>
-                        </div>
-                        
-                    </form>
                 </div>
                 <div class="column medium-3 secundario">
                    <div class="video">

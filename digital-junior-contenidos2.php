@@ -1,29 +1,23 @@
 <?php
-    if (!isset($_SERVER['PHP_AUTH_USER'])) {
-      header('WWW-Authenticate: Basic realm="Acceso restringido"');
-      header('HTTP/1.0 401 Unauthorized');
-      echo 'Error Login.';
+session_start();
+if (!isset($_SESSION['logueado']) || $_SESSION['logueado'] !== 'true') {
+  if (isset($_POST['nombre']) && isset($_POST['clave'])) {
+    $archivo = file_get_contents('docs/pass.txt');
+    $nombre = $_POST['nombre'];
+    $clave = $_POST['clave'];
+    $campos = explode('|', $archivo);
+    if ($campos[0] === $nombre && $campos[1] === $clave) {
+      $_SESSION['logueado'] = 'true';
+    } else {
+      header('location: digital-junior-contenidos-error.php');
       exit;
-   }
-
-   $fich = file("docs/pass.txt");
-   $i=0; $validado=false;
-
-   while ($fich[$i] && !$validado) {
-      $campo = explode("|",$fich[$i]);
-      if (($_SERVER['PHP_AUTH_USER']==$campo[0]) && ($_SERVER['PHP_AUTH_PW']==chop($campo[1]))) $validado=true;
-      $i++;
-   }
-
-   if (!$validado) {
-      header('WWW-Authenticate: Basic realm="Acceso restringido"');
-      header('HTTP/1.0 401 Unauthorized');
-      echo 'Error Login.';
-      exit;
-   }
+    }
+  } else {
+    header('location: digital-junior-contenidos-error.php');
+    exit;
+  }
+}
 ?>
-
-
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
