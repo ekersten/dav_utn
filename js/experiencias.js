@@ -13,19 +13,13 @@
 			setTimeout(function(){
 				$('.experiencias').find('.slider').cycle({
 					'autoHeight': 'calc',
-					'timeout': 5000,
+					'timeout': 4000,
 					'pauseOnHover': true,
 					'slides': '> .slide',
-					'sync': false
-				});
-
-				$('.experiencias').find('.slider').on('cycle-before', function(event, optionHash, outgoingSlideEl, incomingSlideEl, forwardFlag) {
-					$('.experiencias').animate({
-						'height': $(incomingSlideEl).height()
-					},400);
+					// 'sync': false,
+					'pager': '.slides-pager'
 				});
 			}, 100);
-			
 		});
 
 	});

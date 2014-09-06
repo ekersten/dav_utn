@@ -39,6 +39,7 @@
 								<div class="autor">{{item.autor}}</div>
 							</div>
 						</div>
+						<div class="slides-pager"></div>
 					</div>
 				</div>
 				<div class="column medium-3 secundario">

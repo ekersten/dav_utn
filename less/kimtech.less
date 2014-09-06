@@ -42,6 +42,52 @@ section.kimtech {
 				}
 			}
 		}
-		
+	}
+
+	.experiencias {
+		.slides-pager {
+
+			span {
+				
+				background: lighten(@color-seccion, 15%);
+				color: lighten(@color-seccion, 15%);
+
+				&.cycle-pager-active {
+					background: @color-seccion;
+					color: @color-seccion;
+				}
+			}
+		}
+	}
+
+	.proyectos {
+		ul.tabs {
+			border-bottom: 1px solid @color-seccion;
+
+			li {
+				border: 1px solid @color-seccion;
+				color: @color-seccion;
+
+				&.activa {
+					background: @color-seccion;
+					color: @blanco;
+				}
+			}
+		}
+
+		.proyecto {
+			.inner {
+				h4 {
+					color: @color-seccion;
+				}
+
+				.info {
+					a {
+						background: @color-seccion;
+						color: @blanco;
+					}
+				}
+			}
+		}
 	}
 }
