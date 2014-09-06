@@ -306,39 +306,35 @@ section.tpl-2-col {
 		background: @slides-gris;
 		padding: 1rem;
 		border-radius: .5rem;
+		position: relative;
+
+		&:before, &:after {
+			color: darken(@slides-gris, 15%);
+			display: inline-block;
+			font-family: Georgia, serif;
+			font-size: 10rem;
+			line-height: 1rem;
+			position: absolute;
+		}
+
+		&:before {
+			content: "\201C";
+			left: 0;
+			top: 4rem;
+		}
+		
+
+		&:after {
+			content: "\201D";
+			right: 0;
+			bottom: -1.5rem;
+		}
 
 		.texto {
 			p {
 				font-style: italic;
-				position: relative;
-				&:first-child {
-					&:before {
-						content: "\201C";
-						font-size: 4rem;
-						font-family: Georgia, serif;
-						display: inline;
-						line-height: 1rem;
-						position: relative;
-						top: 1.5rem;
-						color: darken(@slides-gris, 15%);
-						margin-right: .4rem;
-					}
-				}
-
-				&:last-child {
-					&:after {
-						content: "\201D";
-						font-size: 4rem;
-						font-family: Georgia, serif;
-						display: inline-block;
-						line-height: 1rem;
-						position: relative;
-						top: 1.5rem;
-						color: darken(@slides-gris, 15%);
-						margin-left: .2rem;
-						margin-top: -.8rem;
-					}
-				}
+				line-height: 1.2rem;
+				margin-left: 3rem;
 			}
 		}
 
@@ -349,13 +345,14 @@ section.tpl-2-col {
 			text-transform: uppercase;
 			font-size: .8rem;
 			color: darken(@slides-gris, 35%);
+			margin-right: 3rem;
 		}
 	}
 
 	.slides-pager {
 		text-align: center;
 		margin: 1rem 0;
-		height: 1.6rem;
+		height: 1.4rem;
 
 		span {
 			display: inline-block;
@@ -367,13 +364,13 @@ section.tpl-2-col {
 			margin: 0 .2rem;
 			cursor: pointer;
 			position: relative;
-			transition: all .5s ease-out;
+			transition: all .4s ease-out;
 			bottom: 0;
 
 			&.cycle-pager-active {
-				width: 1.6rem;
-				height: 1.6rem;
-				bottom: .3rem;
+				width: 1.4rem;
+				height: 1.4rem;
+				bottom: .2rem;
 				background: @gris-claro;
 				color: @gris-claro;
 			}
