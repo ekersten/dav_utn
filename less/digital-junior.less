@@ -7,7 +7,7 @@ section.digital-junior {
 		background-size: cover;
 	}
 	
-	h1,h2,a, .destacado {
+	h1,h2,a,h3,h4 .destacado {
 		color: @color-seccion;
 	}
 
@@ -317,6 +317,28 @@ section.digital-junior {
 		}
 	}
 
+	ul.lista-contenidos {
+		list-style: none;
+		padding: 0;
+		margin: 0 0 0 1rem;
+
+		li {
+			margin: 0 0 .2rem 0;
+			font-size: .9rem;
+			
+			a{
+			text-decoration: none;
+				}
+
+			&:before {
+				content: "\e605";
+				font-family: "icomoon";
+				margin-right: .5rem;
+				color: @gris-claro;
+			}
+		}
+	}
+
 	table.listado_reservas {
 		width: 100%;
 		border-collapse: collapse;
@@ -471,6 +493,18 @@ section.digital-junior {
 						top: 3px;
 					}
 				}
+			}
+		}
+	}
+
+	.contenidos{
+
+		h3{
+			margin-top: 2rem;
+			margin-bottom: 0;
+
+			&+p{
+				margin-top: 0;
 			}
 		}
 	}

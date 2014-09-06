@@ -42,28 +42,27 @@ if (!isset($_SESSION['logueado']) || $_SESSION['logueado'] !== 'true') {
                 <?php include("includes/tabs/digital-junior.php"); ?>
             </div>
             <div class="row contenedor">
-                <div class="column medium-9 principal">
+                <div class="column medium-9 principal contenidos">
                     <h1>Contenidos de certificación</h1>
                     <ul class="breadcrumbs">
                         <li>Programa para escuelas</li>
                         <li><a href="digital-junior-informacion.php">Digital Junior</a></li>
                         <li class="actual">Contenidos de Certificación</li>
                     </ul>
-                   <h3>Programa Digital Junior :: Proyecto de Certificación de Conocimientos Informáticos </h3>
-                   <h5>Modalidad Secundario</h5>
+                   <h3>Modalidad Secundario</h3>
                    <p>Temarios y modelos de Examen: (para descargar)</p>
-                   <ul>
+                   <ul class="lista-contenidos">
                         <li><a href="docs/UTN.BA Certificacion en Office.rar">Office</a></li>
                         <li><a href="docs/UTN.BA Certificacion en Diseno.rar">Diseño</a></li>
                         <li><a href="docs/UTN.BA Certificacion en Diseno Multimedial.rar">Diseño Multimedial</a></li>
                         <li><a href="docs/UTN.BA Certificacion en Programacion.rar">Programación</a></li>
                     </ul>
-                   <h5>Modalidad Junior</h5>
+                   <h3>Modalidad Junior</h3>
                    <p>Temarios y modelos de Examen: (para descargar)</p>
-                   <ul>
+                   <ul class="lista-contenidos">
                         <li><a href="docs/UTN.BA Certificacion Nivel Junior.rar">Office</a></li>
                    </ul>
-                <h5>Comentarios:</h5>
+                <h3>Comentarios:</h3>
                 <p>La modalidad Secudario se sugiere para alumnos de 14 a 17 años de edad, acompaña a la propuesta de contenidos una metodología de examen de corte universitario. La modalidad Junior aplica para alumnos de 11 a 13 años de edad, acompaña a la propuesta de contenidos una metodología específica de examen.</p>
                 <p>Les recordamos que conforman la propuesta estándar del programa temarios de diversas aplicaciones en diferentes niveles de complejidad. A fines organizativos los temarios a descargar se han agrupado según la naturaleza de las aplicaciones en las siguientes categorías: oficina, TAC y sistemas operativos, diseño gráfico, diseño multimedial y programación.</p>
                 <p>Cada certificado corresponde a una aplicación y nivel de examen particular. De esta forma, el colegio diseña su propuesta de certificación, eligiendo las aplicaciones a acreditar por sus alumnos y los niveles de examen correspondientes.</p>

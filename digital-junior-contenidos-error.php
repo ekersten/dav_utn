@@ -29,7 +29,9 @@
                         <li><a href="digital-junior-informacion.php">Digital Junior</a></li>
                         <li class="actual">Contenidos de Certificación</li>
                     </ul>
+                <p>Intente nuevamente haciendo click <a href="digital-junior-contenidos.php">aquí</a></p>
                 </div>
+
                 <div class="column medium-3 secundario">
                    <div class="video">
                         <a href="https://www.youtube.com/watch?v=-dxWBb0NVbo" class="fancybox-media"><img src="img/video_dj.jpg" alt=""> </a>

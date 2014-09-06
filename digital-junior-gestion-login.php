@@ -30,9 +30,9 @@
                         <li class="actual">Gestión de fechas</li>
                     </ul>
                     <p>Mediante la presente sección podrán informarse respecto de la organización de las fechas de examen reservadas por el colegio. Consultar el estado de la documentación previa que su colegio debe remitir e informarse sobre la asignación de horarios y profesores a sus fechas de examen.</p>
-                   <form action="digital-junior-login_dav_gestion.php" method="post">
+                   <form action="digital-junior-login-procesa.php" method="post">
                         <div class="row">
-                            <div class="column medium-6">
+                            <div class="column medium-4 medium-centered">
                                 <p>
                                     <label>Nombre de Usuario</label>
                                     <input type="text" name="username" value="" required>
