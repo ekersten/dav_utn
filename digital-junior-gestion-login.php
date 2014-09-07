@@ -35,11 +35,11 @@
                             <div class="column medium-4 medium-centered">
                                 <p>
                                     <label>Nombre de Usuario</label>
-                                    <input type="text" name="username" value="" required>
+                                    <input type="text" name="username" value="">
                                 </p>
                                 <p>
                                     <label>Contraseña</label>
-                                    <input type="password" name="password" value="" required>
+                                    <input type="password" name="password" value="">
                                 </p>
                                 <p class="botones">
                                     <input type="submit" name="" value="Ingresar">

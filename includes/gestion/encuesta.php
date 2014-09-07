@@ -1,8 +1,31 @@
+<?php 
+//Gestión de Colegios - Encuestas
+// by Alex - date : 07-08-2009
+// alexjg@argentina.com
+//error_reporting(0);
+
+$id_colegio = $_POST['id_colegio'];
+//$id_colegio = '47';
+
+$conn = mysql_connect("localhost", "dav_web", "UserwebDav08");
+$db = mysql_select_db("dav_gestion", $conn);
+$fecha_actualizado = mysql_fetch_array(mysql_query ("SELECT UltimaActualizacion FROM WEBParametros"));
+$sql = "SELECT Estado, FechaReserva, Lugar, Participacion, Vacantes FROM WEBReservas where idcolegio = '".$id_colegio."' ORDER BY FechaReserva ASC ";
+$result = mysql_query( $sql );
+
+function format_date($fecha){
+    ereg( "([0-9]{2,4})-([0-9]{1,2})-([0-9]{1,2})", $fecha, $mifecha);
+    $lafecha=$mifecha[3]."/".$mifecha[2]."/".$mifecha[1];
+    return $lafecha;
+}
+?>
+
 <h2>Encuesta</h2>
 <h3>Opinión</h3>
 <p></p>
 <p></p>
 <form action="send_data.php" method="post" class="form-encuesta">
+	<input type="hidden" name="id_colegio" value="<?php echo $id_colegio; ?>" />
 	<div class="row">
 		<div class="column medium-6">
 			<p>

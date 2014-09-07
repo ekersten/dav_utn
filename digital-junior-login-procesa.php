@@ -6,8 +6,8 @@
 //error_reporting(0);
 $username = '';
 $password = '';
-$username = $_POST[username];
-$password = $_POST[password];
+$username = $_POST['username'];
+$password = $_POST['password'];
 $conn = mysql_connect("localhost", "dav_web", "UserwebDav08");
 $db = mysql_select_db("dav_gestion", $conn);
 
