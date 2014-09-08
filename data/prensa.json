@@ -25,7 +25,7 @@
 			"fecha": "Junio 2014",
 			"fuente": "FRBA en Movimiento nº39",
 			"fuente_link": "http://www.frba.utn.edu.ar/info_fija.php?pag=en_movimiento",
-			"autor": "Juan Pirulo"
+			"autor": false
 		},
 		{
 			"titulo": "",
