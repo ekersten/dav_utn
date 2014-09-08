@@ -38,9 +38,6 @@ if (!isset($_SESSION['logueado']) || $_SESSION['logueado'] !== 'true') {
         <?php include("includes/header.php"); ?>
         <section class="tpl-2-col digital-junior">
             <div class="header-image"></div>
-            <div class="subnav" data-activa="2">
-                <?php include("includes/tabs/digital-junior.php"); ?>
-            </div>
             <div class="row contenedor">
                 <div class="column medium-9 principal contenidos">
                     <h1>Contenidos de certificación</h1>
@@ -72,7 +69,7 @@ if (!isset($_SESSION['logueado']) || $_SESSION['logueado'] !== 'true') {
                 <p><a class="descargar" href="docs/disenar_plan.pdf" target="_blank">Descargar Plan Colegio</a></p>
  
                 </div>
-                <div class="column medium-3 secundario">
+               <!--  <div class="column medium-3 secundario">
                    <div class="video">
                         <a href="https://www.youtube.com/watch?v=-dxWBb0NVbo" class="fancybox-media"><img src="img/video_dj.jpg" alt=""> </a>
                     </div>
@@ -84,7 +81,7 @@ if (!isset($_SESSION['logueado']) || $_SESSION['logueado'] !== 'true') {
                         <li>Certificación de conocimientos</li>
                         <li>Asesoramiento</li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </section>
         <?php include("includes/footer.php"); ?>

@@ -15,7 +15,7 @@
 			</table>
 		</div>
 	</li>
-	<li class="tab">
+	<!-- <li class="tab">
 		<div class="holder"></div>
 		<div class="gradient"></div>
 		<div class="content">
@@ -30,8 +30,8 @@
 				</tr>
 			</table>
 		</div>
-	</li>
-	<li class="tab">
+	</li> -->
+	<!-- <li class="tab">
 		<div class="holder"></div>
 		<div class="gradient"></div>
 		<div class="content">
@@ -46,7 +46,7 @@
 				</tr>
 			</table>
 		</div>
-	</li>
+	</li> -->
 	<li class="tab">
 		<div class="holder"></div>
 		<div class="gradient"></div>

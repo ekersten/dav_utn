@@ -18,11 +18,8 @@
         <?php include("includes/header.php"); ?>
         <section class="tpl-2-col digital-junior">
             <div class="header-image"></div>
-            <div class="subnav" data-activa="2">
-                <?php include("includes/tabs/digital-junior.php"); ?>
-            </div>
             <div class="row contenedor">
-                <div class="column medium-9 principal">
+                <div class="column medium-10 principal">
                     <h1>Contenidos de certificación</h1>
                     <ul class="breadcrumbs">
                         <li>Programa para escuelas</li>
@@ -50,11 +47,7 @@
                         </div>
                         
                     </form>
-                    <p>En caso de no ser un usuario registrado envíenos un mail para obtener su clave de ingreso: <br/>
-                    <a href="mailto:dav@sceu.frba.utn.edu.ar">dav@sceu.frba.utn.edu.ar</a></p>
-                </div>
-                <div class="column medium-3 secundario">
-                   <?php include("includes/lateral/lateral-dj.php"); ?>
+                    <p>En caso de no ser un usuario registrado envíenos un mail para obtener su clave de ingreso: <a href="mailto:dav@sceu.frba.utn.edu.ar">dav@sceu.frba.utn.edu.ar</a></p>
                 </div>
             </div>
         </section>
