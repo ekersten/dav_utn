@@ -74,29 +74,20 @@
 		},
 		{
 			"titulo": "Más de 300 escuelas usan simulador digital",
-			"texto": "",
-			"link": "",
-			"fecha": "",
-			"fuente": "",
-			"fuente_link": "",
-			"autor": false
+			"texto": "\"Más de 300 escuelas secundarias en distintos puntos del país comenzaron a aplicar el \"simulador digital\" para enseñar de manera interactiva, un sistema que la Facultad Regional Buenos Aires de UTN introdujo hace tres años para mejorar la formación de los alumnos en el aprendizaje de matemática y física...\"",
+			"link": "http://www.asteriscos.tv/tecnologia-10.html",
+			"fecha": "30/06/06",
+			"fuente": "www.asterisco.tv/tecnología",
+			"fuente_link": "http://www.asteriscos.tv/tecnologia.php",
+			"autor": "Leandro Selén"
 		},
 		{
-			"titulo": "",
-			"texto": "",
-			"link": "",
-			"fecha": "",
-			"fuente": "",
-			"fuente_link": "",
-			"autor": false
-		},
-		{
-			"titulo": "",
-			"texto": "",
-			"link": "",
-			"fecha": "",
-			"fuente": "",
-			"fuente_link": "",
+			"titulo": "Presentan el Programa \"Profesores para el Futuro\"",
+			"texto": "\"El objetivo principal del programa Profesores para el Futuro es el de mejorar la calidad de la educación secundaria de escuelas técnicas públicas, con miras a disminuir los niveles de deserción escolar y mejorar las posibilidades de los estudiantes al momento del ingreso a la universidad. ... \"",
+			"link": "http://www.datafull.com/infotech/nota.php?id=696",
+			"fecha": "05/05/2006",
+			"fuente": "DataNet",
+			"fuente_link": false,
 			"autor": false
 		},
 		{
