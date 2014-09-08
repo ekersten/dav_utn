@@ -85,7 +85,7 @@
 					<p class="cargo"><strong>Ing. Soledad Grisel Corrales</strong><br/>Coordinadora General</p>
 					<hr>
 					<p>Medrano 951 2º piso - Capital Federal <br/>
-					Teléfonos: 4867-7565/7545<br/>
+					Teléfonos: (011) 4867-7565/7545<br/>
 					<a href="mailto:info@dav.sceu.frba.utn.edu.ar">info@dav.sceu.frba.utn.edu.ar</a></p>
 				</div>
 			</div>
