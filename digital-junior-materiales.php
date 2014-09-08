@@ -47,17 +47,7 @@
                     
                 </div>
                 <div class="column medium-3 secundario">
-                  <div class="video">
-                        <a href="https://www.youtube.com/watch?v=-dxWBb0NVbo" class="fancybox-media"><img src="img/video_dj.jpg" alt=""> </a>
-                    </div>
-                    <p>El Programa <em>Digital Junior</em> le brinda los siguientes <strong>BENEFICIOS</strong></p>
-                    <ul>
-                        <li>Contenidos Actualizados</li>
-                        <li>Capacitación docente</li>
-                        <li>Materiales de estudio</li>
-                        <li>Certificación de conocimientos</li>
-                        <li>Asesoramiento</li>
-                    </ul>
+                  <?php include("includes/lateral/lateral-dj.php"); ?>
                 </div>
             </div>
         </section>
