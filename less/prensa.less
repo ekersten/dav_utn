@@ -1,0 +1,50 @@
+section.prensa {
+	.header-image {
+		height: 200px;
+		background: url("../img/entropia_header.jpg") no-repeat center top;
+		background-size: cover;
+	}
+	
+	/* color de la seccion */
+	h1,h2, em, a, .destacado {
+		color: @azul;
+	}
+
+	.breadcrumbs {
+		li.actual {
+			color: @azul;
+		}
+	}
+
+
+	.articulos {
+		.articulo {
+			border-bottom: 1px solid @gris-claro;
+			margin: 2rem 0;
+			padding-bottom: 2rem;
+
+			h3 {
+				color: @azul;
+			}
+
+			p {
+				font-size: .9rem;
+				margin: .5rem 0;
+				line-height: 1.1rem;
+
+				a {
+					color: @azul;
+					text-decoration: none;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+	}
+}

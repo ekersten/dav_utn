@@ -26,7 +26,7 @@
                             
                         </ul>
                     </li>
-                    <!-- <li><a href="#">Prensa</a></li> -->
+                    <li><a href="prensa.php">Prensa</a></li>
                     <li><a href="contacto.php">Contacto</a></li>
                 </ul>
             </nav>
