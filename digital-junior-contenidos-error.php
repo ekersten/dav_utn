@@ -23,7 +23,7 @@
                     <h1>Error de login</h1>
                     <ul class="breadcrumbs">
                         <li>Programa para escuelas</li>
-                        <li><a href="digital-junior-informacion.php">Digital Junior</a></li>
+                        <li>Digital Junior</li>
                         <li class="actual">Contenidos de Certificación</li>
                     </ul>
                 <p>Intente nuevamente haciendo click <a href="digital-junior-contenidos.php">aquí</a></p>

@@ -43,7 +43,7 @@ if (!isset($_SESSION['logueado']) || $_SESSION['logueado'] !== 'true') {
                     <h1>Contenidos de certificación</h1>
                     <ul class="breadcrumbs">
                         <li>Programa para escuelas</li>
-                        <li><a href="digital-junior-informacion.php">Digital Junior</a></li>
+                        <li>Digital Junior</li>
                         <li class="actual">Contenidos de Certificación</li>
                     </ul>
                    <h3>Modalidad Secundario</h3>
