@@ -18,9 +18,6 @@
 		<?php include("includes/header.php"); ?>
 		<section class="tpl-2-col nativos">
 			<div class="header-image"></div>
-			<!-- <div class="subnav" data-activa="1">
-				<?php include("includes/tabs/digital-junior.php"); ?>
-			</div> -->
 			<div class="row contenedor">
 				<div class="column medium-9 principal">
 					<h1>Nativos Digitales</h1>
