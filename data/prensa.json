@@ -69,7 +69,7 @@
 			"link": "http://portal.educ.ar/noticias/ciencia-y-tecnologia/nuevo-boletin-del-departamento.php",
 			"fecha": "Agosto 2006",
 			"fuente": "Prensa de la UTN",
-			"fuente_link": "false",
+			"fuente_link": false,
 			"autor": false
 		},
 		{
@@ -91,122 +91,40 @@
 			"autor": false
 		},
 		{
-			"titulo": "",
-			"texto": "",
-			"link": "",
-			"fecha": "",
-			"fuente": "",
-			"fuente_link": "",
+			"titulo": "Proyecto \"HOMOVIDENS\": Tecnología en Simuladores Digitales",
+			"texto": "\"Este Proyecto ofrece una nueva forma de enfocar el aprendizaje y la enseñanza de las ciencias formales, promoviendo nuevas metodologías de trabajo en el aula: activas, participativas, motivadoras, personalizadas y autónomas, mediante la generación de entornos de trabajo que aprovechan las nuevas tecnologías. A través del mismo proponemos conectar la enseñanza de la matemática y la física con la realidad actual, modelando la misma a través de simulaciones....\"",
+			"link": "http://www.horizonteweb.com/magazine/Numero76.htm",
+			"fecha": "Abril 2006",
+			"fuente": "Magazine Horizonte Nº 76",
+			"fuente_link": false,
 			"autor": false
 		},
 		{
-			"titulo": "",
-			"texto": "",
-			"link": "",
-			"fecha": "",
-			"fuente": "",
-			"fuente_link": "",
+			"titulo": "Un plan de la UTN",
+			"texto": "\"La Universidad Tecnológica Nacional (UTN) regional Buenos Aires puso en marcha el \"Programa Digital Junior\", con la intención de articular con escuelas medias la calidad del sistema educativo en materia de tecnología e informática. El programa otorga un certificado de calidad a los egresados para que puedan insertarse en el mercado laboral. \"La idea es poner a la universidad como auditor de los alumnos\", sostuvo el ingeniero Jorge Almiña, a cargo del programa Digital Junior...\"",
+			"link": "http://edant.clarin.com/suplementos/economico/2006/03/19/n-01220.htm",
+			"fecha": "19/03/2006",
+			"fuente": "www.clarin.com",
+			"fuente_link": "http://www.clarin.com/",
 			"autor": false
 		},
 		{
-			"titulo": "",
-			"texto": "",
-			"link": "",
-			"fecha": "",
-			"fuente": "",
-			"fuente_link": "",
+			"titulo": "La UTN sale a promover la articulación con la escuela media",
+			"texto": "\"La Facultad Regional Buenos Aires de la Universidad Tecnológica Nacional (UTN) presentará el próximo 17 de noviembre el \"Programa Digital Junior\", un novedoso plan de articulación con escuelas medias con el propósito de elevar y sustentar la calidad del sistema educativo en materia de tecnología e informática...\"",
+			"link": "http://noticias.universia.com.ar/en-portada/noticia/2005/11/03/371193/utn-sale-promover-articulacion-escuela-media.html",
+			"fecha": "03/11/2005",
+			"fuente": "www.universia.com.ar",
+			"fuente_link": "http://www.universia.com.ar/",
 			"autor": false
 		},
 		{
-			"titulo": "",
-			"texto": "",
-			"link": "",
-			"fecha": "",
-			"fuente": "",
-			"fuente_link": "",
-			"autor": false
-		},
-		{
-			"titulo": "",
-			"texto": "",
-			"link": "",
-			"fecha": "",
-			"fuente": "",
-			"fuente_link": "",
-			"autor": false
-		},
-		{
-			"titulo": "",
-			"texto": "",
-			"link": "",
-			"fecha": "",
-			"fuente": "",
-			"fuente_link": "",
-			"autor": false
-		},
-		{
-			"titulo": "",
-			"texto": "",
-			"link": "",
-			"fecha": "",
-			"fuente": "",
-			"fuente_link": "",
-			"autor": false
-		},
-		{
-			"titulo": "",
-			"texto": "",
-			"link": "",
-			"fecha": "",
-			"fuente": "",
-			"fuente_link": "",
-			"autor": false
-		},
-		{
-			"titulo": "",
-			"texto": "",
-			"link": "",
-			"fecha": "",
-			"fuente": "",
-			"fuente_link": "",
-			"autor": false
-		},
-		{
-			"titulo": "",
-			"texto": "",
-			"link": "",
-			"fecha": "",
-			"fuente": "",
-			"fuente_link": "",
-			"autor": false
-		},
-		{
-			"titulo": "",
-			"texto": "",
-			"link": "",
-			"fecha": "",
-			"fuente": "",
-			"fuente_link": "",
-			"autor": false
-		},
-		{
-			"titulo": "",
-			"texto": "",
-			"link": "",
-			"fecha": "",
-			"fuente": "",
-			"fuente_link": "",
-			"autor": false
-		},
-		{
-			"titulo": "",
-			"texto": "",
-			"link": "",
-			"fecha": "",
-			"fuente": "",
-			"fuente_link": "",
-			"autor": false
+			"titulo": "Evento - Programa Digital Junior",
+			"texto": "\"La Universidad Tecnológica Nacional presentará el \"Programa Digital Junior\", se trata de un programa gratuito para los Colegios que ofrece la posibilidad de evaluación y acreditación de los conocimientos informáticos de sus alumnos, otorgando un certificado que garantiza el aprendizaje de dichos saberes...\"",
+			"link": "http://edant.clarin.com/suplementos/economico/2006/03/19/n-01220.htm",
+			"fecha": "03/11/2005",
+			"fuente": "Datafull.com",
+			"fuente_link": "http://www.clarin.com/",
+			"autor": "Diego Mastroianni"
 		}
-
 	]
 }
