@@ -13,11 +13,6 @@ $fecha_actualizado = mysql_fetch_array(mysql_query ("SELECT UltimaActualizacion 
 $sql = "SELECT Estado, FechaReserva, Lugar, Participacion, Vacantes FROM WEBReservas where idcolegio = '".$id_colegio."' ORDER BY FechaReserva ASC ";
 $result = mysql_query( $sql );
 
-function format_date($fecha){
-    ereg( "([0-9]{2,4})-([0-9]{1,2})-([0-9]{1,2})", $fecha, $mifecha);
-    $lafecha=$mifecha[3]."/".$mifecha[2]."/".$mifecha[1];
-    return $lafecha;
-}
 ?>
 
 <h2>Encuesta</h2>

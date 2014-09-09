@@ -5,7 +5,7 @@
 // alexjg@argentina.com
 
 //$usuario = $_POST(usuario);
-$id_colegio = $_POST['id_colegio'];
+$id_colegio = $_REQUEST['id_colegio'];
 
 //$id_colegio = '47';
 
@@ -17,12 +17,6 @@ $fecha_actualizado = mysql_fetch_array(mysql_query ( "SELECT UltimaActualizacion
 $sql = "SELECT FechaReserva, Horario, Organizador, Docentes FROM WEBReservas where idcolegio = '".$id_colegio."'  ORDER BY FechaReserva ASC ";
 
 $result = mysql_query( $sql );
-
-function format_date($fecha){
-    ereg( "([0-9]{2,4})-([0-9]{1,2})-([0-9]{1,2})", $fecha, $mifecha);
-    $lafecha=$mifecha[3]."/".$mifecha[2]."/".$mifecha[1];
-    return $lafecha;
-} 
 
 ?>
 <h2>Organización horaria</h2>
