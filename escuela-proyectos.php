@@ -18,7 +18,7 @@
 		<?php include("includes/header.php"); ?>
 		<section class="tpl-2-col escuela">
 			<div class="header-image"></div>
-			<div class="subnav" data-activa="3">
+			<div class="subnav" data-activa="proyectos">
 				<?php include("includes/tabs/escuela.php"); ?>
 			</div>
 			<div class="row contenedor">

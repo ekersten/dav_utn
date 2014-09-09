@@ -36,7 +36,7 @@ $row_data = mysql_fetch_array(mysql_query ( "SELECT IdColegio, Usuario, Clave FR
         <?php include("includes/header.php"); ?>
         <section class="tpl-2-col digital-junior gestion">
             <div class="header-image"></div>
-            <div class="subnav" data-activa="6">
+            <div class="subnav" data-activa="gestion">
                 <?php include("includes/tabs/digital-junior.php"); ?>
             </div>
             <div class="row contenedor">

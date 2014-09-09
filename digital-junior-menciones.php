@@ -19,7 +19,7 @@
         <?php include("includes/header.php"); ?>
         <section class="tpl-2-col digital-junior">
             <div class="header-image"></div>
-            <div class="subnav" data-activa="7">
+            <div class="subnav" data-activa="menciones">
                 <?php include("includes/tabs/digital-junior.php"); ?>
             </div>
             <div class="row contenedor">

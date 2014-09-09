@@ -18,7 +18,7 @@
 		<?php include("includes/header.php"); ?>
 		<section class="tpl-2-col kimtech">
 			<div class="header-image"></div>
-			<div class="subnav" data-activa="2">
+			<div class="subnav" data-activa="opinion">
 				<?php include("includes/tabs/kimtech.php"); ?>
 			</div>
 			<div class="row contenedor">

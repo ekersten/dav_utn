@@ -1,5 +1,5 @@
 <ul class="tabs">
-	<li class="tab">
+	<li class="tab" data-tab="informacion">
 		<div class="holder"></div>
 		<div class="gradient"></div>
 		<div class="content">
@@ -15,7 +15,7 @@
 			</table>
 		</div>
 	</li>
-	<li class="tab">
+	<li class="tab" data-tab="opinion">
 		<div class="holder"></div>
 		<div class="gradient"></div>
 		<div class="content">
@@ -31,7 +31,7 @@
 			</table>
 		</div>
 	</li>
-	<li class="tab">
+	<li class="tab" data-tab="proyectos">
 		<div class="holder"></div>
 		<div class="gradient"></div>
 		<div class="content">

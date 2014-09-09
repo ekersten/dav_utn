@@ -19,7 +19,7 @@
 		<?php include("includes/header.php"); ?>
 		<section class="tpl-2-col ciudadania">
 			<div class="header-image"></div>
-			<div class="subnav" data-activa="3">
+			<div class="subnav" data-activa="proyectos">
 				<?php include("includes/tabs/ciudadania.php"); ?>
 			</div>
 			<div class="row contenedor">

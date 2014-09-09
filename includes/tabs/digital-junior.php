@@ -1,5 +1,5 @@
 <ul class="tabs">
-	<li class="tab">
+	<li class="tab" data-tab="informacion">
 		<div class="holder"></div>
 		<div class="gradient"></div>
 		<div class="content">
@@ -15,7 +15,7 @@
 			</table>
 		</div>
 	</li>
-	<!-- <li class="tab">
+	<!-- <li class="tab" data-tab="certificacion">
 		<div class="holder"></div>
 		<div class="gradient"></div>
 		<div class="content">
@@ -31,7 +31,7 @@
 			</table>
 		</div>
 	</li> -->
-	<!-- <li class="tab">
+	<!-- <li class="tab" data-tab="sistemadistancia">
 		<div class="holder"></div>
 		<div class="gradient"></div>
 		<div class="content">
@@ -47,7 +47,7 @@
 			</table>
 		</div>
 	</li> -->
-	<li class="tab">
+	<li class="tab" data-tab="materiales">
 		<div class="holder"></div>
 		<div class="gradient"></div>
 		<div class="content">
@@ -63,7 +63,7 @@
 			</table>
 		</div>
 	</li>
-	<li class="tab">
+	<li class="tab" data-tab="capacitacion">
 		<div class="holder"></div>
 		<div class="gradient"></div>
 		<div class="content">
@@ -79,7 +79,7 @@
 			</table>
 		</div>
 	</li>
-	<li class="tab">
+	<li class="tab" data-tab="gestion">
 		<div class="holder"></div>
 		<div class="gradient"></div>
 		<div class="content">
@@ -95,7 +95,7 @@
 			</table>
 		</div>
 	</li>
-		<li class="tab">
+	<li class="tab" data-tab="menciones">
 		<div class="holder"></div>
 		<div class="gradient"></div>
 		<div class="content">
