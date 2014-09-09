@@ -25,7 +25,15 @@
 					<div class="articulo" ng-repeat="articulo in data.articulos">
 						<h3>{{articulo.titulo}}</h3>
 						<p>{{articulo.texto}} <a ng-href="{{articulo.link}}" target="_blank">Ver más</a></p>
-						<p><strong>Fecha:</strong> {{articulo.fecha}}<br/><strong>Fuente:</strong> <a ng-href="{{articulo.fuente_link}}" target="_blank">{{articulo.fuente}}</a><span ng-if="articulo.autor"><br/><strong>Autor:</strong> {{articulo.autor}}</span></p>
+						<p>
+							<strong>Fecha:</strong> {{articulo.fecha}}<br/>
+							<strong>Fuente:</strong>
+							<span ng-switch="!!articulo.fuente_link">
+								<a ng-href="{{articulo.fuente_link}}" ng-switch-when="true" target="_blank">{{articulo.fuente}}</a>
+								<span ng-switch-when="false">{{articulo.fuente}}</span>
+							</span>
+							<span ng-if="articulo.autor"><br/><strong>Autor:</strong> {{articulo.autor}}</span>
+						</p>
 					</div>
 				</div>
 				<!-- <div class="column medium-3 secundario">
