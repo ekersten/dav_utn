@@ -74,12 +74,52 @@
 				"ubicacion": "Santiago del Estero"
 			},
 			{
-				"nombre": "Colegio Evangélico Alfredo Furniss",
-				"ubicacion": "Santiago del Estero"
+				"nombre": "Colegio San Pablo",
+				"ubicacion": "Salta"
 			},
 			{
-				"nombre": "Colegio Evangélico Alfredo Furniss",
-				"ubicacion": "Santiago del Estero"
+				"nombre": "EEMPI Nº 8062 San Francisco de Asis",
+				"ubicacion": "Sastre, Santa Fe"
+			},
+			{
+				"nombre": "Esc. De Ens. Media Part. Aut. Nª 3079 ICES",
+				"ubicacion": "Sunchales, Santa Fe"
+			},
+			{
+				"nombre": "Escuela Castelfranco Bilingüe y Bicultural",
+				"ubicacion": "Villa Belgrano, Córdoba"
+			},
+			{
+				"nombre": "Escuela Nuestra Señora de Las Mercedes",
+				"ubicacion": "Montes de Oca, Santa Fe"
+			},
+			{
+				"nombre": "Instituto Claret",
+				"ubicacion": "Bahía Blanca, Buenos Aires"
+			},
+			{
+				"nombre": "Instituto Sagrada Familia",
+				"ubicacion": "Vicuña Mackenna, Córdoba"
+			},
+			{
+				"nombre": "Instituto Santa Catalina Virgen y Mártir",
+				"ubicacion": "Cipolletti, Río Negro"
+			},
+			{
+				"nombre": "Instituto Vuelta del Ombú",
+				"ubicacion": "Virasoro, Corrientes"
+			},
+			{
+				"nombre": "Instituto José Manuel Estrada",
+				"ubicacion": " Capilla del Señor, Buenos Aires"
+			},
+			{
+				"nombre": "Instituto Privado Escuela Nueva",
+				"ubicacion": "Trelew, Chubut"
+			},
+			{
+				"nombre": "Instituto Ntra. Sra. De la Merced",
+				"ubicacion": "Arroyito, Córdoba"
 			}
 		]
 	}

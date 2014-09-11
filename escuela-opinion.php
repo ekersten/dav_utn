@@ -30,6 +30,36 @@
 						<li class="actual">Experiencias</li>
 					</ul>
 					<h2>PROXIMAMENTE</h2>
+					<div class="entrevistas">
+						<div class="entrevista">
+							<div class="titulo">
+								<h3>Titulo 1</h3>
+							</div>
+							<div class="contenido">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti deleniti dolores, distinctio laborum, blanditiis voluptatibus inventore, at eum atque quibusdam unde quam molestiae. Ipsam at necessitatibus consequuntur suscipit eaque modi.</p>
+							</div>
+						</div>
+						<div class="entrevista">
+							<div class="titulo">
+								<h3>Titulo 1</h3>
+							</div>
+							<div class="contenido">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti deleniti dolores, distinctio laborum, blanditiis voluptatibus inventore, at eum atque quibusdam unde quam molestiae. Ipsam at necessitatibus consequuntur suscipit eaque modi.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti deleniti dolores, distinctio laborum, blanditiis voluptatibus inventore, at eum atque quibusdam unde quam molestiae. Ipsam at necessitatibus consequuntur suscipit eaque modi.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti deleniti dolores, distinctio laborum, blanditiis voluptatibus inventore, at eum atque quibusdam unde quam molestiae. Ipsam at necessitatibus consequuntur suscipit eaque modi.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti deleniti dolores, distinctio laborum, blanditiis voluptatibus inventore, at eum atque quibusdam unde quam molestiae. Ipsam at necessitatibus consequuntur suscipit eaque modi.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti deleniti dolores, distinctio laborum, blanditiis voluptatibus inventore, at eum atque quibusdam unde quam molestiae. Ipsam at necessitatibus consequuntur suscipit eaque modi.</p>
+							</div>
+						</div>
+						<div class="entrevista">
+							<div class="titulo">
+								<h3>Titulo 1</h3>
+							</div>
+							<div class="contenido">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti deleniti dolores, distinctio laborum, blanditiis voluptatibus inventore, at eum atque quibusdam unde quam molestiae. Ipsam at necessitatibus consequuntur suscipit eaque modi.</p>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="column medium-3 secundario">
 					<?php include("includes/lateral/lateral-escuela.php"); ?>
@@ -39,5 +69,6 @@
 		<?php include("includes/footer.php"); ?>
 		<!-- local scripts -->
 		<script src="js/tabs.js"></script>
+		<script src="js/entrevistas.js"></script>
 	</body>
 </html>
