@@ -30,7 +30,7 @@
 						<li class="actual">Información General</li>
 					</ul>
 					<blockquote>&ldquo;La única habilidad competitiva a largo plazo es la habilidad para aprender.&rdquo;<br/> S. Paperts</blockquote>
-					<p>KIMTECH es un programa de<span class="destacado">Capacitación y Certificación en Robótica Educativa que desarrollan alumnos y profesores del colegio,</span> en conjunto con los especialistas de la UTN.BA.</p>
+					<p>KIMTECH es un programa de<span class="destacado"> Capacitación y Certificación en Robótica Educativa que desarrollan alumnos y profesores del colegio,</span> en conjunto con los especialistas de la UTN.BA.</p>
 					<p>La propuesta pedagógica ha sido diseñada para que puedan participar escuelas de todas las especialidades, que quieran valerse de la tecnología para propiciar en sus alumnos una instancia de aplicación e integración de conocimientos de múltiples asignaturas, desarrollando la lógica de resolución de problemas y el pensamiento creativo, la capacidad de aprender a través de la investigación y  la experimentación, en un marco de trabajo propicio para el  desarrollo de las habilidades blandas (actitudinales, interpersonales) por parte de los alumnos.</p>
 					<p>KIMTECH ha sido pensado para que las escuelas logren abordar el trabajo con robótica <span class="destacado">superando el obstáculo que impone la adquisición de equipamiento tecnológico y otras limitaciones,</span> como ser tiempo, espacio y la formación de especialistas.</p>
 					

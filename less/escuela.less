@@ -6,9 +6,10 @@ section.escuela {
 		background-size: cover;
 	}
 	
-	h1,h2, .destacado {
+	h1,h2, .destacado, .color {
 		color: @color-seccion;
 	}
+
 
 	&.tpl-2-col {
 		.secundario {
@@ -60,8 +61,6 @@ section.escuela {
 		}
 	}
 
-	.entrevistas 
-
 	.proyectos {
 		ul.tabs {
 			border-bottom: 1px solid @color-seccion;
@@ -88,6 +87,24 @@ section.escuela {
 						background: @color-seccion;
 						color: @blanco;
 					}
+				}
+			}
+		}
+	}
+
+	.entrevistas {
+		.entrevista {
+
+			.titulo {
+				background: @color-seccion;
+				color: @blanco;
+
+			}
+
+			.contenido {
+
+				h5{
+					color: @color-seccion;
 				}
 			}
 		}

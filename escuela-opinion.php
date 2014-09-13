@@ -35,7 +35,7 @@
 								<h3>Entrevista: Colegio Bertrand Russell, Banfield</h3>
 							</div>
 							<div class="contenido">
-								<h4>Nombre: Daniel Erusalimsky - Puesto: Representante Legal</h4>
+								<h4><span class="color">Nombre:</span> Daniel Erusalimsky <br/> <span class="color">Puesto:</span> Representante Legal</h4>
 								<h5>Sabemos que el colegio comenzó  a experimentar con el uso del campus virtual de manera muy temprana, ¿Qué los impulsó a hacerlo? </h5>
 								<p>El convencimiento de todo el equipo directivo respecto a la utilidad de la tecnología.<br/>El colegio tiene la página web www.bertrandrussell.com.ar de difusión de actividades desde el año 2000. En 2005 pensamos en incorporar a la misma una base de datos para subir trabajos prácticos para los alumnos de secundaria e información para padres. En 2008 esta base de datos ya era importante y decidimos crear otra web de servicios www.colegiorussell.edu.ar con hosting en el colegio. A mediados de ese mismo año U.T.N. B.A. nos ofrece un curso para docentes sobre Moodle y montar un campus con hosting en el servidor de la UTN. Dos de nuestros docentes tomaron el curso pero instalamos el campus con hosting en el servidor del colegio.</p>
 								<h5>¿Cómo fue esa primera experiencia para el colegio y los docentes?</h5>
@@ -55,7 +55,7 @@
 								<h3>Entrevista: Colegio San José, Marcos Paz</h3>
 							</div>
 							<div class="contenido">
-								<h4>Marina TRUSZKOWSKI -Puesto: Vicedirectora Nivel Secundario </h4>
+								<h4><span class="color">Nombre:</span> Marina TRUSZKOWSKI  <br/><span class="color">Puesto:</span> Vicedirectora Nivel Secundario </h4>
 								<h5>Por favor, presente la institución, describiendo brevemente su contexto educativo.</h5>
 								<p>El colegio San José de Marcos Paz es un colegio que pertenece a la Congregación Hijas de Nuestra Señora de Luján, ubicado en Marcos Paz (Bs. As.), tercer cordón del con urbano bonaerense. Cuenta con el 100% de subvención estatal, con una cuota mensual por alumno extremadamente baja. Es el colegio privado más antiguo de Marcos Paz, establecido en el pueblo desde 1935.</p>
 								<h5>¿Qué experiencia previa tenía la escuela en relación al uso de las NTICs aplicadas al aula?</h5>
@@ -79,7 +79,7 @@
 								<h3>Entrevista: Colegio Moseñor Alberti, La Plata</h3>
 							</div>
 							<div class="contenido">
-								<h4>Pbro. Américo Aguirre - Puesto: Representante Legal y Párroco</h4>
+								<h4><span class="color">Nombre:</span> Pbro. Américo Aguirre <br/> <span class="color">Puesto:</span> Representante Legal y Párroco</h4>
 								<h5>Por favor, presente la institución, describiendo brevemente su contexto educativo.</h5>
 								<p>El Colegio Monseñor Alberti es una institución que alberga a más de 1200 alumnos con un arancel muy accesible para las familias, y nuestro compromiso es devolver ese dinero que las familias depositan en nuestra Institución en propuestas pedagógicas y edilicias de excelencia</p>
 								<h5>¿Qué experiencia previa tenía la escuela en relación al uso de las NTICs aplicadas al aula?</h5>
