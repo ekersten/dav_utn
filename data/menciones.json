@@ -34,7 +34,7 @@
 		{
 			"src": "img/menciones/2013/grande/colegio_canada-caba..jpg",
 			"mini": "img/menciones/2013/mini/colegio_canada-caba..jpg",
-			"colegio": "Colegio Canada",
+			"colegio": "Colegio Canadá",
 			"ubicacion": "C.A.B.A"
 		},
 		{
@@ -71,12 +71,12 @@
 			"src": "img/menciones/2013/grande/colegio_esclavas_del_sagrado_corazon_de_jesus-ituzaingo-bsas.jpg",
 			"mini": "img/menciones/2013/mini/colegio_esclavas_del_sagrado_corazon_de_jesus-ituzaingo-bsas.jpg",
 			"colegio": "Colegio Esclavas del Sagrado Corazón de Jesús",
-			"ubicacion": "Ituzaingo - Bs.As."
+			"ubicacion": "Ituzaingó - Bs.As."
 		},
 		{
 			"src": "img/menciones/2013/grande/colegio_fasta_nino_jesus-lobos-bsas.jpg",
 			"mini": "img/menciones/2013/mini/colegio_fasta_nino_jesus-lobos-bsas.jpg",
-			"colegio": "Colegio Fasta Niño Jesús",
+			"colegio": "Colegio F.A.S.T.A Niño Jesús",
 			"ubicacion": "Lobos - Bs.As."
 		},
 		{
@@ -88,7 +88,7 @@
 		{
 			"src": "img/menciones/2013/grande/colegio_holters-villa_ballester-bsas.jpg",
 			"mini": "img/menciones/2013/mini/colegio_holters-villa_ballester-bsas.jpg",
-			"colegio": "Colegio Holters",
+			"colegio": "Colegio Hölters",
 			"ubicacion": "Villa Ballester - Bs.As."
 		},
 		{
@@ -100,7 +100,7 @@
 		{
 			"src": "img/menciones/2013/grande/colegio_jose_hernandez-villa_ballester-bsas.jpg",
 			"mini": "img/menciones/2013/mini/colegio_jose_hernandez-villa_ballester-bsas.jpg",
-			"colegio": "Colegio Jose Hernandez",
+			"colegio": "Colegio José Hernandez",
 			"ubicacion": "Villa Ballester - Bs.As."
 		},
 		{
@@ -130,8 +130,8 @@
 		{
 			"src": "img/menciones/2013/grande/colegio_ntra_sra_de_lujan-adrogue-bsas.jpg",
 			"mini": "img/menciones/2013/mini/colegio_ntra_sra_de_lujan-adrogue-bsas.jpg",
-			"colegio": "Colegio Ntra. Sra. de Lujan",
-			"ubicacion": "Adrogue - Bs.As."
+			"colegio": "Colegio Ntra. Sra. de Luján",
+			"ubicacion": "Adrogué - Bs.As."
 		},
 		{
 			"src": "img/menciones/2013/grande/colegio_palermo_chico-caba.jpg",
@@ -178,7 +178,7 @@
 		{
 			"src": "img/menciones/2013/grande/colegio_san_jose-quilmes-bsas.jpg",
 			"mini": "img/menciones/2013/mini/colegio_san_jose-quilmes-bsas.jpg",
-			"colegio": "Colegio San Jose",
+			"colegio": "Colegio San José",
 			"ubicacion": "Quilmes - Bs.As."
 		},
 		{
@@ -214,7 +214,7 @@
 		{
 			"src": "img/menciones/2013/grande/colegio_santa_brigida-caba.jpg",
 			"mini": "img/menciones/2013/mini/colegio_santa_brigida-caba.jpg",
-			"colegio": "Colegio Santa Brigida",
+			"colegio": "Colegio Santa Brígida",
 			"ubicacion": "C.A.B.A"
 		},
 		{
@@ -226,7 +226,7 @@
 		{
 			"src": "img/menciones/2013/grande/colegio_santa_teresita_del_nino_jesus-florida-bsas.jpg",
 			"mini": "img/menciones/2013/mini/colegio_santa_teresita_del_nino_jesus-florida-bsas.jpg",
-			"colegio": "Colegio Santa Teresita del niño Jesús",
+			"colegio": "Colegio Santa Teresita del Niño Jesús",
 			"ubicacion": "Florida - Bs.As."
 		},
 		{
@@ -310,7 +310,7 @@
 		{
 			"src": "img/menciones/2013/grande/instituto_ceferino_namuncura-caba.jpg",
 			"mini": "img/menciones/2013/mini/instituto_ceferino_namuncura-caba.jpg",
-			"colegio": "Instituto Ceferino Namuncura",
+			"colegio": "Instituto Ceferino Namuncurá",
 			"ubicacion": "C.A.B.A"
 		},
 		{
@@ -388,7 +388,7 @@
 		{
 			"src": "img/menciones/2013/grande/instituto_inmaculada_concepcion_de_ntra_sra_de_lourdes-caba.jpg",
 			"mini": "img/menciones/2013/mini/instituto_inmaculada_concepcion_de_ntra_sra_de_lourdes-caba.jpg",
-			"colegio": "Instituto Inmaculada Concepción de ntra. sra. de Lourdes",
+			"colegio": "Instituto Inmaculada Concepción de Ntra. Sra. de Lourdes",
 			"ubicacion": "C.A.B.A"
 		},
 		{
@@ -419,7 +419,7 @@
 			"src": "img/menciones/2013/grande/instituto_mallinckrodt-martinez-bsas.jpg",
 			"mini": "img/menciones/2013/mini/instituto_mallinckrodt-martinez-bsas.jpg",
 			"colegio": "Instituto Mallinckrodt",
-			"ubicacion": "Martinez - Bs.As."
+			"ubicacion": "Martínez - Bs.As."
 		},
 		{
 			"src": "img/menciones/2013/grande/instituto_manuel_belgrano-berazategui-bsas.jpg",
@@ -460,7 +460,7 @@
 		{
 			"src": "img/menciones/2013/grande/instituto_ntra_senora_de_Fatima-del_viso-bsas.jpg",
 			"mini": "img/menciones/2013/mini/instituto_ntra_senora_de_Fatima-del_viso-bsas.jpg",
-			"colegio": "Instituto Ntra. Señora de Fatima",
+			"colegio": "Instituto Ntra. Señora de Fátima",
 			"ubicacion": "Del Viso - Bs.As."
 		},
 		{
@@ -502,7 +502,7 @@
 		{
 			"src": "img/menciones/2013/grande/instituto_privado_francisco_de_asis-mariano_acosta-bsas.jpg",
 			"mini": "img/menciones/2013/mini/instituto_privado_francisco_de_asis-mariano_acosta-bsas.jpg",
-			"colegio": "Instituto Privado Francisco de Asis",
+			"colegio": "Instituto Privado Francisco de Asís",
 			"ubicacion": "Mariano Acosta - Bs.As."
 		},
 		{
@@ -652,7 +652,7 @@
 		{
 			"src": "img/menciones/2013/grande/instituto_tecnico_maria_reina-remedios_ de_escalada-bsas.jpg",
 			"mini": "img/menciones/2013/mini/instituto_tecnico_maria_reina-remedios_ de_escalada-bsas.jpg",
-			"colegio": "Instituto Tecnico Maria Reina",
+			"colegio": "Instituto Técnico María Reina",
 			"ubicacion": "Remedios de Escalada - Bs.As."
 		},
 		{
