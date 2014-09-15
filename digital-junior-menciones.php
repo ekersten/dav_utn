@@ -43,7 +43,7 @@
                         </div>
                         <div class="row">
                             <div class="column small-12">
-                                <ul class="small-block-grid-2 medium-block-grid-5 large-block-grid-6 fotos">
+                                <ul class="small-block-grid-3 medium-block-grid-5 large-block-grid-6 fotos">
                                     <li ng-repeat="foto in data.fotos" class="foto">
                                         <a ng-href="{{foto.src}}" class="fancybox" rel="menciones" data-colegio="{{foto.colegio}}" data-mencion="{{foto.mencion}}" data-ubicacion="{{foto.ubicacion}}" title="{{foto.colegio}}">
                                             <img ng-src="{{foto.mini}}">
