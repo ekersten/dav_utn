@@ -33,20 +33,7 @@
 					<p>El objetivos de utilizar estas herramientas es, no sólo familiarizar a los docentes en el uso de esta modalidad de enseñanza y aprendizaje, sino de comenzar a generar una comunidad constituida por docentes que forman parte del programa. A través de esta plataforma los profesores pueden comunicarse tanto con sus tutores como con sus colegas para intercambiar experiencias, opiniones, reflexionar y debatir sobre las prácticas educativas. </p>
 					<p>Telecom Argentina es una de las empresas que nos acompaña desde hace 5 años financiando la implementación del programa en todo el país, alcanzando a 1000 docentes  cada año. Se ha desarrollado un sitio con los avances de dicho programa URL: <a href="http://www.campushomovidens.com.ar/">http://www.profesoresparaelfuturo.com/</a>desde donde es posible acceder a material Educativo Multimedia, a la plataforma virtual, como así también, a los proyectos destacados de los años 2007 y 2008.</p>
 					<p>A partir del año 2009 creamos <span class="destacado"> la RED de REFERENTES LOCALES.</span> Esta red está compuesta por profesores que ya se han capacitado y que han tenido una participación destacada en los cursos, desarrollando excelentes proyectos en base a lo aprendido. Estos docentes siguen actualizando a través de esta RED, derramando estos nuevos conocimientos en sus respectivas comunidades.</p>
-			</div>
-			<!-- 	<div class="column medium-3 secundario">
-					<div class="video">
-						<a href="https://www.youtube.com/watch?v=-dxWBb0NVbo" class="fancybox-media"><img src="img/video_dj.jpg" alt=""> </a>
-					</div>
-					<p>El Programa <em>Digital Junior</em> le brinda los siguientes <strong>BENEFICIOS</strong></p>
-					<ul>
-						<li>Contenidos Actualizados</li>
-						<li>Capacitación docente</li>
-						<li>Materiales de estudio</li>
-						<li>Certificación de conocimientos</li>
-						<li>Asesoramiento</li>
-					</ul>
-				</div> -->
+				</div>
 			</div>
 		</section>
 		<?php include("includes/footer.php"); ?>

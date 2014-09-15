@@ -67,21 +67,7 @@ if (!isset($_SESSION['logueado']) || $_SESSION['logueado'] !== 'true') {
                 <p>A modo de referencia para cada aplicación y nivel de examen se publica un modelo de examen tipo. Al momento que el colegio se incorpora al programa, tiene acceso a la totalidad de los materiales de estudio.</p>
                 <p>Si lo desea descargue el siguiente archivo con sugerencias para comenzar a diseñar el plan para su colegio.</p>
                 <p><a class="descargar" href="docs/disenar_plan.pdf" target="_blank">Descargar Plan Colegio</a></p>
- 
-                </div>
-               <!--  <div class="column medium-3 secundario">
-                   <div class="video">
-                        <a href="https://www.youtube.com/watch?v=-dxWBb0NVbo" class="fancybox-media"><img src="img/video_dj.jpg" alt=""> </a>
-                    </div>
-                    <p>El Programa <em>Digital Junior</em> le brinda los siguientes <strong>BENEFICIOS</strong></p>
-                    <ul>
-                        <li>Contenidos Actualizados</li>
-                        <li>Capacitación docente</li>
-                        <li>Materiales de estudio</li>
-                        <li>Certificación de conocimientos</li>
-                        <li>Asesoramiento</li>
-                    </ul>
-                </div> -->
+             </div>
             </div>
         </section>
         <?php include("includes/footer.php"); ?>

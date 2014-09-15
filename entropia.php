@@ -32,19 +32,6 @@
 					<p>A su vez, durante este trayecto, <span class="destacado">los alumnos son acompañados por estudiantes avanzados de la UTN.BA, quienes participan del programa cumpliendo la función de tutores y realizando apoyo y seguimiento a los alumnos, </span>y que a su vez son supervisados por docentes graduados de la Universidad, con el objetivo de mejorar su rendimiento académico y asegurar la continuidad en todas las instancias del programa. </p>
 					<p>La primera experiencia de Entropía se está llevando adelante en la sede Lugano de la FRBA, con la participación de 35 alumnos de escuelas técnicas y comerciales de  la Ciudad Autónoma de Buenos Aires, y con la participación de cuatro estudiantes de las carreras de Ingeniería Industrial y Eléctrica oficiando como tutores.</p>
 				</div>
-			<!-- 	<div class="column medium-3 secundario">
-					<div class="video">
-						<a href="https://www.youtube.com/watch?v=-dxWBb0NVbo" class="fancybox-media"><img src="img/video_dj.jpg" alt=""> </a>
-					</div>
-					<p>El Programa <em>Digital Junior</em> le brinda los siguientes <strong>BENEFICIOS</strong></p>
-					<ul>
-						<li>Contenidos Actualizados</li>
-						<li>Capacitación docente</li>
-						<li>Materiales de estudio</li>
-						<li>Certificación de conocimientos</li>
-						<li>Asesoramiento</li>
-					</ul>
-				</div> -->
 			</div>
 		</section>
 		<?php include("includes/footer.php"); ?>

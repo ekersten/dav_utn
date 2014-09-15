@@ -35,19 +35,6 @@
 					<p>Las computadoras por sí solas no generan ningún cambio si no están integradas a las prácticas educativas y a nuevas metodologías didácticas. Con la integración de las TIC a las prácticas educativas  se coadyuva a generar una continuidad entre la realidad que viven los alumnos fuera del aula y la que viven dentro de la escuela.</p>
 					<p>Es por eso que generamos una estrategia de formación integral de los docentes, centrada en la funcionalidad, el dominio con actitud crítica, habilidades para resolución de problemas y la creación  de materiales educativos con creatividad para que los docentes estructuren ambientes de aprendizaje de forma no tradicional fusionando las TIC con modalidades pedagógicas que estimulan el trabajo cooperativo, el trabajo en grupo y colaborativo.</p>
 				</div>
-			<!-- 	<div class="column medium-3 secundario">
-					<div class="video">
-						<a href="https://www.youtube.com/watch?v=-dxWBb0NVbo" class="fancybox-media"><img src="img/video_dj.jpg" alt=""> </a>
-					</div>
-					<p>El Programa <em>Digital Junior</em> le brinda los siguientes <strong>BENEFICIOS</strong></p>
-					<ul>
-						<li>Contenidos Actualizados</li>
-						<li>Capacitación docente</li>
-						<li>Materiales de estudio</li>
-						<li>Certificación de conocimientos</li>
-						<li>Asesoramiento</li>
-					</ul>
-				</div> -->
 			</div>
 		</section>
 		<?php include("includes/footer.php"); ?>

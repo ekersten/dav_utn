@@ -80,9 +80,6 @@
 					<p>Medrano 951 2º piso - Capital Federal <br/>
 					Teléfonos: 4867-7565/7545<br/>
 					<a href="mailto:dav@sceu.frba.utn.edu.ar">dav@sceu.frba.utn.edu.ar</a></p>
-										
-
-					
 				</div>
 			</div>
 		</section>
