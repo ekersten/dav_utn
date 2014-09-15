@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="css/dav.css">
 		<script src="js/vendor/modernizr.js"></script>
 		<!--[if lt IE 9]><script src="js/vendor/rem.min.js"></script><![endif]-->
+		<?php include('includes/favicon.php'); ?>
 		<script src="js/vendor/angular.min.js"></script>
 	</head>
 	<body>

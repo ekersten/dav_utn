@@ -15,6 +15,7 @@
 		<!--[if lt IE 9]><script src="js/vendor/rem.min.js"></script><![endif]-->
 		<script src="js/vendor/angular.min.js"></script>
 		<script src="js/vendor/angular-sanitize.min.js"></script>
+		<?php include('includes/favicon.php'); ?>
 	</head>
 	<body>
 		<?php include("includes/header.php"); ?>
