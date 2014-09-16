@@ -58,7 +58,7 @@ Una vez completada con los datos solicitados deben enviarla por mail a la siguie
 			<td><?php echo $myrow[1]; ?></td>
 			<td><?php echo $myrow[2]; ?></td>
 			<td><?php echo $myrow[3]; ?></td>
-			<td><?php echo $myrow[4]; ?></td>
+			<td><?php echo  utf8_encode($myrow[4]); ?></td>
 		</tr>
 
 		<?php
