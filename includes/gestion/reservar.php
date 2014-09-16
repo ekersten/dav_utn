@@ -55,11 +55,13 @@ Una vez completada con los datos solicitados deben enviarla por mail a la siguie
 		?>
 		<tr>
 			<td><?php echo $myrow[0]; ?></td>
-			<td><?php echo utf8_encode($myrow[1]); ?></td>
+			<td><?php echo $myrow[1]; ?></td>
 			<td><?php echo $myrow[2]; ?></td>
 			<td><?php echo $myrow[3]; ?></td>
-			<td><?php echo tf8_encode($myrow[4]); ?></td>
+			<td><?php echo $myrow[4]; ?></td>
 		</tr>
+
+		<!-- <td><?php echo  utf8_encode($myrow[1]); ?></td> -->
 		<?php
 		}// while
 		mysql_close($conn);
