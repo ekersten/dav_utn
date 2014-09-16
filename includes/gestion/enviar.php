@@ -9,8 +9,6 @@ $id_colegio = $_POST['id_colegio'];
 
 //$id_colegio = '47';
 
-require ('xajax/xajax_core/xajax.inc.php');
-
 $conn = mysql_connect("localhost", "dav_web", "UserwebDav08");
 $db = mysql_select_db("dav_gestion", $conn);
 
@@ -20,51 +18,7 @@ $fecha_actualizado = mysql_fetch_array(mysql_query ( "SELECT UltimaActualizacion
 $sql = "SELECT FechaReserva, Planilla, Pago, Normativa FROM WEBReservas where idcolegio = '".$id_colegio."' ORDER BY FechaReserva ASC";
 $result = mysql_query( $sql );
 
-$xajax = new xajax();
 
-function si_no($entrada, $idcolegio){
-	if ($entrada=="true"){
-		$db_conn = mysql_connect("localhost", "dav_web", "UserwebDav08");
-		$db = mysql_select_db("dav_gestion", $db_conn);
-		if (!$db_conn) {
-			$salida = "Could not connect: " . mysql_error();
-			}
-		
-		$result = mysql_query("SELECT colegioid FROM controlnormativas WHERE colegioid = ".$idcolegio);
-	    $ok_result = mysql_num_rows($result);
-        if ($ok_result == 1){
-			mysql_query("UPDATE controlnormativas SET acepto = 'Si' WHERE colegioid = ".$idcolegio."");
-        } else {
-			mysql_query("INSERT INTO controlnormativas (colegioid, acepto, pasado) VALUES (".$idcolegio.",  'Si', 'false')");
-		}
-		$salida = $idcolegio." - ".$ok_result. mysql_error();
-		mysql_close($db_conn);
-	}else{
-	    $db_conn = mysql_connect("localhost", "dav_web", "UserwebDav08");
-	    $db = mysql_select_db("dav_gestion", $db_conn);
-	    $result = mysql_query("SELECT colegioid FROM controlnormativas WHERE colegioid = ".$idcolegio."");
-	    $ok_result = mysql_num_rows($result);
-        if ($ok_result == 1){
-			mysql_query("UPDATE controlnormativas SET acepto = 'No' WHERE colegioid = ".$idcolegio."");
-        }
-	    mysql_close($db_conn);
-		$salida = "";
-		}
-
-   //instanciamos el objeto para generar la respuesta con ajax
-   $respuesta = new xajaxResponse();
-   //escribimos en la capa con id="respuesta" el texto que aparece en $salida
-   $respuesta->assign("respuesta","innerHTML",$salida);
-
-   //tenemos que devolver la instanciación del objeto xajaxResponse
-   return $respuesta;
-}
-
-//asociamos la función creada anteriormente al objeto xajax
-$xajax->registerFunction("si_no");
-
-//El objeto xajax tiene que procesar cualquier petición
-$xajax->processRequest();
 ?>
 <?php $xajax->printJavascript("xajax/"); ?>
 <h2>Enviar Documentación</h2>
