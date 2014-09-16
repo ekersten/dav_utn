@@ -12,4 +12,25 @@
 	});
 
 	$('.botonera').find('li').first().find('a').click();
+
+	$('#form_encuesta').on('submit', function(e) {
+		e.preventDefault();
+		e.stopPropagation();
+
+		var $this = $(this);
+
+		$.ajax({
+			url: 'send_data.php',
+			type: 'post',
+			dataType: 'json',
+			data: $this.serialize(),
+			success:function(data, textStatus, jqXHR){
+				$this.trigger("reset");
+				alert('Gracias por completar la encuesta');
+			},
+			error:function(jqXHR, textStatus, errorThrown){
+				
+			}
+		});
+	});
 })(jQuery);

@@ -19,7 +19,7 @@ $result = mysql_query( $sql );
 <h3>Opinión</h3>
 <p></p>
 <p></p>
-<form action="send_data.php" method="post" class="form-encuesta">
+<form action="send_data.php" method="post" class="form-encuesta" id="form_encuesta">
 	<input type="hidden" name="id_colegio" value="<?php echo $id_colegio; ?>" />
 	<div class="row">
 		<div class="column medium-6">
