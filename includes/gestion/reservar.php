@@ -54,7 +54,7 @@ Una vez completada con los datos solicitados deben enviarla por mail a la siguie
 		while ($myrow = mysql_fetch_array($result)) {
 		?>
 		<tr>
-			<td><?php echo $myrow[0]; ?></td>
+			<td><?php echo format_date($myrow[0]); ?></td>
 			<td><?php echo $myrow[1]; ?></td>
 			<td><?php echo $myrow[2]; ?></td>
 			<td><?php echo $myrow[3]; ?></td>
