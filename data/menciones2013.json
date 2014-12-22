@@ -1,0 +1,813 @@
+{
+	"titulo": "Menciones 2013",
+	"texto": "Extendemos nuestras felicitaciones no sólo a los alumnos, sino a las autoridades y profesores de todos los colegios participantes",
+	"fotos": [
+		{
+			"src": "img/menciones/2013/grande/aula_magna.jpg",
+			"mini": "img/menciones/2013/mini/aula_magna.jpg",
+			"colegio": "Aula Magna"
+		},
+		{
+			"src": "img/menciones/2013/grande/Colegio Cardenal Copello _caba.JPG",
+			"mini": "img/menciones/2013/mini/Colegio Cardenal Copello _caba.JPG",
+			"colegio": "Colegio Almafuerte",
+			"ubicacion": "Bernal - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_bertrand_russell-Bandfiel-bsas.jpg",
+			"mini": "img/menciones/2013/mini/colegio_bertrand_russell-Bandfiel-bsas.jpg",
+			"colegio": "Colegio Bertrand Russell",
+			"ubicacion": "Bandfiel - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_buenos_aires-caba.jpg",
+			"mini": "img/menciones/2013/mini/colegio_buenos_aires-caba.jpg",
+			"colegio": "Colegio Buenos Aires",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_calasanz-caba.jpg",
+			"mini": "img/menciones/2013/mini/colegio_calasanz-caba.jpg",
+			"colegio": "Colegio Calasanz",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_canada-caba..jpg",
+			"mini": "img/menciones/2013/mini/colegio_canada-caba..jpg",
+			"colegio": "Colegio Canadá",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_cardenal_copello -caba.jpg",
+			"mini": "img/menciones/2013/mini/colegio_cardenal_copello -caba.jpg",
+			"colegio": "Colegio Cardenal Copello",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_de_nuestra_senora-caba.jpg",
+			"mini": "img/menciones/2013/mini/colegio_de_nuestra_senora-caba.jpg",
+			"colegio": "Colegio de Nuestra Señora",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_durham-lanus-bsas.jpg",
+			"mini": "img/menciones/2013/mini/colegio_durham-lanus-bsas.jpg",
+			"colegio": "Colegio Durham",
+			"ubicacion": "Lanús - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_el_tato-san_miguel-bsas.jpg",
+			"mini": "img/menciones/2013/mini/colegio_el_tato-san_miguel-bsas.jpg",
+			"colegio": "Colegio El Tato",
+			"ubicacion": "San Miguel - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_esclavas_del_sagrado_corazon_de_jesus-caba.jpg",
+			"mini": "img/menciones/2013/mini/colegio_esclavas_del_sagrado_corazon_de_jesus-caba.jpg",
+			"colegio": "Colegio Esclavas del Sagrado Corazón de Jesús",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_esclavas_del_sagrado_corazon_de_jesus-ituzaingo-bsas.jpg",
+			"mini": "img/menciones/2013/mini/colegio_esclavas_del_sagrado_corazon_de_jesus-ituzaingo-bsas.jpg",
+			"colegio": "Colegio Esclavas del Sagrado Corazón de Jesús",
+			"ubicacion": "Ituzaingó - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_fasta_nino_jesus-lobos-bsas.jpg",
+			"mini": "img/menciones/2013/mini/colegio_fasta_nino_jesus-lobos-bsas.jpg",
+			"colegio": "Colegio F.A.S.T.A Niño Jesús",
+			"ubicacion": "Lobos - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_guadalupe-caba.jpg",
+			"mini": "img/menciones/2013/mini/colegio_guadalupe-caba.jpg",
+			"colegio": "Colegio Gguadalupe",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_holters-villa_ballester-bsas.jpg",
+			"mini": "img/menciones/2013/mini/colegio_holters-villa_ballester-bsas.jpg",
+			"colegio": "Colegio Hölters",
+			"ubicacion": "Villa Ballester - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_ingles_horacio_watson-caba.jpg",
+			"mini": "img/menciones/2013/mini/colegio_ingles_horacio_watson-caba.jpg",
+			"colegio": "Colegio Inglés Horacio Watson",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_jose_hernandez-villa_ballester-bsas.jpg",
+			"mini": "img/menciones/2013/mini/colegio_jose_hernandez-villa_ballester-bsas.jpg",
+			"colegio": "Colegio José Hernandez",
+			"ubicacion": "Villa Ballester - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_manuel_belgrano-caba.jpg",
+			"mini": "img/menciones/2013/mini/colegio_manuel_belgrano-caba.jpg",
+			"colegio": "Colegio Manuel Belgrano",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_mater_ter_admirabilis-caba.jpg",
+			"mini": "img/menciones/2013/mini/colegio_mater_ter_admirabilis-caba.jpg",
+			"colegio": "Colegio Mater Ter Admirabilis",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_north_hills-pilar-bsas.jpg",
+			"mini": "img/menciones/2013/mini/colegio_north_hills-pilar-bsas.jpg",
+			"colegio": "Colegio North Hills",
+			"ubicacion": "Pilar - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_ntra_senora_del_sagrado_corazon-caba.jpg",
+			"mini": "img/menciones/2013/mini/colegio_ntra_senora_del_sagrado_corazon-caba.jpg",
+			"colegio": "Colegio Ntra. Señora del Sagrado Corazón",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_ntra_sra_de_lujan-adrogue-bsas.jpg",
+			"mini": "img/menciones/2013/mini/colegio_ntra_sra_de_lujan-adrogue-bsas.jpg",
+			"colegio": "Colegio Ntra. Sra. de Luján",
+			"ubicacion": "Adrogué - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_palermo_chico-caba.jpg",
+			"mini": "img/menciones/2013/mini/colegio_palermo_chico-caba.jpg",
+			"colegio": "Colegio Palermo Chico",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_parroquial_ntra_senora_del_refugio-boulogne-bsas.jpg",
+			"mini": "img/menciones/2013/mini/colegio_parroquial_ntra_senora_del_refugio-boulogne-bsas.jpg",
+			"colegio": "Colegio Parroquial Ntra. Señora del Refugio",
+			"ubicacion": "Boulogne - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_paula_montal-caba.jpg",
+			"mini": "img/menciones/2013/mini/colegio_paula_montal-caba.jpg",
+			"colegio": "Colegio Paula Montal",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_privado_imei-canuelas-bsas.jpg",
+			"mini": "img/menciones/2013/mini/colegio_privado_imei-canuelas-bsas.jpg",
+			"colegio": "Colegio Privado IMEI",
+			"ubicacion": "Cañuelas - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_sagrada_familia-caba.jpg",
+			"mini": "img/menciones/2013/mini/colegio_sagrada_familia-caba.jpg",
+			"colegio": "Colegio Sagrada Familia",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_san_cayetano-villa_adelina-bsas.jpg",
+			"mini": "img/menciones/2013/mini/colegio_san_cayetano-villa_adelina-bsas.jpg",
+			"colegio": "Colegio San Cayetano",
+			"ubicacion": "Villa Adelina - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_san_jose-marcos_paz-bsas.jpg",
+			"mini": "img/menciones/2013/mini/colegio_san_jose-marcos_paz-bsas.jpg",
+			"colegio": "Colegio San José",
+			"ubicacion": "Marcos Paz - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_san_jose-quilmes-bsas.jpg",
+			"mini": "img/menciones/2013/mini/colegio_san_jose-quilmes-bsas.jpg",
+			"colegio": "Colegio San José",
+			"ubicacion": "Quilmes - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_san_ladislao-olivos-bsas.jpg",
+			"mini": "img/menciones/2013/mini/colegio_san_ladislao-olivos-bsas.jpg",
+			"colegio": "Colegio San Ladislao",
+			"ubicacion": "Olivos - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_san_marcos-longchamps-bsas.jpg",
+			"mini": "img/menciones/2013/mini/colegio_san_marcos-longchamps-bsas.jpg",
+			"colegio": "Colegio San Marcos",
+			"ubicacion": "Longchamps - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_san_maximiliano_kolbe-caba.jpg",
+			"mini": "img/menciones/2013/mini/colegio_san_maximiliano_kolbe-caba.jpg",
+			"colegio": "Colegio San Maximiliano Kolbe",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_san_pablo_norte-los_polvorines-bsas.jpg",
+			"mini": "img/menciones/2013/mini/colegio_san_pablo_norte-los_polvorines-bsas.jpg",
+			"colegio": "Colegio San Pablo Norte",
+			"ubicacion": "Los Polvorines - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_san_patricio-avellaneda-bsas.jpg",
+			"mini": "img/menciones/2013/mini/colegio_san_patricio-avellaneda-bsas.jpg",
+			"colegio": "colegio San Patricio",
+			"ubicacion": "Avellaneda - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_santa_brigida-caba.jpg",
+			"mini": "img/menciones/2013/mini/colegio_santa_brigida-caba.jpg",
+			"colegio": "Colegio Santa Brígida",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_santa_maria-canuelas-bsas.jpg",
+			"mini": "img/menciones/2013/mini/colegio_santa_maria-canuelas-bsas.jpg",
+			"colegio": "Colegio Santa María",
+			"ubicacion": "Cañuelas - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_santa_teresita_del_nino_jesus-florida-bsas.jpg",
+			"mini": "img/menciones/2013/mini/colegio_santa_teresita_del_nino_jesus-florida-bsas.jpg",
+			"colegio": "Colegio Santa Teresita del Niño Jesús",
+			"ubicacion": "Florida - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_santa_trinidad-san_isidro-bsas.jpg",
+			"mini": "img/menciones/2013/mini/colegio_santa_trinidad-san_isidro-bsas.jpg",
+			"colegio": "Colegio Santa Trinidad",
+			"ubicacion": "San Isidro - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/colegio_sgs_loma_verde-escobar-bsas.jpg",
+			"mini": "img/menciones/2013/mini/colegio_sgs_loma_verde-escobar-bsas.jpg",
+			"colegio": "Colegio SGS Loma Verde",
+			"ubicacion": "Escobar - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/escuela_cangallo-cangallo_schule-caba.jpg",
+			"mini": "img/menciones/2013/mini/escuela_cangallo-cangallo_schule-caba.jpg",
+			"colegio": "Escuela Cangallo - Cangallo Schule",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/escuela_republica_argentina-moron-bsas.jpg",
+			"mini": "img/menciones/2013/mini/escuela_republica_argentina-moron-bsas.jpg",
+			"colegio": "Escuela República Argentina",
+			"ubicacion": "Morón - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/farmingdale_college-ing_maschwitz.jpg",
+			"mini": "img/menciones/2013/mini/farmingdale_college-ing_maschwitz.jpg",
+			"colegio": "Farmingdale College",
+			"ubicacion": "Ing. Maschwitz"
+		},
+		{
+			"src": "img/menciones/2013/grande/highest_college_hull_cordell-caba.jpg",
+			"mini": "img/menciones/2013/mini/highest_college_hull_cordell-caba.jpg",
+			"colegio": "Highest College Hull Cordell",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_adolfo_alsina-claypole-bsas.jpg",
+			"mini": "img/menciones/2013/mini/instituto_adolfo_alsina-claypole-bsas.jpg",
+			"colegio": "Instituto Adolfo Alsina",
+			"ubicacion": "Claypole - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_angel_d_elia-San Miguel.jpg",
+			"mini": "img/menciones/2013/mini/instituto_angel_d_elia-San Miguel.jpg",
+			"colegio": "Instituto Ángel D´ Elia",
+			"ubicacion": "San Miguel"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_argentino_gallego_santiago_apostol-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_argentino_gallego_santiago_apostol-caba.jpg",
+			"colegio": "Instituto Argentino Gallego Santiago Apóstol",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_beata_imelda-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_beata_imelda-caba.jpg",
+			"colegio": "Instituto Beata Imelda",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_bernardino_rivadavia-merlo-bsas.jpg",
+			"mini": "img/menciones/2013/mini/instituto_bernardino_rivadavia-merlo-bsas.jpg",
+			"colegio": "Instituto Bernardino Rivadavia",
+			"ubicacion": "Merlo - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_canbazyan-valentin_alsina-bsas.jpg",
+			"mini": "img/menciones/2013/mini/instituto_canbazyan-valentin_alsina-bsas.jpg",
+			"colegio": "Instituto Canbazyan",
+			"ubicacion": "Valentií Alsina - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_carlos_steeb-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_carlos_steeb-caba.jpg",
+			"colegio": "Instituto Carlos Steeb",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_ceferino_namuncura-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_ceferino_namuncura-caba.jpg",
+			"colegio": "Instituto Ceferino Namuncurá",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_compania_de_maria-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_compania_de_maria-caba.jpg",
+			"colegio": "Instituto Compañía de María",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_divino_corazon-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_divino_corazon-caba.jpg",
+			"colegio": "Instituto Divino Corazón",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_don_orione-san_fernando-bsas.jpg",
+			"mini": "img/menciones/2013/mini/instituto_don_orione-san_fernando-bsas.jpg",
+			"colegio": "Instituto Don Orione",
+			"ubicacion": "San Fernando - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_educacional_estrada-villa_luzuriaga-bsas.jpg",
+			"mini": "img/menciones/2013/mini/instituto_educacional_estrada-villa_luzuriaga-bsas.jpg",
+			"colegio": "Instituto Educacional Estrada",
+			"ubicacion": "Villa Luzuriaga - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_educativo_moruli-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_educativo_moruli-caba.jpg",
+			"colegio": "Instituto Educativo Moruli",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_elisa_harilaos2-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_elisa_harilaos2-caba.jpg",
+			"colegio": "Instituto Elisa Harilaos",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_elisa_harilaos-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_elisa_harilaos-caba.jpg",
+			"colegio": "Instituto Elisa Harilaos",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_esba_flores-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_esba_flores-caba.jpg",
+			"colegio": "Instituto ESBA Flores",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_euskal_echea-lavallol-bsas.jpg",
+			"mini": "img/menciones/2013/mini/instituto_euskal_echea-lavallol-bsas.jpg",
+			"colegio": "Instituto Euskal Echea",
+			"ubicacion": "Lavallol - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_formar_futuro-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_formar_futuro-caba.jpg",
+			"colegio": "Instituto Formar Futuro",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_glaux-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_glaux-caba.jpg",
+			"colegio": "Instituto Glaux",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_grilli-caning-bsas.jpg",
+			"mini": "img/menciones/2013/mini/instituto_grilli-caning-bsas.jpg",
+			"colegio": "Instituto Grilli",
+			"ubicacion": "Caning - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_inmaculada_concepcion_de_ntra_sra_de_lourdes-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_inmaculada_concepcion_de_ntra_sra_de_lourdes-caba.jpg",
+			"colegio": "Instituto Inmaculada Concepción de Ntra. Sra. de Lourdes",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_jesus_maria-bella_vista-bsas.jpg",
+			"mini": "img/menciones/2013/mini/instituto_jesus_maria-bella_vista-bsas.jpg",
+			"colegio": "Instituto Jesús María",
+			"ubicacion": "Bella Vista - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_jose_hernandez-don_torcuato-bsas.jpg",
+			"mini": "img/menciones/2013/mini/instituto_jose_hernandez-don_torcuato-bsas.jpg",
+			"colegio": "Instituto Jose Hernandez",
+			"ubicacion": "Don Torcuato - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_luigi_pirandello-san_miguel-bsas.jpg",
+			"mini": "img/menciones/2013/mini/instituto_luigi_pirandello-san_miguel-bsas.jpg",
+			"colegio": "Instituto Luigi Pirandello",
+			"ubicacion": "San Miguel - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_madre_de_los_emigrantes-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_madre_de_los_emigrantes-caba.jpg",
+			"colegio": "Instituto Madre de los Emigrantes",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_mallinckrodt-martinez-bsas.jpg",
+			"mini": "img/menciones/2013/mini/instituto_mallinckrodt-martinez-bsas.jpg",
+			"colegio": "Instituto Mallinckrodt",
+			"ubicacion": "Martínez - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_manuel_belgrano-berazategui-bsas.jpg",
+			"mini": "img/menciones/2013/mini/instituto_manuel_belgrano-berazategui-bsas.jpg",
+			"colegio": "Instituto Manuel Belgrano",
+			"ubicacion": "Berazategui - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_manuel_belgrano-quilmes_high_school-quilmes-bsas.jpg",
+			"mini": "img/menciones/2013/mini/instituto_manuel_belgrano-quilmes_high_school-quilmes-bsas.jpg",
+			"colegio": "Instituto Manuel Belgrano - Quilmes High School",
+			"ubicacion": "Quilmes - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_maria_auxiliadora-san_isidro-bsas.jpg",
+			"mini": "img/menciones/2013/mini/instituto_maria_auxiliadora-san_isidro-bsas.jpg",
+			"colegio": "Instituto María Auxiliadora",
+			"ubicacion": "san Isidro - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_mariano_moreno-luis_guillon-bsas.jpg",
+			"mini": "img/menciones/2013/mini/instituto_mariano_moreno-luis_guillon-bsas.jpg",
+			"colegio": "Instituto Mariano Moreno",
+			"ubicacion": "Luis Guillón - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_moderno_de_educacion_integral-remedios_de_escalada-bsas.jpg",
+			"mini": "img/menciones/2013/mini/instituto_moderno_de_educacion_integral-remedios_de_escalada-bsas.jpg",
+			"colegio": "Instituto Moderno de Educación Integral",
+			"ubicacion": "Remedios de Escalada - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_monsenor_dillon-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_monsenor_dillon-caba.jpg",
+			"colegio": "Instituto Monseñor Dillon",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_ntra_senora_de_Fatima-del_viso-bsas.jpg",
+			"mini": "img/menciones/2013/mini/instituto_ntra_senora_de_Fatima-del_viso-bsas.jpg",
+			"colegio": "Instituto Ntra. Señora de Fátima",
+			"ubicacion": "Del Viso - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_ntra_senora_de_la_misericordia-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_ntra_senora_de_la_misericordia-caba.jpg",
+			"colegio": "Instituto Ntra. Señora de la Misericordia",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_ntra_senora_de_lujan-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_ntra_senora_de_lujan-caba.jpg",
+			"colegio": "Instituto Ntra. Señora de Luján",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_ntra_senora_del_sagrado_corazon-florencio_varela-bsas.jpg",
+			"mini": "img/menciones/2013/mini/instituto_ntra_senora_del_sagrado_corazon-florencio_varela-bsas.jpg",
+			"colegio": "Instituto Ntra. Señora del Sagrado Corazón",
+			"ubicacion": "Florencio Varela - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_ntra_sra_de_la_merced-san_andres-bsas.jpg",
+			"mini": "img/menciones/2013/mini/instituto_ntra_sra_de_la_merced-san_andres-bsas.jpg",
+			"colegio": "Instituto Ntra. Sra. de la Merced",
+			"ubicacion": "San Andrés - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_nueva_escuela_del_sur_bernal-bsas.jpg",
+			"mini": "img/menciones/2013/mini/instituto_nueva_escuela_del_sur_bernal-bsas.jpg",
+			"colegio": "Instituto Nueva Escuela del Sur",
+			"ubicacion": "Bernal - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_orsino-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_orsino-caba.jpg",
+			"colegio": "Instituto Orsino",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_privado_francisco_de_asis-mariano_acosta-bsas.jpg",
+			"mini": "img/menciones/2013/mini/instituto_privado_francisco_de_asis-mariano_acosta-bsas.jpg",
+			"colegio": "Instituto Privado Francisco de Asís",
+			"ubicacion": "Mariano Acosta - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_ranelagh-ranelagh-bsas.jpg",
+			"mini": "img/menciones/2013/mini/instituto_ranelagh-ranelagh-bsas.jpg",
+			"colegio": "Instituto Ranelagh",
+			"ubicacion": "Ranelagh - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_regina_apostolorum-rafael_calzada-bsas.jpg",
+			"mini": "img/menciones/2013/mini/instituto_regina_apostolorum-rafael_calzada-bsas.jpg",
+			"colegio": "Instituto Regina Apostolorum",
+			"ubicacion": "Rafael Calzada - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_san_alfonso-bella_vista-bsas.jpg",
+			"mini": "img/menciones/2013/mini/instituto_san_alfonso-bella_vista-bsas.jpg",
+			"colegio": "Instituto San Alfonso",
+			"ubicacion": "Bella Vista - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_san_antonio_de_padua-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_san_antonio_de_padua-caba.jpg",
+			"colegio": "Instituto San Antonio de Padua",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_san_cosme_y_san_damian-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_san_cosme_y_san_damian-caba.jpg",
+			"colegio": "Instituto San Cosme y San Damián",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_san_jose_de_flores-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_san_jose_de_flores-caba.jpg",
+			"colegio": "Instituto San José de Flores",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_san_juan_evangelista-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_san_juan_evangelista-caba.jpg",
+			"colegio": "Instituto San Juan Evangelista",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_san_martin_de_tours_mujeres-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_san_martin_de_tours_mujeres-caba.jpg",
+			"colegio": "Instituto San Martín de Tours (Mujeres)",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_san_martin_de_tours_varones-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_san_martin_de_tours_varones-caba.jpg",
+			"colegio": "Instituto San Martín de Tours (Varones)",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_san_pedro-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_san_pedro-caba.jpg",
+			"colegio": "Instituto San Pedro",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_san_roque-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_san_roque-caba.jpg",
+			"colegio": "Instituto San Roque",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_santa_ana_y_san_joaquin-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_santa_ana_y_san_joaquin-caba.jpg",
+			"colegio": "Instituto Santa Ana y San Joaquín",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_santa_ines-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_santa_ines-caba.jpg",
+			"colegio": "Instituto Santa Inés",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_santa_maria_de_nazareth-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_santa_maria_de_nazareth-caba.jpg",
+			"colegio": "Instituto Santa María de Nazareth",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_santa_maria_del_rosario-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_santa_maria_del_rosario-caba.jpg",
+			"colegio": "Instituto Santa María del Rosario",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_santa_maria-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_santa_maria-caba.jpg",
+			"colegio": "Instituto Santa María",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_santa_maria-escobar-bsas.jpg",
+			"mini": "img/menciones/2013/mini/instituto_santa_maria-escobar-bsas.jpg",
+			"colegio": "Instituto Santa María",
+			"ubicacion": "Escobar - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_santa_rita-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_santa_rita-caba.jpg",
+			"colegio": "Instituto Santa Rita",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_santo_domingo-ramos_mejia-bsas.jpg",
+			"mini": "img/menciones/2013/mini/instituto_santo_domingo-ramos_mejia-bsas.jpg",
+			"colegio": "Instituto Santo Domingo",
+			"ubicacion": "Ramos Mejía - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_sara_chamberlain_de_eccleston-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_sara_chamberlain_de_eccleston-caba.jpg",
+			"colegio": "Instituto Sara Chamberlain de Eccleston",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_sara_chamberlain_de_eccleston-lanus-bsas.jpg",
+			"mini": "img/menciones/2013/mini/instituto_sara_chamberlain_de_eccleston-lanus-bsas.jpg",
+			"colegio": "Instituto Sara Chamberlain de Eccleston",
+			"ubicacion": "Lanús - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_secundario_del_salvador-burzaco-bsas.jpg",
+			"mini": "img/menciones/2013/mini/instituto_secundario_del_salvador-burzaco-bsas.jpg",
+			"colegio": "Instituto Secundario del Salvador ",
+			"ubicacion": "Burzaco - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_summa-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_summa-caba.jpg",
+			"colegio": "Instituto Summa",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_tecnico_dr_emilio_lamarca-lomas_de_zamora-bsas.jpg",
+			"mini": "img/menciones/2013/mini/instituto_tecnico_dr_emilio_lamarca-lomas_de_zamora-bsas.jpg",
+			"colegio": "Instituto Técnico Dr. Emilio Lamarca",
+			"ubicacion": "Lomas de Zamora - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_tecnico_maria_reina-remedios_ de_escalada-bsas.jpg",
+			"mini": "img/menciones/2013/mini/instituto_tecnico_maria_reina-remedios_ de_escalada-bsas.jpg",
+			"colegio": "Instituto Técnico María Reina",
+			"ubicacion": "Remedios de Escalada - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_valle_grande-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_valle_grande-caba.jpg",
+			"colegio": "Instituto Valle Grande",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/instituto_virgen_nina-caba.jpg",
+			"mini": "img/menciones/2013/mini/instituto_virgen_nina-caba.jpg",
+			"colegio": "Instituto Virgen Niña",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/st_marks_college-monte_grande-bsas.jpg",
+			"mini": "img/menciones/2013/mini/st_marks_college-monte_grande-bsas.jpg",
+			"colegio": "St´ Marks College",
+			"ubicacion": "Monte Grande - Bs.As."
+		},
+		{
+			"src": "img/menciones/2013/grande/st_xaviers_college-caba.jpg",
+			"mini": "img/menciones/2013/mini/st_xaviers_college-caba.jpg",
+			"colegio": "St Xavier´s College",
+			"ubicacion": "C.A.B.A"
+		},
+		{
+			"src": "img/menciones/2013/grande/z_mencion_al_merito_academico-instituto_monsenor_dillon.jpg",
+			"mini": "img/menciones/2013/mini/z_mencion_al_merito_academico-instituto_monsenor_dillon.jpg",
+			"colegio": "Instituto Monseñor Dillon",
+			"ubicacion": "C.A.B.A",
+			"mencion": "Mención al Mérito Académico"
+		},
+		{
+			"src": "img/menciones/2013/grande/z_mencion_al_merito_academico-instituto_santo_domingo.jpg",
+			"mini": "img/menciones/2013/mini/z_mencion_al_merito_academico-instituto_santo_domingo.jpg",
+			"colegio": "Instituto Santo Domingo",
+			"ubicacion": "Ramos Mejía - Bs.As.",
+			"mencion": "Mención al Mérito Académico"
+		},
+		{
+			"src": "img/menciones/2013/grande/z_mencion_al_merito_academico-instituto_virgen_nina.jpg",
+			"mini": "img/menciones/2013/mini/z_mencion_al_merito_academico-instituto_virgen_nina.jpg",
+			"colegio": "Instituto Virgen Niña",
+			"ubicacion": "C.A.B.A",
+			"mencion": "Mención al Mérito Académico"
+		},
+		{
+			"src": "img/menciones/2013/grande/1.jpg",
+			"mini": "img/menciones/2013/mini/1.jpg"
+		},
+		{
+			"src": "img/menciones/2013/grande/2.jpg",
+			"mini": "img/menciones/2013/mini/2.jpg"
+		},
+		{
+			"src": "img/menciones/2013/grande/3.jpg",
+			"mini": "img/menciones/2013/mini/3.jpg"
+		},
+		{
+			"src": "img/menciones/2013/grande/4.jpg",
+			"mini": "img/menciones/2013/mini/4.jpg"
+		},
+		{
+			"src": "img/menciones/2013/grande/5.jpg",
+			"mini": "img/menciones/2013/mini/5.jpg"
+		},
+		{
+			"src": "img/menciones/2013/grande/6.jpg",
+			"mini": "img/menciones/2013/mini/6.jpg"
+		},
+		{
+			"src": "img/menciones/2013/grande/7.jpg",
+			"mini": "img/menciones/2013/mini/7.jpg"
+		},
+		{
+			"src": "img/menciones/2013/grande/8.jpg",
+			"mini": "img/menciones/2013/mini/8.jpg"
+		},
+		{
+			"src": "img/menciones/2013/grande/9.jpg",
+			"mini": "img/menciones/2013/mini/9.jpg"
+		},
+		{
+			"src": "img/menciones/2013/grande/10.jpg",
+			"mini": "img/menciones/2013/mini/10.jpg"
+		},
+		{
+			"src": "img/menciones/2013/grande/11.jpg",
+			"mini": "img/menciones/2013/mini/11.jpg"
+		},
+		{
+			"src": "img/menciones/2013/grande/12.jpg",
+			"mini": "img/menciones/2013/mini/12.jpg"
+		},
+		{
+			"src": "img/menciones/2013/grande/13.jpg",
+			"mini": "img/menciones/2013/mini/13.jpg"
+		}
+	],
+	"felicitacion": {
+		"texto": "Felicitamos también a los alumnos de los colegios del interior del país que han obtenido la calificación máxima en sus exámenes:",
+		"colegios": [
+			{
+				"nombre": "Colegio Evangélico Alfredo Furniss",
+				"ubicacion": "Santiago del Estero"
+			},
+			{
+				"nombre": "Colegio San Pablo",
+				"ubicacion": "Salta"
+			},
+			{
+				"nombre": "EEMPI Nº 8062 San Francisco de Asis",
+				"ubicacion": "Sastre, Santa Fe"
+			},
+			{
+				"nombre": "Esc. De Ens. Media Part. Aut. Nª 3079 ICES",
+				"ubicacion": "Sunchales, Santa Fe"
+			},
+			{
+				"nombre": "Escuela Castelfranco Bilingüe y Bicultural",
+				"ubicacion": "Villa Belgrano, Córdoba"
+			},
+			{
+				"nombre": "Escuela Nuestra Señora de Las Mercedes",
+				"ubicacion": "Montes de Oca, Santa Fe"
+			},
+			{
+				"nombre": "Instituto Claret",
+				"ubicacion": "Bahía Blanca, Buenos Aires"
+			},
+			{
+				"nombre": "Instituto Sagrada Familia",
+				"ubicacion": "Vicuña Mackenna, Córdoba"
+			},
+			{
+				"nombre": "Instituto Santa Catalina Virgen y Mártir",
+				"ubicacion": "Cipolletti, Río Negro"
+			},
+			{
+				"nombre": "Instituto Vuelta del Ombú",
+				"ubicacion": "Virasoro, Corrientes"
+			},
+			{
+				"nombre": "Instituto José Manuel Estrada",
+				"ubicacion": " Capilla del Señor, Buenos Aires"
+			},
+			{
+				"nombre": "Instituto Privado Escuela Nueva",
+				"ubicacion": "Trelew, Chubut"
+			},
+			{
+				"nombre": "Instituto Ntra. Sra. De la Merced",
+				"ubicacion": "Arroyito, Córdoba"
+			}
+		]
+	}
+}

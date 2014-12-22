@@ -21,6 +21,22 @@
             <div class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="5000" data-cycle-pause-on-hover="true" data-cycle-slides="> .slide">
                 <div class="cycle-prev"><span class="flecha icon-chevron-left"></span></div>
                 <div class="cycle-next"><span class="flecha icon-chevron-right"></span></div>
+                 <!-- slide start -->
+                <div class="slide" style="background-image: url('img/home_nes.jpg');">
+                    <div class="row">
+                        <div class="column medium-4 medium-push-8">
+                            <div class="contenido">
+                                <div class="interno">
+                                    <h1>Formación Tecnológica I</h1>
+                                    <p> Capacitación Docente habilitada por la DGEGP</p>
+                                    <a href="educaciontecnologica.php" class="boton">Conocer más</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- slide end -->
                 <!-- slide start -->
                 <div class="slide" style="background-image: url('img/home_dj.jpg');">
                     <div class="row">
@@ -117,6 +133,7 @@
                     </div>
                 </div>
                 <!-- slide end -->
+                 
             </div>
             <div class="row accesos">
                 <div class="column medium-4">
