@@ -19,6 +19,9 @@
 		<?php include("includes/header.php"); ?>
 		<section class="tpl-2-col modelo1a1">
 			<div class="header-image"></div>
+			<div class="subnav" data-activa="informacion">
+				<?php include("includes/tabs/modelo.php"); ?>
+			</div>
 			<div class="row contenedor">
 				<div class="column medium-9 principal">
 					<h1>Modelo 1 a 1</h1>
