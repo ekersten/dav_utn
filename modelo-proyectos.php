@@ -26,15 +26,7 @@
 			</div>
 			<div class="row contenedor">
 				<!-- seccion -->
-				<div class="column medium-12 principal">
-					<h1>Proyectos</h1>
-					<ul class="breadcrumbs">
-						<li>Programa para escuelas</li>
-						<li><a href="ciudadania-informacion.php">Ciudadania Digital</a></li>
-						<li class="actual">Proyectos</li>
-					</ul>
-					<div ng-view></div>
-				</div>
+				<div ng-view></div>
 				<!-- /seccion -->
 			</div>
 		</section>

@@ -23,9 +23,6 @@
 			$scope.categorias = data;
 		});
 
-		$scope.setCategory = function(category) {
-			$rootScope.category = category;
-		};
 	});
 
 	app.controller('ProyectosController', function($scope, $http, $rootScope, $routeParams) {
@@ -37,7 +34,19 @@
 			$scope.proyectos = data;
 		});
 
-		$scope.category = $rootScope.category;
+		$http({
+			method: 'GET',
+			url: $scope.$parent.categories_src
+		}).success(function(data) {
+			$scope.categorias = data;
+			for (var i=0; i < $scope.categorias.length; i++) {
+				if ($scope.categorias[i].slug === $routeParams.categoria_slug) {
+					$scope.category = $scope.categorias[i];
+					break;
+				}
+			}
+		});
+
 	});
 
 })();

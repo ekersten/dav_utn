@@ -18,5 +18,45 @@
 		},
 		"imagen": "img/ciudadania/proyectos/2011/01.jpg",
 		"url": "http://www.glogster.com/ciudadaniadigital/presentacion/g-6m7bcs0fjfhr4ih5pna6na0?old_view=True"
+	},
+	{
+		"nombre": "Malware",
+		"herramienta": "Glogster",
+		"categoria": "sociales",
+		"anio": "2012",
+		"autores": [
+			{
+				"nombre": "ALMEIDA, Johana"
+			},
+			{
+				"nombre": "CURUTCHET, Mercedes"
+			}						
+		],
+		"institucion": {
+			"nombre":"Colegio San José",
+			"ubicacion": " Marcos Paz, Bs. As."
+		},
+		"imagen": "img/ciudadania/proyectos/2011/01.jpg",
+		"url": "http://www.glogster.com/ciudadaniadigital/presentacion/g-6m7bcs0fjfhr4ih5pna6na0?old_view=True"
+	},
+	{
+		"nombre": "Malware",
+		"herramienta": "Glogster",
+		"categoria": "sociales",
+		"anio": "2012",
+		"autores": [
+			{
+				"nombre": "ALMEIDA, Johana"
+			},
+			{
+				"nombre": "CURUTCHET, Mercedes"
+			}						
+		],
+		"institucion": {
+			"nombre":"Colegio San José",
+			"ubicacion": " Marcos Paz, Bs. As."
+		},
+		"imagen": "img/ciudadania/proyectos/2011/01.jpg",
+		"url": "http://www.glogster.com/ciudadaniadigital/presentacion/g-6m7bcs0fjfhr4ih5pna6na0?old_view=True"
 	}
 ]
