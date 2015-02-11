@@ -1,9 +1,25 @@
 <div class="column medium-12 principal">
 	<div class="row">
-		<div class="column small-6">
+		<div class="column small-4">
 			<h1>Proyectos</h1>
 		</div>
-		<div class="column small-6"></div>
+		<div class="column small-4">
+			<form ng-controller="BuscadorController">
+				<div class="row">
+					<div class="large-12 columns">
+						<div class="row collapse">
+							<div class="small-10 columns">
+								<input type="text" placeholder="Buscar" ng-model="texto">
+							</div>
+							<div class="small-2 columns">
+								<a href="#" ng-click="doSearch($event)" class="button postfix">Buscar</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="column small-4"></div>
 	</div>
 	<div class="row">
 		<div class="column small-12">

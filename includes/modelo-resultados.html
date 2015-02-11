@@ -20,13 +20,13 @@
 			</form>
 		</div>
 		<div class="column small-4 text-right">
-			<h1><span class="title-icon" ng-class="'icon-' + category.slug"></span>{{ category.nombre }}</h1>
+			<h1>Resultados</h1>
 		</div>
 	</div>
 	<div class="row">
 		<div class="column small-12 proyectos">
 			<ul class="small-block-grid-1 large-block-grid-2 grilla">
-				<li class="proyecto" ng-repeat="proyecto in proyectos | filter: {categoria: categoryFilter}">
+				<li class="proyecto" ng-repeat="proyecto in proyectos | filter: searchFilter">
 					<div class="inner">
 						<div class="row">
 							<div class="column small-12">

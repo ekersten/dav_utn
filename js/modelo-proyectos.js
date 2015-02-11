@@ -10,6 +10,10 @@
 			templateUrl: 'includes/modelo-proyectos.html',
 			controller: 'ProyectosController'
 		}).
+		when('/buscar/:texto', {
+			templateUrl: 'includes/modelo-resultados.html',
+			controller: 'ResultadosController'
+		}).
 		otherwise({
 			redirectTo: '/categorias'
 		});
@@ -46,7 +50,46 @@
 				}
 			}
 		});
+	});
 
+	app.controller('BuscadorController', function($scope) {
+		$scope.doSearch = function(e) {
+			e.preventDefault();
+			window.location.hash = '/buscar/' + $scope.texto;
+		};
+	});
+
+	app.controller('ResultadosController', function($scope, $http, $rootScope, $routeParams) {
+		$scope.texto = $routeParams.texto;
+		$http({
+			method: 'GET',
+			url: $scope.$parent.projects_src
+		}).success(function(data) {
+			$scope.proyectos = data;
+		});
+
+		$scope.searchFilter = function(item) {
+			var match_nombre = false,
+				match_herramienta = false,
+				match_autor = false,
+				match_institucion = false,
+				i;
+
+			match_nombre = item.nombre.toLowerCase().indexOf($scope.texto.toLowerCase()) >= 0;
+			match_herramienta = item.herramienta.toLowerCase().indexOf($scope.texto.toLowerCase()) >= 0;
+
+			for (i = 0; i < item.autores.length; i++) {
+				if (item.autores[i].nombre.toLowerCase().indexOf($scope.texto.toLowerCase()) >= 0) {
+					match_autor = true;
+					break;
+				}
+			}
+
+			match_institucion = item.institucion.nombre.toLowerCase().indexOf($scope.texto.toLowerCase()) >= 0 || item.institucion.ubicacion.toLowerCase().indexOf($scope.texto.toLowerCase()) >= 0;
+
+			return match_nombre || match_herramienta || match_autor || match_institucion;
+
+		};
 	});
 
 })();
