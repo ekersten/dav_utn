@@ -1,0 +1,47 @@
+[
+	{
+		"nombre": "Física",
+		"slug": "fisica",
+		"orden": 1
+	},
+	{
+		"nombre": "Química",
+		"slug": "quimica",
+		"orden": 2
+	},
+	{
+		"nombre": "Matemáticas",
+		"slug": "matematicas",
+		"orden": 3
+	},
+	{
+		"nombre": "Lengua",
+		"slug": "lengua",
+		"orden": 4
+	},
+	{
+		"nombre": "Informática",
+		"slug": "informatica",
+		"orden": 5
+	},
+	{
+		"nombre": "Cs. Sociales",
+		"slug": "sociales",
+		"orden": 6
+	},
+	{
+		"nombre": "Cs. Naturales",
+		"slug": "naturales",
+		"orden": 7
+	},
+	{
+		"nombre": "Geometría",
+		"slug": "geometria",
+		"orden": 8
+	},
+	{
+		"nombre": "Misceláneas",
+		"slug": "miscelaneas",
+		"orden": 9
+	}
+]
