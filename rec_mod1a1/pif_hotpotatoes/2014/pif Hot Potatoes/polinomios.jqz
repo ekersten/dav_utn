@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jquiz-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>juanjo</dc:creator>
+    <dc:title>Polinomios</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>6</version>
+
+<data>
+<title>Polinomios</title>
+
+<timer><seconds>240</seconds><include-timer>1</include-timer></timer>
+
+<reading>
+<include-reading>1</include-reading>
+<reading-title></reading-title>
+<reading-text>&amp;#x003C;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/NYz6PEEdY4M?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&amp;#x003E;&amp;#x003C;/iframe&amp;#x003E;</reading-text>
+
+</reading>
+
+<questions><question-record><question>En  un polinomio la variable no debe:</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>estar afectada por una raiz</text><feedback>en este caso ser&amp;#x00E1; una expreci&amp;#x00F3;n algebraica</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>actuando como denominador</text><feedback>esta es una expreci&amp;#x00F3;n algebraica</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>ninguna de las anteriores</text><feedback>la variable no debe estar actuando como denominador ni bajo una ra&amp;#x00ED;z</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>&amp;#x00BF;El polinomio de dos t&amp;#x00E9;rminos se llama?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>Monomi</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Binomio</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Trinomio</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Polinomio</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Para operar con los polinomios estos deben estar:</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>Ordenados</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Completos</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Completos y ordenados</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Ninguna de las opciones</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>&amp;#x00BF;El grado del polinomio X-2 es?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>2</question-type><answers><answer><text>1&amp;#x00BA; grado</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>1&amp;#x00BA;</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>&amp;#x00BF;Qu&amp;#x00E9; exponente debe tener la variable para que el polinomio sea de 4&amp;#x00BA; grado</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>2</question-type><answers><answer><text>4</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record></questions>
+</data>
+
+<hotpot-config-file>
+<jquiz>
+<exercise-subtitle>Concepto</exercise-subtitle>
+<instructions>Elige la respuesta correcta</instructions>
+<guess-correct>&amp;#x00A1;Correcto!</guess-correct>
+<guess-incorrect>Incorrecto</guess-incorrect>
+<partly-incorrect>Su respuesta es parcialmente incorrecta</partly-incorrect>
+<enter-a-guess>Introduce una respuesta</enter-a-guess>
+<next-correct-letter>Siguiente letra correcta de la respuesta</next-correct-letter>
+<correct-answers>Respuesta correcta</correct-answers>
+<show-answer-caption>Mostrar respuesta</show-answer-caption>
+<include-hint>1</include-hint>
+<include-show-answer>1</include-show-answer>
+<next-ex-url>nextpage.htm</next-ex-url>
+<send-email>0</send-email>
+<continuous-scoring>1</continuous-scoring>
+<show-correct-first-time>1</show-correct-first-time>
+<shuffle-questions>0</shuffle-questions>
+<shuffle-answers>0</shuffle-answers>
+<show-limited-questions>0</show-limited-questions>
+<questions-to-show>2</questions-to-show>
+<short-answer-tries-on-hybrid-q>2</short-answer-tries-on-hybrid-q>
+<separate-javascript-file>0</separate-javascript-file>
+<case-sensitive>0</case-sensitive>
+<include-keypad>0</include-keypad>
+</jquiz>
+
+<global>
+<your-score-is>Su puntuacion es</your-score-is>
+<correct-indicator>:-)</correct-indicator>
+<incorrect-indicator>X</incorrect-indicator>
+<correct-first-time>Respuestas correctas al primer intento</correct-first-time>
+<completed-so-far>Preguntas contestadas hasta este punto</completed-so-far>
+<exercise-completed>Ejercicio completo</exercise-completed>
+<keypad-characters></keypad-characters>
+<times-up>Su tiempo ha terminado</times-up>
+<next-ex-caption>=&amp;#x003E;</next-ex-caption>
+<back-caption>&amp;#x003C;=</back-caption>
+<contents-caption>Index</contents-caption>
+<include-next-ex>1</include-next-ex>
+<include-contents>1</include-contents>
+<include-back>0</include-back>
+<contents-url>contents.htm</contents-url>
+<graphic-url></graphic-url>
+<font-face>Geneva,Arial,sans-serif</font-face>
+<font-size>small</font-size>
+<page-bg-color>#00ffff</page-bg-color>
+<title-color>#000000</title-color>
+<ex-bg-color>#ff8000</ex-bg-color>
+<text-color>#400000</text-color>
+<link-color>#400000</link-color>
+<vlink-color>#80ff00</vlink-color>
+<nav-bar-color>#0000a0</nav-bar-color>
+<formmail-url>http://yourserver.com/cgi-bin/FormMail.pl</formmail-url>
+<email>you@yourserver.com</email>
+<name-please>Please enter your name:</name-please>
+<user-string-1>one</user-string-1>
+<user-string-2>two</user-string-2>
+<user-string-3>three</user-string-3>
+<header-code></header-code>
+<correct-first-time>Respuestas correctas al primer intento</correct-first-time>
+<check-caption>Comprobar rerspuesta</check-caption>
+<ok-caption>OK</ok-caption>
+<next-q-caption>=&amp;#x003E;</next-q-caption>
+<last-q-caption>&amp;#x003C;=</last-q-caption>
+<hint-caption>Pista</hint-caption>
+<show-all-questions-caption>Mostrar todas las preguntas</show-all-questions-caption>
+<show-one-by-one-caption>Mostrar preguntas de auna</show-one-by-one-caption>
+<show-also-correct>1</show-also-correct>
+<process-for-rtl>0</process-for-rtl>
+<include-scorm-12>0</include-scorm-12>
+</global>
+</hotpot-config-file>
+</hotpot-jquiz-file>

@@ -123,9 +123,6 @@
 						</div>
 					</div>
 				</div>
-				<div class="column medium-3 secundario">
-					<?php include("includes/lateral/lateral-escuela.php"); ?>
-				</div>
 			</div>
 		</section>
 		<?php include("includes/footer.php"); ?>

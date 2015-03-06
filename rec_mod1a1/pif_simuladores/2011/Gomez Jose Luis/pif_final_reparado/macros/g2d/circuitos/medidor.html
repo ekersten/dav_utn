@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>medidor</title></head>
+<body BGCOLOR="#eeeeee">
+<p align="center">
+<FONT size=+2>Macro: medidor</FONT><br>tipo 2D
+</p>
+<p align="center">
+<applet name="Medidor"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=480 height=360>
+   <param name="nombre" value="Medidor">
+   <param name="Versi&oacute;n" value="3.5">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="despl_imagen='arr-izq' fondo='blanco' red='grisClaro' red10='no' ejes='no' texto='no'">
+   <param name="A_00" value="id='E' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_01" value="id='v' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_02" value="id='vernum' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_03" value="id='radio' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_04" value="id='x1' expresi&oacute;n='-1.5' evaluar='una-sola-vez' constante='si'">
+   <param name="A_05" value="id='y1' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_06" value="id='x2' expresi&oacute;n='1.5' evaluar='una-sola-vez' constante='si'">
+   <param name="A_07" value="id='y2' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_08" value="inicio='a=35' id='INIT' evaluar='una-sola-vez' algoritmo='si'">
+   <param name="A_09" value="inicio='x=(x1+x2)/2;y=(y1+y2)/2;dx=x2-x1;dy=y2-y1' hacer='d1=atan(dy/dx);d2=d1+180;L=sqrt((x2-x1)^2+(y2-y1)^2);R=radio;VA=abs(v);VA=(VA>1/E)?1/E:VA;' id='CALC' evaluar='siempre' algoritmo='si'">
+   <param name="A_10" value="id='rojo' expresi&oacute;n='0.8' evaluar='una-sola-vez' constante='si'">
+   <param name="A_11" value="id='verde' expresi&oacute;n='0.8' evaluar='una-sola-vez' constante='si'">
+   <param name="A_12" value="id='azul' expresi&oacute;n='0.8' evaluar='una-sola-vez' constante='si'">
+   <param name="G_00" value="tipo='segmento' color='negro' expresi&oacute;n='(x1,y1)(x2,y2)' tama&ntilde;o='3'">
+   <param name="G_01" value="tipo='arco' color='(rojo,verde,azul,0.0)' centro='(x,y)' radio='R' fin='360' relleno='(rojo,verde,azul,0.0)' ancho='2'">
+   <param name="G_02" value="tipo='arco' color='negro' centro='(x,y)' radio='R' fin='360'">
+   <param name="G_03" value="tipo='arco' color='negro' centro='(x,y-0.6*R)' radio='R*1.2' inicio='90-a' fin='90+a' relleno='blanco'">
+   <param name="G_04" value="tipo='arco' color='(rojo,verde,azul,0.0)' centro='(x,y-0.6*R)' radio='R*0.6' fin='180' relleno='(rojo,verde,azul,0.0)'">
+   <param name="G_05" value="tipo='arco' color='negro' centro='(x,y-0.6*R)' radio='R*0.6' inicio='90-a' fin='90+a' relleno='(rojo,verde,azul,0.0)'">
+   <param name="G_06" value="tipo='segmento' color='negro' expresi&oacute;n='(x-0.6*R*sen((1-2*s)*a*pi/180),y-0.6*R+0.6*R*cos((1-2*s)*a*pi/180))(x-1.2*R*sen((1-2*s)*a*pi/180),y-0.6*R+1.2*R*cos((1-2*s)*a*pi/180))' familia='s' s.intervalo='[0,1]' s.pasos='1' tama&ntilde;o='0'">
+   <param name="G_07" value="tipo='arco' color='gris' centro='(x,y-0.6*R)' radio='R*1.12' inicio='90-a*0.8' fin='90+a*0.8'">
+   <param name="G_08" value="tipo='segmento' color='grisObscuro' expresi&oacute;n='(x-0.9*R*sen((1-2*s)*0.8*a*pi/180),y-0.6*R+0.9*R*cos((1-2*s)*0.8*a*pi/180))(x-1.1*R*sen((1-2*s)*0.8*a*pi/180),y-0.6*R+1.1*R*cos((1-2*s)*0.8*a*pi/180))' familia='s' s.intervalo='[0,1]' s.pasos='2' tama&ntilde;o='0'">
+   <param name="G_09" value="tipo='segmento' color='grisObscuro' expresi&oacute;n='(x-1.0*R*sen((1-2*s)*0.8*a*pi/180),y-0.6*R+1.0*R*cos((1-2*s)*0.8*a*pi/180))(x-1.1*R*sen((1-2*s)*0.8*a*pi/180),y-0.6*R+1.1*R*cos((1-2*s)*0.8*a*pi/180))' familia='s' s.intervalo='[0,1]' s.pasos='10' tama&ntilde;o='0'">
+   <param name="G_10" value="tipo='segmento' color='negro' expresi&oacute;n='(x-0.6*R*sen((1-2*VA*E)*0.8*a*pi/180),y-0.6*R+0.6*R*cos((1-2*VA*E)*0.8*a*pi/180))(x-1.1*R*sen((1-2*VA*E)*0.8*a*pi/180),y-0.6*R+1.1*R*cos((1-2*VA*E)*0.8*a*pi/180))' tama&ntilde;o='1'">
+   <param name="G_11" value="tipo='pol&iacute;gono' dibujar-si='vernum>0' color='negro' expresi&oacute;n='(x-R/2,y-R/5)(x+R/2,y-R/5)(x+R/2,y-3*R/4)(x-R/2,y-3*R/4)(x-R/2,y-R/5)' relleno='blanco'">
+   <param name="G_12" value="tipo='punto' dibujar-si='vernum>0' color='negro' expresi&oacute;n='(x-R/2+R/10,y-7*R/12)' texto='[v]' tama&ntilde;o='0'">
+</applet>
+</p>
+<p align="center">
+Esta escena se usa para generar el macro.
+</p>
+<p align="center">
+<applet name="mi_medidor"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=480 height=360>
+   <param name="nombre" value="mi_medidor">
+   <param name="Versi&oacute;n" value="3.5">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_00" value="tipo='num&eacute;rico' id='m1.E' valor='0.1' nombre='m1.E' min='0.1' visible='si' pos_mensajes='centro'">
+   <param name="C_01" value="tipo='num&eacute;rico' id='m1.v' valor='2.5' nombre='m1.v' visible='si' pos_mensajes='centro'">
+   <param name="C_02" value="tipo='gr&aacute;fico' id='C1' color='azul' color-int='rojo' expresi&oacute;n='(0,1.2)'">
+   <param name="C_03" value="tipo='gr&aacute;fico' id='C2' color='azul' color-int='rojo' expresi&oacute;n='(0,-1.2)'">
+   <param name="C_04" value="tipo='num&eacute;rico' id='m1.vernum' interfaz='men&uacute;' regi&oacute;n='interior' expresi&oacute;n='(20,20,125,23)' valor='1' nombre='m1.vernum' visible='no' opciones='no,si' pos_mensajes='centro'">
+   <param name="C_05" value="tipo='num&eacute;rico' id='m1.radio' valor='1' nombre='m1.radio' min='0.7' max='1.5' visible='si' pos_mensajes='centro'">
+   <param name="A_00" value="inicio='m1.rojo=1.0;m1.verde=0.25;m1.azul=0.5' hacer='m1.vernum=1' id='INICIO' evaluar='una-sola-vez' algoritmo='si'">
+   <param name="A_01" value="hacer='m1.x1=C1.x;m1.y1=C1.y;m1.x2=C2.x;m1.y2=C2.y;;;' id='CALCULOS' evaluar='siempre' algoritmo='si'">
+   <param name="G_00" value="tipo='macro' expresi&oacute;n='circuitos/medidor' nombre='m1'">
+</applet>
+</p>
+<p align="center">
+Esta escena es una aplicación del macro que muestra algunos de sus parámetros.
+</p>
+<hr>
+
+<p><font size="2" face="Arial"><strong><cite><dfn><samp><tt>Autor: José Luis Abreu León</tt></samp></dfn></cite></strong></font></p>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jquiz-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>GABRIEL</dc:creator>
+    <dc:title>PIEZAS DE AJEDREZ</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>6</version>
+
+<data>
+<title>PIEZAS DE AJEDREZ</title>
+
+<timer><seconds>240</seconds><include-timer>1</include-timer></timer>
+
+<reading>
+<include-reading>0</include-reading>
+<reading-title></reading-title>
+<reading-text></reading-text>
+
+</reading>
+
+<questions><question-record><question>Indica como se puede mover la TORRE </question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>4</question-type><answers><answer><text>Horizontalmente</text><feedback>Pista: De derecha a izquierda</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Diagonalmente</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Verticalmente</text><feedback>Pista: De arriba a abajo</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers><must-select-all>1</must-select-all></question-record><question-record><question>El PEON puede ...</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>Comer hacia adelante</text><feedback>Incorrecto!!!!!</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Comer hacia atras</text><feedback>Incorrecto!!!!!</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Comer hacia los laterales</text><feedback>Incorrecto!!!!!</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Comer en diagonal</text><feedback>Correcto!!!!! - FELICITACIONES</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>&amp;#x00BF;Cual es la &amp;#x00FA;nica pieza del ajedr&amp;#x00E9;z que no se puede comer?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>CABALLO</text><feedback>Incorrecto!!!!!</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>TORRE</text><feedback>Incorrecto!!!!!</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>REY</text><feedback>Correcto!!!!! - FELICITACIONES</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>DAMA</text><feedback>Incorrecto!!!!!</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>&amp;#x00BF;Cuantas casillas posee el tablero de ajedr&amp;#x00E9;z?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>3</question-type><answers><answer><text>32</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>64</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>48</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>12</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record></questions>
+</data>
+
+<hotpot-config-file>
+<jquiz>
+<exercise-subtitle>(Ejercicio 01)</exercise-subtitle>
+<instructions></instructions>
+<guess-correct>Intento Correcto</guess-correct>
+<guess-incorrect>Intento Incorrecto </guess-incorrect>
+<partly-incorrect>Su respuesta es parcialmente Incorrecta:</partly-incorrect>
+<enter-a-guess>Por favor, introduzca una respuesta</enter-a-guess>
+<next-correct-letter>Siguiente letra correcta de la respuesta:</next-correct-letter>
+<correct-answers>Respuestas correctas:</correct-answers>
+<show-answer-caption>Mostrar respuest</show-answer-caption>
+<include-hint>1</include-hint>
+<include-show-answer>1</include-show-answer>
+<next-ex-url>_2_JCross_de_Benamo.htm</next-ex-url>
+<send-email>1</send-email>
+<continuous-scoring>1</continuous-scoring>
+<show-correct-first-time>1</show-correct-first-time>
+<shuffle-questions>1</shuffle-questions>
+<shuffle-answers>0</shuffle-answers>
+<show-limited-questions>0</show-limited-questions>
+<questions-to-show>2</questions-to-show>
+<short-answer-tries-on-hybrid-q>1</short-answer-tries-on-hybrid-q>
+<separate-javascript-file>0</separate-javascript-file>
+<case-sensitive>0</case-sensitive>
+<include-keypad>0</include-keypad>
+</jquiz>
+
+<global>
+<your-score-is>Su puntuacion es</your-score-is>
+<correct-indicator>&amp;#x003C;img src=&quot;Correcto_2.jpg&quot; alt=&quot;Correcto_2.jpg&quot; title=&quot;Correcto_2&quot; width=&quot;32&quot; height=&quot;32&quot; style=&quot;display: block; margin-left: auto; margin-right: auto; text-align: center;&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</correct-indicator>
+<incorrect-indicator>&amp;#x003C;img src=&quot;Incorrecto_2.jpg&quot; alt=&quot;Incorrecto_2.jpg&quot; title=&quot;Incorrecto_2&quot; width=&quot;32&quot; height=&quot;32&quot; style=&quot;display: block; margin-left: auto; margin-right: auto; text-align: center;&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</incorrect-indicator>
+<correct-first-time>Rspuestas correctas al primer intento:</correct-first-time>
+<completed-so-far>Preguntas contestadas hasta est punto:</completed-so-far>
+<exercise-completed>Ejercicio completado.</exercise-completed>
+<keypad-characters></keypad-characters>
+<times-up>Su tiempo a terminado!</times-up>
+<next-ex-caption>=&amp;#x003E; Siguiente Ejercicio (02)</next-ex-caption>
+<back-caption></back-caption>
+<contents-caption>Index</contents-caption>
+<include-next-ex>1</include-next-ex>
+<include-contents>0</include-contents>
+<include-back>0</include-back>
+<contents-url>contents.htm</contents-url>
+<graphic-url></graphic-url>
+<font-face>Geneva,Arial,sans-serif</font-face>
+<font-size>small</font-size>
+<page-bg-color>#80ff80</page-bg-color>
+<title-color>#0000ff</title-color>
+<ex-bg-color>#0000ff</ex-bg-color>
+<text-color>#ffffff</text-color>
+<link-color>#0000FF</link-color>
+<vlink-color>#0000CC</vlink-color>
+<nav-bar-color>#008000</nav-bar-color>
+<formmail-url></formmail-url>
+<email>gbenamo@hotmail.com</email>
+<name-please>Nombre del Alumno:</name-please>
+<user-string-1>one</user-string-1>
+<user-string-2>two</user-string-2>
+<user-string-3>three</user-string-3>
+<header-code></header-code>
+<correct-first-time>Rspuestas correctas al primer intento:</correct-first-time>
+<check-caption>Comprobar</check-caption>
+<ok-caption>OK</ok-caption>
+<next-q-caption>Siguiente Pregunta</next-q-caption>
+<last-q-caption>Pregunta Anterior</last-q-caption>
+<hint-caption>Pista</hint-caption>
+<show-all-questions-caption>Mostrar todas las preguntas</show-all-questions-caption>
+<show-one-by-one-caption>Mostrar pregntas de una en una</show-one-by-one-caption>
+<show-also-correct>1</show-also-correct>
+<process-for-rtl>0</process-for-rtl>
+<include-scorm-12>0</include-scorm-12>
+</global>
+</hotpot-config-file>
+</hotpot-jquiz-file>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jmix-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>raquelrettori</dc:creator>
+    <dc:title>Pablo Neruda</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>6</version>
+
+<data>
+<title>Pablo Neruda</title>
+
+<timer><seconds>180</seconds><include-timer>1</include-timer></timer>
+
+<reading>
+<include-reading>1</include-reading>
+<reading-title>
+&amp;#x003C;tr&amp;#x003E;
+&amp;#x003C;td&amp;#x003E;&amp;#x003C;/td&amp;#x003E;
+&amp;#x003C;td&amp;#x003E;&amp;#x003C;/td&amp;#x003E;
+&amp;#x003C;/tr&amp;#x003E;
+&amp;#x003C;tr&amp;#x003E;
+&amp;#x003C;td&amp;#x003E;&amp;#x003C;/td&amp;#x003E;
+&amp;#x003C;td&amp;#x003E;&amp;#x003C;/td&amp;#x003E;
+&amp;#x003C;/tr&amp;#x003E;
+&amp;#x003C;/tbody&amp;#x003E;&amp;#x003C;/table&amp;#x003E;&amp;#x003C;object classid=&quot;CLSID:6BF52A52-394A-11d3-B153-00C04F79FAA6&quot; width=&quot;100&quot; height=&quot;30&quot;&amp;#x003E; &amp;#x003C;param name=&quot;url&quot; value=&quot;Podr&amp;#x00E1;n cortar todas las flores, pero no podr&amp;#x00E1;n detener la primavera.avi&quot; /&amp;#x003E; &amp;#x003C;param name=&quot;autostart&quot; value=&quot;false&quot; /&amp;#x003E; &amp;#x003C;param name=&quot;showcontrols&quot; value=&quot;true&quot; /&amp;#x003E;&amp;#x003C;a href=&quot;Podr&amp;#x00E1;n cortar todas las flores, pero no podr&amp;#x00E1;n detener la primavera.avi&quot; title=&quot;Podr&amp;#x00E1;n cortar todas las flores, pero no podr&amp;#x00E1;n detener la primavera.avi&quot;&amp;#x003E;Podr&amp;#x00E1;n cortar todas las flores, pero no podr&amp;#x00E1;n detener la primavera.avi&amp;#x003C;/a&amp;#x003E;&amp;#x003C;/object&amp;#x003E; </reading-title>
+<reading-text></reading-text>
+
+</reading>
+
+<jumbled-order-exercise><main-order><segment>I</segment>
+<segment>like</segment>
+<segment>for</segment>
+<segment>you</segment>
+<segment>to</segment>
+<segment>be</segment>
+<segment>still</segment>
+<segment>it</segment>
+<segment>is</segment>
+<segment>as</segment>
+<segment>though</segment>
+<segment>you</segment>
+<segment>were</segment>
+<segment>absent</segment>
+<segment>distant</segment>
+<segment>and</segment>
+<segment>full</segment>
+<segment>of</segment>
+<segment>sorrow</segment>
+<segment>as</segment>
+<segment>though</segment>
+<segment>you</segment>
+<segment>had</segment>
+<segment>died</segment>
+<segment>One</segment>
+<segment>word</segment>
+<segment>then</segment>
+<segment>one</segment>
+<segment>smile</segment>
+<segment>is</segment>
+<segment>enough</segment>
+<segment>And</segment>
+<segment>I</segment>
+<segment>am</segment>
+<segment>happy</segment>
+<segment>happy</segment>
+<segment>that</segment>
+<segment>it&apos;s</segment>
+<segment>not</segment>
+<segment>true.</segment>
+</main-order></jumbled-order-exercise>
+</data>
+
+<hotpot-config-file>
+<jmix>
+<exercise-subtitle>Nobel Prize of Literature in the 70&apos;s
+
+&amp;#x003C;iframe src=&quot;http://www.metacafe.com/embed/yt-h0zcKo_7Wv8/&quot; width=&quot;440&quot; height=&quot;248&quot; allowFullScreen frameborder=0&amp;#x003E;&amp;#x003C;/iframe&amp;#x003E;</exercise-subtitle>
+<instructions>Rearrange final stanza poem 15 - Pablo Neruda</instructions>
+<guess-correct>Correct!</guess-correct>
+<guess-incorrect>Sorry! Try again.</guess-incorrect>
+<this-much-correct>This much of your answer is correct:</this-much-correct>
+<next-correct-part>The next correct part is: </next-correct-part>
+<click-to-add>Click on words to add them to the sentence.</click-to-add>
+<also-correct>These answers are also correct:</also-correct>
+<include-undo>1</include-undo>
+<include-restart>1</include-restart>
+<include-hint>1</include-hint>
+<next-ex-url>nextpage.htm</next-ex-url>
+<send-email>0</send-email>
+<capitalize-first-letter>0</capitalize-first-letter>
+<separate-javascript-file>0</separate-javascript-file>
+</jmix>
+
+<global>
+
+<times-up>Your time is over!</times-up>
+<check-caption>Check</check-caption>
+<ok-caption>OK</ok-caption>
+<undo-caption>Undo</undo-caption>
+<hint-caption>Hint</hint-caption>
+<restart-caption>Restart</restart-caption>
+<your-score-is>Your score is </your-score-is>
+<show-also-correct>1</show-also-correct>
+<process-for-rtl>0</process-for-rtl>
+<include-scorm-12>0</include-scorm-12>
+<next-ex-caption>=&amp;#x003E;</next-ex-caption>
+<back-caption>&amp;#x003C;=</back-caption>
+<contents-caption>Index</contents-caption>
+<include-next-ex>1</include-next-ex>
+<include-contents>1</include-contents>
+<include-back>0</include-back>
+<contents-url>contents.htm</contents-url>
+<contents-url>contents.htm</contents-url>
+<graphic-url></graphic-url>
+<font-face>Geneva,Arial,sans-serif</font-face>
+<font-size>small</font-size>
+<page-bg-color>#008000</page-bg-color>
+<title-color>#ffffff</title-color>
+<ex-bg-color>#ffff80</ex-bg-color>
+<text-color>#400040</text-color>
+<link-color>#0000FF</link-color>
+<vlink-color>#0000CC</vlink-color>
+<nav-bar-color>#ff8080</nav-bar-color>
+<formmail-url>http://yourserver.com/cgi-bin/FormMail.pl</formmail-url>
+<email>you@yourserver.com</email>
+<name-please>Please enter your name:</name-please>
+<user-string-1>one</user-string-1>
+<user-string-2>two</user-string-2>
+<user-string-3>three</user-string-3>
+<header-code></header-code>
+</global>
+</hotpot-config-file>
+</hotpot-jmix-file>

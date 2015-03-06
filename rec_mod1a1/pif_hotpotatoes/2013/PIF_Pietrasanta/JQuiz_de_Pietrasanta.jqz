@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jquiz-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>Daniela</dc:creator>
+    <dc:title>ASPECTOS DEL LENGUAJE AUDIOVISUAL</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>6</version>
+
+<data>
+<title>ASPECTOS DEL LENGUAJE AUDIOVISUAL</title>
+
+<timer><seconds>60</seconds><include-timer>1</include-timer></timer>
+
+<reading>
+<include-reading>0</include-reading>
+<reading-title></reading-title>
+<reading-text></reading-text>
+
+</reading>
+
+<questions><question-record><question>Selecciona la opci&amp;#x00F3;n cuya imagen corresponde al Plano americano:</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>&amp;#x003C;img src=&quot;Plano americano.jpg&quot; alt=&quot;Plano americano.jpg&quot; title=&quot;Plano americano&quot; width=&quot;187&quot; height=&quot;190&quot; style=&quot;display: block; margin-left: auto; margin-right: auto; text-align: center;&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</text><feedback>&amp;#x00A1;Opci&amp;#x00F3;n correcta!</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x003C;img src=&quot;Primer plano.jpg&quot; alt=&quot;Primer plano.jpg&quot; title=&quot;Primer plano&quot; width=&quot;190&quot; height=&quot;190&quot; style=&quot;display: block; margin-left: auto; margin-right: auto; text-align: center;&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</text><feedback>Opci&amp;#x00F3;n incorrecta, esta imagen pertenece al Primer plano</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x003C;img src=&quot;Plano detalle.jpg&quot; alt=&quot;Plano detalle.jpg&quot; title=&quot;Plano detalle&quot; width=&quot;190&quot; height=&quot;194&quot; style=&quot;display: block; margin-left: auto; margin-right: auto; text-align: center;&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</text><feedback>Opci&amp;#x00F3;n incorrecta, esta imagen pertenece al Plano detalle</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x003C;img src=&quot;Plano entero.jpg&quot; alt=&quot;Plano entero.jpg&quot; title=&quot;Plano entero&quot; width=&quot;189&quot; height=&quot;190&quot; style=&quot;display: block; margin-left: auto; margin-right: auto; text-align: center;&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</text><feedback>Opci&amp;#x00F3;n incorrecta, esta imagen pertenece al Plano entero</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x003C;img src=&quot;Plano general.jpg&quot; alt=&quot;Plano general.jpg&quot; title=&quot;Plano general&quot; width=&quot;189&quot; height=&quot;190&quot; style=&quot;display: block; margin-left: auto; margin-right: auto; text-align: center;&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</text><feedback>Opci&amp;#x00F3;n incorrecta, esta imagen pertenece al Plano general</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x003C;img src=&quot;Plano medio.jpg&quot; alt=&quot;Plano medio.jpg&quot; title=&quot;Plano medio&quot; width=&quot;189&quot; height=&quot;190&quot; style=&quot;display: block; margin-left: auto; margin-right: auto; text-align: center;&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</text><feedback>Opci&amp;#x00F3;n incorrecta, esta imagen pertenece al Plano medio</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Escribe a qu&amp;#x00E9; aspecto del lenguaje audiovisual pertenecen los significados denotativos y connotativos.</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>3</question-type><answers><answer><text>Sem&amp;#x00E1;ntico</text><feedback>&amp;#x00A1;Excelente respuesta!</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Morfol&amp;#x00F3;gico</text><feedback>Respuesta incorrecta</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Sint&amp;#x00E1;ctico</text><feedback>Respuesta incorrecta</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Est&amp;#x00E9;tico</text><feedback>Respuesta incorrecta</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Selecciona cu&amp;#x00E1;les de las siguientes opciones son los elementos del lenguaje audiovisual:</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>4</question-type><answers><answer><text>Las im&amp;#x00E1;genes</text><feedback>Otra opci&amp;#x00F3;n: son representaciones visuales de objetos.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Los textos</text><feedback>No forman parte del lenguaje audiovisual</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Los silencios</text><feedback>Otra opci&amp;#x00F3;n: son diferentes tipos de efectos sonoros.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Los sonidos</text><feedback>Otra opci&amp;#x00F3;n: se utilizan para transmitir un mensaje sonoro.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers><must-select-all>1</must-select-all></question-record></questions>
+</data>
+
+<hotpot-config-file>
+<jquiz>
+<exercise-subtitle>Conceptos b&amp;#x00E1;sicos</exercise-subtitle>
+<instructions>Resolver los siguientes ejercicios seleccionando y complentando con las opciones correctas.
+Para ampliar informaci&amp;#x00F3;n sobre el lenguaje audiovisual descargar el siguiente archivo:
+
+&amp;#x003C;a style=&quot;cursor: pointer; text-decoration: underline;&quot; onclick=&quot;window.open(&apos;https://docs.google.com/file/d/0B2RPnBa_JufiQVVZUjdlTzFCVm8/edit?usp=sharing&apos;);return false;&quot;&amp;#x003E;Lenguaje audiovisual
+
+&amp;#x003C;img src=&quot;Produccion audiovisual.jpg&quot; alt=&quot;Produccion audiovisual.jpg&quot; title=&quot;Produccion audiovisual&quot; width=&quot;200&quot; height=&quot;190&quot; style=&quot;display: block; margin-left: auto; margin-right: auto; text-align: center;&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;&amp;#x003C;/a&amp;#x003E;
+</instructions>
+<guess-correct>&amp;#x00A1;Correcto!</guess-correct>
+<guess-incorrect>Intento incorrecto</guess-incorrect>
+<partly-incorrect>Su respuesta es parcialmente incorrecta: </partly-incorrect>
+<enter-a-guess>Por favor, ingrese una respuesta.</enter-a-guess>
+<next-correct-letter>Siguiente letra correcta de la respuesta: </next-correct-letter>
+<correct-answers>Respuestas correctas:</correct-answers>
+<show-answer-caption>Respuesta</show-answer-caption>
+<include-hint>1</include-hint>
+<include-show-answer>1</include-show-answer>
+<next-ex-url>JCross_de_Pietrasanta.htm</next-ex-url>
+<send-email>0</send-email>
+<continuous-scoring>1</continuous-scoring>
+<show-correct-first-time>1</show-correct-first-time>
+<shuffle-questions>1</shuffle-questions>
+<shuffle-answers>1</shuffle-answers>
+<show-limited-questions>0</show-limited-questions>
+<questions-to-show>2</questions-to-show>
+<short-answer-tries-on-hybrid-q>1</short-answer-tries-on-hybrid-q>
+<separate-javascript-file>0</separate-javascript-file>
+<case-sensitive>0</case-sensitive>
+<include-keypad>0</include-keypad>
+</jquiz>
+
+<global>
+<your-score-is>Tu puntaje es:</your-score-is>
+<correct-indicator>&amp;#x003C;img src=&quot;FACE03.png&quot; alt=&quot;FACE03.png&quot; title=&quot;Feliz&quot; width=&quot;32&quot; height=&quot;32&quot; style=&quot;display: block; margin-left: auto; margin-right: auto; text-align: center;&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</correct-indicator>
+<incorrect-indicator>&amp;#x003C;img src=&quot;FACE04.png&quot; alt=&quot;FACE04.png&quot; title=&quot;Triste&quot; width=&quot;32&quot; height=&quot;32&quot; style=&quot;display: block; margin-left: auto; margin-right: auto; text-align: center;&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</incorrect-indicator>
+<correct-first-time>Respuestas correctas al primer intento: </correct-first-time>
+<completed-so-far>Preguntas respondidas hasta este punto:</completed-so-far>
+<exercise-completed>Actividad completa.</exercise-completed>
+<keypad-characters></keypad-characters>
+<times-up>&amp;#x00A1;El tiempo se ha terminado! &amp;#x003C;img src=&quot;FACE04.png&quot; alt=&quot;FACE04.png&quot; title=&quot;FACE04&quot; width=&quot;32&quot; height=&quot;32&quot; style=&quot;display: block; margin-left: auto; margin-right: auto; text-align: center;&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</times-up>
+<next-ex-caption>Siguiente ejercicio &amp;#x003C;img src=&quot;Siguiente_ejercicio.png&quot; alt=&quot;Siguiente_ejercicio.png&quot; title=&quot;Siguiente_ejercicio&quot; width=&quot;40&quot; height=&quot;32&quot; style=&quot;display: block; margin-left: auto; margin-right: auto; text-align: center;&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</next-ex-caption>
+<back-caption>&amp;#x003C;=</back-caption>
+<contents-caption>Index</contents-caption>
+<include-next-ex>1</include-next-ex>
+<include-contents>0</include-contents>
+<include-back>0</include-back>
+<contents-url>contents.htm</contents-url>
+<graphic-url></graphic-url>
+<font-face>Geneva,Arial,sans-serif</font-face>
+<font-size>small</font-size>
+<page-bg-color>#ffff80</page-bg-color>
+<title-color>#ff0000</title-color>
+<ex-bg-color>#FFFFFF</ex-bg-color>
+<text-color>#000000</text-color>
+<link-color>#0000FF</link-color>
+<vlink-color>#0000CC</vlink-color>
+<nav-bar-color>#ff8000</nav-bar-color>
+<formmail-url>http://yourserver.com/cgi-bin/FormMail.pl</formmail-url>
+<email>you@yourserver.com</email>
+<name-please>Please enter your name:</name-please>
+<user-string-1>one</user-string-1>
+<user-string-2>two</user-string-2>
+<user-string-3>three</user-string-3>
+<header-code></header-code>
+<correct-first-time>Respuestas correctas al primer intento: </correct-first-time>
+<check-caption>Verificar</check-caption>
+<ok-caption>OK</ok-caption>
+<next-q-caption>&amp;#x003C;img src=&quot;Siguiente.png&quot; alt=&quot;Siguiente.png&quot; title=&quot;Siguiente&quot; width=&quot;30&quot; height=&quot;20&quot; style=&quot;display: block; margin-left: auto; margin-right: auto; text-align: center;&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</next-q-caption>
+<last-q-caption>&amp;#x003C;img src=&quot;Anterior.png&quot; alt=&quot;Anterior.png&quot; title=&quot;Anterior&quot; width=&quot;30&quot; height=&quot;20&quot; style=&quot;display: block; margin-left: auto; margin-right: auto; text-align: center;&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</last-q-caption>
+<hint-caption>&amp;#x003C;img src=&quot;Signo.jpg&quot; alt=&quot;Signo.jpg&quot; title=&quot;Signo&quot; width=&quot;32&quot; height=&quot;32&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</hint-caption>
+<show-all-questions-caption>Mostrar todas las preguntas</show-all-questions-caption>
+<show-one-by-one-caption>Mostrar preguntas de una en una</show-one-by-one-caption>
+<show-also-correct>1</show-also-correct>
+<process-for-rtl>0</process-for-rtl>
+<include-scorm-12>0</include-scorm-12>
+</global>
+</hotpot-config-file>
+</hotpot-jquiz-file>

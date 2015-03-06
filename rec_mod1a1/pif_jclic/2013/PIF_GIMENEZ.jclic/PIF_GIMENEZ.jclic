@@ -1,0 +1,1080 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="PIF_GIMENEZ" version="0.1.3">
+ <settings>
+  <title>NTICx</title>
+  <revision description="PIF" date="8/21/13" />
+  <description>
+   <p>Alfabetización Informática Computacional</p>
+  </description>
+  <descriptors area="Informática - NTICx" level="Secundario">Silvina Giménez</descriptors>
+  <skin file="@orange.xml" />
+ </settings>
+ <sequence>
+  <item id="Inicio" name="Información General" navButtons="fwd" />
+  <item id="menu" name="Menu" navButtons="back" />
+  <item name="Asociación simple" />
+  <item name="Actividad de exploración" />
+  <item name="Asociación compleja" />
+  <item name="Actividad de identificación">
+   <jump tag="menu" id="forward" />
+  </item>
+  <item name="Rellenar agujeros en blanco" />
+  <item name="Rellenar agujeros primera letra" />
+  <item name="Ordenar palabras" />
+  <item name="Rellenar agujeros con lista" />
+  <item name="Ordenar párrafos" />
+  <item name="Memoria" />
+  <item name="Sopa de letras">
+   <jump tag="menu" id="forward" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@panels.Explore" name="Actividad de exploración" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="18" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>CLASIFICACIÓN DE SOFTWARE SEGÚN SU LICENCIA</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://clic.xtec.cat/es/jclic/" report="false">
+    <container bgColor="0x6666FF">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x99FF00" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="1" cellWidth="250.0" cellHeight="80.0" border="true" id="primary">
+    <style shadow="true" borderStroke="2.4" markerStroke="2.7">
+     <font family="Arial" size="18" bold="true" />
+     <color foreground="0x6633FF" background="0xFF9900" shadow="0xFFFFFF" border="0x6633FF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell id="0">
+     <p>SOFTWARE LIBRE</p>
+    </cell>
+    <cell id="1">
+     <p>SOFTWARE PROPIETARIO</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="1" cellWidth="80.0" cellHeight="80.0" border="true" id="secondary">
+    <style borderStroke="0.9" markerStroke="2.7">
+     <color background="0xFFFFFF" border="0x0000FF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell image="audio_icon.jpg">
+     <media type="PLAY_AUDIO" level="1" file="VozLibre.mp3" />
+    </cell>
+    <cell image="audio_icon.jpg">
+     <media type="PLAY_AUDIO" level="1" file="VozProp.mp3" />
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.Identify" name="Actividad de identificación" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="18" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¿QUÉ LOGO SIGNIFICA CÓDIGO LIBRE?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="18" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF3300" />
+     </style>
+     <p>MUY BIEN!!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="18" bold="true" />
+     </style>
+     <p>NO LO LOGRASTE</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://clic.xtec.cat/es/jclic/" maxTime="5" countDownTime="true" report="true" reportActions="false">
+    <container bgColor="0x6666FF">
+     <counters time="true" actions="false" score="true" />
+    </container>
+    <window bgColor="0x99FF00" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="2" cellWidth="250.0" cellHeight="150.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Calibri" size="14" bold="true" />
+     <color foreground="0x0000FF" background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell id="0" avoidOverlapping="true" image="android.jpg" />
+    <cell id="1" avoidOverlapping="true" image="gnu.png" />
+    <cell id="0" avoidOverlapping="true" image="linux.jpg" />
+    <cell id="0" avoidOverlapping="true" image="ubuntu-logo.gif" />
+   </cells>
+   <cells rows="2" cols="2" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell />
+    <cell>
+     <p>GNU</p>
+     <p>Movimiento y comunidad de Software y Conocimiento Libres</p>
+    </cell>
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Asociación compleja" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="18" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>CLASIFICAR CADA APLICACIÓN SEGÚN SU LICENCIA Y DISTRIBUCIÓN</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="18" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF3300" />
+     </style>
+     <p>MUY BIEN!!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="18" bold="true" />
+     </style>
+     <p>NO LO LOGRASTE, INTENTA NUEVAMENTE</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://clic.xtec.cat/es/jclic/" maxTime="20" countDownTime="false" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x6666FF">
+     <counters time="true" actions="false" score="true" />
+    </container>
+    <window bgColor="0x99FF00" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="5" cellWidth="130.0" cellHeight="100.0" border="true" id="primary">
+    <style borderStroke="1.5" markerStroke="5.0">
+     <font family="Calibri" size="16" bold="true" />
+     <color foreground="0xFF6600" background="0xFFFFFF" border="0x000099" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell id="1" txtAlign="middle,bottom" imgAlign="middle,top" image="access.jpg">
+     <p>ACCESS</p>
+    </cell>
+    <cell id="0" txtAlign="middle,bottom" imgAlign="middle,top" image="Calc.png">
+     <p>CALC</p>
+    </cell>
+    <cell id="0" txtAlign="middle,bottom" imgAlign="middle,top" image="Writer.png">
+     <p>WRITER</p>
+    </cell>
+    <cell id="0" txtAlign="middle,bottom" imgAlign="middle,top" image="Impress.png">
+     <p>IMPRESS</p>
+    </cell>
+    <cell id="1" txtAlign="middle,bottom" imgAlign="middle,top" image="powerpoint.jpg">
+     <p>POWER POINT</p>
+    </cell>
+    <cell id="1" txtAlign="middle,bottom" imgAlign="middle,top" image="excel.jpg">
+     <p>EXCEL</p>
+    </cell>
+    <cell id="1" txtAlign="middle,bottom" imgAlign="middle,top" image="word.jpg">
+     <p>WORD</p>
+    </cell>
+    <cell id="0" txtAlign="middle,bottom" imgAlign="middle,top" image="Base.png">
+     <p>BASE</p>
+    </cell>
+    <cell id="1" txtAlign="middle,bottom" imgAlign="middle,top" image="coreldraw.jpg">
+     <p>COREL DRAW</p>
+    </cell>
+    <cell id="0" txtAlign="middle,bottom" imgAlign="middle,top" image="Draw.png">
+     <p>DRAW</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="2" cellWidth="325.0" cellHeight="60.0" border="true" id="secondary">
+    <style shadow="true" borderStroke="2.1" markerStroke="2.7">
+     <font family="Arial" size="18" bold="true" />
+     <color foreground="0x6633FF" background="0xFF9900" shadow="0xFFFFFF" border="0x6633FF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="1" />
+    <cell>
+     <p>SOFTWARE LIBRE</p>
+    </cell>
+    <cell>
+     <p>SOFTWARE PROPIETARIO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="BUA" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="Asociación simple" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="18" bold="true" />
+      <color background="0xFFFF33" />
+     </style>
+     <p>CLASIFICACIÓN DE SOFTWARE SEGÚN SU UTILIDAD</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="18" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF3300" />
+     </style>
+     <p>MUY BIEN!!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="18" bold="true" />
+     </style>
+     <p>NO LO LOGRASTE</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://clic.xtec.cat/es/jclic/" maxTime="30" countDownTime="false" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x6666FF">
+     <counters time="true" actions="false" score="true" />
+    </container>
+    <window bgColor="0x99FF00" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="1" cols="3" cellWidth="150.0" cellHeight="150.0" border="true" id="primary">
+    <style shadow="true" borderStroke="0.7" markerStroke="2.7">
+     <font family="Arial" size="18" bold="true" />
+     <color foreground="0x6633FF" background="0xFFFFFF" shadow="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell txtAlign="middle,bottom" image="images.jpg">
+     <media type="PLAY_AUDIO" level="1" file="Voz_001.mp3" />
+    </cell>
+    <cell image="images.jpg">
+     <media type="PLAY_AUDIO" level="1" file="Voz_002.mp3" />
+    </cell>
+    <cell image="images.jpg">
+     <media type="PLAY_AUDIO" level="1" file="Voz_003.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="3" cellWidth="150.0" cellHeight="60.0" border="true" id="secondary">
+    <style shadow="true">
+     <font family="Arial" size="16" bold="true" />
+     <color foreground="0x6633FF" background="0xCCCCFF" shadow="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell>
+     <p>SOFTWARE DE BASE</p>
+    </cell>
+    <cell>
+     <p>SOFTWARE DE DESARROLLO</p>
+    </cell>
+    <cell>
+     <p>SOFTWARE DE APLICACIÓN</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="Información General" code="">
+   <description />
+   <messages>
+    <cell border="true" type="initial">
+     <style>
+      <font family="Arial" size="18" bold="true" />
+      <color background="0xFFFF33" />
+     </style>
+     <p>BIENVENIDOS</p>
+    </cell>
+    <cell type="finalError">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="Arial" size="18" bold="true" />
+     </style>
+     <p>HAGA CLIK EN LA FLECHA AVANZAR</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://clic.xtec.cat/es/jclic/info.htm" dragCells="true" report="false">
+    <helpWindow>
+     <p>Pantalla de Información</p>
+    </helpWindow>
+    <container bgColor="0x6666FF">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x99FF00" border="true" />
+    <eventSounds>
+     <sound id="actionError" enabled="false" />
+    </eventSounds>
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="999.0" cellHeight="860.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell txtAlign="middle,top" image="informatica.jpg">
+     <style borderStroke="3.2" markerStroke="5.0">
+      <font family="Arial" size="36" bold="true" />
+      <color foreground="0xFF3300" background="0x99FF00" border="0xFF3300" />
+     </style>
+     <p>NTICx</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@memory.MemoryGame" name="Memoria" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="18" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>UNÍ LAS IMÁGENES CON LAS PALABRAS CORRESPONDIENTES</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="18" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF3300" />
+     </style>
+     <p>MUY BIEN, FELICITACIONES!</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="300" countDownTime="true" maxActions="20" countDownActions="true" report="true" reportActions="false">
+    <container bgColor="0x6666FF">
+     <counters time="true" actions="true" score="false" />
+    </container>
+    <window bgColor="0x99FF00" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="120.0" cellHeight="100.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="raton.jpg">
+     <style>
+      <font family="Lucida Handwriting" size="16" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="impresora.jpg">
+     <style>
+      <font family="Lucida Handwriting" size="16" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="microfono.jpg">
+     <style>
+      <font family="Lucida Handwriting" size="16" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="webcam.jpg">
+     <style>
+      <font family="Lucida Handwriting" size="16" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="pendrive.jpg">
+     <style>
+      <font family="Lucida Handwriting" size="16" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="audifonos.jpg">
+     <style>
+      <font family="Lucida Handwriting" size="16" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="50.0" cellHeight="30.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell>
+     <style>
+      <font family="Arial Black" size="16" />
+      <color foreground="0x6666FF" background="0xFFFFFF" />
+     </style>
+     <p>MOUSE</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial Black" size="16" />
+      <color foreground="0x6666FF" background="0xFFFFFF" />
+     </style>
+     <p>IMPRESORA</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial Black" size="16" />
+      <color foreground="0x6666FF" background="0xFFFFFF" />
+     </style>
+     <p>MICRÓFONO</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial Black" size="16" />
+      <color foreground="0x6666FF" background="0xFFFFFF" />
+     </style>
+     <p>WEBCAM</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial Black" size="16" />
+      <color foreground="0x6666FF" background="0xFFFFFF" />
+     </style>
+     <p>MEMORIA USB</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial Black" size="16" />
+      <color foreground="0x6666FF" background="0xFFFFFF" />
+     </style>
+     <p>AUDÍFONO</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="Menu" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="18" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>HAGA CLICK EN UNA OPCIÓN</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://clic.xtec.cat/es/jclic/" report="false">
+    <container bgColor="0x6666FF">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x99FF00" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="1" cols="2" cellWidth="240.0" cellHeight="120.0" border="true">
+    <style shadow="true" margin="4" borderStroke="2.2" markerStroke="2.7">
+     <font family="Gill Sans MT" size="22" bold="true" />
+     <color foreground="0x6633FF" background="0x99FF00" shadow="0xCCFFCC" inactive="0xCCFFCC" border="0x6633FF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="1" />
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Asociación simple" />
+     <p>SOFTWARE</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Rellenar agujeros en blanco" />
+     <p>HARDWARE</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@text.Order" name="Ordenar palabras" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell type="previous">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>LEA CON ATENCIÓN Y HAGA CLIC SOBRE EL TEXTO CUANDO ESTE LISTO PARA INICIAR CON LA ACTIVIDAD</p>
+    </cell>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="18" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>ORDENE LAS PALABRAS  DE ESTE TEXTO</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="18" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF3300" />
+     </style>
+     <p>FELICITACIONES!</p>
+    </cell>
+    <cell avoidOverlapping="true" type="finalError">
+     <style>
+      <font family="Arial" size="18" bold="true" />
+     </style>
+     <p>NO LO LOGRASTE! INTENTA  NUEVAMENTE </p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="300" countDownTime="false" maxActions="15" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x6666FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x99FF00" border="true">
+     <size width="526" height="263" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <prevScreen>
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="16" />
+     <color background="0xFF9900" />
+    </style>
+    <p>BUS&#xD;</p>
+    <p>&#xD;</p>
+    <p>El encargado de que los datos puedan transportarse por los cables es el bus de datos.&#xD;</p>
+    <p>El bus es fundamental en el funcionamiento del microprocesador porque permite que los datos que se desplazan por los cables (en forma de impulsos eléctricos) lleguen de un componente a otro; además el bus se encarga de hacer llegar al CPU las direcciones de memoria (donde se encuentran almacenados los datos) y las instrucciones de control, para poder definir el comportamiento de cada uno de los elementos internos y externos de la computadora.</p>
+   </prevScreen>
+   <document>
+    <style name="default" background="0xFFFFFF" italic="false" size="16" tabWidth="12" bold="false" family="Arial" />
+    <style name="target" base="default" target="true" foreground="0x0033CC" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" italic="false" size="12" bold="false" family="Arial">
+      <text background="0xFFFFFF" italic="false" size="18" bold="true" foreground="0x0033CC" family="Arial">BUS</text>
+     </p>
+     <p background="0xFFFFFF" italic="false" size="12" bold="false" family="Arial" />
+     <p background="0xFFFFFF" italic="false" size="12" bold="false" family="Arial">
+      <text background="0xFFFFFF" italic="false" size="16" bold="false" family="Arial">El </text>
+      <target>encargado</target>
+      <text background="0xFFFFFF" italic="false" size="16" bold="false" family="Arial"> de que los datos puedan </text>
+      <target>transportarse</target>
+      <text background="0xFFFFFF" italic="false" size="16" bold="false" family="Arial"> por los cables es el bus de datos.</text>
+     </p>
+     <p background="0xFFFFFF" italic="false" size="12" bold="false" family="Arial">
+      <text background="0xFFFFFF" italic="false" size="16" bold="false" family="Arial">El </text>
+      <target>bus</target>
+      <text background="0xFFFFFF" italic="false" size="16" bold="false" family="Arial"> es fundamental en el funcionamiento del </text>
+      <target>microprocesador</target>
+      <text background="0xFFFFFF" italic="false" size="16" bold="false" family="Arial"> porque permite que los datos que se desplazan por los </text>
+      <target>cables</target>
+      <text background="0xFFFFFF" italic="false" size="16" bold="false" family="Arial"> (en forma de impulsos eléctricos) lleguen de un </text>
+      <target>componente</target>
+      <text background="0xFFFFFF" italic="false" size="16" bold="false" family="Arial"> a otro; además el bus se encarga de hacer llegar al </text>
+      <target>CPU</target>
+      <text background="0xFFFFFF" italic="false" size="16" bold="false" family="Arial"> las direcciones de </text>
+      <target>memoria</target>
+      <text background="0xFFFFFF" italic="false" size="16" bold="false" family="Arial"> (donde se encuentran almacenados los datos) y las </text>
+      <target>instrucciones</target>
+      <text background="0xFFFFFF" italic="false" size="16" bold="false" family="Arial"> de control, para poder definir el comportamiento de cada uno de los elementos internos y externos de la </text>
+      <target>computadora</target>
+      <text background="0xFFFFFF" italic="false" size="16" bold="false" family="Arial">.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.Order" name="Ordenar párrafos" code="" type="orderParagraphs">
+   <description />
+   <messages>
+    <cell type="previous">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="16" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>LEA CON ATENCIÓN Y HAGA CLIC SOBRE EL TEXTO CUANDO ESTE LISTO PARA INICIAR CON LA ACTIVIDAD</p>
+    </cell>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="18" bold="true" />
+      <color background="0xFFFF33" />
+     </style>
+     <p>ORDENE LOS PÁRRAFOS DE ESTE TEXTO SEGÚN CORRESPONDA</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="18" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF3300" />
+     </style>
+     <p>MUY BIEN!</p>
+    </cell>
+    <cell avoidOverlapping="true" type="finalError">
+     <style />
+     <p>NO LO LOGRASTE! INTENTA NUEVAMENTE</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="50" countDownTime="false" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x6666FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x99FF00" border="true">
+     <size width="589" height="401" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <prevScreen>
+    <style>
+     <font family="Arial" size="16" bold="true" />
+     <color background="0xFF9900" />
+    </style>
+    <p>Periféricos de entrada, de salida y de entrada/salida&#xD;</p>
+    <p>&#xD;</p>
+    <p>Los periféricos son dispositivos que se conectan a la computadora, técnicamente a la placa madre, para permitir la interacción entre el usuario y la computadora mediante el ingreso y egreso de información.&#xD;</p>
+    <p>Las computadoras tienen tres tipos de periféricos: de entrada, de salida y de entrada/salida.&#xD;</p>
+    <p>Un periférico de entrada es una pieza de hardware que permite al usuario ingresar información a la computadora para que sea procesada.&#xD;</p>
+    <p>Un periférico de salida se encarga de mostrar y representar la información procesada por la computadora, en forma de texto, gráficos, dibujos o fotografías, entre otras formas.&#xD;</p>
+    <p>Los periféricos de entrada / salida son periféricos que pueden guardar y recuperar información en un soporte específico, se los suele llamar unidades de almacenamiento secundario.</p>
+   </prevScreen>
+   <document>
+    <style name="default" background="0xFFFFFF" italic="false" size="16" tabWidth="12" bold="false" family="Arial" />
+    <style name="target" base="default" target="true" foreground="0x000000" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" italic="false" size="12" bold="false" family="Arial">
+      <text background="0xFFFFFF" italic="false" size="18" bold="true" foreground="0x0033CC" family="Arial">Periféricos de entrada, de salida y de entrada/salida</text>
+     </p>
+     <p background="0xFFFFFF" italic="false" size="12" bold="false" family="Arial" />
+     <p background="0xFFFFFF" italic="false" size="12" bold="false" family="Arial">
+      <target>Los periféricos son dispositivos que se conectan a la computadora, técnicamente a la placa madre, para permitir la interacción entre el usuario y la computadora mediante el ingreso y egreso de información.</target>
+     </p>
+     <p background="0xFFFFFF" italic="false" size="12" bold="false" family="Arial" />
+     <p background="0xFFFFFF" italic="false" size="12" bold="false" family="Arial">
+      <target>Las computadoras tienen tres tipos de periféricos: de entrada, de salida y de entrada/salida.</target>
+     </p>
+     <p background="0xFFFFFF" italic="false" size="12" bold="false" family="Arial" />
+     <p background="0xFFFFFF" italic="false" size="12" bold="false" family="Arial">
+      <target>Un periférico de entrada es una pieza de hardware que permite al usuario ingresar información a la computadora para que sea procesada.</target>
+     </p>
+     <p background="0xFFFFFF" italic="false" size="12" bold="false" family="Arial" />
+     <p background="0xFFFFFF" italic="false" size="12" bold="false" family="Arial">
+      <target>Un periférico de salida se encarga de mostrar y representar la información procesada por la computadora, en forma de texto, gráficos, dibujos o fotografías, entre otras formas.</target>
+     </p>
+     <p background="0xFFFFFF" italic="false" size="12" bold="false" family="Arial" />
+     <p background="0xFFFFFF" italic="false" size="12" bold="false" family="Arial">
+      <target>Los periféricos de entrada / salida son periféricos que pueden guardar y recuperar información en un soporte específico, se los suele llamar unidades de almacenamiento secundario.</target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="Rellenar agujeros con lista" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="18" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>ELIJE UNA PALABRA DE CADA LISTA PARA COMPLETAR EL TEXTO</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="18" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF3300" />
+     </style>
+     <p>FELICITACIONES!</p>
+    </cell>
+    <cell avoidOverlapping="true" type="finalError">
+     <style>
+      <font family="Arial" size="18" bold="true" />
+     </style>
+     <p>NO LO LOGRASTE! INTENTA NUEVAMENTE</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="20" countDownTime="false" maxActions="8" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x6666FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x99FF00" border="true">
+     <size width="668" height="408" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <document>
+    <style name="default" background="0xFFFFFF" italic="false" size="16" tabWidth="12" bold="false" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" size="18" bold="true" foreground="0x3300CC" family="Arial">Memoria principal y direcciones de memoria</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" size="16" family="Arial">La </text>
+      <target>
+       <answer>memoria</answer>
+       <optionList>
+        <option>CPU</option>
+        <option>memoria</option>
+        <option>marca</option>
+       </optionList>
+       <text>memoria</text>
+      </target>
+      <text background="0xFFFFFF" size="16" family="Arial"> le permite al microprocesador almacenar temporalmente </text>
+      <target>
+       <answer>instrucciones</answer>
+       <optionList>
+        <option>instrucciones</option>
+        <option>secuencias</option>
+        <option>pasos</option>
+       </optionList>
+       <text>instrucciones</text>
+      </target>
+      <text background="0xFFFFFF" size="16" family="Arial"> y datos. En la memoria se guardan datos de entrada, instrucciones de los programas que se están ejecutando, datos y resultados del procesamiento y los datos que se preparan para la salida.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" size="16" family="Arial">Los datos proporcionados a la computadora permanecen en la memoria principal hasta que se utilizan en el procesamiento. Durante el procesamiento, la memoria almacena los datos intermedios y finales de todas las operaciones aritméticas y lógicas.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" size="16" family="Arial">La memoria principal, también llamada unidad de </text>
+      <target>
+       <answer>almacenamiento</answer>
+       <optionList>
+        <option>guardado</option>
+        <option>acumulación</option>
+        <option>almacenamiento</option>
+       </optionList>
+       <text>almacenamiento</text>
+      </target>
+      <text background="0xFFFFFF" size="16" family="Arial"> primario, está subdividida en celdas individuales, cada una de las cuales tiene una capacidad similar para almacenar datos; estas celdas son las direcciones de memoria.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" size="16" family="Arial">Las computadoras usan dos tipos de memoria primaria:</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" size="16" family="Arial">1)La memoria de acceso </text>
+      <target>
+       <answer>aleatorio</answer>
+       <optionList>
+        <option>aleatorio</option>
+        <option>casual</option>
+        <option>azaroso</option>
+       </optionList>
+       <text>aleatorio</text>
+      </target>
+      <text background="0xFFFFFF" size="16" family="Arial"> o RAM (Ramdon Access Memory) es una memoria volátil, en donde se almacenan automáticamente los datos que necesita procesar la CPU. La información que contiene es temporal y al apagarse el equipo esa información se pierde.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" size="16" family="Arial">2)La memoria de sólo lectura o ROM (Ramdon Only Memory) es una memoria que contiene información del fabricante y no puede ser modificada por el usuario.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="Rellenar agujeros en blanco" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>ESCRIBE LAS PALABRAS QUE FALTANE EN EL TEXTO</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="18" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF3300" />
+     </style>
+     <p>MUY BIEN! </p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>NO LO LOGRASTE! INTENTA NUEVAMENTE</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="30" countDownTime="false" maxActions="8" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Presione F1 para ayuda</p>
+    </helpWindow>
+    <container bgColor="0x6666FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x99FF00" border="true">
+     <size width="495" height="330" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <document>
+    <style name="default" background="0xFFFFFF" italic="false" size="16" tabWidth="12" bold="false" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" Alignment="0" family="Arial">
+      <text background="0xFFFFFF" size="18" bold="true" foreground="0x3300CC" family="Arial">Breve descripción del hardware</text>
+     </p>
+     <p background="0xFFFFFF" Alignment="0" family="Arial" />
+     <p background="0xFFFFFF" Alignment="0" family="Arial">
+      <text background="0xFFFFFF" size="16" family="Arial">La </text>
+      <target>
+       <answer>computadora</answer>
+       <response fill="_" length="11" maxLength="11" />
+       <info mode="onDemand">
+        <cell width="100" height="40">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <font family="Cambria" size="14" bold="true" />
+          <color foreground="0x33FF00" background="0xFFFF99" />
+         </style>
+         <p>PC</p>
+        </cell>
+       </info>
+       <text>computadora</text>
+      </target>
+      <text background="0xFFFFFF" size="16" family="Arial"> consta de una unidad central (C.P.U. la sigla en inglés) y periféricos. Se denomina </text>
+      <target>
+       <answer>periférico</answer>
+       <response fill="_" length="10" maxLength="10" />
+       <text>periférico</text>
+      </target>
+      <text background="0xFFFFFF" size="16" family="Arial"> a cualquier elemento de hardware que se conecta a la unidad central, y que sirve para la entrada y/o salida de información.</text>
+     </p>
+     <p background="0xFFFFFF" Alignment="0" family="Arial">
+      <text background="0xFFFFFF" size="16" family="Arial">Como mínimo toda computadora debe tener un periférico de entrada de información (el teclado) y un periférico de salida de </text>
+      <target>
+       <answer>información</answer>
+       <response fill="_" length="11" maxLength="11" />
+       <info mode="onDemand">
+        <cell width="100" height="40">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <font family="Cambria" size="14" bold="true" />
+          <color foreground="0x33FF00" background="0xFFFF99" />
+         </style>
+         <p>comunicación</p>
+        </cell>
+       </info>
+       <text>información</text>
+      </target>
+      <text background="0xFFFFFF" size="16" family="Arial"> (el monitor o pantalla). Si a esto le agregamos un </text>
+      <target>
+       <answer>mouse</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <info mode="onDemand">
+        <cell width="100" height="40">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <font family="Cambria" size="14" bold="true" />
+          <color foreground="0x33FF00" background="0xFFFF99" />
+         </style>
+         <p>ratón</p>
+        </cell>
+       </info>
+       <text>mouse</text>
+      </target>
+      <text background="0xFFFFFF" size="16" family="Arial">, obtenemos lo que se llama equipo base.</text>
+     </p>
+     <p background="0xFFFFFF" Alignment="0" family="Arial">
+      <text background="0xFFFFFF" size="16" family="Arial">A este equipo base se le pueden agregar opcionalmente otros periféricos, como la impresora, el scánner, la unidad de CD ROM, el módem, el lápiz óptico, la grabadora de CD, el joystick, la unidad de DVD, la lectora de código de barras, etc.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="Rellenar agujeros primera letra" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="18" bold="true" />
+      <color background="0xFFFF33" />
+     </style>
+     <p>COMPLETE LAS PALABRAS QUE FALTAN EN EL TEXTO</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="18" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF3300" />
+     </style>
+     <p>EXCELENTE!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="18" bold="true" />
+     </style>
+     <p>NO LO LOGRASTE! INTENTA NUEVAMENTE</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="30" countDownTime="false" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x6666FF">
+     <counters time="true" actions="false" score="true" />
+    </container>
+    <window bgColor="0x99FF00" border="true">
+     <size width="603" height="324" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <document>
+    <style name="default" background="0xFFFFFF" italic="false" size="16" tabWidth="12" bold="false" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" size="18" bold="true" foreground="0x0033CC" family="Arial">Representación binaria de datos</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" size="16" bold="false" foreground="0x000000" family="Arial">Los mecanismos </text>
+      <target>
+       <answer>electrónicos</answer>
+       <response fill="_" length="12" maxLength="12" show="e" />
+       <text>electrónicos</text>
+      </target>
+      <text background="0xFFFFFF" size="16" bold="false" foreground="0x000000" family="Arial"> de una computadora interpretan la información con la que se trabaja constantemente por medio del sistema </text>
+      <target>
+       <answer>binario</answer>
+       <response fill="_" length="7" maxLength="7" show="b" />
+       <text>binario</text>
+      </target>
+      <text background="0xFFFFFF" size="16" bold="false" foreground="0x000000" family="Arial">.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" size="16" bold="false" foreground="0x000000" family="Arial">Los datos se transmiten a través de los circuitos y cables en forma de impulsos eléctricos; los distintos </text>
+      <target>
+       <answer>componentes</answer>
+       <response fill="_" length="11" maxLength="11" show="c" />
+       <text>componentes</text>
+      </target>
+      <text background="0xFFFFFF" size="16" bold="false" foreground="0x000000" family="Arial"> pueden interpretar esos impulsos de acuerdo a dos estados posibles: encendido o apagado.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" size="16" bold="false" foreground="0x000000" family="Arial">Para representar esos dos estados se utiliza el sistema binario que se basa en dos dígitos: el cero y el uno.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" size="16" bold="false" foreground="0x000000" family="Arial">A la representación de un dígito binario se le llama bit (de la contracción binary digit) y al conjunto de 8 bits se le llama Byte.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" size="16" bold="false" foreground="0x000000" family="Arial">El sistema binario se utiliza en computación para el manejo de datos e información por su simplicidad y por poseer únicamente dos </text>
+      <target>
+       <answer>dígitos</answer>
+       <response fill="_" length="7" maxLength="7" show="d" />
+       <text>dígitos</text>
+      </target>
+      <text background="0xFFFFFF" size="16" bold="false" foreground="0x000000" family="Arial"> diferentes.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" size="16" bold="false" foreground="0x000000" family="Arial">Normalmente al dígito cero se lo asocia con cero voltios, apagado, y el dígito 1 se asocia con +5 o +12 volts, encendido, dando lugar a la lógica positiva.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="Sopa de letras" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="18" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>DESCUBRE LAS PALABRAS OCULTAS</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="18" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF3300" />
+     </style>
+     <p>EXCELENTE!</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="50" countDownTime="true" maxActions="10" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x6666FF">
+     <counters time="true" actions="true" score="false" />
+    </container>
+    <window bgColor="0x99FF00" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <textGrid rows="10" columns="12" cellWidth="40.0" cellHeight="40.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>****I***M*</row>
+     <row>****M***O*</row>
+     <row>*W**PM**U*</row>
+     <row>MEMORIAUSB</row>
+     <row>*B**EC**E*</row>
+     <row>*C**SR****</row>
+     <row>*A**OÓ****</row>
+     <row>*M**RF****</row>
+     <row>****AO****</row>
+     <row>*****N****</row>
+     <row>AUDÍFONO**</row>
+     <row>**********</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">WEBCAM</clue>
+    <clue id="1">IMPRESORA</clue>
+    <clue id="2">MICRÓFONO</clue>
+    <clue id="3">MOUSE</clue>
+    <clue id="4">MEMORIAUSB</clue>
+    <clue id="5">AUDÍFONO</clue>
+   </clues>
+   <cells rows="2" cols="3" cellWidth="132.0" cellHeight="80.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="webcam.jpg">
+     <style>
+      <font family="Lucida Handwriting" size="16" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="impresora.jpg">
+     <style>
+      <font family="Lucida Handwriting" size="16" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="microfono.jpg">
+     <style>
+      <font family="Lucida Handwriting" size="16" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="raton.jpg">
+     <style>
+      <font family="Lucida Handwriting" size="16" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="pendrive.jpg">
+     <style>
+      <font family="Lucida Handwriting" size="16" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="audifonos.jpg">
+     <style>
+      <font family="Lucida Handwriting" size="16" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <layout position="AUB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="ubuntu-logo.gif" file="ubuntu-logo.gif" />
+  <media name="access.jpg" file="access.jpg" />
+  <media name="android.jpg" file="android.jpg" />
+  <media name="audifonos.jpg" file="audifonos.jpg" />
+  <media name="audio_icon.jpg" file="audio_icon.jpg" />
+  <media name="coreldraw.jpg" file="coreldraw.jpg" />
+  <media name="excel.jpg" file="excel.jpg" />
+  <media name="images.jpg" file="images.jpg" />
+  <media name="impresora.jpg" file="impresora.jpg" />
+  <media name="informatica.jpg" file="informatica.jpg" />
+  <media name="linux.jpg" file="linux.jpg" />
+  <media name="microfono.jpg" file="microfono.jpg" />
+  <media name="pendrive.jpg" file="pendrive.jpg" />
+  <media name="powerpoint.jpg" file="powerpoint.jpg" />
+  <media name="raton.jpg" file="raton.jpg" />
+  <media name="webcam.jpg" file="webcam.jpg" />
+  <media name="word.jpg" file="word.jpg" />
+  <media name="Voz_001.mp3" file="Voz_001.mp3" />
+  <media name="Voz_002.mp3" file="Voz_002.mp3" />
+  <media name="Voz_003.mp3" file="Voz_003.mp3" />
+  <media name="VozLibre.mp3" file="VozLibre.mp3" />
+  <media name="VozProp.mp3" file="VozProp.mp3" />
+  <media name="Base.png" file="Base.png" />
+  <media name="Calc.png" file="Calc.png" />
+  <media name="Draw.png" file="Draw.png" />
+  <media name="gnu.png" file="gnu.png" />
+  <media name="Impress.png" file="Impress.png" />
+  <media name="Writer.png" file="Writer.png" />
+ </mediaBag>
+</JClicProject>
+

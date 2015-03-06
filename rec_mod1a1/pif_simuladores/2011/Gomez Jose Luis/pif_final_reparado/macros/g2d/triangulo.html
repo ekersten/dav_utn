@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>ejes</title></head>
+<body BGCOLOR="#eeeeee">
+<p align="center">
+<FONT size=+2>Macro: triangulo</FONT><br>tipo 2D
+</p>
+<p align="center">
+<applet name="triangulo"
+        code="Descartes.class"
+        codebase="../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=240 height=200>
+   <param name="nombre" value="triangulo">
+   <param name="Versi&oacute;n" value="3.40">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="O.x='-96' O.y='72' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='gris' texto='rosa'">
+   <param name="A_00" value="id='a' expresi&oacute;n='4' evaluar='una-sola-vez' constante='si'">
+   <param name="A_01" value="id='b' expresi&oacute;n='3' evaluar='una-sola-vez' constante='si'">
+   <param name="A_02" value="id='rojo' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_03" value="id='verde' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_04" value="id='azul' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="G_00" value="tipo='pol&iacute;gono' color='negro' expresi&oacute;n='(0,0)(a,0)(a,b)(0,0)' relleno='(rojo,verde,azul)'">
+</applet>
+</p>
+<p align="center">
+Esta escena se usa para generar el macro.
+</p>
+<p align="center">
+<applet name="mi_triangulo"
+        code="Descartes.class"
+        codebase="../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=360 height=240>
+   <param name="nombre" value="mi_triangulo">
+   <param name="Versi&oacute;n" value="3.04">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="escala='24' despl_imagen='arr-izq' fondo='blanco' red='grisClaro' red10='negro' ejes='gris' texto='rosa'">
+   <param name="C_00" value="id=x tipo=num&eacute;rico valor='2'">
+   <param name="C_01" value="id=y tipo=num&eacute;rico valor='-1'">
+   <param name="C_02" value="id=alfa tipo=num&eacute;rico valor='135' incr='1'">
+   <param name="C_03" value="id=a tipo=num&eacute;rico valor='4' regi&oacute;n=norte">
+   <param name="C_04" value="id=b tipo=num&eacute;rico valor='3' regi&oacute;n=norte">
+   <param name="A_00" value="id=m_t.a expresi&oacute;n='a' constante=si evaluar=siempre">
+   <param name="A_01" value="id=m_t.b expresi&oacute;n='b' constante=si evaluar=siempre">
+   <param name="A_02" value="id=m_t.rojo expresi&oacute;n='1' constante=si evaluar=una-sola-vez">
+   <param name="A_03" value="id=m_t.verde expresi&oacute;n='0.1' constante=si evaluar=una-sola-vez">
+   <param name="A_04" value="id=m_t.azul expresi&oacute;n='0.8' constante=si evaluar=una-sola-vez">
+   <param name="G_00" value="tipo='macro' expresi&oacute;n='triangulo' rotini='alfa' posini='[x,y]' nombre='m_t'">
+</applet>
+</p>
+<p align="center">
+Esta escena es una aplicación del macro que muestra sus parámetros.
+</p>
+<hr>
+
+<p><font size="2" face="Arial"><strong><cite><dfn><samp><tt>Autor: José Luis Abreu León</tt></samp></dfn></cite></strong></font></p>
+
+</body>
+</html>
+
+

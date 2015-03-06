@@ -1,0 +1,11 @@
+tipo_de_macro=R2
+id='x0' expresión='0' evaluar='una-sola-vez' constante='si'
+id='y0' expresión='0' evaluar='una-sola-vez' constante='si'
+id='dt' expresión='0.01' evaluar='una-sola-vez' constante='si'
+id='T' expresión='1' evaluar='una-sola-vez' constante='si'
+id='N' expresión='ent(abs(T)/abs(dt))' evaluar='siempre' constante='si'
+id='X' tamaño='N+1' evaluar='siempre' vector='si'
+id='Y' tamaño='N+1' evaluar='siempre' vector='si'
+id='fx(x,y)' expresión='0'
+id='fy(x,y)' expresión='0'
+inicio='X[0]=x0;Y[0]=y0;i=0;t=0;dt=(T>0)?abs(dt):-abs(dt)' hacer='p=X[i];q=Y[i];k1x=fx(p,q)*dt;k1y=fy(p,q)*dt;t=t+dt/2;k2x=fx(p+k1x/2,q+k1y/2)*dt;k2y=fy(p+k1x/2,q+k1y/2)*dt;k3x=fx(p+k2x/2,q+k2y/2)*dt;k3y=fy(p+k2x/2,q+k2y/2)*dt;t=t+dt/2;k4x=fx(p+k3x,q+k3y)*dt;k4y=fy(p+k3x,q+k3y)*dt;i=i+1;X[i]=p+(k1x+2*k2x+2*k3x+k4x)/6;Y[i]=q+(k1y+2*k2y+2*k3y+k4y)/6;' mientras='i<=N' id='CALCULAR' evaluar='siempre' algoritmo='si'

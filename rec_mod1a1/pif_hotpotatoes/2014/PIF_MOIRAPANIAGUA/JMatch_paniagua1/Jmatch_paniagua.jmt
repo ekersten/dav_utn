@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jmatch-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>moira</dc:creator>
+    <dc:title>CANCHAS OLIMPICAS!</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>6</version>
+
+<data>
+<title>CANCHAS OLIMPICAS!</title>
+
+<timer><seconds>60</seconds><include-timer>0</include-timer></timer>
+
+<reading>
+<include-reading>0</include-reading>
+<reading-title></reading-title>
+<reading-text></reading-text>
+
+</reading>
+
+<matching-exercise>
+<default-right-item>ORDENA LAS SIGUIENTES CANCHASO ESTADIOS DEACUERDO AL DEPORTE..</default-right-item>
+
+<pair>
+<left-item><text>ATLETISMO</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>&amp;#x003C;img src=&quot;atletismo.jpg&quot; alt=&quot;atletismo.jpg&quot; title=&quot;atletismo&quot; width=&quot;80&quot; height=&quot;46&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>FUTBOL</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>&amp;#x003C;img src=&quot;futbol.jpg&quot; alt=&quot;futbol.jpg&quot; title=&quot;futbol&quot; width=&quot;80&quot; height=&quot;49&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>VOLEY</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>&amp;#x003C;img src=&quot;voley.jpg&quot; alt=&quot;voley.jpg&quot; title=&quot;voley&quot; width=&quot;80&quot; height=&quot;60&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>HOCKEY</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>&amp;#x003C;img src=&quot;hockey.jpg&quot; alt=&quot;hockey.jpg&quot; title=&quot;hockey&quot; width=&quot;80&quot; height=&quot;45&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>HANDBOL</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>&amp;#x003C;img src=&quot;handball.jpg&quot; alt=&quot;handball.jpg&quot; title=&quot;handball&quot; width=&quot;80&quot; height=&quot;53&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>SOFTBOL</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>&amp;#x003C;img src=&quot;softbol.jpg&quot; alt=&quot;softbol.jpg&quot; title=&quot;softbol&quot; width=&quot;80&quot; height=&quot;60&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</text>
+<fixed>0</fixed>
+</right-item></pair>
+</matching-exercise>
+</data>
+
+<hotpot-config-file>
+<jmatch>
+<exercise-subtitle>A Pensar!</exercise-subtitle>
+<instructions>Ordenar las siguientes canchas de Deportes Olimpicos</instructions>
+<next-ex-url>JCloze_paniagua1.htm</next-ex-url>
+<send-email>0</send-email>
+<show-limited-questions>0</show-limited-questions>
+<questions-to-show>1</questions-to-show>
+<shuffle-questions>0</shuffle-questions>
+<separate-javascript-file>0</separate-javascript-file>
+<next-caption>Next</next-caption>
+<delete-caption>Delete</delete-caption>
+<guess-correct>Correct!</guess-correct>
+<guess-incorrect>Sorry! Try again. Incorrect matches have been removed.</guess-incorrect>
+</jmatch>
+
+<global>
+<your-score-is>TU PUNTUACI&amp;#x00D3;N ES:</your-score-is>
+<correct-indicator>:-)</correct-indicator>
+<incorrect-indicator>X</incorrect-indicator>
+<process-for-rtl>0</process-for-rtl>
+<include-scorm-12>0</include-scorm-12>
+<times-up>TU TIEMPO SE TERMINO :(</times-up>
+<check-caption>Comprueba tu respueta</check-caption>
+<ok-caption>OK</ok-caption>
+<next-ex-caption>&quot;ejercicio2.htm&quot;=&amp;#x003E;</next-ex-caption>
+<back-caption>&amp;#x003C;=</back-caption>
+<contents-caption>Index</contents-caption>
+<include-next-ex>0</include-next-ex>
+<include-contents>0</include-contents>
+<include-back>0</include-back>
+<contents-url>contents.htm</contents-url>
+<graphic-url></graphic-url>
+<font-face>Geneva,Arial,sans-serif</font-face>
+<font-size>small</font-size>
+<page-bg-color>#00ffff</page-bg-color>
+<title-color>#000080</title-color>
+<ex-bg-color>#8080ff</ex-bg-color>
+<text-color>#000080</text-color>
+<link-color>#0000FF</link-color>
+<vlink-color>#0000CC</vlink-color>
+<nav-bar-color>#800080</nav-bar-color>
+<formmail-url>http://yourserver.com/cgi-bin/FormMail.pl</formmail-url>
+<email>you@yourserver.com</email>
+<name-please>Please enter your name:</name-please>
+<user-string-1>one</user-string-1>
+<user-string-2>two</user-string-2>
+<user-string-3>three</user-string-3>
+<header-code></header-code>
+</global>
+</hotpot-config-file>
+</hotpot-jmatch-file>

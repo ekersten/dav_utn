@@ -1,0 +1,12 @@
+tipo_de_macro=R2
+id='R' expresión='2' evaluar='una-sola-vez' constante='si'
+id='N' expresión='2+ent(6*rnd)' evaluar='una-sola-vez' constante='si'
+id='prct' expresión='1' evaluar='una-sola-vez' constante='si'
+id='V' tamaño='N+1' evaluar='una-sola-vez' vector='si'
+inicio='n=0' hacer='V[n]=0.2+rnd;n=n+1' mientras='n<=N' id='EJEMPLO' evaluar='una-sola-vez' algoritmo='si'
+inicio='n=0;sum=0' hacer='sum=sum+V[n];n=n+1' mientras='n<=N' id='Suma()' expresión='sum' algoritmo='si'
+id='A' tamaño='N+2' evaluar='una-sola-vez' vector='si'
+inicio='S=Suma(); A[0]=0; n=1; A[N+1]=360' hacer='A[n]=A[n-1]+(V[n-1]*360)/S;n=n+1' mientras='n<=N' id='CALCULOS' evaluar='siempre' algoritmo='si'
+tipo='arco' color='blanco' radio='R' inicio='A[s]' fin='A[s+1]' familia='s' s.intervalo='[0,N]' s.pasos='N' relleno='(0.5+((s%3)=0)*0.5,0.5+(((s+1)%3)=0)*0.5,0.5+(((s+2)%3)=0)*0.5,0)' ancho='2' 
+tipo='segmento' color='blanco' expresión='(0,0)(R*cos(pi*A[s]/180),R*sen(pi*A[s]/180))' familia='s' s.intervalo='[0,N+1]' s.pasos='N+1' tamaño='1' ancho='2' 
+tipo='punto' dibujar-si='prct' color='negro' expresión='(R*cos(pi*(A[s]+A[s-1])/360)/2,R*sen(pi*(A[s]+A[s-1])/360)/2)' familia='s' s.intervalo='[1,N+1]' s.pasos='N' texto='[(A[s]-A[s-1])*100/360] %' tamaño='0' 

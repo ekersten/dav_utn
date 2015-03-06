@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>Macro bobina</title></head>
+<body BGCOLOR="#eeeeee">
+<p align="center">
+<FONT size=+2>Macro: bobina (o solenoide)</FONT><br>tipo 2D
+</p>
+<p align="center">
+<applet name="bobina"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes.jar"
+        MAYSCRIPT
+        width=240 height=200>
+   <param name="nombre" value="bobina">
+   <param name="Versi&oacute;n" value="3.5">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="escala='40' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="A_00" value="id='vueltas' expresi&oacute;n='3' evaluar='una-sola-vez' constante='si'">
+   <param name="A_01" value="id='L' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_02" value="id='rabo' expresi&oacute;n='1/5' evaluar='una-sola-vez' constante='si'">
+   <param name="A_03" value="id='x1' expresi&oacute;n='-1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_04" value="id='y1' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_05" value="id='x2' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_06" value="id='y2' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_07" value="id='INIT' evaluar='una-sola-vez' algoritmo='si'">
+   <param name="A_08" value="inicio='l=sqrt((x2-x1)^2+(y2-y1)^2)' hacer='ca=(x2-x1)/l;sa=(y2-y1)/l;extra=l*rabo;ancho=l/7;amp=1/(vueltas+1)' id='CALC' evaluar='siempre' algoritmo='si'">
+   <param name="A_09" value="id='rojo' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_10" value="id='verde' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_11" value="id='azul' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_12" value="id='A(s)' expresi&oacute;n='(s+amp*sen((vueltas+1)*pi*s)^2)/(1+amp-1/(2*(vueltas+1)))'">
+   <param name="A_13" value="id='B(s)' expresi&oacute;n='sen(2*pi*(vueltas+1)*s)'">
+   <param name="G_00" value="tipo='segmento' color='(rojo,verde,azul,0.0)' expresi&oacute;n='(x1,y1)(x1+extra*ca,y1+extra*sa)' tama&ntilde;o='0'">
+   <param name="G_01" value="tipo='curva' color='(rojo,verde,azul,0.0)' expresi&oacute;n='[x1+(extra+A(s)*(l-2*extra))*ca-ancho*B(s)*sa,y1+(extra+A(s)*(l-2*extra))*sa+ancho*B(s)*ca]' par&aacute;metro='s' s.intervalo='[0,1-1/(2*(vueltas+1))]' s.pasos='32*(vueltas+1)' visible='no' editable='si'">
+   <param name="G_02" value="tipo='segmento' color='(rojo,verde,azul,0.0)' expresi&oacute;n='(x2-extra*ca,y2-extra*sa)(x2,y2)' tama&ntilde;o='0'">
+   <param name="G_03" value="tipo='punto' color='(rojo,verde,azul,0.0)' expresi&oacute;n='(x1+(x2-x1)*s,y1+(y2-y1)*s)' familia='s' s.intervalo='[0,1]' s.pasos='1'">
+</applet>
+</p>
+<p align="center">
+Esta escena se usa para generar el macro.
+</p>
+<p align="center">
+<applet name="mi_bobina"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes.jar"
+        MAYSCRIPT
+        width=480 height=400>
+   <param name="nombre" value="mi_bobina">
+   <param name="Versi&oacute;n" value="3.40">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no filas_sur=3">
+   <param name="E_00" value="despl_imagen='arr-izq' fondo='blanco' red='grisClaro' red10='no' ejes='no' texto='no'">
+   <param name="C_00" value="tipo='num&eacute;rico' id='vueltas' interfaz='pulsador' regi&oacute;n='sur' valor='8' nombre='vueltas' incr='1' min='1' max='20' visible='si'">
+   <param name="C_01" value="tipo='num&eacute;rico' id='L' interfaz='pulsador' regi&oacute;n='sur' nombre='L' visible='si'">
+   <param name="C_02" value="tipo='gr&aacute;fico' id='C1' color='azul' color-int='rojo' expresi&oacute;n='(-2,0)'">
+   <param name="C_03" value="tipo='num&eacute;rico' id='C1.x' interfaz='pulsador' regi&oacute;n='sur' nombre='x1' visible='si'">
+   <param name="C_04" value="tipo='num&eacute;rico' id='C1.y' interfaz='pulsador' regi&oacute;n='sur' nombre='y1' visible='si'">
+   <param name="C_05" value="tipo='gr&aacute;fico' id='C2' color='azul' color-int='rojo' expresi&oacute;n='(2,0)'">
+   <param name="C_06" value="tipo='num&eacute;rico' id='C2.x' interfaz='pulsador' regi&oacute;n='sur' nombre='x2' visible='si'">
+   <param name="C_07" value="tipo='num&eacute;rico' id='C2.y' interfaz='pulsador' regi&oacute;n='sur' nombre='y2' visible='si'">
+   <param name="A_00" value="inicio='bob.vueltas=vueltas;bob.L=L' hacer='bob.x1=C1.x;bob.y1=C1.y;bob.x2=C2.x;bob.y2=C2.y;' id='CALCULOS' evaluar='siempre' algoritmo='si'">
+   <param name="G_00" value="tipo='macro' expresi&oacute;n='circuitos/bobina' nombre='bob'">
+</applet>
+</p>
+<p align="center">
+Esta escena es una aplicación del macro que muestra algunos de sus parámetros.
+</p>
+<hr>
+
+<p><font size="2" face="Arial"><strong><cite><dfn><samp><tt>Autor: José Luis Abreu León</tt></samp></dfn></cite></strong></font></p>
+
+</body>
+</html>
+
+

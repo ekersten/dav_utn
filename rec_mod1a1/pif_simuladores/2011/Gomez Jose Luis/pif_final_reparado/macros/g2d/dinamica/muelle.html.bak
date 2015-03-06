@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>ejes</title></head>
+<body BGCOLOR="#eeeeee">
+<p align="center">
+<FONT size=+2>Macro: muelle</FONT><br>tipo 2D
+</p>
+<p align="center">
+<applet name="muelle"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes.jar"
+        MAYSCRIPT
+        width=240 height=200>
+   <param name="nombre" value="muelle">
+   <param name="Versi&oacute;n" value="3.32">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="A_00" value="id='ancho' expresi&oacute;n='0.1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_01" value="id='vueltas' expresi&oacute;n='6' evaluar='una-sola-vez' constante='si'">
+   <param name="A_02" value="id='extra' expresi&oacute;n='0.1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_03" value="id='longitud0' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_04" value="id='longitud' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_05" value="id='k' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_06" value="id='F' expresi&oacute;n='-k*(longitud-longitud0)'">
+   <param name="A_07" value="id='V' expresi&oacute;n='0.5*k*(longitud-longitud0)^2'">
+   <param name="A_08" value="id='rojo' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_09" value="id='verde' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_10" value="id='azul' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_11" value="hacer='F=;V=' id='calc' evaluar='siempre' algoritmo='si'">
+   <param name="G_00" value="tipo='segmento' color='(rojo,verde,azul)' expresi&oacute;n='(0,0)(extra,0)' tama&ntilde;o='1'">
+   <param name="G_01" value="tipo='curva' color='(rojo,verde,azul)' expresi&oacute;n='[extra+s*(longitud-2*extra),ancho*sen(vueltas*2*pi*s)]' par&aacute;metro='s' s.pasos='4*vueltas' visible='no'">
+   <param name="G_02" value="tipo='segmento' color='(rojo,verde,azul)' expresi&oacute;n='(longitud-extra,0)(longitud,0)' tama&ntilde;o='1'">
+</applet>
+</p>
+<p align="center">
+Esta escena se usa para generar el macro.
+</p>
+<p align="center">
+<applet name="mi_muelle"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes.jar"
+        MAYSCRIPT
+        width=480 height=400>
+   <param name="nombre" value="mi_muelle">
+   <param name="Versi&oacute;n" value="3.40">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="id='E1' escala='20' O.x='130' despl_imagen='arr-izq' fondo='turquesa' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_01" value="id='E2' x='5%' y='20%' ancho='50%' alto='60%' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='gris' texto='no' eje-x='v' eje-y='y'">
+   <param name="C_00" value="tipo='num&eacute;rico' id='m_m.ancho' interfaz='pulsador' regi&oacute;n='exterior' espacio='E1' valor='0.1' nombre='m_m.ancho' incr='0.01' visible='si' acci&oacute;n=' '">
+   <param name="C_01" value="tipo='num&eacute;rico' id='m_m.vueltas' interfaz='pulsador' regi&oacute;n='exterior' espacio='E1' valor='9' decimales='0' nombre='m_m.vueltas' incr='1' min='1' visible='si' acci&oacute;n=' '">
+   <param name="C_02" value="tipo='num&eacute;rico' id='m_m.extra' interfaz='pulsador' regi&oacute;n='exterior' espacio='E1' valor='0.51' nombre='m_m.extra' min='0' max='0.5' visible='si' acci&oacute;n=' '">
+   <param name="C_03" value="tipo='gr&aacute;fico' id='C' espacio='E1' color='azul' color-int='rojo' expresi&oacute;n='(0,-1)' tama&ntilde;o='8' constricci&oacute;n='x=0'">
+   <param name="C_04" value="tipo='num&eacute;rico' id='C.y' interfaz='pulsador' regi&oacute;n='exterior' espacio='E1' nombre='C.y' min='-2' max='2' visible='si' acci&oacute;n=' '">
+   <param name="C_05" value="tipo='num&eacute;rico' id='go' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' expresi&oacute;n='(380,-30+400,80,23)' valor='1-go' nombre='stop-go' visible='no' acci&oacute;n='animar'">
+   <param name="C_06" value="tipo='num&eacute;rico' id='Limpiar' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' expresi&oacute;n='(70,370)' nombre='Limpiar' visible='si' acci&oacute;n='limpiar'">
+   <param name="C_07" value="tipo='num&eacute;rico' id='k' interfaz='pulsador' regi&oacute;n='interior' espacio='E1' expresi&oacute;n='(220,370)' valor='4' nombre='k' visible='si' acci&oacute;n=' '">
+   <param name="A_00" value="id='M.Fy(x,y)' expresi&oacute;n='-m_m.k*y'">
+   <param name="A_01" value="inicio='go=0' hacer='m_m.vueltas=8;m_m.ancho=0.25;m_m.longitud0=4;M.m=1' id='INIT' evaluar='una-sola-vez' algoritmo='si'">
+   <param name="A_02" value="hacer='m_m.k=k;M.px=C.x;M.vx=0;v0=(go=0)?0:v0;y0=(go=0)?0:C.y;M.vy=(go=0)?0:M.vy;M.py=(go=0)?C.y:M.py;C.y=(go=0)?C.y:M.py;m_m.F=-M.Fy(0,M.py);m_m.longitud=m_m.longitud0-M.py;' id='CALC' evaluar='siempre' algoritmo='si'">
+   <param name="G_00" value="espacio='E1' tipo='macro' expresi&oacute;n='dinamica/muelle' rotini='-90' posini='[C.x,m_m.longitud0]' nombre='m_m'">
+   <param name="G_01" value="espacio='E1' tipo='macro' expresi&oacute;n='dinamica/masa' nombre='M'">
+   <param name="G_02" value="espacio='E2' tipo='punto' color='rojo' expresi&oacute;n='(M.vy,M.py)' fijo='no' tama&ntilde;o='4'">
+   <param name="G_03" value="espacio='E2' tipo='segmento' dibujar-si='go' color='azul' expresi&oacute;n='(v0,y0)(M.vy,M.py)' rastro='azul' tama&ntilde;o='0'">
+   <param name="G_04" value="espacio='E2' tipo='texto' color='gris' expresi&oacute;n='[0,215]' texto='Espacio Fase' fuente='Serif,PLAIN,16'">
+   <param name="Animaci&oacute;n" value="pausa='50' controles='no' auto='no' hacer='y0=M.py;v0=M.vy;M.avanzar(0.1);' mientras='go>0'">
+</applet>
+</p>
+<p align="center">
+Esta escena es una aplicación del macro que muestra sus parámetros.
+</p>
+<hr>
+
+<p><font size="2" face="Arial"><strong><cite><dfn><samp><tt>Autor: José Luis Abreu León</tt></samp></dfn></cite></strong></font></p>
+
+</body>
+</html>
+
+

@@ -1,0 +1,29 @@
+<applet width=480 height=360
+        code="descinst.Descartes.class"
+        archive="descinst.jar,http://recursostic.educacion.es/descartes/web/plugin/descinst.jar"
+        MAYSCRIPT>
+   <param name="Versi&oacute;n" value="2.41">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="Espacio" value="fondo=negro red=amarillo red10=amarillo ejes=no texto=rojo eje-x=no eje-y=no">
+   <param name="C_00" value="id=escala tipo=num&eacute;rico valor='20' decimales='4*(escala<10)' incr='10' min='5' max='1000000' nombre=zoom regi&oacute;n=norte">
+   <param name="C_01" value="id=Ox tipo=num&eacute;rico valor='-120' decimales='0' incr='20' nombre=O.x regi&oacute;n=norte">
+   <param name="C_02" value="id=Oy tipo=num&eacute;rico valor='100' decimales='0' incr='20' nombre=O.y regi&oacute;n=norte">
+   <param name="C_03" value="id=B tipo=num&eacute;rico valor='45' decimales='1' incr='1'">
+   <param name="C_04" value="id=C tipo=num&eacute;rico valor='60' decimales='1' incr='1'">
+   <param name="C_05" value="id=C tipo=gr&aacute;fico expresi&oacute;n='[a,0]' color=negro color-int=negro decimales='2' tama&ntilde;o=6 constricci&oacute;n='y=0'">
+   <param name="A_00" value="id=pi expresi&oacute;n='3.1416'">
+   <param name="A_01" value="id=a expresi&oacute;n='12'">
+   <param name="A_02" value="id=A expresi&oacute;n='180-B-C'">
+   <param name="A_03" value="id=c expresi&oacute;n='C.x*sen(pi*C/180)/sen(pi*A/180)'">
+   <param name="A_04" value="id=b expresi&oacute;n='C.x*sen(pi*B/180)/sen(pi*A/180)'">
+   <param name="G_00" value="tipo=segmento expresi&oacute;n='[0,0][C.x,0]' color=verde texto='a=[C.x]' decimales=1 tama&ntilde;o=0 fuente='TimesRoman,BOLD,12' ancho=4">
+   <param name="G_01" value="tipo=segmento expresi&oacute;n='[0,0][c*cos(B*pi/180),c*sen(B*pi/180)]' color=verde texto=' c=[c]' decimales=1 tama&ntilde;o=0 ancho=2">
+   <param name="G_02" value="tipo=segmento expresi&oacute;n='[c*cos(B*pi/180),c*sen(B*pi/180)][C.x,0]' color=verde texto='b=[b]' decimales=1 tama&ntilde;o=0 ancho=6">
+   <param name="G_03" value="tipo=arco centro='[0,0]' radio='C.x/5' inicio='0' fin='0+(B)' texto=' B' fuente='Helvetica,PLAIN,20' ancho=2">
+   <param name="G_04" value="tipo=arco centro='[C.x,0]' radio='C.x/5' inicio='180-C' fin='180-C+(C)' texto='C' fuente='Helvetica,PLAIN,20' ancho=2">
+   <param name="G_05" value="tipo=arco centro='[c*cos(B*pi/180),c*sen(B*pi/180)]' radio='c/5' inicio='180+B' fin='180+B+(A)' texto='A=[A]' decimales=1 fuente='Helvetica,PLAIN,20' ancho=2">
+<font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+</applet>
+
+

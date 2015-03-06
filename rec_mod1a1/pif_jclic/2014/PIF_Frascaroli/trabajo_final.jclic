@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="trabajo_final" version="0.1.3">
+ <settings>
+  <title>Trabajo final</title>
+  <revision description="created" date="9/11/14" />
+  <descriptors />
+ </settings>
+ <sequence>
+  <item id="Inicio" name="Rellenar agujeros con lista" />
+  <item id="Sistema de cultivo" name="Asociación compleja" />
+  <item id="Rompecabeza" name="Puzzle" />
+ </sequence>
+ <activities>
+  <activity class="@associations.ComplexAssociation" name="Asociación compleja" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="3" cols="1" cellWidth="167.0" cellHeight="99.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell id="2">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFCC" />
+      <gradient source="0xFF9933" dest="0xFFFFCC" angle="0" />
+     </style>
+     <p>MAYA</p>
+    </cell>
+    <cell id="0">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFCC" />
+      <gradient source="0xFF9933" dest="0xFFFFCC" angle="0" />
+     </style>
+     <p>AZTECA</p>
+    </cell>
+    <cell id="1">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFCC" />
+      <gradient source="0xFF9933" dest="0xFFFFCC" angle="0" />
+     </style>
+     <p>INCA</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="166.0" cellHeight="99.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFCC" />
+      <gradient source="0x339900" dest="0xFFFFCC" angle="0" />
+     </style>
+     <p>CHINAMPA</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFCC" />
+      <gradient source="0x339900" dest="0xFFFFCC" angle="0" />
+     </style>
+     <p>TERRAZA</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFCC" />
+      <gradient source="0x339900" dest="0xFFFFCC" angle="0" />
+     </style>
+     <p>MILPA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="Puzzle" code="">
+   <description />
+   <messages>
+    <cell border="false" type="initial">
+     <style>
+      <color background="0xFFCCCC" />
+     </style>
+     <p>Armar el rompecabezas</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color background="0xFFCCCC" />
+     </style>
+     <p>Lo armaste muy bien ...¡Felicitaciones!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="4" cols="5" border="true" image="Poma de Ayala.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="5" rows="4" baseWidthFactor="0.86" toothHeightFactor="0.6970000000000001" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="Rellenar agujeros con lista" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <document>
+    <style name="default" italic="false" background="0xFFFFFF" bold="false" tabWidth="12" size="11" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" Alignment="1" family="Arial">
+      <text background="0xFFFFFF" bold="true" family="Arial">La administración imperial de los quipus</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Las enormes dimensiones y la compleja organización del </text>
+      <target>
+       <answer>imperio</answer>
+       <optionList>
+        <option>ciudad estado</option>
+        <option>república</option>
+        <option>imperio</option>
+       </optionList>
+       <text>imperio</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> inca presentaban un desafío administrativo sobre tordo teniendo en cuenta que los incas no contaban con sistemas de </text>
+      <target>
+       <answer>escritura</answer>
+       <optionList>
+        <option>música</option>
+        <option>escritura</option>
+        <option>numérico</option>
+       </optionList>
+       <text>escritura</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">. Para hacer frente a estas exigencias, los funcionarios incaicos idearon una modalidad muy particular de registro, llamada </text>
+      <target>
+       <answer>quipu</answer>
+       <optionList>
+        <option>quipu</option>
+        <option>quena</option>
+        <option>erke</option>
+       </optionList>
+       <text>quipu</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">. Se trataba de una cuerda gruesa a la que se ataban largos hilos de lana de </text>
+      <target>
+       <answer>vicuña</answer>
+       <optionList>
+        <option>vicuña</option>
+        <option>llama</option>
+        <option>alpaca</option>
+       </optionList>
+       <text>vicuña</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> de varios colore, con pequeños nudos a diferentes distancias de la cuerda. Esto les permitía almacenar con precisión datos de todo tipo, que iban desde aspectos </text>
+      <target>
+       <answer>contables</answer>
+       <optionList>
+        <option>contables</option>
+        <option>medibles</option>
+        <option>observables</option>
+       </optionList>
+       <text>contables</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> del imperio hasta genealogías de los grupos dominantes.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="Poma de Ayala.jpg" file="Poma de Ayala.jpg" />
+ </mediaBag>
+</JClicProject>
+

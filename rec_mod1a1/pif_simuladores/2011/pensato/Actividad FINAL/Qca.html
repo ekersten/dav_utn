@@ -1,0 +1,24 @@
+<applet name="entropía" width=720 height=540
+        code="descinst.Descartes.class"
+        archive="descinst.jar,http://recursostic.educacion.es/descartes/web/plugin/descinst.jar"
+        MAYSCRIPT>
+   <param name="nombre" value="entropía">
+   <param name="Versión" value="2.41">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=si limpiar=no">
+   <param name="Espacio" value="fondo=grisClaro red=blanco red10=gris ejes=negro texto=grisObscuro números=si eje-x='Tf' eje-y='sf-Si'">
+   <param name="C_00" value="id=escala tipo=numérico valor='30' decimales='4*(escala<10)' incr='1' min='1' max='1000000' nombre=zoom región=norte">
+   <param name="C_01" value="id=Ox tipo=numérico valor='-192' decimales='0' incr='32' nombre=O.x región=norte">
+   <param name="C_02" value="id=Oy tipo=numérico valor='0' decimales='0' incr='32' nombre=O.y región=norte">
+   <param name="C_03" value="id=m tipo=numérico valor='0' decimales='2' incr='0.1' nombre=M">
+   <param name="C_04" value="id=ce tipo=numérico valor='0' decimales='2' incr='0.01' nombre=Ce">
+   <param name="C_05" value="id=Ti tipo=numérico valor='0' decimales='0' incr='1' min='0'">
+   <param name="C_06" value="id=P tipo=gráfico expresión='(0,0)' decimales='2' constricción='y=m*ce*log(x/Ti)'">
+   <param name="C_07" value="id=P.x tipo=numérico valor='0' decimales='0' incr='1' min='0' nombre=Tf">
+   <param name="C_08" value="id=P.y tipo=numérico valor='0' decimales='0' incr='0.1' región=exterior">
+   <param name="G_00" value="tipo=ecuación expresión='y=m*ce*log(x/Ti)' dibujar-si='((P.x)/Ti)>0' visible=no">
+   <param name="G_01" value="tipo=segmento expresión='(P.x,0)(P.x,m*ce*log((P.x)/Ti))' color=rojo texto='[m*ce*log((P.x)/Ti)]' ancho=2">
+   <param name="G_02" value="tipo=texto expresión='[100,25]' dibujar-si='(Ti#0)&(P.x#0)' texto='Sf-Si = [m]*[ce]*log ([P.x]/[Ti]) = '">
+   <param name="G_03" value="tipo=texto expresión='[100,25]' color=rojo dibujar-si='Ti#0' texto='                                      [m*ce*log(P.x/Ti)](J/ºK)'">
+<font face="Arial" size="3">Esta unidad interactiva requiere la máquina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+</applet>

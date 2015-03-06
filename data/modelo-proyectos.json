@@ -1,82 +1,2926 @@
 [
 	{
-		"nombre": "Malware",
-		"herramienta": "Word",
-		"categoria": "sociales",
-		"anio": "2012",
+		"nombre": "Calor, temperatura, energía  y entropía",
+		"herramienta": "Simulador Digital",
+		"categoria": "fisica",
+		"anio": "2011",
 		"autores": [
 			{
-				"nombre": "GOMEZ, Juan"
-			},
-			{
-				"nombre": "CURUTCHET, Mercedes"
+				"nombre": "PENSATO, Marcela Beatriz"
 			}
+			
 		],
-		"institucion": {
-			"nombre":"Colegio San Isidro",
-			"ubicacion": " Marcos Paz, Bs. As."
-		},
-		"imagen": "img/ciudadania/proyectos/2011/01.jpg",
-		"url": "http://www.glogster.com/ciudadaniadigital/presentacion/g-6m7bcs0fjfhr4ih5pna6na0?old_view=True"
+		
+		"imagen": "rec_mod1a1/img/pensato.JPG",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2011/pensato/Actividad%FINAL/Qca.html"
 	},
 	{
-		"nombre": "Malware",
-		"herramienta": "Excel",
-		"categoria": "sociales",
-		"anio": "2012",
+		"nombre": "Radio y Ángulo",
+		"herramienta": "Simulador Digital",
+		"categoria": "matematicas",
+		"anio": "2011",
 		"autores": [
 			{
-				"nombre": "PEREZ, Pedro"
-			},
-			{
-				"nombre": "CURUTCHET, Mercedes"
+				"nombre": "ACORRINTI, Mariela Ana"
 			}
+			
 		],
-		"institucion": {
-			"nombre":"Colegio Bueno",
-			"ubicacion": " Marcos Paz, Bs. As."
-		},
-		"imagen": "img/ciudadania/proyectos/2011/01.jpg",
-		"url": "http://www.glogster.com/ciudadaniadigital/presentacion/g-6m7bcs0fjfhr4ih5pna6na0?old_view=True"
+		
+		"imagen": "rec_mod1a1/img/acorrinti.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2011/Accorinti/ACTIVIDAD%INTEGRADORA/SIMULADOR%1.htm"
 	},
 	{
-		"nombre": "Malware",
+		"nombre": "Circuitos de Corriente Alterna",
+		"herramienta": "Simulador Digital",
+		"categoria": "fisica",
+		"anio": "2011",
+		"autores": [
+			{
+				"nombre": "BELLISKI, Gustavo"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/belliski.png",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2011/belliski/generador.htm"
+	},
+	{
+		"nombre": "Modulación en amplitud",
 		"herramienta": "Powerpoint",
-		"categoria": "sociales",
-		"anio": "2012",
+		"categoria": "fisica",
+		"anio": "2011",
 		"autores": [
 			{
-				"nombre": "ALMEIDA, Johana"
-			},
-			{
-				"nombre": "SANCHEZ, Romina"
+				"nombre": "BOURLON, Adrian Pablo"
 			}
+			
 		],
-		"institucion": {
-			"nombre":"Colegio San Ignacio",
-			"ubicacion": " Marcos Paz, Bs. As."
-		},
-		"imagen": "img/ciudadania/proyectos/2011/01.jpg",
-		"url": "http://www.glogster.com/ciudadaniadigital/presentacion/g-6m7bcs0fjfhr4ih5pna6na0?old_view=True"
+		
+		"imagen": "rec_mod1a1/img/bourlon.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2011/Bourlon%20Adrian/pruebapifnueva2.htm"
 	},
 	{
-		"nombre": "Malware",
+		"nombre": "Las leyes de Kirchhoff",
 		"herramienta": "Powerpoint",
+		"categoria": "fisica",
+		"anio": "2011",
+		"autores": [
+			{
+				"nombre": "BRINIUK, Jorge"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/briniuk.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2011/Briniuk%20Jorge/PIF_JABRI/primeraleyk.htm"
+	},
+	
+	{
+		"nombre": "Método Monge",
+		"herramienta": "Simulador Digital",
+		"categoria": "informatica",
+		"anio": "2011",
+		"autores": [
+			{
+				"nombre": "DEL SORDO, Lucia Bibiana"
+			},
+			{
+				"nombre": "ITURRE, Adolfo R."
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/delsordo.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2011/delsordo/metodo%20monge%20cubo%20con%20vistas.html"
+	},
+	
+	{
+		"nombre": "matematicas y geometria",
+		"herramienta": "Simulador Digital",
+		"categoria": "matematicas",
+		"anio": "2011",
+		"autores": [
+			{
+				"nombre": "FARIÑA, Silvia Marcela"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/farina.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2011/Farina%20Silvia%20Marcela/PIF/piraverde.htm"
+	},
+	
+	{
+		"nombre": "Área y Función",
+		"herramienta": "Simulador Digital",
+		"categoria": "matematicas",
+		"anio": "2011",
+		"autores": [
+			{
+				"nombre": "FLORENTIN, Miguela Nidia"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/florentin.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2011/Migueleta%20Nidia%20Florentin/IntegralesDefinidas.html"
+	},
+	{
+		"nombre": " Construcción de la curva de calibración…",
+		"herramienta": "Simulador Digital",
+		"categoria": "fisica",
+		"anio": "2011",
+		"autores": [
+			{
+				"nombre": "GIANNINI, Vilma"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/giannini.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2011/giannini/PIF1.htm"
+	},
+	{
+		"nombre": "Ley de Ohm en corriente alterna",
+		"herramienta": "Simulador Digital",
+		"categoria": "matematicas",
+		"anio": "2011",
+		"autores": [
+			{
+				"nombre": "GÓMEZ, José Luis"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/gomez.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2011/Gomez%20Jose%20Luis/pif_final_reparado/pif_finalreparado.htm"
+	},
+	{
+		"nombre": " Función Cuadrática",
+		"herramienta": "Simulador Digital",
+		"categoria": "matematicas",
+		"anio": "2011",
+		"autores": [
+			{
+				"nombre": "GÓMEZ TULAJ, Silvia Elena"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/gomeztulaj.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2011/Gomeztulaj/PIF/Inicio.html"
+	},
+	{
+		"nombre": "matematicas e informatica",
+		"herramienta": "Simulador Digital",
+		"categoria": "matematicas",
+		"anio": "2011",
+		"autores": [
+			{
+				"nombre": "MANENTE, Miguel Angel"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/manente.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2011/Manente%20Miguel%20Angel/Pileta/Pileta.htm"
+	},
+	{
+		"nombre": "Cuerpos Geométricos",
+		"herramienta": "Simulador Digital",
+		"categoria": "matematicas",
+		"anio": "2011",
+		"autores": [
+			{
+				"nombre": "PAZ, Angela Dionisia"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/pazangela.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2011/Angela%20Paz%20Dionisia/pif.final/trabfinal.html"
+	},
+	{
+		"nombre": "Tabiques y muros de albañilería",
+		"herramienta": "Simulador Digital",
+		"categoria": "miscelaneas",
+		"anio": "2011",
+		"autores": [
+			{
+				"nombre": "SAN ROMAN, Silvina"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/sanroman.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2011/San%20Roman%20Silvina/t%20final/MURO%2020.HTM"
+	},
+	{
+		"nombre": "Cálculo de Q",
+		"herramienta": "Simulador Digital",
 		"categoria": "fisica",
 		"anio": "2012",
 		"autores": [
 			{
-				"nombre": "ALMEIDA, Johana"
+				"nombre": "ANDRETTO, Rolando"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/andretto.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2012/Andretto%20Rolando/pif.html"
+	},
+	{
+		"nombre": "Vigas",
+		"herramienta": "Simulador Digital",
+		"categoria": "fisica",
+		"anio": "2012",
+		"autores": [
+			{
+				"nombre": "TESTONI, Franco"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/testoni.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2012/Testoni%20Franco/Proyecto%20Final%20FT/Simulador%20de%20calculo%20vigas%20cajon.htm"
+	},
+	{
+		"nombre": "Ácido Fosfórico en bebidas cola",
+		"herramienta": "Simulador Digital",
+		"categoria": "quimica",
+		"anio": "2012",
+		"autores": [
+			{
+				"nombre": "DE MIGUEL, Roberto Eduardo"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/demiguel.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2012/De%20Miguel/TrabajoIntegradorFinal/simtif1.html"
+	},
+	{
+		"nombre": "Caída Libre",
+		"herramienta": "Simulador Digital",
+		"categoria": "fisica",
+		"anio": "2012",
+		"autores": [
+			{
+				"nombre": "ONORIER, Maria Laura"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/onorier.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2012/Onorier/PIF_onorierlaura.htm"
+	},
+	{
+		"nombre": "Tiro Oblicuo",
+		"herramienta": "Simulador Digital",
+		"categoria": "fisica",
+		"anio": "2012",
+		"autores": [
+			{
+				"nombre": "ABADIE, Héctor Julio"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/abadie.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2012/abadie/simfinal10.html"
+	},
+	{
+		"nombre": "Calor y Temperatura",
+		"herramienta": "Simulador Digital",
+		"categoria": "fisica",
+		"anio": "2012",
+		"autores": [
+			{
+				"nombre": "SANTOS, Miriam Beatriz"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/santos.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2012/Santos%20Miriam/trabajofinal/tareafinal3.htm"
+	},
+	{
+		"nombre": "Función Exponencial",
+		"herramienta": "Simulador Digital",
+		"categoria": "matematicas",
+		"anio": "2012",
+		"autores": [
+			{
+				"nombre": "BAUMGART, Liliana Andrea"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/baumgart.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2012/Baumgart%20Liliana/funcion_exponencial_1.html"
+	},
+	{
+		"nombre": "geometria Espacial",
+		"herramienta": "Simulador Digital",
+		"categoria": "geometria",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "OCCHIUZZI, Lucía"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/occhiuzzi.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2013/PIF_occhiuzzilucia/final_occhiuzzilucia.htm"
+	},
+	{
+		"nombre": "Función Cuadrática",
+		"herramienta": "Simulador Digital",
+		"categoria": "matematicas",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "SEGURA, Juan José"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/segurajj.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2013/PIF_Segura/index1.html"
+	},
+	{
+		"nombre": "Cinemática de los cuerpos",
+		"herramienta": "Simulador Digital",
+		"categoria": "fisica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "MANAU, Daniel"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/manau.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2013/PIF_Manau_Daniel/Simulador%201%20MRU%201%20Movil.html"
+	},
+	{
+		"nombre": "Electricidad",
+		"herramienta": "Simulador Digital",
+		"categoria": "fisica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "MARTINO, Pedro"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/martino.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2013/Martino%20PIF/MARTINO%20PIF.htm"
+	},
+	{
+		"nombre": "Planos Paralelos",
+		"herramienta": "Simulador Digital",
+		"categoria": "geometria",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "BANFI, Irma"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/banfi.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2013/PIF%20Irma%20BANFI/simplapejex.htm"
+	},
+	
+	{
+		"nombre": "Cinemática del punto material",
+		"herramienta": "Simulador Digital",
+		"categoria": "miscelaneas",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "KUC, Alejandro"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/kux.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2013/PIF%20Kuc%20Alejandro/Tiro%20Oblicuo.htm"
+	},
+	
+	{
+		"nombre": "Energía Mecánica: Cinemática Dinámica",
+		"herramienta": "Simulador Digital",
+		"categoria": "fisica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "BOFFI, Pablo"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/boffi.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2013/PIF_Boffi/PIF_Boffi.html"
+	},
+	{
+		"nombre": "Fractales",
+		"herramienta": "Simulador Digital",
+		"categoria": "geometria",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "CÁCERES ZAMORA, Gabriela"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/caceresz.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2013/PIF_%20Caceres%20Zamora/fractales.html"
+	},
+	{
+		"nombre": "Función Cuadrática",
+		"herramienta": "Simulador Digital",
+		"categoria": "matematicas",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "CAPELLETTI, Juan Carlos"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/capelletti.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2013/PIF_Cappelletti/cuadratica.html"
+	},
+	
+	{
+		"nombre": "fisica de la Bicicleta y Biomecánica del ciclista",
+		"herramienta": "Simulador Digital",
+		"categoria": "fisica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "PÉREZ, Hugo"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/perezh.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2013/PIF_Perez/PotRequerida.htm"
+		},
+		
+	{
+		"nombre": "Función Cuadrática",
+		"herramienta": "Simulador Digital",
+		"categoria": "matematicas",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "CAPELLETTI, Juan Carlos"
 			},
 			{
-				"nombre": "SANCHEZ, Romina"
+				"nombre": "FERRARIS, Patricia"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/capelletti.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2013/PIF_Cappelletti/cuadratica.html"
+	},
+	{
+		"nombre": "Procesos Agro-Productivos",
+		"herramienta": "Simulador Digital",
+		"categoria": "matematicas",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "LEGARRALDE, Ma. Gabriela"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/legarralde.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2013/PIF_Legarralde/PIF_Legarralde.htm"
+	},
+	{
+		"nombre": "Movimiento Rectilíneo Uniforme",
+		"herramienta": "Simulador Digital",
+		"categoria": "fisica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "MASTROLIBERTO, Jorge"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/mastroliberto.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2013/PIF_Mastroliberto/mru.html"
+	},
+	{
+		"nombre": "Herramientas matematicas para Robótica",
+		"herramienta": "Simulador Digital",
+		"categoria": "matematicas",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "LÓPEZ, Nelson"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/lopezn.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2013/PIF_Nelson%20Lopez/Matrices%20de%20Rotacion.htm"
+	},
+	{
+		"nombre": "Función Exponencial",
+		"herramienta": "Simulador Digital",
+		"categoria": "matematicas",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "PAZ, Roxana"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/pazr.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2013/PIF_Paz/indexbasico1.html"
+	},
+	
+	{
+		"nombre": "Vectores Unidimensionales",
+		"herramienta": "Simulador Digital",
+		"categoria": "informatica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "DUGO, Verónica"
+			},
+			{
+				"nombre": "GÍMENEZ, Silvina"
 			}
 		],
-		"institucion": {
-			"nombre":"Colegio San Ignacio",
-			"ubicacion": " Marcos Paz, Bs. As."
-		},
-		"imagen": "img/ciudadania/proyectos/2011/01.jpg",
-		"url": "http://www.glogster.com/ciudadaniadigital/presentacion/g-6m7bcs0fjfhr4ih5pna6na0?old_view=True"
+		
+		"imagen": "rec_mod1a1/img/dugo.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2013/PifCB_Dugo/vectores%20final4.htm"
+	},
+	{
+		"nombre": "Función Lineal, Cuadrática, Seno y Tangente",
+		"herramienta": "Simulador Digital",
+		"categoria": "matematicas",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "ROTELA, Estanislao"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/rotela.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2013/PifCB_Dugo/vectores%20final4.htm"
+	},
+	{
+		"nombre": "Dinámica de las poblaciones",
+		"herramienta": "Simulador Digital",
+		"categoria": "miscelaneas",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "PAYROU, Celina"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/payrou.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2013/PIF_Peyrou/trabajo%20final.html"
+	},
+	{
+		"nombre": "Estudio de Señales",
+		"herramienta": "Simulador Digital",
+		"categoria": "miscelaneas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "ORELIA, Celia"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/orelia.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2014/PIF_CB_Orelia/orelia_pif.htm"
+	},
+	{
+		"nombre": "Relaciónn Ahorro Envases. Cuidado del medio ambiente",
+		"herramienta": "Simulador Digital",
+		"categoria": "miscelaneas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "AGUADO, Daniel"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/aguado.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2014/Aguado-Daniel-PIF_CB/PracticaFinal.html"
+	},
+	{
+		"nombre": "Triángulos y Ángulos",
+		"herramienta": "Simulador Digital",
+		"categoria": "geometria",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "CONCA, Jorge"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/conca.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2014/Conca%20CBJ/Trabajo%20de%20CONCA-FINAL.html"
+	},
+	{
+		"nombre": "Funciones -lineal, cuadrática, exponencial y trigonométricas",
+		"herramienta": "Simulador Digital",
+		"categoria": "matematicas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "CAMPOS, Carlos"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/camposc.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2014/PIF%20de%20Carlos%20Campos/Aplicacion%20PIF%20-%20Carlos%20Campos.html"
+	},
+	{
+		"nombre": "Funciones trigonométricas",
+		"herramienta": "Simulador Digital",
+		"categoria": "matematicas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "ACOSTA, Javier"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/acostaj.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2014/PIF_CB_Acosta/Tarea6PIF.htm"
+	},
+	{
+		"nombre": "Resistencia Eléctrica",
+		"herramienta": "Simulador Digital",
+		"categoria": "fisica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "SEGNINI, Daniel"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/segnini.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2014/PIF_Daniel_Segnini/simulador_resistivo.htm"
+	},
+	{
+		"nombre": "TREPEV - geometria Molecular de los Compuestos",
+		"herramienta": "Simulador Digital",
+		"categoria": "quimica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "VACA, Sergio"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/vacas.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2014/PIF_CB_Vaca/PROYECTO%20FINAL.htm"
+	},
+	
+	{
+		"nombre": "El Torno",
+		"herramienta": "Simulador Digital",
+		"categoria": "fisica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "ARRI, Javier"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/arri.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2014/PIF_CB_Arri/Simulador%20final.html"
+	},
+	{
+		"nombre": "Caída Libre y Tiro Vertical",
+		"herramienta": "Simulador Digital",
+		"categoria": "fisica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "RUEDA, Aníbal"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/rueda.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2014/PIF_CB-%20Anibal%20Rueda/caida%20libre-tiro%20vertical-final3.htm"
+	},
+	
+	{
+		"nombre": "Teorema de Pitágoras",
+		"herramienta": "Simulador Digital",
+		"categoria": "geometria",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "EGUIA, Cristian"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/eguia.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2014/trabajo%20integrador/triangulocristian.html"
+	},
+	
+	{
+		"nombre": "Alfabetización Audiovisual",
+		"herramienta": "JCLIC",
+		"categoria": "miscelaneas",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "ACTIS, Daniela"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/actis.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2013/Actis%20Daniela%20PIF%20Jclic/index.htm"
+	},
+	
+	{
+		"nombre": "Conceptos filosóficos de la Posmodernidad",
+		"herramienta": "JCLIC",
+		"categoria": "miscelaneas",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "SANTACREU, Fabiana"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/santacreu.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2013/fabianasantacreu_PIF_JCLIC/index.htm"
+	},
+	{
+		"nombre": "JCLIC: Usos y Aplicaciones",
+		"herramienta": "JCLIC",
+		"categoria": "informatica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "ZEPPA, Enrique"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/zeppa.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2013/PIF_jclic_Zeppa/index.htm"
+	},
+	{
+		"nombre": "Hardware y Software",
+		"herramienta": "JCLIC",
+		"categoria": "informatica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "AQUILES, Paola"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/aquiles.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2013/PIF_jclic_Paola_Aquiles/index.htm"
+	},
+	{
+		"nombre": "Introducción al lenguaje tecnológico",
+		"herramienta": "JCLIC",
+		"categoria": "informatica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "MANAU, Daniel"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/manau1.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2013/Manau_Daniel_Ernesto_Pif_lenguajes_Tecnologicos/Manau_Daniel_Ernesto_Pif_lenguajes_Tecnologicos/index.htm"
+	},
+	{
+		"nombre": "Ecosistemas y Cambios en el medioambiente",
+		"herramienta": "JCLIC",
+		"categoria": "naturales",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "MALDONADO, Fátima"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/maldonado.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2013/PIF-Maldonado.jclic/index.htm"
+	},
+	
+	{
+		"nombre": "Movimientos Vanguardistas del siglo XX",
+		"herramienta": "JCLIC",
+		"categoria": "miscelaneas",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "SOSENA, Pamela"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/sosena.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2013/PIF%20-%20SOSENA/PIF%20-%20SOSENA/configuracion_de_proyecto_pamelasosena.jclic/index.htm"
+	},
+	{
+		"nombre": "Energía Hidráulica",
+		"herramienta": "JCLIC",
+		"categoria": "miscelaneas",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "KUC, Alejandro"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/kuc1.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2013/PIF%20Kuc%20Alejandro/PIF%20Kuc%20Alejandro/Proyecto%20Kuc%20Alejandro/index.htm"
+	},
+	{
+		"nombre": "NTIC´S",
+		"herramienta": "JCLIC",
+		"categoria": "informatica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "DUGO, Verónica"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/dugo1.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2013/PIF_jclic_Veronica_Dugo/index.htm"
+	},
+	{
+		"nombre": "La Computadora: Partes y funciones",
+		"herramienta": "JCLIC",
+		"categoria": "informatica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "BOFFI, Pablo"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/boffi1.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2013/Boffi_pablo.jclic/index.htm"
+	},
+	{
+		"nombre": "JCLIC: Usos y Aplicaciones",
+		"herramienta": "JCLIC",
+		"categoria": "informatica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "DE LA TORRE, Diego"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/delatorre.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2013/pif_diego_de_la_torre.jclic/index.htm"
+	},
+	{
+		"nombre": "Conceptos básicos de informatica",
+		"herramienta": "JCLIC",
+		"categoria": "informatica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "PÉREZ, Fernando"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/perezf.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2013/PIF_GEN_Perez/index.htm"
+	},
+	{
+		"nombre": "Conceptos básicos de informatica",
+		"herramienta": "JCLIC",
+		"categoria": "informatica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "GIMÉNEZ, Silvina"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/gimenezs.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2013/PIF_GIMENEZ.jclic/index.htm"
+	},
+	{
+		"nombre": "Sistemas Operativos",
+		"herramienta": "JCLIC",
+		"categoria": "informatica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "OCCHIUZZI, Lucía"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/occhiuzzi1.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2013/pif_lucia_occhiuzzi/pif_luciaocchiuzzi2/index.htm"
+	},
+	{
+		"nombre": "Sustainable Urbanism",
+		"herramienta": "JCLIC",
+		"categoria": "miscelaneas",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "ALVAREZ, Maximiliano"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/alvarezm.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2013/PIFmaxalvarez.jclic/index.htm"
+	},
+	{
+		"nombre": "NTIC´S",
+		"herramienta": "JCLIC",
+		"categoria": "informatica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "BENZ, María Isabel"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/benz.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2013/PIF_Benz/PIF_Benz/index.htm"
+	},
+	{
+		"nombre": "Proceso de Hominización",
+		"herramienta": "JCLIC",
+		"categoria": "sociales",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "OLIVES, Mariana"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/olives.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2013/PIF_olivesmariana/PIFolivesmariana/configuraciondelproyecto%20olivesmariana.jclic/index.htm"
+	},
+	{
+		"nombre": "Ángulos de triángulos y cuadriláteros",
+		"herramienta": "JCLIC",
+		"categoria": "matematicas",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "PAZ, Roxana"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/pazr1.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2013/pif_Roxana_Paz/PIFGENERICO/index.htm"
+	},
+	{
+		"nombre": "SI.ME.LA",
+		"herramienta": "JCLIC",
+		"categoria": "fisica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "ROUQUETTE, Ulises"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/rouquette.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2013/pif_ulises_rouquette.jclic/index.htm"
+	},
+	{
+		"nombre": "Producción de Pollos",
+		"herramienta": "JCLIC",
+		"categoria": "miscelaneas",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "VENANCIO, Claudio"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/venancio.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2013/pif_venancio.jclic/index.htm"
+	},
+	{
+		"nombre": "Photoshop",
+		"herramienta": "JCLIC",
+		"categoria": "informatica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "MEYER, Victoria"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/meyer.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2013/PIF_Victoria_Meyer/Actividad%20Final/index.htm"
+	},
+	{
+		"nombre": "Componentes básicos sistema informático",
+		"herramienta": "JCLIC",
+		"categoria": "informatica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "VIGNATI, Alicia"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/vignati.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2013/PIF-JCLIC-Vignati/PIF-JCLIC-Vignati/index.htm"
+	},
+	{
+		"nombre": "Dibujo Técnico y sus herramientas",
+		"herramienta": "JCLIC",
+		"categoria": "miscelaneas",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "ROTELA, Estanislao"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/rotela1.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2013/PIF_Estanislao_Rotela/PIF_Estanislao_Rotela/introduccion%20al%20dibujo%20tecnico%20estanislaojoserotela.htm"
+	},
+	{
+		"nombre": "La Computadora: partes y funciones",
+		"herramienta": "JCLIC",
+		"categoria": "informatica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "MOSCATO, Ma. Cristina"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/moscato1.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2013/PIF-Moscato/index.htm"
+	},
+	{
+		"nombre": "Extinción del contrato de trabajo",
+		"herramienta": "JCLIC",
+		"categoria": "miscelaneas",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "SANTOS, Alicia"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/santos1.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2013/santosalicia_PIF_JCLIC/index.htm"
+	},
+	{
+		"nombre": "Sistema Nervioso Humano",
+		"herramienta": "JCLIC",
+		"categoria": "naturales",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "RIVA, Susana"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/riva.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2013/PIF_Riva/index.htm"
+	},
+	{
+		"nombre": "Desarrollo Sustentable",
+		"herramienta": "JCLIC",
+		"categoria": "miscelaneas",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "VELLOSO, Patricia"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/velloso.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2013/PIF_velloso_patricia.jclic/index.htm"
+	},
+	{
+		"nombre": "Producción ovina",
+		"herramienta": "HotPotatoes",
+		"categoria": "naturales",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "VENANCIO, Claudia"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/venancio1.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_hotpotatoes/2013/PIF%20VENANCIO/index.htm"
+	},
+	{
+		"nombre": "lenguaje audiovisual",
+		"herramienta": "HotPotatoes",
+		"categoria": "miscelaneas",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "PIETRASANTA, Ma. Daniela"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/pietrasanta.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_hotpotatoes/2013/PIF_Pietrasanta/index.htm"
+	},
+	{
+		"nombre": "El ajedrez",
+		"herramienta": "HotPotatoes",
+		"categoria": "miscelaneas",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "BENAMO, Gabriel"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/benamo.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_hotpotatoes/2013/PIF_de_GabrielBenamo/index.htm"
+	},
+	{
+		"nombre": "Nociones básicas de administración",
+		"herramienta": "HotPotatoes",
+		"categoria": "miscelaneas",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "LAMAS, Elisabeth"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/lamas.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_hotpotatoes/2013/PIF_Lamas/index.htm"
+	},
+	{
+		"nombre": "Herramientas manuales y eléctricas",
+		"herramienta": "HotPotatoes",
+		"categoria": "miscelaneas",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "FAZIO, Adrián"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/fazio.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_hotpotatoes/2013/PIF_Fazio_Adrian/index.htm"
+	},
+	
+	{
+		"nombre": "La computadora: partes y funciones",
+		"herramienta": "HotPotatoes",
+		"categoria": "informatica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "SOTO, Lorena"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/sotol.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_hotpotatoes/2013/PIF-HOTPOTATOES-SOTO/JC_Soto.htm"
+	},
+	
+		
+	{
+		"nombre": "Conceptos básicos de electrotecnia",
+		"herramienta": "HotPotatoes",
+		"categoria": "fisica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "DELGADO, Walter"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/delgadow.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_hotpotatoes/2013/PIF_Delgado/index.htm"
+	},
+	{
+		"nombre": "Estadística",
+		"herramienta": "HotPotatoes",
+		"categoria": "matematicas",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "ORIS, Silvia"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/oris.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_hotpotatoes/2013/PIF-silvia%20Oris/index.htm"
+	},
+	{
+		"nombre": "quimica analítica y orgánica: conceptos básicos",
+		"herramienta": "HotPotatoes",
+		"categoria": "quimica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "CAVASSA, Alejandro"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/cavassa.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_hotpotatoes/2014/PIF_Alejandro_Cavassa/index.htm"
+	},
+	{
+		"nombre": "Comprensión lectora, grupo consonántico \"br\"",
+		"herramienta": "HotPotatoes",
+		"categoria": "lengua",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "ÁLVAREZ, Emilce"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/alvareze.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_hotpotatoes/2014/pif_alvarez/pif/index.htm"
+	},
+	{
+		"nombre": "Armado y reparación de PC",
+		"herramienta": "HotPotatoes",
+		"categoria": "informatica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "AVENDAÑO, José Luis"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/avendano.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_hotpotatoes/2014/PIF_Avendano/PIF_Avendano/Final/index.htm"
+	},
+	{
+		"nombre": "Modelos atómicos y tabla periódica",
+		"herramienta": "HotPotatoes",
+		"categoria": "quimica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "CERUTTI, Valeria"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/cerutti.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_hotpotatoes/2014/PIF_cerutti/PIF_cerutti/index.htm"
+	},
+	{
+		"nombre": "Polinomios",
+		"herramienta": "HotPotatoes",
+		"categoria": "matematicas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "SEGURA, Juan José"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/segurajj2.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_hotpotatoes/2014/pif%20Hot%20Potatoes/index.htm"
+	},
+	{
+		"nombre": "La madera",
+		"herramienta": "HotPotatoes",
+		"categoria": "miscelaneas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "DEL PUERTO, Mirta"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/delpuerto.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_hotpotatoes/2014/TM_de_DelPuerto_Mirna/index.htm"
+	},
+	{
+		"nombre": "Olimpíadas Río 2016",
+		"herramienta": "HotPotatoes",
+		"categoria": "miscelaneas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "PANIAGUA, Moira"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/paniagua.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_hotpotatoes/2014/PIF_MOIRAPANIAGUA/JCloze_paniagua1.htm"
+	},
+	{
+		"nombre": "Clases de palabras, oraciones",
+		"herramienta": "HotPotatoes",
+		"categoria": "lengua",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "PIGNALBERI, Jésica Antonella"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/pignalberu.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_hotpotatoes/2014/PIF_PignalberiJesica/index.htm"
+	},
+	{
+		"nombre": "La década del 70",
+		"herramienta": "HotPotatoes",
+		"categoria": "miscelaneas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "RETTORI, Alelí Raquel"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/retorri.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_hotpotatoes/2014/modulo%206%20hotpotatoes/index.htm"
+	},
+	{
+		"nombre": "Escritura y sus soportes",
+		"herramienta": "HotPotatoes",
+		"categoria": "sociales",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "TROSTBACH, Rosana"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/trostbach.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_hotpotatoes/2014/PIF_Rosana_Trostbach/index.htm"
+	},
+	{
+		"nombre": "Animales de la granja",
+		"herramienta": "HotPotatoes",
+		"categoria": "miscelaneas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "SANDOVAL, Laura Cecilia"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/sandoval.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_hotpotatoes/2014/graficos%20smasher/index.htm"
+	},
+	{
+		"nombre": "Conceptos básicos",
+		"herramienta": "HotPotatoes",
+		"categoria": "informatica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "TORREZ, Gonzalo"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/torrez.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_hotpotatoes/2014/Actividad_integradora_Torrez/index.htm"
+	},
+	
+	{
+		"nombre": "Criterios de divisibilidad",
+		"herramienta": "HotPotatoes",
+		"categoria": "informatica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "PAZ, Roxana"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/pazr2.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_hotpotatoes/2014/Pifhotpotatoes_roxanapaz/Indice.htm"
+	},
+	
+	{
+		"nombre": "Radio en la escuela secundaria",
+		"herramienta": "Blog",
+		"categoria": "miscelaneas",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "BOURLON, Adrian"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/bourlon1.jpg",
+		"url": "http://www.radioenlaescuelasecundaria.blogspot.com.ar/"
+	},
+		
+	{
+		"nombre": "Taller de CBC",
+		"herramienta": "Blog",
+		"categoria": "miscelaneas",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "DEBERNARDINIS, Pablo"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/debernardinis.jpg",
+		"url": "http://taller-eestn2.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Taller de Procedimientos",
+		"herramienta": "Blog",
+		"categoria": "miscelaneas",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "FAZIO, Adrián"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/fazio1.jpg",
+		"url": "http://herramientaseneltaller.blogspot.com.ar/"
+	},
+	{
+		"nombre": "De apoyo y de consulta",
+		"herramienta": "Blog",
+		"categoria": "informatica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "CAPRA, Carlos"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/capra.jpg",
+		"url": "http://itimodulo1azul.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Informativo - bibliográfico - educativo",
+		"herramienta": "Blog",
+		"categoria": "quimica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "FARANNA, Raul"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/faranna.jpg",
+		"url": "http://eest1azul.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Biología, Salud y Adolescencia",
+		"herramienta": "Blog",
+		"categoria": "naturales",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "SCANDROGLIO, Natalia"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/scandroglio.jpg",
+		"url": "http://agropecuaria1ppereyra.blogspot.com.ar/2013_10_01_archive.html"
+	},
+	
+	{
+		"nombre": "Físico-quimica",
+		"herramienta": "Blog",
+		"categoria": "fisica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "MORENO, Daniela"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/morenod.jpg",
+		"url": "http://dmypa.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Tecnología",
+		"herramienta": "Blog",
+		"categoria": "informatica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "GIAIMO, Agustín"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/giaimo.jpg",
+		"url": "http://giaimovida2000.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Las Plantas",
+		"herramienta": "Blog",
+		"categoria": "naturales",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "FOSCHINI, Sergio"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/foschini.jpg",
+		"url": "http://miblogparaaprenderablogear.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Sist. Tecnológicos - electrónica básica",
+		"herramienta": "Blog",
+		"categoria": "informatica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "LUPOLI BUTAVAND, Nelson"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/lupoli.jpg",
+		"url": "http://www.compromisotecnologico.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Área de reproducción",
+		"herramienta": "Blog",
+		"categoria": "miscelaneas",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "VENANCIO, Claudia"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/venancio2.jpg",
+		"url": "http://areadelaproduccionceptuno.blogspot.com.ar/"
+	},
+	{
+		"nombre": "informatica General",
+		"herramienta": "Blog",
+		"categoria": "informatica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "DE LA TORRE, Diego"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/delatorred.jpg",
+		"url": "http://www.hablandoeninformatica.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Nociones básicas Windows",
+		"herramienta": "Camstudio",
+		"categoria": "informatica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "VIGNATI, Alicia"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/vignati1.jpg",
+		"url": "http://www.youtube.com/watch?v=QKKfg3OZA14"
+	},
+	{
+		"nombre": "¿Cómo elegir un router?",
+		"herramienta": "Camstudio",
+		"categoria": "informatica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "PIGNA, Edgardo"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/pigna.jpg",
+		"url": "http://www.youtube.com/watch?v=jlK3dYKg3h0&feature=youtu.be"
+	},
+	{
+		"nombre": "Uso de Audacity",
+		"herramienta": "Camstudio",
+		"categoria": "informatica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "PIETRASANTA, Ma. Daniela"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/pietrasanta1.jpg",
+		"url": "https://www.youtube.com/watch?v=_l8o5Vk-JqY"
+	},
+	{
+		"nombre": "Uso de CCleaner",
+		"herramienta": "Camstudio",
+		"categoria": "informatica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "BENAMO, Gabriel"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/benamo1.jpg",
+		"url": "https://www.youtube.com/watch?v=pCWo0a1VGYo&feature=youtu.be"
+	},
+	{
+		"nombre": "¿Cómo hacer un organigrama?",
+		"herramienta": "Camstudio",
+		"categoria": "miscelaneas",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "LAMAS, Elisabeth"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/lamas1.jpg",
+		"url": "http://www.youtube.com/watch?v=iMeHLKNxiec&feature=youtu.be"
+	},
+	{
+		"nombre": "Diseño de un circuito eléctrico paralelo",
+		"herramienta": "Camstudio",
+		"categoria": "fisica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "FAZIO, Adrián"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/fazio2.jpg",
+		"url": "https://www.youtube.com/watch?v=eby92_F8tnY&feature=youtu.be"
+	},
+	{
+		"nombre": "DMáquinas simples",
+		"herramienta": "Camstudio",
+		"categoria": "fisica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "FITTIPALDI, Lucas"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/fittipaldi.jpg",
+		"url": "https://www.youtube.com/watch?v=Cf7ssCzUAVA&feature=youtu.be"
+	},
+		{
+		"nombre": "Las pilas",
+		"herramienta": "Camstudio",
+		"categoria": "fisica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "GIAIMO, Agustín"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/giaimo1.jpg",
+		"url": "https://www.youtube.com/watch?v=joglx_LCq1s"
+	},
+		{
+		"nombre": "Conocimiento básico de los resistores",
+		"herramienta": "Camstudio",
+		"categoria": "fisica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "RACCIATTI, Juan Carlos"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/racciatti.jpg",
+		"url": "http://www.youtube.com/watch?v=_AJx_kJJois&feature=youtu.be"
+	},
+	{
+		"nombre": "Recursos naturales y desarrollo sustentable",
+		"herramienta": "Camstudio",
+		"categoria": "naturales",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "HIRSCH, Natalia"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/hirsch.jpg",
+		"url": "http://youtu.be/F89kWxtTze0"
+	},
+		{
+		"nombre": "Biotipos ovinos",
+		"herramienta": "Camstudio",
+		"categoria": "naturales",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "VENANCIO, Claudia"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/venancio3.jpg",
+		"url": "https://www.youtube.com/watch?v=HwfTgqMR5Rg&feature=youtu.be"
+	},
+	{
+		"nombre": "Liveware - circuitos eléctricos",
+		"herramienta": "Camstudio",
+		"categoria": "fisica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "DELGADO, Walter"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/delgadow1.jpg",
+		"url": "http://www.youtube.com/watch?v=DsAVrM3XP0g"
+	},
+	
+	{
+		"nombre": "Nociones básicas de Word 2007",
+		"herramienta": "Camstudio",
+		"categoria": "informatica",
+		"anio": "2013",
+		"autores": [
+			{
+				"nombre": "FARANNA, Raul"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/faranna1.jpg",
+		"url": "http://www.youtube.com/watch?v=t72lZpPicYk&feature=youtu.be"
+	},
+	{
+		"nombre": "Procesos sociales argentinos siglos XIX y XX",
+		"herramienta": "JCLIC",
+		"categoria": "sociales",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "CRUZ, Mariana"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/cruzm.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2014/CruzMarianaPIF/index.htm"
+	},
+	{
+		"nombre": "Máquinas simples",
+		"herramienta": "JCLIC",
+		"categoria": "fisica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "RODIRGUEZ, Jorge"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/rodriguezj.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2014/PIF_GEN_rodriguezjorge.jclic/index.htm"
+	},
+	{
+		"nombre": "La alimentación saludable",
+		"herramienta": "JCLIC",
+		"categoria": "naturales",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "FARINA, Debora"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/farinad.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2014/PIF_GEN_Farina/index.htm"
+	},
+	{
+		"nombre": "Equilibrio de las estructuras y cuerpos",
+		"herramienta": "JCLIC",
+		"categoria": "fisica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "ROGGERO, Raul"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/roggero.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2014/PIF%20de_Roggero_Raul_G/PIF%20de_Roggero_Raul_G/index.htm"
+	},
+	{
+		"nombre": "Los oficios",
+		"herramienta": "JCLIC",
+		"categoria": "miscelaneas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "FERNANDEZ, Emilio"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/fernandeze.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2014/PIF%20Fernandez%20%20Emilio/PIF%20Fernandez%20%20Emilio/index.htm"
+	},
+	{
+		"nombre": "La computadora: conceptos básicos",
+		"herramienta": "JCLIC",
+		"categoria": "informatica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "RUGERI, Gabriela"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/rugeri.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2014/PIF_GEN_Rugeri/index.htm"
+	},
+	{
+		"nombre": "Comprensión lectora, grupo consonántico \"br\"",
+		"herramienta": "JCLIC",
+		"categoria": "lengua",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "ÁLVAREZ, Emilce"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/alvareze1.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2014/pif_GEN_Alvarez/index.htm"
+	},
+	{
+		"nombre": "Anatomía funcional: músculos y huesos",
+		"herramienta": "JCLIC",
+		"categoria": "naturales",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "PALACIOS, Belén"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/palacios.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2014/PIF_GEN_Palacios/index.htm"
+	},
+	{
+		"nombre": "FONEMAS /I/ /i:/ /u/ y /u:/",
+		"herramienta": "JCLIC",
+		"categoria": "miscelaneas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "QUAINI, Carolina"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/quaini.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2014/PIF_GEN_Quaini/PIF/Vowel%20sounds%20I.htm"
+	},
+	{
+		"nombre": "Conceptos básicos",
+		"herramienta": "JCLIC",
+		"categoria": "informatica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "DALL ASTA, Andrés"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/dallasta.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2014/PIF_Generico_2014_DallAsta_Andres/tarea_6_andres_dallasta/index.htm"
+	},
+	{
+		"nombre": "Energía eléctrica",
+		"herramienta": "JCLIC",
+		"categoria": "fisica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "DEL CASTILLO, Marcelo"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/delcastillo.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2014/PIF%20del%20Castillo%20Marcelo/Formas%20de%20Energia.htm"
+	},
+	{
+		"nombre": "Reproducción humana y la fecundación",
+		"herramienta": "JCLIC",
+		"categoria": "naturales",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "BREY, Elsa Esther"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/brey.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2014/Practica%20Integradora%20Final_estherbrey/index.htm"
+	},
+	{
+		"nombre": "Pueblos originarios: Mayas, Aztecas e Incas",
+		"herramienta": "JCLIC",
+		"categoria": "sociales",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "FRASCAROLI, Juan Carlos"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/frascaroli.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2014/PIF_Frascaroli/index.htm"
+	},
+	{
+		"nombre": "Creación de distintos tipos de líneas en Corel Draw",
+		"herramienta": "JCLIC",
+		"categoria": "informatica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "MORERA, Guillermo"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/morera.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2014/integradora_morera/index.html"
+	},
+	{
+		"nombre": "Tipos de software",
+		"herramienta": "JCLIC",
+		"categoria": "informatica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "LOSSINO, Eugenia"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/lossino.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2014/PIF_losinnoeugenia/index.htm"
+	},
+	{
+		"nombre": "La computadora: usos",
+		"herramienta": "JCLIC",
+		"categoria": "informatica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "MELGAREJO, Susana"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/melgarejo.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2014/PIF_Melgarejo/index.htm"
+	},
+	{
+		"nombre": "Instalaciones y aplicaciones de la energía",
+		"herramienta": "JCLIC",
+		"categoria": "fisica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "MONTALDO, Ariel"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/montaldo.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2014/PIF_Montaldo/PIF_Montaldo/index.htm"
+	},
+	{
+		"nombre": "Animales",
+		"herramienta": "JCLIC",
+		"categoria": "miscelaneas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "RETTORI, Alelí Raquel"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/rettori1.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2014/PIF_Rettori/PIF_applet/index.htm"
+	},
+	{
+		"nombre": "Cosmovisióm mítica y épica",
+		"herramienta": "JCLIC",
+		"categoria": "lengua",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "DEL VALLE RODRIGUEZ, Carina"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/delvalle.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2014/PIF_Rodriguez_Carina/index.htm"
+	},
+	{
+		"nombre": "Convenciones de dibujo",
+		"herramienta": "JCLIC",
+		"categoria": "miscelaneas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "TANZI, Roberto"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/tanzi.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2014/PIF_Tanzi/proyfinal_Tanzi/index.htm"
+	},
+	{
+		"nombre": "Sistemas operativos y hardware",
+		"herramienta": "JCLIC",
+		"categoria": "informatica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "TORREZ, Gonzalo"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/torrez1.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2014/Pif_Torrez/Pif_Torrez/pif_Torrez.jclic/index.htm"
+	},
+	{
+		"nombre": "Construcciones: contenidos relevantes",
+		"herramienta": "JCLIC",
+		"categoria": "miscelaneas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "ARCE, Ma. Alejandra"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/arce.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2014/PIF-MAArce/entregaPIF-MAArce/pifmaarce.html"
+	},
+	{
+		"nombre": "Figuras, triángulos y teorema de pitágoras",
+		"herramienta": "JCLIC",
+		"categoria": "matematicas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "MARTINEZ, Ma. de las Mercedes"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/martinez.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2014/PIF-Martinez/index.htm"
+	},
+	{
+		"nombre": "Diseño web",
+		"herramienta": "JCLIC",
+		"categoria": "informatica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "ZAPATA, Perla"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/zapata.jpg",
+		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_jclic/2014/PIF-Martinez/index.htm"
+	},
+	{
+		"nombre": "Sistemas Eléctricos",
+		"herramienta": "Blog",
+		"categoria": "fisica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "ARRI, Javier"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/arri1.jpg",
+		"url": "http://javierelectrofacil.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Informática General",
+		"herramienta": "Blog",
+		"categoria": "informatica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "CHAVES, Juan Alberto"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/chaves.jpg",
+		"url": "http://t7laferrere.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Informática General",
+		"herramienta": "Blog",
+		"categoria": "informatica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "CHAVES, Juan Alberto"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/chaves.jpg",
+		"url": "http://t7laferrere.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Dibujo Técnico",
+		"herramienta": "Blog",
+		"categoria": "miscelaneas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "MARTINEZ, Oscar"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/martinezo.jpg",
+		"url": "http://dibujotecnicoenlatecnica.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Programación",
+		"herramienta": "Blog",
+		"categoria": "informatica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "POLO, Oscar"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/polo.jpg",
+		"url": "http://oscarapolo.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Biblioteca Escolar",
+		"herramienta": "Blog",
+		"categoria": "miscelaneas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "SORIA, Marcela"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/soria.jpg",
+		"url": "http://marcesory-27.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Sistemás tecnológicos - conceptos básicos",
+		"herramienta": "Blog",
+		"categoria": "informatica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "PEREYRA, Raúl"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/pereyra.jpg",
+		"url": "http://pereyrarj.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Neumática",
+		"herramienta": "Blog",
+		"categoria": "fisica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "IURESCIA, David"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/iurescia.jpg",
+		"url": "http://neumaticat2.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Técnica en Construcciones",
+		"herramienta": "Blog",
+		"categoria": "miscelaneas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "MOLINA, José"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/molina.jpg",
+		"url": "http://edutecconstrucciones.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Redes Informáticas",
+		"herramienta": "Blog",
+		"categoria": "informatica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "BENAVIDEZ, Jorge"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/benavidez.jpg",
+		"url": "http://benavidezredesinformatica.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Ajuste Mecánico",
+		"herramienta": "Blog",
+		"categoria": "miscelaneas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "BENAVIDEZ, Jorge"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/gonzalezja.jpg",
+		"url": "http://tec2ajuste2.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Metal Mecánica",
+		"herramienta": "Blog",
+		"categoria": "informatica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "PALOMO, Máximo"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/palomo.jpg",
+		"url": "http://metalmecanicaunlam.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Educación Plástica",
+		"herramienta": "Blog",
+		"categoria": "miscelaneas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "FRANZI, Sandra"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/franzi.jpg",
+		"url": "http://educacionplasticatecnica8.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Elementos básicos de físico-química",
+		"herramienta": "Blog",
+		"categoria": "fisica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "RUEDA, Anibal"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/rueda1.jpg",
+		"url": "http://backingham-fisiquimica3er2014.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Bullying",
+		"herramienta": "Blog",
+		"categoria": "sociales",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "CHACÓN, Elisabeth"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/chacon.jpg",
+		"url": "http://miblogsobrebullying.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Educación sexual: métodos anticonceptivos",
+		"herramienta": "Blog",
+		"categoria": "naturales",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "PENA, Valeria"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/pena.jpg",
+		"url": "http://responsabilicemos.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Informática",
+		"herramienta": "Blog",
+		"categoria": "informatica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "LÓPEZ, Alicia"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/lopezl.jpg",
+		"url": "http://profelopeza.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Medios Audiovisuales",
+		"herramienta": "Blog",
+		"categoria": "informatica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "CAPURRO, Bárbara"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/capurro.jpg",
+		"url": "http://barbaracapurro.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Blog de costura y moda",
+		"herramienta": "Blog",
+		"categoria": "miscelaneas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "NOGUERO, Ma. Alejandra"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/noguero.jpg",
+		"url": "http://lacosturadealejandra.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Fuentes y servicios de información",
+		"herramienta": "Blog",
+		"categoria": "miscelaneas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "GARCIA, Cristina"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/garciac.jpg",
+		"url": "http://fuentesunoisft182.blogspot.com.ar/"
+	},
+	{
+		"nombre": "El devenir de la historia",
+		"herramienta": "Blog",
+		"categoria": "sociales",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "BARTH, Celeste"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/barth.jpg",
+		"url": "http://eldevenirdelahistoria.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Economía Empresarial",
+		"herramienta": "Blog",
+		"categoria": "miscelaneas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "GEREZ, Silvia"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/gerezs.jpg",
+		"url": "http://economiatecnicatura.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Bibliotecas Escolares",
+		"herramienta": "Blog",
+		"categoria": "miscelaneas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "PANAITESCU, Silvia"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/panaitescu.jpg",
+		"url": "http://bibliotecariosregion11.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Recreo",
+		"herramienta": "Blog",
+		"categoria": "lengua",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "NEGRI, Marisa"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/negri.jpg",
+		"url": "http://recreotecnica1.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Educación en el siglo XXI",
+		"herramienta": "Blog",
+		"categoria": "miscelaneas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "D´ORIO, Pedro"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/dorio.jpg",
+		"url": "http://nuevasrespuestaseducativas.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Educación en el siglo XXI",
+		"herramienta": "Blog",
+		"categoria": "miscelaneas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "D´ORIO, Pedro"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/dorio.jpg",
+		"url": "http://nuevasrespuestaseducativas.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Conceptos básicos de informática",
+		"herramienta": "Blog",
+		"categoria": "informatica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "ATANASOFF, Maximiliano"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/atanasoff.jpg",
+		"url": "http://cfp401compublog.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Formación Profesional",
+		"herramienta": "Blog",
+		"categoria": "miscelaneas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "OLIVAREZ, José Luis"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/olivarez.jpg",
+		"url": "http://cfp402islasanfernando.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Sistemas tecnológicos en educación técnica",
+		"herramienta": "Blog",
+		"categoria": "informatica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "CARRICARTE, Ma. Cecilia"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/carricarte.jpg",
+		"url": "http://sistemastecnologicosprimero.blogspot.com.ar/"
+	},
+	{
+		"nombre": "Autocad",
+		"herramienta": "Camstudio",
+		"categoria": "informatica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "JAIME, Héctor"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/jaime.jpg",
+		"url": "https://www.youtube.com/watch?v=z9TTkQaeJh4&feature=youtu.be"
+	},
+	{
+		"nombre": "Área de trabajo en Word",
+		"herramienta": "Camstudio",
+		"categoria": "informatica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "INCIGNIERI, Diana"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/incignieri.jpg",
+		"url": "https://www.youtube.com/watch?v=yln_qZgMPJ8&feature=youtu.be"
+	},
+	{
+		"nombre": "Resolución de triángulos rectángulos",
+		"herramienta": "Camstudio",
+		"categoria": "matematicas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "RODRÍGUEZ, Guillermo"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/rodriguezg.jpg",
+		"url": "https://www.youtube.com/watch?v=hxevs1vGpTE&feature=youtu.be"
+	},
+	{
+		"nombre": "Función cuadrática - graphmatica",
+		"herramienta": "Camstudio",
+		"categoria": "matematicas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "ROMANO, Zulma"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/romano.jpg",
+		"url": "https://www.youtube.com/watch?v=Det2QNd73LQ&feature=youtu.be"
+	},
+	{
+		"nombre": "Movie maker",
+		"herramienta": "Camstudio",
+		"categoria": "informatica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "PODESTÁ,Estefanía"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/podesta.jpg",
+		"url": "https://www.youtube.com/watch?v=cWakzfTl2hA&feature=youtu.be"
+	},
+	{
+		"nombre": "Script en php con uso de Xampp",
+		"herramienta": "Camstudio",
+		"categoria": "informatica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "GÓMEZ, Mirta"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/gomezm.jpg",
+		"url": "https://www.youtube.com/watch?v=tp2UPq16ABI&feature=youtu.be"
+	},
+	{
+		"nombre": "Rectángulos en Corel",
+		"herramienta": "Camstudio",
+		"categoria": "informatica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "SANCHIS, Alejandro"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/sanchis.jpg",
+		"url": "https://www.youtube.com/watch?v=rH1Pa63Gszg"
+	},
+	{
+		"nombre": "Modelos circuitales",
+		"herramienta": "Camstudio",
+		"categoria": "fisica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "CRUGNOLA, Carlos"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/crugnola.jpg",
+		"url": "https://www.youtube.com/watch?v=LVXtSMh4m00&feature=youtu.be"
+	},
+	{
+		"nombre": "Funciones básicas de Excel",
+		"herramienta": "Camstudio",
+		"categoria": "informatica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "CARRICARTE, Ma. Cecilia"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/carricarte1.jpg",
+		"url": "https://www.youtube.com/watch?v=Z_FluHyltCc&feature=youtu.be"
+	},
+	{
+		"nombre": "Medición de líquidos en laboratorio",
+		"herramienta": "Camstudio",
+		"categoria": "quimica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "RAMOS, Claudia"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/ramos.jpg",
+		"url": "https://www.youtube.com/watch?v=vL2DuOR85XE&feature=youtu.be"
+	},
+	{
+		"nombre": "Impacto ambiental",
+		"herramienta": "Camstudio",
+		"categoria": "naturales",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "DEL CASTILLO, Marcelo"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/delcastillo1.jpg",
+		"url": "https://www.youtube.com/watch?v=VDiPgB48_6c&feature=youtu.be"
+	},
+	{
+		"nombre": "Nociones básicas del soundforge",
+		"herramienta": "Camstudio",
+		"categoria": "miscelaneas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "GASTALDI, Martín"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/gastaldi.jpg",
+		"url": "https://www.youtube.com/watch?v=92VYNJFITOQ"
+	},
+	{
+		"nombre": "Descarga archivos utorrent",
+		"herramienta": "Camstudio",
+		"categoria": "informatica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "TORREZ, Gonzalo"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/torrez2.jpg",
+		"url": "https://www.youtube.com/watch?v=UEplpIx9jn8&list=UUK78EvnhAvMHPkVNJIMoeww"
+	},
+	{
+		"nombre": "Ingreso de datos planilla de cálculos",
+		"herramienta": "Camstudio",
+		"categoria": "informatica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "MOTA, Jorge"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/mota.jpg",
+		"url": "https://www.youtube.com/watch?v=cVx9kGw4iLY&feature=youtu.be"
+	},
+	{
+		"nombre": "Curiosidades históricas",
+		"herramienta": "Camstudio",
+		"categoria": "sociales",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "CRUZ, Mariana"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/cruzm2.jpg",
+		"url": "https://www.youtube.com/watch?v=ZOPmHmfe-RY&feature=youtu.be"
+	},
+	{
+		"nombre": "Herramientas de corte",
+		"herramienta": "Camstudio",
+		"categoria": "miscelaneas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "BRAVO, Pablo"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/bravo.jpg",
+		"url": "https://www.youtube.com/watch?v=3fwVNYS5VO0&feature=youtu.be"
+	},
+	{
+		"nombre": "Polarización de transistores",
+		"herramienta": "Camstudio",
+		"categoria": "miscelaneas",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "ORELIA, Sergio"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/orelia1.jpg",
+		"url": "https://www.youtube.com/watch?v=Rqb26xpBPCw&feature=youtu.be"
+	},
+	{
+		"nombre": "Tutorial Prezi",
+		"herramienta": "Camstudio",
+		"categoria": "informatica",
+		"anio": "2014",
+		"autores": [
+			{
+				"nombre": "VELLOSO, Patricia"
+			}
+			
+		],
+		
+		"imagen": "rec_mod1a1/img/velloso1.jpg",
+		"url": "https://www.youtube.com/watch?v=_G-HsT2grJs&feature=youtu.be"
 	}
 ]

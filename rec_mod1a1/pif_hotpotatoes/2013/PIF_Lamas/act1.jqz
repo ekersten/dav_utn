@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jquiz-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>lamasde</dc:creator>
+    <dc:title>Ejercicio N&amp;#x00B0; 1</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>6</version>
+
+<data>
+<title>Ejercicio N&amp;#x00B0; 1</title>
+
+<timer><seconds>300</seconds><include-timer>1</include-timer></timer>
+
+<reading>
+<include-reading>0</include-reading>
+<reading-title></reading-title>
+<reading-text></reading-text>
+
+</reading>
+
+<questions><question-record><question>&amp;#x00BF;Cual es el concepto de comercio?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>4</question-type><answers><answer><text>La transacci&amp;#x00F3;n que se lleva a cabo con el objetivo de comprar o vender un producto</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>El local comercial, conformado por los comerciantes</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Un puesto en una feria</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers><must-select-all>1</must-select-all></question-record><question-record><question>&amp;#x00BF;Cuales son  los requisitos para ser un comerciante?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>Tener capacidad legal para contratar y ejercer de cuenta propia un actos de comercio</text><feedback>casi correcta, pero no</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>tener capacidad legal para contratar y ejercer actos de comercio</text><feedback>no no no.... incorrecto</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Tener capacidad legal para contratar y ejercer de cuenta propia un acto de comercio, haciendo de ello profesi&amp;#x00F3;n habitual.</text><feedback>Perfecto!!!!...</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>&amp;#x00BF;Cual es la diferencia entre una organizaci&amp;#x00F3;n y una empresa?. Financieramente hablando</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>3</question-type><answers><answer><text>El lucro</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>la dimensi&amp;#x00F3;n</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>el personal</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>la actividad</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Adem&amp;#x00E1;s del r&amp;#x00E9;gimen general que otro r&amp;#x00E9;gimen de contribuyentes reconoce la AFIP?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>2</question-type><answers><answer><text>Monotributo</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Personas f&amp;#x00ED;sicas</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Personas Jur&amp;#x00ED;dicas</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record></questions>
+</data>
+
+<hotpot-config-file>
+<jquiz>
+<exercise-subtitle>Lamas, Elisabeth Daniela</exercise-subtitle>
+<instructions></instructions>
+<guess-correct>Correcto!</guess-correct>
+<guess-incorrect>Sorry! Intentalo de nuevo.</guess-incorrect>
+<partly-incorrect>Respuesta correcta parcialmente: </partly-incorrect>
+<enter-a-guess>Por favor, introducta una pregunta.</enter-a-guess>
+<next-correct-letter>La siguiente letra de la respuesta es: </next-correct-letter>
+<correct-answers>Respuestas correctas: </correct-answers>
+<show-answer-caption>Mostrar respuesta</show-answer-caption>
+<include-hint>1</include-hint>
+<include-show-answer>1</include-show-answer>
+<next-ex-url>Siguiente ejercicio.htm</next-ex-url>
+<send-email>1</send-email>
+<continuous-scoring>1</continuous-scoring>
+<show-correct-first-time>1</show-correct-first-time>
+<shuffle-questions>0</shuffle-questions>
+<shuffle-answers>0</shuffle-answers>
+<show-limited-questions>0</show-limited-questions>
+<questions-to-show>2</questions-to-show>
+<short-answer-tries-on-hybrid-q>2</short-answer-tries-on-hybrid-q>
+<separate-javascript-file>0</separate-javascript-file>
+<case-sensitive>0</case-sensitive>
+<include-keypad>0</include-keypad>
+</jquiz>
+
+<global>
+<your-score-is>Tu puntaje es: </your-score-is>
+<correct-indicator>:-)</correct-indicator>
+<incorrect-indicator>:&amp;#x00B4;-(</incorrect-indicator>
+<correct-first-time>Respuesta correcta de una: </correct-first-time>
+<completed-so-far>Preguntas contestadas hasta el momento: </completed-so-far>
+<exercise-completed>Ejercicio completado.</exercise-completed>
+<keypad-characters></keypad-characters>
+<times-up>Su tiempo a terminado!</times-up>
+<next-ex-caption>=&amp;#x003E;</next-ex-caption>
+<back-caption>&amp;#x003C;=</back-caption>
+<contents-caption>Index</contents-caption>
+<include-next-ex>1</include-next-ex>
+<include-contents>1</include-contents>
+<include-back>1</include-back>
+<contents-url>Ir a contenidos.htm</contents-url>
+<graphic-url></graphic-url>
+<font-face>Geneva,Arial,sans-serif</font-face>
+<font-size>small</font-size>
+<page-bg-color>#004080</page-bg-color>
+<title-color>#ffffff</title-color>
+<ex-bg-color>#0080ff</ex-bg-color>
+<text-color>#ffffff</text-color>
+<link-color>#c0c0c0</link-color>
+<vlink-color>#c0c0c0</vlink-color>
+<nav-bar-color>#0080ff</nav-bar-color>
+<formmail-url>https://mail.google.com/mail/u/0/?shva=1#inbox</formmail-url>
+<email>lamasde@gmail.com</email>
+<name-please>Por favor introduzca su apellido y nombre completo:</name-please>
+<user-string-1>uno</user-string-1>
+<user-string-2>dos</user-string-2>
+<user-string-3>tres</user-string-3>
+<header-code></header-code>
+<correct-first-time>Respuesta correcta de una: </correct-first-time>
+<check-caption>Comprobar Respuesta</check-caption>
+<ok-caption>OK</ok-caption>
+<next-q-caption>=&amp;#x003E;</next-q-caption>
+<last-q-caption>&amp;#x003C;=</last-q-caption>
+<hint-caption>Pista</hint-caption>
+<show-all-questions-caption>Mostrar todas preguntas</show-all-questions-caption>
+<show-one-by-one-caption>Preguntas de una a la vez</show-one-by-one-caption>
+<show-also-correct>1</show-also-correct>
+<process-for-rtl>0</process-for-rtl>
+<include-scorm-12>0</include-scorm-12>
+</global>
+</hotpot-config-file>
+</hotpot-jquiz-file>

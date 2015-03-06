@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="pif" version="0.1.3">
+ <settings>
+  <title>pif</title>
+  <revision description="created" date="9/9/14" />
+  <descriptors />
+ </settings>
+ <sequence>
+  <item id="INICIO" name="seguir un personaje: brujas" />
+  <item id="rompecabezas" name="puzzle brujas" />
+  <item id="leer el cuento" name="cuento: una  bruja en problemas" />
+  <item id="descripciones" name="¿Quién es cada bruja?" />
+  <item id="grupo BR" name="el caldero de la BRuja">
+   <jump action="EXIT" id="forward" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@text.Identify" name="cuento: una  bruja en problemas" code="" type="identifyWords">
+   <description>
+    <p>lectura del cuento&#xD;</p>
+    <p>compresnsión lecora&#xD;</p>
+    <p>grupo consonántico BR</p>
+   </description>
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>recuerda que los adjetivos responden a ¿cómo es ?</p>
+    </helpWindow>
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="522" />
+    </window>
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <document>
+    <style name="default" background="0xFFFFFF" family="Arial" bold="false" tabWidth="12" size="11" italic="false" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p Alignment="1" background="0xFFFFFF" family="Arial">
+      <text family="Blackadder ITC" size="36">Una bruja en problemas</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text family="Century Gothic" size="16">Marucha es una </text>
+      <target>bruja,</target>
+      <text family="Century Gothic" size="16"> tan </text>
+      <target>bruja</target>
+      <text family="Century Gothic" size="16"> como cualquier </text>
+      <target>bruja</target>
+      <text family="Century Gothic" size="16"> del mundo. Tiene </text>
+      <target>sombrero</target>
+      <text family="Century Gothic" size="16"> de</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text family="Century Gothic" size="16">bruja, pelos de bruja, cara de bruja, nariz con verruga, zapatos, vestido y hasta una</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text family="Century Gothic" size="16">escoba de </text>
+      <target>bruja.</target>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text family="Century Gothic" size="16">A ella le encanta ser </text>
+      <target>bruja</target>
+      <text family="Century Gothic" size="16"> pero tiene un problema: ¡desde hace algún tiempo</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text family="Century Gothic" size="16">Marucha le tiene miedo a las </text>
+      <target>brujas!</target>
+      <text family="Century Gothic" size="16"> Y cuando se encuentra con alguna de sus</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text family="Century Gothic" size="16">compañeras de la escuela de </text>
+      <target>brujerías,</target>
+      <text family="Century Gothic" size="16"> o cuando la saluda alguna vecina</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <target>embrujada,</target>
+      <text family="Century Gothic" size="16"> sus piernas comienzan a temblar.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <target>Brígida</target>
+      <text family="Century Gothic" size="16"> es la mejor amiga de Marucha, ella también es una </text>
+      <target>bruja</target>
+      <text family="Century Gothic" size="16"> como cualquier</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text family="Century Gothic" size="16">bruja del mundo, por eso hace mucho que no puede visitar ni jugar con Marucha,</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text family="Century Gothic" size="16">porque cada vez que ella la ve sale corriendo, tan asustada como si hubiese visto un</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text family="Century Gothic" size="16">fantasma.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text family="Century Gothic" size="16">Una tarde </text>
+      <target>Brígida</target>
+      <text family="Century Gothic" size="16"> recordó que en el sótano de su castillo, dentro del baúl de los</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text family="Century Gothic" size="16">recuerdos, su abuela guardaba un gran libro de su tataratátara y recontratátara</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text family="Century Gothic" size="16">abuelo, donde había anotado todos los hechizos habidos y por haber. </text>
+      <target>Brígida</target>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text family="Century Gothic" size="16">comenzó a leer el índice:</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text family="Century Gothic" size="16">-Página uno, hechizos para princesas presumidas. Página dos, hechizos para</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text family="Century Gothic" size="16">gigantes egoístas. Página tres, hechizos para niños caprichosos.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text family="Century Gothic" size="16">Y así continuó leyendo hasta que por fin lo encontró:</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text family="Century Gothic" size="16">-¡Página doscientos cuarenta y dos, hechizos para brujas que le temen a las </text>
+      <target>brujas!</target>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text family="Century Gothic" size="16">Sin pensarlo dos veces, </text>
+      <target>Brígida</target>
+      <text family="Century Gothic" size="16"> consiguió todo lo necesario, preparó el hechizo, lo</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text family="Century Gothic" size="16">guardó en un frasquito y, junto a su gato negro, se fue volando en la escoba para</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text family="Century Gothic" size="16">buscara su amiga.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text family="Century Gothic" size="16">Cuando Marucha la vio llegar, nuevamente empezó a correr, entonces </text>
+      <target>Brígida</target>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text family="Century Gothic" size="16">destapó el frasquito y, después de decir las palabras mágicas:</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <target>"¡Abracadabra,</target>
+      <text family="Century Gothic" size="16"> Chinchiribín, el miedo a las </text>
+      <target>brujas</target>
+      <text family="Century Gothic" size="16"> hoy llega a su fin!", todo cambió.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text family="Century Gothic" size="16">Marucha corrió hacia ella y las dos se dieron un gran </text>
+      <target>abrazo</target>
+      <text family="Century Gothic" size="16"> de brujas. ¡Mejor dicho,</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text family="Century Gothic" size="16">de grandes amigas!</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text family="Century Gothic" size="16">Desde ese día </text>
+      <target>Brígida</target>
+      <text family="Century Gothic" size="16"> y Marucha recorren el mundo en su escoba buscando brujas</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text family="Century Gothic" size="16">que les teman a las </text>
+      <target>brujas,</target>
+      <text family="Century Gothic" size="16"> para ayudarlas con su hechizo mágico y poder invitarlas</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text family="Century Gothic" size="16">a jugar.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text family="Century Gothic" size="16">María Lorena González</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+    </section>
+   </document>
+  </activity>
+  <activity class="@textGrid.WordSearch" name="el caldero de la BRuja" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>en el caldero de la bruja se mezclaron todas las palabras con Br, ¿te animas a encontrarlas?</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>¡buen trabajo!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>recuerda que debes encontrar palabras con br</p>
+    </cell>
+   </messages>
+   <settings margin="0" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="caldero con sector blanco-resized.jpg" tiled="false" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false">
+     <position x="100" y="300" />
+    </window>
+   </settings>
+   <textGrid rows="10" columns="10" cellWidth="30.0" cellHeight="30.0" border="true">
+    <style>
+     <font family="Arial Black" size="24" />
+     <color foreground="0xFF6600" background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>SOBRE*****</row>
+     <row>DCEREBRO**</row>
+     <row>GHI**BRUJA</row>
+     <row>CABRA*****</row>
+     <row>**********</row>
+     <row>*LOMBRIZ**</row>
+     <row>SOMBRERO**</row>
+     <row>**********</row>
+     <row>BRUJULA***</row>
+     <row>*COLIBRI**</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">SOBRE</clue>
+    <clue id="1">CEREBRO</clue>
+    <clue id="2">BRUJA</clue>
+    <clue id="3">CABRA</clue>
+    <clue id="4">LOMBRIZ</clue>
+    <clue id="5">SOMBRERO</clue>
+    <clue id="6">BRAZO</clue>
+    <clue id="7">COLIBRI</clue>
+    <clue id="8">BRUJULA</clue>
+   </clues>
+  </activity>
+  <activity class="@puzzles.HolePuzzle" name="puzzle brujas" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>¿Te animás a armar el rompecabezas?</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>¿Qué personaje es?</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>Intentalo de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="48" countDownTime="false" maxActions="18" countDownActions="false" report="true" reportActions="true">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF9999">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="3" cols="3" border="true" image="foto-casa-embrujada.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="seguir un personaje: brujas" code="">
+   <description>
+    <p>luego de la lectura de algunos cuentos de brujas, realizaremos la actividad</p>
+   </description>
+   <messages />
+   <settings margin="8" report="true" reportActions="true">
+    <helpWindow>
+     <p>si no recuerdas los personajes, vuelve a realizar la lectura de los cuentos</p>
+    </helpWindow>
+    <container bgColor="0xFFCCCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="foto-casa-embrujada.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="¿Quién es cada bruja?" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="200.0" cellHeight="120.0" border="true" id="primary">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell image="AGATA.jpg" />
+    <cell image="BRIGIDA.jpg" />
+    <cell image="CACHABACHA.jpg" />
+    <cell image="MARUCHA.jpg" />
+   </cells>
+   <cells rows="4" cols="1" cellWidth="200.0" cellHeight="120.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Century Gothic" size="18" />
+      <color foreground="0x660066" />
+     </style>
+     <p>AGATA</p>
+     <p>Tiene sombrero rayado, pelos de bruja, cara de bruja,  naríz sin verruga, zapatos rotos, vestido, un gato negro y hasta una escoba de bruja.</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Century Gothic" size="18" />
+      <color foreground="0x660066" />
+     </style>
+     <p>BRÍGIDA</p>
+     <p>Tiene sombrero de bruja, pelos de bruja, cara de bruja,  naríz sin verruga, botas, pollera, un gato negro y hasta pollera de bruja.</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Century Gothic" size="18" />
+      <color foreground="0x660066" />
+     </style>
+     <p>CACHABACHA</p>
+     <p>Tiene sombrero de bruja, pelos de bruja, cara de bruja, naríz con verruga, zapatos rotos, vestidos, un gato negro y hasta una escoba de bruja.</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Century Gothic" size="18" />
+      <color foreground="0x660066" />
+     </style>
+     <p>MARUCHA</p>
+     <p>tiene sombrero de bruja, pelos de bruja, cara de bruja, naríz con verruga, zapatos rotos, vestido, medias rayadas y hasta una escoba de bruja.</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="AGATA.jpg" file="AGATA.jpg" />
+  <media name="BRIGIDA.jpg" file="BRIGIDA.jpg" />
+  <media name="CACHABACHA.jpg" file="CACHABACHA.jpg" />
+  <media name="caldero con sector blanco-resized.jpg" file="caldero con sector blanco-resized.jpg" />
+  <media name="foto-casa-embrujada.jpg" file="foto-casa-embrujada.jpg" />
+  <media name="MARUCHA.jpg" file="MARUCHA.jpg" />
+ </mediaBag>
+</JClicProject>
+

@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="final" version="0.1.3">
+ <settings>
+  <title>Final</title>
+  <revision description="created" date="3/2/14" />
+  <descriptors />
+ </settings>
+ <sequence>
+  <item id="start" name="Menu principal" />
+  <item name="Asociacion simple" />
+  <item name="Asociacion compleja" />
+  <item name="Actividad de exploracion" />
+  <item name="Actividad de identificacion" />
+  <item name="Puzzle" />
+  <item name="Sopa de proceres" />
+  <item name="Proceres Argentinos" />
+ </sequence>
+ <activities>
+  <activity class="@panels.Explore" name="Actividad de exploracion" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Actores y actrices multiples ganadores de Oscars</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="film.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xCC0000" angle="0" cycles="7" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="6" cols="1" cellWidth="197.0" cellHeight="38.0" border="true" id="primary">
+    <style>
+     <color background="0xCCFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="6" />
+    <cell id="0">
+     <p>Katharine Hepburn</p>
+    </cell>
+    <cell id="1">
+     <p>Jack Nicholson</p>
+    </cell>
+    <cell id="2">
+     <p>Meryl Streep</p>
+    </cell>
+    <cell id="3">
+     <p>Marlon Brando</p>
+    </cell>
+    <cell id="4">
+     <p>Elizabeth Taylor</p>
+    </cell>
+    <cell id="5">
+     <p>Daniel Day-Lewis</p>
+    </cell>
+   </cells>
+   <cells rows="6" cols="1" cellWidth="400.0" cellHeight="84.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="26" />
+     <color background="0x99FFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="6" />
+    <cell imgAlign="left,top" avoidOverlapping="true" image="hepburn.jpg">
+     <p>GLORIA DE UN DIA - 1932</p>
+     <p>ADIVINA QUIEN VIENE A CENAR - 1967</p>
+     <p>EL LEON EN INVIERNO - 1968</p>
+     <p>EN EL ESTANQUE DORADO - 1981 </p>
+    </cell>
+    <cell imgAlign="left,top" avoidOverlapping="true" image="nicholson.jpg">
+     <p>ALGUIEN VOLO SOBRE EL NIDO DEL CUCO - 1975 </p>
+     <p>LA FUERZA DEL CARIÑO - 1983 </p>
+     <p>MEJOR... IMPOSIBLE - 1997 </p>
+    </cell>
+    <cell imgAlign="left,top" avoidOverlapping="true" image="Streep.jpg">
+     <p>KRAMER CONTRA KRAMER - 1979 </p>
+     <p>LA DECISION DE SOPHIE - 1982 </p>
+     <p>LA DAMA DE HIERRO - 2011 </p>
+    </cell>
+    <cell imgAlign="left,top" avoidOverlapping="true" image="brando.jpg">
+     <p>LA LEY DEL SILENCIO - 1954 </p>
+     <p>EL PADRINO - 1972</p>
+    </cell>
+    <cell imgAlign="left,top" avoidOverlapping="true" image="taylor.jpg">
+     <p>UNA MUJER MARCADA - 1960 </p>
+     <p>QUIEN TEME A VIRGINIA WOOLF? - 1966 </p>
+    </cell>
+    <cell imgAlign="left,top" avoidOverlapping="true" image="lewis.jpg">
+     <p>MI PIE IZQUIERDO - 1989 </p>
+     <p>POZOS DE AMBICION - 2007 </p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.Identify" name="Actividad de identificacion" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Cuales peliculas no son la mas taquillera de la historia ?</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Avatar es la mas taquillera con 2872 millones de dolares de recaudacion</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>No son esas tres, elige otras.</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="3" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="film.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xCC0000" angle="0" cycles="7" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="2" cols="2" cellWidth="366.0" cellHeight="288.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="2.7">
+     <color background="0x99FFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell id="0" imgAlign="left,top" avoidOverlapping="true" image="AVATAR.jpg" />
+    <cell id="1" imgAlign="left,top" avoidOverlapping="true" image="TITANIC.jpg" />
+    <cell id="1" imgAlign="left,top" avoidOverlapping="true" image="AVENGERS.jpg" />
+    <cell id="1" imgAlign="left,top" avoidOverlapping="true" image="HARRY.jpg" />
+   </cells>
+   <cells rows="2" cols="2" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell />
+    <cell imgAlign="left,top" avoidOverlapping="true" image="TITANIC.jpg">
+     <p>Titanic es la segunda pelicula mas taquillera de la historia con 2186 millones de dolares de recaudacion</p>
+    </cell>
+    <cell imgAlign="left,top" avoidOverlapping="true" image="AVENGERS.jpg">
+     <p>Avengers es la tercera pelicula mas taquillera de la historia con 1511 millones de dolares de recaudacion</p>
+    </cell>
+    <cell imgAlign="left,top" avoidOverlapping="true" image="HARRY.jpg">
+     <p>Harry Potter - Parte II es la cuarta pelicula mas taquillera de la historia con 1341 millones de dolares de recaudacion</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Asociacion compleja" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Une le pelicula con el actor o actriz que corresponda</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Bravo !!!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>Se te acabo el tiempo, intenta de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://www.imdb.com" maxTime="10" countDownTime="false" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Informacion obtenida de http://www.imdb.com</p>
+    </helpWindow>
+    <container bgColor="0xFFFFFF">
+     <image name="film.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCCCCC" border="true">
+     <gradient source="0x000000" dest="0xCC0000" angle="0" cycles="7" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="6" cols="1" cellWidth="348.0" cellHeight="49.0" border="true" id="primary">
+    <style>
+     <color background="0xCCFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="6" />
+    <cell id="0" border="true">
+     <p>Scarface</p>
+    </cell>
+    <cell id="0">
+     <p>Tarde de perros</p>
+    </cell>
+    <cell id="1">
+     <p>I Am Sam</p>
+    </cell>
+    <cell id="1">
+     <p>Grease II</p>
+    </cell>
+    <cell>
+     <p>Apocalipsis now</p>
+    </cell>
+    <cell id="2">
+     <p>Rocky</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="1" cellWidth="277.0" cellHeight="74.0" border="true" id="secondary">
+    <style>
+     <color background="0x99FFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="Pacino.jpg">
+     <p>Al Pacino</p>
+    </cell>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="Pfeiffer.jpg">
+     <p>Michelle Pfeiffer</p>
+    </cell>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="Stallone.jpg">
+     <p>Sylvester Stallone</p>
+    </cell>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="Cruise.jpg">
+     <p>Tom Cruise</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="Asociacion simple" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Escucha la melodia y relacionala con las peliculas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Bien !</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>Se te acabo el tiempo, proba de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="10" countDownTime="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="film.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xCC0000" angle="0" cycles="7" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="4" cellWidth="139.0" cellHeight="171.0" border="true" id="primary">
+    <style>
+     <color background="0xCCFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell imgAlign="left,top" avoidOverlapping="true" image="clavesol.jpg">
+     <style>
+      <font family="Arial" size="16" />
+      <color background="0xCCFFFF" />
+     </style>
+     <media type="PLAY_MIDI" level="1" file="ElExorcista.mid" />
+     <p>Que pelicula es ?</p>
+    </cell>
+    <cell imgAlign="left,top" avoidOverlapping="true" image="clavesol.jpg">
+     <media type="PLAY_MIDI" level="1" file="ElPadrino.mid" />
+     <p>Que pelicula es ?</p>
+    </cell>
+    <cell imgAlign="left,top" avoidOverlapping="true" image="clavesol.jpg">
+     <media type="PLAY_MIDI" level="1" file="LaPanteraRosa.mid" />
+     <p>Que pelicula es ?</p>
+    </cell>
+    <cell imgAlign="left,top" avoidOverlapping="true" image="clavesol.jpg">
+     <media type="PLAY_MIDI" level="1" file="MisionImposible.mid" />
+     <p>Que pelicula es ?</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="4" cellWidth="139.0" cellHeight="30.0" border="true" id="secondary">
+    <style>
+     <color background="0x99FFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <p>El Exorcista</p>
+    </cell>
+    <cell>
+     <p>El Padrino</p>
+    </cell>
+    <cell>
+     <p>La Pantera Rosa</p>
+    </cell>
+    <cell>
+     <p>Mision Imposible</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="Menu principal" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xFFFFFF">
+     <image name="film.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xCC0000" angle="0" cycles="7" />
+    </window>
+    <skin file="@empty.xml" />
+   </settings>
+   <cells rows="7" cols="1" cellWidth="406.0" cellHeight="73.0" border="true">
+    <style shadow="true" borderStroke="2.4" markerStroke="2.7">
+     <font family="Tahoma" size="26" />
+     <color background="0xCCFFFF" shadow="0xCCCCCC" alternative="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="7" />
+    <cell border="true">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Asociacion simple" />
+     <p>Asociacion simple </p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Asociacion compleja" />
+     <p>Asociacion compleja</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Actividad de exploracion" />
+     <p>Actividad de exploracion</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Actividad de identificacion" />
+     <p>Actividad de identificacion</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Puzzle" />
+     <p>Puzzle</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Sopa de proceres" />
+     <p>Sopa de letras</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Proceres Argentinos" />
+     <p>Memoria</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@memory.MemoryGame" name="Proceres Argentinos" code="">
+   <description />
+   <messages>
+    <cell txtAlign="left,middle" avoidOverlapping="true" border="true" image="Bandera.jpg" type="initial">
+     <style />
+     <p>Encontra a algunas de las figuras mas importantes de la historia argentina</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color foreground="0x006666" />
+     </style>
+     <media type="URL" level="1" file="http://www.portalplanetasedna.com.ar/proceres.htm" />
+     <p>Bravooo !!!, ahora animate a investigar un poco mas sobre ellos aqui http://www.portalplanetasedna.com.ar/proceres.htm</p>
+    </cell>
+    <cell type="finalError">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color foreground="0xCC0066" />
+     </style>
+     <p>hmmm, se te acabo el tiempo, intentalo de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="20" countDownTime="true" report="true" reportActions="false">
+    <container bgColor="0xFFFFFF">
+     <gradient source="0x00CCFF" dest="0xFFFFFF" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCFF" border="true">
+     <gradient source="0xFFFFFF" dest="0x33CCFF" angle="0" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="100.0" cellHeight="100.0" border="true" id="primary">
+    <style>
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="San Martin.jpg" />
+    <cell image="Belgrano.jpg" />
+    <cell image="Rosas.jpg" />
+    <cell image="Urquiza.jpg" />
+    <cell image="Guemes.jpg" />
+    <cell image="Sarmiento.jpg" />
+   </cells>
+   <cells rows="2" cols="3" cellWidth="94.0" cellHeight="88.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell>
+     <p>San Martin</p>
+    </cell>
+    <cell>
+     <p>Belgrano</p>
+    </cell>
+    <cell>
+     <p>Rosas</p>
+    </cell>
+    <cell>
+     <p>Urquiza</p>
+    </cell>
+    <cell>
+     <p>Güemes</p>
+    </cell>
+    <cell>
+     <p>Sarmiento</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="Puzzle" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+      <color background="0x00FFFF" />
+     </style>
+     <p>Ordena los bloques y encontrarás una sabia reflexion de San Martin sobre la educación</p>
+    </cell>
+    <cell txtAlign="left,middle" avoidOverlapping="true" type="final">
+     <style shadow="true">
+      <color background="0x009999" />
+     </style>
+     <media type="PLAY_MIDI" level="1" file="Lorenzo.mid" />
+     <p>Bravooo !!! asi que a estudiar para ser cada dia mas poderosos</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <color background="0xFF6600" />
+     </style>
+     <p>Hmmmm, intentalo de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://asociacionsanmartinianasannicolas.blogspot.com.ar/2009/03/frases-del-general-san-martin.html" dragCells="true" maxTime="10" countDownTime="false" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="San Martin.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="102.0" cellHeight="82.0" border="false">
+    <style>
+     <font family="Tahoma" size="20" />
+     <color background="0xFF9900" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell>
+     <style>
+      <font family="Tahoma" size="20" />
+      <color background="0xFF6600" />
+     </style>
+     <p>La biblioteca</p>
+    </cell>
+    <cell border="false">
+     <p>destinada a la</p>
+    </cell>
+    <cell border="false">
+     <p>educación universal,</p>
+    </cell>
+    <cell>
+     <p>es más</p>
+    </cell>
+    <cell>
+     <p>poderosa que</p>
+    </cell>
+    <cell>
+     <p>nuestros ejércitos.</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="Sopa de proceres" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" />
+      <color background="0xCCFFFF" shadow="0xCCCCCC" />
+     </style>
+     <p>Busca los nombres de seis proceres argentinos</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" />
+      <color background="0xCCFFFF" shadow="0xCCCCCC" />
+     </style>
+     <p>Bravooo !!!</p>
+    </cell>
+    <cell type="finalError">
+     <style shadow="true">
+      <font family="Arial" size="20" />
+      <color background="0xCCFFFF" shadow="0xCCCCCC" />
+     </style>
+     <p>Hmmm, se te acabo el tiempo, volve a intentarlo</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="20" countDownTime="true" report="true" reportActions="false">
+    <container bgColor="0xFFFFFF">
+     <image name="Bandera.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" transparent="true" border="false" />
+    <skin file="@blue.xml" />
+   </settings>
+   <textGrid rows="10" columns="10" cellWidth="20.0" cellHeight="20.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>**********</row>
+     <row>*S******R*</row>
+     <row>SARMIENTOB</row>
+     <row>*N******SE</row>
+     <row>*M******AL</row>
+     <row>*A******SG</row>
+     <row>URQUIZAN*R</row>
+     <row>*T*******A</row>
+     <row>*IGÜEMES*N</row>
+     <row>*N*******O</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">SANMARTIN</clue>
+    <clue id="1">ROSAS</clue>
+    <clue id="2">SARMIENTO</clue>
+    <clue id="3">BELGRANO</clue>
+    <clue id="4">URQUIZA</clue>
+    <clue id="5">GÜEMES</clue>
+   </clues>
+   <cells rows="3" cols="2" cellWidth="100.0" cellHeight="100.0" border="false" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell image="San Martin.jpg" />
+    <cell image="Rosas.jpg" />
+    <cell image="Sarmiento.jpg" />
+    <cell image="Belgrano.jpg" />
+    <cell image="Urquiza.jpg" />
+    <cell image="Guemes.jpg" />
+   </cells>
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="AVATAR.jpg" file="AVATAR.jpg" />
+  <media name="AVENGERS.jpg" file="AVENGERS.jpg" />
+  <media name="Bandera.jpg" file="Bandera.jpg" />
+  <media name="Belgrano.jpg" file="Belgrano.jpg" />
+  <media name="brando.jpg" file="brando.jpg" />
+  <media name="clavesol.jpg" file="clavesol.jpg" />
+  <media name="Cruise.jpg" file="Cruise.jpg" />
+  <media name="film.jpg" file="film.jpg" />
+  <media name="Guemes.jpg" file="Guemes.jpg" />
+  <media name="HARRY.jpg" file="HARRY.jpg" />
+  <media name="hepburn.jpg" file="hepburn.jpg" />
+  <media name="lewis.jpg" file="lewis.jpg" />
+  <media name="nicholson.jpg" file="nicholson.jpg" />
+  <media name="Pacino.jpg" file="Pacino.jpg" />
+  <media name="Pfeiffer.jpg" file="Pfeiffer.jpg" />
+  <media name="Rosas.jpg" file="Rosas.jpg" />
+  <media name="San Martin.jpg" file="San Martin.jpg" />
+  <media name="Sarmiento.jpg" file="Sarmiento.jpg" />
+  <media name="Stallone.jpg" file="Stallone.jpg" />
+  <media name="Streep.jpg" file="Streep.jpg" />
+  <media name="taylor.jpg" file="taylor.jpg" />
+  <media name="TITANIC.jpg" file="TITANIC.jpg" />
+  <media name="Urquiza.jpg" file="Urquiza.jpg" />
+  <media name="ElExorcista.mid" file="ElExorcista.mid" />
+  <media name="ElPadrino.mid" file="ElPadrino.mid" />
+  <media name="LaPanteraRosa.mid" file="LaPanteraRosa.mid" />
+  <media name="Lorenzo.mid" file="Lorenzo.mid" />
+  <media name="MisionImposible.mid" file="MisionImposible.mid" />
+ </mediaBag>
+</JClicProject>
+

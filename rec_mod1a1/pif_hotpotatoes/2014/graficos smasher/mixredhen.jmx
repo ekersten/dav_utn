@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jmix-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>cecilia</dc:creator>
+    <dc:title>What did the hen say at the end? &amp;#x003C;img src=&quot;hen and chickens.jpg&quot; alt=&quot;hen and chickens.jpg&quot; title=&quot;hen and chickens&quot; width=&quot;180&quot; height=&quot;135&quot; style=&quot;display: block; margin-left: auto; margin-right: auto; text-align: center;&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>6</version>
+
+<data>
+<title>What did the hen say at the end? &amp;#x003C;img src=&quot;hen and chickens.jpg&quot; alt=&quot;hen and chickens.jpg&quot; title=&quot;hen and chickens&quot; width=&quot;180&quot; height=&quot;135&quot; style=&quot;display: block; margin-left: auto; margin-right: auto; text-align: center;&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</title>
+
+<timer><seconds>600</seconds><include-timer>0</include-timer></timer>
+
+<reading>
+<include-reading>0</include-reading>
+<reading-title></reading-title>
+<reading-text></reading-text>
+
+</reading>
+
+<jumbled-order-exercise><main-order><segment>No</segment>
+<segment>,</segment>
+<segment>you</segment>
+<segment>won&apos;t</segment>
+<segment>,</segment>
+<segment>I</segment>
+<segment>shall</segment>
+<segment>eat</segment>
+<segment>it</segment>
+<segment>myself</segment>
+<segment>.</segment>
+<segment>Cluck</segment>
+<segment>!</segment>
+<segment>cluck</segment>
+<segment>!</segment>
+</main-order><alternate>No, you won&apos;t</alternate>
+<alternate>I shall eat</alternate>
+<alternate></alternate>
+</jumbled-order-exercise>
+</data>
+
+<hotpot-config-file>
+<jmix>
+<exercise-subtitle></exercise-subtitle>
+<instructions>Put the parts in order to form the sentence that the Red Hen said. When you think your answer is correct, click on &quot;Check&quot; to check your answer. If you get stuck, click on &quot;Hint&quot; to find out the next correct part.</instructions>
+<guess-correct>Correct!</guess-correct>
+<guess-incorrect>Sorry! Try again.</guess-incorrect>
+<this-much-correct>This much of your answer is correct:</this-much-correct>
+<next-correct-part>The next correct part is: </next-correct-part>
+<click-to-add>Click on words to add them to the sentence.</click-to-add>
+<also-correct>These answers are also correct:</also-correct>
+<include-undo>1</include-undo>
+<include-restart>1</include-restart>
+<include-hint>1</include-hint>
+<next-ex-url></next-ex-url>
+<send-email>0</send-email>
+<capitalize-first-letter>0</capitalize-first-letter>
+<separate-javascript-file>0</separate-javascript-file>
+</jmix>
+
+<global>
+
+<times-up>Your time is over!</times-up>
+<check-caption>Check</check-caption>
+<ok-caption>OK</ok-caption>
+<undo-caption>Undo</undo-caption>
+<hint-caption>Hint</hint-caption>
+<restart-caption>Restart</restart-caption>
+<your-score-is>Your score is </your-score-is>
+<show-also-correct>1</show-also-correct>
+<process-for-rtl>0</process-for-rtl>
+<include-scorm-12>0</include-scorm-12>
+<next-ex-caption>Siguiente</next-ex-caption>
+<back-caption>Anterior</back-caption>
+<contents-caption>Index</contents-caption>
+<include-next-ex>0</include-next-ex>
+<include-contents>0</include-contents>
+<include-back>0</include-back>
+<contents-url>contents.htm</contents-url>
+<contents-url>contents.htm</contents-url>
+<graphic-url></graphic-url>
+<font-face>Geneva,Arial,sans-serif</font-face>
+<font-size>small</font-size>
+<page-bg-color>#808000</page-bg-color>
+<title-color>#ffff00</title-color>
+<ex-bg-color>#ffffcc</ex-bg-color>
+<text-color>#000000</text-color>
+<link-color>#0000FF</link-color>
+<vlink-color>#0000CC</vlink-color>
+<nav-bar-color>#00ff80</nav-bar-color>
+<formmail-url>http://yourserver.com/cgi-bin/FormMail.pl</formmail-url>
+<email>you@yourserver.com</email>
+<name-please>Please enter your name:</name-please>
+<user-string-1>one</user-string-1>
+<user-string-2>two</user-string-2>
+<user-string-3>three</user-string-3>
+<header-code></header-code>
+</global>
+</hotpot-config-file>
+</hotpot-jmix-file>

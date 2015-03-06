@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jcross-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>trostbach</dc:creator>
+    <dc:title>Libro: origenes</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>6</version>
+
+<data>
+<title>Libro: origenes</title>
+
+
+
+<timer><seconds>600</seconds><include-timer>1</include-timer></timer><reading>
+<include-reading>0</include-reading>
+<reading-title></reading-title>
+<reading-text></reading-text>
+
+</reading>
+
+<crossword>
+<grid><row><cell>C</cell><cell>U</cell><cell>N</cell><cell>E</cell><cell>I</cell><cell>F</cell><cell>O</cell><cell>R</cell><cell>M</cell><cell>E</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>I</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>R</cell><cell>O</cell><cell>S</cell><cell>E</cell><cell>T</cell><cell>T</cell><cell>A</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>&amp;#x00CD;</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>L</cell><cell></cell><cell></cell><cell>Q</cell><cell>U</cell><cell>I</cell><cell>P</cell><cell>U</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>I</cell><cell></cell><cell>A</cell><cell></cell><cell></cell><cell></cell><cell>I</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>C</cell><cell>A</cell><cell>L</cell><cell>&amp;#x00CD;</cell><cell>M</cell><cell>A</cell><cell>C</cell><cell>O</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>O</cell><cell></cell><cell>E</cell><cell></cell><cell></cell><cell></cell><cell>T</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>J</cell><cell></cell><cell></cell><cell></cell><cell>O</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>A</cell><cell></cell><cell></cell><cell></cell><cell>G</cell><cell>&amp;#x00D3;</cell><cell>T</cell><cell>I</cell><cell>C</cell><cell>A</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>N</cell><cell></cell><cell></cell><cell></cell><cell>R</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>D</cell><cell></cell><cell></cell><cell></cell><cell>A</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>R</cell><cell></cell><cell></cell><cell></cell><cell>M</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>&amp;#x00CD;</cell><cell></cell><cell></cell><cell></cell><cell>A</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>A</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></grid>
+
+<clues><item><word>CUNEIFORME</word><def>Primer sistema de escritura antiguo.</def></item><item><word>ROSETTA</word><def>Fragmento (piedra) de una antigua estela egipcia, inscripta con un decreto publicado en tres escrituras distintas: jerogl&amp;#x00ED;ficos, dem&amp;#x00F3;tico y griego antiguo. Esta piedra facilit&amp;#x00F3; la clave para el desciframiento de los jerogl&amp;#x00ED;ficos egipcios.&amp;#x003C;img src=&quot;rosetta 2.jpg&quot; alt=&quot;rosetta 2.jpg&quot; title=&quot;rosetta 2&quot; width=&quot;150&quot; height=&quot;133&quot; style=&quot;float: left;&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</def></item><item><word>QUIPU</word><def>Sistema mnemot&amp;#x00E9;cnico que consist&amp;#x00ED;a en cuerdas de lana o algod&amp;#x00F3;n y nudos de uno o varios colores desarrollado por las civilizaciones andinas. &amp;#x003C;img src=&quot;quipu 2.jpg&quot; alt=&quot;quipu 2.jpg&quot; title=&quot;quipu 2&quot; width=&quot;99&quot; height=&quot;116&quot; style=&quot;float: left;&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</def></item><item><word>CAL&amp;#x00CD;MACO</word><def>Primer bibliotecario de la biblioteca de Alejandr&amp;#x00ED;a.</def></item><item><word>G&amp;#x00D3;TICA</word><def>Tipo de letra que caracteriza al medioevo.&amp;#x003C;img src=&quot;letras goticas.jpg&quot; alt=&quot;letras goticas.jpg&quot; title=&quot;letras goticas&quot; width=&quot;96&quot; height=&quot;116&quot; style=&quot;float: left;&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</def></item><item><word>CIR&amp;#x00CD;LICO</word><def>Alfabeto basado en el alfabeto griego con caracteres del alfabeto glagol&amp;#x00ED;tico por sonidos exclusivamente eslavos, inventado por los santos Cirilo y Metodio.&amp;#x003C;img src=&quot;CIRILICO.jpg&quot; alt=&quot;CIRILICO.jpg&quot; title=&quot;CIRILICO&quot; width=&quot;158&quot; height=&quot;120&quot; style=&quot;float: left;&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</def></item><item><word>PICTOGRAMA</word><def>S&amp;#x00ED;mbolos, dibujos y grabados que representan objetos.</def></item><item><word>ALEJANDR&amp;#x00CD;A</word><def>Biblioteca de la antig&amp;#x00FC;edad, en su &amp;#x00E9;poca la m&amp;#x00E1;s grande del mundo. Situada Egipto, lleg&amp;#x00F3; a albergar hasta 900.000 manuscritos.&amp;#x003C;img src=&quot;BCA ALEJANDRIA.jpg&quot; alt=&quot;BCA ALEJANDRIA.jpg&quot; title=&quot;BCA ALEJANDRIA&quot; width=&quot;175&quot; height=&quot;116&quot; style=&quot;float: left;&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</def></item></clues>
+</crossword>
+</data>
+
+<hotpot-config-file>
+<jcross>
+<exercise-subtitle>Crucigrama</exercise-subtitle>
+<instructions>Para ver las definiciones de las palabras, haz click en el n&amp;#x00FA;mero. Escribe la palabra frente a la definici&amp;#x00F3;n y pulsa en el bot&amp;#x00F3;n Insertar.
+Si tuvieras dudas, ir al bot&amp;#x00F3;n Pista. Pero cuidado cada vez que pidas una pista, disminuye tu puntuaci&amp;#x00F3;n.
+Cuando termines, haz click en el bot&amp;#x00F3;n Verificar.</instructions>
+<guess-correct>&amp;#x00A1;Correcto! Bien hecho</guess-correct>
+<guess-incorrect></guess-incorrect>
+<clues-across>Horizontal</clues-across>
+<clues-down>Vertical</clues-down>
+<next-correct-letter></next-correct-letter>
+<include-keypad>0</include-keypad>
+<include-clue-list>1</include-clue-list>
+<enter-caption>Insertar</enter-caption>
+<include-hint>1</include-hint>
+<case-sensitive>0</case-sensitive>
+<next-ex-url>nextpage.htm</next-ex-url>
+<send-email>0</send-email>
+<separate-javascript-file>0</separate-javascript-file>
+</jcross>
+
+<global>
+<your-score-is>Su puntuaci&amp;#x00F3;n es: </your-score-is>
+<check-caption>Comprobar</check-caption>
+<ok-caption>Correcto</ok-caption>
+<hint-caption>Pista</hint-caption>
+<keypad-characters></keypad-characters>
+<process-for-rtl>0</process-for-rtl>
+<include-scorm-12>0</include-scorm-12>
+<next-ex-caption>=&amp;#x003E;</next-ex-caption>
+<back-caption>&amp;#x003C;=</back-caption>
+<contents-caption>Index</contents-caption>
+<include-next-ex>1</include-next-ex>
+<include-contents>1</include-contents>
+<include-back>0</include-back>
+<contents-url>contents.htm</contents-url>
+<graphic-url></graphic-url>
+<font-face>Geneva,Arial,sans-serif</font-face>
+<font-size>small</font-size>
+<page-bg-color>#ff80ff</page-bg-color>
+<title-color>#400080</title-color>
+<ex-bg-color>#c0c0c0</ex-bg-color>
+<text-color>#ff0080</text-color>
+<link-color>#0000FF</link-color>
+<vlink-color>#0000CC</vlink-color>
+<nav-bar-color>#8000ff</nav-bar-color>
+<formmail-url>http://yourserver.com/cgi-bin/FormMail.pl</formmail-url>
+<email>you@yourserver.com</email>
+<name-please>Please enter your name:</name-please>
+<user-string-1>one</user-string-1>
+<user-string-2>two</user-string-2>
+<user-string-3>three</user-string-3>
+<header-code></header-code>
+</global>
+</hotpot-config-file>
+</hotpot-jcross-file>

@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="mercedesm" version="0.1.3">
+ <settings>
+  <title>Figuras Geométricas y Teoremas</title>
+  <revision description="created" date="7/8/14" />
+  <author name="MARTÍNEZ, María de las Mercedes" mail="mercedes.martínez@atlantida.edu.ar" rol="Profesora" organization="EES N° 1 (VILLA GESELL)" />
+  <description>
+   <p>El proyecto apunta a alumnos del 1° año de la Secundaria Basica, para lograr interesarlos en los temas a desarrollar durante el trimestre</p>
+  </description>
+  <descriptors area="Matemática" level="Secundaria básica, 1° año" />
+ </settings>
+ <sequence>
+  <item id="inicio" name="Figuras geometricas" />
+  <item id="Nombre de las figuras" name="¿Cómo se llaman?" />
+  <item id="sopa de letras" name="sopafigus" />
+  <item id="identificacion de triangulos" name="¿Cuantos lados tienen?" />
+  <item id="tipo de triángulos" name="Segun sus lados" />
+  <item id="clasificación de triángulos" name="Según sus..." />
+  <item id="Teoréma de Pitágoras" name="rellenar agujeros con lista" />
+ </sequence>
+ <activities>
+  <activity class="@puzzles.DoublePuzzle" name="Figuras geometricas" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Cambria" size="22" bold="true" italic="true" />
+      <color foreground="0x660066" background="0xFFFFFF" />
+     </style>
+     <p>!!!Vamos a encontrar figuras!!!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Book Antiqua" size="26" bold="true" />
+      <color foreground="0x009999" />
+     </style>
+     <p>¡¡¡Bravo!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="4" cols="4" border="true" image="9811194-color-geometrical-figures-a-dark-seamless-background-resized.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="4" rows="4" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.Identify" name="Segun sus lados">
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x0000CC" background="0xFF33FF" />
+     </style>
+     <p>¿Cuál no es un triángulo?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0x66FFFF" />
+     </style>
+     <p>Los triángulos tienen 3 lados</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="i01-9811194-color-geometrical-figures-a-dark-seamless-background.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+   </settings>
+   <cells rows="2" cols="2" cellWidth="250.0" cellHeight="130.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color foreground="0xFFFFFF" background="0x000000" alternative="0x99FFFF" border="0xFF00FF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell id="1" image="isosceles 1.jpg">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="escaleno.jpg">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="isosceles.jpg">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="i01-cuadrado 1.jpg">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="2" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <cell txtAlign="middle,bottom" image="isosceles 1.jpg">
+     <style>
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" alternative="0x000000" />
+     </style>
+     <p>Isósceles: tiene dos lados iguales</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="escaleno.jpg">
+     <p>Escaleno: los 3 lados distintos</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="isosceles.jpg">
+     <p>Equilatero: los 3 lados iguales</p>
+    </cell>
+    <cell image="i01-cuadrado 1.jpg">
+     <style>
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" alternative="0x000000" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Según sus..." code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="BatangChe" size="24" bold="true" />
+      <color background="0x6666FF" />
+     </style>
+     <p>Relacione según corresponda</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial Black" size="24" bold="true" />
+      <color background="0x990099" />
+     </style>
+     <p>¡Muy bien!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="pregunta.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCC00CC" border="true" />
+   </settings>
+   <cells rows="3" cols="2" cellWidth="150.0" cellHeight="60.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Book Antiqua" size="22" bold="true" />
+     <color background="0xFFCCCC" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell id="1">
+     <p>RECTO</p>
+    </cell>
+    <cell id="0">
+     <p>EQUILATERO</p>
+    </cell>
+    <cell id="0">
+     <p>ISÓSCELES</p>
+    </cell>
+    <cell id="1">
+     <p>ACUTÁNGULO</p>
+    </cell>
+    <cell id="0">
+     <p>ESCALENO</p>
+    </cell>
+    <cell id="1">
+     <p>OBTUSÁNGULO</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="1" cellWidth="140.0" cellHeight="100.0" border="true" id="secondary">
+    <style>
+     <font family="Arial Narrow" size="17" bold="true" />
+     <color background="0x00FF99" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell>
+     <p>Según sus lados</p>
+    </cell>
+    <cell>
+     <p>Según sus ángulos</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="rellenar agujeros con lista" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x66FF00">
+     <image name="9811194-color-geometrical-figures-a-dark-seamless-background-resized.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true">
+     <size width="797" height="300" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" background="0xFFFFFF" italic="false" bold="false" family="Arial" tabWidth="12" size="11" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Teorema de </text>
+      <target>
+       <answer>Pitágoras</answer>
+       <optionList>
+        <option>Thales</option>
+        <option>Coseno</option>
+        <option>Seno</option>
+        <option>Pitágoras</option>
+       </optionList>
+       <text>Pitágoras</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Hace años, un hombre llamado Pitágoras descubrió un hecho asombroso sobre </text>
+      <target>
+       <answer>triángulos</answer>
+       <optionList>
+        <option>cuadriláteros</option>
+        <option>triángulos</option>
+        <option>poliédros</option>
+        <option>pirámides</option>
+       </optionList>
+       <text>triángulos</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">: Si el triángulo tiene un ángulo recto (90°),  y pones un cuadrado sobre cada uno de sus lados, entonces ¡el cuadrado más grande tiene exactamente la misma área que los otros dos cuadrados juntos! 	</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">El lado más largo del triángulo se llama "</text>
+      <target>
+       <answer>hipotenusa</answer>
+       <optionList>
+        <option>cateto</option>
+        <option>hipotenusa</option>
+        <option>apotema</option>
+        <option>base</option>
+       </optionList>
+       <text>hipotenusa</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">", así que la definición formal es:</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">En un triángulo rectángulo el cuadrado de la hipotenusa es igual a la suma de los cuadrados de los otros dos lados (llamamos "triángulo </text>
+      <target>
+       <answer>rectángulo</answer>
+       <optionList>
+        <option>obtusángulo</option>
+        <option>acutángulo</option>
+        <option>rectángulo</option>
+        <option>triángulo</option>
+       </optionList>
+       <text>rectángulo</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">" a un triángulo con un ángulo recto)</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text bold="true">Entonces, el cuadrado de a (a²) más el cuadrado de b (b²) es igual al cuadrado de c (c²):</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">                                                  </text>
+      <text bold="true" size="14">   a2 + b2 = c2</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="sopafigus" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Book Antiqua" size="24" bold="true" italic="true" />
+      <color foreground="0xCC0033" background="0xFFFFFF" />
+     </style>
+     <p>Buscar las figuras</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Book Antiqua" size="26" bold="true" />
+      <color foreground="0xCC00CC" background="0xFFFFFF" />
+     </style>
+     <p>Muy bien</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Book Antiqua" size="24" bold="true" italic="true" />
+      <color foreground="0x009900" />
+     </style>
+     <p>Vamos otra vez</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="60" countDownTime="false" report="true" reportActions="false">
+    <container bgColor="0xCC00CC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <textGrid rows="10" columns="10" cellWidth="20.0" cellHeight="20.0" border="false">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>OLUGNATCER</row>
+     <row>O********O</row>
+     <row>L********M</row>
+     <row>U*CIRCULOB</row>
+     <row>G********O</row>
+     <row>N*ODARDAUC</row>
+     <row>A*********</row>
+     <row>I*********</row>
+     <row>R*********</row>
+     <row>TONOGATNEP</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">CIRCULO</clue>
+    <clue id="1">RECTANGULO</clue>
+    <clue id="2">CUADRADO</clue>
+    <clue id="3">PENTAGONO</clue>
+    <clue id="4">ROMBO</clue>
+    <clue id="5">TRIANGULO</clue>
+   </clues>
+   <cells rows="3" cols="2" cellWidth="70.0" cellHeight="50.0" border="false" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell image="circulo 1.jpg">
+     <style>
+      <font family="Book Antiqua" size="26" bold="true" />
+      <color foreground="0xCC0099" background="0xFFFFFF" border="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="rectangulo 1.jpg">
+     <style>
+      <font family="Book Antiqua" size="26" bold="true" />
+      <color foreground="0xCC0099" background="0xFFFFFF" border="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="cuadrado 1.jpg">
+     <style>
+      <font family="Book Antiqua" size="26" bold="true" />
+      <color foreground="0xCC0099" background="0xFFFFFF" border="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="pentagono.jpg">
+     <style>
+      <font family="Book Antiqua" size="26" bold="true" />
+      <color foreground="0xCC0099" background="0xFFFFFF" border="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="rombo 1.jpg">
+     <style>
+      <font family="Book Antiqua" size="26" bold="true" />
+      <color foreground="0xCC0099" background="0xFFFFFF" border="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="triangulo 1.jpg">
+     <style>
+      <font family="Book Antiqua" size="26" bold="true" />
+      <color foreground="0xCC0099" background="0xFFFFFF" border="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.Explore" name="¿Cuantos lados tienen?" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="20" bold="true" />
+      <color background="0x99FF99" />
+     </style>
+     <p>¿Cuantos lados iguales tiene?</p>
+    </cell>
+    <cell type="final">
+     <style />
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x66FFFF">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xCC00CC" border="true" />
+   </settings>
+   <cells rows="3" cols="1" cellWidth="120.0" cellHeight="40.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Book Antiqua" size="20" bold="true" />
+     <color background="0xFF6666" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell id="0">
+     <p>ESCALENO</p>
+    </cell>
+    <cell id="1">
+     <p>ISÓSCELES</p>
+    </cell>
+    <cell id="2">
+     <p>EQUILÁTERO</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="120.0" cellHeight="40.0" border="true" id="secondary">
+    <style>
+     <font family="Batang" size="20" bold="true" />
+     <color background="0x0099FF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="arpa.mp3" />
+     <p>3 lados iguales</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="organo.mp3" />
+     <p>2 lados iguales</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="timbales.mp3" />
+     <p>3 lados desiguales</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="¿Cómo se llaman?" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Book Antiqua" size="24" bold="true" italic="true" />
+      <color foreground="0x0000FF" background="0xFFFFFF" />
+     </style>
+     <p>¿Te acordas del nombre?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Book Antiqua" size="26" bold="true" />
+      <color foreground="0xCC0099" background="0xFFFFFF" />
+     </style>
+     <p>Bravoooo</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0099FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="150.0" cellHeight="100.0" border="true" id="primary">
+    <style>
+     <color alternative="0x990099" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="circulo 1.jpg">
+     <style>
+      <font family="Book Antiqua" size="26" bold="true" />
+      <color foreground="0x009999" background="0xFFFFFF" border="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="rectangulo 1.jpg">
+     <style>
+      <font family="Book Antiqua" size="26" bold="true" />
+      <color foreground="0x009999" background="0xFFFFFF" border="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="cuadrado 1.jpg">
+     <style>
+      <font family="Book Antiqua" size="26" bold="true" />
+      <color foreground="0x009999" background="0xFFFFFF" border="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="pentagono.jpg">
+     <style>
+      <font family="Book Antiqua" size="26" bold="true" />
+      <color foreground="0x009999" background="0xFFFFFF" border="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="rombo 1.jpg">
+     <style>
+      <font family="Book Antiqua" size="26" bold="true" />
+      <color foreground="0x009999" background="0xFFFFFF" border="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="triangulo 1.jpg">
+     <style>
+      <font family="Book Antiqua" size="26" bold="true" />
+      <color foreground="0x009999" background="0xFFFFFF" border="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="50.0" cellHeight="30.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell>
+     <style>
+      <font family="Book Antiqua" size="26" bold="true" />
+      <color foreground="0x009999" background="0xFFFFFF" alternative="0x00CCCC" border="0xFFFFFF" />
+     </style>
+     <p>círculo</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Book Antiqua" size="26" bold="true" />
+      <color foreground="0x990099" background="0xFFFFFF" alternative="0x9900CC" border="0xFFFFFF" />
+     </style>
+     <p>rectángulo</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Book Antiqua" size="26" bold="true" />
+      <color foreground="0x990099" background="0xFFFFFF" alternative="0xFF3333" border="0xFFFFFF" />
+     </style>
+     <p>cuadrado</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Book Antiqua" size="26" bold="true" />
+      <color foreground="0x990099" background="0xFFFFFF" alternative="0x999900" border="0xFFFFFF" />
+     </style>
+     <p>pentágono</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Book Antiqua" size="26" />
+      <color foreground="0x990099" background="0xFFFFFF" alternative="0xFF9933" border="0xFFFFFF" />
+     </style>
+     <p>rombo</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Book Antiqua" size="26" bold="true" />
+      <color foreground="0x990099" background="0xFFFFFF" alternative="0x00CCCC" border="0xFFFFFF" />
+     </style>
+     <p>triángulo</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="9811194-color-geometrical-figures-a-dark-seamless-background-resized.jpg" file="9811194-color-geometrical-figures-a-dark-seamless-background-resized.jpg" />
+  <media name="9811194-color-geometrical-figures-a-dark-seamless-background.jpg" file="i01-9811194-color-geometrical-figures-a-dark-seamless-background.jpg" />
+  <media name="articles-26263_recurso_jpg.jpg" file="i01-articles-26263_recurso_jpg.jpg" />
+  <media name="circulo 1.jpg" file="circulo 1.jpg" />
+  <media name="cuadrado 1.jpg" file="cuadrado 1.jpg" />
+  <media name="escaleno.jpg" file="i01-escaleno.jpg" />
+  <media name="i01-9811194-color-geometrical-figures-a-dark-seamless-background.jpg" file="i02-9811194-color-geometrical-figures-a-dark-seamless-background.jpg" />
+  <media name="i01-cuadrado 1.jpg" file="i01-cuadrado 1.jpg" />
+  <media name="i01-escaleno.jpg" file="i02-escaleno.jpg" />
+  <media name="i01-isosceles 1.jpg" file="i02-isosceles 1.jpg" />
+  <media name="i01-isosceles.jpg" file="i02-isosceles.jpg" />
+  <media name="i02-9811194-color-geometrical-figures-a-dark-seamless-background.jpg" file="i03-9811194-color-geometrical-figures-a-dark-seamless-background.jpg" />
+  <media name="images.jpg" file="i01-images.jpg" />
+  <media name="isosceles 1.jpg" file="i01-isosceles 1.jpg" />
+  <media name="isosceles.jpg" file="i01-isosceles.jpg" />
+  <media name="pentagono.jpg" file="pentagono.jpg" />
+  <media name="pregunta.jpg" file="i01-pregunta.jpg" />
+  <media name="rectangulo 1.jpg" file="rectangulo 1.jpg" />
+  <media name="rectangulo.jpg" file="i01-rectangulo.jpg" />
+  <media name="rombo 1.jpg" file="rombo 1.jpg" />
+  <media name="triangulo 1.jpg" file="triangulo 1.jpg" />
+  <media name="arpa.mp3" file="i01-arpa.mp3" />
+  <media name="organo.mp3" file="i01-organo.mp3" />
+  <media name="timbales.mp3" file="i01-timbales.mp3" />
+  <media name="trianguloTRIANG.mp3" file="i01-trianguloTRIANG.mp3" />
+ </mediaBag>
+</JClicProject>
+

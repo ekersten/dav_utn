@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>ejes</title></head>
+<body BGCOLOR="#eeeeee">
+<p align="center">
+<FONT size=+2>Macro: flecha</FONT><br>tipo 3D
+</p>
+<p align="center">
+<applet name="flecha"
+        code="Descartes.class"
+        codebase="../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=240 height=200>
+   <param name="nombre" value="flecha">
+   <param name="Versi&oacute;n" value="3.31">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="R3='si' id='Principal' escala='96' O.y='40' despl_imagen='arr-izq' fondo='blanco' despliegue='orden'">
+   <param name="A_00" value="id='longitud' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_01" value="id='punta' expresi&oacute;n='0.1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_02" value="id='rojo' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_03" value="id='verde' expresi&oacute;n='0.5' evaluar='una-sola-vez' constante='si'">
+   <param name="A_04" value="id='azul' expresi&oacute;n='0.25' evaluar='una-sola-vez' constante='si'">
+   <param name="S_00" value="espacio='Principal' tipo='segmento' expresi&oacute;n='(0,0,0)(0,longitud,0)' color='gris' cortar='si'">
+   <param name="S_01" value="espacio='Principal' tipo='cono' expresi&oacute;n='Punta' rotini='(90,0,0)' posini='(0,longitud,0)' color='(rojo,verde,azul)' color_reverso='(rojo/2,verde/2,azul/2)' aristas='si' Nu='4' Nv='1' ancho='punta' largo='punta' alto='punta'">
+</applet>
+</p>
+<p align="center">
+Esta escena se usa para generar el macro.
+</p>
+<p align="center">
+<applet name="mi_flecha"
+        code="Descartes.class"
+        codebase="../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=360 height=240>
+   <param name="nombre" value="mi_flecha">
+   <param name="Versi&oacute;n" value="3.31">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="R3='si' id='Principal' escala='96' despl_imagen='arr-izq' fondo='blanco' despliegue='orden'">
+   <param name="C_00" value="tipo='num&eacute;rico' id='m_e.longitud' interfaz='pulsador' regi&oacute;n='sur' espacio='Principal' valor='1' nombre='m_e.longitud' visible='si' acci&oacute;n=' '">
+   <param name="C_01" value="tipo='num&eacute;rico' id='m_e.punta' interfaz='pulsador' regi&oacute;n='sur' valor='0.1' nombre='m_e.punta' incr='0.01' visible='si'">
+   <param name="A_00" value="id='m_e.rojo' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_01" value="id='m_e.verde' expresi&oacute;n='0.5' evaluar='una-sola-vez' constante='si'">
+   <param name="A_02" value="id='m_e.azul' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="S_00" value="espacio='Principal' tipo='macro' nombre='m_e' expresi&oacute;n='flecha' rotini='(0,0,-30)'">
+</applet>
+</p>
+<p align="center">
+Esta escena es una aplicación del macro que muestra sus parámetros.
+</p>
+<hr>
+
+<p><font size="2" face="Arial"><strong><cite><dfn><samp><tt>Autor: José Luis Abreu León</tt></samp></dfn></cite></strong></font></p>
+
+</body>
+</html>
+

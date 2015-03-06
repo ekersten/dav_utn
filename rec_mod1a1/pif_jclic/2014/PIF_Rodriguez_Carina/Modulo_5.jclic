@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="Modulo_5" version="0.1.3">
+ <settings>
+  <title>proyectofinal</title>
+  <revision description="created" date="7/30/14" />
+  <author name="Carina Rodriguez" mail="carinadvrodriguez@yahoo.com.ar" rol="profesor" organization="EET nro 1 Muñiz" />
+  <description>
+   <p>Literatura. Cosmovision mitica y epica.</p>
+  </description>
+  <descriptors area="Literatura" level="Ciclo Superior">4to año</descriptors>
+ </settings>
+ <sequence>
+  <item id="Inicio mitico- Epico" name="Actividad caballeros">
+   <jump tag="mitico" id="forward" />
+  </item>
+  <item id="mitico" name="monstruos miticos" delay="2" />
+  <item id="mitico 2" name="juego de memoria sobre monstruos miticos" delay="2" />
+  <item id="mitico 3" name="sopa de heroes miticos" delay="2" />
+  <item id="Epico" name="caballeros" delay="2" />
+  <item id="Epico 2" name="Caballeros 2" delay="2" />
+  <item id="Epico 3" name="Act.exploracion caballeros" delay="2" />
+  <item id="epico 4" name="Act.identificacion caballeros" delay="2" />
+  <item id="Teoria 1" name="ordenar elementos. El relato epico" delay="2" />
+  <item id="Teoria 2" name="Rellena gujeros: El relato épico" delay="2" />
+  <item id="Teoria 3" name="completar texto: el relato epico" delay="3" />
+  <item id="Teoria 4" name="Ordenar palabras. El relato epico." delay="3" />
+  <item id="Teoria 5" name="rellenaragujeros,incognitas,primerapalabra" delay="2" />
+  <item id="Teoria 6" name="relltexto, listaopciones" delay="4">
+   <jump tag="Inicio mitico- Epico" id="forward" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@panels.Explore" name="Act.exploracion caballeros" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Descubre los sonidos de la epoca medieval</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="images54363.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0x9999FF" angle="174" cycles="2" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="3" cols="1" cellWidth="100.0" cellHeight="80.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color foreground="0xFFFFFF" background="0x666666" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="aud_1y8xwqtu7tngd15j.mp3" />
+     <p>Caballos</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="aud_i8lryat82slgvu9h.mp3" />
+     <p>Espadas</p>
+    </cell>
+    <cell id="2">
+     <media type="PLAY_AUDIO" level="1" file="mDDUwFyfFy43.128.mp3" autoStart="true" />
+     <p>Musica medieval</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="3" cellWidth="80.0" cellHeight="80.0" border="true" id="secondary">
+    <style>
+     <color background="0x009999" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell>
+     <p>Mesnada</p>
+    </cell>
+    <cell>
+     <p>Duelo de espada</p>
+    </cell>
+    <cell>
+     <p>Siglo XII</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.Identify" name="Act.identificacion caballeros" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>¿Qué conceptos NO pertenecen a la Edad Media?</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Excelente!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>Piensalo bien</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x330000" dest="0x666666" angle="19" cycles="4" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x666666" dest="0x9999FF" angle="174" cycles="2" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="3" cols="4" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="24" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="3" />
+    <cell id="0">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Vasallaje</p>
+    </cell>
+    <cell id="0">
+     <p>Economia Agraria</p>
+    </cell>
+    <cell id="1">
+     <p>Aedos</p>
+    </cell>
+    <cell id="0">
+     <p>Caballeros</p>
+    </cell>
+    <cell id="0">
+     <p>Feudalismo</p>
+    </cell>
+    <cell id="1">
+     <p>Renacimiento</p>
+    </cell>
+    <cell id="0">
+     <p>Romanico</p>
+    </cell>
+    <cell id="0">
+     <p>Juglares</p>
+    </cell>
+    <cell id="1">
+     <p>Capitalismo</p>
+    </cell>
+    <cell id="0">
+     <p>Teocentrismo</p>
+    </cell>
+    <cell id="1">
+     <p>Burguesia</p>
+    </cell>
+    <cell id="0">
+     <p>Sociedad estamental</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="4" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="3" />
+    <cell />
+    <cell />
+    <cell>
+     <p>Artistas griegos</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell>
+     <p>Movimiento cultural del s. XV</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell>
+     <p>Sistema economico actual</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>Clase social capitalista</p>
+    </cell>
+    <cell />
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="Actividad caballeros" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Comic Sans MS" size="17" />
+      <color background="0xFF9999" />
+     </style>
+     <p>Bienvenido/a! Selecciona la actividad Puzzle para comenzar la secuencia</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Muy bien lo lograste!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>No!</p>
+    </cell>
+   </messages>
+   <settings margin="5" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x0000CC" dest="0x000000" angle="19" cycles="2" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFF0000" dest="0xFFFF66" angle="227" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="7" cols="2" cellWidth="188.0" cellHeight="63.0" border="true">
+    <style transparent="true">
+     <color foreground="0xFFFFFF" />
+     <gradient source="0xFFFFFF" dest="0x33CCFF" angle="244" cycles="3" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="7" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" />
+      <color background="0x000000" />
+      <gradient source="0xFFFFFF" dest="0x0099FF" angle="183" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="caballeros" />
+     <p>Asociacion Simple</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" />
+      <color background="0x000000" />
+      <gradient source="0xFFFFFF" dest="0x0099CC" angle="183" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Caballeros 2" />
+     <p>Asociacion compleja</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" />
+      <color background="0x000000" />
+      <gradient source="0xFFFFFF" dest="0x0099CC" angle="183" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Act.exploracion caballeros" />
+     <p>Actividad de exploracion</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" />
+      <color background="0x000000" />
+      <gradient source="0xFFFFFF" dest="0x0099CC" angle="183" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Act.identificacion caballeros" />
+     <p>Actividad de identificacion</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <gradient source="0xFFFFFF" dest="0x0099CC" angle="244" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="monstruos miticos" />
+     <p>Puzzle</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+      <gradient source="0xFFFFFF" dest="0x0099CC" angle="244" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="juego de memoria sobre monstruos miticos" />
+     <p>Juego de memoria</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+      <gradient source="0xFFFFFF" dest="0x0099CC" angle="244" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="sopa de heroes miticos" />
+     <p>Sopa de letras</p>
+    </cell>
+    <cell>
+     <style>
+      <gradient source="0xFFFFFF" dest="0x33CCFF" angle="197" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="completar texto: el relato epico" />
+     <p> completar el texto</p>
+    </cell>
+    <cell>
+     <style>
+      <gradient source="0xFFFFFF" dest="0x33CCFF" angle="197" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Ordenar palabras. El relato epico." />
+     <p>Ordenar palabras</p>
+    </cell>
+    <cell>
+     <style>
+      <gradient source="0xFFFFFF" dest="0x33CCFF" angle="197" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="rellenaragujeros,incognitas,primerapalabra" />
+     <p>Rellenar incognitas</p>
+    </cell>
+    <cell>
+     <style>
+      <gradient source="0xFFFFFF" dest="0x33CCFF" angle="197" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="ordenar elementos. El relato epico" />
+     <p>Ordenar elementos</p>
+    </cell>
+    <cell>
+     <style>
+      <gradient source="0xFFFFFF" dest="0x33CCFF" angle="197" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="relltexto, listaopciones" />
+     <p>Rellenar texto</p>
+    </cell>
+    <cell>
+     <style>
+      <gradient source="0xFFFFFF" dest="0x33CCFF" angle="197" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Rellena gujeros: El relato épico" />
+     <p>rellenar agujeros</p>
+    </cell>
+    <cell />
+   </cells>
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Caballeros 2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Comic Sans MS" size="17" />
+      <color background="0xFF9999" />
+     </style>
+     <p>Une al Rey Arturo o al Mio Cid con las imagenes relacionadas</p>
+    </cell>
+    <cell type="final">
+     <style />
+    </cell>
+    <cell type="finalError">
+     <style />
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x330000" dest="0x666666" angle="19" cycles="4" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0x999999" angle="0" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="3" cols="2" cellWidth="201.0" cellHeight="200.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell id="1" txtAlign="right,top" image="Excalibur.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" />
+      <color foreground="0xFFFFFF" background="0x000000" />
+     </style>
+    </cell>
+    <cell id="0" txtAlign="middle,top" image="espadas el cid.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" />
+      <color foreground="0xFFFFFF" background="0x99FFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="lancelot-(ginebra)-espada.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" />
+      <color foreground="0xFFFFFF" background="0x666600" />
+     </style>
+    </cell>
+    <cell id="0" image="dona-jimena-1658-zoom.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" />
+      <color foreground="0xFFFFFF" background="0x999900" />
+     </style>
+    </cell>
+    <cell image="277c32ec64479dfbff0119ffdb095863.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" />
+      <color foreground="0xFFFFFF" background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="994555_605256189494745_1210875553_n.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" />
+      <color foreground="0xFFFFFF" background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell txtAlign="left,top" image="hqdefault.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" />
+      <color foreground="0xFFFFFF" background="0x000000" />
+     </style>
+     <p>Cid Campeador</p>
+    </cell>
+    <cell txtAlign="right,middle" image="rey arturo.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" />
+      <color foreground="0xFFFFFF" background="0x000000" />
+     </style>
+     <p>Rey Arturo</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.Order" name="Ordenar palabras. El relato epico." code="" type="orderWords" amongParagraphs="true">
+   <description>
+    <p>Ordenar 10 palabras del texto Caracteristicas de la Epica</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>En este parrafo hay 10 palabras ubicadas en diferentes lugares, ordenalas para optener el sentido del texto.</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Excelente!!!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>Error, sigue buscando</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xCC00CC">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" cycles="11" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <checkButton />
+   <document>
+    <style name="default" bold="false" italic="false" tabWidth="12" size="12" family="Arial" background="0xFFFFFF" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Las caracteristicas del relato </text>
+      <target>epico</target>
+      <text background="0xFFFFFF" family="Arial"> son: la ubicacion temporal de los hechos </text>
+      <target>narrados.</target>
+      <text background="0xFFFFFF" family="Arial"> Se trata de un pasado </text>
+      <target>remoto,</target>
+      <text background="0xFFFFFF" family="Arial"> un tiempo legendario que coincide con el momento mismo del nacimiento de los </text>
+      <target>valores</target>
+      <text background="0xFFFFFF" family="Arial"> que constituyen la </text>
+      <target>nacionalidad.</target>
+      <text background="0xFFFFFF" family="Arial"> Se organiza en torno a un personaje central: el </text>
+      <target>heroe,</target>
+      <text background="0xFFFFFF" family="Arial"> que es un arquetipo, guerrero que condensan una serie de virtudes, como el valor y la </text>
+      <target>lealtad</target>
+      <text background="0xFFFFFF" family="Arial"> hacia sus compañeros de armas. En la epica del </text>
+      <target>medioevo,</target>
+      <text background="0xFFFFFF" family="Arial"> se suma la relacion de </text>
+      <target>vasallaje</target>
+      <text background="0xFFFFFF" family="Arial"> o sea la obediencia sin excusa que se le debe al </text>
+      <target>rey</target>
+      <text background="0xFFFFFF" family="Arial"> .</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="Rellena gujeros: El relato épico" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Completa los espacios vacios con las siguientes palabras según corresponda :  literatura, personajes heroicos, ILIADA, género épico</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Muy bien!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>Mal!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" cycles="11" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <document>
+    <style name="default" bold="false" italic="false" tabWidth="12" size="12" family="Arial" background="0xFFFFFF" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">El origen del </text>
+      <target>
+       <answer>género epico</answer>
+       <response fill="_" length="12" maxLength="12" />
+       <text>género epico</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> hay que buscarlo entre las más antiguas expresiones que ha producido la cultura a la que pertenecemos. El poema epico emblematico de la </text>
+      <target>
+       <answer>literatura</answer>
+       <response fill="_" length="10" maxLength="10" />
+       <text>literatura</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> de Occidente es la </text>
+      <target>
+       <answer>ILIADA</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>ILIADA</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> . Que es emblematico significa que ofrece un modelo en cuanto a la manera de narrar, al tratamiento del tema y de las acciones, a la conformacion de los </text>
+      <target>
+       <answer>personajes heroicos</answer>
+       <response fill="_" length="19" maxLength="19" />
+       <text>personajes heroicos</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> que son sus protagonistas. Tambien es un modelo en tanto que brinda un amplio repertorio de recursos estilísticos. Este modelo se proyecta hasta la actualidad, y puede ser reconocido a traves de los años.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="caballeros" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color background="0xFF9999" />
+     </style>
+     <p>Une cada palabra con su imagen correspondiente</p>
+    </cell>
+    <cell type="final">
+     <style />
+    </cell>
+    <cell type="finalError">
+     <style />
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x666666">
+     <gradient source="0x330000" dest="0x666666" angle="19" cycles="4" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x333333" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="251.0" cellHeight="250.0" border="true" id="primary">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="rey arturo.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x000000" />
+     </style>
+    </cell>
+    <cell image="hqdefault.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x000000" />
+     </style>
+    </cell>
+    <cell image="lancelot-(ginebra)-espada.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x330000" />
+     </style>
+    </cell>
+    <cell image="Excalibur.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x333300" />
+     </style>
+    </cell>
+    <cell image="espadas el cid.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x99FFFF" />
+     </style>
+    </cell>
+    <cell image="dona-jimena-1658-zoom.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x666666" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="249.0" cellHeight="250.0" border="true" id="secondary">
+    <style>
+     <color foreground="0x660000" background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell>
+     <p>Rey Arturo</p>
+    </cell>
+    <cell>
+     <p>Cid Campeador</p>
+    </cell>
+    <cell>
+     <p>Ginebra</p>
+    </cell>
+    <cell>
+     <p>Excalibur</p>
+    </cell>
+    <cell>
+     <p>Colada y Tizona</p>
+    </cell>
+    <cell>
+     <p>Jimena</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.Identify" name="completar texto: el relato epico" code="" type="identifyWords">
+   <description>
+    <p>Buscar sustantivos propios y comunes.</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Buscar cinco sustantivos (aparecen en azul), dos propios y tres comunes.</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Muy bien lo lograste</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>Noooo el sustantivo "NOMBRA"</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Aprieta para evaluarte</p>
+    </helpWindow>
+    <container bgColor="0x9900CC">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" cycles="11" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <checkButton />
+   <document>
+    <style name="default" bold="false" italic="false" tabWidth="12" size="12" family="Arial" background="0xFFFFFF" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial">
+      <target>Epica</target>
+      <text background="0xFFFFFF" family="Arial"> es un termino que proviene del griego antiguo, en su origen significaba "palabra", pero se utilizo para designar a la </text>
+      <target>poesia</target>
+      <text background="0xFFFFFF" family="Arial"> narrativa heroica, la que contaba en </text>
+      <target>versos</target>
+      <text background="0xFFFFFF" family="Arial"> las hazañas de los heroes. El aedo, poeta o cantor congregaga a su auditorio en lugares publicos y lo deleitaba recordando las hazañas del invencible </text>
+      <target>Aquiles,</target>
+      <text background="0xFFFFFF" family="Arial"> el honorable </text>
+      <target>Hector</target>
+      <text background="0xFFFFFF" family="Arial"> de Troya o el sabio y aventurero Odiseo.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+    </section>
+   </document>
+  </activity>
+  <activity class="@memory.MemoryGame" name="juego de memoria sobre monstruos miticos" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Comic Sans MS" size="17" />
+      <color foreground="0xFFFFFF" background="0x666666" />
+     </style>
+     <p>Busca las coincidencias entre la imagen con el nombre del monstruo.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color foreground="0xFFFFFF" background="0x006699" />
+     </style>
+     <p>Muy bien, acertaste!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <color background="0xFF3333" />
+     </style>
+     <p>Ups, ese no es !</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x006600">
+     <gradient source="0x006600" dest="0x660000" angle="28" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x003300" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="170.0" cellHeight="140.0" border="true" id="primary">
+    <style>
+     <font family="Comic Sans MS" size="17" />
+     <color background="0xFF3333" alternative="0x000000" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="5166763centauro.jpg" />
+    <cell txtAlign="left,bottom" imgAlign="right,top" border="false" image="changelingsatirosluminosos.jpg" />
+    <cell image="descarga.jpg" />
+    <cell image="excerpts_mm2_0501.jpg" />
+    <cell image="medusa.jpg" />
+    <cell image="minotaurus.jpg" />
+   </cells>
+   <cells rows="2" cols="3" cellWidth="183.0" cellHeight="214.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell>
+     <style>
+      <color background="0xFF0033" alternative="0x000000" />
+     </style>
+     <p>centauro</p>
+    </cell>
+    <cell>
+     <p>satiro</p>
+    </cell>
+    <cell>
+     <p>grayas</p>
+    </cell>
+    <cell>
+     <p>hydra</p>
+    </cell>
+    <cell>
+     <p>medusa</p>
+    </cell>
+    <cell>
+     <p>minotauro</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="monstruos miticos" code="">
+   <description />
+   <messages>
+    <cell border="true" type="initial">
+     <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x009999" />
+     </style>
+     <p>¿Listo/a para resolver este puzzle?</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x009999" />
+     </style>
+     <p>¡Lo hiciste muy bien! ¡Continuemos!</p>
+    </cell>
+    <cell type="finalError">
+     <style shadow="true">
+      <color foreground="0xFFFFFF" background="0xFF0000" />
+     </style>
+     <p>Oh oh, me parece que esa pieza no iba ahi</p>
+    </cell>
+   </messages>
+   <settings margin="9" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0x660000">
+     <gradient source="0x660000" dest="0x666666" angle="53" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x333333" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="3" cols="4" border="true" image="minotaurus.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="4" rows="3" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.Order" name="ordenar elementos. El relato epico" code="" type="orderParagraphs">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Ordenar las oraciones para que el parrafo quede coherente</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Muy bien!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>Error!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" cycles="11" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <checkButton />
+   <document>
+    <style name="default" bold="false" italic="false" tabWidth="12" size="12" family="Arial" background="0xFFFFFF" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial">
+      <target>Se atribuye la creacion de la Iliada a Homero, quien se supone que la escribio en el año 750 a. C. Homero.</target>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <target> Los poetas eran llamados Aedas. </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <target>Estos se encargaban de componer las historias y reelaborar los mitos de memoria, sin ayuda de la escritura.</target>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <target> Cantaban acompañandose con instrumentos de cuerda, como la lira.</target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="rellenaragujeros,incognitas,primerapalabra" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Completa el siguiente texto con los nombres de los personajes de La Iliada</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Muy bien!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>Upss, equivocado!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" cycles="11" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <document>
+    <style name="default" bold="false" italic="false" tabWidth="12" size="12" family="Arial" background="0xFFFFFF" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">"....la belleza de H</text>
+      <target>
+       <answer>elena</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>elena</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> , la astucia de U</text>
+      <target>
+       <answer>lises</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>lises</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">, el noble coraje de H</text>
+      <target>
+       <answer>ector</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>ector</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">, el talón vulnerable de A</text>
+      <target>
+       <answer>quiles</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>quiles</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">, la locura de Áyax son conceptos que ya se han vuelto proverbiales. "</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Robert Graves, La guerra de Troya, Barcelona,Muchnik, 1999</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="relltexto, listaopciones" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Lee el siguiente texto y elige la opcion adecuada</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Has estudiado, muy bien!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>Equivocado</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" cycles="11" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <document>
+    <style name="default" bold="false" italic="false" tabWidth="12" size="12" family="Arial" background="0xFFFFFF" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">El cantar  de Mio Cid fue compuesto hacia 1140 por un poeta anónimo y se transmitió a través de un manuscrito copiado por un amanuense llamado </text>
+      <target>
+       <answer>Per Abbat</answer>
+       <optionList>
+        <option>Per Abbat</option>
+        <option>Peter Abbad</option>
+        <option>Pir Abbad</option>
+       </optionList>
+       <text>Per abbat</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">  hacia 1307. Consta de 3730 versos asonantados dispuestos en series variables y, en su estado actual, se encuentra dividido en tres partes: el </text>
+      <target>
+       <answer>Cantar del destierro</answer>
+       <optionList>
+        <option>Cantar de la salida</option>
+        <option>Cantar del destierro</option>
+        <option>Cantar de la huida</option>
+       </optionList>
+       <text>Cantar del destierro</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">, las Bodas de las hijas del Cid y la Afrenta de Corpes..</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Narra con realimos y ajustada fidelidad a los hechos historicos de la vide de </text>
+      <target>
+       <answer>Rodrigo Diaz de Vivar</answer>
+       <optionList>
+        <option>Rodrigo Diaz de Vivar</option>
+        <option>Rodrigo Ruiz de Vivar</option>
+        <option>Rodrigo Muño Gustioz de Vivar</option>
+       </optionList>
+       <text>Rodrigo Diaz de Vivar,</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> desde su exilio hasta el matrimonio de sus hijas, </text>
+      <target>
+       <answer>doña Elvira y doña Sol</answer>
+       <optionList>
+        <option>doña Elvira y doña Sol</option>
+        <option>doña Sofia y doña Catalina</option>
+        <option>doña Ana y doña Maria</option>
+       </optionList>
+       <text>doña Elvira y doña Sol</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="sopa de heroes miticos" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Comic Sans MS" size="17" />
+      <color foreground="0xFFFFFF" background="0x000000" />
+     </style>
+     <p>Encuentra los 6 nombres de los héroes míticos </p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color foreground="0xFFFFFF" background="0x003399" />
+     </style>
+     <p>Lo resolviste!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <color foreground="0xFFFFFF" background="0xCC0000" />
+     </style>
+     <p>Intentalo de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000099" dest="0xCC0000" angle="28" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x000000" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <textGrid rows="10" columns="9" cellWidth="120.0" cellHeight="91.0" border="true">
+    <style>
+     <color foreground="0xFF6666" background="0x000099" />
+    </style>
+    <text>
+     <row>TESEO**H**</row>
+     <row>******E*P*</row>
+     <row>*A***R**E*</row>
+     <row>**Q*C***R*</row>
+     <row>***ULISES*</row>
+     <row>**L*I***E*</row>
+     <row>*E***L**O*</row>
+     <row>S*****E***</row>
+     <row>*****JASON</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">TESEO</clue>
+    <clue id="1">ULISES</clue>
+    <clue id="2">AQUILES</clue>
+    <clue id="3">HERCULES</clue>
+    <clue id="4">JASON</clue>
+    <clue id="5">PERSEO</clue>
+   </clues>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="277c32ec64479dfbff0119ffdb095863.jpg" file="277c32ec64479dfbff0119ffdb095863.jpg" />
+  <media name="5166763centauro.jpg" file="5166763centauro.jpg" />
+  <media name="994555_605256189494745_1210875553_n.jpg" file="994555_605256189494745_1210875553_n.jpg" />
+  <media name="changelingsatirosluminosos.jpg" file="changelingsatirosluminosos.jpg" />
+  <media name="descarga.jpg" file="descarga.jpg" />
+  <media name="dona-jimena-1658-zoom.jpg" file="dona-jimena-1658-zoom.jpg" />
+  <media name="espadas el cid.jpg" file="espadas el cid.jpg" />
+  <media name="Excalibur.jpg" file="Excalibur.jpg" />
+  <media name="excerpts_mm2_0501.jpg" file="excerpts_mm2_0501.jpg" />
+  <media name="hqdefault.jpg" file="hqdefault.jpg" />
+  <media name="images54363.jpg" file="images54363.jpg" />
+  <media name="lancelot-(ginebra)-espada.jpg" file="lancelot-(ginebra)-espada.jpg" />
+  <media name="medusa.jpg" file="medusa.jpg" />
+  <media name="minotaurus.jpg" file="minotaurus.jpg" />
+  <media name="rey arturo.jpg" file="rey arturo.jpg" />
+  <media name="aud_1y8xwqtu7tngd15j.mp3" file="aud_1y8xwqtu7tngd15j.mp3" />
+  <media name="aud_i8lryat82slgvu9h.mp3" file="aud_i8lryat82slgvu9h.mp3" />
+  <media name="mDDUwFyfFy43.128.mp3" file="mDDUwFyfFy43.128.mp3" />
+ </mediaBag>
+</JClicProject>
+

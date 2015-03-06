@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="pif_venancio" version="0.1.3">
+ <settings>
+  <title>Pif_venancio</title>
+  <revision description="created" date="10/3/13" />
+  <description>
+   <p>Proyecto</p>
+  </description>
+  <descriptors />
+ </settings>
+ <sequence>
+  <item id="stad" name="Inicio">
+   <jump action="STOP" id="forward" />
+  </item>
+  <item id="1" name="Información" />
+  <item id="2" name="Puzzle aportes" />
+  <item id="3" name="Ordenar">
+   <jump tag="stad" id="forward" />
+  </item>
+  <item id="4" name="i01Inicio" />
+  <item id="5" name="etapas" />
+  <item id="6" name="menelementos" />
+  <item id="7" name="SOPA">
+   <jump tag="stad" id="forward" />
+  </item>
+  <item id="8" name="Evaluamos" />
+  <item id="9" name="DISTRIBUCION" />
+  <item id="10" name="Ordenar etapa cria" />
+  <item id="11" name="crucigrama">
+   <jump action="EXIT" id="forward" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@panels.InformationScreen" name="Inicio" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Hacemos Clic en cada una de las actividad</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x009933">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="2" cols="2" cellWidth="250.0" cellHeight="230.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell image="1.- entrada a.jpg">
+     <style shadow="true" margin="8" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="26" italic="true" />
+      <color foreground="0xFFFFFF" background="0x006633" />
+     </style>
+     <p>Produccion Animal Aves             	2° Año                                                                                       </p>
+     <p>                                                                                                           CEPT N° 1</p>
+    </cell>
+    <cell image="1.jpg">
+     <style shadow="true" margin="8" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="26" italic="true" />
+      <color foreground="0xFFFFFF" background="0x006633" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Información" />
+    </cell>
+    <cell image="2.jpg">
+     <style shadow="true" margin="8" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="26" italic="true" />
+      <color foreground="0xFFFFFF" background="0x006633" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="i01Inicio" />
+    </cell>
+    <cell image="3.jpg">
+     <style shadow="true" margin="8" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="26" italic="true" />
+      <color foreground="0xFFFFFF" background="0x006633" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Evaluamos" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Información" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>A TRABAJAR</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFFCCCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="552.0" cellHeight="530.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell imgAlign="left,top" image="imagesCANMSG5G.jpg">
+     <style borderStroke="5.7" markerStroke="5.0">
+      <font family="Arial" size="48" />
+      <color foreground="0xFF0033" background="0xFF9999" border="0xFF0066" />
+     </style>
+     <p>PRODUCCION FAMILIAR DE POLLOS PARRILLEROS Y CAMPEROS</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@text.Order" name="Ordenar" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell type="previous">
+     <style />
+    </cell>
+    <cell type="initial">
+     <style />
+     <p>TENIENDO EN CUENTA EL PUZZLE ORDENA LA SIGUIENTE FRASE </p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>BIEN</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="30" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0xFFCCCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <prevScreen />
+   <document>
+    <style name="default" tabWidth="12" background="0xFFFFFF" size="26" bold="false" family="Arial" italic="false" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" Alignment="1" family="Arial">
+      <text size="28">Los </text>
+      <target>pollos</target>
+      <text size="28"> aportan distintas sustancias </text>
+      <target>nutritivas</target>
+      <text size="28"> al ser </text>
+      <target>humano</target>
+      <text size="28"> como son: </text>
+      <target>carbohidratos,</target>
+      <text size="28"> proteinas, minerales, vitaminas y grasas; presentes en el </text>
+      <target>alimento</target>
+      <text size="28"> en </text>
+      <target>diferentes</target>
+      <text size="28"> proporciones.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" checkAccents="false" checkPunctuation="false" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="Puzzle aportes" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>RESOLVE EL SIGUIENTE PUZZLE</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>MUY BIEN</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFFCCCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="3" cols="4" border="true" image="aportes.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="3" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="i01Inicio">
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0x3333FF">
+     <image name="pollos inicio.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="1" cellWidth="305.0" cellHeight="92.0" border="true">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Verdana" size="24" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell>
+     <style margin="8">
+      <font family="Arial" size="22" bold="true" />
+      <color background="0xFFFFCC" />
+     </style>
+     <p>POLLOS PARRILEROS</p>
+     <p>ETAPA CRIA</p>
+    </cell>
+    <cell>
+     <p>A trabajar</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@textGrid.WordSearch" name="SOPA" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Hay escondidas 6 palabras, relacionadas con el nombre de la primer etapa, y aquellos aspectos importantes en las primeras horas de vida.</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Te felicito</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="50" countDownTime="true" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Calor, Bebe, Campana, Corral,Energia,Cria</p>
+    </helpWindow>
+    <container bgColor="0xFF0000">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <textGrid rows="9" columns="9" cellWidth="100.0" cellHeight="100.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>CALOR****</row>
+     <row>A********</row>
+     <row>M*ENERGIA</row>
+     <row>P****BEBE</row>
+     <row>A*CORRAL*</row>
+     <row>N********</row>
+     <row>A***CRIA*</row>
+     <row>*********</row>
+     <row>*********</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">CALOR</clue>
+    <clue id="1">CAMPANA</clue>
+    <clue id="2">ENERGIA</clue>
+    <clue id="3">BEBE</clue>
+    <clue id="4">CRIA</clue>
+    <clue id="5">CORRAL</clue>
+   </clues>
+   <cells rows="2" cols="3" cellWidth="211.0" cellHeight="299.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell txtAlign="middle,top" image="FOCO1.jpg">
+     <p>Calor</p>
+    </cell>
+    <cell txtAlign="middle,top" image="campana.jpg">
+     <p>Campana</p>
+    </cell>
+    <cell image="vasoazucar.jpg">
+     <p>Azucar</p>
+    </cell>
+    <cell txtAlign="middle,top" image="PBB.jpg">
+     <p>BEBE</p>
+    </cell>
+    <cell txtAlign="middle,top" image="CRIA.jpg">
+     <p>Cria</p>
+    </cell>
+    <cell txtAlign="middle,top" image="CORRAL.jpg">
+     <p>Corral</p>
+    </cell>
+   </cells>
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="etapas" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Verdana" size="18" bold="true" />
+      <color background="0xCCFFCC" />
+     </style>
+     <p>Ordenar esta oracion</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Verdana" size="20" bold="true" />
+      <color background="0xCCFFCC" />
+     </style>
+     <p>Muy bien</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxTime="50" countDownTime="false" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Tener en cuenta que la crianza de los pollos se divide en dos etapas</p>
+    </helpWindow>
+    <container bgColor="0x000099">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="215.0" cellHeight="113.0" border="false">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial Narrow" size="20" bold="true" />
+     <color foreground="0x0000FF" background="0xCCFFFF" />
+     <gradient source="0xCCFFFF" dest="0xFFFFFF" angle="60" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell>
+     <p>La primer ETAPA</p>
+    </cell>
+    <cell>
+     <p>de los pollos parrilleros</p>
+    </cell>
+    <cell>
+     <p>es de 21 días</p>
+    </cell>
+    <cell>
+     <p>y estan listos</p>
+    </cell>
+    <cell>
+     <p>para FAENA</p>
+    </cell>
+    <cell>
+     <p>a los 56 días</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="menelementos" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>DONDE ESTA?</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>MUY BIEN</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>INTERTAR DE NUEVO</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow>
+     <p>Para comenzar con la cría es necesario contar con ...</p>
+    </helpWindow>
+    <container bgColor="0x00CCCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="123.0" cellHeight="116.0" border="true" id="primary">
+    <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial Black" size="18" bold="true" />
+     <color background="0xCCFFCC" shadow="0xFFFF99" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="bebed2.jpg" />
+    <cell image="campana.jpg" />
+    <cell image="vasoazucar.jpg" />
+    <cell image="viruta.jpg" />
+    <cell image="come5.jpg" />
+    <cell image="termometro.jpg" />
+   </cells>
+   <cells rows="2" cols="3" cellWidth="50.0" cellHeight="30.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell>
+     <p>Bebedero</p>
+    </cell>
+    <cell>
+     <p>Campana</p>
+    </cell>
+    <cell>
+     <p>Azucar</p>
+    </cell>
+    <cell>
+     <p>Viruta</p>
+    </cell>
+    <cell>
+     <p>Comedero</p>
+    </cell>
+    <cell>
+     <p>Termometro</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="DISTRIBUCION" code="">
+   <description />
+   <messages>
+    <cell avoidOverlapping="true" image="FOCO.jpg" type="initial">
+     <style />
+     <p>PENSAMOS</p>
+    </cell>
+    <cell image="MUY BIEN.jpg" type="final">
+     <style />
+    </cell>
+   </messages>
+   <settings margin="4" useOrder="true" maxTime="50" countDownTime="false" report="true" reportActions="true">
+    <helpWindow showSolution="false">
+     <p>Los pollos BB deben crecer con la temperatura adecuada par evitar perdidas</p>
+    </helpWindow>
+    <container bgColor="0xFFCCCC">
+     <counters time="true" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFCCCC" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="4" cellWidth="191.0" cellHeight="187.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell id="3" image="dist1.jpg">
+     <style borderStroke="2.7" markerStroke="5.0">
+      <font family="Arial" size="28" bold="true" italic="true" />
+      <color background="0xCCCCFF" />
+     </style>
+    </cell>
+    <cell id="1" image="dist2.jpg">
+     <style borderStroke="2.7" markerStroke="5.0">
+      <font family="Arial" size="28" bold="true" italic="true" />
+      <color background="0xCCCCFF" />
+     </style>
+    </cell>
+    <cell id="2" image="dist3.jpg">
+     <style borderStroke="2.7" markerStroke="5.0">
+      <font family="Arial" size="28" bold="true" italic="true" />
+      <color background="0xCCCCFF" />
+     </style>
+    </cell>
+    <cell id="0" image="dist4.jpg">
+     <style borderStroke="2.7" markerStroke="5.0">
+      <font family="Arial" size="28" bold="true" italic="true" />
+      <color background="0xCCCCFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="1" cols="4" cellWidth="185.0" cellHeight="151.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell border="true">
+     <style borderStroke="2.7" markerStroke="5.0">
+      <font family="Arial" size="28" bold="true" italic="true" />
+      <color background="0xFF0033" />
+     </style>
+     <p>CORRIENTE DE AIRE</p>
+    </cell>
+    <cell border="true">
+     <style borderStroke="2.4" markerStroke="5.0">
+      <font family="Arial" size="28" bold="true" italic="true" />
+      <color background="0xFF0033" />
+     </style>
+     <p>CALOR</p>
+    </cell>
+    <cell>
+     <style borderStroke="2.8" markerStroke="5.0">
+      <font family="Arial" size="28" bold="true" italic="true" />
+      <color background="0xFF0033" />
+     </style>
+     <p>FRIO</p>
+    </cell>
+    <cell>
+     <style borderStroke="2.7" markerStroke="5.0">
+      <font family="Arial" size="28" bold="true" italic="true" />
+      <color background="0xFF0033" />
+     </style>
+     <p>NORMAL</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="Evaluamos" code="">
+   <description />
+   <messages />
+   <settings margin="8" maxTime="50" countDownTime="false" maxActions="300" countDownActions="false" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="portada.jpg" tiled="true" />
+     <counters time="false" actions="false" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="2" cols="1" cellWidth="355.0" cellHeight="199.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell border="false">
+     <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="28" bold="true" italic="true" />
+      <color background="0xCCFFFF" />
+     </style>
+     <p>PRODUCCION DE POLLOS</p>
+     <p>ETAPA CRIA						</p>
+    </cell>
+    <cell border="false">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="28" bold="true" italic="true" />
+      <color background="0xCCFFFF" />
+     </style>
+     <p>Evaluamos lo que aprendimos</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@textGrid.CrossWord" name="crucigrama">
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>A ver si podes realizar este crucigrama?</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Muy bien</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="50" countDownTime="false" maxActions="30" countDownActions="false" report="true" reportActions="false">
+    <helpWindow>
+     <p>Observar bien las imagenes</p>
+    </helpWindow>
+    <container bgColor="0xCCCCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x9966FF" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <textGrid rows="16" columns="11" cellWidth="21.0" cellHeight="29.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>****TRES********</row>
+     <row>****E***********</row>
+     <row>****M***********</row>
+     <row>****PROTEINA****</row>
+     <row>****E**********V</row>
+     <row>ENGORDE********I</row>
+     <row>****A**********R</row>
+     <row>*DISTRIBUCION**U</row>
+     <row>****U**********T</row>
+     <row>**CORRAL*DE*CRIA</row>
+     <row>****A***********</row>
+    </text>
+   </textGrid>
+   <cells rows="1" cols="3" cellWidth="300.0" cellHeight="279.0" border="true" id="acrossClues">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell id="7" item="2" />
+    <cell id="7" item="1" />
+    <cell id="5" item="2" />
+    <cell id="5" item="1" />
+    <cell id="9" item="3" />
+    <cell id="9" item="2" />
+    <cell id="9" item="1" />
+    <cell id="2" item="1" />
+    <cell id="2" item="0">
+     <p>Tiempo que dura en semanas la etapa de cria </p>
+    </cell>
+    <cell id="1" item="1" />
+    <cell id="1" item="0" />
+    <cell id="0" item="0">
+     <p>Tiempo en semanas que dura la etapa de cria</p>
+    </cell>
+    <cell id="10" item="1" />
+    <cell id="10" item="0" />
+    <cell id="9" item="0" image="corral de cria3.jpg" />
+    <cell id="9" item="0" />
+    <cell id="8" item="2" />
+    <cell id="8" item="1" />
+    <cell id="8" item="0" />
+    <cell id="7" item="0" image="distribucion.jpg" />
+    <cell id="7" item="0" />
+    <cell id="6" item="2" />
+    <cell id="6" item="1" />
+    <cell id="6" item="0" />
+    <cell id="5" item="0">
+     <p>Como se llama la otra etapa productiva de los pollos</p>
+    </cell>
+    <cell id="5" item="0" />
+    <cell id="4" item="2" />
+    <cell id="4" item="1" />
+    <cell id="4" item="0" />
+    <cell id="3" item="1" />
+    <cell id="3" item="0">
+     <p>Que nutriente debe aportar el alimento balanceado, en mayor proporcion,en la etapa de cria </p>
+    </cell>
+    <cell id="0" item="0" />
+    <cell id="0" />
+    <cell id="1" />
+    <cell id="2" />
+   </cells>
+   <cells rows="1" cols="3" cellWidth="300.0" cellHeight="279.0" border="true" id="downClues">
+    <style />
+    <cell id="15" item="1" />
+    <cell id="15" item="0" image="i01-viruta.jpg" />
+    <cell id="14" item="1" />
+    <cell id="14" item="0" />
+    <cell id="13" item="1" />
+    <cell id="13" item="0" />
+    <cell id="12" item="2" />
+    <cell id="12" item="1" />
+    <cell id="12" item="0" />
+    <cell id="11" item="2" />
+    <cell id="11" item="1" />
+    <cell id="11" item="0" />
+    <cell id="10" item="3" />
+    <cell id="10" item="2" />
+    <cell id="10" item="1" />
+    <cell id="10" item="0" />
+    <cell id="9" item="3" />
+    <cell id="9" item="2" />
+    <cell id="9" item="1" />
+    <cell id="9" item="0" />
+    <cell id="8" item="2" />
+    <cell id="8" item="1" />
+    <cell id="8" item="0" />
+    <cell id="7" item="4" />
+    <cell id="7" item="3" />
+    <cell id="7" item="2" />
+    <cell id="7" item="1" />
+    <cell id="7" item="0" />
+    <cell id="6" item="5" />
+    <cell id="6" item="4" />
+    <cell id="6" item="3" />
+    <cell id="6" item="2" />
+    <cell id="6" item="1" />
+    <cell id="6" item="0" />
+    <cell id="5" item="5" />
+    <cell id="5" item="4" />
+    <cell id="5" item="3" />
+    <cell id="5" item="2" />
+    <cell id="5" item="1" />
+    <cell id="5" item="0" />
+    <cell id="4" item="1" />
+    <cell id="4" item="0" image="temperatura.jpg" />
+    <cell id="0" item="1" />
+    <cell id="0" item="0" />
+    <cell id="3" item="3" />
+    <cell id="3" item="2" />
+    <cell id="3" item="1" />
+    <cell id="3" item="0" />
+    <cell id="2" item="3" />
+    <cell id="2" item="2" />
+    <cell id="2" item="1" />
+    <cell id="2" item="0" />
+    <cell id="1" item="2" />
+    <cell id="1" item="1" />
+    <cell id="1" item="0" />
+    <cell id="0" />
+    <cell id="1" />
+    <cell id="2" />
+   </cells>
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.Order" name="Ordenar etapa cria" code="" type="orderParagraphs">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Ordenamos la oración</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Muy bien</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="405" height="321" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <document>
+    <style name="default" tabWidth="12" background="0xFFFFFF" size="28" bold="false" family="Arial" italic="false" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" Alignment="1" family="Arial">
+      <target>La Etapa de CRIA dura </target>
+     </p>
+     <p background="0xFFFFFF" Alignment="1" family="Arial">
+      <target>3 semanas, durante este periodo consumen </target>
+     </p>
+     <p background="0xFFFFFF" Alignment="1" family="Arial">
+      <target>1 kg de alimento balanceado para BB y debemos tener mucho cuidado durante la primer semana suministrar </target>
+     </p>
+     <p background="0xFFFFFF" Alignment="1" family="Arial">
+      <target>la temperatura ambiente adecuada.</target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="1.- entrada a.jpg" file="1.- entrada a.jpg" />
+  <media name="1.jpg" file="1.jpg" />
+  <media name="2.jpg" file="2.jpg" />
+  <media name="3.jpg" file="3.jpg" />
+  <media name="aportes.jpg" file="aportes.jpg" />
+  <media name="bebed2.jpg" file="bebed2.jpg" />
+  <media name="campana.jpg" file="campana.jpg" />
+  <media name="come5.jpg" file="come5.jpg" />
+  <media name="corral de cria3.jpg" file="corral de cria3.jpg" />
+  <media name="CORRAL.jpg" file="CORRAL.jpg" />
+  <media name="CRIA.jpg" file="CRIA.jpg" />
+  <media name="dist1.jpg" file="dist1.jpg" />
+  <media name="dist2.jpg" file="dist2.jpg" />
+  <media name="dist3.jpg" file="dist3.jpg" />
+  <media name="dist4.jpg" file="dist4.jpg" />
+  <media name="distribucion.jpg" file="distribucion.jpg" />
+  <media name="FOCO.jpg" file="FOCO.jpg" />
+  <media name="FOCO1.jpg" file="FOCO1.jpg" />
+  <media name="i01-viruta.jpg" file="i01-viruta.jpg" />
+  <media name="imagesCANMSG5G.jpg" file="imagesCANMSG5G.jpg" />
+  <media name="MUY BIEN.jpg" file="MUY BIEN.jpg" />
+  <media name="PBB.jpg" file="PBB.jpg" />
+  <media name="pollos inicio.jpg" file="pollos inicio.jpg" />
+  <media name="portada.jpg" file="portada.jpg" />
+  <media name="temperatura.jpg" file="temperatura.jpg" />
+  <media name="termometro.jpg" file="termometro.jpg" />
+  <media name="vasoazucar.jpg" file="vasoazucar.jpg" />
+  <media name="viruta.jpg" file="viruta.jpg" />
+ </mediaBag>
+</JClicProject>
+

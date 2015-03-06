@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>RungeKutta</title></head>
+<body BGCOLOR="#eeeeee">
+<p align="center">
+<FONT size=+2>Macro: RungeKutta</FONT><br>tipo 2D
+</p>
+<p align="center">
+<applet name="RungeKutta"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=160 height=100>
+   <param name="nombre" value="RungeKutta">
+   <param name="Versi&oacute;n" value="3.503">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="escala='40' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='grisObscuro' texto='no'">
+   <param name="A_00" value="id='x0' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_01" value="id='y0' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_02" value="id='dt' expresi&oacute;n='0.01' evaluar='una-sola-vez' constante='si'">
+   <param name="A_03" value="id='T' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_04" value="id='N' expresi&oacute;n='ent(abs(T)/abs(dt))' evaluar='siempre' constante='si'">
+   <param name="A_05" value="id='X' tama&ntilde;o='N+1' evaluar='siempre' vector='si'">
+   <param name="A_06" value="id='Y' tama&ntilde;o='N+1' evaluar='siempre' vector='si'">
+   <param name="A_07" value="id='fx(x,y)' expresi&oacute;n='0'">
+   <param name="A_08" value="id='fy(x,y)' expresi&oacute;n='0'">
+   <param name="A_09" value="inicio='X[0]=x0;Y[0]=y0;i=0;t=0;dt=(T>0)?abs(dt):-abs(dt)' hacer='p=X[i];q=Y[i];k1x=fx(p,q)*dt;k1y=fy(p,q)*dt;t=t+dt/2;k2x=fx(p+k1x/2,q+k1y/2)*dt;k2y=fy(p+k1x/2,q+k1y/2)*dt;k3x=fx(p+k2x/2,q+k2y/2)*dt;k3y=fy(p+k2x/2,q+k2y/2)*dt;t=t+dt/2;k4x=fx(p+k3x,q+k3y)*dt;k4y=fy(p+k3x,q+k3y)*dt;i=i+1;X[i]=p+(k1x+2*k2x+2*k3x+k4x)/6;Y[i]=q+(k1y+2*k2y+2*k3y+k4y)/6;' mientras='i<=N' id='CALCULAR' evaluar='siempre' algoritmo='si'">
+</applet>
+</p>
+<p align="center">
+Esta escena se usa para generar el macro.<br>
+Como puede apreciarse, este macro no tiene parte gráfica, consta sólo de auxiliares<br>
+que realizan la integración de un sistema de ecuaciones diferenciales lineales por el <br>
+método de Runge-Kutta de orden 4.
+</p>
+<p align="center">
+<applet name="RungeKutta"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=480 height=360>
+   <param name="nombre" value="RungeKutta">
+   <param name="Versi&oacute;n" value="3.502">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="escala='125' despl_imagen='arr-izq' fondo='blanco' red='grisClaro' red10='gris' ejes='grisObscuro' texto='rosa' n&uacute;meros='si'">
+   <param name="C_00" value="tipo='gr&aacute;fico' id='C' color='azul' color-int='rojo' expresi&oacute;n='(-0.5,0.5)' tama&ntilde;o='7'">
+   <param name="C_01" value="tipo='num&eacute;rico' id='RK.T' valor='2' nombre='T' visible='si' pos_mensajes='centro'">
+   <param name="C_02" value="tipo='num&eacute;rico' id='RK.dt' valor='0.01' decimales='3' nombre='dt' incr='0.001' min='0.001' max='1' visible='si' pos_mensajes='centro'">
+   <param name="A_00" value="inicio='RK.x0=C.x;RK.y0=C.y' id='INIT' evaluar='siempre' algoritmo='si'">
+   <param name="A_01" value="id='Fx' expresi&oacute;n='y/(x^2+y^2)-x' editable='si'">
+   <param name="A_02" value="id='Fy' expresi&oacute;n='-x/(x^2+y^2)-y' editable='si'">
+   <param name="A_03" value="id='RK.fx(x,y)' expresi&oacute;n='Fx'">
+   <param name="A_04" value="id='RK.fy(x,y)' expresi&oacute;n='Fy'">
+   <param name="G_00" value="tipo='macro' expresi&oacute;n='calculos/RungeKutta' nombre='RK'">
+   <param name="G_01" value="tipo='curva' color='azul' expresi&oacute;n='(RK.X[t],RK.Y[t])' t.intervalo='[0,RK.N]' t.pasos='RK.N' visible='no'">
+</applet>
+</p>
+<p align="center">
+Esta escena es una aplicación del macro que muestra la solución de un sistema<br>
+de ecuaciones diferenciales lineales de primer orden con la condición inicial<br>
+dada por el control gráfico. La solución se dibuja de [0,T] y dt es el avance en <br>
+cada paso de la integración numérica, que se hace con el método de Runge Kutta. 
+</p>
+<hr>
+
+<p><font size="2" face="Arial"><strong><cite><dfn><samp><tt>Autor: José Luis Abreu León</tt></samp></dfn></cite></strong></font></p>
+
+</body>
+</html>
+
+

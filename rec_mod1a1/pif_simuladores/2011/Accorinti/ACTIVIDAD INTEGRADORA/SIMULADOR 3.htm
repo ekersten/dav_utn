@@ -1,0 +1,99 @@
+
+<p><table width="100%" border="3" align="center" cellpadding="2" cellspacing="1">
+  <tr>
+    <td align="center" valign="middle"><a href="SIMULADOR 1.htm">Simulador 1</a></td>
+    <td align="center" valign="middle"><a href="SIMULADOR 2.htm">Simulador 2</a></td>
+    <td align="center" valign="middle"><a href="SIMULADOR 3.htm">Simulador 3</a></td>
+  </tr>
+</table>
+
+  </p>
+<applet name="cinematica145" width=1000 height=400
+        code="descinst.Descartes.class"
+        codebase="./"
+        archive="descinst.jar,http://recursostic.educacion.es/descartes/web/plugin/descinst.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="1000x400">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="cinematica145">
+   <param name="Versi&oacute;n" value="4.41, 2010-12-16">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=s&iacute; limpiar=no">
+   <param name="E_00" value="tipo='R2' fijo='s&iacute;' O.x='-300' despl_imagen='arr-izq' fondo='gris' red='grisClaro' red10='grisClaro' ejes='gris' texto='rosa'">
+   <param name="E_01" value="tipo='R2' id='E2' x='40%' fijo='s&iacute;' O.x='-235' despl_imagen='arr-izq' fondo='f1f8ff' red='no' red10='no' ejes='negro' texto='gris'">
+   <param name="C_00" value="id='escala' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E2' nombre='zoom' valor='48' incr='0.1*escala' min='0.001' max='1000000' decimales='4*(escala&lt;10)' fijo='s&iacute;' visible='no' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_01" value="id='r' tipo='num&eacute;rico' nombre='r' valor='1' min='1' max='2.70' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_02" value="id='alfa' tipo='num&eacute;rico' nombre='alfa' incr='10' discreto='s&iacute;' fijo='no' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_03" value="id='f' tipo='num&eacute;rico' interfaz='men&uacute;' regi&oacute;n='interior' espacio='E2' nombre='FUNCIONES TRIGONOMETRICAS' expresi&oacute;n='(70,10,300,20)' fijo='no' visible='no' opciones='seno,coseno,tangente,cotangente,secante,cosecante,todas' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_04" value="id='A' tipo='gr&aacute;fico' color='rojo' color-int='rojo' constricci&oacute;n='x^2+y^2=r^2' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="C_05" value="id='A.x' tipo='num&eacute;rico' regi&oacute;n='exterior' nombre='A.x' valor='r' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_06" value="id='A.y' tipo='num&eacute;rico' regi&oacute;n='exterior' nombre='A.y' valor='r' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_00" value="id='pi' constante='s&iacute;' expresi&oacute;n='3.1416' evaluar='una-sola-vez'">
+   <param name="A_01" value="id='A.x' expresi&oacute;n='r*cos((alfa+d)*pi/180)'">
+   <param name="A_02" value="id='A.y' expresi&oacute;n='r*sen((alfa+d)*pi/180)'">
+   <param name="A_03" value="id='B.x' expresi&oacute;n='(alfa+d)*pi/180'">
+   <param name="A_04" value="id='B.y' expresi&oacute;n='r*sen((alfa+d)*pi/180)'">
+   <param name="G_00" value="tipo='ecuaci&oacute;n' color='naranja' expresi&oacute;n='x^2+y^2=r^2' ancho='1.5' visible='no'">
+   <param name="G_01" value="tipo='segmento' color='naranja' expresi&oacute;n='(0,0)(A.x,A.y)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' ancho='1.5'">
+   <param name="G_02" value="tipo='arco' color='amarillo' radio='r*0.5' fin='alfa+d' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' relleno='acffff00'">
+   <param name="G_03" value="tipo='segmento' color='negro' dibujar-si='f=0' expresi&oacute;n='(A.x,0)(A.x,A.y)' texto='seno' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' ancho='2'">
+   <param name="G_04" value="tipo='segmento' color='verde' dibujar-si='f=1' expresi&oacute;n='(0,0)(A.x,0)' texto='coseno' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' ancho='2'">
+   <param name="G_05" value="tipo='segmento' color='rojo' dibujar-si='f=2' expresi&oacute;n='(r,0)(r,r*A.y/A.x)' texto='tangente' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' ancho='2'">
+   <param name="G_06" value="tipo='segmento' dibujar-si='f=3' expresi&oacute;n='(0,r)(r+A.x/A.y,r)' texto='cotangente' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' ancho='2'">
+   <param name="G_07" value="tipo='segmento' color='magenta' dibujar-si='f=4' expresi&oacute;n='(0,0)(1/A.x,A.y)' texto='secante' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' ancho='2'">
+   <param name="G_08" value="tipo='segmento' color='amarillo' dibujar-si='f=5' expresi&oacute;n='(A.x,0)(A.x,1/A.y)' texto='cosecante' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' ancho='2'">
+   <param name="G_09" value="tipo='segmento' color='negro' dibujar-si='f=6' expresi&oacute;n='(A.x,0)(A.x,A.y)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' ancho='2'">
+   <param name="G_10" value="tipo='segmento' color='verde' dibujar-si='f=6' expresi&oacute;n='(0,0)(A.x,0)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' ancho='2'">
+   <param name="G_11" value="tipo='segmento' color='rojo' dibujar-si='f=6' expresi&oacute;n='(r,0)(r,r*A.y/A.x)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' ancho='2'">
+   <param name="G_12" value="tipo='segmento' dibujar-si='f=6' expresi&oacute;n='(0,r)(r+A.x/A.y,r)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' ancho='2'">
+   <param name="G_13" value="tipo='segmento' color='magenta' dibujar-si='f=6' expresi&oacute;n='(0,0)(1/A.x,A.y)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' ancho='2'">
+   <param name="G_14" value="tipo='segmento' color='amarillo' dibujar-si='f=6' expresi&oacute;n='(A.x,0)(A.x,1/A.y)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' ancho='2'">
+   <param name="G_15" value="tipo='segmento' color='negro' dibujar-si='(f=0)|(f=6)' expresi&oacute;n='(-3,3)(-2,3)' texto='seno' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' ancho='2'">
+   <param name="G_16" value="tipo='segmento' color='verde' dibujar-si='(f=1)|(f=6)' expresi&oacute;n='(-3,2.5)(-2,2.5)' texto='coseno' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' ancho='2'">
+   <param name="G_17" value="tipo='segmento' color='rojo' dibujar-si='(f=2)|(f=6)' expresi&oacute;n='(-3,2)(-2,2)' texto='tangente' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' ancho='2'">
+   <param name="G_18" value="tipo='segmento' color='magenta' dibujar-si='(f=4)|(f=6)' expresi&oacute;n='(0,3)(1,3)' texto='secante' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' ancho='2'">
+   <param name="G_19" value="tipo='segmento' color='amarillo' dibujar-si='(f=5)|(f=6)' expresi&oacute;n='(0,2.5)(1,2.5)' texto='cosecante' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' ancho='2'">
+   <param name="G_20" value="tipo='segmento' dibujar-si='(f=3)|(f=6)' expresi&oacute;n='(0,2)(1,2)' texto='cotangente' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' ancho='2'">
+   <param name="G_21" value="tipo='texto' color='negro' expresi&oacute;n='[10,280]' texto='seno[alfa]=[sen(alfa*pi/180)]' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_22" value="tipo='texto' color='verde' expresi&oacute;n='[10,300]' texto='coseno[alfa]=[cos(alfa*pi/180)]' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_23" value="tipo='texto' color='rojo' expresi&oacute;n='[10,320]' texto='tangente[alfa]=[tan(alfa*pi/180)]' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_24" value="tipo='texto' color='amarillo' expresi&oacute;n='[200,280]' texto='cosec[alfa]=[csc(alfa*pi/180)]' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_25" value="tipo='texto' color='magenta' expresi&oacute;n='[200,300]' texto='sec[alfa]=[sec(alfa*pi/180)]' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_26" value="tipo='texto' expresi&oacute;n='[200,320]' texto='cotan[alfa]=[cot(alfa*pi/180)]' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_27" value="espacio='E2' tipo='ecuaci&oacute;n' color='negro' dibujar-si='(x&gt;0)&amp;(f=0)|(f=6)&amp;(x&gt;0)' expresi&oacute;n='y=sen(x)' visible='no'">
+   <param name="G_28" value="espacio='E2' tipo='ecuaci&oacute;n' color='verde' dibujar-si='(x&gt;0)&amp;(f=1)|(f=6)&amp;(x&gt;0)' expresi&oacute;n='y=cos(x)' visible='no'">
+   <param name="G_29" value="espacio='E2' tipo='ecuaci&oacute;n' color='turquesa' dibujar-si='(x&gt;0)&amp;(f=2)|(f=6)&amp;(x&gt;0)' expresi&oacute;n='y=tan(x)' visible='no'">
+   <param name="G_30" value="espacio='E2' tipo='ecuaci&oacute;n' dibujar-si='(x&gt;1)&amp;(f=3)' expresi&oacute;n='y=cot(x)' visible='no'">
+   <param name="G_31" value="espacio='E2' tipo='ecuaci&oacute;n' color='magenta' dibujar-si='(x&gt;0)&amp;(f=4)' expresi&oacute;n='y=sec(x)' visible='no'">
+   <param name="G_32" value="espacio='E2' tipo='ecuaci&oacute;n' color='amarillo' dibujar-si='(x&gt;0)&amp;(f=5)' expresi&oacute;n='y=csc(x)' visible='no'">
+   <param name="G_33" value="espacio='E2' tipo='punto' color='negro' expresi&oacute;n='(-pi/2,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}\f1\fs28\i{\*\mjaformula{\fraction{\num -\u960 }{\den 2}}}\f2\fs24\i0}' fuente='Times New Roman Italic,ITALIC,14' fijo='s&iacute;'">
+   <param name="G_34" value="espacio='E2' tipo='punto' color='negro' expresi&oacute;n='(0,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}0}' fuente='Times New Roman,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_35" value="espacio='E2' tipo='punto' color='negro' expresi&oacute;n='(pi,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}\f1\fs28\i{\*\mjaformula 2\u960 }\f2\fs24\i0}' fuente='Times New Roman Italic,ITALIC,14' fijo='s&iacute;'">
+   <param name="G_36" value="espacio='E2' tipo='punto' color='negro' expresi&oacute;n='(pi/2,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}\f1\fs28\i{\*\mjaformula{\fraction{\num\u960 }{\den 2}}}\f2\fs24\i0}' fuente='Times New Roman Italic,ITALIC,14' fijo='s&iacute;'">
+   <param name="G_37" value="espacio='E2' tipo='punto' color='negro' expresi&oacute;n='(3*pi/2,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}\f1\fs28\i{\*\mjaformula{\fraction{\num 3\u960 }{\den 2}}}\f2\fs24\i0}' fuente='Times New Roman Italic,ITALIC,14' fijo='s&iacute;'">
+   <param name="G_38" value="espacio='E2' tipo='punto' color='negro' expresi&oacute;n='(2*pi,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}\f1\fs28\i{\*\mjaformula\u960 }\f2\fs24\i0}' fuente='Times New Roman Italic,ITALIC,14' fijo='s&iacute;'">
+   <param name="G_39" value="espacio='E2' tipo='punto' color='negro' expresi&oacute;n='(5*pi/2,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}\f1\fs28\i{\*\mjaformula{\fraction{\num 5\u960 }{\den 2}}}\f2\fs24\i0}' fuente='Times New Roman Italic,ITALIC,14' fijo='s&iacute;'">
+   <param name="G_40" value="espacio='E2' tipo='punto' color='negro' expresi&oacute;n='(3*pi,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}\f1\fs28\i{\*\mjaformula 3\u960 }\f2\fs24\i0}' fuente='Times New Roman Italic,ITALIC,14' fijo='s&iacute;'">
+   <param name="G_41" value="espacio='E2' tipo='punto' color='negro' expresi&oacute;n='(7*pi/2,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}\f1\fs28\i{\*\mjaformula{\fraction{\num 7\u960 }{\den 2}}}\f2\fs24\i0}' fuente='Times New Roman Italic,ITALIC,14' fijo='s&iacute;'">
+   <param name="G_42" value="espacio='E2' tipo='ecuaci&oacute;n' color='rojo' dibujar-si='(x&gt;0)&amp;(f=0)' expresi&oacute;n='y=r*sen(x)' visible='no'">
+   <param name="G_43" value="espacio='E2' tipo='ecuaci&oacute;n' color='rojo' dibujar-si='(x&gt;0)&amp;(f=1)' expresi&oacute;n='y=r*cos(x)' visible='no'">
+   <param name="G_44" value="espacio='E2' tipo='ecuaci&oacute;n' color='rojo' dibujar-si='(x&gt;0)&amp;(f=2)' expresi&oacute;n='y=r*tan(x)' visible='no'">
+   <param name="G_45" value="espacio='E2' tipo='ecuaci&oacute;n' color='rojo' dibujar-si='(x&gt;0)&amp;(f=3)' expresi&oacute;n='y=r*cot(x)' visible='no'">
+   <param name="G_46" value="espacio='E2' tipo='ecuaci&oacute;n' color='rojo' dibujar-si='(x&gt;0)&amp;(f=4)' expresi&oacute;n='y=r*sec(x)' visible='no'">
+   <param name="G_47" value="espacio='E2' tipo='ecuaci&oacute;n' color='rojo' dibujar-si='(x&gt;0)&amp;(f=5)' expresi&oacute;n='y=r*csc(x)' visible='no'">
+   <param name="G_48" value="espacio='E2' tipo='segmento' color='negro' dibujar-si='f=0|(f=6)&amp;(x&gt;0)' expresi&oacute;n='(0,0)(sen(alfa*pi/180),0)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='4' ancho='2'">
+   <param name="G_49" value="espacio='E2' tipo='segmento' color='verde' dibujar-si='(f=1)' expresi&oacute;n='(0,1)(0,cos(alfa*pi/180))' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='4' ancho='2'">
+   <param name="G_50" value="espacio='E2' tipo='punto' color='negro' dibujar-si='f=0' expresi&oacute;n='(alfa*pi/180,sen(alfa*pi/180))' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='4'">
+   <param name="G_51" value="espacio='E2' tipo='punto' color='verde' dibujar-si='f=1' expresi&oacute;n='(alfa*pi/180,cos(alfa*pi/180))' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='4'">
+   <param name="G_52" value="espacio='E2' tipo='punto' color='turquesa' dibujar-si='f=2' expresi&oacute;n='(alfa*pi/180,tan(alfa*pi/180))' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='4'">
+   <param name="G_53" value="espacio='E2' tipo='punto' dibujar-si='f=3' expresi&oacute;n='(alfa*pi/180,cot(alfa*pi/180))' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='4'">
+   <param name="G_54" value="espacio='E2' tipo='punto' color='magenta' dibujar-si='f=4' expresi&oacute;n='(alfa*pi/180,sec(alfa*pi/180))' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='4'">
+   <param name="G_55" value="espacio='E2' tipo='punto' color='amarillo' dibujar-si='f=5' expresi&oacute;n='(alfa*pi/180,csc(alfa*pi/180))' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='4'">
+   <param name="G_56" value="espacio='E2' tipo='punto' color='negro' dibujar-si='f=6' expresi&oacute;n='(alfa*pi/180,sen(alfa*pi/180))' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='4'">
+   <param name="G_57" value="espacio='E2' tipo='punto' color='verde' dibujar-si='f=6' expresi&oacute;n='(alfa*pi/180,cos(alfa*pi/180))' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='4'">
+   <param name="G_58" value="espacio='E2' tipo='punto' color='turquesa' dibujar-si='f=6' expresi&oacute;n='(alfa*pi/180,tan(alfa*pi/180))' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='4'">
+<font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+</applet>

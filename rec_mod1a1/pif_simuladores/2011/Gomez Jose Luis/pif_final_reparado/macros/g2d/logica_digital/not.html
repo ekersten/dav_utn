@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>Macro not</title></head>
+<body BGCOLOR="#eeeeee">
+<p align="center">
+<FONT size=+2>Macro: not</FONT><br>tipo 2D
+</p>
+<p align="center">
+<applet name="not"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=240 height=200>
+   <param name="nombre" value="interruptor">
+   <param name="Versi&oacute;n" value="3.5">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="escala='40' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="A_00" value="id='a' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_01" value="id='b' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="G_00" value="tipo='pol&iacute;gono' color='negro' expresi&oacute;n='(a,b)(a-0.5,b-0.25)(a-0.5,b+0.25)(a,b)' relleno='azul'">
+   <param name="G_01" value="tipo='punto' color='azul' expresi&oacute;n='(1,1)' tama&ntilde;o='3'">
+</applet>
+</p>
+<p align="center">
+Esta escena se usa para generar el macro.
+</p>
+<p align="center">
+<applet name="puerta_no"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=350 height=250>
+   <param name="nombre" value="puerta_no">
+   <param name="Versi&oacute;n" value="3.5">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="despl_imagen='arr-izq' fondo='ceffd3' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_00" value="tipo='num&eacute;rico' id='escala' regi&oacute;n='exterior' valor='48' decimales='4*(escala<10)' nombre='zoom' incr='0.1*escala' min='0.001' max='1000000' visible='no' pos_mensajes='centro'">
+   <param name="C_01" value="tipo='num&eacute;rico' id='Ox' regi&oacute;n='exterior' valor='-180' pos_mensajes='centro'">
+   <param name="C_02" value="tipo='num&eacute;rico' id='Oy' regi&oacute;n='exterior' pos_mensajes='centro'">
+   <param name="C_03" value="tipo='num&eacute;rico' id='A' decimales='0' nombre='A' incr='1' min='0' max='1' visible='si' pos_mensajes='centro'">
+   <param name="A_00" value="id='f1(A)' expresi&oacute;n='~A'">
+   <param name="G_00" value="tipo='segmento' dibujar-si='A=0' color='rojo' expresi&oacute;n='(2.3,0.5)(4,0.5)' tama&ntilde;o='0' ancho='3'">
+   <param name="G_01" value="tipo='segmento' dibujar-si='f1(A)=1' color='negro' expresi&oacute;n='(4,0.5)(4.75,0.5)' tama&ntilde;o='0' ancho='3'">
+   <param name="G_02" value="tipo='texto' dibujar-si='A=0' color='rojo' expresi&oacute;n='[65,83]' texto='A=[A]' fuente='Courier,BOLD,16' decimales='0'">
+   <param name="G_03" value="tipo='texto' dibujar-si='f1(A)=1' color='negro' expresi&oacute;n='[225,83]' texto='[f1(A)]' fuente='Courier,BOLD,16' decimales='0'">
+   <param name="G_04" value="tipo='texto' color='gris' expresi&oacute;n='[134,30]' texto='NO (NOT)' fuente='Helvetica,BOLD,16' decimales='0'">
+   <param name="G_05" value="tipo='texto' color='grisObscuro' expresi&oacute;n='[150,150]' texto='A' fuente='Helvetica,BOLD,16' decimales='0'">
+   <param name="G_06" value="tipo='texto' color='grisObscuro' expresi&oacute;n='[150,130]' texto='_' fuente='Helvetica,BOLD,16' decimales='0'">
+   <param name="G_07" value="tipo='segmento' dibujar-si='A=1' color='azul' expresi&oacute;n='(2.3,0.5)(4,0.5)' tama&ntilde;o='0' ancho='3'">
+   <param name="G_08" value="tipo='texto' dibujar-si='A=1' color='azul' expresi&oacute;n='[65,83]' texto='A=[A]' fuente='Courier,BOLD,16' decimales='0'">
+   <param name="G_09" value="tipo='texto' dibujar-si='f1(A)=0' color='gris' expresi&oacute;n='[225,83]' texto='[f1(A)]' fuente='Courier,BOLD,16' decimales='0'">
+   <param name="G_10" value="tipo='segmento' dibujar-si='f1(A)=0' color='gris' expresi&oacute;n='(4,0.5)(4.75,0.5)' tama&ntilde;o='0' ancho='3'">
+   <param name="G_11" value="tipo='macro' expresi&oacute;n='logica_digital/not' posini='[3,-0.5]'">
+</applet>
+</p>
+<p align="center">
+Esta escena es una aplicación de la macro.
+</p>
+<hr>
+
+<p><font size="2" face="Arial"><strong><cite><dfn><samp><tt>Autor: Josep Mª Navarro Canut</tt></samp></dfn></cite></strong></font></p>
+
+</body>
+</html>
+
+

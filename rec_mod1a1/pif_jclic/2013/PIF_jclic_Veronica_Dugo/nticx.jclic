@@ -1,0 +1,1324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="nticx" version="0.1.3">
+ <settings>
+  <title>Conceptos de básicos de NTICx</title>
+  <revision description="created" date="8/1/13" />
+  <author name="Verónica Dugo" mail="veronicadugo@hotmail.com" rol="Profesor" />
+  <language>español (es)</language>
+  <descriptors area="NTICx - Informática - Tecnología" level="Secundaria -  4to año" />
+  <skin file="@orange.xml" />
+ </settings>
+ <sequence>
+  <item id="inicio" name="Pantalla Inicial" />
+  <item id="Menu01" name="Menu01" navButtons="back" />
+  <item name="Ordenar palabras" />
+  <item name="rellenar agujeros" />
+  <item name="rellenar agujeros completar palabras" />
+  <item name="Rellenar agujeros con lista de opciones" />
+  <item name="Ordenar párrafos">
+   <jump action="RETURN" id="forward" />
+  </item>
+  <item name="rompecabezas" />
+  <item name="Memotest" />
+  <item name="Sopa de letras">
+   <jump action="RETURN" id="forward" />
+  </item>
+  <item name="Principales inventos" />
+  <item name="asociación simple" />
+  <item name="Asociación compleja" />
+  <item name="Identificación" />
+  <item id="fin" name="Pantalla Final">
+   <jump action="EXIT" id="forward" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@associations.ComplexAssociation" name="Asociación compleja" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="Comic Sans MS" size="17" bold="true" />
+      <gradient source="0xFFCC66" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Relaciona las diferentes características con la generación que le corresponde</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Comic Sans MS" size="17" bold="true" />
+      <gradient source="0xFFCC66" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>¡Perfecto! Lo hiciste muy bien</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Comic Sans MS" size="17" bold="true" />
+      <gradient source="0xFFCC66" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>¡Vuelve a intentarlo!</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="120" countDownTime="true" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Arrastra la característica hasta la generación correspondiente</p>
+    </helpWindow>
+    <container bgColor="0xFFCC66">
+     <counters time="true" actions="false" score="true" />
+    </container>
+    <window bgColor="0xFFCC66" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="5" cols="3" cellWidth="200.0" cellHeight="100.0" border="true" id="primary">
+    <style borderStroke="2.7" markerStroke="2.7">
+     <font family="Arial Narrow" size="24" bold="true" />
+     <color background="0xFFCC66" inactive="0xFFFFCC" border="0xFFFF33" />
+     <gradient source="0xFFCC66" dest="0xFFFFFF" angle="0" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="5" />
+    <cell id="0">
+     <p>Tenían en su mecanismo tubos  de vacío</p>
+    </cell>
+    <cell id="0">
+     <p> Debían ubicarse en ambientes controlados en temperatura y humedad</p>
+    </cell>
+    <cell id="0">
+     <p>Se utilizaba exclusivamente lenguaje de máquina</p>
+    </cell>
+    <cell id="1">
+     <p>Utilizan transistores</p>
+    </cell>
+    <cell id="1">
+     <p>Comienzan a utilizarse algunos lenguajes de alto nivel</p>
+    </cell>
+    <cell id="0">
+     <p>Medidas, peso y cableado excesivamente grandes</p>
+    </cell>
+    <cell id="2">
+     <p>Surge el concepto de Sistema operativo</p>
+    </cell>
+    <cell id="2">
+     <p>Los microtransistores reemplazan a los transistores</p>
+    </cell>
+    <cell id="2">
+     <p>Formas de introducir y almacenar datos: Discos duros y disquetes de 8 pulgadas y cintas de almacenamiento.</p>
+    </cell>
+    <cell id="3">
+     <p>Los circuitos integrados reemplazan a los microtransistores</p>
+    </cell>
+    <cell id="3">
+     <p>Aparecen nuevos lenguajes de programación de alto nivel</p>
+    </cell>
+    <cell id="3">
+     <p>Formas de introducir y almacenar datos: disquetes de 5 1/4 pulgadas y 3 1/2 pulgadas, además de los discos duros</p>
+    </cell>
+    <cell id="4">
+     <p>La arquitectura de procesamiento emula a las redes neurales del cerebro humano.</p>
+    </cell>
+    <cell id="4">
+     <p>El entorno multimedia, integración de datos, imágenes y voz, ya se considera como un estándar en este tipo de máquinas</p>
+    </cell>
+    <cell id="4">
+     <p>Formas de introducir y almacenar datos: comenzaron a utilizarse ampliamente los discos ópticos (CDs, DVDs, Blu-ray), memorias flash, almacenamiento online</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="1" cellWidth="200.0" cellHeight="101.0" border="true" id="secondary">
+    <style shadow="true" borderStroke="2.7" markerStroke="5.0">
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFF9933" inactive="0xFFFFCC" border="0xFFFF33" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="5" />
+    <cell>
+     <p>1er Generación</p>
+     <p>1946 - 1958</p>
+    </cell>
+    <cell>
+     <p>2da Generación</p>
+     <p>1958 - 1965</p>
+    </cell>
+    <cell>
+     <p>3er Generación</p>
+     <p>1965 - 1970</p>
+    </cell>
+    <cell>
+     <p>4ta Generación</p>
+     <p>1971 - 1980</p>
+    </cell>
+    <cell>
+     <p>5ta Generación</p>
+     <p>1980 - ?</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.Identify" name="Identificación" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Comic Sans MS" size="17" />
+      <gradient source="0xFF9900" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>¿Cuáles de estas computadoras no representan a la 1er generación?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Comic Sans MS" size="17" />
+      <gradient source="0xFF9900" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Esta es la ENIAC. Es representativa de la 1er generación</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow>
+     <p>Haz clic en las computadoras que no pertenecen a la primera generación</p>
+    </helpWindow>
+    <container bgColor="0xFFCC33">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFCC66" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="2" cellWidth="401.0" cellHeight="502.0" border="true" id="primary">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="16" />
+     <color background="0xCCCCCC" inactive="0xFFFFFF" border="0xFF6633" />
+     <gradient source="0xFF9900" dest="0xFFFFFF" angle="0" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell id="0" image="Eniac (1).jpg">
+     <style>
+      <font family="Comic Sans MS" size="17" bold="true" />
+      <color inactive="0x66FFFF" />
+      <gradient source="0xFF9900" dest="0xFFFFFF" angle="0" />
+     </style>
+    </cell>
+    <cell id="1" avoidOverlapping="true" image="ibm.7090.jpg">
+     <style>
+      <font family="Comic Sans MS" size="17" />
+      <color inactive="0x66FFFF" />
+      <gradient source="0xFF9900" dest="0xFFFFFF" angle="0" />
+     </style>
+    </cell>
+    <cell id="1" imgAlign="middle,bottom" image="ibm360.jpg">
+     <style>
+      <font family="Comic Sans MS" size="17" />
+      <color inactive="0x66FFFF" />
+      <gradient source="0xFF9900" dest="0xFFFFFF" angle="0" />
+     </style>
+    </cell>
+    <cell id="1" image="IBM_PC_5150.jpg">
+     <style>
+      <font family="Comic Sans MS" size="17" bold="true" />
+      <color inactive="0x66FFFF" />
+      <gradient source="0xFF9900" dest="0xFFFFFF" angle="0" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="2" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell />
+    <cell txtAlign="right,top" avoidOverlapping="true" image="ibm.7090.jpg">
+     <p>IBM 7090 - Es representativa de la 2da generación</p>
+    </cell>
+    <cell txtAlign="right,top" imgAlign="middle,bottom" image="ibm360 (1).jpg">
+     <p>IBM 360 - Es representativa de la 3er generación</p>
+    </cell>
+    <cell txtAlign="right,top" image="IBM_PC_5150.jpg">
+     <p>IBM 5150 - Es representativa de la 4ta generación</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="Memotest" code="">
+   <description />
+   <messages>
+    <cell avoidOverlapping="true" image="computadora icono.jpg" type="initial">
+     <style>
+      <font family="Comic Sans MS" size="17" />
+      <gradient source="0xFF9933" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Une cada componente con el nombre correspondiente. </p>
+    </cell>
+    <cell avoidOverlapping="true" image="computadora icono.jpg" type="final">
+     <style>
+      <gradient source="0xFF9933" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>¡Muy bien! ¡Lo lograste!</p>
+    </cell>
+    <cell avoidOverlapping="true" image="computadora icono.jpg" type="finalError">
+     <style>
+      <font family="Comic Sans MS" size="17" />
+      <gradient source="0xFF9933" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>¡Vuelve a intentarlo!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="bytes.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFF6600" dest="0xFFFFFF" angle="0" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="200.0" cellHeight="138.0" border="true" id="primary">
+    <style>
+     <gradient source="0xFF9933" dest="0xFFFFFF" angle="0" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Comic Sans MS" size="17" />
+      <color background="0xFFCC33" />
+      <gradient source="0xFF9933" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Disco Rígido</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Comic Sans MS" size="17" />
+      <color background="0xFFCC33" />
+      <gradient source="0xFF9933" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Memoria RAM</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Comic Sans MS" size="17" />
+      <color background="0xFFCC33" />
+      <gradient source="0xFF9933" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Lectora de CD</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Comic Sans MS" size="17" />
+      <color background="0xFFCC33" />
+      <gradient source="0xFF9933" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Placa de Video</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Comic Sans MS" size="17" />
+      <color background="0xFFCC33" />
+      <gradient source="0xFF9933" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Microprocesador</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Comic Sans MS" size="17" />
+      <color background="0xFFCC33" />
+      <gradient source="0xFF9933" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Placa madre (Motherboard)</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="50.0" cellHeight="30.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="Disco_Rigido.jpg" />
+    <cell image="memoria ram.jpg" />
+    <cell image="lector-de-cd.jpg" />
+    <cell image="placa de video.jpg" />
+    <cell image="microprocesador.jpg" />
+    <cell image="PlacamadrePC.jpg" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="Menu01" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xFFCC66">
+     <counters time="true" actions="false" score="true" />
+    </container>
+    <window bgColor="0xFFCC66" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="3" cols="1" cellWidth="998.0" cellHeight="604.0" border="true">
+    <style shadow="true" borderStroke="2.7" markerStroke="2.7">
+     <font family="Arial Black" size="26" bold="true" />
+     <color background="0xFFCC66" inactive="0xFFFFCC" border="0xFFFF33" />
+     <gradient source="0xFFCC66" dest="0xFFFFFF" angle="0" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Ordenar palabras" />
+     <p>Conceptos básicos de tecnología</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="rompecabezas" />
+     <p>Componentes de Hardware</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Principales inventos" />
+     <p>Computadoras:</p>
+     <p>Evolución Histórica </p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@text.Order" name="Ordenar palabras" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell type="previous">
+     <style>
+      <gradient source="0xFF9900" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Lee atentamente y luego haz clic y ordena las palabras que no están en su lugar</p>
+    </cell>
+    <cell type="initial">
+     <style>
+      <font family="Comic Sans MS" size="17" />
+      <gradient source="0xFF9900" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Ordena las siguientes palabras</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Comic Sans MS" size="17" />
+      <gradient source="0xFF9900" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Lo hiciste muy bien!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFF9900">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFCC00" transparent="true" border="true">
+     <size width="584" height="501" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <prevScreen>
+    <style>
+     <color alternative="0xFFFFCC" />
+     <gradient source="0xFF9900" dest="0xFFFFFF" angle="0" />
+    </style>
+    <p>REVOLUCIONES TECNOLÓGICAS&#xD;</p>
+    <p>&#xD;</p>
+    <p>A lo largo de la historia de la humanidad se produjeron cambios de manera profunda permitiendo una modificación de los patrones sociales. En la revolución neolítica, 8.000 A.C., algunos pueblos se establecieron en territorios fijos, de allí el nacimiento de las grandes civilizaciones.&#xD;</p>
+    <p>&#xD;</p>
+    <p>Tres revoluciones científico-tecnológicas, modificaron los patrones de la organización social:&#xD;</p>
+    <p>&#xD;</p>
+    <p>La Primera es la Revolución Industrial que se desarrollo en Inglaterra en el S. XVIII. A partir de la introducción de la máquina de vapor, se posibilitó la producción a gran escala de productos y el desarrollo de las comunicaciones con el ferrocarril a vapor.&#xD;</p>
+    <p>&#xD;</p>
+    <p>La Segunda revolución, a inicios de S. XX se caracteriza por la organización de las industrias a partir de la Línea de montaje, para la producción masiva de productos en serie.&#xD;</p>
+    <p>&#xD;</p>
+    <p>La Tercera es la revolución de Las tecnologías de la información y la Comunicación que se desarrolla en la actualidad. Se caracteriza por el desarrollo de tecnologías que permiten procesar, almacenar y transmitir gran cantidad de información en brevísimos lapsos de tiempo, comparados con los que demoraba el hombre con otros métodos más sencillos.</p>
+   </prevScreen>
+   <document>
+    <style name="default" italic="false" bold="true" background="0xFFCC00" tabWidth="12" size="14" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <cell width="100" height="40">
+       <style transparent="true" borderStroke="0.7" markerStroke="5.0" />
+      </cell>
+      <text italic="false" background="0xFFCC00" bold="false" size="26" family="Britannic Bold">REVOLUCIONES TECNOLÓGICAS</text>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial" />
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="false" size="14" family="Arial">A lo largo de la historia de la humanidad se produjeron cambios de manera profunda permitiendo una modificación de los patrones sociales. En la revolución </text>
+      <target>neolítica,</target>
+      <text italic="false" background="0xFFCC00" bold="false" size="14" family="Arial"> 8.000 A.C., algunos </text>
+      <target>pueblos</target>
+      <text italic="false" background="0xFFCC00" bold="false" size="14" family="Arial"> se establecieron en territorios </text>
+      <target>fijos,</target>
+      <text italic="false" background="0xFFCC00" bold="false" size="14" family="Arial"> de allí el nacimiento de las grandes </text>
+      <target>civilizaciones.</target>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial" />
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="false" size="14" family="Arial">Tres revoluciones científico-tecnológicas, modificaron los patrones de la organización social:</text>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial" />
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="false" size="14" family="Arial">La Primera es la Revolución Industrial que se desarrollo en Inglaterra en el S. XVIII. A partir de la introducción de la máquina de </text>
+      <target>vapor,</target>
+      <text italic="false" background="0xFFCC00" bold="false" size="14" family="Arial"> se posibilitó la </text>
+      <target>producción</target>
+      <text italic="false" background="0xFFCC00" bold="false" size="14" family="Arial"> a gran escala de productos y el desarrollo de las comunicaciones con el ferrocarril a vapor.</text>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial" />
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="false" size="14" family="Arial">La Segunda revolución, a inicios de S. XX se caracteriza por la organización de las </text>
+      <target>industrias</target>
+      <text italic="false" background="0xFFCC00" bold="false" size="14" family="Arial"> a partir de la Línea de montaje, para la producción </text>
+      <target>masiva</target>
+      <text italic="false" background="0xFFCC00" bold="false" size="14" family="Arial"> de productos en serie.</text>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial" />
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="false" size="14" family="Arial">La Tercera es la revolución de Las tecnologías de la </text>
+      <target>información</target>
+      <text italic="false" background="0xFFCC00" bold="false" size="14" family="Arial"> y la Comunicación que se desarrolla en la </text>
+      <target>actualidad.</target>
+      <text italic="false" background="0xFFCC00" bold="false" size="14" family="Arial"> Se caracteriza por el desarrollo de tecnologías que permiten procesar, almacenar y transmitir gran cantidad de información en brevísimos lapsos de tiempo, comparados con los que demoraba el hombre con otros métodos más sencillos.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.Order" name="Ordenar párrafos" code="" type="orderParagraphs">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Comic Sans MS" size="17" />
+      <gradient source="0xFF9900" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Ordena los párrafos según corresponda</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Comic Sans MS" size="17" />
+      <gradient source="0xFF9900" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Lo hiciste muy bien!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFF9900">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFCC00" transparent="true" border="true">
+     <size width="780" height="501" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <document>
+    <style name="default" italic="false" bold="true" background="0xFFCC00" tabWidth="12" size="14" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="false" size="26" family="Britannic Bold">El metodo cientifico y sus etapas</text>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial" />
+     <p bold="true" background="0xFFCC00" size="14" family="Arial" />
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <text italic="true" background="0xFFCC00" bold="true" size="14" family="Arial">METODO CIENTIFICO: Es una secuencia de pasos que nos permiten explicar hechos o fenomenos de la naturleza a traves de una actividad cientifica.</text>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial" />
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="true" size="18" family="Arial">PASOS O ETAPASA DEL METODO CIENTIFICO</text>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial" />
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <target>LA OBSERVACION:Es un proceso qu e nos permite obtener informacion acerca de los objetos, hechos o fenomenos.</target>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial" />
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <target>LA HIPOTESIS: Es una explicacion que contesta una pregunta, luego debe ser comprobada para ver si es correcta o no</target>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial" />
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <target>LA EXPERIMENTACION O BUSQUEDA DE INFORMACION: Servira para comprobar o refutar una hipotesis a traves de la medicion o comparacion.</target>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial" />
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <target>LA ORGANIZACION DE LA INFORMACION: Es el resultado de nuevas observaciones, mediciones o indagaciones a traves de un experimento o busqueda de informacion en libros, revistas,entrevistas,etc.Ahora, estos datos obtenidos durante la actividad de investigacion, tendremos que organizarlos en cuadros graficos, esquemas, diagramas, fotos,etc</target>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial" />
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <target>LAS CONCLUSIONES O COMUNICACION DE LOS RESULTADOS OBTENIDOS: Si comprobamos que la hipotesis planteada es verdadera, nuestra conclusion sera VALIDA; en caso de que los hechos investigados no cvoincidan con la hipotesis, esta sera NO VALIDA, por lo que tendremos que replantear la hipotesis</target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="Pantalla Final" code="">
+   <description />
+   <messages>
+    <cell imgAlign="right,middle" avoidOverlapping="true" border="true" image="computadora.jpg" type="initial">
+     <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial Black" size="17" />
+      <color background="0xFFFFCC" inactive="0xCCFFCC" />
+      <gradient source="0xFF9900" dest="0xFFFFFF" angle="165" />
+     </style>
+     <p>Haz completado tus actividades. Felicitaciones</p>
+    </cell>
+   </messages>
+   <settings margin="25" maxTime="60" countDownTime="true" report="false">
+    <container bgColor="0xFFCC66">
+     <gradient source="0xFF9933" dest="0xFFFFCC" angle="0" />
+     <counters time="true" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFF9966" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="informatica.gif">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFF99" />
+    </style>
+    <shaper class="@ClassicJigSaw" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Pantalla Inicial" code="">
+   <description />
+   <messages>
+    <cell imgAlign="right,middle" avoidOverlapping="true" border="true" image="computadora.jpg" type="initial">
+     <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial Black" size="17" />
+      <color background="0xFFFFCC" inactive="0xCCFFCC" />
+      <gradient source="0xFF9900" dest="0xFFFFFF" angle="165" />
+     </style>
+     <p>Algunos conceptos básicos de NTICX</p>
+     <p>Avanza a la página siguiente para iniciar la actividad</p>
+    </cell>
+   </messages>
+   <settings margin="25" maxTime="60" countDownTime="true" report="false">
+    <helpWindow>
+     <p>Avanza a la página siguiente para iniciar la actividad</p>
+    </helpWindow>
+    <container bgColor="0xFFCC66">
+     <gradient source="0xFF9933" dest="0xFFFFCC" angle="0" />
+     <counters time="true" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFF9966" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="informatica.gif">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFF99" />
+    </style>
+    <shaper class="@ClassicJigSaw" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@text.FillInBlanks" name="Rellenar agujeros con lista de opciones" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <gradient source="0xFF9900" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Escribe las palabras que faltan en el texto</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <gradient source="0xFF9900" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Muy bien! Lo lograste!</p>
+    </cell>
+    <cell type="finalError">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <gradient source="0xFF3300" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Vuelve a intentarlo!</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="120" countDownTime="false" report="true" reportActions="false">
+    <container bgColor="0xFF9900">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFCC00" transparent="true" border="true">
+     <size width="780" height="580" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <document>
+    <style name="default" italic="false" bold="true" background="0xFFCC00" tabWidth="12" size="14" family="Arial" />
+    <style name="target" base="default" target="true" background="0xFFCC00" foreground="0x0000FF" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p italic="false" background="0xFFCC00" bold="true" size="14" Alignment="1" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="false" size="24" family="Britannic Bold">Las tecnologías de la información y la comunicación</text>
+     </p>
+     <p italic="false" background="0xFFCC00" bold="true" size="14" family="Arial" />
+     <p italic="false" background="0xFFCC00" bold="true" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="true" size="14" family="Arial">Se denomina tecnologías de la información y la comunicación (TIC) a aquellas tecnologías que permiten el almacenamiento, procesamiento y transmisión de datos, brindando una gran variedad de formas comunicativas.</text>
+     </p>
+     <p italic="false" background="0xFFCC00" bold="true" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="true" size="14" family="Arial">El gran avance en las comunicaciones, en parte, se debe al progreso en los campos de la </text>
+      <target>
+       <answer>microelectrónica</answer>
+       <optionList>
+        <option>electrónica</option>
+        <option>microelectrónica</option>
+        <option>metalurgia</option>
+        <option>electricidad</option>
+       </optionList>
+       <text>microelectrónica</text>
+      </target>
+      <text italic="false" background="0xFFCC00" bold="true" size="14" family="Arial"> de la </text>
+      <target>
+       <answer>informática</answer>
+       <optionList>
+        <option>metalurgia</option>
+        <option>informática</option>
+        <option>tecnología</option>
+       </optionList>
+       <text>informática</text>
+      </target>
+      <text italic="false" background="0xFFCC00" bold="true" size="14" family="Arial">.</text>
+     </p>
+     <p italic="false" background="0xFFCC00" bold="true" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="true" size="14" family="Arial">Artefactos tecnológicos que permiten distintas formas de comunicación:</text>
+     </p>
+     <p italic="false" background="0xFFCC00" bold="true" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="true" size="14" family="Arial">Satélites, computadoras individuales o conectadas en red, equipos multimedia, Internet y TV.</text>
+     </p>
+     <p italic="false" background="0xFFCC00" bold="true" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="true" size="14" family="Arial">Estos progresos han hecho que las comunicaciones tengan un marcado avance cualitativo en sus prestaciones, para lo cual ha sido fundamental lograr la digitalización de las señales.</text>
+     </p>
+     <p italic="false" background="0xFFCC00" bold="true" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="true" size="14" family="Arial">A grandes rasgos, el proceso de digitalización consiste en tomar una señal </text>
+      <target>
+       <answer>analógica</answer>
+       <optionList>
+        <option>digital</option>
+        <option>analógica</option>
+        <option>discreta</option>
+       </optionList>
+       <text>analógica</text>
+      </target>
+      <text italic="false" background="0xFFCC00" bold="true" size="14" family="Arial"> (voz, datos, música, etc.) y transformarla en una señal </text>
+      <target>
+       <answer>digital</answer>
+       <optionList>
+        <option>analógica</option>
+        <option>discreta</option>
+        <option>digital</option>
+       </optionList>
+       <text>digital</text>
+      </target>
+      <text italic="false" background="0xFFCC00" bold="true" size="14" family="Arial">. Esto significa convertir esos datos en una sucesión de ceros y unos –código binario– de tal forma que cualquier computadora pueda procesar dicha información, aprovechando la gran capacidad de cálculo.</text>
+     </p>
+     <p italic="false" background="0xFFCC00" bold="true" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="true" size="14" family="Arial">Así, gracias al trabajo en conjunto de la informática y de las telecomunicaciones, se ha logrado que las computadoras pueden sacar provecho de las líneas de teléfono y viceversa; vemos cómo hoy en día podemos revisar el correo electrónico desde un teléfono celular o navegar por internet.</text>
+     </p>
+     <p italic="false" background="0xFFCC00" bold="true" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="true" size="14" family="Arial">Las TICSestán conformadas por tres especialidades principales:</text>
+     </p>
+     <p italic="false" background="0xFFCC00" bold="true" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="true" size="14" family="Arial">	La microelectrónica: que tiene su origen con la electricidad y su presente con la electrónica.</text>
+     </p>
+     <p italic="false" background="0xFFCC00" bold="true" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="true" size="14" family="Arial">	La informática: que se centra en la manipulación y gestión automática de la información.</text>
+     </p>
+     <p italic="false" background="0xFFCC00" bold="true" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="true" size="14" family="Arial">	Las telecomunicaciones: que sin duda es la especialidad más antigua de las tres, aportando como referencia obligada la creación del telégrafo, el teléfono y la radio.</text>
+     </p>
+     <p italic="false" background="0xFFCC00" bold="true" size="14" family="Arial" />
+     <p italic="false" background="0xFFCC00" bold="true" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="true" size="14" family="Arial">El trabajo en conjunto entre elementos informáticos y de telecomunicación se llama Telemática</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="Sopa de letras" code="">
+   <description />
+   <messages>
+    <cell avoidOverlapping="true" image="computadora icono.jpg" type="initial">
+     <style>
+      <gradient source="0xFF9933" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Encuentra 6 periféricos de entrada o salida de información</p>
+    </cell>
+    <cell txtAlign="left,top" avoidOverlapping="true" image="computadora icono.jpg" type="final">
+     <style>
+      <gradient source="0xFF9933" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Muy bien!! Lo lograste!!</p>
+    </cell>
+    <cell txtAlign="left,top" avoidOverlapping="true" image="10310346-cara-triste.jpg" type="finalError">
+     <style>
+      <gradient source="0xFF9933" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Vuelve a intentarlo!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF6600">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFCC33" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <textGrid rows="15" columns="12" cellWidth="28.0" cellHeight="29.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>*******MONITOR*</row>
+     <row>***********E***</row>
+     <row>*E*I*******C***</row>
+     <row>*S*M*J*****L***</row>
+     <row>*U*P**O****A***</row>
+     <row>*O*R***Y***D***</row>
+     <row>*M*E****S**O***</row>
+     <row>***S*****T*****</row>
+     <row>***O******I****</row>
+     <row>***R*******C***</row>
+     <row>*SCANNER****K**</row>
+     <row>***************</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">MOUSE</clue>
+    <clue id="1">IMPRESORA</clue>
+    <clue id="2">TECLADO</clue>
+    <clue id="3">JOYSTICK</clue>
+    <clue id="4">SCANNER</clue>
+    <clue id="5">MONITOR</clue>
+   </clues>
+   <cells rows="3" cols="2" cellWidth="164.0" cellHeight="130.0" border="true" id="secondary">
+    <style>
+     <gradient source="0xFF9933" dest="0xFFFFFF" angle="0" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell image="MOUSE.jpg" />
+    <cell image="IMPRESORA.jpg" />
+    <cell image="teclado.jpg" />
+    <cell image="joystick.jpg" />
+    <cell image="scanner.jpg" />
+    <cell image="monitor.jpg" />
+   </cells>
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="rellenar agujeros" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Comic Sans MS" size="17" bold="true" />
+      <gradient source="0xFFCC33" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Escribe las palabras que faltan en el texto</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Comic Sans MS" size="17" bold="true" />
+      <gradient source="0xFFCC33" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Muy bien! Lo lograste!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Comic Sans MS" size="17" bold="true" />
+      <gradient source="0xFFCC33" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>El tiempo se terminó! Vuelve a intentarlo</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="120" countDownTime="false" report="true" reportActions="false">
+    <container bgColor="0xFF9900">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFCC00" transparent="true" border="true">
+     <size width="718" height="516" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <document>
+    <style name="default" italic="false" bold="true" background="0xFFCC00" tabWidth="12" size="14" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="false" size="24" family="Britannic Bold">La tecnología</text>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="true" size="16" family="Arial">¿Qué es la tecnología?</text>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="true" size="16" family="Arial">Para comprender el significado de tecnología debemos analizar el concepto de </text>
+      <target>
+       <answer>técnica</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>técnica</text>
+      </target>
+      <text italic="false" background="0xFFCC00" bold="true" size="16" family="Arial"> </text>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="true" size="16" family="Arial">y su relación con las tecnologías.</text>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="true" size="16" family="Arial">La técnica es un conjunto de procedimientos o pasos </text>
+      <target>
+       <answer>sistemáticos</answer>
+       <response fill="_" length="12" maxLength="12" />
+       <info>
+        <cell width="100" height="40">
+         <p>Metódicos que se ajustan a un conjunto organizado de reglas</p>
+        </cell>
+       </info>
+       <text>sistemáticos</text>
+      </target>
+      <text italic="false" background="0xFFCC00" bold="true" size="16" family="Arial">, por medio de los </text>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="true" size="16" family="Arial">cuales se realiza determinada tarea; pero también es tener la habilidad para usar esos </text>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="true" size="16" family="Arial">procedimientos.</text>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="true" size="16" family="Arial">La técnica es parte de la </text>
+      <target>
+       <answer>tecnología</answer>
+       <response fill="_" length="10" maxLength="10" />
+       <text>tecnología</text>
+      </target>
+      <text italic="false" background="0xFFCC00" bold="true" size="16" family="Arial">. El propósito de la tecnología es </text>
+      <target>
+       <answer>investigar</answer>
+       <response fill="_" length="10" maxLength="10" />
+       <info>
+        <cell width="132" height="79">
+         <p>Estudiar y experimentar para aumentar los conocimientos sobre ella</p>
+        </cell>
+       </info>
+       <text>investigar</text>
+      </target>
+      <text italic="false" background="0xFFCC00" bold="true" size="16" family="Arial"> y tratar </text>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="true" size="16" family="Arial">de hacer más eficaz y productivas a las distintas técnicas.</text>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="true" size="16" family="Arial">Siempre que se habla de tecnología, tendemos a asociarla con artefactos, objetos </text>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="true" size="16" family="Arial">que nos rodean cotidianamente: un teléfono celular, un automóvil o una computadora, </text>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="true" size="16" family="Arial">estos artefactos provienen de las tecnologías artefactuales, que no son las únicas </text>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <text italic="false" background="0xFFCC00" bold="true" size="16" family="Arial">que implementa y desarrolla el ser humano respecto a esto Sancho Gil dice:</text>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <text italic="true" background="0xFFCC00" bold="true" size="16" family="Arial">“Algo que diferencia de forma sustancial a la especie humana del resto de los seres </text>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <text italic="true" background="0xFFCC00" bold="true" size="16" family="Arial">vivos es su capacidad para generar esquemas de acción sistemáticos, perfeccionarlos, </text>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <text italic="true" background="0xFFCC00" bold="true" size="16" family="Arial">enseñarlos y traspasarlos a grupos distantes en el espacio y el tiempo. Para valorar sus </text>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <text italic="true" background="0xFFCC00" bold="true" size="16" family="Arial">pros y sus contras y tomar decisiones sobre la conveniencia, utilidad (para uno o para </text>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <text italic="true" background="0xFFCC00" bold="true" size="16" family="Arial">muchos) de avanzar hacia unos caminos u otros. Es decir, su capacidad no sólo para </text>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <text italic="true" background="0xFFCC00" bold="true" size="16" family="Arial">desarrollar utensilios, aparatos, herramientas, técnicas y tecnologías artefactuales, sino </text>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <text italic="true" background="0xFFCC00" bold="true" size="16" family="Arial">también diferentes tecnologías simbólicas: lenguaje, escritura, sistemas de representación </text>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <text italic="true" background="0xFFCC00" bold="true" size="16" family="Arial">icónica y simbólica, sistemas de pensamiento […] En este sentido, se puede decir que la </text>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial">
+      <text italic="true" background="0xFFCC00" bold="true" size="16" family="Arial">tecnología es una producción básicamente humana…”</text>
+     </p>
+     <p bold="true" background="0xFFCC00" size="14" family="Arial" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="rellenar agujeros completar palabras" code="">
+   <description />
+   <messages>
+    <cell type="previous">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <gradient source="0xFF9900" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Lee atentamente... Luego haz clic para continuar</p>
+    </cell>
+    <cell type="initial">
+     <style>
+      <font family="Comic Sans MS" size="17" />
+      <gradient source="0xFFCC33" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Completar las palabras que faltan. ¡Presta atención como ayuda te mostramos la inicial de cada palabra faltante!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <gradient source="0xFFCC33" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Muy bien! Lo lograste!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <gradient source="0xFF3300" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>¡Vuelve a intentarlo!</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="120" countDownTime="false" report="true" reportActions="false">
+    <container bgColor="0xFF9900">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFCC00" transparent="true" border="true">
+     <size width="780" height="465" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <prevScreen>
+    <style />
+    <p>¿Qué impulsa el cambio tecnológico?&#xD;</p>
+    <p>&#xD;</p>
+    <p>Tal vez hayas observado los constantes cambios en las tecnologías que nos rodean, &#xD;</p>
+    <p>en algunos ámbitos los cambios son más notorios y en otros no tanto.&#xD;</p>
+    <p>Si tomamos el caso de las tecnologías de la información – piensa en los teléfonos &#xD;</p>
+    <p>celulares o en dispositivos similares– enseguida podrás darte cuenta que los cambios parecen constantes ¡como si no hubiera pausa!, claro que aquí sólo estamos hablando de objetos u artefactos; recuerda que las tecnologías no sólo son productos listos para usar. &#xD;</p>
+    <p>El cambio tecnológico es impulsado por los continuos procesos de innovación que, a &#xD;</p>
+    <p>su vez, son producto de la necesidad del hombre por mejorar una tecnología inventada previamente.&#xD;</p>
+    <p>La invención es el paso previo a la creación de una tecnología, el hombre toma esa &#xD;</p>
+    <p>creación y mediante continuos procesos de mejora – innovación–  logra obtener nuevos productos, servicios y métodos que generan un nuevo conocimiento, y a partir de este punto el ciclo comienza nuevamente.&#xD;</p>
+    <p>¿Por qué es necesaria la innovación constante?&#xD;</p>
+    <p>Un mayor nivel de productividad –más eficiencia y más eficacia en los procesos de &#xD;</p>
+    <p>fabricación  –, obtener porciones más grandes del mercado– para vender un determinado &#xD;</p>
+    <p>producto– , satisfacer necesidades de la sociedad y generar nuevo conocimiento son &#xD;</p>
+    <p>las principales causas que movilizan el ciclo de innovación.&#xD;</p>
+    <p>Los actores involucrados en este proceso –sociedad, empresa, Estado nacional, &#xD;</p>
+    <p>instituciones educativas–  son los que dan forma a la dinámica de un país.</p>
+   </prevScreen>
+   <document>
+    <style name="default" italic="false" bold="true" background="0xFFCC00" tabWidth="12" size="14" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFCC33" size="16" family="Arial">¿Qué impulsa el cambio tecnológico?</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFCC33" size="16" family="Arial">Tal vez hayas observado los constantes cambios en las </text>
+      <target>
+       <answer>tecnologías</answer>
+       <response fill="_" length="11" maxLength="11" show="t" />
+       <text>tecnologías</text>
+      </target>
+      <text background="0xFFCC33" size="16" family="Arial"> que nos rodean, </text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFCC33" size="16" family="Arial">en algunos ámbitos los cambios son más notorios y en otros no tanto.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFCC33" size="16" family="Arial">Si tomamos el caso de las tecnologías de la información – piensa en los teléfonos </text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFCC33" size="16" family="Arial">celulares o en dispositivos similares– enseguida podrás darte cuenta que los cambios parecen constantes ¡como si no hubiera pausa!, claro que aquí sólo estamos hablando de objetos u artefactos; recuerda que las tecnologías no sólo son productos listos para usar. </text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFCC33" size="16" family="Arial">El cambio tecnológico es impulsado por los continuos procesos de </text>
+      <target>
+       <answer>innovación</answer>
+       <response fill="_" length="10" maxLength="10" show="i" />
+       <text>innovación</text>
+      </target>
+      <text background="0xFFCC33" size="16" family="Arial"> que, a </text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFCC33" size="16" family="Arial">su vez, son producto de la </text>
+      <target>
+       <answer>necesidad</answer>
+       <response fill="_" length="9" maxLength="9" show="n" />
+       <text>necesidad</text>
+      </target>
+      <text background="0xFFCC33" size="16" family="Arial"> del hombre por mejorar una tecnología inventada previamente.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFCC33" size="16" family="Arial">La </text>
+      <target>
+       <answer>invención</answer>
+       <response fill="_" length="9" maxLength="9" show="i" />
+       <text>invención</text>
+      </target>
+      <text background="0xFFCC33" size="16" family="Arial"> es el paso previo a la creación de una tecnología, el hombre toma esa </text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFCC33" size="16" family="Arial">creación y mediante continuos procesos de mejora – innovación–  logra obtener nuevos productos, servicios y métodos que generan un nuevo conocimiento, y a partir de este punto el ciclo comienza nuevamente.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFCC33" size="16" family="Arial">¿Por qué es necesaria la innovación constante?</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFCC33" size="16" family="Arial">Un mayor nivel de productividad –más eficiencia y más eficacia en los procesos de </text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFCC33" size="16" family="Arial">fabricación  –, obtener porciones más grandes del mercado– para vender un determinado </text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFCC33" size="16" family="Arial">producto– , satisfacer necesidades de la sociedad y generar nuevo conocimiento son </text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFCC33" size="16" family="Arial">las principales causas que movilizan el ciclo de innovación.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFCC33" size="16" family="Arial">Los actores involucrados en este proceso –sociedad, empresa, Estado nacional, </text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFCC33" size="16" family="Arial">instituciones educativas–  son los que dan forma a la dinámica de un país.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="rompecabezas" code="">
+   <description />
+   <messages>
+    <cell avoidOverlapping="true" image="computadora icono.jpg" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Comic Sans MS" size="17" />
+      <color background="0xFF9933" />
+      <gradient source="0xFF9933" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Arma el siguiente rompecabezas! ¡Rápido! Tienes 2 minutos</p>
+    </cell>
+    <cell avoidOverlapping="true" image="computadora icono.jpg" type="final">
+     <style>
+      <font family="Comic Sans MS" size="17" />
+      <gradient source="0xFF9933" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Muy bien!! Lo lograste!!</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,top" avoidOverlapping="true" image="10310346-cara-triste.jpg" type="finalError">
+     <style>
+      <gradient source="0xFF9933" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Puedes volver a intentarlo!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxTime="120" countDownTime="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF9933">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFCC33" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="4" cols="6" border="true" image="componentes de un ordenador.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="6" rows="4" />
+   </cells>
+   <scramble times="31" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@panels.Explore" name="Principales inventos" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Comic Sans MS" size="24" bold="true" />
+      <gradient source="0xFF9900" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>La computadora es el resultado evolutivo de ideas y realizaciones de muchas personas.</p>
+     <p>Explora algunos de los inventos antecesores de las computadoras</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFFCC33">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFCC66" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="5" cols="1" cellWidth="201.0" cellHeight="83.0" border="true" id="primary">
+    <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="26" bold="true" />
+     <color border="0xFF6633" />
+     <gradient source="0xFF9900" dest="0xFFFFFF" angle="0" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="5" />
+    <cell id="0" avoidOverlapping="true">
+     <p>Pascalina</p>
+    </cell>
+    <cell id="1">
+     <p>Código </p>
+     <p>Binario</p>
+    </cell>
+    <cell id="2">
+     <p>Tarjetas Perforadas</p>
+    </cell>
+    <cell id="3">
+     <p>Telar de Jacquard</p>
+    </cell>
+    <cell id="4">
+     <p>Máquina Tabuladora</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="1" cellWidth="365.0" cellHeight="155.0" border="true" id="secondary">
+    <style shadow="true" borderStroke="3.7" markerStroke="2.7">
+     <color background="0xFF9900" border="0xFFFF33" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="5" />
+    <cell image="pascalina.jpg">
+     <media type="PLAY_AUDIO" level="1" file="pascal.mp3" />
+    </cell>
+    <cell image="codigo binario.jpg">
+     <media type="PLAY_AUDIO" level="1" file="binario.mp3" />
+    </cell>
+    <cell image="tarjeta perforada.jpg">
+     <media type="PLAY_AUDIO" level="1" file="tarjetas.mp3" />
+    </cell>
+    <cell image="Telar-Jacquard-tarjetas-perforadas.jpg">
+     <media type="PLAY_AUDIO" level="1" file="telar.mp3" />
+    </cell>
+    <cell image="maquina tabuladora.png">
+     <media type="PLAY_AUDIO" level="1" file="hollerit.mp3" />
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="asociación simple" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="Comic Sans MS" size="17" bold="true" />
+      <gradient source="0xFFCC66" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Une cada una de estas máquinas con su/s creador/es</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Comic Sans MS" size="17" bold="true" />
+      <gradient source="0xFFCC66" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>¡Muy bien! ¡Lo lograste!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Comic Sans MS" size="17" bold="true" />
+      <gradient source="0xFFCC66" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Lo siento. Se terminó el tiempo o realizaste más de 10 intentos  ¡Vuelve a intentarlo!</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="120" countDownTime="false" maxActions="10" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Mantiene presionado el botón del mouse sobre la imagen, mientras lo arrastras hasta el nombre de su creador.</p>
+     <p>Tienes 120 segundos y 10 intentos</p>
+    </helpWindow>
+    <container bgColor="0xFFCC66">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFCC66" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="1" cols="5" cellWidth="201.0" cellHeight="201.0" border="true" id="primary">
+    <style borderStroke="2.7" markerStroke="2.7">
+     <font family="Arial Narrow" size="24" bold="true" />
+     <color background="0xFFCC66" inactive="0xFFFFCC" border="0xFFFF33" />
+     <gradient source="0xFFCC66" dest="0xFFFFFF" angle="0" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell avoidOverlapping="true" image="abc.jpg">
+     <media type="PLAY_AUDIO" level="1" file="abc.mp3" />
+     <p>ABC</p>
+    </cell>
+    <cell avoidOverlapping="true" image="mark 1.jpg">
+     <media type="PLAY_AUDIO" level="1" file="mark I.mp3" />
+     <p>MARK I</p>
+    </cell>
+    <cell avoidOverlapping="true" image="maquina analitica.jpg">
+     <media type="PLAY_AUDIO" level="1" file="analitica.mp3" />
+     <p>Máquina Analítica</p>
+    </cell>
+    <cell avoidOverlapping="true" image="eniac.jpg">
+     <media type="PLAY_AUDIO" level="1" file="eniac.mp3" />
+     <p>ENIAC</p>
+    </cell>
+    <cell avoidOverlapping="true" image="edvac.jpg">
+     <media type="PLAY_AUDIO" level="1" file="edvac.mp3" />
+     <p>EDVAC</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="201.0" cellHeight="95.0" border="true" id="secondary">
+    <style shadow="true" borderStroke="2.7" markerStroke="2.7">
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFCC66" inactive="0xFFFFCC" border="0xFFFF33" />
+     <gradient source="0xFFCC66" dest="0xFFFFFF" angle="0" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell>
+     <p>John Atanasoff </p>
+     <p>Clifford Berry</p>
+    </cell>
+    <cell>
+     <p>Howard Aiken</p>
+    </cell>
+    <cell>
+     <p>Charles Babbage</p>
+    </cell>
+    <cell>
+     <p>John Mauchly</p>
+     <p>Prester Eckert</p>
+    </cell>
+    <cell>
+     <p>John von Neumann</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="informatica.gif" file="informatica.gif" />
+  <media name="10310346-cara-triste.jpg" file="10310346-cara-triste.jpg" />
+  <media name="abc.jpg" file="i02-abc.jpg" />
+  <media name="bytes.jpg" file="bytes.jpg" />
+  <media name="codigo binario.jpg" file="i02-codigo binario.jpg" />
+  <media name="componentes de un ordenador.jpg" file="componentes de un ordenador.jpg" />
+  <media name="computadora icono.jpg" file="computadora icono.jpg" />
+  <media name="computadora.jpg" file="computadora.jpg" />
+  <media name="Disco_Rigido.jpg" file="Disco_Rigido.jpg" />
+  <media name="edvac.jpg" file="i02-edvac.jpg" />
+  <media name="Eniac (1).jpg" file="Eniac (1).jpg" />
+  <media name="eniac.jpg" file="i02-eniac.jpg" />
+  <media name="ibm.7090.jpg" file="ibm.7090.jpg" />
+  <media name="ibm360 (1).jpg" file="ibm360 (1).jpg" />
+  <media name="ibm360.jpg" file="ibm360.jpg" />
+  <media name="IBM_PC_5150.jpg" file="IBM_PC_5150.jpg" />
+  <media name="IMPRESORA.jpg" file="IMPRESORA.jpg" />
+  <media name="joystick.jpg" file="joystick.jpg" />
+  <media name="lector-de-cd.jpg" file="lector-de-cd.jpg" />
+  <media name="maquina analitica.jpg" file="i02-maquina analitica.jpg" />
+  <media name="mark 1.jpg" file="i02-mark 1.jpg" />
+  <media name="memoria ram.jpg" file="memoria ram.jpg" />
+  <media name="microprocesador.jpg" file="microprocesador.jpg" />
+  <media name="monitor.jpg" file="monitor.jpg" />
+  <media name="MOUSE.jpg" file="MOUSE.jpg" />
+  <media name="pascalina.jpg" file="i02-pascalina.jpg" />
+  <media name="placa de video.jpg" file="placa de video.jpg" />
+  <media name="PlacamadrePC.jpg" file="PlacamadrePC.jpg" />
+  <media name="scanner.jpg" file="scanner.jpg" />
+  <media name="tarjeta perforada.jpg" file="i02-tarjeta perforada.jpg" />
+  <media name="teclado.jpg" file="teclado.jpg" />
+  <media name="Telar-Jacquard-tarjetas-perforadas.jpg" file="i02-Telar-Jacquard-tarjetas-perforadas.jpg" />
+  <media name="abc.mp3" file="i02-abc.mp3" />
+  <media name="analitica.mp3" file="i02-analitica.mp3" />
+  <media name="binario.mp3" file="i02-binario.mp3" />
+  <media name="edvac.mp3" file="i02-edvac.mp3" />
+  <media name="eniac.mp3" file="i02-eniac.mp3" />
+  <media name="hollerit.mp3" file="i02-hollerit.mp3" />
+  <media name="mark I.mp3" file="i02-mark I.mp3" />
+  <media name="pascal.mp3" file="i02-pascal.mp3" />
+  <media name="tarjetas.mp3" file="i02-tarjetas.mp3" />
+  <media name="telar.mp3" file="i02-telar.mp3" />
+  <media name="maquina tabuladora.png" file="i02-maquina tabuladora.png" />
+ </mediaBag>
+</JClicProject>
+

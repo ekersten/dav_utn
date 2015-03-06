@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="losinnoeugenia_tarea6" version="0.1.3">
+ <settings>
+  <title>Actividades Didácticas</title>
+  <revision description="created" date="8/8/14" />
+  <author name="María Eugenia Losinno" mail="losinnoeugenia@yahoo.com.ar" rol="Alumno" />
+  <description>
+   <p>Estas Actividades didáctivas, están diseñadas para alumnos de 1 año de la Secundaria.</p>
+  </description>
+  <descriptors />
+ </settings>
+ <sequence>
+  <item id="start" name="Act Iniciacion Inicial" navButtons="fwd" />
+  <item name="Act Iniciacion Hard">
+   <jump action="RETURN" id="forward" />
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="Act Iniciacion Soft">
+   <jump action="RETURN" id="forward" />
+   <jump action="RETURN" id="back" />
+  </item>
+  <item id="Hard" name="Puzzle" navButtons="back">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item id="Hard" name="sopa1" navButtons="back">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item id="Hard" name="Unir" navButtons="back">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item id="Hard" name="Rellenar agujeros" navButtons="back">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item id="Soft" name="Act Exploracion" navButtons="back">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item id="Soft" name="Act de Identificacion" navButtons="back">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item id="Soft" name="Asoc Compleja" navButtons="back">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item id="Soft" name="Completar agujeros de Soft" navButtons="back">
+   <jump action="RETURN" id="back" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@panels.Explore" name="Act Exploracion" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <p>¿Cuáles son los...?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <p>Muy Bien!!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x0033FF">
+     <gradient source="0x0033CC" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x0033FF" border="true">
+     <gradient source="0x0066CC" dest="0xFFFFFF" angle="0" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="3" cols="1" cellWidth="200.0" cellHeight="100.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell id="0">
+     <style borderStroke="2.6" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x0033CC" background="0x6699FF" inactive="0x66FF66" border="0xFFFFFF" />
+      <gradient source="0x6699FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Software de Aplicación</p>
+    </cell>
+    <cell id="1">
+     <style borderStroke="2.6" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" italic="true" />
+      <color foreground="0x0033CC" background="0x6699FF" inactive="0x66FF66" border="0xFFFFFF" />
+      <gradient source="0x6699FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Software de Sistema</p>
+    </cell>
+    <cell id="2">
+     <style borderStroke="2.6" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x0033CC" background="0x6699FF" inactive="0x66FF66" border="0xFFFFFF" />
+      <gradient source="0x6699FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Software de Programación</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="196.0" cellHeight="100.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell image="sof amp.jpg">
+     <style borderStroke="2.6" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" italic="true" />
+      <color foreground="0x0033CC" background="0x6699FF" inactive="0x66FF66" border="0xFFFFFF" />
+      <gradient source="0x6699FF" dest="0xFFFFFF" angle="0" />
+     </style>
+    </cell>
+    <cell image="sof sist.jpg">
+     <style borderStroke="2.6" markerStroke="5.0">
+      <font family="Arial" size="20" />
+      <color foreground="0x0033CC" background="0x6699FF" inactive="0x66FF66" border="0xFFFFFF" />
+      <gradient source="0x6699FF" dest="0xFFFFFF" angle="0" />
+     </style>
+    </cell>
+    <cell image="sof prog.jpg">
+     <style borderStroke="2.6" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" italic="true" />
+      <color foreground="0x0033CC" background="0x6699FF" inactive="0x66FF66" border="0xFFFFFF" />
+      <gradient source="0x6699FF" dest="0xFFFFFF" angle="0" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.Identify" name="Act Iniciacion Hard" code="">
+   <description />
+   <messages />
+   <settings margin="5" report="true" reportActions="false">
+    <container bgColor="0x0033CC">
+     <gradient source="0x0033CC" dest="0xFFFFFF" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0066CC" border="true">
+     <gradient source="0x0066CC" dest="0xFFFFFF" angle="0" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="2" cols="2" cellWidth="277.0" cellHeight="150.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell id="0">
+     <style borderStroke="2.6" markerStroke="2.7">
+      <font family="Arial" size="36" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x0066CC" border="0xFFFFFF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Puzzle" />
+     <p>Puzzle</p>
+    </cell>
+    <cell id="0">
+     <style borderStroke="2.6" markerStroke="2.7">
+      <font family="Arial" size="36" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x0066CC" border="0xFFFFFF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="sopa1" />
+     <p>Sopa de letras</p>
+    </cell>
+    <cell id="0">
+     <style borderStroke="2.6" markerStroke="2.7">
+      <font family="Arial" size="36" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x0066CC" border="0xFFFFFF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Unir" />
+     <p>Unir</p>
+    </cell>
+    <cell id="0">
+     <style borderStroke="2.6" markerStroke="5.0">
+      <font family="Arial" size="36" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x0066CC" border="0xFFFFFF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Rellenar agujeros" />
+     <p>Rellenar </p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.Identify" name="Act Iniciacion Inicial" code="">
+   <description />
+   <messages />
+   <settings margin="5" report="true" reportActions="false">
+    <container bgColor="0x0033CC">
+     <gradient source="0x0033CC" dest="0xFFFFFF" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0066CC" border="true">
+     <gradient source="0x0066CC" dest="0xFFFFFF" angle="0" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="2" cols="1" cellWidth="277.0" cellHeight="150.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell id="0">
+     <style borderStroke="2.6" markerStroke="2.7">
+      <font family="Arial" size="36" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x0066CC" border="0xFFFFFF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Act Iniciacion Soft" />
+     <p>Software</p>
+    </cell>
+    <cell id="0">
+     <style borderStroke="2.6" markerStroke="2.7">
+      <font family="Arial" size="36" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x0066CC" border="0xFFFFFF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Act Iniciacion Hard" />
+     <p>Hardware</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.Identify" name="Act Iniciacion Soft" code="">
+   <description />
+   <messages />
+   <settings margin="5" report="true" reportActions="false">
+    <container bgColor="0x0033CC">
+     <gradient source="0x0033CC" dest="0xFFFFFF" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0066CC" border="true">
+     <gradient source="0x0066CC" dest="0xFFFFFF" angle="0" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="2" cols="2" cellWidth="277.0" cellHeight="150.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell id="0">
+     <style borderStroke="2.6" markerStroke="2.7">
+      <font family="Arial" size="36" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x0066CC" border="0xFFFFFF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Completar agujeros de Soft" />
+     <p>Completar</p>
+    </cell>
+    <cell id="0">
+     <style borderStroke="2.6" markerStroke="2.7">
+      <font family="Arial" size="36" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x0066CC" border="0xFFFFFF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Asoc Compleja" />
+     <p>Unir</p>
+    </cell>
+    <cell id="0">
+     <style borderStroke="2.6" markerStroke="2.7">
+      <font family="Arial" size="36" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x0066CC" border="0xFFFFFF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Act Exploracion" />
+     <p>Explorar</p>
+    </cell>
+    <cell id="0">
+     <style borderStroke="2.6" markerStroke="2.7">
+      <font family="Arial" size="36" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x0066CC" border="0xFFFFFF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Act de Identificacion" />
+     <p>Actividad de Identificación</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.Identify" name="Act de Identificacion" code="">
+   <description>
+    <p>Observa bien las imágenes y selecciona las imágenes que son sofware.</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <p>Observa, ¿Cuáles son software?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <p>La impresora, es un Periférico de Salida, por tal motivo es Hardware.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x6666FF" dest="0xFFFFFF" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="2" cols="2" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell id="1" txtAlign="left,bottom" avoidOverlapping="true" image="software3-resized.jpg" />
+    <cell id="1" txtAlign="left,bottom" avoidOverlapping="true" image="software1-resized.jpg" />
+    <cell id="1" txtAlign="right,top" avoidOverlapping="true" image="software2.jpg" />
+    <cell id="0" txtAlign="left,bottom" avoidOverlapping="true" image="software4b.jpg" />
+   </cells>
+   <cells rows="2" cols="2" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell txtAlign="right,top">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+     </style>
+     <p>El componente lógico encargado de trasnformar los datos en información es el Software.</p>
+    </cell>
+    <cell txtAlign="right,top" avoidOverlapping="true">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="20" bold="true" />
+     </style>
+     <p>Los Software, se clasifican el Software de Aplicación, de Sistema y Programación.</p>
+    </cell>
+    <cell txtAlign="right,top" avoidOverlapping="true">
+     <p>El uso de la computadora, varía según el objetivo final al que se aspire, para llevarlo a cabo necesitamos los software.</p>
+    </cell>
+    <cell />
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Asoc Compleja" code="">
+   <description>
+    <p>Clasifica los software.</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x3333FF" />
+     </style>
+     <p>Relaciona cada item de lado derecho con uno del lado izquierdo.</p>
+    </cell>
+    <cell avoidOverlapping="true" type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x3333FF" />
+     </style>
+     <p>Muy Bien!!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0066CC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0066CC" border="true">
+     <gradient source="0x0066CC" dest="0xFFFFFF" angle="0" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="4" cols="2" cellWidth="150.0" cellHeight="80.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="4" />
+    <cell id="2">
+     <style borderStroke="2.6" markerStroke="2.7">
+      <font family="Arial" size="20" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x6699FF" inactive="0x66FF66" border="0xFFFFFF" />
+     </style>
+     <p>Windows</p>
+    </cell>
+    <cell id="0">
+     <style borderStroke="2.6" markerStroke="2.7">
+      <font family="Arial" size="20" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x6699FF" inactive="0x66FF66" border="0xFFFFFF" />
+     </style>
+     <p>Excel</p>
+    </cell>
+    <cell id="0">
+     <style borderStroke="2.6" markerStroke="2.7">
+      <font family="Arial" size="20" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x6699FF" inactive="0x66FF66" border="0xFFFFFF" />
+     </style>
+     <p>Word</p>
+    </cell>
+    <cell id="2">
+     <style borderStroke="2.6" markerStroke="2.7">
+      <font family="Arial" size="20" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x6699FF" inactive="0x66FF66" border="0xFFFFFF" />
+     </style>
+     <p>Sistema Operativo</p>
+    </cell>
+    <cell id="1">
+     <style borderStroke="2.6" markerStroke="2.7">
+      <font family="Arial" size="20" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x6699FF" inactive="0x66FF66" border="0xFFFFFF" />
+     </style>
+     <p>C++</p>
+    </cell>
+    <cell id="0">
+     <style borderStroke="2.6" markerStroke="2.7">
+      <font family="Arial" size="20" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x6699FF" inactive="0x66FF66" border="0xFFFFFF" />
+     </style>
+     <p>Paint</p>
+    </cell>
+    <cell id="1">
+     <style borderStroke="2.6" markerStroke="2.7">
+      <font family="Arial" size="20" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x6699FF" inactive="0x66FF66" border="0xFFFFFF" />
+     </style>
+     <p>Visual</p>
+    </cell>
+    <cell id="1">
+     <style borderStroke="2.6" markerStroke="2.7">
+      <font family="Arial" size="20" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x6699FF" inactive="0x66FF66" border="0xFFFFFF" />
+     </style>
+     <p>Pascal</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="151.0" cellHeight="82.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell>
+     <style borderStroke="2.6" markerStroke="2.7">
+      <font family="Arial" size="20" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x6699FF" inactive="0x66FF66" border="0xFFFFFF" />
+     </style>
+     <p>Software de Aplicación</p>
+    </cell>
+    <cell>
+     <style borderStroke="2.6" markerStroke="2.7">
+      <font family="Arial" size="20" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x6699FF" inactive="0x66FF66" border="0xFFFFFF" />
+     </style>
+     <p>Software de Programación</p>
+    </cell>
+    <cell>
+     <style borderStroke="2.6" markerStroke="2.7">
+      <font family="Arial" size="20" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x6699FF" inactive="0x66FF66" border="0xFFFFFF" />
+     </style>
+     <p>Software de Sistema</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="Completar agujeros de Soft" code="">
+   <description>
+    <p>Completar cada definiciaón.</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x3333FF" />
+     </style>
+     <p>Complete las siguientes definiciones.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x3333FF" />
+     </style>
+     <p>Bien!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x3333FF">
+     <gradient source="0x0033FF" dest="0xFFFFFF" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0066FF" border="true">
+     <gradient source="0x0066CC" dest="0xFFFFFF" angle="0" />
+     <size width="600" height="300" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <checkButton>Autocorreción</checkButton>
+   <document>
+    <style name="default" size="20" family="Arial" tabWidth="12" italic="false" background="0xFFFFFF" bold="false" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p size="20" family="Arial" Alignment="1" background="0xFFFFFF" bold="false" italic="false">
+      <text size="28" family="Arial" foreground="0x3333FF" background="0xFFFFFF" bold="true" italic="true">Softwares</text>
+     </p>
+     <p size="20" family="Arial" Alignment="1" background="0xFFFFFF" bold="false" italic="false" />
+     <p size="20" family="Arial" background="0xFFFFFF" bold="false" italic="false">
+      <text size="20" family="Arial" background="0xFFFFFF" bold="false" italic="false">El </text>
+      <target>
+       <answer>Software de Sistema</answer>
+       <optionList>
+        <option>Software de Aplicación</option>
+        <option>Software de Sistema</option>
+        <option>Software de Programación</option>
+       </optionList>
+       <text>Software de Sistema</text>
+      </target>
+      <text size="20" family="Arial" background="0xFFFFFF" bold="false" italic="false"> permute la comunicación entre la computadora y el usuario.</text>
+     </p>
+     <p size="20" family="Arial" background="0xFFFFFF" bold="false" italic="false">
+      <text size="20" family="Arial" background="0xFFFFFF" bold="false" italic="false">El </text>
+      <target>
+       <answer>Software de Programación</answer>
+       <optionList>
+        <option>Software de Aplicación</option>
+        <option>Software de Sistema</option>
+        <option>Software de Programación</option>
+       </optionList>
+       <text>Software de Programación</text>
+      </target>
+      <text size="20" family="Arial" background="0xFFFFFF" bold="false" italic="false"> se utiliza para crear el software de sistema y el software de aplicación.</text>
+     </p>
+     <p size="20" family="Arial" background="0xFFFFFF" bold="false" italic="false">
+      <text size="20" family="Arial" background="0xFFFFFF" bold="false" italic="false">El </text>
+      <target>
+       <answer>Software de Aplicación</answer>
+       <optionList>
+        <option>Software de Aplicación</option>
+        <option>Software de Sistema</option>
+        <option>Software de Programación</option>
+       </optionList>
+       <text>Software de Aplicación</text>
+      </target>
+      <text size="20" family="Arial" background="0xFFFFFF" bold="false" italic="false"> incluye programas que se ejecutan para realizar trabajos relacionados con áreas espacíficas.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="Puzzle" code="">
+   <description>
+    <p>Una actividad para pensar</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x3366FF" />
+     </style>
+     <p>Manos a la obra!!!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x3366FF" />
+     </style>
+     <p>Bien hecho!!! Segui así.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0x0099CC">
+     <gradient source="0x0099CC" dest="0xFFFFFF" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0099CC" border="true">
+     <gradient source="0x0099CC" dest="0xFFFFFF" angle="0" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="4" cols="3" border="true" image="mitos-sobre-las-computadoras.gif">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="3" rows="4" />
+   </cells>
+   <scramble times="31" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="Rellenar agujeros" code="">
+   <description>
+    <p>En esta actividad se van a rrelar las palabras faltantes.</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x3366FF" />
+     </style>
+     <p>Complete los espacios...</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x3366FF" />
+     </style>
+     <p>Bien... lo lograstes!!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0099CC">
+     <gradient source="0x0099CC" dest="0xFFFFFF" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0099CC" border="true">
+     <gradient source="0x0099CC" dest="0xFFFFFF" angle="0" />
+     <size width="700" height="430" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <checkButton>Corroboralo</checkButton>
+   <document>
+    <style name="default" size="20" family="Arial Narrow" tabWidth="12" background="0xFFFFFF" bold="false" italic="true" />
+    <style name="target" base="default" foreground="0x0066FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF3333" />
+    <section>
+     <p size="16" family="Arial Narrow" Alignment="1" background="0xFFFFFF" bold="false" italic="false">
+      <text size="26" family="Arial Narrow" foreground="0x0099CC" background="0xFFFFFF" bold="true" italic="true">Adiós a las gafas: las pantallas de los móviles corregirán tus problemas de visión</text>
+     </p>
+     <p size="18" family="Arial Narrow" background="0xFFFFFF" bold="false" italic="false" />
+     <p size="18" family="Arial Narrow" background="0xFFFFFF" bold="false" italic="false">
+      <text size="20" family="Arial Narrow" background="0xFFFFFF" bold="false" italic="true">Hay muchas personas que necesitan </text>
+      <target>
+       <answer>gafas</answer>
+       <response fill="*" length="5" maxLength="5" />
+       <info mode="onError">
+        <cell width="115" height="84">
+         <style>
+          <font family="Arial" size="20" bold="true" italic="true" />
+          <color foreground="0xFFFFFF" background="0x0099FF" />
+         </style>
+         <p>Hay de diferentes graduaciones, según lo que necesita cada persona.</p>
+        </cell>
+       </info>
+       <text>gafas</text>
+      </target>
+      <text size="20" family="Arial Narrow" background="0xFFFFFF" bold="false" italic="true"> para poder ver la pantalla del móvil o la del ordenador. Ahora, gracias a una tecnología de visualización, los días de las gafas podrían estar contados.Investigadores del MIT y la Universidad de California Berkeley han creado una tecnología que utiliza algoritmos para modificar una imagen basada en la prescripción de gafas de una persona, a esto le suman un filtro de luz situado frente a la </text>
+      <target>
+       <answer>pantalla</answer>
+       <response fill="*" length="8" maxLength="8" />
+       <info mode="onError">
+        <cell width="127" height="70">
+         <style>
+          <font family="Arial" size="20" bold="true" italic="true" />
+          <color foreground="0xFFFFFF" background="0x0099FF" />
+         </style>
+         <p>Superficie de un aparato de una computadora, en la que se forma la imagen,</p>
+        </cell>
+       </info>
+       <text>pantalla</text>
+      </target>
+      <text size="20" family="Arial Narrow" background="0xFFFFFF" bold="false" italic="true">.</text>
+     </p>
+     <p size="18" family="Arial Narrow" background="0xFFFFFF" bold="false" italic="false">
+      <text size="20" family="Arial Narrow" background="0xFFFFFF" bold="false" italic="true">El algoritmo altera la luz de cada </text>
+      <target>
+       <answer>pixel</answer>
+       <answer>píxel</answer>
+       <response fill="*" length="5" maxLength="5" />
+       <info mode="onError">
+        <cell width="120" height="70">
+         <style>
+          <font family="Arial" size="20" bold="true" italic="true" />
+          <color foreground="0xFFFFFF" background="0x0099FF" />
+         </style>
+         <p>Unidad básica de una imagen digitalizada en pantalla a base de puntos de color o en escala de grises.</p>
+        </cell>
+       </info>
+       <text>píxel</text>
+      </target>
+      <text size="20" family="Arial Narrow" background="0xFFFFFF" bold="false" italic="true"> para que cuando pase a través del filtro y lleguen a la retina, se recree una imagen más nítida. Los investigadores señalan que la idea es anticipar cómo los ojos distorsionan la visión frente a la pantalla y lo ajusta antes para que se vea de forma clara. </text>
+     </p>
+     <p size="18" family="Arial Narrow" background="0xFFFFFF" bold="false" italic="false">
+      <text size="20" family="Arial Narrow" background="0xFFFFFF" bold="false" italic="true">La </text>
+      <target>
+       <answer>tecnología</answer>
+       <answer>tecnologia</answer>
+       <response fill="*" length="10" maxLength="10" />
+       <info mode="onError">
+        <cell width="123" height="72">
+         <style>
+          <font family="Arial" size="20" bold="true" italic="true" />
+          <color foreground="0xFFFFFF" background="0x0099FF" />
+         </style>
+         <p>Conjunto de instrumentos, recursos técnicos o procedimientos empleados en un determinado campo o sector.</p>
+        </cell>
+       </info>
+       <text>tecnología</text>
+      </target>
+      <text size="20" family="Arial Narrow" background="0xFFFFFF" bold="false" italic="true"> está siendo desarrollada en colaboración con investigadores del MIT y Microsoft. Además de facilitar el uso de pantalla a personas con problemas de visión menores, la técnica también podría ayudar a aliviar problemas visuales más graves causados por defectos físicos.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Unir" code="">
+   <description>
+    <p>Clasificar los periféricos,</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" border="0x666666" />
+     </style>
+     <p>Une las imágenes con el tipo de periférico que es.</p>
+    </cell>
+    <cell avoidOverlapping="true" type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x0033FF" />
+     </style>
+     <p>Bien hecho!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0066FF">
+     <gradient source="0x0099CC" dest="0xFFFFFF" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0066FF" border="true">
+     <gradient source="0x0099CC" dest="0xFFFFFF" angle="0" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="100.0" cellHeight="100.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell id="1" image="impresora.jpg">
+     <p>Impresora</p>
+    </cell>
+    <cell id="0" image="raton.jpg" />
+    <cell id="2" image="pen.jpg" />
+    <cell id="1" image="monitor.jpg" />
+    <cell id="0" image="scaner.jpg" />
+    <cell id="0" image="teclado.jpg" />
+    <cell id="1" image="parlantes.gif" />
+    <cell id="2" image="cd.jpg" />
+    <cell id="2" image="disco duro externo.jpg" />
+   </cells>
+   <cells rows="3" cols="1" cellWidth="164.0" cellHeight="100.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="17" bold="true" italic="true" />
+     <color background="0x6699FF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell>
+     <p>Teriférico de Entrada</p>
+    </cell>
+    <cell>
+     <p>Periféricos de Salida</p>
+    </cell>
+    <cell>
+     <p>Periféricos de Almacenamiento</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="sopa1" code="">
+   <description>
+    <p>Encuentre las palabras escondidas, teniendo en cuenta la actividad de asociación de imágenes con el tipo de periférico.</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" italic="true" />
+      <color foreground="0xFFFFFF" background="0x3366FF" />
+     </style>
+     <p>Vamos a encontar las palabras escondidas!!!</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color foreground="0xFFFFFF" background="0x3366FF" />
+     </style>
+     <p>Bien!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0099CC">
+     <gradient source="0x0099CC" dest="0xFFFFFF" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0099CC" border="true">
+     <gradient source="0x0099CC" dest="0xFFFFFF" angle="0" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <textGrid rows="10" columns="10" cellWidth="20.0" cellHeight="20.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>TECLADO**P</row>
+     <row>MONITORI*A</row>
+     <row>*******M*R</row>
+     <row>*****CDP*L</row>
+     <row>RATON**R*A</row>
+     <row>******OE*N</row>
+     <row>******CS*T</row>
+     <row>******SO*E</row>
+     <row>******IR*S</row>
+     <row>******DA**</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">RATON</clue>
+    <clue id="1">PARLANTES</clue>
+    <clue id="2">TECLADO</clue>
+    <clue id="3">DISCO</clue>
+    <clue id="4">CD</clue>
+    <clue id="5">IMPRESORA</clue>
+    <clue id="6">MONITOR</clue>
+   </clues>
+   <cells rows="7" cols="1" cellWidth="150.0" cellHeight="30.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="7" />
+    <cell>
+     <p>Se usa en ambientes gráficos</p>
+    </cell>
+    <cell>
+     <p>Es para escuchar sonido</p>
+    </cell>
+    <cell>
+     <p>Se ingresan los caracteres.</p>
+    </cell>
+    <cell>
+     <p>¿Dónde guardo en la compu?</p>
+    </cell>
+    <cell>
+     <p>Se usa para guardar música.</p>
+    </cell>
+    <cell>
+     <p>Dejar la imformación en soporte papel</p>
+    </cell>
+    <cell>
+     <p>Periférico para poder ver todo.</p>
+    </cell>
+   </cells>
+   <layout position="BA" />
+   <scramble times="31" secondary="true" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="mitos-sobre-las-computadoras.gif" file="mitos-sobre-las-computadoras.gif" />
+  <media name="parlantes.gif" file="i01-parlantes.gif" />
+  <media name="cd.jpg" file="i01-cd.jpg" />
+  <media name="disco duro externo.jpg" file="i01-disco duro externo.jpg" />
+  <media name="impresora.jpg" file="i01-impresora.jpg" />
+  <media name="monitor.jpg" file="i01-monitor.jpg" />
+  <media name="pen.jpg" file="i01-pen.jpg" />
+  <media name="raton.jpg" file="i01-raton.jpg" />
+  <media name="scaner.jpg" file="i01-scaner.jpg" />
+  <media name="sof amp.jpg" file="sof amp.jpg" />
+  <media name="sof prog.jpg" file="sof prog.jpg" />
+  <media name="sof sist.jpg" file="sof sist.jpg" />
+  <media name="software1-resized.jpg" file="software1-resized.jpg" />
+  <media name="software2.jpg" file="software2.jpg" />
+  <media name="software3-resized.jpg" file="software3-resized.jpg" />
+  <media name="software4b.jpg" file="software4b.jpg" />
+  <media name="teclado.jpg" file="i01-teclado.jpg" />
+ </mediaBag>
+</JClicProject>
+

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jcross-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>lore</dc:creator>
+    <dc:title>Completa el crucigrama</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>6</version>
+
+<data>
+<title>Completa el crucigrama</title>
+
+
+
+<timer><seconds>150</seconds><include-timer>1</include-timer></timer><reading>
+<include-reading>0</include-reading>
+<reading-title></reading-title>
+<reading-text></reading-text>
+
+</reading>
+
+<crossword>
+<grid><row><cell></cell><cell></cell><cell>L</cell><cell>I</cell><cell>N</cell><cell>U</cell><cell>X</cell><cell></cell><cell></cell><cell></cell><cell>M</cell><cell>O</cell><cell>N</cell><cell>I</cell><cell>T</cell><cell>O</cell><cell>R</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell>M</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>T</cell><cell></cell><cell>O</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>A</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell>P</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>E</cell><cell></cell><cell>U</cell><cell></cell><cell></cell><cell>M</cell><cell></cell><cell></cell><cell>M</cell><cell></cell><cell></cell><cell></cell></row><row><cell>M</cell><cell>I</cell><cell>C</cell><cell>R</cell><cell>O</cell><cell>P</cell><cell>R</cell><cell>O</cell><cell>C</cell><cell>E</cell><cell>S</cell><cell>A</cell><cell>D</cell><cell>O</cell><cell>R</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell>E</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>L</cell><cell></cell><cell>E</cell><cell></cell><cell></cell><cell>T</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>I</cell><cell></cell><cell>S</cell><cell></cell><cell>P</cell><cell></cell><cell></cell><cell>A</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>H</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>C</cell><cell>O</cell><cell>O</cell><cell>L</cell><cell>E</cell><cell>R</cell><cell></cell><cell>D</cell><cell></cell><cell></cell><cell></cell><cell>W</cell><cell>E</cell><cell>B</cell><cell>C</cell><cell>A</cell><cell>M</cell><cell></cell><cell></cell></row><row><cell></cell><cell>O</cell><cell></cell><cell>R</cell><cell></cell><cell>N</cell><cell></cell><cell></cell><cell>O</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>R</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>N</cell><cell></cell><cell>A</cell><cell></cell><cell>D</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>B</cell><cell>I</cell><cell>N</cell><cell>A</cell><cell>R</cell><cell>I</cell><cell>O</cell></row><row><cell>R</cell><cell>O</cell><cell>M</cell><cell></cell><cell></cell><cell>R</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>O</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell>I</cell><cell>N</cell><cell>I</cell><cell>C</cell><cell>I</cell><cell>O</cell><cell></cell><cell></cell><cell></cell><cell>C</cell><cell>A</cell><cell>R</cell><cell>P</cell><cell>E</cell><cell>T</cell><cell>A</cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>V</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>R</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>E</cell><cell>S</cell><cell>C</cell><cell>A</cell><cell>N</cell><cell>E</cell><cell>R</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>D</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></grid>
+
+<clues><item><word>LINUX</word><def>Sistema operativo libre representado con un ping&amp;#x00FC;ino</def></item><item><word>MONITOR</word><def>Componente donde podemos observar el ingreso y salida de datos</def></item><item><word>MICROPROCESADOR</word><def>&amp;#x003C;img src=&quot;micro.jpg&quot; alt=&quot;micro.jpg&quot; title=&quot;micro&quot; width=&quot;263&quot; height=&quot;192&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</def></item><item><word>COOLER</word><def>&amp;#x003C;img src=&quot;cooler.jpg&quot; alt=&quot;cooler.jpg&quot; title=&quot;cooler&quot; width=&quot;225&quot; height=&quot;225&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</def></item><item><word>WEBCAM</word><def>Permite que se realice un conversaci&amp;#x00F3;n en tiempo real &amp;#x003C;img src=&quot;web1.jpg&quot; alt=&quot;web1.jpg&quot; title=&quot;web1&quot; width=&quot;259&quot; height=&quot;194&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</def></item><item><word>BINARIO</word><def>Lenguaje de la M&amp;#x00E1;quina que son s&amp;#x00F3;lo ceros y unos</def></item><item><word>ROM</word><def>Siglas de la mamoria que s&amp;#x00F3;lo puede leerse</def></item><item><word>INICIO</word><def>Bot&amp;#x00F3;n que permite ingresar el sistema operativo</def></item><item><word>CARPETA</word><def>Lugar donde se guardan los archivos</def></item><item><word>ESCANER</word><def>Componente que digitaliza lo que est&amp;#x00E1; en papel para poder trabajarlo en la computadora.</def></item><item><word>IMPRESORA</word><def>&amp;#x003C;img src=&quot;impreosra.jpg&quot; alt=&quot;impreosra.jpg&quot; title=&quot;impreosra&quot; width=&quot;263&quot; height=&quot;192&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</def></item><item><word>MOUSE</word><def>Muestra en pantalla un puntero &amp;#x003C;img src=&quot;mouse.gif&quot; alt=&quot;mouse.gif&quot; title=&quot;mouse&quot; width=&quot;113&quot; height=&quot;101&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</def></item><item><word>RAM</word><def>Siglas de la Memoria de lectura y escritura</def></item><item><word>TECLADO</word><def>Se usa para ingresar informaci&amp;#x00F3;n  &amp;#x003C;img src=&quot;teclado.jpg&quot; alt=&quot;teclado.jpg&quot; title=&quot;teclado&quot; width=&quot;329&quot; height=&quot;153&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</def></item><item><word>MOTHERBOARD</word><def>Nombre de la placa madre en ingl&amp;#x00E9;s &amp;#x003C;img src=&quot;mother.jpg&quot; alt=&quot;mother.jpg&quot; title=&quot;mother&quot; width=&quot;291&quot; height=&quot;173&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</def></item><item><word>ICONO</word><def>Peque&amp;#x00F1;o dibujo que representa un programa y/o archivo</def></item><item><word>PENDRIVE</word><def>Dispositivo de almacenamieno externo</def></item></clues>
+</crossword>
+</data>
+
+<hotpot-config-file>
+<jcross>
+<exercise-subtitle>Crossword</exercise-subtitle>
+<instructions>Complete the crossword, then click on &quot;Check&quot; to check your answer. If you are stuck, you can click on &quot;Hint&quot; to get a free letter. Click on a number in the grid to see the clue or clues for that number.</instructions>
+<guess-correct>Correcto!! bien hecho</guess-correct>
+<guess-incorrect>Lo siento tu respuesta es incorrecta</guess-incorrect>
+<clues-across>Horizontal</clues-across>
+<clues-down>Vertical</clues-down>
+<next-correct-letter>Se ha a&amp;#x00F1;adido una letra correcta</next-correct-letter>
+<include-keypad>0</include-keypad>
+<include-clue-list>1</include-clue-list>
+<enter-caption>Enter</enter-caption>
+<include-hint>1</include-hint>
+<case-sensitive>1</case-sensitive>
+<next-ex-url>nextpage.htm</next-ex-url>
+<send-email>0</send-email>
+<separate-javascript-file>0</separate-javascript-file>
+</jcross>
+
+<global>
+<your-score-is>su puntuaci&amp;#x00F3;n es</your-score-is>
+<check-caption>Comprobar Respuesta</check-caption>
+<ok-caption>Correcto</ok-caption>
+<hint-caption>Pista</hint-caption>
+<keypad-characters></keypad-characters>
+<process-for-rtl>0</process-for-rtl>
+<include-scorm-12>0</include-scorm-12>
+<next-ex-caption>=&amp;#x003E;</next-ex-caption>
+<back-caption>&amp;#x003C;=</back-caption>
+<contents-caption>Ir a Contenidos</contents-caption>
+<include-next-ex>1</include-next-ex>
+<include-contents>1</include-contents>
+<include-back>0</include-back>
+<contents-url>contents.htm</contents-url>
+<graphic-url></graphic-url>
+<font-face>&quot;Bookman Old Style&quot;,Geneva,Arial,sans-serif</font-face>
+<font-size>small</font-size>
+<page-bg-color>#ffff93</page-bg-color>
+<title-color>#004080</title-color>
+<ex-bg-color>#aaffd5</ex-bg-color>
+<text-color>#000000</text-color>
+<link-color>#ff8040</link-color>
+<vlink-color>#ff0000</vlink-color>
+<nav-bar-color>#804040</nav-bar-color>
+<formmail-url>http://yourserver.com/cgi-bin/FormMail.pl</formmail-url>
+<email>you@yourserver.com</email>
+<name-please>Please enter your name:</name-please>
+<user-string-1>one</user-string-1>
+<user-string-2>two</user-string-2>
+<user-string-3>three</user-string-3>
+<header-code></header-code>
+</global>
+</hotpot-config-file>
+</hotpot-jcross-file>

@@ -1,0 +1,44 @@
+<applet name="Posicion" width=500 height=310
+        code="descinst.Descartes.class"
+        archive="descinst.jar,http://recursostic.educacion.es/descartes/web/plugin/descinst.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="500x310">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="no">
+   <param name="nombre" value="Posicion">
+   <param name="Versi&oacute;n" value="4.41, 2010-12-16">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=s&iacute; limpiar=no">
+   <param name="E_00" value="tipo='R2' fijo='s&iacute;' despl_imagen='arr-izq' fondo='d6ffff' red='no' red10='no' ejes='gris' texto='blanco' n&uacute;meros='s&iacute;' eje-x='t' eje-y='Y'">
+   <param name="C_00" value="id='Ox' tipo='num&eacute;rico' regi&oacute;n='exterior' nombre='O.x' valor='-160' incr='32' decimales='0' fijo='s&iacute;' visible='no' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_01" value="id='Oy' tipo='num&eacute;rico' regi&oacute;n='exterior' valor='-20' incr='32' fijo='s&iacute;' acci&oacute;n=' ' pos_mensajes='centro'">
+   <param name="C_02" value="id='A' tipo='num&eacute;rico' nombre='A' valor='8' incr='1' min='0' max='15' decimales='0' fijo='s&iacute;' visible='s&iacute;' acci&oacute;n=' ' pos_mensajes='centro'">
+   <param name="C_03" value="id='T' tipo='num&eacute;rico' nombre='T' valor='5.0' incr='0.2' min='1' max='7' decimales='1' fijo='s&iacute;' visible='s&iacute;' acci&oacute;n='mensaje' pos_mensajes='centro'">
+   <param name="C_04" value="id='Escena' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='norte' nombre='Escena' fijo='s&iacute;' visible='s&iacute;' acci&oacute;n='mensaje' par&aacute;metro='En la escena se observa como, a medida que pasa el tiempo (eje horizontal), la posici&oacute;n (eje vertical) sigue una gr&aacute;fica de tipo senoidal.' tooltip='Descripci&oacute;n  (clic izquierdo)' Explicaci&oacute;n='(clic izquierdo)' pos_mensajes='centro'">
+   <param name="C_05" value="id='A.1' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='norte' nombre='A.1' fijo='s&iacute;' visible='s&iacute;' acci&oacute;n='mensaje' par&aacute;metro='Modifica el valor de la amplitud del movimiento y observa los cambios que se producen en la gr&aacute;fica.' tooltip='Actividad 1 (clic izquierdo)' Explicaci&oacute;n='(clic izquierdo)' pos_mensajes='centro'">
+   <param name="C_06" value="id='A.2' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='norte' nombre='A.2' fijo='s&iacute;' visible='s&iacute;' acci&oacute;n='mensaje' par&aacute;metro='Cambia ahora el per&iacute;odo del movimiento y analiza los cambios en la gr&aacute;fica, en la pulsaci&oacute;n y en la frecuencia.\n&iquest;Podr&iacute;as identificar y deducir de la gr&aacute;fica el valor del per&iacute;odo si no lo conocieras?' tooltip='Actividad 2 (clic izquierdo)' Explicaci&oacute;n='(clic izquierdo)' pos_mensajes='centro'">
+   <param name="C_07" value="id='escala' tipo='num&eacute;rico' valor='12' incr='1' min='1' decimales='0' fijo='s&iacute;' acci&oacute;n=' ' pos_mensajes='centro'">
+   <param name="A_00" value="id='pi' constante='s&iacute;' expresi&oacute;n='3.14159' evaluar='una-sola-vez'">
+   <param name="A_01" value="id='w' expresi&oacute;n='(2*pi)/T'">
+   <param name="A_02" value="id='y' expresi&oacute;n='A*(sen(w*t))'">
+   <param name="A_03" value="id='f' expresi&oacute;n='1/T'">
+   <param name="A_04" value="id='a(x)' expresi&oacute;n='((x*17)-100-Ox)/escala'">
+   <param name="A_05" value="id='b(x)' expresi&oacute;n='((x*17)+Oy)/escala'">
+   <param name="G_00" value="tipo='segmento' color='282d2d' expresi&oacute;n='(-3,y)(0+t,y)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_01" value="tipo='ecuaci&oacute;n' color='00006b' dibujar-si='(x&gt;0)&amp;(x&lt;20)' expresi&oacute;n='y=A*sen(w*x)' visible='no'">
+   <param name="G_02" value="tipo='segmento' color='4d0000' expresi&oacute;n='(-3,-A)(-3,A)' fijo='s&iacute;'">
+   <param name="G_03" value="tipo='pol&iacute;gono' fondo='s&iacute;' color='a24040' expresi&oacute;n='(a(12),b(-5.3))(a(18),b(-5.3))(a(18),b(-7))(a(12),b(-7))(a(12),b(-5.3))' relleno='blanco' ancho='4'">
+   <param name="G_04" value="tipo='segmento' expresi&oacute;n='(0+t,0)(0+t,y)' texto='y' fijo='s&iacute;'">
+   <param name="G_05" value="tipo='segmento' color='a24040' expresi&oacute;n='(-4,0)(-4,A)' fijo='s&iacute;'">
+   <param name="G_06" value="tipo='texto' color='a24040' expresi&oacute;n='[355,230]' texto='t= [t] s' fuente='Courier,BOLD,14' fijo='s&iacute;'">
+   <param name="G_07" value="tipo='texto' expresi&oacute;n='[40,230]' texto='y= A&middot;?&middot;sen (?&middot;t)= [y] m' fuente='SantSerif,BOLD,16' fijo='s&iacute;'">
+   <param name="G_08" value="tipo='texto' color='a24040' expresi&oacute;n='[2,60]' texto='A' fuente='Monospaced,PLAIN,14' fijo='s&iacute;'">
+   <param name="G_09" value="tipo='texto' color='negro' expresi&oacute;n='[350,20]' texto='f= [f] Hz' fuente='Courier,PLAIN,14' fijo='s&iacute;'">
+   <param name="G_10" value="tipo='texto' color='negro' expresi&oacute;n='[350,40]' texto='? = [w] rad/s' fuente='Monospaced,PLAIN,14' fijo='s&iacute;'">
+   <param name="G_11" value="tipo='punto' color='rojo' expresi&oacute;n='(-3,y)' fijo='s&iacute;' tama&ntilde;o='6'">
+   <param name="G_12" value="tipo='punto' expresi&oacute;n='(0+t,y)' rastro='000087' fijo='s&iacute;' tama&ntilde;o='4'">
+   <param name="Animaci&oacute;n" value="pausa='100' controles='no' auto='no' inicio='n=0; t=0' hacer='n=n+1;t=n/10' mientras='n&lt;=199'">
+<font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+</applet>

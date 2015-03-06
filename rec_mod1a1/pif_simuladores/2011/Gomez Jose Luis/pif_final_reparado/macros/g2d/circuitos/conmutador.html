@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Macro interruptor</title></head>
+<body BGCOLOR="#eeeeee">
+<p align="center">
+<FONT size=+2>Macro: conmutador</FONT><br>tipo 2D
+</p>
+<p align="center">
+<applet name="conmutador"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=240 height=200>
+   <param name="nombre" value="conmutador">
+   <param name="Versi&oacute;n" value="3.40">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="escala='40' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="A_00" value="id='estado' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_01" value="id='x1' expresi&oacute;n='-1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_02" value="id='y1' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_03" value="id='x2' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_04" value="id='y2' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_05" value="id='INIT' evaluar='una-sola-vez' algoritmo='si'">
+   <param name="A_06" value="inicio='l=sqrt((x2-x1)^2+(y2-y1)^2)' hacer='ca=(x2-x1)/l;sa=(y2-y1)/l;extra=l/4;X1=x1+extra*ca;Y1=y1+extra*sa;r=l-2*extra;c60=cos(pi/3);s60=sen(pi/3);X2=X1+r*(estado*(c60*ca-s60*sa)+(1-estado)*ca);Y2=Y1+r*(estado*(c60*sa+s60*ca)+(1-estado)*sa);s30=sen(pi/6);c30=cos(pi/6);X3=X1+r*(c60*ca-s60*sa);Y3=Y1+r*(c60*sa+s60*ca)' id='CALC' evaluar='siempre' algoritmo='si'">
+   <param name="A_07" value="id='x3' expresi&oacute;n='X3-extra*sa' evaluar='siempre' constante='si'">
+   <param name="A_08" value="id='y3' expresi&oacute;n='Y3+extra*ca' evaluar='siempre' constante='si'">
+   <param name="A_09" value="id='rojo' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_10" value="id='verde' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_11" value="id='azul' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="G_00" value="tipo='segmento' color='(rojo,verde,azul)' expresi&oacute;n='(x1,y1)(X1,Y1)'">
+   <param name="G_01" value="tipo='segmento' color='(rojo,verde,azul)' expresi&oacute;n='(X1,Y1)(X2,Y2)'">
+   <param name="G_02" value="tipo='segmento' color='(rojo,verde,azul)' expresi&oacute;n='(x2-extra*ca,y2-extra*sa)(x2,y2)'">
+   <param name="G_03" value="tipo='segmento' color='(rojo,verde,azul)' expresi&oacute;n='(X3,Y3)(x3,y3)'">
+   <param name="G_04" value="tipo='punto' color='(rojo,verde,azul)' expresi&oacute;n='(X2,Y2)' tama&ntilde;o='3'">
+   <param name="G_05" value="tipo='punto' color='(rojo,verde,azul)' expresi&oacute;n='(X3,Y3)' tama&ntilde;o='3'">
+   <param name="G_06" value="tipo='punto' color='(rojo,verde,azul)' expresi&oacute;n='(x2-extra*ca,y2-extra*sa)' tama&ntilde;o='3'">
+</applet>
+</p>
+<p align="center">
+Esta escena se usa para generar el macro.
+</p>
+<p align="center">
+<applet name="mi_conmutador"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=480 height=400>
+   <param name="nombre" value="mi_conmutador">
+   <param name="Versi&oacute;n" value="3.40">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no filas_sur=2">
+   <param name="E_00" value="despl_imagen='arr-izq' fondo='blanco' red='grisClaro' red10='no' ejes='no' texto='no'">
+   <param name="C_00" value="tipo='gr&aacute;fico' id='C1' color='azul' color-int='rojo' expresi&oacute;n='(-2,0)'">
+   <param name="C_01" value="tipo='num&eacute;rico' id='C1.x' interfaz='pulsador' regi&oacute;n='sur' nombre='x1' visible='si'">
+   <param name="C_02" value="tipo='num&eacute;rico' id='C1.y' interfaz='pulsador' regi&oacute;n='sur' nombre='y1' visible='si'">
+   <param name="C_03" value="tipo='gr&aacute;fico' id='C2' color='azul' color-int='rojo' expresi&oacute;n='(2,0)'">
+   <param name="C_04" value="tipo='num&eacute;rico' id='C2.x' interfaz='pulsador' regi&oacute;n='sur' nombre='x2' visible='si'">
+   <param name="C_05" value="tipo='num&eacute;rico' id='C2.y' interfaz='pulsador' regi&oacute;n='sur' nombre='y2' visible='si'">
+   <param name="C_06" value="tipo='num&eacute;rico' id='estado' interfaz='men&uacute;' regi&oacute;n='interior' expresi&oacute;n='(20,20,120,23)' valor='1' nombre='estado' visible='no' opciones='0,1'">
+   <param name="A_00" value="inicio='estado=1' id='INICIO' evaluar='una-sola-vez' algoritmo='si'">
+   <param name="A_01" value="inicio='cnm.estado=estado' hacer='cnm.x1=C1.x;cnm.y1=C1.y;cnm.x2=C2.x;cnm.y2=C2.y;' id='CALCULOS' evaluar='siempre' algoritmo='si'">
+   <param name="G_00" value="tipo='macro' expresi&oacute;n='circuitos/conmutador' nombre='cnm'">
+   <param name="G_01" value="tipo='arco' color='azul' centro='(cnm.x3,cnm.y3)' radio='0.1' fin='360' texto='(x3,y3)'">
+</applet>
+</p>
+<p align="left">
+Esta escena es una aplicación del macro que muestra sus parámetros.<br>
+La pequeña circunferencia azul tiene centro en el punto (x3,y3) donde x3 y y3 son variables que se calculan automáticamente al dibujar el macro. Estas variables deben usarse para conectar el extremo superior del conmutador a un elemento del circuito.
+</p>
+<hr>
+
+<p><font size="2" face="Arial"><strong><cite><dfn><samp><tt>Autor: José Luis Abreu León</tt></samp></dfn></cite></strong></font></p>
+
+</body>
+</html>
+
+

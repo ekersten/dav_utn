@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="rugerigabrielaultima" version="0.1.3">
+ <settings>
+  <title>Primera etapa</title>
+  <revision description="created" date="8/20/14" />
+  <author name="Rugeri Gabriela" rol="Profesora de Informática" />
+  <description>
+   <p>En esta primera etapa realizaremos las prácticas del Laboratorio de Hardware, para comprobar que lo desarrollado en clase a si adquirido por el alumno.</p>
+  </description>
+  <descriptors area="Laboratorio de Hardware" level="4To Año EEST N°1" />
+  <skin file="@mini.xml" />
+ </settings>
+ <sequence>
+  <item id="Inicio" name="Señala la actividad deseada" />
+  <item id="Adivinar" name="¿Qué elemento es?" delay="1">
+   <jump tag="Inicio" id="back" />
+  </item>
+  <item id="Unir" name="Perifericos">
+   <jump tag="Inicio" id="back" />
+  </item>
+  <item id="Sus partes" name="¿Cuáles son las partes del disco rígido?">
+   <jump tag="Inicio" id="back" />
+  </item>
+  <item id="ordenar" name="Ordenar Palabras">
+   <jump tag="Inicio" id="back" />
+  </item>
+  <item id="elejir" name="con lista">
+   <jump tag="Inicio" id="back" />
+  </item>
+  <item id="rellenar" name="rellenar agujeros">
+   <jump action="EXIT" id="back" />
+  </item>
+  <item name="rellenar agujeros con la primer letra" />
+ </sequence>
+ <activities>
+  <activity class="@text.Order" name="Ordenar Palabras" code="" type="orderWords" amongParagraphs="true">
+   <description>
+    <p>Deberás colocar las palabras que correspondan en las frases o párrafos correctos.</p>
+   </description>
+   <messages>
+    <cell type="previous">
+     <style />
+    </cell>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x3333FF" />
+      <gradient source="0x00CC33" dest="0xFFFF33" angle="0" />
+     </style>
+     <p>Ordena las palabras del texto</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFFFF33" />
+      <gradient source="0xFF0000" dest="0x3333FF" angle="0" />
+     </style>
+     <p>Excelente!!!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="24" />
+      <color foreground="0xFF0000" />
+      <gradient source="0x000000" dest="0xCCCCCC" angle="0" />
+     </style>
+     <p>Tu tarea no esta bien!!!</p>
+    </cell>
+   </messages>
+   <settings margin="0" maxTime="35" countDownTime="true" report="true" reportActions="true">
+    <helpWindow showSolution="false">
+     <p>EEPROM - Electrios - Tecnológia - Memoria - USB - Digitales - Borradas - Almacenar - Ceros - Unos</p>
+    </helpWindow>
+    <container bgColor="0xC0C0C0">
+     <image name="memorias1.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF0000" border="true" />
+    <eventSounds>
+     <sound id="start" file="inicio de actividad.wav" />
+     <sound id="actionError" file="error.wav" />
+     <sound id="actionOk" file="Accion correcta.wav" />
+    </eventSounds>
+    <skin file="@green.xml" />
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <prevScreen maxTime="15">
+    <style />
+    <p>La memoria flash —derivada de la memoria EEPROM— permite la lectura y escritura de múltiples posiciones de memoria en la misma operación. Gracias a ello, la tecnología flash, siempre mediante impulsos eléctricos, permite velocidades de funcionamiento muy superiores frente a la tecnología EEPROM primigenia, que sólo permitía actuar sobre una única celda de memoria en cada operación de programación. Se trata de la tecnología empleada en los dispositivos denominados memoria USB.&#xD;</p>
+    <p>Los principales usos de este tipo de memorias son las baterías de teléfonos móviles,PDAs (Personal Digital Assistant), cámaras de fotos digitales, reproductores MP3, etc. Según su potencia y su precisión, permiten un número limitado y variable de escrituras y borrados. Constan de puertas lógicas NOR y NAND para almacenar sus correspondientes ceros y unos (como mas tarde veremos en “Principios de funcionamiento”). </p>
+   </prevScreen>
+   <document>
+    <style name="default" italic="false" family="Arial" size="14" background="0xFFFFFF" tabWidth="12" bold="false" />
+    <style name="target" base="default" target="true" foreground="0x339900" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">La memoria flash —derivada de la memoria </text>
+      <target>EEPROM—</target>
+      <text family="Arial" background="0xFFFFFF"> permite la lectura y escritura de múltiples posiciones de memoria en la misma operación. Gracias a ello, la tecnología flash, siempre mediante impulsos </text>
+      <target>eléctricos,</target>
+      <text family="Arial" background="0xFFFFFF"> permite velocidades de funcionamiento muy superiores frente a la </text>
+      <target>tecnología</target>
+      <text family="Arial" background="0xFFFFFF"> EEPROM primigenia, que sólo permitía actuar sobre una única celda de </text>
+      <target>memoria</target>
+      <text family="Arial" background="0xFFFFFF"> en cada operación de programación. Se trata de la tecnología empleada en los dispositivos denominados memoria </text>
+      <target>USB.</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Los principales usos de este tipo de memorias son las baterías de teléfonos móviles,PDAs (Personal Digital Assistant), cámaras de fotos </text>
+      <target>digitales,</target>
+      <text family="Arial" background="0xFFFFFF"> reproductores MP3, etc. Según su potencia y su precisión, permiten un número limitado y variable de escrituras y </text>
+      <target>borrados.</target>
+      <text family="Arial" background="0xFFFFFF"> Constan de puertas lógicas NOR y NAND para </text>
+      <target>almacenar</target>
+      <text family="Arial" background="0xFFFFFF"> sus correspondientes </text>
+      <target>ceros</target>
+      <text family="Arial" background="0xFFFFFF"> y </text>
+      <target>unos</target>
+      <text family="Arial" background="0xFFFFFF"> (como mas tarde veremos en “Principios de funcionamiento”). </text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Perifericos" code="">
+   <description>
+    <p>Esta actividad te va a ayudar a identificar que tipo de periferico es cada hardare.</p>
+   </description>
+   <messages>
+    <cell txtAlign="middle,top" type="initial">
+     <style>
+      <font family="Gabriola" size="30" />
+      <color foreground="0x003399" background="0x33FF00" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="Windows Logon Sound.wav" />
+     <p>Selecciona a que tipo corresponde</p>
+    </cell>
+    <cell txtAlign="middle,top" type="final">
+     <style>
+      <font family="Gabriola" size="30" bold="true" />
+      <color foreground="0x33FF33" background="0xFF0000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="tada.wav" />
+     <p>Muy Bien!!!</p>
+    </cell>
+    <cell txtAlign="middle,top" type="finalError">
+     <style>
+      <font family="Gabriola" size="30" />
+      <color foreground="0xFF0000" background="0x000000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="chord.wav" />
+     <p>Vuelve a intentar!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="40" countDownTime="true" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Consulta con tus apuntes</p>
+    </helpWindow>
+    <container bgColor="0x009900">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x99FF99" dest="0x33FF00" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="actionError" file="chord.wav" />
+     <sound id="actionOk" file="tada.wav" />
+    </eventSounds>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="2" cols="4" cellWidth="80.0" cellHeight="80.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="48" bold="true" />
+     <color foreground="0x009900" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell id="0">
+     <p>Teclado</p>
+    </cell>
+    <cell id="1">
+     <p>Monitor</p>
+    </cell>
+    <cell id="0">
+     <p>Scanner</p>
+    </cell>
+    <cell id="1">
+     <p>Parlante</p>
+    </cell>
+    <cell id="0">
+     <p>Mouse</p>
+    </cell>
+    <cell id="2">
+     <p>Pendrive</p>
+    </cell>
+    <cell id="2">
+     <p>Disco Rígido</p>
+    </cell>
+    <cell id="2">
+     <p>CD-ROM</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="100.0" cellHeight="30.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="30" />
+     <color foreground="0xFF0000" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell>
+     <p>P. de Entrada</p>
+    </cell>
+    <cell>
+     <p>P. de Salida</p>
+    </cell>
+    <cell>
+     <p>P. de Almacenamiento</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="Señala la actividad deseada" code="">
+   <description>
+    <p>A travéz del menú podras elegir la actividad que quieras realizar.</p>
+   </description>
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <eventSounds>
+     <sound id="start" file="When Love Takes Over.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="6" cols="1" cellWidth="500.0" cellHeight="100.0" border="true">
+    <style>
+     <font family="Arial" size="36" bold="true" />
+     <color foreground="0xFF0099" background="0x33FF33" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="6" />
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="¿Qué elemento es?" />
+     <p>ADIVINAR</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Perifericos" />
+     <p>UNIR</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="¿Cuáles son las partes del disco rígido?" />
+     <p>MARCAR</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Ordenar Palabras" />
+     <p>ORDENAR</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="con lista" />
+     <p>ELEJIR</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="rellenar agujeros" />
+     <p>RELLENAR</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@text.FillInBlanks" name="con lista" code="">
+   <description>
+    <p>Con la ayuda de la lista desplegable, completa las frases o párrafos del texto.</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x3333FF" />
+      <gradient source="0xFFFF33" dest="0x00CC33" angle="0" />
+     </style>
+     <p>Elige la palabra correcta de la lista</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFFFF33" />
+      <gradient source="0xFF0000" dest="0x3333FF" angle="0" />
+     </style>
+     <p>Buen trabajo...</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFF0000" />
+      <gradient source="0xCCCCCC" dest="0x000000" angle="0" />
+     </style>
+     <p>Inténtalo nuevamente</p>
+    </cell>
+   </messages>
+   <settings margin="1" maxTime="30" countDownTime="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="memorias.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true">
+     <size width="400" height="301" />
+    </window>
+    <eventSounds>
+     <sound id="start" file="inicio de actividad.wav" />
+     <sound id="actionError" file="error.wav" />
+     <sound id="actionOk" file="Accion correcta.wav" />
+    </eventSounds>
+    <skin file="@green.xml" />
+   </settings>
+   <document>
+    <style name="default" italic="false" family="Arial" size="11" background="0xFFFFFF" tabWidth="12" bold="false" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" size="13" background="0xFFFFFF" foreground="0x00CCCC">La memoria de solo lectura, conocida también como </text>
+      <target>
+       <answer>ROM</answer>
+       <optionList>
+        <option>ROM</option>
+        <option>RAM</option>
+        <option>Virtual</option>
+        <option>Caché</option>
+       </optionList>
+       <text>ROM</text>
+      </target>
+      <text family="Arial" size="13" background="0xFFFFFF" foreground="0x00CCCC"> (acrónimo en inglés de read-only memory), es un medio de almacenamiento utilizado en ordenadores y dispositivos electrónicos, que permite sólo la </text>
+      <target>
+       <answer>lectura</answer>
+       <optionList>
+        <option>lectura</option>
+        <option>escritura</option>
+        <option>eliminación</option>
+       </optionList>
+       <text>lectura</text>
+      </target>
+      <text family="Arial" size="13" background="0xFFFFFF" foreground="0x00CCCC"> de la información y no su escritura, independientemente de la presencia o no de una fuente de energía.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" size="13" background="0xFFFFFF" foreground="0x00CCCC">Los datos almacenados en la ROM no se pueden </text>
+      <target>
+       <answer>modificar</answer>
+       <optionList>
+        <option>modificar</option>
+        <option>eliminar</option>
+        <option>agregar</option>
+       </optionList>
+       <text>modificar</text>
+      </target>
+      <text family="Arial" size="13" background="0xFFFFFF" foreground="0x00CCCC">, o al menos no de manera rápida o fácil. Se utiliza principalmente en su sentido más estricto, se refiere sólo a máscara ROM -en inglés, MROM- (el más antiguo tipo de estado sólido ROM), que se fabrica con los datos almacenados de forma </text>
+      <target>
+       <answer>permanente</answer>
+       <optionList>
+        <option>permanente</option>
+        <option>absoluta</option>
+        <option>temporal</option>
+       </optionList>
+       <text>permanente</text>
+      </target>
+      <text family="Arial" size="13" background="0xFFFFFF" foreground="0x00CCCC"> y, por lo tanto, su contenido no puede ser modificado de ninguna forma. Sin embargo, las ROM más modernas, como EPROM y Flash EEPROM, efectivamente se pueden borrar y volver a programar varias veces, aun siendo descritos como "memoria de sólo lectura" (ROM).</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="rellenar agujeros" code="">
+   <description>
+    <p>Completando con la palabra que falta podrás utilizar el texto como un material de apoyo para tus estudios.</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x3333FF" />
+      <gradient source="0xFFFF33" dest="0x00CC33" angle="0" />
+     </style>
+     <p>Escribe las palabras que faltan</p>
+     <p>Presione F1 para ayuda</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFFFF33" />
+      <gradient source="0xFF0000" dest="0x3333FF" angle="0" />
+     </style>
+     <p>Tarea cumplida...</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFF0000" />
+      <gradient source="0xCCCCCC" dest="0x000000" angle="0" />
+     </style>
+     <p>No haz logrado el objetivo</p>
+    </cell>
+   </messages>
+   <settings margin="1" maxTime="30" countDownTime="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="memorias1.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <eventSounds>
+     <sound id="start" file="inicio de actividad.wav" />
+     <sound id="actionError" file="error.wav" />
+     <sound id="actionOk" file="Accion correcta.wav" />
+    </eventSounds>
+    <skin file="@green.xml" />
+   </settings>
+   <document>
+    <style name="default" italic="false" family="Comic Sans MS" size="12" background="0xFFFFFF" tabWidth="12" bold="false" />
+    <style name="target" base="default" target="true" foreground="0x00CC00" />
+    <style name="targetError" base="target" foreground="0xFF0033" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" foreground="0xFF3366">La denominada Random Acces Memory (RAM), o Memoria de Acceso </text>
+      <target>
+       <answer>Aleatorio</answer>
+       <response fill="_" length="9" maxLength="9" show="+++++++++" />
+       <info mode="onDemand">
+        <cell width="100" height="40">
+         <p>Dicese a aquello que no tiene una dirección fija</p>
+        </cell>
+       </info>
+       <text>Aleatorio</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF" foreground="0xFF3366">, se encarga de guardar las instrucciones que son utilizadas para los distintos dispositivos que tenemos incorporados a nuestra computadora, como así también las instrucciones para hacer funcionar las diferentes aplicaciones instaladas.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" foreground="0xFF3366">A mayor cantidad de Memoria </text>
+      <target>
+       <answer>RAM</answer>
+       <response fill="_" length="3" maxLength="3" show="+++" />
+       <info mode="onDemand">
+        <cell width="100" height="40">
+         <p>Memoría de acceso aleatorio</p>
+        </cell>
+       </info>
+       <text>RAM</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF" foreground="0xFF3366"> más rápido será el procesamiento de los datos, y por ende nuestros trabajos se realizarán con mayor velocidad. No obstante, la Memoria RAM debe estar acompañada de una motherboard adecuada, un </text>
+      <target>
+       <answer>procesador</answer>
+       <response fill="_" length="10" maxLength="10" show="++++++++++" />
+       <info mode="onDemand">
+        <cell width="100" height="40" image="procesador.jpg" />
+       </info>
+       <text>procesador</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF" foreground="0xFF3366"> veloz y un disco rígido de buena capacidad y velocidad. </text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" foreground="0xFF3366">La RAM, que básicamente es una pieza de hardware que se inserta en los </text>
+      <target>
+       <answer>zócalos</answer>
+       <response fill="_" length="7" maxLength="7" show="+++++++" />
+       <info mode="onDemand">
+        <cell width="100" height="40" image="zocalo.jpg" />
+       </info>
+       <text>zócalos</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF" foreground="0xFF3366"> que la motherboard, funciona almacenando las instrucciones que deberá ejecutar el procesador a cada instante.  </text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" foreground="0xFF3366">Es decir que el procesador trabaja sobre la Memoria RAM como si fuera una especie de borrador automático, que le permite desenvolverse con mayor libertad y rapidez. </text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="rellenar agujeros con la primer letra" code="">
+   <description>
+    <p>Completando con la palabra que falta podrás utilizar el texto como un material de apoyo para tus estudios.</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x3333FF" />
+      <gradient source="0xFFFF33" dest="0x00CC33" angle="0" />
+     </style>
+     <p>Escribe la palabra correcta</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFFFF33" />
+      <gradient source="0xFF0000" dest="0x3333FF" angle="0" />
+     </style>
+     <p>Muy buen Trabajo</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0xFF0000" />
+      <gradient source="0xCCCCCC" dest="0x000000" angle="0" />
+     </style>
+     <p>Intentalo nuevamente</p>
+    </cell>
+   </messages>
+   <settings margin="0" maxTime="30" countDownTime="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="memoria 3.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6699" border="true" />
+    <eventSounds>
+     <sound id="start" file="inicio de actividad.wav" />
+     <sound id="actionError" file="error.wav" />
+     <sound id="actionOk" file="Accion correcta.wav" />
+    </eventSounds>
+    <skin file="@green.xml" />
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <document>
+    <style name="default" italic="false" family="Arial" size="11" background="0xFFFFFF" tabWidth="12" bold="false" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" size="12" background="0xFFFFFF" foreground="0xCC00CC">La memoria </text>
+      <target>
+       <answer>dinámica</answer>
+       <response fill="_" length="8" maxLength="8" show="D*******" />
+       <text>dinámica</text>
+      </target>
+      <text family="Arial" size="12" background="0xFFFFFF" foreground="0xCC00CC"> se refiere a aquella memoria que no puede ser definida ya que no se conoce o no se tiene idea del número de la variable a considerarse, la solución a este problema es la memoria dinámica que permite solicitar memoria en tiempo de </text>
+      <target>
+       <answer>ejecución</answer>
+       <response fill="_" length="9" maxLength="9" show="e********" />
+       <text>ejecución</text>
+      </target>
+      <text family="Arial" size="12" background="0xFFFFFF" foreground="0xCC00CC">, por lo que cuanta más memoria se necesite, más se solicita al sistema operativo. El sistema </text>
+      <target>
+       <answer>operativo</answer>
+       <response fill="_" length="9" maxLength="9" show="o********" />
+       <text>operativo</text>
+      </target>
+      <text family="Arial" size="12" background="0xFFFFFF" foreground="0xCC00CC"> maneja la memoria gracias al uso de punteros, por la misma naturaleza del proceso nos impide conocer el tamaño de la memoria necesaria en el momento de compilar.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" size="12" background="0xFFFFFF" foreground="0xCC00CC">Cuando se crea un programa en el que es necesario manejar memoria dinámica el sistema operativo divide el </text>
+      <target>
+       <answer>programa</answer>
+       <response fill="_" length="8" maxLength="8" show="p*******" />
+       <text>programa</text>
+      </target>
+      <text family="Arial" size="12" background="0xFFFFFF" foreground="0xCC00CC"> en cuatro partes que son: texto, datos (estáticos), pila y una zona libre o heap. En la última parte es donde queda la memoria libre para poder utilizarla de forma dinámica</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@panels.Identify" name="¿Cuáles son las partes del disco rígido?" code="">
+   <description>
+    <p>En esta actividad vas a reconocer las partes que pertenecen al disco rigido.</p>
+   </description>
+   <messages>
+    <cell txtAlign="middle,top" type="initial">
+     <style>
+      <font family="Gabriola" size="30" bold="true" />
+      <color foreground="0x003399" background="0x33FF00" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="Windows Logon Sound.wav" />
+     <p>Marca las partes del Disco Duro</p>
+    </cell>
+    <cell txtAlign="middle,top" type="final">
+     <style>
+      <font family="Gabriola" size="30" bold="true" />
+      <color foreground="0x33FF33" background="0xFF0000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="tada.wav" />
+     <p>Muy buen trabajo!!!</p>
+    </cell>
+    <cell txtAlign="middle,top" type="finalError">
+     <style>
+      <font family="Gabriola" size="30" bold="true" />
+      <color foreground="0xFF0000" background="0x000000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="chord.wav" />
+     <p>Haz fallado...</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="40" countDownTime="true" report="true" reportActions="false">
+    <helpWindow>
+     <p>Consulta con tus apuntes.</p>
+    </helpWindow>
+    <container bgColor="0x000099">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x66FFFF" dest="0x00CCFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="actionError" file="chord.wav" />
+     <sound id="actionOk" file="tada.wav" />
+    </eventSounds>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="26" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell id="0" txtAlign="middle,top" avoidOverlapping="true" image="cabezal-disco-duro.jpg">
+     <media type="PLAY_AUDIO" level="1" file="tada.wav" />
+     <p>Permite escribir y leer</p>
+    </cell>
+    <cell id="1" avoidOverlapping="true" image="108-4.jpg">
+     <media type="PLAY_AUDIO" level="1" file="tada.wav" />
+     <p>Conecta los cables de datos y de alimentación</p>
+    </cell>
+    <cell id="1" txtAlign="middle,top" imgAlign="middle,bottom" avoidOverlapping="true" image="disk-277348734873487438734.jpg">
+     <media type="PLAY_AUDIO" level="1" file="tada.wav" />
+     <p>Disco donde guarda la información</p>
+    </cell>
+    <cell id="1" avoidOverlapping="true" image="images.jpg">
+     <media type="PLAY_AUDIO" level="1" file="tada.wav" />
+     <p>Son las partes lógicas del disco duro</p>
+    </cell>
+    <cell id="1" avoidOverlapping="true" image="disco rigido.jpg">
+     <media type="PLAY_AUDIO" level="1" file="tada.wav" />
+     <p>Sin su carcasa se ven todas sus partes.</p>
+    </cell>
+    <cell id="0" avoidOverlapping="true" image="cooler.jpg">
+     <media type="PLAY_AUDIO" level="1" file="chord.wav" />
+     <p>Permite la ventilación</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="¿Qué elemento es?" code="">
+   <description>
+    <p>Descubre como se llama el elemento de la imagen.</p>
+   </description>
+   <messages>
+    <cell txtAlign="middle,top" type="initial">
+     <style>
+      <font family="Gabriola" size="30" bold="true" />
+      <color foreground="0x003399" background="0x33FF00" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="Windows Logon Sound.wav" />
+     <p>Descubre el elemento</p>
+    </cell>
+    <cell txtAlign="middle,top" type="final">
+     <style>
+      <font family="Gabriola" size="30" bold="true" />
+      <color foreground="0x33FF33" background="0xFF0000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="tada.wav" />
+     <p>Trabajo excelente!!!</p>
+    </cell>
+    <cell txtAlign="middle,top" type="finalError">
+     <style>
+      <font family="Gabriola" size="30" bold="true" />
+      <color foreground="0xFF0000" background="0x000000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="chord.wav" />
+     <p>Vuelve a intentarlo!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="40" countDownTime="true" report="true" reportActions="false">
+    <container bgColor="0xFF0000">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFF0099" dest="0xFFCCCC" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="actionError" file="chord.wav" />
+     <sound id="actionOk" file="tada.wav" />
+    </eventSounds>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="100.0" cellHeight="60.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="disco rigido.jpg" />
+    <cell image="fuente de alimentacion.jpg" />
+    <cell image="placa madre.jpg" />
+    <cell image="procesador.jpg" />
+    <cell image="ram.jpg" />
+    <cell image="cooler.jpg" />
+   </cells>
+   <cells rows="2" cols="3" cellWidth="100.0" cellHeight="29.0" border="true" id="secondary">
+    <style>
+     <color foreground="0xFF0099" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell>
+     <p>Disco rígido</p>
+    </cell>
+    <cell>
+     <p>Fuente </p>
+    </cell>
+    <cell>
+     <p>Placa Madre</p>
+    </cell>
+    <cell>
+     <p>Procesador</p>
+    </cell>
+    <cell>
+     <p>RAM</p>
+    </cell>
+    <cell>
+     <p>Cooler</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="108-4.jpg" file="108-4.jpg" />
+  <media name="cabezal-disco-duro.jpg" file="cabezal-disco-duro.jpg" />
+  <media name="cooler.jpg" file="cooler.jpg" />
+  <media name="disco rigido.jpg" file="disco rigido.jpg" />
+  <media name="disk-277348734873487438734.jpg" file="disk-277348734873487438734.jpg" />
+  <media name="fuente de alimentacion.jpg" file="fuente de alimentacion.jpg" />
+  <media name="images.jpg" file="images.jpg" />
+  <media name="memoria 3.jpg" file="memoria 3.jpg" />
+  <media name="memorias.jpg" file="memorias.jpg" />
+  <media name="memorias1.jpg" file="memorias1.jpg" />
+  <media name="placa madre.jpg" file="placa madre.jpg" />
+  <media name="procesador.jpg" file="procesador.jpg" />
+  <media name="ram.jpg" file="ram.jpg" />
+  <media name="zocalo.jpg" file="zocalo.jpg" />
+  <media name="When Love Takes Over.mp3" file="When Love Takes Over.mp3" />
+  <media name="Accion correcta.wav" file="Accion correcta.wav" />
+  <media name="chord.wav" file="chord.wav" />
+  <media name="error.wav" file="error.wav" />
+  <media name="inicio de actividad.wav" file="inicio de actividad.wav" />
+  <media name="tada.wav" file="tada.wav" />
+  <media name="Windows Logon Sound.wav" file="Windows Logon Sound.wav" />
+ </mediaBag>
+</JClicProject>
+

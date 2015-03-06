@@ -86,22 +86,6 @@
                 </div>
                 <!-- slide end -->
                 <!-- slide start -->
-                <div class="slide" style="background-image: url('img/home_kimtech.jpg');">
-                    <div class="row">
-                        <div class="column medium-4 medium-push-8">
-                            <div class="contenido">
-                                <div class="interno">
-                                    <h1>Kimtech</h1>
-                                    <p>Programa de Capacitación y Certificación en Robótica Educativa que desarrollan alumnos y profesores del colegio.</p>
-                                    <a href="kimtech-informacion.php" class="boton">Conocer más</a>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <!-- slide end -->
-                <!-- slide start -->
                 <div class="slide" style="background-image: url('img/home_modelo1a1.jpg');">
                     <div class="row">
                         <div class="column medium-4 medium-push-8">
@@ -109,7 +93,7 @@
                                 <div class="interno">
                                     <h1>Modelo 1 a 1</h1>
                                     <p>Capacitación Docente para Escuelas Técnicas.</p>
-                                    <a href="entropia.php" class="boton">Conocer más</a>
+                                    <a href="modelo1a1.php" class="boton">Conocer más</a>
                                 </div>
                             </div>
                             
@@ -150,7 +134,7 @@
                 </div>
                 <div class="column medium-4">
                     <p class="icon"><span class="icon-copy"></span></p>
-                    <h2>Programa de Entes de<br/>Gobierno y R.S.E.</h2>
+                    <h2>Programas para organismos<br/>publicos y R.S.E.</h2>
                     <p class="texto">Programas de Tecnología y Educación desarrollados a pedido de entes de gobierno o patrocinados por empresas.</p>
                     <p class="cta"><a href="modelo1a1.php">ver <span class="mas">+</span></a></p>
                 </div>

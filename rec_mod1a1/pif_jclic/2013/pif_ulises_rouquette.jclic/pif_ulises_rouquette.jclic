@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="pif_ulises_rouquette" version="0.1.3">
+ <settings>
+  <title>PIF Ulises Rouquette</title>
+  <revision description="created" date="3/9/14" />
+  <author name="Ulises Rouquette" mail="trumanvertice@gmail.com" rol="Docente" />
+  <descriptors />
+  <skin file="@blue.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="info0" navButtons="fwd">
+   <jump tag="info1" id="forward" />
+  </item>
+  <item id="info1" name="info1">
+   <jump tag="info2" id="forward" />
+   <jump tag="start" id="back" />
+  </item>
+  <item id="info2" name="info2">
+   <jump tag="relleno" id="forward" />
+   <jump tag="info1" id="back" />
+  </item>
+  <item id="relleno" name="relleno">
+   <jump tag="asimple" id="forward" />
+   <jump tag="info2" id="back" />
+  </item>
+  <item id="asimple" name="asimple">
+   <jump action="EXIT" id="forward" />
+   <jump tag="relleno" id="back" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@associations.SimpleAssociation" name="asimple" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xCCCCFF" />
+      <gradient source="0xCCCCFF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Unir con flechas !!!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <gradient source="0x3366FF" dest="0xCCCCCC" angle="0" />
+     </style>
+     <p>Muy bien !!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xFF9999" />
+     </style>
+     <p>No no no</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="75" countDownTime="false" maxActions="25" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Tiene que unir los elementos con el mouse.</p>
+    </helpWindow>
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x99FFFF" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="114.0" cellHeight="64.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" />
+      <color background="0x99FFFF" />
+     </style>
+     <p>Fuerza</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" />
+      <color background="0x99FFFF" />
+     </style>
+     <p>Longitud</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" />
+      <color background="0x99FFFF" />
+     </style>
+     <p>Energía</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" />
+      <color background="0x99FFFF" />
+     </style>
+     <p>Masa</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" />
+      <color background="0x99FFFF" />
+     </style>
+     <p>Tiempo</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" />
+      <color background="0x99FFFF" />
+     </style>
+     <p>Corriente eléctrica</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="16" bold="true" />
+      <color background="0x99FFFF" />
+     </style>
+     <p>Potencia</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="16" bold="true" />
+      <color background="0x99FFFF" />
+     </style>
+     <p>Velocidad</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="16" bold="true" />
+      <color background="0x99FFFF" />
+     </style>
+     <p>Aceleración</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="3" cellWidth="129.0" cellHeight="64.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="16" />
+      <color background="0xCCCCFF" />
+     </style>
+     <p>newton (N)</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="16" />
+      <color background="0xCCCCFF" />
+     </style>
+     <p>metro (m)</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xCCCCFF" />
+     </style>
+     <p>Joule (J)</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xCCCCFF" />
+     </style>
+     <p>kilogramo (Kg)</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xCCCCFF" />
+     </style>
+     <p>segundo (s)</p>
+    </cell>
+    <cell border="true">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="16" />
+      <color background="0xCCCCFF" />
+     </style>
+     <p>ampere (A)</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="16" />
+      <color background="0xCCCCFF" />
+     </style>
+     <p>watt (W)</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="16" />
+      <color background="0xCCCCFF" />
+     </style>
+     <p>metro por segundo (m/s)</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="16" />
+      <color background="0xCCCCFF" />
+     </style>
+     <p>metro por segundo cuadrado (m/s²)</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="info0" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xCCCCFF" />
+      <gradient source="0xCCCCFF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Hace click en "adelante"(&gt;) para continuar</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://es.wikipedia.org/wiki/Sistema_M%C3%A9trico_Legal_Argentino" report="false">
+    <helpWindow>
+     <p>Para realizar correctamente las actividades debes leer con atención todas las pantallas.</p>
+    </helpWindow>
+    <container bgColor="0x99CCFF">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x99FFFF" border="true">
+     <gradient source="0x99FFFF" dest="0xFFFFFF" angle="0" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="presentacion.png">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="20" />
+     <color background="0x99CCFF" />
+     <gradient source="0x99CCFF" dest="0xFFFFFF" angle="0" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell avoidOverlapping="true" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="info1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xCCCCFF" />
+      <gradient source="0xCCCCFF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Haz click en "adelante" (&gt;) para continuar...</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://es.wikipedia.org/wiki/Sistema_M%C3%A9trico_Legal_Argentino" report="false">
+    <container bgColor="0x99CCFF">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x99FFFF" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="SIMELA.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="info2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xCCCCFF" />
+      <gradient source="0xCCCCFF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Haz click en "adelante" (&gt;) para continuar...</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://es.wikipedia.org/wiki/Sistema_M%C3%A9trico_Legal_Argentino" report="false">
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x99FFFF" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="SIMELA DER.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@text.FillInBlanks" name="relleno" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xCCCCFF" />
+      <gradient source="0xCCCCFF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Completar con la opción correcta </p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <gradient source="0x3366FF" dest="0xCCCCCC" angle="0" />
+     </style>
+     <p>Excelente !!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xFF9999" />
+     </style>
+     <p>No no no</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="90" countDownTime="false" maxActions="25" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Debes completar las palabras faltantes con la ayuda de la "opción múltiple"</p>
+    </helpWindow>
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x99FFFF" border="true">
+     <size width="780" height="290" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <document>
+    <style name="default" bold="false" italic="false" background="0xFFFFFF" tabWidth="12" family="Arial" size="11" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text size="16">Las magnitudes fundamentales que utilizaremos en Física y otras Ciencias Naturales estan establecidas en el Sistema Internacional de Unidades llamado </text>
+      <target>
+       <answer>SIMELA</answer>
+       <optionList>
+        <option>SILEMA</option>
+        <option>SIMELA</option>
+        <option>SALAME</option>
+       </optionList>
+       <text>SIMELA</text>
+      </target>
+      <text size="16">.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text size="16">Se llaman magnitudes </text>
+      <target>
+       <answer>derivadas</answer>
+       <optionList>
+        <option>derivadas</option>
+        <option>integrales</option>
+        <option>neutras</option>
+       </optionList>
+       <text>derivadas</text>
+      </target>
+      <text size="16"> a las que se desprenden de las magnitudes básicas o fundamentales, relacionandolas de acuerdo a leyes de la Física. Algunos ejemplos de magnitudes básicas son el Tiempo cuya unidad es el </text>
+      <target>
+       <answer>segundo</answer>
+       <optionList>
+        <option>metro</option>
+        <option>segundo</option>
+        <option>Hertz</option>
+       </optionList>
+       <text>segundo</text>
+      </target>
+      <text size="16">, la Longitud cuya unidad es el </text>
+      <target>
+       <answer>metro</answer>
+       <optionList>
+        <option>metro</option>
+        <option>segundo</option>
+        <option>joules</option>
+       </optionList>
+       <text>metro</text>
+      </target>
+      <text size="16"> y la </text>
+      <target>
+       <answer>Masa</answer>
+       <optionList>
+        <option>Temperatura</option>
+        <option>Potencia</option>
+        <option>Masa</option>
+       </optionList>
+       <text>Masa</text>
+      </target>
+      <text size="16"> cuya unidad es el Kilogramo.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text size="16">Las magnitudes derivadas que más utlizaremos en le mecánica del movimiento son la Velocidad, que es el/la </text>
+      <target>
+       <answer>cociente</answer>
+       <optionList>
+        <option>producto</option>
+        <option>suma</option>
+        <option>cociente</option>
+       </optionList>
+       <text>cociente</text>
+      </target>
+      <text size="16"> entre la distancia recorrida por un móvil y el tiempo empleado. Otra magnitud derivada a su véz de la velocidad y el tiempo, es la </text>
+      <target>
+       <answer>aceleración</answer>
+       <optionList>
+        <option>aceleración</option>
+        <option>potencia</option>
+        <option>energía</option>
+       </optionList>
+       <text>aceleracion</text>
+      </target>
+      <text size="16"> cuya unidad es el metro por segundo cuadrado. </text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="SIMELA DER.jpg" file="SIMELA DER.jpg" />
+  <media name="SIMELA.jpg" file="SIMELA.jpg" />
+  <media name="presentacion.png" file="presentacion.png" />
+ </mediaBag>
+</JClicProject>
+

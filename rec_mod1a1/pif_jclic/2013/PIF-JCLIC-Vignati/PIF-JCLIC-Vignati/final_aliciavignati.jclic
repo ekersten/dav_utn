@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="final_aliciavignati" version="0.1.3">
+ <settings>
+  <title>Tarea 6</title>
+  <revision description="created" date="7/4/13" />
+  <author name="Alicia Vignati" rol="Profesora" />
+  <descriptors area="Informática" level="Secundario" />
+  <skin file="@green.xml" />
+ </settings>
+ <sequence>
+  <item id="incio" name="menu inicial" />
+  <item name="asocsimpl1" delay="2" />
+  <item name="asocompl" delay="2" />
+  <item name="explorac" delay="2" />
+  <item name="actividentif">
+   <jump action="EXIT" id="back" />
+  </item>
+  <item name="rellenar aguj con lista" />
+  <item name="texto letra inic incog" />
+  <item name="palabras desordenadas" />
+  <item name="Rellenar agujeros vacios" />
+  <item name="ordenar parrafos" />
+  <item name="identif adjetivos" />
+ </sequence>
+ <activities>
+  <activity class="@panels.Identify" name="actividentif" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>¿Qué periféricos no son de entrada unicamente?</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Los periféricos de entrada generan información: teclado, mouse, camara web, micrófono, etc.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="true">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="2" cols="2" cellWidth="218.0" cellHeight="103.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell id="1" avoidOverlapping="true" border="true" image="dvd.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Candara" size="10" />
+      <color foreground="0x0033CC" background="0xFFCC33" shadow="0xCCCC00" inactive="0x00FFFF" alternative="0xFFFF00" border="0x66FF33" />
+      <gradient source="0x99FFFF" dest="0xFF3333" angle="0" />
+     </style>
+     <p>Unidad de almacenamiento</p>
+    </cell>
+    <cell id="1" txtAlign="middle,bottom" imgAlign="middle,bottom" image="pendrive.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Candara" size="10" />
+      <color foreground="0x0033CC" background="0xFFCC33" shadow="0xCCCC00" inactive="0x00FFFF" alternative="0xFFFF00" border="0x66FF33" />
+      <gradient source="0x3333FF" dest="0x66FF66" angle="0" />
+     </style>
+     <p>Almacenamiento portatil.</p>
+    </cell>
+    <cell id="0" txtAlign="right,middle" avoidOverlapping="true" image="camweb.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Candara" size="11" />
+      <color foreground="0x0033CC" background="0xFFCC33" shadow="0xCCCC00" inactive="0x00FFFF" alternative="0xFFFF00" border="0x66FF33" />
+      <gradient source="0xCCCCCC" dest="0xFFFF66" angle="0" />
+     </style>
+     <p>Captura imágen</p>
+    </cell>
+    <cell id="1" avoidOverlapping="true" image="descarga.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Candara" size="11" />
+      <color foreground="0x0033CC" background="0xFFCC33" shadow="0xCCCC00" inactive="0x00FFFF" alternative="0xFFFF00" border="0x66FF33" />
+      <gradient source="0xCC00CC" dest="0xFFFF66" angle="0" />
+     </style>
+     <p>Disco rígido o duro interno</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="2" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="asocompl" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color background="0x99FF00" />
+     </style>
+     <p>Señalar cada periférico en la categoría correcta</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color background="0x33CC00" />
+     </style>
+     <p>Muy bien!!!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <color background="0xFF3300" />
+     </style>
+     <p>Incorrecto.</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://www.informatica-hoy.com.ar/aprender-informatica/Perifericos-de-Entrada-y-Salida.php" maxTime="20" countDownTime="false" maxActions="8" countDownActions="false" report="true" reportActions="true">
+    <helpWindow showSolution="false">
+     <p>Relacionar las categorias de periféricos con los p</p>
+    </helpWindow>
+    <container bgColor="0xC0C0C0">
+     <image name="pregunta.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="2" cols="4" cellWidth="117.0" cellHeight="94.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell id="1" border="true">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFF00" />
+      <gradient source="0xFFFF66" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Mouse</p>
+    </cell>
+    <cell id="2" border="true">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFF00" />
+      <gradient source="0xFF9933" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Parlantes</p>
+    </cell>
+    <cell id="0" border="true">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFF00" />
+      <gradient source="0x0000FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Teclado</p>
+    </cell>
+    <cell id="1" border="true">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFF00" />
+      <gradient source="0xFF66FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Monitor</p>
+    </cell>
+    <cell id="2" border="true">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFF00" />
+      <gradient source="0x00FFFF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Impresora</p>
+    </cell>
+    <cell id="0" border="true">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFF00" />
+      <gradient source="0x999900" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Módem</p>
+    </cell>
+    <cell id="2" border="true">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFF00" />
+      <gradient source="0x009999" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Plotter</p>
+    </cell>
+    <cell id="0" border="true">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFF00" />
+      <gradient source="0x990099" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Pendrive</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="260.0" cellHeight="62.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell border="true">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xCCFF33" />
+     </style>
+     <p>Entrada - Salida</p>
+    </cell>
+    <cell border="true">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x33CC00" />
+     </style>
+     <p>Entrada</p>
+    </cell>
+    <cell border="true">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x339900" />
+     </style>
+     <p>Salida</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="asocsimpl1" code="">
+   <description />
+   <messages>
+    <cell border="false" type="initial">
+     <style />
+     <p>Asociamos mediante el sonido la palabra correcta.</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Muy bien!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>M...! volvemos a escuchar . . .</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="20" countDownTime="false" maxActions="10" countDownActions="false" report="true" reportActions="true">
+    <helpWindow showSolution="false">
+     <p>Al escuchar el sonido asociar la palabra que identifica el mismo.</p>
+    </helpWindow>
+    <container bgColor="0x9999FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x66FF00" border="true" />
+   </settings>
+   <cells rows="1" cols="4" cellWidth="102.0" cellHeight="112.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell imgAlign="middle,bottom" image="pregunta.jpg">
+     <media type="PLAY_AUDIO" level="1" file="61870^Click02.mp3" />
+     <p>¿Qué sonido es?</p>
+    </cell>
+    <cell imgAlign="middle,top" image="pregunta.jpg">
+     <media type="PLAY_AUDIO" level="1" file="Laser_Printer_01_Sound_Effect_Mp3_362.mp3" />
+     <p>¿Qué sonido es?</p>
+    </cell>
+    <cell image="pregunta.jpg">
+     <media type="PLAY_AUDIO" level="1" file="Apagado de Windows XP.wav" />
+     <p>¿Que sonido es?</p>
+    </cell>
+    <cell image="pregunta.jpg">
+     <media type="PLAY_AUDIO" level="1" file="Reciclaje de Windows XP.wav" />
+     <p>¿Qué sonido es?</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="4" cellWidth="99.0" cellHeight="92.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <p>Mouse</p>
+    </cell>
+    <cell>
+     <p>Impresora</p>
+    </cell>
+    <cell>
+     <p>Apagar Windows</p>
+    </cell>
+    <cell>
+     <p>Papelera reciclaje</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.Explore" name="explorac" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="true" reportActions="true">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="315.0" cellHeight="56.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell id="0">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Candara" size="24" />
+      <color foreground="0x0033CC" background="0xFF33FF" shadow="0xCCCC00" inactive="0x00FFFF" alternative="0xFFFF00" border="0xFF3333" />
+     </style>
+     <p>Impresora</p>
+    </cell>
+    <cell id="1">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Candara" size="24" />
+      <color foreground="0x0033CC" background="0x99FF00" shadow="0xCCCC00" inactive="0x00FFFF" alternative="0xFFFF00" border="0xFF3333" />
+     </style>
+     <p>cierre windows</p>
+    </cell>
+    <cell id="2">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Candara" size="24" />
+      <color foreground="0x0033CC" background="0x9999FF" shadow="0xCCCC00" inactive="0x00FFFF" alternative="0xFFFF00" border="0xFF3333" />
+     </style>
+     <p>Mouse</p>
+    </cell>
+    <cell id="3">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Candara" size="24" />
+      <color foreground="0x0033CC" background="0xFFCC33" shadow="0xCCCC00" inactive="0x00FFFF" alternative="0xFFFF00" border="0xFF3333" />
+     </style>
+     <p>Teclado</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="1" cellWidth="205.0" cellHeight="57.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell avoidOverlapping="true" image="nota.gif">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Candara" size="24" />
+      <color foreground="0x0033CC" background="0x99FF00" shadow="0xCCCC00" inactive="0x00FFFF" alternative="0xFFFF00" border="0xFF3333" />
+      <gradient source="0xFF9900" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="Laser_Printer_01_Sound_Effect_Mp3_362.mp3" />
+    </cell>
+    <cell image="nota.gif">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Candara" size="24" />
+      <color foreground="0x0033CC" background="0x99FF00" shadow="0xCCCC00" inactive="0x00FFFF" alternative="0xFFFF00" border="0xFF3333" />
+      <gradient source="0x990099" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="Apagado de Windows XP.wav" />
+    </cell>
+    <cell image="nota.gif">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Candara" size="24" />
+      <color foreground="0x0033CC" background="0x9999FF" shadow="0xCCCC00" inactive="0x00FFFF" alternative="0xFFFF00" border="0xFF3333" />
+      <gradient source="0x33FFFF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="61870^Click02.mp3" />
+    </cell>
+    <cell image="nota.gif">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Candara" size="24" />
+      <color foreground="0x0033CC" background="0xFFCC33" shadow="0xCCCC00" inactive="0x00FFFF" alternative="0xFFFF00" border="0xFF3333" />
+      <gradient source="0x0033FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="8c3488ca7a5339d0d3abc4ba63bf4348.mp3" />
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="menu inicial" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Elije una opción</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x9900FF">
+     <image name="imagtecno.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0000CC" border="true" />
+   </settings>
+   <cells rows="5" cols="2" cellWidth="138.0" cellHeight="71.0" border="true">
+    <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="22" />
+     <color foreground="0xFF0033" shadow="0xFFFFFF" />
+     <gradient source="0x33CCFF" dest="0xFFFFFF" angle="0" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="asocsimpl1" />
+     <p>Asociación nivel 1</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="asocompl" />
+     <p>Asociación nivel 2</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="explorac" />
+     <p>Exploración</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="actividentif" />
+     <p>Identificación</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Rellenar agujeros vacios" />
+     <p>Completar texto</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="rellenar aguj con lista" />
+     <p>Seleccionar palabra</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="texto letra inic incog" />
+     <p>¿Cuál es la letra?</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="ordenar parrafos" />
+     <p>Párrafos desordenados</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="palabras desordenadas" />
+     <p>Palabras desordenadas</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="identif adjetivos" />
+     <p>Adjetivos</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@text.FillInBlanks" name="Rellenar agujeros vacios" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Completar el texto con la palabra correcta</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Muy bien!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>No corresponde</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="30" countDownTime="false" maxActions="10" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Leer el texto. Completarlo.</p>
+    </helpWindow>
+    <container bgColor="0xFF6600">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCC9900" border="true" />
+   </settings>
+   <document>
+    <style name="default" background="0xFFFFFF" italic="false" tabWidth="12" bold="false" size="12" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0x990099" italic="false" bold="true" size="16" foreground="0xFFFFFF" family="Courier New">En informática se denomina </text>
+      <target>
+       <answer>periféricos</answer>
+       <response fill="_" length="11" maxLength="11" />
+       <text>periféricos</text>
+      </target>
+      <text background="0x990099" italic="false" bold="true" size="16" foreground="0xFFFFFF" family="Courier New"> a los aparatos y/o dispositivos auxiliares e independientes concectados a la unidad </text>
+      <target>
+       <answer>central</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>central</text>
+      </target>
+      <text background="0x990099" italic="false" bold="true" size="16" foreground="0xFFFFFF" family="Courier New"> de procesamiento de una computadora.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0x990099" italic="false" bold="true" size="16" foreground="0xFFFFFF" family="Courier New">Se consideran periféricos tanto a las unidades o dispositivos a traves de los cuales la computadora se </text>
+      <target>
+       <answer>comunica</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>comunica</text>
+      </target>
+      <text background="0x990099" italic="false" bold="true" size="16" foreground="0xFFFFFF" family="Courier New"> con el mundo exterior, como a los sistemas que </text>
+      <target>
+       <answer>almacenan</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>almacenan</text>
+      </target>
+      <text background="0x990099" italic="false" bold="true" size="16" foreground="0xFFFFFF" family="Courier New"> o archivan la información, sirviendo de memoria auxiliar de la memoria principal</text>
+      <target>
+       <answer>.</answer>
+       <response fill="_" length="1" maxLength="1" />
+       <text>.</text>
+      </target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="rellenar aguj con lista" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>De la lista desplegable, selecciona la palabra correcta.</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Muy bien!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>Incorrecto</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="30" countDownTime="false" maxActions="10" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Después de leer el texto, ingresar la palabra que falta. Tendrás ayuda.</p>
+    </helpWindow>
+    <container bgColor="0x990099">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF99FF" border="true" />
+   </settings>
+   <document>
+    <style name="default" background="0xFFFFFF" italic="false" tabWidth="12" bold="false" size="12" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" italic="false" bold="false" size="14" family="Arial Black">Se entenderá por periférico al conjunto de </text>
+      <target>
+       <answer>dispositivos</answer>
+       <optionList>
+        <option>conectores</option>
+        <option>aparatos</option>
+        <option>dispositivos</option>
+        <option>terminales</option>
+       </optionList>
+       <text>dispositivos</text>
+      </target>
+      <text background="0xFFFFFF" italic="false" bold="false" size="14" family="Arial Black"> que, sin pertenecer al núcleo fundamental de la computadora, formado por la CPU y la memoria central, permitan realizar operaciones de entrada/salida (E/S) complementarias al proceso de datos que realiza la CPU. Estas tres unidades básicas en un computador, CPU, memoria central y el subsistema de E/S, están comunicadas entgre sí por tres buses o canales de comunicación. </text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.Complete" name="texto letra inic incog" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Completar la palabra con la letra faltante.</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Correcto.</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>Leemos de nuevo ...</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="30" countDownTime="false" maxActions="5" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Colocar la letra correcta de la palabra incompleta.</p>
+    </helpWindow>
+    <container bgColor="0xCCCCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x9999FF" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <checkButton></checkButton>
+   <document>
+    <style name="default" background="0xFFFFFF" italic="false" tabWidth="12" bold="false" size="12" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" italic="false" bold="true" size="18" family="Book Antiqua">A pesar de que el término </text>
+      <target>p</target>
+      <text background="0xFFFFFF" italic="false" bold="true" size="18" family="Book Antiqua">eriférico implica a menudo el concepto de "adicional pero no esencial", muchos de ellos son elementos fundamentales para un sistema informático.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" italic="false" bold="true" size="18" family="Book Antiqua">El </text>
+      <target>t</target>
+      <text background="0xFFFFFF" italic="false" bold="true" size="18" family="Book Antiqua">eclado y el </text>
+      <target>m</target>
+      <text background="0xFFFFFF" italic="false" bold="true" size="18" family="Book Antiqua">onitor, imprescindibles en cualquier </text>
+      <target>c</target>
+      <text background="0xFFFFFF" italic="false" bold="true" size="18" family="Book Antiqua">omputadora personal de hoy en día (no lo fueron en los primeros computadores), son posiblemente los periféricos más comunes, y es posible que mucha gente no los considere como tal debido a que generalmente se toman como parte necesaria de una computadora. </text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.Order" name="ordenar parrafos" code="" type="orderParagraphs">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Todo desordenado . . . no se entiende.</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Correcto!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>Sigue sin entenderse . . .</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="30" countDownTime="false" maxActions="6" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Los párrafos estan desordenados, los ordenas?</p>
+    </helpWindow>
+    <container bgColor="0x006666">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x009999" border="true">
+     <size width="780" height="300" />
+    </window>
+   </settings>
+   <checkButton></checkButton>
+   <document>
+    <style name="default" background="0xFFFFFF" italic="false" tabWidth="12" bold="false" size="14" foreground="0xCCCC00" family="Calibri" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial">
+      <target>Los periféricos son los aparatos o dispositivos auxiliares independientes conectados a la CPU.</target>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <target>Existen tres unidades básicas en un computador.</target>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <target>CPU, memoria central y E/S están comunicadas entre sí por tres buses o canales de comunicación.</target>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <target>Datos, circulan.</target>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <target>Control.</target>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <target>Direcciones.</target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.Order" name="palabras desordenadas" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Algunas palabras están desordenadas. Las ubicas correctamente?</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Correcto</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>No se entiende.</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="90" countDownTime="false" maxActions="30" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Busca la palabra que falta para leer correctamente el texto.</p>
+    </helpWindow>
+    <container bgColor="0xFF9999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF66CC" border="true">
+     <size width="665" height="300" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <checkButton></checkButton>
+   <document>
+    <style name="default" background="0xFFFFFF" italic="false" tabWidth="12" bold="false" size="18" foreground="0xFF9999" family="Arial" />
+    <style name="target" base="default" target="true" foreground="0x000000" />
+    <style name="targetError" base="target" foreground="0x3333FF" />
+    <section>
+     <p background="0xFFFFFF" family="Arial">
+      <target>Pendrive</target>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Es muy cómodo pensar en llevar nuestra </text>
+      <target>información</target>
+      <text background="0xFFFFFF" family="Arial"> en un medio que no falle, que sea seguro y que no ocupe espacio. Hasta el momento, estas prestaciones la brindaban los </text>
+      <target>CDs</target>
+      <text background="0xFFFFFF" family="Arial">, porque nuestros enemigos de los datos, llamados Discos de 3 ½, lejos estaban de darnos cualquier tipo de </text>
+      <target>seguridad</target>
+      <text background="0xFFFFFF" family="Arial">.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Un </text>
+      <target>llavero</target>
+      <text background="0xFFFFFF" family="Arial"> USB (Universal Serial Bus)(en inglés USB flash drive) es un pequeño dispositivo de almacenamiento que utiliza la memoria flash para </text>
+      <target>guardar</target>
+      <text background="0xFFFFFF" family="Arial"> la información sin necesidad de </text>
+      <target>pilas</target>
+      <text background="0xFFFFFF" family="Arial">. </text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Los llaveros son </text>
+      <target>resistentes</target>
+      <text background="0xFFFFFF" family="Arial"> a los rasguños y al polvo que han afectado a las formas previas de </text>
+      <target>almacenamiento</target>
+      <text background="0xFFFFFF" family="Arial"> portable, como los CD y los </text>
+      <target>disquetes</target>
+      <text background="0xFFFFFF" family="Arial">.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.Identify" name="identif adjetivos" code="" type="identifyWords">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Ubique los adjetivos.</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Correcto!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>M... error!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x6666FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF9900" border="true" />
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <document>
+    <style name="default" background="0xFFFFFF" italic="false" tabWidth="12" bold="false" size="12" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" italic="false" bold="false" size="16" foreground="0x000000" family="Arial"> El término ratón proviene de "Mouse", ya que la forma se asocia con la de un ratón. Es un dispositivo </text>
+      <target>apuntador</target>
+      <text background="0xFFFFFF" italic="false" bold="false" size="16" foreground="0x000000" family="Arial"> que integra en su interior un LED (incluso hay algunos con tecnología láser), que </text>
+      <target>emite</target>
+      <text background="0xFFFFFF" italic="false" bold="false" size="16" foreground="0x000000" family="Arial"> luz de manera intermitente , y un </text>
+      <target>receptor</target>
+      <text background="0xFFFFFF" italic="false" bold="false" size="16" foreground="0x000000" family="Arial"> se encarga de enviar los cambios en la reflexión de luz en la superficie hacia un circuito  integrado que los </text>
+      <target>interpreta</target>
+      <text background="0xFFFFFF" italic="false" bold="false" size="16" foreground="0x000000" family="Arial"> como movimientos en todas direcciones, y finalmente estos datos por medio de un cable hacia la computadora que los interpreta como posiciones en la pantalla por medio del puntero (flecha que se mueve en la pantalla al mover el ratón).</text>
+     </p>
+    </section>
+   </document>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="nota.gif" file="nota.gif" />
+  <media name="camweb.jpg" file="camweb.jpg" />
+  <media name="descarga.jpg" file="descarga.jpg" />
+  <media name="dvd.jpg" file="dvd.jpg" />
+  <media name="imagtecno.jpg" file="imagtecno.jpg" />
+  <media name="pendrive.jpg" file="pendrive.jpg" />
+  <media name="pregunta.jpg" file="pregunta.jpg" />
+  <media name="61870^Click02.mp3" file="61870^Click02.mp3" />
+  <media name="8c3488ca7a5339d0d3abc4ba63bf4348.mp3" file="8c3488ca7a5339d0d3abc4ba63bf4348.mp3" />
+  <media name="Laser_Printer_01_Sound_Effect_Mp3_362.mp3" file="Laser_Printer_01_Sound_Effect_Mp3_362.mp3" />
+  <media name="Apagado de Windows XP.wav" file="Apagado de Windows XP.wav" />
+  <media name="Reciclaje de Windows XP.wav" file="Reciclaje de Windows XP.wav" />
+ </mediaBag>
+</JClicProject>
+

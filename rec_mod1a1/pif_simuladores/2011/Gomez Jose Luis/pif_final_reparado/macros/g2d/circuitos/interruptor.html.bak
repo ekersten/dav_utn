@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>Macro interruptor</title></head>
+<body BGCOLOR="#eeeeee">
+<p align="center">
+<FONT size=+2>Macro: interruptor</FONT><br>tipo 2D
+</p>
+<p align="center">
+<applet name="interruptor"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes.jar"
+        MAYSCRIPT
+        width=240 height=200>
+   <param name="nombre" value="interruptor">
+   <param name="Versi&oacute;n" value="3.40">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="escala='40' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="A_00" value="id='abierto' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_01" value="id='x1' expresi&oacute;n='-1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_02" value="id='y1' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_03" value="id='x2' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_04" value="id='y2' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_05" value="id='INIT' evaluar='una-sola-vez' algoritmo='si'">
+   <param name="A_06" value="inicio='l=sqrt((x2-x1)^2+(y2-y1)^2)' hacer='ca=(x2-x1)/l;sa=(y2-y1)/l;extra=l/4;X1=x1+extra*ca;Y1=y1+extra*sa;r=l-2*extra;cerrado=!abierto;c30=cos(pi/6);s30=sen(pi/6);X2=X1+r*(abierto*(c30*ca-s30*sa)+cerrado*ca);Y2=Y1+r*(abierto*(c30*sa+s30*ca)+cerrado*sa)' id='CALC' evaluar='siempre' algoritmo='si'">
+   <param name="A_07" value="id='rojo' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_08" value="id='verde' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_09" value="id='azul' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="G_00" value="tipo='segmento' color='(rojo,verde,azul)' expresi&oacute;n='(x1,y1)(X1,Y1)'">
+   <param name="G_01" value="tipo='segmento' color='(rojo,verde,azul)' expresi&oacute;n='(X1,Y1)(X2,Y2)'">
+   <param name="G_02" value="tipo='segmento' color='(rojo,verde,azul)' expresi&oacute;n='(x2-extra*ca,y2-extra*sa)(x2,y2)'">
+   <param name="G_03" value="tipo='punto' color='(rojo,verde,azul)' expresi&oacute;n='(X2,Y2)' tama&ntilde;o='3'">
+   <param name="G_04" value="tipo='punto' color='(rojo,verde,azul)' expresi&oacute;n='(x2-extra*ca,y2-extra*sa)' tama&ntilde;o='3'">
+</applet>
+</p>
+<p align="center">
+Esta escena se usa para generar el macro.
+</p>
+<p align="center">
+<applet name="mi_interruptor"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes.jar"
+        MAYSCRIPT
+        width=480 height=400>
+   <param name="nombre" value="mi_interruptor">
+   <param name="Versi&oacute;n" value="3.40">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no filas_sur=2">
+   <param name="E_00" value="despl_imagen='arr-izq' fondo='blanco' red='grisClaro' red10='no' ejes='no' texto='no'">
+   <param name="C_00" value="tipo='gr&aacute;fico' id='C1' color='azul' color-int='rojo' expresi&oacute;n='(-2,0)'">
+   <param name="C_01" value="tipo='num&eacute;rico' id='C1.x' interfaz='pulsador' regi&oacute;n='sur' nombre='x1' visible='si'">
+   <param name="C_02" value="tipo='num&eacute;rico' id='C1.y' interfaz='pulsador' regi&oacute;n='sur' nombre='y1' visible='si'">
+   <param name="C_03" value="tipo='gr&aacute;fico' id='C2' color='azul' color-int='rojo' expresi&oacute;n='(2,0)'">
+   <param name="C_04" value="tipo='num&eacute;rico' id='C2.x' interfaz='pulsador' regi&oacute;n='sur' nombre='x2' visible='si'">
+   <param name="C_05" value="tipo='num&eacute;rico' id='C2.y' interfaz='pulsador' regi&oacute;n='sur' nombre='y2' visible='si'">
+   <param name="C_06" value="tipo='num&eacute;rico' id='abierto' interfaz='men&uacute;' regi&oacute;n='interior' expresi&oacute;n='(20,20,120,23)' valor='1' nombre='abierto' visible='no' opciones='cerrado,abierto'">
+   <param name="A_00" value="inicio='abierto=1' id='INICIO' evaluar='una-sola-vez' algoritmo='si'">
+   <param name="A_01" value="inicio='int.abierto=abierto' hacer='int.x1=C1.x;int.y1=C1.y;int.x2=C2.x;int.y2=C2.y;' id='CALCULOS' evaluar='siempre' algoritmo='si'">
+   <param name="G_00" value="tipo='macro' expresi&oacute;n='circuitos/interruptor' nombre='int'">
+</applet>
+</p>
+<p align="center">
+Esta escena es una aplicación del macro que muestra sus parámetros.
+</p>
+<hr>
+
+<p><font size="2" face="Arial"><strong><cite><dfn><samp><tt>Autor: José Luis Abreu León</tt></samp></dfn></cite></strong></font></p>
+
+</body>
+</html>
+
+

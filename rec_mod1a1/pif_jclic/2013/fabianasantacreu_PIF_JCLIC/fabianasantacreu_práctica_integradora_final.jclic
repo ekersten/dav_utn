@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="fabianasantacreu_práctica_integradora_final" version="0.1.3">
+ <settings>
+  <title>Práctica Integradora Final</title>
+  <revision description="created" date="8/19/13" />
+  <description>
+   <p>Eje técnico: actividad interactiva</p>
+  </description>
+  <descriptors area="Filosofía" level="Secundario Superior, 6º año" />
+  <skin file="@blue.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="Introduccion al pensamiento postmoderno" />
+  <item name="Investiga sobre las imágenes." />
+  <item name="Rellenar agujeros con opciones" />
+  <item name="Exploración de pensadores" />
+  <item name="Rellenar agujeros con lista" />
+  <item name="Actividad de identificación" />
+  <item name="Señalar palabras claves" />
+  <item name="Identifica los pensadores con sus frases" />
+ </sequence>
+ <activities>
+  <activity class="@panels.Identify" name="Actividad de identificación" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="22" />
+      <color background="0xFFCCCC" />
+     </style>
+     <p>¿Qué pensador no hacen referencia a "Los maestros de la sospecha"?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="22" />
+      <color background="0xFFCCCC" />
+     </style>
+     <p>Michel Foucault hace referencia a "Los maestros de la sospecha"</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://www.scev.frba.utn.edu.ar/dav" maxTime="40" countDownTime="true" report="true" reportActions="false">
+    <helpWindow>
+     <p>Recomendamos leer de Tomás Abraham, Vidas filosóficas.</p>
+    </helpWindow>
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="Foucault 2.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="2" cols="2" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color foreground="0x333333" background="0xFFFFFF" alternative="0x999999" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell id="1" image="Freud sepia.jpg" />
+    <cell id="0" image="Foucault.jpg" />
+    <cell id="1" image="NIETZSCHE FOTO SEPIA.jpg" />
+    <cell id="1" image="marx sepia.jpg" />
+   </cells>
+   <cells rows="2" cols="2" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell>
+     <p>Sigmund Freud: descubre el inconciente y sospecha de la racionalidad humana</p>
+    </cell>
+    <cell />
+    <cell>
+     <p>Friedrich Nietzsche: postula la voluntad de poder y sospecha del interés genealógico.</p>
+    </cell>
+    <cell>
+     <p>Karl Marx: critica el sistema de producción capitalista y sospecha de los intereses económicos de clase.</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.Explore" name="Exploración de pensadores" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Bell MT" size="24" />
+      <color background="0xFF66FF" />
+     </style>
+     <p>¿Cuáles fueron las heridas narcisistas que ocasionaron?</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="httpp//:www.webdianoia.com" report="false">
+    <helpWindow>
+     <p>Leer "la postmodernidad" en Filosofía ES:5</p>
+    </helpWindow>
+    <container bgColor="0x999999">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="Freud sepia.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="3" cols="1" cellWidth="230.0" cellHeight="130.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="22" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell id="0" avoidOverlapping="true" image="Freud.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="28" />
+      <color background="0xFFFFCC" />
+     </style>
+     <p>Sigmund</p>
+     <p>Freud</p>
+    </cell>
+    <cell id="1" avoidOverlapping="true" image="Darwin.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="22" />
+      <color background="0xFFFFCC" />
+     </style>
+     <p>Charles Darwin</p>
+    </cell>
+    <cell id="2" avoidOverlapping="true" image="Copernico.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="24" />
+      <color background="0xFFFFCC" />
+     </style>
+     <p>Nicolás Copérnico</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="230.0" cellHeight="130.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="22" />
+      <color background="0xFFFFCC" />
+     </style>
+     <p>Cuestionó la supuesta racionalidad del hombre</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="22" />
+      <color background="0xFFFFCC" />
+     </style>
+     <p>Postuló que el hombre desciende de animales más simples e inferiores</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="22" />
+      <color background="0xFFFFCC" />
+     </style>
+     <p>Sostuvo la teoría heliocéntrica: la tierra gira alrededor del sol</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="Identifica los pensadores con sus frases" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Bell MT" size="22" />
+      <color background="0xFFCC99" />
+     </style>
+     <p>Relaciona cada pensador con su frase</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Bell MT" size="24" />
+      <color background="0xFFCC99" />
+     </style>
+     <p>Muy Bien!!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Bell MT" size="24" />
+      <color background="0xFFCC99" />
+     </style>
+     <p>Rehacer</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://www.webdianoia.com" maxTime="30" countDownTime="true" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Recomendamos leer Cap.2 Filosofía ES.5</p>
+    </helpWindow>
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="Marx, Freud con sombrero.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="2" cols="2" cellWidth="150.0" cellHeight="170.0" border="true" id="primary">
+    <style>
+     <font family="Bell MT" size="22" />
+     <color background="0xFFCC99" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell image="marx sepia.jpg" />
+    <cell image="Foucault.jpg" />
+    <cell image="Freud.jpg" />
+    <cell image="NIETZSCHE FOTO SEPIA.jpg" />
+   </cells>
+   <cells rows="2" cols="2" cellWidth="150.0" cellHeight="170.0" border="true" id="secondary">
+    <style>
+     <font family="Bell MT" size="22" />
+     <color background="0xFFCC99" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell>
+     <p>Los filósofos se han limitado a interpretar el mundo, de lo que se trata es de transformarlo</p>
+    </cell>
+    <cell>
+     <p>Lo propio del saber no es ni ver  ni demostrar, sino interpretar</p>
+    </cell>
+    <cell>
+     <p>La religión es un delirio colectivo</p>
+    </cell>
+    <cell>
+     <p>La esperanza es el peor de los males, pues prolonga el tormento de los hombres</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="Introduccion al pensamiento postmoderno" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Bell MT" size="24" />
+      <color background="0xFFCC99" />
+     </style>
+     <p>Realiza una interpretación iconográfica e iconológica sobre las imágenes.</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://www.webdianoia.com" report="false">
+    <helpWindow>
+     <p>Trabajar con los apuntes de clase.</p>
+    </helpWindow>
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="Marx, Freud con sombrero.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="Ajedrez.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.Explore" name="Investiga sobre las imágenes." code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Bell MT" size="22" />
+      <color background="0xFFCCCC" />
+     </style>
+     <p>Observa detenidamente las imágenes. Investiga y resuelve los interrogantes.</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http:// www.cibernous.com" report="false">
+    <helpWindow>
+     <p>Recomendamos leer Para seguir pensando de Esther Díaz</p>
+    </helpWindow>
+    <container bgColor="0x999999">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="Nietzsche sospecha.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="5" cols="1" cellWidth="200.0" cellHeight="80.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Bell MT" size="22" />
+     <color background="0xFFCCCC" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="5" />
+    <cell id="0" image="Foucault y los maestros.jpg" />
+    <cell id="1" image="Foucault 2.jpg" />
+    <cell id="2" image="Marx sospecha.jpg" />
+    <cell id="3" image="Nietzsche sospecha.jpg" />
+    <cell id="4" image="Freud sepia.jpg" />
+   </cells>
+   <cells rows="5" cols="1" cellWidth="300.0" cellHeight="80.0" border="true" id="secondary">
+    <style>
+     <font family="Bell MT" size="22" />
+     <color background="0xFFCCCC" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="5" />
+    <cell>
+     <p>¿Qué pensadores aparecen en la imagen?</p>
+    </cell>
+    <cell>
+     <p>¿Por qué Michel Foucault los llama "Los maestros de la sospecha"?</p>
+    </cell>
+    <cell>
+     <p>¿De qué sospecha Karl Marx?</p>
+    </cell>
+    <cell>
+     <p>¿De qué sospecha Friedrich Nietzsche?</p>
+    </cell>
+    <cell>
+     <p>¿De qué sospecha Sigmund Freud?</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="Rellenar agujeros con lista" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Bell MT" size="20" />
+      <color background="0xFFCCCC" />
+     </style>
+     <p>Lee atentamente el texto y elige la opción correcta. Luego investiga su significado.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Bell MT" size="20" />
+      <color background="0xFFCCCC" />
+     </style>
+     <p>Excelente!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Bell MT" size="20" />
+      <color background="0xFFCCCC" />
+     </style>
+     <p>Debes repetirlo!</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://www.webdianoia.com" maxTime="60" countDownTime="false" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Recomendamos leer Diccionario de Filosofía</p>
+    </helpWindow>
+    <container bgColor="0xCC6600">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="Nietzsche.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="615" height="413" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" size="14" family="Bell MT" tabWidth="12" italic="false" background="0xFFFFFF" bold="false" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">"(...) Yo pienso, en particular, en ese largo debate que Nietzsche no ha dejado de sostener con la profundidad. Hay en Nietzsche una crítica de la profundidad de conciencia, que él denuncia como invención de los filósofos; esta profundidad sería búsqueda pura e interior de la verdad. Nietzsche muestra como ella implica la resignación, la hipocresía, la </text>
+      <target>
+       <answer>máscara</answer>
+       <optionList>
+        <option>mentira</option>
+        <option>máscara</option>
+        <option>verdad</option>
+       </optionList>
+       <text>máscara</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">; tanto es así que el intérprete debe, cuando recorre los signos para denunciarlos, descender a lo largo de la línea vertical y mostrar que esta profundidad de la interioridad es realmente cosa distinta de lo que ella manifiesta. Es necesario, en consecuencia, que el intérprete descienda, que sea, como él dice, `un buen </text>
+      <target>
+       <answer>escudriñador</answer>
+       <optionList>
+        <option>investigador</option>
+        <option>explorador</option>
+        <option>escudriñador</option>
+       </optionList>
+       <text>escudriñador</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF"> de los bajos fondos´.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Pero no se puede, en realidad, recorrer esta linea descendente, cuando se interpreta, sino para restituir la exterioridad centelleante que ha sido recubierta y enterrada. Y es que si el intérprete debe ir hasta el fondo como un escudriñador, el movimiento de la interpretación es, por el contrario, el de un </text>
+      <target>
+       <answer>oteo</answer>
+       <optionList>
+        <option>oteo</option>
+        <option>inspeccionar </option>
+        <option>mirar desde un lugar alto</option>
+       </optionList>
+       <text>oteo</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">, de un oteo siempre más elevado que deja ostentar sobre él, de una manera cada vez más visible, la profundidad; y la profundidad es restituída ahora como secreto absolutamente superficial, de tal manera que el vuelo del águila, el ascenso a la montaña, toda esta verticalidad tan importante en </text>
+      <target>
+       <answer>Zaratustra</answer>
+       <optionList>
+        <option>el profeta persa</option>
+        <option>Zaratustra</option>
+        <option>Dionisio</option>
+       </optionList>
+       <text>Zaratustra</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">, es, en sentido estricto, la inversión de la profundidad, el descubrimiento de que la profundidad no era sino un ademán y un pliegue de la superficie. A medida que el mundo llega a ser más profundo bajo la mirada, se advierte que todo lo que ha ejercitado la </text>
+      <target>
+       <answer>profundidad</answer>
+       <optionList>
+        <option>superficialidad</option>
+        <option>interpretación</option>
+        <option>profundidad</option>
+       </optionList>
+       <text>profundidad</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF"> del hombre no era sino un juego de niños.(...)"</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">FOUCAULT, Michel; Nietzsche, Freud, Marx, (Fragmento)</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="Rellenar agujeros con opciones" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Bell MT" size="22" />
+      <color background="0xFF9999" />
+     </style>
+     <p>Lee detenidamente. Elige la opción correcta. Investiga el significado.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Bell MT" size="22" />
+      <color foreground="0x333333" background="0xFF9999" />
+     </style>
+     <p>Muy bien!!!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http//:www.cibernous.com" maxTime="45" countDownTime="false" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Recomendamos consultar el Diccionario de Filosofía de José Ferrater Mora.</p>
+    </helpWindow>
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="552" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <document>
+    <style name="default" size="12" family="Arial" background="0xFFFFFF" tabWidth="12" italic="false" bold="false" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">    </text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">(...) el siglo XIX y muy singularmente Marx, Nietzsche y Freud nos han vuelto a poner en presencia de una nueva posibilidad de </text>
+      <target>
+       <answer>interpretación</answer>
+       <optionList>
+        <option>comprensión</option>
+        <option>explicación</option>
+        <option>interpretación</option>
+       </optionList>
+       <text>interpretación</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">, han fundamentado de nuevo la posibilidad de una hermenéutica. </text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">    El primer libro de El capital (de Marx), textos como El nacimiento de la tragedia y La genealogía de la moral (de Nietzsche) y La interpretación de los sueños (de Freud), nos ponen en presencia de técnicas interpretativas. El efecto de choque, la especie de herida provocada en el pensamiento occidental por estas obras, viene de que ellas han reconstituido ante nuestros ojos lo que Marx llamaba </text>
+      <target>
+       <answer>higiógrafos</answer>
+       <optionList>
+        <option>fantasmagóricos</option>
+        <option>higiógrafos</option>
+        <option>explícitos</option>
+       </optionList>
+       <text>higiógrafos.</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF"> Esto nos ha puesto en una situación incómoda puesto que estas técnicas de interpretación nos conciernen a nosotros mismos, puesto que nosotros, intérpretes, nos hemos puesto a interpretarnos mediante estas técnicas de interpretación, a su vez, que debemos interrogar a esos intérpretes que fueron Freud, Nietzsche y Marx; en forma tal que somos perpetuamente reenviados en un </text>
+      <target>
+       <answer>perpetuo</answer>
+       <optionList>
+        <option>infinito</option>
+        <option>perpetuo</option>
+        <option>interminable</option>
+       </optionList>
+       <text>perpetuo</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF"> juego de espejos. </text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">            Freud dice en alguna parte que hay tres grandes heridas </text>
+      <target>
+       <answer>narcisistas</answer>
+       <optionList>
+        <option>egocéntricas</option>
+        <option>solipsistas</option>
+        <option>narcisistas</option>
+       </optionList>
+       <text>narcisistas</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF"> en la cultura occidental: la herida causada por Copérnico; la que provocó Darwin y la herida hecha por Freud cuando él mismo, a su vez, descubrió que la conciencia reposaba sobre la inconciencia. Yo me pregunto si no se podría decir que Freud, Nietzsche y Marx, al envolvernos en una tarea de interpretación que se refleja siempre sobre sí misma, no han constituido alrededor nuestro, y para nosotros, esos espejo de donde nos son reenviadas las imágenes cuyas heridas </text>
+      <target>
+       <answer>inextinguibles</answer>
+       <optionList>
+        <option>inextinguibles</option>
+        <option>multívocas</option>
+        <option>infinitas</option>
+       </optionList>
+       <text>inextinguibles</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF"> forman nuestro narcisismo de hoy día. </text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">            En todo caso, y es a este propósito que querría hacer algunas sugestiones, me parece que Marx, Nietzsche y Freud no han multiplicado, en manera alguna, los </text>
+      <target>
+       <answer>signos</answer>
+       <optionList>
+        <option>íconos</option>
+        <option>imágenes</option>
+        <option>signos</option>
+        <option>significantes</option>
+       </optionList>
+       <text>signos</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF"> en el mundo occidental. No han dado un sentido nuevo a las cosas que no tenían sentido. Ellos han cambiado, en realidad, la naturaleza del signo, y modificado la manera como el signo en general podía ser interpretado […]</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">FOUCAULT, Michel; Nietzsche, Freud y Marx, Introducción a la conferencia, Paris, julio, 1964. Extracto</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.Identify" name="Señalar palabras claves" code="" type="identifyWords">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Bell MT" size="22" />
+      <color background="0xFFCC99" />
+     </style>
+     <p>Señala las palabras desconocidas del texto y busca su significado</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Bell MT" size="26" />
+      <color background="0xFFCC99" />
+     </style>
+     <p>Corrobora que las palabras deconocidas sean las señaladas como claves en el texto</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http//:www.webdianoia" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Recomendamos trabajar con el Diccionario de Filosofía de José Ferrater Mora</p>
+    </helpWindow>
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+     <image name="Nietzsche, Marx y Freud.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="675" height="478" />
+    </window>
+   </settings>
+   <checkButton>Corrobora las palabras claves</checkButton>
+   <document>
+    <style name="default" size="12" family="Arial" background="0xFFFFFF" tabWidth="12" italic="false" bold="false" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text size="18" family="Arial" background="0xFFFFFF">(...) E, indudablemente, sería necesario recordar el espacio de interpretación que Freud ha constituido, no solamente en la famosa topología de la </text>
+      <target>Conciencia</target>
+      <text size="18" family="Arial" background="0xFFFFFF"> y del </text>
+      <target>Inconciente,</target>
+      <text size="18" family="Arial" background="0xFFFFFF"> sino igualmente en las reglas que ha formulado para la atención </text>
+      <target>psicoanalítica</target>
+      <text size="18" family="Arial" background="0xFFFFFF"> y el desciframiento por el analista de lo que se dice durante el curso de la "cadena" hablada. Sería preciso recordar la especialidad, eminentemente material, a la que Freud ha concedido tanta importancia, y que expone al enfermo a la </text>
+      <target>mirada</target>
+      <text size="18" family="Arial" background="0xFFFFFF"> </text>
+      <target>oteadora</target>
+      <text size="18" family="Arial" background="0xFFFFFF"> del psicoanalista. (...)</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text size="18" family="Arial" background="0xFFFFFF">(...) De la misma manera Freud no interpreta signos sino interpretaciones. En efecto, bajo los síntomas, ¿qué es lo que descubre Freud? El no descubre, como se dice, "traumatismos"; él pone al descubierto </text>
+      <target>fantasmas,</target>
+      <text size="18" family="Arial" background="0xFFFFFF"> con su carga de </text>
+      <target>angustia,</target>
+      <text size="18" family="Arial" background="0xFFFFFF"> es decir, un núcleo que es ya en su ser mismo una interpretación. La anorexia, por ejemplo, no envía al destete como el significante enviaría al significado, sino que la anorexia como signo, síntoma que hay que interpretar, reenvía a los fantasmas del mal seno materno, que es en sí mismo una interpretación, que es en sí miamo un cuerpo parlante. Es por esto que Freud no tiene para interpretar otra cosa en el lenguaje de sus enfermos que aquello que sus enfermos le ofrecen como síntomas; su </text>
+      <target>interpretación</target>
+      <text size="18" family="Arial" background="0xFFFFFF"> </text>
+      <target>es</target>
+      <text size="18" family="Arial" background="0xFFFFFF"> </text>
+      <target>la</target>
+      <text size="18" family="Arial" background="0xFFFFFF"> </text>
+      <target>interpretación</target>
+      <text size="18" family="Arial" background="0xFFFFFF"> </text>
+      <target>de</target>
+      <text size="18" family="Arial" background="0xFFFFFF"> </text>
+      <target>una</target>
+      <text size="18" family="Arial" background="0xFFFFFF"> </text>
+      <target>interpretación,</target>
+      <text size="18" family="Arial" background="0xFFFFFF"> en los términos en que esta interpretación es dada. Se sabe que Freud inventó el "Super ego" el día en que una enferma dijo: "Siento un perro sobre mí". (...)</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text size="18" family="Arial" background="0xFFFFFF">FOUCAULT, Michel; Idem pp. 40, 44.</text>
+     </p>
+    </section>
+   </document>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="Ajedrez.jpg" file="Ajedrez.jpg" />
+  <media name="Copernico.jpg" file="Copernico.jpg" />
+  <media name="Darwin.jpg" file="Darwin.jpg" />
+  <media name="Foucault 2.jpg" file="Foucault 2.jpg" />
+  <media name="Foucault y los maestros.jpg" file="Foucault y los maestros.jpg" />
+  <media name="Foucault.jpg" file="Foucault.jpg" />
+  <media name="Freud sepia.jpg" file="Freud sepia.jpg" />
+  <media name="Freud.jpg" file="Freud.jpg" />
+  <media name="marx sepia.jpg" file="marx sepia.jpg" />
+  <media name="Marx sospecha.jpg" file="Marx sospecha.jpg" />
+  <media name="Marx, Freud con sombrero.jpg" file="Marx, Freud con sombrero.jpg" />
+  <media name="NIETZSCHE FOTO SEPIA.jpg" file="NIETZSCHE FOTO SEPIA.jpg" />
+  <media name="Nietzsche sospecha.jpg" file="Nietzsche sospecha.jpg" />
+  <media name="Nietzsche, Marx y Freud.jpg" file="Nietzsche, Marx y Freud.jpg" />
+  <media name="Nietzsche.jpg" file="Nietzsche.jpg" />
+ </mediaBag>
+</JClicProject>
+

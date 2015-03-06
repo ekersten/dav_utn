@@ -1,0 +1,9 @@
+tipo_de_macro=R3
+id='longitud' expresión='1' evaluar='una-sola-vez' constante='si'
+id='punta' expresión='0.1' evaluar='una-sola-vez' constante='si'
+tipo='segmento' expresión='(0,0,0)(longitud,0,0)' color='gris' cortar='si' 
+tipo='cono' expresión='Ejex' rotini='(0,-90,0)' posini='(longitud,0,0)' color='rojo' color_reverso='rosa' aristas='si' Nu='4' Nv='1' ancho='punta' largo='punta' alto='punta' 
+tipo='segmento' expresión='(0,0,0)(0,longitud,0)' color='gris' cortar='si' 
+tipo='cono' expresión='Ejey' rotini='(90,0,0)' posini='(0,longitud,0)' color='00c900' color_reverso='88ff88' aristas='si' Nu='4' Nv='1' ancho='punta' largo='punta' alto='punta' 
+tipo='segmento' expresión='(0,0,0)(0,0,longitud)' color='gris' cortar='si' 
+tipo='cono' expresión='Ejez' rotini='(0,180,0)' posini='(0,0,longitud)' color='azul' color_reverso='turquesa' aristas='si' Nu='4' Nv='1' ancho='punta' largo='punta' alto='punta' 

@@ -30,16 +30,12 @@
                         <li><a href="digital-junior-informacion.php">Digital Junior</a></li>
                         <li class="actual">Capacitación Docente</li>
                     </ul>
-                    <p>Las actividades desarrolladas por el Departamento de Aprendizaje Visual, en el marco del Programa Digital Junior, se inspiran en nuestro convencimiento de que implementar tecnología en la escuela va más allá de que los alumnos cursen la asignatura Computación. Implica comprender los nuevos códigos digitales que manejan los alumnos y hacer un aprovechamiento positivo de los mismos, incorporando hábitos digitales en el proceso de enseñanza y aprendizaje.</p>
+                    <p>Las actividades desarrolladas por el Departamento de Aprendizaje Visual, en el marco del Programa Digital Junior, se inspiran en el convencimiento de que implementar tecnología en la escuela va más allá de que los alumnos cursen la asignatura Computación. Implica comprender los nuevos códigos digitales que manejan los alumnos y hacer un aprovechamiento positivo de los mismos, incorporando hábitos digitales en el proceso de enseñanza y aprendizaje.</p>
                     <p>A través de nuestros talleres de capacitación docente nos proponemos acercarles nuevas tecnologías para el trabajo en el aula, ideas de aplicación y asesoramiento para su implementación. Permitiendo de este modo a los colegios diseñar un plan tecnológico, acorde a las necesidades actuales.</p>
-                    <p>Los colegios que forman parte de nuestra comunidad a través del Programa Digital Junior, pueden participar de todos los eventos y capacitaciones virtuales propuestos a continuación en forma totalmente gratuita.</p>
+                    <p>Los colegios que forman parte de nuestra comunidad a través del Programa Digital Junior, pueden participar de todas las capacitaciones propuestas a continuación en forma totalmente gratuita.</p>
                     <p>Para consultas sobre las capacitaciones docentes envíenos un mail a <a href="mailto:info@dav.sceu.utn.edu.ar">info@dav.sceu.utn.edu.ar</a></p>
                     <p><a class="descargar" href="digital-junior-cronograma.php">Ver detalles de la Capacitación</a>
                    <a class="descargar" href="http://dav.sceu.frba.utn.edu.ar/campusvirtual/login/index.php" target="_blank">Acceder a los talleres</a></p>
-                </div>
-                <div class="column medium-3 secundario">
-                    <?php include("includes/lateral/lateral-dj.php"); ?>
-                    </ul>
                 </div>
             </div>
         </section>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<hotpot-jquiz-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description rdf:about="">
+</rdf:Description>
+</rdf:RDF>
+<version>6</version>
+<data>
+<title>   &amp;#x003C;img src=&quot;atomo ruth.jpeg&quot; alt=&quot;&quot; title=&quot;&quot; width=&quot;108&quot; height=&quot;122&quot; style=&quot;float:left;&quot; style=&quot;float:left;&quot;  /&amp;#x003E;         Modelos at&amp;#x00f3;micos</title>
+<timer>
+<include-timer>1</include-timer>
+<seconds>1859</seconds>
+</timer>
+<reading>
+<reading-text></reading-text>
+<include-reading>0</include-reading>
+<reading-title></reading-title>
+</reading>
+<questions>
+<question-record>
+<question>&amp;#x00bf; C&amp;#x00f3;mo se le llamaba al modelo de Thomson?.</question>
+<clue></clue>
+<category></category>
+<weighting>100</weighting>
+<fixed>0</fixed>
+<question-type>4</question-type>
+<answers>
+<answer><text>Modelo de Jimmy Neutr&amp;#x00f3;n</text>
+<feedback>As&amp;#x00ed; se llamaba al modelo de Rutherford. Pruebe de nuevo</feedback>
+<correct>0</correct>
+<percent-correct>0</percent-correct>
+<include-in-mc-options>1</include-in-mc-options>
+</answer><answer><text>Modelo at&amp;#x00f3;mico actual</text>
+<feedback>As&amp;#x00ed; se llamaba al modelo de Bohr. Pruebe de nuevo.</feedback>
+<correct>0</correct>
+<percent-correct>0</percent-correct>
+<include-in-mc-options>1</include-in-mc-options>
+</answer><answer><text>Modelo bud&amp;#x00ed;n de pasas.</text>
+<feedback>Verdadera.</feedback>
+<correct>1</correct>
+<percent-correct>100</percent-correct>
+<include-in-mc-options>1</include-in-mc-options>
+</answer><answer><text>Ninguna de las respuestas anteriores.</text>
+<feedback>Falsa</feedback>
+<correct>0</correct>
+<percent-correct>0</percent-correct>
+<include-in-mc-options>1</include-in-mc-options>
+</answer><answer><text></text>
+<feedback></feedback>
+<correct>0</correct>
+<percent-correct>0</percent-correct>
+<include-in-mc-options>1</include-in-mc-options>
+</answer></answers>
+</question-record>
+<question-record>
+<question>&amp;#x00bf;Qui&amp;#x00e9;n descubri&amp;#x00f3; el neutr&amp;#x00f3;n?</question>
+<clue></clue>
+<category></category>
+<weighting>100</weighting>
+<fixed>0</fixed>
+<question-type>3</question-type>
+<answers>
+<answer><text>Chadwick</text>
+<feedback>Correcto!!!</feedback>
+<correct>1</correct>
+<percent-correct>100</percent-correct>
+<include-in-mc-options>1</include-in-mc-options>
+</answer><answer><text>Bohr</text>
+<feedback></feedback>
+<correct>0</correct>
+<percent-correct>0</percent-correct>
+<include-in-mc-options>0</include-in-mc-options>
+</answer><answer><text>Dalton</text>
+<feedback></feedback>
+<correct>0</correct>
+<percent-correct>0</percent-correct>
+<include-in-mc-options>1</include-in-mc-options>
+</answer><answer><text>Rutherford</text>
+<feedback></feedback>
+<correct>0</correct>
+<percent-correct>0</percent-correct>
+<include-in-mc-options>1</include-in-mc-options>
+</answer><answer><text></text>
+<feedback></feedback>
+<correct>0</correct>
+<percent-correct>0</percent-correct>
+<include-in-mc-options>1</include-in-mc-options>
+</answer></answers>
+</question-record>
+<question-record>
+<question>&amp;#x00bf;Cu&amp;#x00e1;les de &amp;#x00e9;stas opciones se aplican al modelo de Rutherford?.</question>
+<clue></clue>
+<category></category>
+<weighting>100</weighting>
+<fixed>0</fixed>
+<question-type>1</question-type>
+<answers>
+<answer><text>El n&amp;#x00fa;cleo est&amp;#x00e1; formado por protones</text>
+<feedback>Correcto.</feedback>
+<correct>1</correct>
+<percent-correct>100</percent-correct>
+<include-in-mc-options>0</include-in-mc-options>
+</answer><answer><text>Orbitas el&amp;#x00ed;pticas</text>
+<feedback>Correcto.</feedback>
+<correct>1</correct>
+<percent-correct>100</percent-correct>
+<include-in-mc-options>1</include-in-mc-options>
+</answer><answer><text>Los protones giran en &amp;#x00f3;rbitas circulares.</text>
+<feedback>.</feedback>
+<correct>0</correct>
+<percent-correct>0</percent-correct>
+<include-in-mc-options>1</include-in-mc-options>
+</answer><answer><text>Los electrones giran en &amp;#x00f3;rbitas el&amp;#x00ed;pticas.</text>
+<feedback>Correcto</feedback>
+<correct>1</correct>
+<percent-correct>100</percent-correct>
+<include-in-mc-options>1</include-in-mc-options>
+</answer><answer><text></text>
+<feedback></feedback>
+<correct>0</correct>
+<percent-correct>0</percent-correct>
+<include-in-mc-options>1</include-in-mc-options>
+</answer></answers>
+</question-record>
+<question-record>
+<question>En el modelo de Bohr &amp;#x00f3; modelo actual. Los electrones donde se encuentran?</question>
+<clue></clue>
+<category></category>
+<weighting>100</weighting>
+<fixed>0</fixed>
+<question-type>1</question-type>
+<answers>
+<answer><text>Se encuentran en el n&amp;#x00fa;cleo.</text>
+<feedback>Incorrecto, no es una part&amp;#x00ed;cula del n&amp;#x00fa;cleo.</feedback>
+<correct>0</correct>
+<percent-correct>0</percent-correct>
+<include-in-mc-options>1</include-in-mc-options>
+</answer><answer><text>Se encuentran en &amp;#x00f3;rbitas circulares que giran alrededor del n&amp;#x00fa;cleo.</text>
+<feedback>Correcto</feedback>
+<correct>1</correct>
+<percent-correct>100</percent-correct>
+<include-in-mc-options>1</include-in-mc-options>
+</answer><answer><text>Se encuentran en &amp;#x00f3;rbitas elipticas que giran alrededor del n&amp;#x00fa;cleo.</text>
+<feedback>Incorrecto, las &amp;#x00f3;rbitas elipt&amp;#x00ed;cas eran del modelo de Rutherford.</feedback>
+<correct>0</correct>
+<percent-correct>0</percent-correct>
+<include-in-mc-options>1</include-in-mc-options>
+</answer><answer><text>Se encuentran entre las &amp;#x00f3;rbitas.</text>
+<feedback>Incorrecto</feedback>
+<correct>1</correct>
+<percent-correct>100</percent-correct>
+<include-in-mc-options>1</include-in-mc-options>
+</answer><answer><text></text>
+<feedback></feedback>
+<correct>0</correct>
+<percent-correct>0</percent-correct>
+<include-in-mc-options>1</include-in-mc-options>
+</answer></answers>
+</question-record>
+</questions></data>
+<hotpot-config-file>
+<global>
+<separate-js-file>0</separate-js-file>
+<clue-caption>[?]</clue-caption>
+<next-q-caption>=&amp;#x003E;</next-q-caption>
+<last-q-caption>&amp;#x003C;=</last-q-caption>
+<incorrect-indicator>:-(</incorrect-indicator>
+<font-size>small</font-size>
+<include-next-ex>0</include-next-ex>
+<restart-caption>Restaurar</restart-caption>
+<contents-url>../index.html</contents-url>
+<include-timer>1</include-timer>
+<font-face>Geneva,Arial</font-face>
+<include-scorm-12>0</include-scorm-12>
+<user-string-3>three</user-string-3>
+<show-correct-first-time>0</show-correct-first-time>
+<user-string-2>two</user-string-2>
+<user-string-1>one</user-string-1>
+<vlink-color>#0000cc</vlink-color>
+<title-color>#000033</title-color>
+<correct-indicator>:-)</correct-indicator>
+<contents-caption>Volver al &amp;#x00ed;ndice</contents-caption>
+<show-all-questions-caption>Mostrar todas las preguntas</show-all-questions-caption>
+<undo-caption>Anular</undo-caption>
+<header-code></header-code>
+<hint-caption>Pista</hint-caption>
+<check-button-caption>Check</check-button-caption>
+<email>correo@lagaleriadelvino.com.com</email>
+<show-one-by-one-caption>Mostrar preguntas una a una</show-one-by-one-caption>
+<name-please>Escribe tu nombre, por favor:</name-please>
+<formmail-url>http://www.dimensis.com/cgi-bin/FormMail.pl</formmail-url>
+<next-ex-caption>=&amp;#x003E;</next-ex-caption>
+<back-caption>&amp;#x003C;=</back-caption>
+<text-color>#000000</text-color>
+<page-bg-color>#ffffff</page-bg-color>
+<times-up>&amp;#x00a1;Tiempo Finalizado!</times-up>
+<nav-bar-color>#000066</nav-bar-color>
+<include-contents>1</include-contents>
+<your-score-is>&amp;#x003C;br&amp;#x003E;Tu puntuaci&amp;#x00f3;n es: </your-score-is>
+<graphic-url></graphic-url>
+<link-color>#0000ff</link-color>
+<keypad-characters></keypad-characters>
+<show-also-correct>1</show-also-correct>
+<correct-first-time>&amp;#x003C;br&amp;#x003E;Respuestas correctas a la primera: </correct-first-time>
+<include-cgi>0</include-cgi>
+<ex-bg-color>#bbbbee</ex-bg-color>
+<ok-caption>OK</ok-caption>
+<process-for-rtl>0</process-for-rtl>
+<check-caption>Verificar</check-caption>
+<include-back>0</include-back>
+<next-correct-letter>Fue insertada una letra correcta.</next-correct-letter>
+</global>
+<jquiz>
+<next-caption>Next</next-caption>
+<instructions>Escoge la respuesta correcta para cada pregunta, haciendo click sobre la letra correspondiente.</instructions>
+<enter-a-guess>Por favor, introduce tu respuesta.</enter-a-guess>
+<correct-list>Respuestas correctas:</correct-list>
+<completed-so-far>Hasta aqu&amp;#x00ed; completaste: </completed-so-far>
+<header-code></header-code>
+<include-hint>1</include-hint>
+<include-keypad>0</include-keypad>
+<short-answer-tries-on-hybrid-q>2</short-answer-tries-on-hybrid-q>
+<partly-incorrect>Tu respuesta no es correcta: </partly-incorrect>
+<guess-incorrect>&amp;#x00a1;Error! Esa no era la respuesta correcta. Int&amp;#x00e9;ntalo de nuevo.</guess-incorrect>
+<case-sensitive>0</case-sensitive>
+<continuous-scoring>0</continuous-scoring>
+<next-ex-url>nextpage.htm</next-ex-url>
+<send-email>0</send-email>
+<exercise-subtitle>En las frases siguientes, identifica la correcta e indica cu&amp;#x00e1;l es. Si no acertases a la primera, podr&amp;#x00e1;s intentarlo de nuevo, pero perder&amp;#x00e1;s puntos.</exercise-subtitle>
+<exercise-completed>Ud ha completado del ejercicio.</exercise-completed>
+<correct-answers>Respuestas correctas: </correct-answers>
+<questions-to-show>2</questions-to-show>
+<shuffle-answers>1</shuffle-answers>
+<guess-correct>&amp;#x00a1;Muy bien! Acertaste.</guess-correct>
+<next-correct-letter>Siguiente letra correcta en la respuesta: </next-correct-letter>
+<show-limited-questions>0</show-limited-questions>
+<shuffle-questions>0</shuffle-questions>
+<include-show-answer>1</include-show-answer>
+<show-correct-first-time>0</show-correct-first-time>
+<separate-javascript-file>0</separate-javascript-file>
+<delete-caption>Delete This Flashcard</delete-caption>
+<show-answer-caption>Mostrar Respuesta</show-answer-caption>
+</jquiz>
+</hotpot-config-file>
+
+</hotpot-jquiz-file>

@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="integradora_silvinasanroman" version="0.1.3">
+ <settings>
+  <title>integradora-silvinasanroman</title>
+  <revision description="created" date="9/9/11" />
+  <description>
+   <p>En esta tarea se incluyen actividades de texto, en las diferentes modalidades, y también de respuesta escrita.</p>
+  </description>
+  <descriptors />
+  <skin file="@blue.xml" />
+ </settings>
+ <sequence>
+  <item id="inicio" name="Pantalla de informacion" />
+  <item id="ambientes escolares" name="Rellenar agujeros con ayudas">
+   <jump tag="inicio" id="forward">
+    <jump tag="inicio" threshold="80" time="35" id="upper" />
+   </jump>
+  </item>
+  <item name="Ordenar palabras" />
+  <item name="Ordenar los parrafos" delay="4">
+   <jump tag="inicio" id="forward">
+    <jump tag="inicio" project="integradora_silvinasanroman" threshold="80" time="60" id="upper" />
+   </jump>
+  </item>
+  <item name="Rellenar agujeros con lista" />
+  <item name="Rellenar agujeros en blanco" />
+  <item id="id" name="Identificar palabras" delay="2">
+   <jump tag="inicio" id="forward">
+    <jump tag="inicio" threshold="80" time="60" id="upper" />
+   </jump>
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@panels.InformationScreen" name="Pantalla de informacion" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xCCFFCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x99FFCC" border="true" />
+   </settings>
+   <cells rows="6" cols="1" cellWidth="400.0" cellHeight="150.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="6" />
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Identificar palabras" />
+     <p>Identificar Palabras</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Ordenar los parrafos" />
+     <p>Ordenar Parrafos</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Ordenar palabras" />
+     <p>Ordenar Palabras</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Rellenar agujeros con ayudas" />
+     <p>Rellenar agujeros con ayuda</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Rellenar agujeros en blanco" />
+     <p>Rellenar agujeros en blanco</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Rellenar agujeros con lista" />
+     <p>Rellenar agujeros con lista</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@text.Identify" name="Identificar palabras" code="" type="identifyWords">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x330033" />
+     </style>
+     <p>Encuentra los sustantivos en este texto</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x330033" />
+     </style>
+     <p>si todas las palabras marcadas estan en violeta la actividad esta ¡muy bien!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x99FFCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="550" height="400" />
+    </window>
+   </settings>
+   <checkButton>Evalúate</checkButton>
+   <document>
+    <style name="default" italic="false" tabWidth="12" background="0xFFFFFF" size="20" family="Calibri" bold="true" />
+    <style name="target" base="default" target="true" foreground="0x660066" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text foreground="0x660066" size="22" background="0xFFFFFF" family="Calibri" bold="true">En un abrir y cerrar de ojos</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text foreground="0x000000" size="20" background="0xFFFFFF" family="Calibri" bold="true">Tener una </text>
+      <target>casa</target>
+      <text foreground="0x000000" size="20" background="0xFFFFFF" family="Calibri" bold="true"> lista en 60 </text>
+      <target>días</target>
+      <text foreground="0x000000" size="20" background="0xFFFFFF" family="Calibri" bold="true"> y mudarse con las </text>
+      <target>valijas</target>
+      <text foreground="0x000000" size="20" background="0xFFFFFF" family="Calibri" bold="true"> y unos pocos </text>
+      <target>muebles</target>
+      <text foreground="0x000000" size="20" background="0xFFFFFF" family="Calibri" bold="true"> suena más que interesante, más aún si la </text>
+      <target>vivienda</target>
+      <text foreground="0x000000" size="20" background="0xFFFFFF" family="Calibri" bold="true"> se ajusta al </text>
+      <target>presupuesto</target>
+      <text foreground="0x000000" size="20" background="0xFFFFFF" family="Calibri" bold="true"> y al </text>
+      <target>estilo</target>
+      <text foreground="0x000000" size="20" background="0xFFFFFF" family="Calibri" bold="true"> de </text>
+      <target>vida</target>
+      <text foreground="0x000000" size="20" background="0xFFFFFF" family="Calibri" bold="true"> " menos es más". Las </text>
+      <target>edificaciones</target>
+      <text foreground="0x000000" size="20" background="0xFFFFFF" family="Calibri" bold="true"> compactas de </text>
+      <target>Escape Houses</target>
+      <text foreground="0x000000" size="20" background="0xFFFFFF" family="Calibri" bold="true">, una modalidad de </text>
+      <target>construcción</target>
+      <text foreground="0x000000" size="20" background="0xFFFFFF" family="Calibri" bold="true"> de moda en </text>
+      <target>Europa</target>
+      <text foreground="0x000000" size="20" background="0xFFFFFF" family="Calibri" bold="true"> y distinta de las antiguas prefabricadas, podría satisfacer las </text>
+      <target>demandas</target>
+      <text foreground="0x000000" size="20" background="0xFFFFFF" family="Calibri" bold="true"> de quienes buscan una </text>
+      <target>casa</target>
+      <text foreground="0x000000" size="20" background="0xFFFFFF" family="Calibri" bold="true"> básica, pero con diseño y espíritu sustentable. "La </text>
+      <target>idea</target>
+      <text foreground="0x000000" size="20" background="0xFFFFFF" family="Calibri" bold="true"> es comercializar una </text>
+      <target>vivienda</target>
+      <text foreground="0x000000" size="20" background="0xFFFFFF" family="Calibri" bold="true"> de la misma manera que se compra un </text>
+      <target>auto,</target>
+      <text foreground="0x000000" size="20" background="0xFFFFFF" family="Calibri" bold="true"> como un </text>
+      <target>producto</target>
+      <text foreground="0x000000" size="20" background="0xFFFFFF" family="Calibri" bold="true"> terminado y no como un </text>
+      <target>proceso</target>
+      <text foreground="0x000000" size="20" background="0xFFFFFF" family="Calibri" bold="true"> largo y a veces frustrante de </text>
+      <target>construcción</target>
+      <text foreground="0x000000" size="20" background="0xFFFFFF" family="Calibri" bold="true">".</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+    </section>
+   </document>
+  </activity>
+  <activity class="@text.Order" name="Ordenar los parrafos" code="" type="orderParagraphs">
+   <description />
+   <messages>
+    <cell type="previous">
+     <style>
+      <font family="Arial" size="12" />
+      <color foreground="0x330033" />
+     </style>
+     <p>Lea con atención y haga clic sobre e texto cuando este listo para comenzar la actividad.</p>
+    </cell>
+    <cell type="initial">
+     <style>
+      <font family="Arial Black" size="17" />
+      <color foreground="0x330033" />
+     </style>
+     <p>Ordena los parrafos del texto que no estan en su sitio</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial Black" size="17" />
+      <color foreground="0x330033" />
+     </style>
+     <p>¡Muy bien logrado!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xCCFFCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x99FFFF" border="true">
+     <size width="750" height="550" />
+    </window>
+   </settings>
+   <checkButton>Comprueba si lo has hecho bien</checkButton>
+   <prevScreen>
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Calibri" size="18" />
+    </style>
+    <p>El edificio- Casa FOA&#xD;</p>
+    <p> La sede se ubica en Barracas, un barrio emparentado con la industria y el trabajo. &#xD;</p>
+    <p> Comienza a adquirir su fisonomía actual a principios del siglo XX, cuando la empresa inglesa del Ferrocarril Sud construye la estación Barracas al Norte –actual Hipólito Irigoyen– y los magníficos puentes ferroviarios de los Arq. Bell Chambers y Newbery Thomas. Inmediatamente comienzan a asentarse fábricas y talleres, y un establecimiento que aportará mucho a la identidad barrial: el Mercado de Pescado.&#xD;</p>
+    <p> Se inaugura en 1934 y al año siguiente ya concentra todo el pescado que se introduce en el municipio, por lo que se inauguran las instalaciones frigoríficas y una máquina elaboradora de hielo en escamas.&#xD;</p>
+    <p> La construcción original, que también data del primer tercio del siglo XX, fue reciclada y reinaugurada en 2001.&#xD;</p>
+    <p> El recientemente inaugurado edificio CMD ocupa el solar y edificio del antiguo Mercado de Pescado y el segundo edificio del conjunto CMD, lindante con el del ex Mercado del Pescado, tiene por nombre El Pescadito. &#xD;</p>
+    <p> Los dos edificios que componen el conjunto CMD suman una superficie de 14.000 m².&#xD;</p>
+   </prevScreen>
+   <document>
+    <style name="default" italic="false" tabWidth="12" background="0xFFFFFF" size="16" family="Calibri" bold="false" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial" Alignment="0">
+      <text foreground="0x660066" size="22" background="0xFFFFFF" family="Calibri" bold="true"> </text>
+      <cell width="150" height="180" image="casa-foa-2011-L-OTBcNJ.jpg" />
+      <text foreground="0x660066" size="22" background="0xFFFFFF" family="Calibri" bold="true">El edificio- Casa FOA</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" size="16" family="Calibri"> </text>
+      <text background="0xFFFFFF" size="16" family="Calibri" bold="true">L</text>
+      <text background="0xFFFFFF" size="16" family="Calibri">a sede se ubica en Barracas, un barrio emparentado con la industria y el trabajo. </text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <target> Comienza a adquirir su fisonomía actual a principios del siglo XX, cuando la empresa inglesa del Ferrocarril Sud construye la estación Barracas al Norte –actual Hipólito Irigoyen– y los magníficos puentes ferroviarios de los Arq. Bell Chambers y Newbery Thomas. Inmediatamente comienzan a asentarse fábricas y talleres, y un establecimiento que aportará mucho a la identidad barrial: el Mercado de Pescado.</target>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" size="16" family="Calibri" bold="true"> S</text>
+      <text background="0xFFFFFF" size="16" family="Calibri">e inaugura en 1934 y al año siguiente ya concentra todo el pescado que se introduce en el municipio, por lo que se inauguran las instalaciones frigoríficas y una máquina elaboradora de hielo en escamas.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <target> La construcción original, que también data del primer tercio del siglo XX, fue reciclada y reinaugurada en 2001.</target>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <target> El recientemente inaugurado edificio CMD ocupa el solar y edificio del antiguo Mercado de Pescado y el segundo edificio del conjunto CMD, lindante con el del ex Mercado del Pescado, tiene por nombre El Pescadito. </target>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" size="16" family="Calibri" bold="true"> L</text>
+      <text background="0xFFFFFF" size="16" family="Calibri">os dos edificios que componen el conjunto CMD suman una superficie de 14.000 m².</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial" />
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.Order" name="Ordenar palabras" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial Black" size="17" />
+      <color foreground="0x330033" />
+     </style>
+     <p>Ordena las palabras del texto que no estan en su sitio</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x330033" />
+     </style>
+     <p>¡Exelente trabajo!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x99FFCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x99FFCC" border="true">
+     <size width="500" height="400" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <checkButton></checkButton>
+   <document>
+    <style name="default" italic="false" tabWidth="12" background="0xFFFFFF" size="18" family="Calibri" bold="false" />
+    <style name="target" base="default" foreground="0x660066" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text foreground="0x660066" size="22" background="0xFFFFFF" family="Calibri" bold="true">10 AÑOS DESPUES</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text foreground="0x000000" size="18" background="0xFFFFFF" family="Calibri" bold="true">Este 11 de </text>
+      <target>septiembre,</target>
+      <text foreground="0x000000" size="18" background="0xFFFFFF" family="Calibri" bold="true"> exactamente </text>
+      <target>diez</target>
+      <text foreground="0x000000" size="18" background="0xFFFFFF" family="Calibri" bold="true"> años después del atentado contra las Torres </text>
+      <target>Gemelas</target>
+      <text foreground="0x000000" size="18" background="0xFFFFFF" family="Calibri" bold="true"> del World Trade Center, políticos y familiares de las </text>
+      <target>víctimas</target>
+      <text foreground="0x000000" size="18" background="0xFFFFFF" family="Calibri" bold="true"> se reunirán en una zona del predio en la que se plantaron 415 </text>
+      <target>árboles.</target>
+      <text foreground="0x000000" size="18" background="0xFFFFFF" family="Calibri" bold="true"> Dos enormes </text>
+      <target>cascadas</target>
+      <text foreground="0x000000" size="18" background="0xFFFFFF" family="Calibri" bold="true"> de agua, que ocupan las sendas huellas cuadradas de las </text>
+      <target>torres,</target>
+      <text foreground="0x000000" size="18" background="0xFFFFFF" family="Calibri" bold="true"> comenzarán a caer, y lo harán de forma </text>
+      <target>continua</target>
+      <text foreground="0x000000" size="18" background="0xFFFFFF" family="Calibri" bold="true"> y para siempre. En una banda de bronce que rodea las cascadas estarán los </text>
+      <target>nombres</target>
+      <text foreground="0x000000" size="18" background="0xFFFFFF" family="Calibri" bold="true"> de quienes murieron en los atentados, incluidos los del </text>
+      <target>Pentágono</target>
+      <text foreground="0x000000" size="18" background="0xFFFFFF" family="Calibri" bold="true"> y el vuelo 93 de United que cayó sobre un campo de Pensilvania. Se trata de una obra nacional –no sólo de Nueva York– en homenaje al 11-S.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="Rellenar agujeros con ayudas" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial Black" size="17" />
+      <color foreground="0x330033" />
+     </style>
+     <p>Completa el texto teniendo en cuenta la ayuda asociada</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial Black" size="17" />
+      <color foreground="0x330033" />
+     </style>
+     <p>¡Bien!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xCCFFCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCFFCC" border="true">
+     <size width="600" height="350" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" italic="false" tabWidth="12" background="0xFFFFFF" size="11" family="Arial" bold="false" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial">
+      <cell txtAlign="left,top" imgAlign="left,top" width="50" height="60" image="Logo-CasaFOA1.jpg" />
+      <text foreground="0x660066" size="22" family="Calibri" bold="true">CASA FOA</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text size="16" family="Calibri">Se presentó oficialmente la </text>
+      <target>
+       <answer>sede</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <info>
+        <cell width="100" height="40">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <font family="Calibri" size="14" />
+          <color background="0xCCFFCC" />
+         </style>
+         <p>lugar donde recidira la muestra</p>
+        </cell>
+       </info>
+       <text>sede</text>
+      </target>
+      <text size="16" family="Calibri"> de la próxima edición de Casa FOA 2011, clásica muestra de </text>
+      <target>
+       <answer>arquitectura</answer>
+       <response fill="_" length="12" maxLength="12" />
+       <info>
+        <cell width="100" height="40">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <font family="Calibri" size="14" />
+          <color background="0xCCFFCC" />
+         </style>
+         <p>arte de proyectar y construir</p>
+        </cell>
+       </info>
+       <text>arquitectura</text>
+      </target>
+      <text size="16" family="Calibri">, diseño interior y paisajismo que todos los años organiza la Fundación Oftalmológica Argentina Jorge Malbrán. Esta vez se eligió el </text>
+      <target>
+       <answer>edificio</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <info>
+        <cell width="105" height="57">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <font family="Calibri" size="14" />
+          <color background="0xCCFFCC" />
+         </style>
+         <p>construcción hecha con materiales resistentes destinada a vivienda u otros usos</p>
+        </cell>
+       </info>
+       <text>edificio</text>
+      </target>
+      <text size="16" family="Calibri"> del antiguo Mercado del Pescado, devenido a comienzos de este siglo en el Centro Metropolitano de Diseño (CMD), un testimonio recuperado de la arquitectura industrial que tuvo a la zona sur como eje de crecimiento, siglos atrás. El </text>
+      <target>
+       <answer>proyecto</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <info>
+        <cell width="101" height="45">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <font family="Calibri" size="14" />
+          <color background="0xCCFFCC" />
+         </style>
+         <p>plan que se idea para luego poder realizarlo</p>
+        </cell>
+       </info>
+       <text>proyecto</text>
+      </target>
+      <text size="16" family="Calibri"> de FOA se asienta sobre la calle central del edificio. En esa área se ubicarán los bancos y papeleros elegidos a través de un concurso de diseño destinado a profesionales de distintas disciplinas con el slogan Esperame sentado y Tirá aquí. Las calles transversales serán ambientadas con paisajismos urbanos inspirados en variedad de </text>
+      <target>
+       <answer>materiales</answer>
+       <response fill="_" length="10" maxLength="10" />
+       <info>
+        <cell width="99" height="44">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <font family="Calibri" size="14" />
+          <color background="0xCCFFCC" />
+         </style>
+         <p>materias primas que intervienen en la construcción</p>
+        </cell>
+       </info>
+       <text>materiales</text>
+      </target>
+      <text size="16" family="Calibri"> reciclados como el color, el cartón, la madera, la piedra, el vidrio, el vinilo, la tela y el papel.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="Rellenar agujeros con lista" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial Black" size="17" />
+      <color foreground="0x330033" />
+     </style>
+     <p>Rellena los agujeros escogiendo una de las opciones de la lista desplegable</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial Black" size="17" />
+      <color foreground="0x330033" />
+     </style>
+     <p>¡Genial!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xCCFFCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x99FFCC" dest="0xFFFFFF" angle="199" />
+     <size width="650" height="450" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" italic="false" tabWidth="12" background="0xFFFFFF" size="20" family="Arial" bold="false" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text foreground="0x660066" size="22" background="0xFFFFFF" family="Calibri" bold="true">¿Qué es Casa FOA?</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" size="18" family="Calibri" bold="true">Casa FOA es esencialmente un espacio para el libre desarrollo de la creatividad, un </text>
+      <target>
+       <answer>lugar</answer>
+       <optionList>
+        <option>lugar</option>
+        <option>sitio</option>
+        <option>zona</option>
+        <option>punto</option>
+        <option>espacio</option>
+       </optionList>
+       <text>lugar</text>
+      </target>
+      <text background="0xFFFFFF" size="18" family="Calibri" bold="true"> de encuentro en el que diseñadores, arquitectos, decoradores y paisajistas seleccionados por su talento y prestigio comparten con el público sus búsquedas y sus hallazgos.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" size="18" family="Calibri" bold="true">Surgió en 1985, como iniciativa de Mercedes Malbran de Campos y un grupo de señoras, con el propósito de </text>
+      <target>
+       <answer>recaudar</answer>
+       <optionList>
+        <option>recaudar</option>
+        <option>recolectar</option>
+        <option>juntar</option>
+       </optionList>
+       <text>recaudar</text>
+      </target>
+      <text background="0xFFFFFF" size="18" family="Calibri" bold="true"> fondos para la Fundación Oftalmológica Argentina “Jorge Malbran” (FOA).</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" size="18" family="Calibri" bold="true">Si la misión científica de la Fundación es acercar a más gente a una perfecta visión de las cosas, la idea motriz de Casa FOA es mostrar </text>
+      <target>
+       <answer>opciones</answer>
+       <optionList>
+        <option>alternativas</option>
+        <option>elecciones</option>
+        <option>opciones</option>
+       </optionList>
+       <text>opciones</text>
+      </target>
+      <text background="0xFFFFFF" size="18" family="Calibri" bold="true"> para vernos mejor, proponiendo perfiles nítidos de los valores arquitectónicos y culturales del país, exhibiendo su capacidad para la creación de estilos y formas.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" size="18" family="Calibri" bold="true">Con éxito creciente desde 1985, Casa FOA es un referente indiscutido en la agenda cultural del país y una cita ineludible para conocer las últimas </text>
+      <target>
+       <answer>tendencias</answer>
+       <optionList>
+        <option>inclinaciónes</option>
+        <option>tendencias</option>
+        <option>disposiciónes</option>
+       </optionList>
+       <text>tendencias</text>
+      </target>
+      <text background="0xFFFFFF" size="18" family="Calibri" bold="true"> del diseño en un marco de multiplicidad de gustos y estilos.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="Rellenar agujeros en blanco" code="">
+   <description />
+   <messages>
+    <cell type="previous">
+     <style>
+      <color foreground="0x330033" />
+     </style>
+     <p>Lea con atención y haga clic sobre el texto cuando este listo para comenzar con la actividad</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xCCFFCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="500" height="300" />
+    </window>
+   </settings>
+   <prevScreen>
+    <style>
+     <font family="Arial" size="17" bold="true" />
+    </style>
+    <p>La vanguardia en FOA&#xD;</p>
+    <p>&#xD;</p>
+    <p>Entre las propuestas imperdibles y más vanguardista, se vislumbra a mitad de camino el Jardín de Alicia de la paisajista Cristina Le Mehaute, en materiales reutilizables. Es la antesala al proyecto de Gruba y Eco-mujeres se encuentra un mobiliario en cartón y madera reciclada, una huerta orgánica, colchones y almohadas perfumadas debido al relleno de semillas de arroz y cáscaras de trigo. Pero el baño es el que se lleva toda la atención con un colorido piso de cemento y tapitas de gaseosa, que imita al sistema de las venecitas. </p>
+   </prevScreen>
+   <document>
+    <style name="default" italic="false" tabWidth="12" background="0xFFFFFF" size="16" family="Arial" bold="false" />
+    <style name="target" base="default" foreground="0x660066" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text foreground="0x660066" size="22" background="0xFFFFFF" family="Arial" bold="true">La vanguardia en FOA</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" size="18" family="Arial">Entre las propuestas imperdibles y más vanguardista, se vislumbra a mitad de camino el Jardín de Alicia de la paisajista Cristina Le Mehaute, en materiales </text>
+      <target>
+       <answer>reutilizables</answer>
+       <response fill="*" length="13" maxLength="13" />
+       <text>reutilizables</text>
+      </target>
+      <text background="0xFFFFFF" size="18" family="Arial">. Es la antesala al proyecto de Gruba y Eco-mujeres se encuentra un mobiliario en </text>
+      <target>
+       <answer>cartón</answer>
+       <response fill="*" length="6" maxLength="6" />
+       <text>cartón</text>
+      </target>
+      <text background="0xFFFFFF" size="18" family="Arial"> y </text>
+      <target>
+       <answer>madera</answer>
+       <response fill="*" length="6" maxLength="6" />
+       <text>madera</text>
+      </target>
+      <text background="0xFFFFFF" size="18" family="Arial"> reciclada, una huerta </text>
+      <target>
+       <answer>orgánica</answer>
+       <response fill="*" length="8" maxLength="8" />
+       <text>orgánica</text>
+      </target>
+      <text background="0xFFFFFF" size="18" family="Arial">, colchones y almohadas perfumadas debido al relleno de semillas de arroz y cáscaras de trigo. Pero el </text>
+      <target>
+       <answer>baño</answer>
+       <response fill="*" length="4" maxLength="4" />
+       <text>baño</text>
+      </target>
+      <text background="0xFFFFFF" size="18" family="Arial"> es el que se lleva toda la atención con un colorido piso de cemento y </text>
+      <target>
+       <answer>tapitas</answer>
+       <response fill="*" length="7" maxLength="7" />
+       <text>tapitas</text>
+      </target>
+      <text background="0xFFFFFF" size="18" family="Arial"> de gaseosa, que imita al sistema de las venecitas. </text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="casa-foa-2011-L-OTBcNJ.jpg" file="casa-foa-2011-L-OTBcNJ.jpg" />
+  <media name="Logo-CasaFOA1.jpg" file="Logo-CasaFOA1.jpg" />
+ </mediaBag>
+</JClicProject>
+

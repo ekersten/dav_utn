@@ -1,0 +1,75 @@
+<applet name="alternador2"
+        code="Descartes.class"
+        codebase="./"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=680 height=800>
+   <param name="nombre" value="alternador2">
+   <param name="Versi&oacute;n" value="3.815">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=si limpiar=si">
+   <param name="E_00" value="R3='si' fijo='si' O.y='-70' despl_imagen='arr-izq' fondo='blanco' despliegue='trazado de rayos'">
+   <param name="E_01" value="R3='si' id='movil' fijo='si' O.y='-225' x='33.3%' ancho='33.3%' despl_imagen='arr-izq' fondo='blanco'">
+   <param name="E_02" value="id='esp2' fijo='si' O.y='-20' x='61%' y='-30' ancho='33%' alto='15%' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="id='oscilo' fijo='si' y='50%' despl_imagen='arr-izq' fondo='blanco' red='grisClaro' red10='gris' ejes='gris' texto='rosa'">
+   <param name="C_00" value="tipo='num&eacute;rico' id='s' valor='1' decimales='0' nombre='sentido' incr='2' min='-1' max='1' visible='si' pos_mensajes='centro'">
+   <param name="C_01" value="tipo='num&eacute;rico' id='f' decimales='0' nombre='frec' incr='5' min='0' max='100' visible='si' Explicaci&oacute;n='Modifica la frecuencia de giro' pos_mensajes='centro'">
+   <param name="C_02" value="tipo='num&eacute;rico' id='tipo' interfaz='men&uacute;' nombre='tipo' visible='no' Explicaci&oacute;n='Elige el tipo de carga' opciones='l&aacute;mpara,resistor,capacitor,inductancia' pos_mensajes='centro'">
+   <param name="C_03" value="tipo='num&eacute;rico' id='osc' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='oscilo' expresi&oacute;n='(39,310,40,40)' nombre='OSC' visible='si' Explicaci&oacute;n='muestra la imagen en un osciloscopio' acci&oacute;n='calcular' par&aacute;metro='osc=0' pos_mensajes='centro'">
+   <param name="C_04" value="tipo='num&eacute;rico' id='fasores' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='oscilo' expresi&oacute;n='(80,310,60,40)' nombre='FASOR' visible='si' Explicaci&oacute;n='dibuja los fasores de tensi&oacute;n y corriente' acci&oacute;n='calcular' par&aacute;metro='osc=1' pos_mensajes='centro'">
+   <param name="C_05" value="tipo='num&eacute;rico' id='tensi&oacute;n' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='oscilo' expresi&oacute;n='(359,98,40,20)' nombre='CH1' visible='si' Explicaci&oacute;n='Dibuja la Tensi&oacute;n' acci&oacute;n='calcular' par&aacute;metro='V=1' pos_mensajes='centro'">
+   <param name="C_06" value="tipo='num&eacute;rico' id='Corriente' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='oscilo' expresi&oacute;n='(359,167,40,20)' nombre='CH2' visible='si' Explicaci&oacute;n='Dibuja la Corriente' acci&oacute;n='calcular' par&aacute;metro='C=1' pos_mensajes='centro'">
+   <param name="C_07" value="tipo='num&eacute;rico' id='Off' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='oscilo' expresi&oacute;n='(359,133,40,20)' nombre='1 OFF' visible='si' Explicaci&oacute;n='Borra la Tensi&oacute;n' acci&oacute;n='calcular' par&aacute;metro='V=0' pos_mensajes='centro'">
+   <param name="C_08" value="tipo='num&eacute;rico' id='OffC' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='oscilo' expresi&oacute;n='(359,202,40,20)' nombre='2 OFF' visible='si' Explicaci&oacute;n='Borra la corriente' acci&oacute;n='calcular' par&aacute;metro='C=0' pos_mensajes='centro'">
+   <param name="A_00" value="id='pi' expresi&oacute;n='3.1415926' evaluar='siempre' constante='si'">
+   <param name="A_01" value="id='t' expresi&oacute;n='s*(n*pi/180)'">
+   <param name="A_02" value="id='t1' expresi&oacute;n='s*(2*pi-(n*pi/180))'">
+   <param name="A_03" value="hacer='fase=(tipo<2)?0:((-1)^tipo)*90;' id='fase' evaluar='siempre' algoritmo='si'">
+   <param name="G_00" value="espacio='esp2' tipo='flecha' color='azul' expresi&oacute;n='(0,0)(s*sen(t),0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Courier New;}{\colortbl\red248\green0\blue0;\red0\green0\blue0;}\cf0\f1\fs24\b I\cf1\b0\par}' ancho='2' ancho='2' punta='2' flecha='azul'">
+   <param name="G_01" value="espacio='esp2' tipo='flecha' color='magenta' expresi&oacute;n='(0,-1)(s*(-1)*sen(t),-1)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Courier New;}{\colortbl\red248\green0\blue0;\red0\green0\blue0;}\cf0\f1\fs24\b I\cf1\b0\par}' fuente='Monospaced,BOLD,12' fijo='no' ancho='2' ancho='2' punta='2' flecha='magenta'">
+   <param name="G_02" value="espacio='esp2' tipo='segmento' color='grisClaro' expresi&oacute;n='(-2.5,-1)(1,-1)'">
+   <param name="G_03" value="espacio='esp2' tipo='segmento' color='grisClaro' expresi&oacute;n='(-2.5,0)(1,0)'">
+   <param name="G_04" value="espacio='esp2' tipo='segmento' color='grisClaro' expresi&oacute;n='(1,0)(1,-1)' tama&ntilde;o='1'">
+   <param name="G_05" value="espacio='esp2' tipo='punto' dibujar-si='tipo=0' color='amarillo' expresi&oacute;n='(1,-0.5)' tama&ntilde;o='8'">
+   <param name="G_06" value="espacio='esp2' tipo='punto' dibujar-si='tipo=0' color='(00,00,00,55*(sen(t)*sen(t))^(0.25))' expresi&oacute;n='(1,-0.5)' tama&ntilde;o='8'">
+   <param name="G_07" value="espacio='esp2' tipo='flecha' color='rojo' expresi&oacute;n='(2,-0.5)(2,0.5*s*sen(t-fase)-0.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;}\f1\fs28 V\f0\fs24\par}' fuente='SansSerif,PLAIN,14' fijo='no' ancho='2' ancho='2' punta='2' flecha='rojo'">
+   <param name="G_08" value="espacio='esp2' tipo='imagen' dibujar-si='tipo=1' expresi&oacute;n='(1,0.05)' archivo='resistor.gif'">
+   <param name="G_09" value="espacio='esp2' tipo='imagen' dibujar-si='tipo=2' expresi&oacute;n='(1,0.05)' archivo='capacitor.gif'">
+   <param name="G_10" value="espacio='esp2' tipo='imagen' dibujar-si='tipo=3' expresi&oacute;n='(1,0.05)' archivo='bobina.gif'">
+   <param name="G_11" value="espacio='oscilo' tipo='imagen' dibujar-si='osc=0' expresi&oacute;n='(-8,4)' archivo='osciloscopio.gif'">
+   <param name="G_12" value="espacio='oscilo' tipo='ecuaci&oacute;n' dibujar-si='(x>-6)&(x<-0.4)&(n>0)&(V=1)' color='azul' expresi&oacute;n='y=1.8*sen(0.4*f*x)' visible='no'">
+   <param name="G_13" value="espacio='oscilo' tipo='ecuaci&oacute;n' dibujar-si='(x>-6)&(x<-0.4)&(n>0)&(C=1)' color='rojo' expresi&oacute;n='y=1.1*sen(0.4*f*x+pi*fase/180)' visible='no'">
+   <param name="G_14" value="espacio='oscilo' tipo='ecuaci&oacute;n' dibujar-si='osc=1' color='azul' expresi&oacute;n='(x-4)^2+(y)^2=1.8^2' visible='no'">
+   <param name="G_15" value="espacio='oscilo' tipo='flecha' dibujar-si='osc=1' color='azul' expresi&oacute;n='(4,0)(4+1.8*cos(t),1.8*sen(t))' texto='V' tama&ntilde;o='1' ancho='2' ancho='2' punta='4' flecha='azul'">
+   <param name="G_16" value="espacio='oscilo' tipo='flecha' dibujar-si='osc=1' color='rojo' expresi&oacute;n='(4,0)(4+1.5*cos(t+pi*fase/180),1.5*sen(t+pi*fase/180))' texto='I' tama&ntilde;o='1' ancho='2' ancho='2' punta='4' flecha='rojo'">
+   <param name="G_17" value="espacio='oscilo' tipo='ecuaci&oacute;n' dibujar-si='osc=1' color='rojo' expresi&oacute;n='(x-4)^2+(y)^2=1.5^2' visible='no'">
+   <param name="G_18" value="espacio='oscilo' tipo='punto' dibujar-si='(t>0.3)&(t<6)&(V=1)&(osc=0)' color='azul' expresi&oacute;n='(t-6.3,1.8*sen(0.4*f*t))' rastro='turquesa' familia='s' s.intervalo='[0,1]' s.pasos='200'">
+   <param name="G_19" value="espacio='oscilo' tipo='punto' dibujar-si='(t>0.3)&(t<6)&(C=1)&(osc=0)' color='rojo' expresi&oacute;n='(t-6.3,1.1*sen(0.4*f*t+pi*fase/180))' rastro='rosa' familia='s' s.intervalo='[0,1]' s.pasos='200'">
+   <param name="S_00" value="espacio='movil' tipo='segmento' expresi&oacute;n='(0,0,-2)(0,0,4)' color='negro' Nu='1'">
+   <param name="S_01" value="tipo='paralelep&iacute;pedo' expresi&oacute;n='Paralelep&iacute;pedo' posini='(0,-3,3)' color='grisObscuro' color_reverso='rosa' modelo='metal'">
+   <param name="S_02" value="tipo='paralelep&iacute;pedo' expresi&oacute;n='Paralelep&iacute;pedo' posini='(0,3,3)' color='rojo' color_reverso='rosa' modelo='metal'">
+   <param name="S_03" value="espacio='movil' tipo='pol&iacute;gono' expresi&oacute;n='(0,0,-1)(-1*cos(t1),1*sen(t1),-1)(-1*cos(t1),1*sen(t1),1)(-0.5*cos(t1),0.5*sen(t1),1)(-0.5*cos(t1),0.5*sen(t1),1.5)' ancho='3'">
+   <param name="S_04" value="espacio='movil' tipo='pol&iacute;gono' expresi&oacute;n='(0,0,-1)(1*cos(t),1*sen(t),-1)(1*cos(t),1*sen(t),1)(0.25*cos(t),0.25*sen(t),1)(0.25*cos(t),0.25*sen(t),2.5)' color='azul' ancho='3'">
+   <param name="S_05" value="espacio='movil' tipo='cilindro' expresi&oacute;n='Cilindro' rotini='(0,0,68*t)' posini='(0,0,1.5)' color_reverso='rosa' modelo='metal' Nu='15' ancho='1' largo='1' alto='0.5'">
+   <param name="S_06" value="espacio='movil' tipo='cilindro' expresi&oacute;n='Cilindro' rotini='(0,0,68*t)' posini='(0,0,2.5)' color='azul' color_reverso='rosa' modelo='metal' Nu='15' ancho='0.75' largo='0.75' alto='0.5'">
+   <param name="S_07" value="tipo='texto' expresi&oacute;n='[160,260]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;}\f1\fs48 Polo\par Sur\f0\fs24\par}' fuente='SansSerif,PLAIN,24' fijo='si' color='negro'">
+   <param name="S_08" value="tipo='texto' expresi&oacute;n='[470,260]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;}\f1\fs48 Polo\par Norte\f0\fs24\par}' fuente='SansSerif,PLAIN,24' fijo='si' color='rojo'">
+   <param name="S_09" value="espacio='movil' tipo='segmento' expresi&oacute;n='(1,-2,0)(1,2,0)' color='rosa' Nu='1'">
+   <param name="S_10" value="espacio='movil' tipo='segmento' expresi&oacute;n='(1,-2,0.7)(1,2,0.7)' color='rosa' Nu='1'">
+   <param name="S_11" value="espacio='movil' tipo='segmento' expresi&oacute;n='(1,-2,-0.7)(1,2,-0.7)' color='rosa' Nu='1'">
+   <param name="S_12" value="espacio='movil' tipo='segmento' expresi&oacute;n='(0,-2,0)(0,2,0)' color='rosa' Nu='1'">
+   <param name="S_13" value="espacio='movil' tipo='segmento' expresi&oacute;n='(0,-2,0.7)(0,2,0.7)' color='rosa' Nu='1'">
+   <param name="S_14" value="espacio='movil' tipo='segmento' expresi&oacute;n='(0,-2,-0.7)(0,2,-0.7)' color='rosa' Nu='1'">
+   <param name="S_15" value="espacio='movil' tipo='segmento' expresi&oacute;n='(-1,-2,0)(-1,2,0)' color='rosa' Nu='1'">
+   <param name="S_16" value="espacio='movil' tipo='segmento' expresi&oacute;n='(-1,-2,0.7)(-1,2,0.7)' color='rosa' Nu='1'">
+   <param name="S_17" value="espacio='movil' tipo='segmento' expresi&oacute;n='(-1,-2,-0.7)(-1,2,-0.7)' color='rosa' Nu='1'">
+   <param name="S_18" value="espacio='movil' tipo='cubo' expresi&oacute;n='Cubo' posini='(0,0.75,1.5)' color='grisClaro' color_reverso='rosa' modelo='metal' ancho='1'">
+   <param name="S_19" value="espacio='movil' tipo='cubo' expresi&oacute;n='Cubo' posini='(0,0.65,2.5)' color='grisClaro' color_reverso='rosa' modelo='metal' ancho='1'">
+   <param name="S_20" value="espacio='movil' tipo='cilindro' expresi&oacute;n='Cilindro' rotini='(0,0,68)' posini='(0,0,-1.5)' color='54ffab' color_reverso='rosa' modelo='metal' Nu='15' ancho='3' largo='3' alto='0.1'">
+   <param name="S_21" value="espacio='movil' tipo='pol&iacute;gono' expresi&oacute;n='(0,0,-1.5)(-1.5*cos(t1),1.5*sen(t1),-1.5)' color='grisObscuro' ancho='3'">
+   <param name="S_22" value="espacio='movil' tipo='pol&iacute;gono' expresi&oacute;n='(0,0,-1.5)(1.5*cos(t1),-1.5*sen(t1),-1.5)' color='grisObscuro' ancho='3'">
+   <param name="S_23" value="espacio='movil' tipo='segmento' expresi&oacute;n='(-1,-2,-1.8)(-1,2,-1.8)' color='rosa' Nu='1' ancho='3'">
+   <param name="S_24" value="espacio='movil' tipo='texto' expresi&oacute;n='[50,280]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;}{\colortbl\red0\green0\blue255;\red0\green0\blue0;}\cf0\f1\fs44\b  \fs36   Superficie de \par  Frente al Campo\par \fs28 Ancho Bobina x sen \u981 \fs36\par          {\*\mjaformula{\expr abs(100*cos(t1))\decimals 0}}%\cf1\f0\fs24\b0\par}' fuente='SansSerif,BOLD,22' fijo='si' color='negro'">
+   <param name="Animaci&oacute;n" value="controles='no' auto='no' repetir='si' inicio='n=0' hacer='n=n+f' mientras='n>360'">
+</applet>
+<embed src="gamespeopleplay.mp3" autostart='true' loop='true' hidden='true' >

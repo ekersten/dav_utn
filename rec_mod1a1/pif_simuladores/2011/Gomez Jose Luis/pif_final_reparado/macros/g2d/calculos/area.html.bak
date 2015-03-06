@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Diagrama de Pastel</title></head>
+<body BGCOLOR="#eeeeee">
+<p align="center">
+<FONT size=+2>Macro: area</FONT><br>tipo 2D
+</p>
+<p align="center">
+<applet name="area"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes.jar"
+        MAYSCRIPT
+        width=480 height=360>
+   <param name="nombre" value="area">
+   <param name="Versi&oacute;n" value="3.5">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="escala='80' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_00" value="tipo='num&eacute;rico' id='dl' regi&oacute;n='interior' expresi&oacute;n='(20,310)' valor='0.25' nombre='dl' incr='0.01' min='0.05' visible='si' pos_mensajes='centro'">
+   <param name="A_00" value="id='xmin' expresi&oacute;n='-2' evaluar='una-sola-vez' constante='si'">
+   <param name="A_01" value="id='xmax' expresi&oacute;n='2' evaluar='una-sola-vez' constante='si'">
+   <param name="A_02" value="id='ymin' expresi&oacute;n='-1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_03" value="id='ymax' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_04" value="id='dl' expresi&oacute;n='0.25' evaluar='una-sola-vez' constante='si'">
+   <param name="A_05" value="id='F(x,y)' expresi&oacute;n='1-(x/2)^2-y^2'">
+   <param name="A_06" value="hacer='m=ent((xmax-xmin+dl)/dl);n=ent((ymax-ymin+dl)/dl);N=m*n;' id='INIT' evaluar='siempre' algoritmo='si'">
+   <param name="A_07" value="id='X(s)' expresi&oacute;n='xmin+dl*(s%m)'">
+   <param name="A_08" value="id='Y(s)' expresi&oacute;n='ymin+dl*ent(s/m)'">
+   <param name="A_09" value="id='COND1(x,y)' expresi&oacute;n='(F(x,y)>=0)|(F(x+dl,y)>=0)|(F(x+dl,y+dl)>=0)|(F(x,y+dl)>=0)'">
+   <param name="A_10" value="id='COND2(x,y)' expresi&oacute;n='(F(x,y)>=0)&(F(x+dl,y)>=0)&(F(x+dl,y+dl)>=0)&(F(x,y+dl)>=0)'">
+   <param name="A_11" value="inicio='A=0; i=0;' hacer='A=A+COND2(X(i),Y(i));i=i+1' mientras='i<=N' id='area()' expresi&oacute;n='dl*dl*A' algoritmo='si'">
+   <param name="A_12" value="inicio='A=0; i=0;' hacer='A=A+COND1(X(i),Y(i));i=i+1' mientras='i<=N' id='AREA()' expresi&oacute;n='dl*dl*A' algoritmo='si'">
+   <param name="A_13" value="id='Area()' expresi&oacute;n='(AREA()+area())/2'">
+   <param name="G_00" value="tipo='pol&iacute;gono' dibujar-si='COND1(X(s),Y(s))' color='rojo' expresi&oacute;n='(X(s),Y(s))(X(s)+dl,Y(s))(X(s)+dl,Y(s)+dl)(X(s),Y(s)+dl)(X(s),Y(s))' familia='s' s.intervalo='[0,N]' s.pasos='N' relleno='ffd000'">
+   <param name="G_01" value="tipo='pol&iacute;gono' dibujar-si='COND2(X(s),Y(s))' color='azul' expresi&oacute;n='(X(s),Y(s))(X(s)+dl,Y(s))(X(s)+dl,Y(s)+dl)(X(s),Y(s)+dl)(X(s),Y(s))' familia='s' s.intervalo='[0,N]' s.pasos='N' relleno='turquesa'">
+   <param name="G_02" value="tipo='ecuaci&oacute;n' color='negro' expresi&oacute;n='F(x,y)=0' visible='no'">
+</applet>
+</p>
+<p align="center">
+Esta escena se usa para generar el macro.
+</p>
+<p align="center">
+<applet name="mi_area"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes.jar"
+        MAYSCRIPT
+        width=480 height=360>
+   <param name="nombre" value="mi_area">
+   <param name="Versi&oacute;n" value="3.5">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=si config=si inicio=si limpiar=si">
+   <param name="E_00" value="escala='32' despl_imagen='arr-izq' fondo='blanco' red='grisClaro' red10='negro' ejes='gris' texto='rosa'">
+   <param name="C_00" value="tipo='num&eacute;rico' id='ca.dl' valor='0.5' nombre='dl' incr='0.05' min='0.05' visible='si' pos_mensajes='centro'">
+   <param name="A_00" value="hacer='ca.xmin=-3;ca.xmax=3;ca.ymin=-3;ca.ymax=3' id='INICIO' evaluar='siempre' algoritmo='si'">
+   <param name="A_01" value="id='ca.F(x,y)' expresi&oacute;n='3-max(abs(x)+abs(y),(x^2+y^2)/2)'">
+   <param name="G_00" value="tipo='macro' expresi&oacute;n='calculos/area' nombre='ca'">
+   <param name="G_01" value="tipo='texto' color='azul' expresi&oacute;n='[20,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f0\fs28\u193 rea estimada = (\u193 rea naranja + \u193 rea azul)/2\par               = ({\*\mjaformula{\expr ca.AREA()}} + {\*\mjaformula{\expr ca.area()}})/2 = {\*\mjaformula{\expr ca.Area()\decimals 2}}\par \par \par \par \par \par \par \par \par \par \par Precisi\u243 n = {\*\mjaformula{\expr ca.AREA()}} - {\*\mjaformula{\expr ca.area()}} = {\*\mjaformula{\expr ca.AREA()-ca.area()}}\cf1\fs24  \par \par}' fuente='Monospaced,PLAIN,14'">
+</applet>
+</p>
+<p align="center">
+Esta escena es una aplicación del macro que muestra algunos de sus parámetros.
+</p>
+<hr>
+
+<p><font size="2" face="Arial"><strong><cite><dfn><samp><tt>Autor: José Luis Abreu León</tt></samp></dfn></cite></strong></font></p>
+
+</body>
+</html>
+
+

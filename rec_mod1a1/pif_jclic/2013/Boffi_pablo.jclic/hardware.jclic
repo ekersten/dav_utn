@@ -1,0 +1,1086 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="hardware" version="0.1.3">
+ <settings>
+  <title>Tema4_Pablo_Boffi</title>
+  <revision description="created" date="6/5/13" />
+  <author name="Pablo" />
+  <description>
+   <p>LABORATORIO DE HARDWARE&#xD;</p>
+   <p>4TO AÑO &#xD;</p>
+   <p>E.E.S.T. N°1 - CONESA</p>
+  </description>
+  <descriptors />
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="menu" delay="1" navButtons="fwd">
+   <jump action="STOP" id="back" />
+  </item>
+  <item id="PANTALLA" name="PANTA" navButtons="back">
+   <jump action="EXIT" id="forward" />
+  </item>
+  <item id="sopa" name="Sopa de letras" navButtons="back">
+   <jump tag="PANTALLA" id="back" />
+  </item>
+  <item name="ROPMPE" navButtons="back">
+   <jump tag="PANTALLA" id="back" />
+  </item>
+  <item name="memoria" navButtons="back">
+   <jump tag="PANTALLA" id="back" />
+  </item>
+  <item name="asoc" navButtons="back">
+   <jump tag="PANTALLA" id="back" />
+  </item>
+  <item name="completar" navButtons="back">
+   <jump tag="PANTALLA" id="back" />
+  </item>
+  <item name="indentifica" navButtons="back">
+   <jump tag="PANTALLA" id="back" />
+  </item>
+  <item name="explorar" navButtons="back">
+   <jump tag="PANTALLA" id="back" />
+  </item>
+  <item name="ASOCSIMP" navButtons="back">
+   <jump tag="PANTALLA" id="back" />
+  </item>
+  <item name="rellena" navButtons="back">
+   <jump tag="PANTALLA" id="back" />
+  </item>
+  <item name="CRUCIG" navButtons="back">
+   <jump tag="PANTALLA" id="back" />
+  </item>
+  <item name="ifenti" navButtons="back">
+   <jump tag="PANTALLA" id="back" />
+  </item>
+  <item name="ordenatecto" navButtons="back">
+   <jump tag="PANTALLA" id="back" />
+  </item>
+  <item name="ordenapas">
+   <jump action="EXIT" id="forward" />
+   <jump tag="PANTALLA" id="back" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@associations.SimpleAssociation" name="ASOCSIMP" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>UNE CADA IMÁGEN CON SU TEXTO</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>MUY BIEN</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x99CCFF" dest="0x00CCCC" angle="50" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x0033CC" dest="0xCCCCFF" angle="70" />
+    </window>
+    <skin file="@default.xml" />
+   </settings>
+   <cells rows="1" cols="6" cellWidth="190.0" cellHeight="168.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="6" rows="1" />
+    <cell image="monitor.png" />
+    <cell image="parlantes.png" />
+    <cell image="mouse.jpg" />
+    <cell image="teclado.png" />
+    <cell image="MIC.jpg" />
+    <cell image="WEBCAM.jpg" />
+   </cells>
+   <cells rows="1" cols="6" cellWidth="189.0" cellHeight="50.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="6" rows="1" />
+    <cell>
+     <p>MONITOR</p>
+    </cell>
+    <cell>
+     <p>PARLANTES</p>
+    </cell>
+    <cell>
+     <p>MOUSE</p>
+    </cell>
+    <cell>
+     <p>TECLADO</p>
+    </cell>
+    <cell>
+     <p>MICROFONO</p>
+    </cell>
+    <cell>
+     <p>CAMARA WEB</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@textGrid.CrossWord" name="CRUCIG" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Completa el crucigrama</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Muy Bien</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="30" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x99CCFF" dest="0x00CCCC" angle="50" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x0033CC" dest="0xCCCCFF" angle="70" />
+    </window>
+    <skin file="@default.xml" />
+   </settings>
+   <textGrid rows="10" columns="10" cellWidth="20.0" cellHeight="20.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>****F*BIT*</row>
+     <row>RAM*T*I**I</row>
+     <row>**O*P*O**P</row>
+     <row>J*N***SO**</row>
+     <row>U*I*****R*</row>
+     <row>M*TECLADO*</row>
+     <row>P*O*P***M*</row>
+     <row>E*R*ULA***</row>
+     <row>R*********</row>
+     <row>**HARDWARE</row>
+    </text>
+   </textGrid>
+   <cells rows="1" cols="3" cellWidth="200.0" cellHeight="60.0" border="true" id="acrossClues">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell id="2" item="4" />
+    <cell id="2" item="3" />
+    <cell id="9" item="1" />
+    <cell id="9" item="0">
+     <p>componentes físicos de una computadora</p>
+    </cell>
+    <cell id="8" item="1" />
+    <cell id="8" item="0" />
+    <cell id="7" item="3" />
+    <cell id="7" item="0" />
+    <cell id="7" item="2">
+     <p>unidad aritmetico lógica</p>
+    </cell>
+    <cell id="7" item="1" />
+    <cell id="6" item="4" />
+    <cell id="6" item="0" />
+    <cell id="6" item="2" />
+    <cell id="6" item="3" />
+    <cell id="6" item="1" />
+    <cell id="5" item="2" />
+    <cell id="5" item="1">
+     <p>periférico de entrada</p>
+    </cell>
+    <cell id="5" item="0" />
+    <cell id="3" item="3" />
+    <cell id="3" item="0" />
+    <cell id="3" item="2">
+     <p>abreviatura de sistema operativo</p>
+    </cell>
+    <cell id="3" item="1" />
+    <cell id="2" item="2" />
+    <cell id="2" item="1" />
+    <cell id="2" item="2" />
+    <cell id="2" item="0" />
+    <cell id="0" item="1">
+     <p>minima unidad de medida</p>
+    </cell>
+    <cell id="0" item="0" />
+    <cell id="0" item="1" />
+    <cell id="1" item="4">
+     <p>memory access only</p>
+    </cell>
+    <cell id="1" item="3" />
+    <cell id="1" item="2" />
+    <cell id="1" item="1" />
+    <cell id="1" item="0">
+     <p>memoria de acceso aleatorio</p>
+    </cell>
+    <cell id="4" item="2" />
+    <cell id="4" item="0" />
+    <cell id="4" item="2" />
+    <cell id="4" item="1" />
+    <cell id="0" />
+    <cell id="1" />
+    <cell id="2" />
+   </cells>
+   <cells rows="1" cols="3" cellWidth="200.0" cellHeight="60.0" border="true" id="downClues">
+    <style />
+    <cell id="7" item="4" />
+    <cell id="7" item="3" />
+    <cell id="4" item="3" />
+    <cell id="4" item="2" />
+    <cell id="6" item="4" />
+    <cell id="6" item="3" />
+    <cell id="7" item="2" />
+    <cell id="7" item="1" />
+    <cell id="7" item="0" />
+    <cell id="6" item="0">
+     <p>programa instalado en la placa madre que controla cada dispositivo</p>
+    </cell>
+    <cell id="6" item="1" />
+    <cell id="6" item="2" />
+    <cell id="9" item="2" />
+    <cell id="9" item="0">
+     <p>un protocolo usado para la comunicación de datos a través de una red</p>
+    </cell>
+    <cell id="9" item="1" />
+    <cell id="8" item="3" />
+    <cell id="8" item="2" />
+    <cell id="8" item="1">
+     <p>memoria de solo lectura</p>
+    </cell>
+    <cell id="8" item="0" />
+    <cell id="7" item="2" />
+    <cell id="7" item="2" />
+    <cell id="6" item="1" />
+    <cell id="6" item="1" />
+    <cell id="4" item="1">
+     <p>unidad central de proceso</p>
+    </cell>
+    <cell id="4" item="0">
+     <p>Protocolo de Transferencia de Archivos</p>
+    </cell>
+    <cell id="4" item="1" />
+    <cell id="3" item="2" />
+    <cell id="3" item="1" />
+    <cell id="3" item="0" />
+    <cell id="2" item="2" />
+    <cell id="2" item="1" />
+    <cell id="2" item="0">
+     <p>dispositivo de salida</p>
+    </cell>
+    <cell id="0" item="2" />
+    <cell id="0" item="1">
+     <p>elemento para interconectar dos terminales de manera temporal</p>
+    </cell>
+    <cell id="0" item="0" />
+    <cell id="1" item="1" />
+    <cell id="1" item="0" />
+    <cell id="5" item="1" />
+    <cell id="5" item="2" />
+    <cell id="5" item="3" />
+    <cell id="5" item="0" />
+    <cell id="0" />
+    <cell id="1" />
+    <cell id="2" />
+   </cells>
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="PANTA" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@default.xml" />
+   </settings>
+   <cells rows="13" cols="1" cellWidth="302.0" cellHeight="42.0" border="false">
+    <style shadow="true" margin="5" borderStroke="0.7" markerStroke="5.0">
+     <color foreground="0xFF3333" border="0xCCCCCC" />
+     <gradient source="0xCCCCCC" dest="0xFFFFFF" angle="64" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="13" />
+    <cell imgAlign="left,middle">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="ROPMPE" />
+     <p>ROMPECABEZAS</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Sopa de letras" />
+     <p>SOPA DE LETRAS</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="asoc" />
+     <p>ASOCIACIÓN COMPLEJA</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="completar" />
+     <p>COMPLETAR TEXTO</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="memoria" />
+     <p>MEMOTEST</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="explorar" />
+     <p>EXPLORAR</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="indentifica" />
+     <p>IDENTIFICAR</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="ASOCSIMP" />
+     <p>ASOCIACIÓN SIMPLE</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="rellena" />
+     <p>COMPLETAR EL TEXTO</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="CRUCIG" />
+     <p>CRUCIGRAMA</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="ifenti" />
+     <p>SELECCIONA SUSTANTIVOS</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="ordenatecto" />
+     <p>ORDENA LA DEFINICIÓN</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="ordenapas" />
+     <p>CLASIFICA SEGÚN SU EVOLUCIÓN</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="ROPMPE" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>ARMA LA IMAGEN</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>MUY BIEN</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@default.xml" />
+   </settings>
+   <cells rows="4" cols="4" border="true" image="PC.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="4" rows="4" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="Sopa de letras" code="">
+   <description />
+   <messages>
+    <cell border="true" type="initial">
+     <style />
+     <p>Busca palabras relacionadas a Hardware</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Muy Bien !!!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>Revisar</p>
+    </cell>
+   </messages>
+   <settings margin="8" useOrder="true" dragCells="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x99CCFF" border="true" />
+    <skin file="@default.xml" />
+   </settings>
+   <textGrid rows="10" columns="10" cellWidth="32.0" cellHeight="30.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>ROM***R**G</row>
+     <row>IMPRESORAA</row>
+     <row>CHIPSET*SB</row>
+     <row>******I*OI</row>
+     <row>******N*FN</row>
+     <row>BIOS**O*TE</row>
+     <row>**O***M*WT</row>
+     <row>*M***M**AE</row>
+     <row>C***A***R*</row>
+     <row>*HARDWARE*</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">IMPRESORA</clue>
+    <clue id="1">HARDWARE</clue>
+    <clue id="2">SOFTWARE</clue>
+    <clue id="3">ROM</clue>
+    <clue id="4">RAM</clue>
+    <clue id="5">BIOS</clue>
+    <clue id="6">CMOS</clue>
+    <clue id="7">CHIPSET</clue>
+    <clue id="8">MONITOR</clue>
+    <clue id="9">GABINETE</clue>
+   </clues>
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="asoc" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Arial" size="22" />
+      <color foreground="0xFF3333" background="0x9999FF" shadow="0xCCCCCC" alternative="0x33FF66" />
+     </style>
+     <p>Seleccionar cada imágen con su texto</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFF9933" background="0xCCCCFF" shadow="0xCCFF00" alternative="0xFF33FF" />
+     </style>
+     <p>Felicitaciones</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Unir cada periférico con su clasificación</p>
+    </helpWindow>
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@default.xml" />
+   </settings>
+   <cells rows="2" cols="4" border="true" image="hardware1-resized.jpg" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <ids>0 2 2 0 0 1 1 2</ids>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="231.0" cellHeight="118.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="2.7">
+     <font family="Arial Black" size="20" bold="true" />
+     <color foreground="0xFF3333" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell>
+     <p>Entrada</p>
+    </cell>
+    <cell>
+     <p>Almacenamiento</p>
+    </cell>
+    <cell>
+     <p>Salida</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="completar" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <p>Colocar el nombre a cada imágen</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x00CC66" background="0xFFFFFF" />
+     </style>
+     <p>Muy Bien !!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFFFF">
+     <gradient source="0x99CCFF" dest="0x00CCCC" angle="118" cycles="49" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCFFCC" border="false">
+     <size width="500" height="350" />
+    </window>
+    <skin file="@default.xml" />
+   </settings>
+   <document>
+    <style name="default" family="Arial" size="17" foreground="0x000000" background="0xFFFFFF" italic="false" tabWidth="31" bold="false" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" background="0xFFFFFF" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p family="Arial" foreground="0x000000" size="17" background="0xFFFFFF" italic="false" bold="false">
+      <cell width="140" height="140" border="false" image="teclado.png">
+       <style>
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+      <text family="Arial" foreground="0x000000" size="17" background="0xFFFFFF" italic="false" bold="false">	</text>
+      <cell width="140" height="140" border="false" image="mouse.jpg">
+       <style>
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+      <text family="Arial" foreground="0x000000" size="17" background="0xFFFFFF" italic="false" bold="false">	</text>
+      <cell width="140" height="140" border="false" image="parlantes.png">
+       <style>
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+     </p>
+     <p family="Arial" foreground="0x000000" size="17" background="0xFFFFFF" italic="false" bold="false">
+      <text family="Arial" foreground="0x000000" size="17" background="0xFFFFFF" italic="false" bold="false">       </text>
+      <target>
+       <answer>teclado</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>teclado</text>
+      </target>
+      <text family="Arial" foreground="0x000000" size="17" background="0xFFFFFF" italic="false" bold="false">                       </text>
+      <target>
+       <answer>mouse</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>mouse</text>
+      </target>
+      <text family="Arial" foreground="0x000000" size="17" background="0xFFFFFF" italic="false" bold="false">                 </text>
+      <target>
+       <answer>parlantes</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>parlantes</text>
+      </target>
+     </p>
+     <p family="Arial" foreground="0x000000" size="17" background="0xFFFFFF" italic="false" bold="false">
+      <cell width="140" height="140" border="false" image="impresoras.jpg">
+       <style>
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+      <text family="Arial" foreground="0x000000" size="17" background="0xFFFFFF" italic="false" bold="false">	</text>
+      <cell width="140" height="140" border="false" image="monitor.png">
+       <style>
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+      <text family="Arial" foreground="0x000000" size="17" background="0xFFFFFF" italic="false" bold="false">	</text>
+      <cell width="140" height="140" border="false" image="PC.jpg">
+       <style>
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+     </p>
+     <p family="Arial" foreground="0x000000" size="17" background="0xFFFFFF" italic="false" bold="false">
+      <text family="Arial" foreground="0x000000" size="17" background="0xFFFFFF" italic="false" bold="false">    </text>
+      <target>
+       <answer>impresoras</answer>
+       <response fill="_" length="10" maxLength="10" />
+       <text>impresoras</text>
+      </target>
+      <text family="Arial" foreground="0x000000" size="17" background="0xFFFFFF" italic="false" bold="false">                  </text>
+      <target>
+       <answer>monitor</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>monitor</text>
+      </target>
+      <text family="Arial" foreground="0x000000" size="17" background="0xFFFFFF" italic="false" bold="false">                      </text>
+      <target>
+       <answer>pc</answer>
+       <response fill="_" length="2" maxLength="2" />
+       <text>pc</text>
+      </target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@panels.Explore" name="explorar" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Biting My Nails" size="26" bold="true" />
+      <color foreground="0xFF6666" />
+     </style>
+     <p>Repasemos definiciones</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@default.xml" />
+   </settings>
+   <cells rows="5" cols="1" cellWidth="211.0" cellHeight="159.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color foreground="0x0033CC" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="5" />
+    <cell id="0">
+     <p>Sistema Operativo</p>
+    </cell>
+    <cell id="1">
+     <p>Memoria Ram</p>
+    </cell>
+    <cell id="2">
+     <p>Memoria Rom</p>
+    </cell>
+    <cell id="3">
+     <p>Hardware</p>
+    </cell>
+    <cell id="4">
+     <p>Software</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="1" cellWidth="850.0" cellHeight="160.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="18" bold="true" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="5" />
+    <cell>
+     <style>
+      <font family="Arial" size="26" />
+     </style>
+     <p>es un programa o conjunto de programas que en un sistema informático gestiona los recursos de hardware y provee servicios a los programas de aplicación</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="26" />
+     </style>
+     <p>La memoria de acceso aleatorio (en inglés: random-access memory) se utiliza como memoria de trabajo para el sistema operativo, los programas y la mayoría del software. Es allí donde se cargan todas las instrucciones que ejecutan el procesador y otras unidades de cómputo. </p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="26" />
+     </style>
+     <p>(acrónimo en inglés de read-only memory), es un medio de almacenamiento que permite sólo la lectura de la información y no su escritura, independientemente de la presencia o no de una fuente de energía. Los datos almacenados en la ROM no se pueden modificar, o al menos no de manera rápida o fácil.</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="26" />
+     </style>
+     <p>se refiere a todas las partes tangibles de un sistema informático; sus componentes son: eléctricos, electrónicos, electromecánicos y mecánicos</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="26" />
+     </style>
+     <p>Se conoce como software al equipamiento lógico o soporte lógico de un sistema informático, que comprende el conjunto de los componentes lógicos necesarios que hacen posible la realización de tareas específicas</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.Identify" name="ifenti" code="" type="identifyWords">
+   <description />
+   <messages />
+   <settings margin="8" report="true" reportActions="true">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x99CCFF" dest="0x00CCCC" angle="50" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x0033CC" dest="0xCCCCFF" angle="70" />
+     <size width="601" height="410" />
+    </window>
+    <skin file="@default.xml" />
+   </settings>
+   <checkButton />
+   <document>
+    <style name="default" family="Arial" size="20" background="0xFFFFFF" italic="false" tabWidth="12" bold="false" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" foreground="0xF5000000" size="22" background="0xFFFFFF" italic="false" bold="true">Selecciona los sustantivos</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" foreground="0x000000" size="22" background="0xFFFFFF" italic="false" bold="false">La </text>
+      <target>aplicación</target>
+      <text family="Arial" foreground="0x000000" size="22" background="0xFFFFFF" italic="false" bold="false"> gratuita de mensajería para </text>
+      <target>celulares</target>
+      <text family="Arial" foreground="0x000000" size="22" background="0xFFFFFF" italic="false" bold="false"> </text>
+      <target>LINE</target>
+      <text family="Arial" foreground="0x000000" size="22" background="0xFFFFFF" italic="false" bold="false"> superó los 100 millones de descargas en todo el </text>
+      <target>mundo,</target>
+      <text family="Arial" foreground="0x000000" size="22" background="0xFFFFFF" italic="false" bold="false"> según informó el creador y proveedor de este servicio, la compañía de </text>
+      <target>Internet</target>
+      <text family="Arial" foreground="0x000000" size="22" background="0xFFFFFF" italic="false" bold="false"> surcoreana </text>
+      <target>NHN</target>
+      <text family="Arial" foreground="0x000000" size="22" background="0xFFFFFF" italic="false" bold="false">.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <target>LINE,</target>
+      <text family="Arial" foreground="0x000000" size="22" background="0xFFFFFF" italic="false" bold="false"> cuya popularidad aumentó notablemente en los últimos</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" foreground="0x000000" size="22" background="0xFFFFFF" italic="false" bold="false">tiempos, logró alcanzar esta cifra 19 </text>
+      <target>meses</target>
+      <text family="Arial" foreground="0x000000" size="22" background="0xFFFFFF" italic="false" bold="false"> después de que la </text>
+      <target>empresa</target>
+      <text family="Arial" foreground="0x000000" size="22" background="0xFFFFFF" italic="false" bold="false"> sacara al mercado la aplicación en </text>
+      <target>junio</target>
+      <text family="Arial" foreground="0x000000" size="22" background="0xFFFFFF" italic="false" bold="false"> de 2011</text>
+     </p>
+    </section>
+   </document>
+  </activity>
+  <activity class="@panels.Identify" name="indentifica" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Seleccionar el hardware</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arabic Typesetting" size="26" bold="true" />
+      <color foreground="0xFF3333" />
+     </style>
+     <p>Genial..</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x33CCFF">
+     <gradient source="0x0000FF" dest="0x6666FF" angle="12" cycles="50" />
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <skin file="@default.xml" />
+   </settings>
+   <cells rows="2" cols="4" cellWidth="499.0" cellHeight="399.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell id="0" txtAlign="middle,bottom" image="7.jpg">
+     <p>WINDOWS 7</p>
+    </cell>
+    <cell id="1" txtAlign="middle,bottom" image="mouse.jpg">
+     <p>MOUSE</p>
+    </cell>
+    <cell id="0" txtAlign="middle,bottom" image="acrob.jpg">
+     <p>ADOBE ACROBAT</p>
+    </cell>
+    <cell id="1" txtAlign="middle,bottom" image="WEBCAM.jpg">
+     <p>CAMARA WEB</p>
+    </cell>
+    <cell id="0" txtAlign="middle,bottom" image="ofi.jpg">
+     <p>MICROSOFT OFFICE</p>
+    </cell>
+    <cell id="0" txtAlign="middle,bottom" image="ubun.jpg">
+     <p>UBUNTU</p>
+    </cell>
+    <cell id="1" txtAlign="middle,bottom" image="MIC.jpg">
+     <p>MICRÓFONO</p>
+    </cell>
+    <cell id="1" txtAlign="middle,bottom" image="teclado.png">
+     <p>TECLADO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="memoria" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="UNKNOWN" level="1" />
+     <p>Memotest de Hardware</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Genial</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="true">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x0000CC" dest="0x99CCFF" angle="114" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCCCFF" border="true">
+     <gradient source="0x0033CC" dest="0xCCCCFF" angle="70" />
+    </window>
+    <skin file="@default.xml" />
+   </settings>
+   <cells rows="2" cols="4" border="true" image="hardware-resized.jpg" id="primary">
+    <style shadow="true" borderStroke="2.0" markerStroke="2.7">
+     <font family="Arial Black" size="20" bold="true" />
+     <color foreground="0x3333FF" background="0xFF9933" shadow="0xFFCCFF" inactive="0xFFFFFF" alternative="0xCC0000" border="0x999999" />
+     <gradient source="0xFF9900" dest="0xFFFFCC" angle="72" />
+    </style>
+    <shaper class="@Holes" cols="4" rows="2">
+     <shape comment="0">M:0.015,0.037778|L:0.24625,0.04|L:0.245,0.382222|L:0.01125,0.382222|L:0.015,0.037778</shape>
+     <shape comment="1">M:0.26875,0.384444|L:0.5075,0.382222|L:0.505,0.017778|L:0.27,0.022222|L:0.26875,0.384444</shape>
+     <shape comment="2">M:0.5225,0.368889|L:0.7725,0.368889|L:0.76875,0.011111|L:0.52875,0.015556|L:0.5225,0.368889</shape>
+     <shape comment="3">M:0.79125,0.366667|L:0.98125,0.362222|L:0.97875,0.011111|L:0.79,0.013333|L:0.79125,0.366667</shape>
+     <shape comment="4">M:0.01875,0.562222|L:0.2775,0.562222|L:0.26875,0.933333|L:0.0075,0.944444|L:0.01875,0.562222</shape>
+     <shape comment="5">M:0.29625,0.56|L:0.5075,0.571111|L:0.5025,0.94|L:0.285,0.933333|L:0.29625,0.56</shape>
+     <shape comment="6">M:0.525,0.571111|L:0.72625,0.573333|L:0.72875,0.942222|L:0.5325,0.946667|L:0.53,0.566667|L:0.525,0.571111</shape>
+     <shape comment="7">M:0.75125,0.577778|L:0.99125,0.571111|L:0.98875,0.94|L:0.7625,0.928889|L:0.75125,0.577778</shape>
+    </shaper>
+   </cells>
+   <scramble times="31" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="menu" code="">
+   <description />
+   <messages />
+   <settings margin="8" dragCells="true" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x00CCCC" dest="0x0066FF" angle="108" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x6600CC" border="true" />
+    <eventSounds>
+     <sound id="start" file="jkp02110.mp3" />
+    </eventSounds>
+    <skin file="@default.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="1155.0" cellHeight="516.0" border="true">
+    <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Biting My Nails" size="28" bold="true" />
+     <color foreground="0x0066CC" />
+     <gradient source="0x00CCCC" dest="0x0099CC" angle="118" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell imgAlign="right,top" avoidOverlapping="true">
+     <media type="UNKNOWN" level="1" />
+     <p>LABORATORIO DE HARDWARE</p>
+     <p>E.E.S.T. N°1 "JUAN B. ALBERDI"  </p>
+     <p>CONESA</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@text.Order" name="ordenatecto" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Ordena la siguiente definición</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Muy Bien!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x99CCFF" dest="0x00CCCC" angle="50" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x0033CC" dest="0xCCCCFF" angle="70" />
+    </window>
+    <skin file="@default.xml" />
+   </settings>
+   <document>
+    <style name="default" family="Arial" size="20" background="0xFFFFFF" italic="false" tabWidth="12" bold="false" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" Alignment="0" background="0xFFFFFF">
+      <text family="Arial" foreground="0x000000" size="17" background="0x0099CC" italic="false" bold="true">                            Memoria RAM                             </text>
+     </p>
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <cell txtAlign="right,middle" imgAlign="right,middle" width="251" height="102" image="MEMORIA.jpg" />
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" foreground="0x000000" size="17" background="0xFFFFFF" italic="false" bold="false">La </text>
+      <target>memoria</target>
+      <text family="Arial" foreground="0x000000" size="17" background="0xFFFFFF" italic="false" bold="false"> de acceso aleatorio se utiliza como memoria de </text>
+      <target>trabajo</target>
+      <text family="Arial" foreground="0x000000" size="17" background="0xFFFFFF" italic="false" bold="false"> para el </text>
+      <target>sistema</target>
+      <text family="Arial" foreground="0x000000" size="17" background="0xFFFFFF" italic="false" bold="false"> operativo, los </text>
+      <target>programas</target>
+      <text family="Arial" foreground="0x000000" size="17" background="0xFFFFFF" italic="false" bold="false"> y la mayoría del </text>
+      <target>software.</target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="rellena" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>completa el texto</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Muy bien</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="20" countDownTime="true" maxActions="6" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="Popula.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true">
+     <size width="551" height="401" />
+    </window>
+    <skin file="@default.xml" />
+   </settings>
+   <document>
+    <style name="default" family="Arial" size="20" background="0xFFFFFF" italic="false" tabWidth="12" bold="false" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" foreground="0x000000" size="17" background="0xFFFFFF" italic="false" bold="false">En el último año fueron detectados 415 </text>
+      <target>
+       <answer>virus</answer>
+       <optionList>
+        <option>Hacker</option>
+        <option>gusano</option>
+        <option>virus</option>
+        <option>troyano</option>
+       </optionList>
+       <text>virus</text>
+      </target>
+      <text family="Arial" foreground="0x000000" size="17" background="0xFFFFFF" italic="false" bold="false"> para</text>
+      <cell width="42" height="38" image="telefonos.jpg" />
+      <text family="Arial" foreground="0x000000" size="17" background="0xFFFFFF" italic="false" bold="false"> </text>
+      <target>
+       <answer>teléfonos</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>teléfonos</text>
+      </target>
+      <text family="Arial" foreground="0x000000" size="17" background="0xFFFFFF" italic="false" bold="false"> celulares, según un informe de la empresa de seguridad informática Symantec. Y el director de Juniper Networks, otra empresa de software, había vaticinado que “tal como sucedió con la evolución de los</text>
+      <cell width="42" height="38" image="virus-informatico.jpg" />
+      <text family="Arial" foreground="0x000000" size="17" background="0xFFFFFF" italic="false" bold="false"> </text>
+      <target>
+       <answer>virus</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>virus</text>
+      </target>
+      <text family="Arial" foreground="0x000000" size="17" background="0xFFFFFF" italic="false" bold="false"> para PC, los ataques a dispositivos móviles aumentarán y se volverán cada vez más sofisticados”. Ayer, una empresa de seguridad informática estadounidense descubrió una vulnerabilidad en el sistema operativo </text>
+      <target>
+       <answer>Android</answer>
+       <optionList>
+        <option>Blackberry</option>
+        <option>Synbian</option>
+        <option>Android</option>
+       </optionList>
+       <text>Android</text>
+      </target>
+      <text family="Arial" foreground="0x000000" size="17" background="0xFFFFFF" italic="false" bold="false"> que podría afectar a 900 millones de dispositivos en todo el mundo. En </text>
+      <target>
+       <answer>Argentina</answer>
+       <optionList>
+        <option>Brasil</option>
+        <option>Argentina</option>
+        <option>Uruguay</option>
+       </optionList>
+       <text>Argentina</text>
+      </target>
+      <text family="Arial" foreground="0x000000" size="17" background="0xFFFFFF" italic="false" bold="false">, de acuerdo a un cruce de datos, son más de 6 millones de teléfonos los que están equipados con el sistema operativo de </text>
+      <target>
+       <answer>Google</answer>
+       <optionList>
+        <option>Google</option>
+        <option>Yahoo</option>
+        <option>Opera</option>
+       </optionList>
+       <text>Google</text>
+      </target>
+      <text family="Arial" foreground="0x000000" size="17" background="0xFFFFFF" italic="false" bold="false"> y que podrían resultar infectados. Según la consultora Carrier, hay 10 millones de smartphones en el país, y de acuerdo a los datos de iCrossing, el 63% de los </text>
+      <cell width="42" height="38" image="telefonos.jpg" />
+      <target>
+       <answer>telefonos</answer>
+       <answer>teléfonos</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>teléfonos</text>
+      </target>
+      <text family="Arial" foreground="0x000000" size="17" background="0xFFFFFF" italic="false" bold="false"> inteligentes argentinos tienen el sistema operativo </text>
+      <cell width="49" height="40" image="images.jpg" />
+      <target>
+       <answer>Android</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>Android</text>
+      </target>
+      <text family="Arial" foreground="0x000000" size="17" background="0xFFFFFF" italic="false" bold="false">. </text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.Order" name="ordenapas" code="" type="orderParagraphs">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Clasifica los tipos de memoria por su evolución</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Genial</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="3" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x99CCFF" dest="0x00CCCC" angle="50" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x0033CC" dest="0xCCCCFF" angle="70" />
+     <size width="624" height="490" />
+    </window>
+    <skin file="@default.xml" />
+   </settings>
+   <checkButton></checkButton>
+   <document>
+    <style name="default" family="Arial" size="14" background="0xFFFFFF" italic="false" tabWidth="12" bold="false" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" Alignment="0" size="14" background="0xFFFFFF" italic="false" bold="false">
+      <text family="Arial" size="20" background="0x0099CC" italic="false" bold="true">                         Clasificación de las memorias RAM                 </text>
+     </p>
+     <p family="Arial" size="14" background="0xFFFFFF" italic="false" bold="false" />
+     <p family="Arial" size="14" background="0xFFFFFF" italic="false" bold="false" />
+     <p family="Arial" Alignment="0" size="14" background="0xFFFFFF" italic="false" bold="false">
+      <target>FPM-RAM (Fast Page Mode RAM): Inspirado en técnicas como el "Burst Mode"  se implantó un modo direccionamiento en el que el controlador de memoria envía una sola dirección y recibe a cambio esa y varias consecutivas sin necesidad de generar todas las direcciones. Esto supone un ahorro de tiempos ya que ciertas operaciones son repetitivas cuando se desea acceder a muchas posiciones consecutivas.  Se fabricaban con tiempos de acceso de 70 ó 60 ns.</target>
+     </p>
+     <p family="Arial" Alignment="0" size="14" background="0xFFFFFF" italic="false" bold="false">
+      <target>EDO-RAM (Extended Data Output RAM); Con tiempos de accesos menores a la anterior suponía una mejora sobre su antecesora  La EDO, también es capaz de enviar direcciones contiguas pero direcciona la columna que va utilizar mientras que se lee la información de la columna anterior, dando como resultado una eliminación de estados de espera, manteniendo activo el búffer de salida hasta que comienza el próximo ciclo de lectura.</target>
+     </p>
+     <p family="Arial" Alignment="0" size="14" background="0xFFFFFF" italic="false" bold="false">
+      <target>BEDO-RAM (Burst Extended Data Output RAM):  Fue la evolución de la anterior y ompetidora de la SDRAM. Era un tipo de memoria que usaba generadores internos de direcciones y accedía a más de una posición de memoria en cada ciclo de reloj, de manera que lograba un desempeño un 50% mejor que la anterior. Nunca salió al mercado, dado que Intel y otros fabricantes se decidieron por esquemas de memoria sincrónicos que si bien tenían mucho del direccionamiento MOSTEK, agregan funcionalidades distintas como señales de reloj.</target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="7.jpg" file="7.jpg" />
+  <media name="acrob.jpg" file="acrob.jpg" />
+  <media name="hardware-resized.jpg" file="hardware-resized.jpg" />
+  <media name="hardware1-resized.jpg" file="hardware1-resized.jpg" />
+  <media name="images.jpg" file="images.jpg" />
+  <media name="impresoras.jpg" file="impresoras.jpg" />
+  <media name="MEMORIA.jpg" file="MEMORIA.jpg" />
+  <media name="MIC.jpg" file="MIC.jpg" />
+  <media name="mouse.jpg" file="mouse.jpg" />
+  <media name="ofi.jpg" file="ofi.jpg" />
+  <media name="PC.jpg" file="PC.jpg" />
+  <media name="Popula.jpg" file="Popula.jpg" />
+  <media name="telefonos.jpg" file="telefonos.jpg" />
+  <media name="ubun.jpg" file="ubun.jpg" />
+  <media name="virus-informatico.jpg" file="virus-informatico.jpg" />
+  <media name="WEBCAM.jpg" file="WEBCAM.jpg" />
+  <media name="jkp02110.mp3" file="jkp02110.mp3" />
+  <media name="monitor.png" file="monitor.png" />
+  <media name="parlantes.png" file="parlantes.png" />
+  <media name="teclado.png" file="teclado.png" />
+ </mediaBag>
+</JClicProject>
+

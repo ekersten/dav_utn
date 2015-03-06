@@ -1,0 +1,8 @@
+.
+calculos
+circuitos
+dinamica
+electromag
+estadistica
+optica
+vectores

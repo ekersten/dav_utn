@@ -1,0 +1,39 @@
+<applet name="vacio" width=999 height=500
+        code="descinst.Descartes.class"
+        codebase="./"
+        archive="descinst.jar,http://recursostic.educacion.es/descartes/web/plugin/descinst.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="999x500">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="vacio">
+   <param name="Versi&oacute;n" value="4.41, 2010-12-16">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=s&iacute; limpiar=s&iacute;">
+   <param name="E_00" value="tipo='R2' despl_imagen='arr-izq' fondo='96d5ff' red='grisClaro' red10='gris' ejes='gris' texto='rosa' n&uacute;meros='s&iacute;'">
+   <param name="C_00" value="id='escala' tipo='num&eacute;rico' regi&oacute;n='norte' nombre='zoom' valor='5' incr='1' min='1' max='1000000' decimales='4*(escala&lt;10)' fijo='s&iacute;' visible='no' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_01" value="id='Ox' tipo='num&eacute;rico' valor='-350' incr='20' fijo='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_02" value="id='Oy' tipo='num&eacute;rico' valor='100' incr='20' fijo='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_03" value="id='v' tipo='num&eacute;rico' nombre='v' valor='7' incr='0.25' min='0' max='100' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_04" value="id='a' tipo='num&eacute;rico' nombre='a' valor='60' incr='5' min='0' max='90' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_05" value="id='m' tipo='num&eacute;rico' nombre='t' valor='0.40' min='0' max='55' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_00" value="id='pi' constante='s&iacute;' expresi&oacute;n='3.1416' evaluar='siempre'">
+   <param name="A_01" value="id='g' constante='s&iacute;' expresi&oacute;n='9.81' evaluar='siempre'">
+   <param name="A_02" value="id='ar' expresi&oacute;n='pi*a/180'">
+   <param name="A_03" value="id='vx' expresi&oacute;n='v*cos(ar)'">
+   <param name="A_04" value="id='vy' expresi&oacute;n='v*sen(ar)-g*t'">
+   <param name="A_05" value="id='vx(x)' expresi&oacute;n='v*cos(ar)'">
+   <param name="A_06" value="id='vy(x)' expresi&oacute;n='v*sen(ar)-g*m'">
+   <param name="A_07" value="id='ex(x)' expresi&oacute;n='v*cos(ar)*t'">
+   <param name="A_08" value="id='ey(x)' expresi&oacute;n='v*sen(ar)*t-(g*t*t)/2'">
+   <param name="A_09" value="id='tray(x)' expresi&oacute;n='x*tan(ar)-(g/(2*(v*cos(ar))^2))*x^2'">
+   <param name="A_10" value="id='ax(x)' expresi&oacute;n='v*cos(ar)*m'">
+   <param name="A_11" value="id='ay(x)' expresi&oacute;n='v*sen(ar)*m-(g*m*m)/2'">
+   <param name="G_00" value="tipo='imagen' expresi&oacute;n='(-20,0)' archivo='ca&ntilde;on2.jpg'">
+   <param name="G_01" value="tipo='punto' color='728072' expresi&oacute;n='[v*cos(ar)*m,tray(v*cos(ar)*m)]' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='8'">
+   <param name="G_02" value="tipo='curva' expresi&oacute;n='[ex(t),ey(t)]' par&aacute;metro='s' visible='s&iacute;'">
+   <param name="G_03" value="tipo='texto' color='negro' expresi&oacute;n='[175,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;}\f1\fs40\b TIRO OBLICUO}' fuente='Courier New Bold,BOLD,20' fijo='s&iacute;'">
+<font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+</applet>

@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="Proyecto_Integrador_Final" version="0.1.3">
+ <settings>
+  <title>ProyectoIntegradorFinal</title>
+  <revision description="created" date="3/18/14" />
+  <author name="Fatima Mercedes Maldonado" rol="Docente" />
+  <language>español (es)</language>
+  <description>
+   <p>El objetivo del siguente proyecto es ayudar a comprender el mundo que nos rodea e incentivar a los alumnos con estrategias de pensamientos y acción con la finalidad de intentar mostrar los cambios en la naturaleza,  afectados por la acción del hombre en fenómenos o desastres naturales.</p>
+  </description>
+  <descriptors area="Ciencias Naturales" level="Secundaria Básica">1 año</descriptors>
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item name="Guía de actividades" />
+  <item name="Actividad de identificación" />
+  <item name="Asociacion simple" />
+  <item name="Asociación Compleja" />
+  <item id="start" name="Ordenar palabras" />
+  <item name="Rellenar agujeros con ayuda" />
+ </sequence>
+ <activities>
+  <activity class="@panels.InformationScreen" name="Guía de actividades" code="">
+   <description>
+    <p>El alumno podrá seleccionar la actividad asignada</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x660099" background="0x0066FF" />
+     </style>
+     <p>Elige la actividad solicitada...</p>
+    </cell>
+   </messages>
+   <settings margin="8" useOrder="true" report="false">
+    <container bgColor="0xCC00FF">
+     <gradient source="0x0066FF" dest="0xFFFFFF" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCC00FF" transparent="true" border="true" />
+    <skin file="@simple.xml" />
+   </settings>
+   <cells rows="5" cols="1" cellWidth="278.0" cellHeight="40.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="5" />
+    <cell border="true">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x330099" background="0x0066FF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Asociacion simple" />
+     <p>Asociación Simple</p>
+    </cell>
+    <cell border="true">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x330099" background="0x0066FF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Asociación Compleja" />
+     <p>Asociación Compleja</p>
+    </cell>
+    <cell border="true">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x330099" background="0x0066FF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Actividad de identificación" />
+     <p>Actividad de Identificacíon</p>
+    </cell>
+    <cell border="true">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x330099" background="0x0066FF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Ordenar palabras" />
+     <p>Ordenar Palabras</p>
+    </cell>
+    <cell border="true">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x330099" background="0x0066FF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Rellenar agujeros con ayuda" />
+     <p>Rellenar Agujeros con Ayuda</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="Asociacion simple" code="">
+   <description>
+    <p>Tipos de ecosistema&#xD;</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x330099" background="0x0099CC" />
+     </style>
+     <p>A encontrar el ecosistema!!!!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color foreground="0x330099" background="0x0099CC" />
+     </style>
+     <p>No fue dificil no?</p>
+    </cell>
+   </messages>
+   <settings margin="8" useOrder="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x0099CC">
+     <gradient source="0x0099CC" dest="0xFFFFFF" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCC00FF" transparent="true" border="true" />
+    <skin file="@simple.xml" />
+   </settings>
+   <cells rows="1" cols="3" cellWidth="180.0" cellHeight="200.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell avoidOverlapping="true" image="ecosist terrestre.jpg">
+     <style transparent="true">
+      <font family="Arial Narrow" size="17" italic="true" />
+      <color foreground="0x990066" />
+     </style>
+     <p>¿Que tipo de ecosistema es?</p>
+    </cell>
+    <cell txtAlign="middle,bottom" avoidOverlapping="true" image="ecosistema acuatic.jpg">
+     <style transparent="true">
+      <font family="Arial Narrow" size="17" italic="true" />
+      <color foreground="0x990066" />
+     </style>
+     <p>¿Qué tipo de ecosistema es?</p>
+    </cell>
+    <cell txtAlign="right,bottom" imgAlign="left,middle" avoidOverlapping="true" image="ecosistema mixto.jpg">
+     <style transparent="true">
+      <font family="Arial Narrow" size="17" italic="true" />
+      <color foreground="0x990066" />
+     </style>
+     <p>¿Qué tipo de ecosistema es?</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="3" cellWidth="181.0" cellHeight="61.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell>
+     <p>Ecosistema terrestre</p>
+    </cell>
+    <cell>
+     <p>Ecosistema acuático</p>
+    </cell>
+    <cell>
+     <p>Ecosistema mixto</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="3" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="1" />
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.Identify" name="Actividad de identificación" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x660099" background="0x0066FF" />
+     </style>
+     <p>selecciona aquellos ecosistemas con vegetación abudante</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x660099" background="0x0066FF" />
+     </style>
+     <p>El desierto es el paisaje con menor variedad de especies vegetales</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0033CC">
+     <gradient source="0x0099CC" dest="0xFFFFFF" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCC00FF" transparent="true" border="true" />
+    <skin file="@simple.xml" />
+   </settings>
+   <cells rows="2" cols="2" cellWidth="207.0" cellHeight="140.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="12" bold="true" />
+     <color foreground="0xFFFFFF" background="0x000000" alternative="0xFF0000" border="0x99CCFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell id="1" image="bosque.jpg" />
+    <cell id="0" image="desierto.jpg" />
+    <cell id="1" image="pradera.jpg" />
+    <cell id="1" image="selva.jpg" />
+   </cells>
+   <cells rows="2" cols="2" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell image="bosque.jpg">
+     <style>
+      <font family="Arial" size="12" bold="true" />
+      <color foreground="0xFFFFFF" background="0x0033CC" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="BosqueMP3.mp3" />
+     <p> Es un ecosistema donde la vegetación predominante la constituyen los árboles</p>
+    </cell>
+    <cell image="desierto.jpg">
+     <style>
+      <font family="Arial" size="12" bold="true" />
+      <color foreground="0xFF0000" background="0x0033CC" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="vientoencampo.mp3" />
+     <p>El desierto es una zona terrestre árida y con temperaturas extremas donde las lluvias son muy escasas</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="pradera.jpg">
+     <style>
+      <font family="Arial" size="12" bold="true" />
+      <color foreground="0x0033CC" background="0x0033CC" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="PRADERA.mp3" />
+     <p>La pradera es un bioma cuya vegetación predominante consiste en hierbas y matorrales</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="selva.jpg">
+     <style>
+      <font family="Arial" size="9" bold="true" />
+      <color foreground="0x333333" background="0x0033CC" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="selvaMP3.mp3" />
+     <p> Ecosistema con vegetación exuberante, en regiones con abundantes precipitaciones y una extraordinaria biodiversidad.</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Asociación Compleja" code="">
+   <description>
+    <p>Ecosistemas acuáticos y terrestres</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial Narrow" size="20" />
+      <color foreground="0x660099" background="0x3399FF" />
+     </style>
+     <p>¿A qué ecosistema pertenece?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial Narrow" size="20" />
+      <color foreground="0x660099" background="0x3399FF" />
+     </style>
+     <p> ¡¡ Bárbaro tu trabajo!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="www.tareasya.com.mx/index.php/.../965-Tipos-de-ecosistemas.html‎" report="true" reportActions="false">
+    <container bgColor="0x3399FF">
+     <gradient source="0x0099CC" dest="0xFFFFFF" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x990099" transparent="true" border="true" />
+    <skin file="@simple.xml" />
+   </settings>
+   <cells rows="8" cols="1" cellWidth="171.0" cellHeight="44.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="8" />
+    <cell id="0" border="true">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial Narrow" size="20" />
+      <color foreground="0x990066" />
+     </style>
+     <p>Desierto</p>
+    </cell>
+    <cell id="0" border="true">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial Narrow" size="20" />
+      <color foreground="0x990066" />
+     </style>
+     <p>Bosque</p>
+    </cell>
+    <cell id="0" border="true">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial Narrow" size="20" />
+      <color foreground="0x990066" />
+     </style>
+     <p>Sabana</p>
+    </cell>
+    <cell id="0" border="true">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial Narrow" size="20" />
+      <color foreground="0x990066" />
+     </style>
+     <p>Selva</p>
+    </cell>
+    <cell id="1" border="true">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial Narrow" size="20" />
+      <color foreground="0x990066" />
+     </style>
+     <p>Lago</p>
+    </cell>
+    <cell id="1" border="true">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial Narrow" size="20" />
+      <color foreground="0x990066" />
+     </style>
+     <p>Río</p>
+    </cell>
+    <cell id="1" border="true">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial Narrow" size="20" />
+      <color foreground="0x990066" />
+     </style>
+     <p>Mar</p>
+    </cell>
+    <cell id="1" border="true">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial Narrow" size="20" />
+      <color foreground="0x990066" />
+     </style>
+     <p>Humadales</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="1" cellWidth="229.0" cellHeight="30.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell border="true">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial Narrow" size="20" />
+      <color foreground="0x990066" />
+     </style>
+     <p>Ecosistema Terrestre</p>
+    </cell>
+    <cell border="true">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial Narrow" size="20" />
+      <color foreground="0x990066" />
+     </style>
+     <p>Ecosistema Acuático</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.Order" name="Ordenar palabras" code="" type="orderWords">
+   <description>
+    <p>Texto:Desastre natural en Argentina</p>
+   </description>
+   <messages>
+    <cell type="previous">
+     <style />
+    </cell>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x330099" background="0x0066FF" />
+     </style>
+     <p>Ordenar las palabras en el texto</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="right,middle" type="final">
+     <style>
+      <color foreground="0x330099" background="0x0066FF" />
+     </style>
+     <p>Bien concluiste!!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="rivadavia.com.ar/articulos/los-peores-desastres-naturales-de-los-ultimos-años." report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x0066FF">
+     <gradient source="0x0066FF" dest="0xFFFFFF" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCC00FF" transparent="true" border="true" />
+    <skin file="@simple.xml" />
+   </settings>
+   <checkButton></checkButton>
+   <prevScreen />
+   <document>
+    <style name="default" bold="false" italic="false" family="Arial" tabWidth="12" background="0xFFFFFF" size="12" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text bold="false" italic="true" family="Arial" background="0xFFFFFF" size="16"> (... )En </text>
+      <target>Argentina</target>
+      <text bold="false" italic="true" family="Arial" background="0xFFFFFF" size="16"> ya hemos experimentado varios desastres </text>
+      <target>naturales.</target>
+      <text bold="false" italic="true" family="Arial" background="0xFFFFFF" size="16"> A través de los años, la cantidad y la intensidad de estos va en </text>
+      <target>aumento</target>
+      <text bold="false" italic="true" family="Arial" background="0xFFFFFF" size="16"> (muy posiblemente debido al cambio </text>
+      <target>climático).</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text bold="false" italic="true" family="Arial" background="0xFFFFFF" size="16">Algunos de estos son causados por el </text>
+      <target>clima,</target>
+      <text bold="false" italic="true" family="Arial" background="0xFFFFFF" size="16"> como las </text>
+      <target>sequías</target>
+      <text bold="false" italic="true" family="Arial" background="0xFFFFFF" size="16"> y las </text>
+      <target>inundaciones,</target>
+      <text bold="false" italic="true" family="Arial" background="0xFFFFFF" size="16"> y otros son causados por el ser </text>
+      <target>humano,</target>
+      <text bold="false" italic="true" family="Arial" background="0xFFFFFF" size="16"> como los aludes debidos a la excesiva deforestación.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text bold="false" italic="true" family="Arial" background="0xFFFFFF" size="16">Han habido varios eventos de este tipo en años pasados con consecuencias lamentables en cuanto a víctimas y pérdidas </text>
+      <target>económicas,</target>
+      <text bold="false" italic="true" family="Arial" background="0xFFFFFF" size="16"> siendo quizás el más importante el terremoto de Caucete ocurrido en la localidad del mismo nombre en la </text>
+      <target>Provincia</target>
+      <text bold="false" italic="true" family="Arial" background="0xFFFFFF" size="16"> de San Juan en 1977.(...)</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="Rellenar agujeros con ayuda" code="">
+   <description>
+    <p>Desastres Naturales</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="16" bold="true" />
+      <color foreground="0x330099" background="0x0066FF" />
+     </style>
+     <p>Encontrar el término correcto...tené en cuenat  la ayuda</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="16" />
+      <color foreground="0x330099" background="0x0066FF" />
+     </style>
+     <p>Buen trabajo!!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="es.wikipedia.org/wiki/Desastre_natural‎" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF6666">
+     <gradient source="0x0066FF" dest="0xFFFFFF" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCC00FF" transparent="true" border="true">
+     <size width="600" height="400" />
+    </window>
+    <skin file="@simple.xml" />
+   </settings>
+   <document>
+    <style name="default" bold="false" italic="false" family="Constantia" tabWidth="12" background="0xFFFFFF" size="14" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p Alignment="1" family="Arial" background="0xFFFFFF">
+      <text bold="true" italic="true" family="Arial" background="0xFFFFFF">Desastres Naturales</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Los fenómenos naturales, como la </text>
+      <target>
+       <answer>lluvia</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <info>
+        <cell width="100" height="49">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <font family="Arial" size="8" />
+          <color background="0xCCFFFF" />
+         </style>
+         <p>  fenómeno climatico que se inicia con la condensación del vapor de agua contenido en las nubes</p>
+        </cell>
+       </info>
+       <text>lluvia</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">, </text>
+      <target>
+       <answer>terremotos</answer>
+       <response fill="_" length="10" maxLength="10" />
+       <info>
+        <cell width="100" height="27">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <font family="Arial" size="8" />
+          <color background="0xCCFFFF" />
+         </style>
+         <p>tambien llamado sismo</p>
+        </cell>
+       </info>
+       <text>terremotos</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">, </text>
+      <target>
+       <answer>huracanes</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <info>
+        <cell width="134" height="56">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <font family="Arial" size="8" />
+          <color background="0xCCFFFF" />
+         </style>
+         <p>  sistema de tormentas caracterizado por una circulación cerrada alrededor de un centro de baja presión y que produce fuertes vientos y abundante lluvia.</p>
+        </cell>
+       </info>
+       <text>huracanes</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF"> o el </text>
+      <target>
+       <answer>viento</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <info>
+        <cell width="100" height="40">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <font family="Arial" size="8" />
+          <color background="0xCCFFFF" />
+         </style>
+         <p> movimiento en masa del aire en la atmósfera en movimiento horizontal.</p>
+        </cell>
+       </info>
+       <text>viento</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">, se convierten en desastre cuando superan un límite de normalidad.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Algunos desastres son causados por las actividades humanas, que alteran la normalidad del medio ambiente. Algunos de estos tenemos: la contaminación del medio ambiente, la explotación errónea e irracional de los recursos naturales renovables como los bosques y el suelo y no renovables como los minerales, la construcción de viviendas y edificaciones en zonas de alto riesgo.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Los efectos de un desastre pueden amplificarse debido a una mala planificación de los asentamientos humanos, falta de medidas de seguridad, planes de emergencia y sistemas de alerta provocados por el hombre se torna un poco difusa.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">A fin de la capacidad institucional para reducir el riesgo colectivo de desastres, éstos pueden desencadenar otros eventos que reducirán la posibilidad de sobrevivir a éste debido a carencias en la planificación y en las medidas de seguridad. Un ejemplo clásico son los terremotos, que derrumban edificios y casas, dejando atrapadas a personas entre los escombros y rompiendo tuberías de gas que pueden incendiarse y quemar a los heridos bajo las ruinas.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="bosque.jpg" file="bosque.jpg" />
+  <media name="desierto.jpg" file="desierto.jpg" />
+  <media name="ecosist terrestre.jpg" file="ecosist terrestre.jpg" />
+  <media name="ecosistema acuatic.jpg" file="ecosistema acuatic.jpg" />
+  <media name="ecosistema mixto.jpg" file="ecosistema mixto.jpg" />
+  <media name="pradera.jpg" file="pradera.jpg" />
+  <media name="selva.jpg" file="selva.jpg" />
+  <media name="BosqueMP3.mp3" file="BosqueMP3.mp3" />
+  <media name="PRADERA.mp3" file="PRADERA.mp3" />
+  <media name="selvaMP3.mp3" file="selvaMP3.mp3" />
+  <media name="vientoencampo.mp3" file="vientoencampo.mp3" />
+ </mediaBag>
+</JClicProject>
+

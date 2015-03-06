@@ -1,0 +1,61 @@
+<table width="100%" border="3" cellspacing="1" cellpadding="2">
+  <tr>
+    <td align="center" valign="middle"><a href="tabiques.htm">Tabiques</a></td>
+    <td align="center" valign="middle"><a href="MURO 20.HTM">Muros</a></td>
+  </tr>
+</table>
+
+<applet name="vacio" width=900 height=400
+        code="descinst.Descartes.class"
+        codebase="./"
+        archive="descinst.jar,http://recursostic.educacion.es/descartes/web/plugin/descinst.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="900x400">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="vacio">
+   <param name="Versi&oacute;n" value="4.41, 2010-12-16">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=s&iacute; limpiar=no">
+   <param name="E_00" value="tipo='R3' id='E2' x='0' y='0' ancho='50%' alto='100%' O.x='-100' O.y='50' despl_imagen='arr-izq' fondo='negro' despliegue='pintor' R3='s&iacute;'">
+   <param name="E_01" value="tipo='R2' id='E1' x='300' y='0' ancho='100%' despl_imagen='arr-izq' fondo='grisClaro' red='no' red10='no' ejes='no' texto='rosa'">
+   <param name="C_00" value="id='escala' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E2' nombre='zoom' valor='48' incr='0.1*escala' min='0.000001' max='1000000' decimales='(escala&lt;0.01)+(escala&lt;0.1)+(escala&lt;1)+(escala&lt;10)+(escala&lt;100)+(escala&lt;1000)+(escala&lt;10000)+(escala&lt;100000)' fijo='s&iacute;' visible='no' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_01" value="id='Ox' tipo='num&eacute;rico' regi&oacute;n='exterior' fijo='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_02" value="id='Oy' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E2' fijo='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_03" value="id='l' tipo='num&eacute;rico' espacio='E2' nombre='Longitud del muro' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_04" value="id='h' tipo='num&eacute;rico' espacio='E2' nombre='Altura del muro' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_00" value="id='pi' constante='s&iacute;' expresi&oacute;n='3.1416' evaluar='una-sola-vez'">
+   <param name="A_01" value="id='a' constante='s&iacute;' expresi&oacute;n='0.15' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='s' expresi&oacute;n='l*h'">
+   <param name="A_03" value="id='h' expresi&oacute;n='0'">
+   <param name="A_04" value="id='volumen' expresi&oacute;n='l*0.4*0.8'">
+   <param name="G_00" value="espacio='E1' tipo='texto' expresi&oacute;n='[20,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}\f1\fs34\b LADRILLO HUECO\fs24\b0\par \f3\fs24}' fuente='Times New Roman Bold,BOLD,17' fijo='s&iacute;'">
+   <param name="G_01" value="espacio='E1' tipo='texto' color='magenta' expresi&oacute;n='[10,50]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}\f1\fs30\b Superficie del muro\f2\fs40\b0\i\par {\*\mjaformula{\expr [s]\decimals 2\fixed1}}\f3\fs36\i0  m2}' fuente='Courier New Bold,BOLD,15' fijo='s&iacute;'">
+   <param name="G_02" value="espacio='E1' tipo='texto' color='magenta' expresi&oacute;n='[10,85]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}\f1\fs30\b Vol\u250 men del cimiento\f2\fs40\b0\i\par {\*\mjaformula{\expr 0.25*0.8*l\decimals 2\fixed1}}\f3\fs36\i0  m3}' fuente='Courier New Bold,BOLD,15' fijo='s&iacute;'">
+   <param name="G_03" value="espacio='E1' tipo='texto' expresi&oacute;n='[20,125]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs36\b MURO\b0}' fuente='Courier New Negrita,BOLD,18' fijo='s&iacute;'">
+   <param name="G_04" value="espacio='E1' tipo='texto' expresi&oacute;n='[20,150]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;\f3\fcharset0 Times New Roman;}\f1\fs24\b C\b0 emento= \f3\fs28\i{\*\mjaformula{\expr s*8\decimals 2\fixed1}}\f2\fs24\i0  kg\par \b C\b0 al=\f3\fs28\i{\*\mjaformula{\expr s*7.8\decimals 2\fixed1}}\f2\fs24\i0  kg\par \b A\b0 rena=\f3\fs28\i{\*\mjaformula{\expr s*0.037\decimals 2\fixed1}}\f2\fs24\i0  m3\par \b L\b0 adrillo=\f3\fs28\i{\*\mjaformula{\expr s*33\decimals 2\fixed1}}\f2\fs24\i0  u}' fuente='Courier New Bold,BOLD,12' fijo='s&iacute;'">
+   <param name="G_05" value="espacio='E1' tipo='texto' expresi&oacute;n='[20,250]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs36\b CIMIENTO\b0}' fuente='Courier New Negrita,BOLD,18' fijo='s&iacute;'">
+   <param name="G_06" value="espacio='E1' tipo='texto' expresi&oacute;n='[20,275]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;\f3\fcharset0 Times New Roman;}\f1\fs24\b C\b0 emento= \f3\fs28\i{\*\mjaformula{\expr volumen*38.4\decimals 2\fixed1}}\f2\fs24\i0  kg}' fuente='Courier New Negrita,BOLD,12' fijo='s&iacute;'">
+   <param name="G_07" value="espacio='E1' tipo='texto' expresi&oacute;n='[20,300]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;\f3\fcharset0 Times New Roman;}\f1\fs24\b C\b0 al= \f3\fs28\i{\*\mjaformula{\expr volumen*81\decimals 2\fixed1}}\f2\fs24\i0  kg}' fuente='Courier New Negrita,BOLD,12' fijo='s&iacute;'">
+   <param name="G_08" value="espacio='E1' tipo='texto' expresi&oacute;n='[20,325]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;\f3\fcharset0 Times New Roman;}\f1\fs24\b A\b0 rena= \f3\fs28\i{\*\mjaformula{\expr volumen*0.515\decimals 2\fixed1}}\f2\fs24\i0  m3}' fuente='Courier New Negrita,BOLD,12' fijo='s&iacute;'">
+   <param name="G_09" value="espacio='E1' tipo='texto' expresi&oacute;n='[20,350]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;\f3\fcharset0 Times New Roman;}\f1\fs24\b C\b0 ascote= \f3\fs28\i{\*\mjaformula{\expr volumen*0.770\decimals 2\fixed1}}\f2\fs24\i0  m3}' fuente='Courier New Negrita,BOLD,12' fijo='s&iacute;'">
+   <param name="G_10" value="espacio='E1' tipo='texto' expresi&oacute;n='[220,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}\f1\fs34\b LADRILLO COMUN\fs24\b0\par \f3\fs24}' fuente='Times New Roman Bold,BOLD,17' fijo='s&iacute;'">
+   <param name="G_11" value="espacio='E1' tipo='texto' expresi&oacute;n='[220,150]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;\f3\fcharset0 Times New Roman;}\f1\fs24\b C\b0 emento= \f3\fs28\i{\*\mjaformula{\expr s*6.9\decimals 2\fixed1}}\f2\fs24\i0  kg\par \b C\b0 al=\f3\fs28\i{\*\mjaformula{\expr s*13.2\decimals 2\fixed1}}\f2\fs24\i0  kg\par \b A\b0 rena=\f3\fs28\i{\*\mjaformula{\expr s*0.065\decimals 2\fixed1}}\f2\fs24\i0  m3\par \b L\b0 adrillo=\f3\fs28\i{\*\mjaformula{\expr s*90\decimals 2\fixed1}}\f2\fs24\i0  u}' fuente='Courier New Bold,BOLD,12' fijo='s&iacute;'">
+   <param name="G_12" value="espacio='E1' tipo='texto' expresi&oacute;n='[420,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}\f1\fs34\b BLOQUE DE \par HORMIGON\fs24\b0\par \f3\fs24}' fuente='Times New Roman Bold,BOLD,17' fijo='s&iacute;'">
+   <param name="G_13" value="espacio='E1' tipo='texto' expresi&oacute;n='[420,150]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;\f3\fcharset0 Times New Roman;}\f1\fs24\b C\b0 emento= \f3\fs28\i{\*\mjaformula{\expr s*3.3\decimals 2\fixed1}}\f2\fs24\i0  kg\par \b C\b0 al=\f3\fs28\i{\*\mjaformula{\expr s*1.5\decimals 2\fixed1}}\f2\fs24\i0  kg\par \b A\b0 rena=\f3\fs28\i{\*\mjaformula{\expr s*0.015\decimals 2\fixed1}}\f2\fs24\i0  m3\par \b L\b0 adrillo=\f3\fs28\i{\*\mjaformula{\expr s*12.5\decimals 2\fixed1}}\f2\fs24\i0  u}' fuente='Courier New Bold,BOLD,12' fijo='s&iacute;'">
+   <param name="S_00" value="nombre='abajo' espacio='E2' tipo='superficie' color='gris' color_reverso='gris' expresi&oacute;n='x=2u y=3*v z=0.5' posini='(-.5,0,0)' cortar='s&iacute;' rotfin='(0,0,50)' modelo='metal' Nu='1' Nv='1'">
+   <param name="S_01" value="nombre='arriba' espacio='E2' tipo='superficie' color='rojo' color_reverso='rosa' expresi&oacute;n='x=u y=3*v z=3.10' cortar='s&iacute;' rotfin='(0,0,50)' modelo='metal' Nu='1' Nv='1'">
+   <param name="S_02" value="nombre='frente' espacio='E2' tipo='superficie' color='rojo' color_reverso='rosa' expresi&oacute;n='x=u y=0 z=2.6*v' posini='(0,0,.5)' cortar='s&iacute;' rotfin='(0,0,50)' modelo='metal' Nu='1' Nv='1'">
+   <param name="S_03" value="nombre='frente' espacio='E2' tipo='superficie' color='rojo' color_reverso='rojo' expresi&oacute;n='x=u y=3 z=2.6*v' posini='(0,0,.5)' cortar='s&iacute;' rotfin='(0,0,50)' modelo='metal' Nu='1' Nv='1'">
+   <param name="S_04" value="nombre='atras' espacio='E2' tipo='superficie' color='82ff2e00' color_reverso='41ff1800' expresi&oacute;n='x=o y=3*u z=2.6*v' posini='(0,0,0.5)' cortar='s&iacute;' rotfin='(0,0,50)' modelo='metal' Nu='1' Nv='1'">
+   <param name="S_05" value="nombre='adelante' espacio='E2' tipo='superficie' color='23ff1e00' color_reverso='rosa' expresi&oacute;n='x=1 y=3*u z=2.6*v' posini='(0,0,0.5)' cortar='s&iacute;' rotfin='(0,0,50)' modelo='metal' Nu='1' Nv='1'">
+   <param name="S_06" value="espacio='E2' tipo='texto' color='azul' expresi&oacute;n='[40,30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs50\b MUROS\b0  \b DE O.20\b0}' fuente='Courier New Bold,BOLD,25' fijo='s&iacute;'">
+   <param name="S_07" value="nombre='abajo' espacio='E2' tipo='superficie' color='gris' color_reverso='gris' expresi&oacute;n='x=2u y=3*v z=0.02' posini='(-.5,0,-1.8)' cortar='s&iacute;' rotfin='(0,0,50)' modelo='metal' Nu='1' Nv='1'">
+   <param name="S_08" value="nombre='frente2' espacio='E2' tipo='superficie' color='gris' color_reverso='gris' expresi&oacute;n='x=2u y=-1.5 z=2.3*v' posini='(-.5,1.5,-1.8)' cortar='s&iacute;' rotfin='(0,0,50)' modelo='metal' Nu='1' Nv='1'">
+   <param name="S_09" value="nombre='frente3' espacio='E2' tipo='superficie' color='gris' color_reverso='gris' expresi&oacute;n='x=2u y=-1.5 z=2.3*v' posini='(-.5,4.5,-1.8)' cortar='s&iacute;' rotfin='(0,0,50)' modelo='metal' Nu='1' Nv='1'">
+   <param name="S_10" value="nombre='atras2' espacio='E2' tipo='superficie' color='gris' color_reverso='gris' expresi&oacute;n='x=-.5 y=3*u z=2.3*v' posini='(0,0,-1.8)' cortar='s&iacute;' rotfin='(0,0,50)' modelo='metal' Nu='1' Nv='1'">
+   <param name="S_11" value="nombre='atras3' espacio='E2' tipo='superficie' color='gris' color_reverso='gris' expresi&oacute;n='x=1.5 y=3*u z=2.3*v' posini='(0,0,-1.8)' cortar='s&iacute;' rotfin='(0,0,50)' modelo='metal' Nu='1' Nv='1'">
+<font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+</applet>

@@ -1,0 +1,45 @@
+•	Autor de la Propuesta: Manau Daniel
+
+•	Objetivo Pedagógico: 
+                              Que el alumno logre familiarizarse con los distintos elementos del lenguaje tecnológico (dibujo técnico) como así también con las actividades asociadas al tratamiento de la información tecnológica desde una propuesta de trabajo que introduzca a los chicos (estamos hablando del 1° año de la escuela secundaria técnica) en el mundo de la investigación y la gestión de la información estimulando el uso de la Netbook como herramienta de trabajo.
+
+•	Capacidades a Adquirir:
+?	Comprender las diferencias entre el boceto, el croquis y el plano.
+?	Reconocer según sus características los distintos elementos de dibujo.
+?	Conocimiento de los distintos lenguajes utilizados en tecnología.
+?	Selección de datos relevantes para la realización de una representación gráfica.
+?	Representación de las realizaciones técnicas por medio de bocetos, croquis y planos.
+?	Utilización de la Netbook como herramienta de trabajo, a partir del conocimiento de su entorno y uso.
+
+•	Contenidos a trabajar:
+?	El lenguaje tecnológico: definición, significado, utilidades. 
+?	El dibujo técnico: uso de los elementos y tipos de trazos.
+?	Elementos: tablero, regla T, escuadras de 30°-45°-60°, triple decímetro, cuaderno para croquis A4 y cuadernillo para croquis A3, uso de la goma, el compás, el transportador, papel romaní.
+?	Formatos: tipos de formatos A4 – A3, medidas normalizadas, el rotulo.
+?	Formas de líneas: continua, discontinua, auxiliares, de trazos y cotas.
+?	Uso de la PC: concepto de software, uso del procesador de texto, planilla de cálculo. Aplicaciones de la informática y las comunicaciones.
+
+•	Descripción de la Práctica y Actividades: 
+                                                         Como actividad de iniciación para dar comienzo a la clase les diré a los alumnos que se imaginen un objeto, puede ser cualquier objeto, algo que ya existe o algo que ellos conciban en ese momento, y luego les preguntaré: primero ¿Qué objeto se imaginaron? y segundo: ¿Cómo era ese objeto en cuestión?
+Entonces cuando ellos terminen de describir los objetos que imaginaron y surjan todos los aspectos que los caracterizan, en ese preciso momento les comento que el diseño de un nuevo producto, o de un producto mejorado, surge así, de un deseo o de una necesidad. Que se parte de una idea acerca de su forma, de un color, de un tamaño, de su calidad y de todas las demás características que lo han de identificar en el mercado a los fines de su utilización.
+Luego diré que para poder llevar a cabo nuestro diseño y que el objeto se materialice debemos primero hacer un bosquejo de lo que queremos y que este paso nos llevará a otra etapa del diseño que realizar un croquis donde ya incluiremos sus medidas, lo que nos dará una idea de las dimensiones físicas y que esto culminara en la realización de un plano final que contenga todas las características del producto deseado como son: materiales, medidas, terminaciones, etc. 
+Entonces diré que el Lenguaje Tecnológico es la herramienta que permite que todo esto sea posible, que es un lenguaje escrito por medio de  líneas, formas, dibujos y especificaciones, etc. Que utilizados según ciertas normas sirve de comunicación entre los diseñadores y los fabricantes de un producto determinado.
+
+Desarrollo de la clase: Definiré en primera instancia al Lenguaje Tecnológico como a la actividad de crear, nombraré los distintos tipos de lenguajes dando espacios y situaciones que lleven o guíen al alumno a cuestionar acerca de las diferencias conceptuales de los distintos procesos. Una vez fijado y puesto en claro estos conceptos proseguiré proponiendo la primera actividad interactiva (JClic) en sus computadoras, crearé un espacio para las preguntas y para volver sobre los alumnos que a mi entender observen dudas. Terminado esto el curso estará en condiciones de alcanzar el concepto del Lenguaje Tecnológico.
+
+Luego de dejar unos minutos en que los alumnos disipen dudas y valiéndome de otra de las actividades interactivas creadas (JClic), veremos los distintos elementos utilizados en dibujo técnico.
+
+Culminación de la clase: Haré que el curso se divida en grupos de no más de cuatro personas y según su voluntad, entonces utilizando Jclic hagan varios ejercicios a modo reconocimiento en donde los alumnos tendrán que realizar distintas actividades utilizando las capacidades recientemente adquiridas en donde aplicarán todos los conceptos recién vertidos. Crearé un espacio de diálogo y recorreré los grupos observando su forma de trabajar y contestando preguntas que surjan.
+
+•	Fundamentación: Utilizo la actividad interactiva en todas mis planificaciones porque estimula a la búsqueda de información y a la ejercitación de la reflexión constante, también porque da funcionalidad a los contenidos y las actividades para acrecentar el conocimiento. Incorpora actividades individuales y grupales como así también dinámicas propias que surgen de la incorporación de las TICs ejercitando el pensamiento lógico–científico. Todas ellas relacionadas con las siguientes prácticas de enseñanza–aprendizaje:
+?	De significación.
+?	De asimilación, comprensión y procesamiento de información.
+?	De investigación documental.
+?	De modelización.
+?	De observación del contexto.
+?	De interacción.
+?	De prospección, de reflexión sobre el contexto, de inventiva.
+?	De articulación teoría práctica, de aplicación y acercamiento.
+
+
+

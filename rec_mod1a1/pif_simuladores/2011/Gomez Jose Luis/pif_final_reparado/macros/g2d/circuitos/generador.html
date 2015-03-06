@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>generador</title></head>
+<body BGCOLOR="#eeeeee">
+<p align="center">
+<FONT size=+2>Macro: generador (de señales)</FONT><br>tipo 2D
+</p>
+<p align="center">
+<applet name="generador"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=480 height=360>
+   <param name="nombre" value="generador">
+   <param name="Versi&oacute;n" value="3.5">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="despl_imagen='arr-izq' fondo='blanco' red='grisClaro' red10='no' ejes='no' texto='no'">
+   <param name="A_00" value="id='radio' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_01" value="id='V' expresi&oacute;n='220' evaluar='una-sola-vez' constante='si'">
+   <param name="A_02" value="id='Vmax' expresi&oacute;n='V*ra&iacute;z(2)'">
+   <param name="A_03" value="id='fr' expresi&oacute;n='60' evaluar='una-sola-vez' constante='si'">
+   <param name="A_04" value="id='fase' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_05" value="id='x1' expresi&oacute;n='-1.5' evaluar='una-sola-vez' constante='si'">
+   <param name="A_06" value="id='y1' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_07" value="id='x2' expresi&oacute;n='1.5' evaluar='una-sola-vez' constante='si'">
+   <param name="A_08" value="id='y2' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_09" value="id='INIT' evaluar='una-sola-vez' algoritmo='si'">
+   <param name="A_10" value="inicio='x=(x1+x2)/2;y=(y1+y2)/2;dx=x2-x1;dy=y2-y1' hacer='L=sqrt((x2-x1)^2+(y2-y1)^2);R=radio;' id='CALC' evaluar='siempre' algoritmo='si'">
+   <param name="A_11" value="id='rojo' expresi&oacute;n='1.0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_12" value="id='verde' expresi&oacute;n='1.0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_13" value="id='azul' expresi&oacute;n='1.0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_14" value="id='v(t)' expresi&oacute;n='Vmax*sen(2*pi*fr*t-fase)'">
+   <param name="G_00" value="tipo='segmento' color='negro' expresi&oacute;n='(x1,y1)(x2,y2)' tama&ntilde;o='3'">
+   <param name="G_01" value="tipo='arco' color='negro' centro='(x,y)' radio='R' fin='360' relleno='(rojo,verde,azul,0.0)'">
+   <param name="G_02" value="tipo='punto' dibujar-si='vernum>0' color='negro' expresi&oacute;n='(x-R/2+R/10,y-7*R/12)' tama&ntilde;o='0'">
+   <param name="G_03" value="tipo='curva' color='negro' expresi&oacute;n='(x-R/2+R*t,y+R*sen(2*pi*t)/3)' t.pasos='16' visible='no'">
+</applet>
+</p>
+<p align="center">
+Esta escena se usa para generar el macro.
+</p>
+<p align="center">
+<applet name="mi_generador"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=480 height=360>
+   <param name="nombre" value="mi_generador">
+   <param name="Versi&oacute;n" value="3.5">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="id='E1' O.x='80' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_01" value="id='E2' escala='0.1' O.x='-75' x='5%' y='5%' ancho='50%' alto='50%' despl_imagen='arr-izq' fondo='negro' red='no' red10='no' ejes='grisClaro' texto='no'">
+   <param name="C_00" value="tipo='num&eacute;rico' id='V' espacio='E1' valor='220' decimales='0' nombre='V (eficaz)' incr='10' min='0' visible='si' pos_mensajes='centro'">
+   <param name="C_01" value="tipo='num&eacute;rico' id='fr' espacio='E1' valor='60' decimales='0' nombre='fr' incr='1' min='10' visible='si' pos_mensajes='centro'">
+   <param name="C_02" value="tipo='num&eacute;rico' id='fase' espacio='E1' decimales='0' nombre='fase' incr='5' min='-180' max='180' visible='si' opciones='no,si' pos_mensajes='centro'">
+   <param name="C_03" value="tipo='gr&aacute;fico' id='C1' espacio='E1' color='azul' color-int='rojo' expresi&oacute;n='(0,1.2)'">
+   <param name="C_04" value="tipo='gr&aacute;fico' id='C2' espacio='E1' color='azul' color-int='rojo' expresi&oacute;n='(0,-1.2)'">
+   <param name="C_05" value="tipo='num&eacute;rico' id='g1.radio' espacio='E1' valor='0.8' nombre='radio' min='0.5' max='1.5' visible='si' pos_mensajes='centro'">
+   <param name="A_00" value="inicio='g1.rojo=1.0;g1.verde=1.0;g1.azul=0.5' id='INICIO' evaluar='una-sola-vez' algoritmo='si'">
+   <param name="A_01" value="inicio='g1.V=V;g1.fr=fr;g1.fase=fase*pi/180' hacer='g1.x1=C1.x;g1.y1=C1.y;g1.x2=C2.x;g1.y2=C2.y;;;' id='CALCULOS' evaluar='siempre' algoritmo='si'">
+   <param name="G_00" value="espacio='E1' tipo='macro' expresi&oacute;n='circuitos/generador' nombre='g1'">
+   <param name="G_01" value="espacio='E2' tipo='ecuaci&oacute;n' color='amarillo' expresi&oacute;n='y=g1.v(x/10000)' visible='no'">
+   <param name="G_02" value="espacio='E2' tipo='punto' color='blanco' expresi&oacute;n='(1000,0)' texto='t=1/10 seg' tama&ntilde;o='3'">
+   <param name="G_03" value="espacio='E2' tipo='punto' color='blanco' expresi&oacute;n='(0,g1.Vmax)' texto='Vmax=[g1.Vmax] voltios' tama&ntilde;o='3'">
+</applet>
+</p>
+<p align="center">
+Esta escena es una aplicación del macro que muestra sus parámetros.
+</p>
+<hr>
+
+<p><font size="2" face="Arial"><strong><cite><dfn><samp><tt>Autor: José Luis Abreu León</tt></samp></dfn></cite></strong></font></p>
+
+</body>
+</html>

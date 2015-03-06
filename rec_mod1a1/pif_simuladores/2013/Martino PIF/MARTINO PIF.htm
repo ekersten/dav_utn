@@ -1,0 +1,72 @@
+<applet name="asoresis2" width=600 height=340
+        code="descinst.Descartes.class"
+        codebase="./"
+        archive="descinst.jar,http://recursostic.educacion.es/descartes/web/plugin/descinst.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="600x340">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="no">
+   <param name="nombre" value="asoresis2">
+   <param name="Versi&oacute;n" value="4.41, 2010-12-16">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=s&iacute; inicio=no limpiar=no">
+   <param name="E_00" value="tipo='R2' fijo='s&iacute;' despl_imagen='arr-izq' fondo='cfea93' red='no' red10='no' ejes='no' texto='no' eje-x='no' eje-y='no'">
+   <param name="C_00" value="id='A1' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='norte' nombre='A1' fijo='s&iacute;' visible='s&iacute;' acci&oacute;n='mensaje' par&aacute;metro='Cierra el circuito y da valores diferentes a las resistencias, anotando en cada caso lo que marcan los tres amper&iacute;metros. &iquest;Qu&eacute; relaci&oacute;n observas entre sus valores? &iquest;Qu&eacute; relaci&oacute;n existe entre la intensidad que circula por cada resistencia y el valor de la misma? ' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip='El reparto de la intensidad de corriente' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n='El reparto de la intensidad de corriente' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_01" value="id='A2' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='norte' nombre='A2' fijo='s&iacute;' visible='s&iacute;' acci&oacute;n='mensaje' par&aacute;metro='Conecta el volt&iacute;metro. Prueba a dar diversos valores a cualquiera de las dos resistencias. &iquest;Qu&eacute; marca siempre el volt&iacute;metro? &iquest;Qu&eacute; conclusi&oacute;n general puedes extraer?' tooltip='El valor de la diferencia de potencial' Explicaci&oacute;n='El valor de la diferencia de potencial' pos_mensajes='centro'">
+   <param name="C_02" value="id='A3' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='norte' nombre='A3' fijo='s&iacute;' visible='s&iacute;' acci&oacute;n='mensaje' par&aacute;metro='Para hallar la resitencia equivalente de la asociaci&oacute;nR1//R2, divide la ddp de la lectura del volt&iacute;metro adecuado, entre la intensidad total para un valor dado de R1 y R2. Para ver la relaci&oacute;n con los valores de R1 y R2 invierte los valores de la resistencia que has calculado, as&iacute; como los de R1 y R2. &iquest;Qu&eacute; observas? ' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip='La resistencia equivalente' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n='La resistencia equivalente' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_03" value="id='volti' tipo='num&eacute;rico' interfaz='men&uacute;' regi&oacute;n='interior' nombre='Volt&iacute;metro' expresi&oacute;n='(0,10,180,18)' fijo='s&iacute;' visible='no' opciones='Desconectado,Conectado' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_04" value="id='r1' tipo='num&eacute;rico' nombre='R1' valor='10' incr='1' min='5' max='20' decimales='0' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_05" value="id='r2' tipo='num&eacute;rico' nombre='R2' valor='10' incr='1' min='5' max='20' decimales='0' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_06" value="id='enc' tipo='num&eacute;rico' interfaz='men&uacute;' regi&oacute;n='interior' nombre='Interruptor' expresi&oacute;n='(28,270,180,18)' fijo='s&iacute;' visible='no' opciones='Abierto,Cerrado' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_07" value="id='r3' tipo='num&eacute;rico' nombre='R3' valor='10' incr='1' min='5' max='20' decimales='0' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_08" value="id='A4' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='norte' nombre='A4' fijo='s&iacute;' visible='s&iacute;' acci&oacute;n='mensaje' par&aacute;metro='Observando la resistencia que se encuentra sola, &iquest;qu&eacute; relaci&oacute;n con el grupo R1//R2 podr&iacute;as identificar cambiando su valor?' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip='La resistencia equivalente' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n='La resistencia equivalente' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_09" value="id='A5' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='norte' nombre='A5' fijo='s&iacute;' visible='s&iacute;' acci&oacute;n='mensaje' par&aacute;metro='&iquest;C&oacute;mo relacionas las lecturas de los volt&iacute;metros Vparalelo y VR3?' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip='La resistencia equivalente' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n='La resistencia equivalente' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_00" value="id='RT' expresi&oacute;n='[r1*r2/(r1+r2)]+r3'">
+   <param name="A_01" value="id='I' expresi&oacute;n='(enc=0)?0:12/RT'">
+   <param name="A_02" value="id='a1pila' algoritmo='s&iacute;' evaluar='siempre' inicio='pila.ancho=0.2' hacer='pila.x1=-3;pila.x2=-1;pila.y1=2;pila.y2=2;'">
+   <param name="A_03" value="id='alinte' algoritmo='s&iacute;' evaluar='siempre' inicio='inte.abierto=(enc=0)?1:0' hacer='inte.x1=-1;inte.x2=0;inte.y1=2;inte.y2=2'">
+   <param name="A_04" value="id='almed1' algoritmo='s&iacute;' evaluar='siempre' inicio='med1.radio=0.25' hacer='med1.vernum=0;med1.x1=0;med1.x2=3;med1.y1=2;med1.y2=2'">
+   <param name="A_05" value="id='albom1' algoritmo='s&iacute;' evaluar='siempre' inicio='bom1.ancho=0.1' hacer='bom1.x1= -2;bom1.x2= 0;bom1.y1= 0;bom1.y2= 0'">
+   <param name="A_06" value="id='albom2' algoritmo='s&iacute;' evaluar='siempre' inicio='bom2.ancho=0.1' hacer='bom2.x1= -2;bom2.x2= 0;bom2.y1= -2;bom2.y2= -2'">
+   <param name="A_07" value="id='alpos' algoritmo='s&iacute;' evaluar='siempre' hacer='x1=(volti=1)?-2:x1;x1=(volti=2)?0:x1;x1=(volti=3)?-2:x1;x2=(volti=1)?0:x2;x2=(volti=2)?2:x2;x2=(volti=3)?2:x2'">
+   <param name="A_08" value="id='almed2' algoritmo='s&iacute;' evaluar='siempre' inicio='med2.radio=0.25' hacer='med2.rojo=0.5;med2.vernum=0;med2.x1=-2;med2.x2=2;med2.y1=-1;med2.y2=-1'">
+   <param name="A_09" value="id='almed3' algoritmo='s&iacute;' evaluar='siempre' inicio='med3.radio=0.25' hacer='med3.vernum=0;med3.x1=0;med3.x2=2;med3.y1=0;med3.y2=0'">
+   <param name="A_10" value="id='almed4' algoritmo='s&iacute;' evaluar='siempre' inicio='med4.radio=0.25' hacer='med4.vernum=0;med4.x1=0;med4.x2=2;med4.y1=-2;med4.y2=-2'">
+   <param name="A_11" value="id='alvolt' algoritmo='s&iacute;' evaluar='siempre' hacer='vv=(volti=1)?v1:vv;vv=(volti=2)?v2:vv;vv=(volti=3)?12:vv;vv=(enc=0)?0:vv;'">
+   <param name="A_12" value="id='i1' expresi&oacute;n='(enc=0)?0:12/r1'">
+   <param name="A_13" value="id='i2' expresi&oacute;n='(enc=0)?0:12/r2'">
+   <param name="A_14" value="id='bom1.encendida' expresi&oacute;n='r1*i1*i1/(RT*I*I)'">
+   <param name="A_15" value="id='bom2.encendida' expresi&oacute;n='r2*i2*i2/(RT*I*I)'">
+   <param name="A_16" value="id='RPARALELO' expresi&oacute;n='r1*r2/(r1+r2)'">
+   <param name="A_17" value="id='vv' constante='s&iacute;' expresi&oacute;n='(enc=1)?12:0' evaluar='siempre'">
+   <param name="A_18" value="id='albom3' algoritmo='s&iacute;' evaluar='siempre' inicio='bom3.ancho=0.1' hacer='bom3.x1= 1;bom3.x2= -2;bom3.y1= -2;bom3.y2= -2'">
+   <param name="A_19" value="id='volti22' algoritmo='s&iacute;' evaluar='siempre' inicio='volti2.radio=0.25' hacer='volti2.rojo=0.5;volti2.vernum=0;volti2.x1=0;volti2.x2=2;volti2.y1=-1;volti2.y2=-1'">
+   <param name="A_20" value="id='VPARALELO' expresi&oacute;n='[vv/RT]*RPARALELO'">
+   <param name="A_21" value="id='Vr3' expresi&oacute;n='vv - VPARALELO'">
+   <param name="G_00" value="tipo='macro' expresi&oacute;n='circuitos/bateria' nombre='pila'">
+   <param name="G_01" value="tipo='macro' expresi&oacute;n='circuitos/bombilla' nombre='bom1'">
+   <param name="G_02" value="tipo='macro' expresi&oacute;n='circuitos/bombilla' nombre='bom2'">
+   <param name="G_03" value="tipo='macro' expresi&oacute;n='circuitos/interruptor' nombre='inte'">
+   <param name="G_04" value="tipo='macro' expresi&oacute;n='circuitos/medidor' nombre='med1'">
+   <param name="G_05" value="tipo='macro' dibujar-si='volti&gt;0' expresi&oacute;n='circuitos/medidor' nombre='med2'">
+   <param name="G_06" value="tipo='macro' expresi&oacute;n='circuitos/medidor' nombre='med3'">
+   <param name="G_07" value="tipo='macro' expresi&oacute;n='circuitos/medidor' nombre='med4'">
+   <param name="G_08" value="tipo='segmento' color='negro' expresi&oacute;n='(-3,2)(-3,-1)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_09" value="tipo='segmento' color='negro' expresi&oacute;n='(-2,0)(-2,-2)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_10" value="tipo='segmento' color='negro' expresi&oacute;n='(2,0)(2,-2)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_11" value="tipo='segmento' color='negro' expresi&oacute;n='(-3,-1)(-2,-1)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_12" value="tipo='segmento' color='negro' expresi&oacute;n='(2,-1)(3,-1)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_13" value="tipo='texto' color='negro' expresi&oacute;n='[200,15]' texto='VTOTAL=[vv]    ITOTAL=[I] A' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_14" value="tipo='texto' color='negro' dibujar-si='volti&gt;0' expresi&oacute;n='[210,165]' texto='Vparalelo=[VPARALELO] V' fuente='Monospaced,PLAIN,12' decimales='0' fijo='s&iacute;'">
+   <param name="G_15" value="tipo='texto' color='negro' expresi&oacute;n='[150,118]' texto='      R1         [i1] A' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_16" value="tipo='texto' color='negro' expresi&oacute;n='[150,215]' texto='     R2         [i2] A' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_17" value="tipo='macro' expresi&oacute;n='circuitos/bombilla' rotini='90' posini='[1,1]' nombre='bom3'">
+   <param name="G_18" value="tipo='macro' dibujar-si='volti&gt;0' expresi&oacute;n='circuitos/medidor' rotini='-90' posini='[3,2]' nombre='volti2'">
+   <param name="G_19" value="tipo='texto' color='negro' expresi&oacute;n='[480,118]' texto=' R3        ' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_20" value="tipo='texto' color='negro' expresi&oacute;n='[20,118]' texto=' RT= [RT] ohm' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_21" value="tipo='texto' color='negro' expresi&oacute;n='[20,148]' texto=' R1//R2= [RPARALELO] ohm' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_22" value="tipo='texto' color='negro' dibujar-si='volti&gt;0' expresi&oacute;n='[310,95]' texto='VR3= [Vr3] V' fuente='Monospaced,PLAIN,12' decimales='0' fijo='s&iacute;'">
+<font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+</applet>

@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="maquinas_simples_rodriguezjorge" version="0.1.3">
+ <settings>
+  <title>máquinas simples_rodriguezjorge</title>
+  <revision description="created" date="7/31/14" />
+  <author name="Rodriguez, Jorge Daniel" rol="Profesor" />
+  <description>
+   <p>El proyecto esta destinados a los alumnos que están cursando su primer año en la escuela técnica. Dentro de los contenidos pertenecientes al taller de sistemas tecnológicos.</p>
+  </description>
+  <descriptors area="Taller: Sistemas Tecnológicos" level="Primer año" />
+ </settings>
+ <sequence>
+  <item id="inicio" name="puzzle 1" />
+  <item name="memory1" />
+  <item name="sopadeletras1" />
+  <item name="actividad de identificación 1" />
+  <item name="rellenar agujeros con lista" />
+  <item name="ordenar palabras" />
+  <item name="asociación compleja 1" />
+ </sequence>
+ <activities>
+  <activity class="@panels.Identify" name="actividad de identificación 1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Andalus" size="20" bold="true" italic="true" />
+      <color background="0xFF0000" />
+      <gradient source="0xCC0000" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>¿Cuáles de estos elementos son máquinas simples?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Andalus" size="20" bold="true" />
+      <color background="0xFF0000" />
+      <gradient source="0xCC0000" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Dos ruedas dentadas engranadas entre si,constituyen un mecanismo esencial llamado engranaje</p>
+    </cell>
+    <cell type="finalError">
+     <style borderStroke="0.7" markerStroke="2.2">
+      <font family="Andalus" size="20" bold="true" italic="true" />
+      <color background="0xCC0000" />
+      <gradient source="0xCC0000" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Respuesta incorrecta prueba nuevamente</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="60" countDownTime="true" maxActions="10" countDownActions="true" report="true" reportActions="false">
+    <container bgColor="0xFFCC66">
+     <gradient source="0xFFCC66" dest="0xFFFFFF" angle="43" cycles="9" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="214.0" cellHeight="141.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Andalus" size="17" />
+     <color background="0xFFFFFF" alternative="0x000000" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell id="1" image="alicates-07.gif" />
+    <cell id="1" image="carretilla-02.gif" />
+    <cell id="1" image="martillo-02.gif" />
+    <cell id="1" image="tornillos-11.gif" />
+    <cell id="1" image="tijeras-13.gif" />
+    <cell id="0" image="engranaje-.gif" />
+   </cells>
+   <cells rows="2" cols="3" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell txtAlign="right,middle" imgAlign="left,middle" avoidOverlapping="true" image="alicates-07.gif">
+     <p>Alicate: es un ejemplo de palanca de 1ª grado</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="right,middle" avoidOverlapping="true" image="carretilla-02.gif">
+     <p>Carretilla:palanca de 2º grado</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="right,middle" avoidOverlapping="true" image="martillo-02.gif">
+     <p>Martillo: en este caso es una palanca de 1º</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="right,middle" avoidOverlapping="true" image="tornillos-11.gif">
+     <p>Tornillo: es una máquina simple, deriva del plano inclinado</p>
+    </cell>
+    <cell txtAlign="right,middle" imgAlign="right,middle" avoidOverlapping="true" image="tijeras-13.gif">
+     <p>Tijera: es una palanca de 1º grado</p>
+    </cell>
+    <cell />
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="asociación compleja 1">
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Andalus" size="20" italic="true" />
+      <color background="0x33FF33" />
+      <gradient source="0x33FF33" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Relacione los elementos con sus respectivas palancas</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Andalus" size="20" italic="true" />
+      <color background="0x33FF33" />
+      <gradient source="0x33FF33" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Buen trabajo</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Andalus" size="20" italic="true" />
+      <color background="0x33FF33" />
+      <gradient source="0x33FF33" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>No te rindas</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="60" countDownTime="true" maxActions="15" countDownActions="true" report="true" reportActions="false">
+    <container bgColor="0xFFFF33">
+     <gradient source="0xFFFF00" dest="0xFFFFFF" angle="31" cycles="6" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="144.0" cellHeight="92.0" border="true" id="primary">
+    <style>
+     <font family="Andalus" size="22" />
+     <color background="0x99FF99" />
+     <gradient source="0x33FF33" dest="0xFFFFFF" angle="0" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell id="0">
+     <p>Tijeras</p>
+    </cell>
+    <cell id="0">
+     <p>Tenazas</p>
+    </cell>
+    <cell id="1">
+     <p>Remo</p>
+    </cell>
+    <cell id="1">
+     <p>Rompenueces</p>
+    </cell>
+    <cell id="2">
+     <p>Pinza de depilar</p>
+    </cell>
+    <cell id="2">
+     <p>Pinza para mover brazas</p>
+    </cell>
+    <cell id="0">
+     <p>Alicate</p>
+    </cell>
+    <cell id="1">
+     <p>Exprimidor de limón</p>
+    </cell>
+    <cell>
+     <p>Poleas</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="162.0" cellHeight="129.0" border="true" id="secondary">
+    <style>
+     <font family="Andalus" size="17" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell txtAlign="middle,top" imgAlign="middle,bottom" image="i01-palanca de 1er grado01.jpg">
+     <p>Palanca de 1º grado</p>
+    </cell>
+    <cell txtAlign="middle,top" imgAlign="middle,bottom" image="i01-palanca segundo grado01.jpg">
+     <p>Palanca de 2º grado</p>
+    </cell>
+    <cell txtAlign="middle,top" imgAlign="middle,bottom" image="i01-palanca_tercer_genero01.jpg">
+     <p>Palanca de 3º grado</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="memory1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Algerian" size="22" italic="true" />
+      <color background="0x33FF33" />
+      <gradient source="0x33FF33" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Realiza el juego de memoria</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Algerian" size="22" />
+      <color background="0x33FF33" />
+      <gradient source="0x33FF33" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>OK</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Algerian" size="22" />
+      <color background="0xFF6633" />
+      <gradient source="0xFF6633" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Falllaste prueba nuevamente</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="60" countDownTime="true" maxActions="30" countDownActions="true" report="true" reportActions="false">
+    <container bgColor="0x33FF33">
+     <gradient source="0x33FF33" dest="0xFFFFFF" angle="33" cycles="5" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="202.0" cellHeight="156.0" border="true" id="primary">
+    <style>
+     <font family="Comic Sans MS" size="26" italic="true" />
+     <color background="0xFFFFFF" alternative="0x000000" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="palanca de 1er grado01.jpg" />
+    <cell image="palanca segundo grado01.jpg" />
+    <cell image="palanca_tercer_genero01.jpg" />
+    <cell image="plano inclinado 01.jpg" />
+    <cell image="polea 01.jpg" />
+    <cell image="torno 01.jpg" />
+   </cells>
+   <cells rows="2" cols="3" cellWidth="50.0" cellHeight="30.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell>
+     <p>Palanca de primer grado</p>
+    </cell>
+    <cell>
+     <p>Palanca de segundo grado</p>
+    </cell>
+    <cell>
+     <p>Palanca de tercer grado</p>
+    </cell>
+    <cell>
+     <p>Plano inclinado</p>
+    </cell>
+    <cell>
+     <p>Polea</p>
+    </cell>
+    <cell>
+     <p>Torno</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.Order" name="ordenar palabras" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell type="previous">
+     <style>
+      <color background="0xFF0000" />
+      <gradient source="0xFF0000" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Lee atentamente el texto, cuando estés listo has clic sobre el mismo para continuar con la actividad.</p>
+    </cell>
+    <cell type="initial">
+     <style>
+      <color background="0x00CCFF" />
+      <gradient source="0x00CCFF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Ordena las palabras del texto.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color background="0x00CCFF" />
+      <gradient source="0x00CCFF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Muy bien</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <color background="0xFF9966" />
+      <gradient source="0xFF9966" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>vuelve a intentarlo</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="416" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <checkButton>comprueba que lo has hecho bien</checkButton>
+   <prevScreen>
+    <style>
+     <font family="Century Gothic" size="22" />
+    </style>
+    <p>Ruedas dentadas&#xD;</p>
+    <p>&#xD;</p>
+    <p>La rueda dentada (engranaje, piñon) es, básicamente, una rueda con el perímetro totalmente cubierto de dientes. El tipo más común de rueda dentada lleva los dientes rectos (longitudinales) aunque también las hay con los dientes curvos, oblicuos, etc. para conseguir un funcionamiento correcto, este operador suele girar solidario con su eje, por lo que ambos se ligan mediante una unión desmontable que emplea otro operador denominado chaveta.&#xD;</p>
+    <p>Dos ruedas dentadas engranadas entre si constituyen un mecanismo elemental llamado engranaje.&#xD;</p>
+   </prevScreen>
+   <document>
+    <style name="default" bold="false" background="0xFFFFFF" italic="false" tabWidth="12" size="22" family="Century Gothic" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Century Gothic">Ruedas dentadas</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Century Gothic">La rueda </text>
+      <target>dentada</target>
+      <text background="0xFFFFFF" family="Century Gothic"> (engranaje, piñon) es, </text>
+      <target>básicamente,</target>
+      <text background="0xFFFFFF" family="Century Gothic"> una rueda con el </text>
+      <target>perímetro</target>
+      <text background="0xFFFFFF" family="Century Gothic"> totalmente </text>
+      <target>cubierto</target>
+      <text background="0xFFFFFF" family="Century Gothic"> de dientes. El tipo más </text>
+      <target>común</target>
+      <text background="0xFFFFFF" family="Century Gothic"> de rueda dentada lleva los dientes rectos (longitudinales) aunque también las hay con los dientes curvos, </text>
+      <target>oblicuos,</target>
+      <text background="0xFFFFFF" family="Century Gothic"> etc. para conseguir un </text>
+      <target>funcionamiento</target>
+      <text background="0xFFFFFF" family="Century Gothic"> correcto, este operador suele girar solidario con su eje, por lo que ambos se ligan mediante una </text>
+      <target>unión</target>
+      <text background="0xFFFFFF" family="Century Gothic"> desmontable que emplea otro operador denominado chaveta.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Century Gothic">Dos ruedas dentadas engranadas entre si constituyen un </text>
+      <target>mecanismo</target>
+      <text background="0xFFFFFF" family="Century Gothic"> elemental llamado </text>
+      <target>engranaje.</target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="puzzle 1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Andalus" size="22" italic="true" />
+      <color background="0xCCCC00" />
+      <gradient source="0xCCCC00" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Ordena las piezas del rompecabezas</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Andalus" size="22" />
+      <color background="0xCCCC00" />
+      <gradient source="0xCCCC00" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Buen trabajo, es una palanca de primer grado.</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Andalus" size="22" />
+      <color background="0xCC0000" />
+      <gradient source="0xCC0000" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Intentalo nuevamente</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxTime="60" countDownTime="true" maxActions="12" countDownActions="true" report="true" reportActions="false">
+    <container bgColor="0x33FF33">
+     <gradient source="0x33FF33" dest="0xFFFFFF" angle="33" cycles="5" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="3" cols="3" border="true" image="palanca de 1er grado01.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="3" rows="3" baseWidthFactor="0.67" toothHeightFactor="0.6629999999999999" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="rellenar agujeros con lista" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Informal Roman" size="24" bold="true" />
+      <color background="0xCCCC00" />
+      <gradient source="0xCCCC00" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Completa el texto con la palabra correcta.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Informal Roman" size="24" />
+      <color background="0xCCCC00" />
+      <gradient source="0xCCCC00" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Ok</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Informal Roman" size="24" />
+      <color background="0xFF0000" />
+      <gradient source="0xFF0000" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Has fallado intentalo nuevamente</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="60" countDownTime="true" maxActions="20" countDownActions="true" report="true" reportActions="false">
+    <container bgColor="0x00FF00">
+     <gradient source="0x00FF00" dest="0xFFFFFF" angle="33" cycles="4" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true">
+     <size width="696" height="399" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <document>
+    <style name="default" bold="false" background="0xFFFFFF" italic="false" tabWidth="12" size="18" family="Comic Sans MS" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" size="18" family="Comic Sans MS">Polea</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" size="18" family="Comic Sans MS">Se llama </text>
+      <target>
+       <answer>polea</answer>
+       <optionList>
+        <option>rueda</option>
+        <option>polea</option>
+        <option>circunferencia</option>
+       </optionList>
+       <text>polea</text>
+      </target>
+      <text background="0xFFFFFF" size="18" family="Comic Sans MS"> a una rueda que puede girar libremente alrededor de su eje (montado en una horquilla o armadura), y en cuyo contorno se adapta una cuerda flexible (correa, cable, cadena, etc.). Cuando este dispositivo esta fijo hablamos de </text>
+      <target>
+       <answer>polea fija</answer>
+       <optionList>
+        <option>polea móvil</option>
+        <option>polea quieta</option>
+        <option>polea fija</option>
+        <option>polea inmóvil</option>
+       </optionList>
+       <text>polea fija</text>
+      </target>
+      <text background="0xFFFFFF" size="18" family="Comic Sans MS">, cuando este dispositivo se desplaza soportado por la </text>
+      <target>
+       <answer>cuerda</answer>
+       <optionList>
+        <option>soga</option>
+        <option>correa</option>
+        <option>cuerda</option>
+        <option>cordel</option>
+       </optionList>
+       <text>cuerda</text>
+      </target>
+      <text background="0xFFFFFF" size="18" family="Comic Sans MS"> hablamos de polea móvil. En toda polea se distinguen tres partes: cuerpo, cubo y garganta.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" size="18" family="Comic Sans MS">Las poleas empleadas para tracción y elevación de cargas tienen el perimetro acanalado en forma de semicirculo (para alojar </text>
+      <target>
+       <answer>cuerdas</answer>
+       <optionList>
+        <option>sogas</option>
+        <option>cables</option>
+        <option>cuerdas</option>
+        <option>cadenas</option>
+       </optionList>
+       <text>cuerdas</text>
+      </target>
+      <text background="0xFFFFFF" size="18" family="Comic Sans MS">), mientras que las empleadas para la transmisión de movimientos entre ejes suelen tenerlo trapezoidal o plano (en automoción también se emplean correas estriadas y </text>
+      <target>
+       <answer>dentadas</answer>
+       <optionList>
+        <option>dentadas</option>
+        <option>trapazoidal</option>
+        <option>plana</option>
+       </optionList>
+       <text>dentadas</text>
+      </target>
+      <text background="0xFFFFFF" size="18" family="Comic Sans MS">).</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="sopadeletras1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="Georgia" size="17" italic="true" />
+      <color background="0xFFFF00" />
+      <gradient source="0xFFFF00" dest="0xFFFFFF" angle="35" cycles="3" />
+     </style>
+     <p>Realiza la sopa de letras con las 7 máquinas simples principales</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Georgia" size="17" italic="true" />
+      <color background="0xFFFF00" />
+      <gradient source="0xFFFF00" dest="0xFFFFFF" angle="35" cycles="3" />
+     </style>
+     <p>Buen trabajo</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Georgia" size="17" italic="true" />
+      <color background="0xFF0000" />
+      <gradient source="0xFF0000" dest="0xFFFFFF" angle="35" cycles="7" />
+     </style>
+     <p>Intentalo nuevamente</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="80" countDownTime="true" maxActions="20" countDownActions="true" report="true" reportActions="false">
+    <container bgColor="0x66FF66">
+     <gradient source="0x99FF99" dest="0xFFFFFF" angle="58" cycles="2" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true">
+     <gradient source="0xFFFFFF" dest="0xFFFFFF" angle="54" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <textGrid rows="10" columns="14" cellWidth="25.0" cellHeight="25.0" border="false">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>****P*****</row>
+     <row>**PALANCA*</row>
+     <row>****A*****</row>
+     <row>****N****T</row>
+     <row>***POLEA*O</row>
+     <row>A***I****R</row>
+     <row>D***N****N</row>
+     <row>E***CUÑA*I</row>
+     <row>U***L****L</row>
+     <row>R***I****L</row>
+     <row>****N****O</row>
+     <row>****A*****</row>
+     <row>****D*****</row>
+     <row>***TORNO**</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">PALANCA</clue>
+    <clue id="1">RUEDA</clue>
+    <clue id="2">PLANOINCLINADO</clue>
+    <clue id="3">POLEA</clue>
+    <clue id="4">TORNILLO</clue>
+    <clue id="5">CUÑA</clue>
+    <clue id="6">TORNO</clue>
+   </clues>
+   <cells rows="2" cols="4" cellWidth="109.0" cellHeight="164.0" border="false" id="secondary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell image="palanca de 1er grado.jpg" />
+    <cell image="rueda.jpg" />
+    <cell image="i01-plano inclinado 01.jpg" />
+    <cell image="i01-polea 01.jpg" />
+    <cell image="tornillo.jpg" />
+    <cell image="cuña.jpg" />
+    <cell image="i01-torno 01.jpg" />
+    <cell />
+   </cells>
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="alicates-07.gif" file="i01-alicates-07.gif" />
+  <media name="carretilla-02.gif" file="i01-carretilla-02.gif" />
+  <media name="engranaje-.gif" file="i01-engranaje-.gif" />
+  <media name="martillo-02.gif" file="i01-martillo-02.gif" />
+  <media name="tijeras-13.gif" file="i01-tijeras-13.gif" />
+  <media name="tornillos-11.gif" file="i01-tornillos-11.gif" />
+  <media name="cuña.jpg" file="i01-cuña.jpg" />
+  <media name="i01-palanca de 1er grado01.jpg" file="i01-palanca de 1er grado01.jpg" />
+  <media name="i01-palanca segundo grado01.jpg" file="i01-palanca segundo grado01.jpg" />
+  <media name="i01-palanca_tercer_genero01.jpg" file="i01-palanca_tercer_genero01.jpg" />
+  <media name="i01-plano inclinado 01.jpg" file="i01-plano inclinado 01.jpg" />
+  <media name="i01-polea 01.jpg" file="i01-polea 01.jpg" />
+  <media name="i01-torno 01.jpg" file="i01-torno 01.jpg" />
+  <media name="palanca de 1er grado.jpg" file="palanca de 1er grado.jpg" />
+  <media name="palanca de 1er grado01.jpg" file="palanca de 1er grado01.jpg" />
+  <media name="palanca segundo grado01.jpg" file="palanca segundo grado01.jpg" />
+  <media name="palanca_tercer_genero01.jpg" file="palanca_tercer_genero01.jpg" />
+  <media name="plano inclinado 01.jpg" file="plano inclinado 01.jpg" />
+  <media name="polea 01.jpg" file="polea 01.jpg" />
+  <media name="rueda.jpg" file="rueda.jpg" />
+  <media name="tornillo.jpg" file="i01-tornillo.jpg" />
+  <media name="torno 01.jpg" file="torno 01.jpg" />
+ </mediaBag>
+</JClicProject>
+

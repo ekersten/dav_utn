@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="proyecto_con_textos-ARREGLADO-_modificado_velloso_patricia" version="0.1.3">
+ <settings>
+  <title>Proyecto con textos Velloso Patricia</title>
+  <revision description="created" date="1/29/14" />
+  <author name="Patricia Velloso" mail="patyheber@gmail.com" rol="Profesora" organization="CEPT N°32-Diego Gaynor" />
+  <organization name="CEPT N° 32" address="Salta S/N" city="Diego Gaynor" country="Argentina" state="Buenos Aires">
+   <comments>
+    <p>Escuela secundaria técnica rural con modalidad de alternancia</p>
+   </comments>
+  </organization>
+  <description>
+   <p>Trabajo para ser utilizado en la asignatura Desarrollo Rural Sustentable y Agricultura Familiar</p>
+  </description>
+  <descriptors area="Desarrollo" level="Secundario ciclo superior agrario">Desarrollo sostenible en el Distrito</descriptors>
+  <skin file="@blue.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="Desarrollo Rural Sustentable en Exaltación de la Cruz">
+   <description>
+    <p>Carátula</p>
+   </description>
+   <jump tag="Evolución del concepto DESARROLLO" id="forward" />
+  </item>
+  <item id="¿Desarrollo sostenible o sustentable?" name="¿Desarrollo sostenible o sustentable?">
+   <description>
+    <p>Diferencia entre ambos conceptos</p>
+   </description>
+   <jump tag="Condiciones para el Desarrollo Sostenible" id="forward" />
+  </item>
+  <item id="Inter-relaciones" name="Inter-relaciones">
+   <description>
+    <p>Factores que deben estar en equilibrio</p>
+   </description>
+   <jump tag="Ordenanzas Municipales" id="forward" />
+  </item>
+  <item id="Condiciones para el Desarrollo Sostenible" name="Condiciones para el Desarrollo Sostenible">
+   <description>
+    <p>Lo que es indispensale para que haya DS</p>
+   </description>
+   <jump tag="Agricultura" id="forward" />
+  </item>
+  <item id="Agricultura" name="Agricultura">
+   <description>
+    <p>Campo de aplicación</p>
+   </description>
+   <jump tag="Quiz" id="forward" />
+  </item>
+  <item id="Evolución del concepto DESARROLLO" name="Evolución del concepto DESARROLLO">
+   <description>
+    <p>Concepto dinámico</p>
+   </description>
+   <jump tag="¿Desarrollo sostenible o sustentable?" id="forward" />
+  </item>
+  <item id="Ordenanzas Municipales" name="Ordenanzas Municipales">
+   <description>
+    <p>Pasos seguidos por la Municialidad</p>
+   </description>
+   <jump action="STOP" id="forward" />
+  </item>
+  <item id="Quiz" name="Quiz">
+   <description>
+    <p>Destino de la tierra</p>
+   </description>
+   <jump tag="Inter-relaciones" id="forward" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@text.Identify" name="Agricultura" code="" type="identifyWords">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x660066" background="0xFFCCCC" />
+     </style>
+     <p>Encuentra los sustantivos en el texto</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x660066" background="0xFFCCCC" />
+     </style>
+     <p>¡Fantástico!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFF6666">
+     <gradient source="0x003333" dest="0x009999" angle="122" cycles="22" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFCCCC" border="true">
+     <size width="667" height="342" />
+    </window>
+   </settings>
+   <checkButton>Chequea</checkButton>
+   <document>
+    <style name="default" size="20" family="Arial" tabWidth="12" italic="false" background="0xFFFFFF" bold="false" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <target>CAMPO</target>
+      <text size="20" family="Arial" background="0xFFFFFF"> DE </text>
+      <target>APLICACIÓN:</target>
+      <text size="20" family="Arial" background="0xFFFFFF"> </text>
+      <target>AGRICULTURA</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text size="20" family="Arial" background="0xFFFFFF">El </text>
+      <target>aumento</target>
+      <text size="20" family="Arial" background="0xFFFFFF"> de la </text>
+      <target>producción</target>
+      <text size="20" family="Arial" background="0xFFFFFF"> agrícola se consigue mediante el </text>
+      <target>desarrollo</target>
+      <text size="20" family="Arial" background="0xFFFFFF"> de </text>
+      <target>tecnología</target>
+      <text size="20" family="Arial" background="0xFFFFFF"> moderna, pero cada una de éstas, además de </text>
+      <target>beneficios,</target>
+      <text size="20" family="Arial" background="0xFFFFFF"> tiene sus </text>
+      <target>costos:</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text size="20" family="Arial" background="0xFFFFFF">•</text>
+      <target>Puesta</target>
+      <text size="20" family="Arial" background="0xFFFFFF"> en </text>
+      <target>regadío</target>
+      <text size="20" family="Arial" background="0xFFFFFF"> de los </text>
+      <target>cultivos:</target>
+      <text size="20" family="Arial" background="0xFFFFFF"> el </text>
+      <target>agua</target>
+      <text size="20" family="Arial" background="0xFFFFFF"> es un </text>
+      <target>recurso</target>
+      <text size="20" family="Arial" background="0xFFFFFF"> limitado. Su </text>
+      <target>obtención</target>
+      <text size="20" family="Arial" background="0xFFFFFF"> debe ser sostenible, es decir, respetando su </text>
+      <target>uso,</target>
+      <text size="20" family="Arial" background="0xFFFFFF"> </text>
+      <target>gestión</target>
+      <text size="20" family="Arial" background="0xFFFFFF"> y </text>
+      <target>protección,</target>
+      <text size="20" family="Arial" background="0xFFFFFF"> tanto del </text>
+      <target>recurso</target>
+      <text size="20" family="Arial" background="0xFFFFFF"> superficial como subterráneo.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text size="20" family="Arial" background="0xFFFFFF">•</text>
+      <target>Uso</target>
+      <text size="20" family="Arial" background="0xFFFFFF"> de </text>
+      <target>fertilizantes</target>
+      <text size="20" family="Arial" background="0xFFFFFF"> y </text>
+      <target>abonos:</target>
+      <text size="20" family="Arial" background="0xFFFFFF"> aumentan la </text>
+      <target>producción,</target>
+      <text size="20" family="Arial" background="0xFFFFFF"> pero su </text>
+      <target>uso</target>
+      <text size="20" family="Arial" background="0xFFFFFF"> desmedido implica </text>
+      <target>formación</target>
+      <text size="20" family="Arial" background="0xFFFFFF"> de </text>
+      <target>lixiviados</target>
+      <text size="20" family="Arial" background="0xFFFFFF"> que contaminan.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text size="20" family="Arial" background="0xFFFFFF">•</text>
+      <target>Agricultura</target>
+      <text size="20" family="Arial" background="0xFFFFFF"> intensiva: incrementa la </text>
+      <target>producción</target>
+      <text size="20" family="Arial" background="0xFFFFFF"> pero consume mayor </text>
+      <target>cantidad</target>
+      <text size="20" family="Arial" background="0xFFFFFF"> de </text>
+      <target>nutrientes</target>
+      <text size="20" family="Arial" background="0xFFFFFF"> del </text>
+      <target>suelo,</target>
+      <text size="20" family="Arial" background="0xFFFFFF"> por lo que hay que programar una </text>
+      <target>rotación</target>
+      <text size="20" family="Arial" background="0xFFFFFF"> de </text>
+      <target>cultivos.</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+    </section>
+   </document>
+  </activity>
+  <activity class="@text.FillInBlanks" name="Condiciones para el Desarrollo Sostenible" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x660066" background="0xFFCCCC" />
+     </style>
+     <p>Completa la palabra con las letras faltantes</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x660066" background="0xFFCCCC" />
+     </style>
+     <p>Felicitaciones</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x66FF00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="596" height="300" />
+    </window>
+   </settings>
+   <checkButton>Verifica</checkButton>
+   <document>
+    <style name="default" size="20" family="Arial" tabWidth="12" italic="false" background="0xFFFFFF" bold="false" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text size="20" family="Arial" background="0xFFFFFF">CONDICIONES PARA EL DS</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text size="20" family="Arial" background="0xFFFFFF">•Ningún recurso renovable deberá utilizarse a un ritmo </text>
+      <target>
+       <answer>superior</answer>
+       <response fill="_" length="8" maxLength="8" show="s" />
+       <text>superior</text>
+      </target>
+      <text size="20" family="Arial" background="0xFFFFFF"> al de su generación.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text size="20" family="Arial" background="0xFFFFFF">•Ningún contaminante deberá producirse a un ritmo superior al que pueda ser reciclado, neutralizado o </text>
+      <target>
+       <answer>absorbido</answer>
+       <response fill="_" length="9" maxLength="9" show="a" />
+       <text>absorbido</text>
+      </target>
+      <text size="20" family="Arial" background="0xFFFFFF"> por el medioambiente.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text size="20" family="Arial" background="0xFFFFFF">•Ningún recurso no renovable deberá aprovecharse a mayor </text>
+      <target>
+       <answer>velocidad</answer>
+       <response fill="_" length="9" maxLength="9" show="v" />
+       <text>velocidad</text>
+      </target>
+      <text size="20" family="Arial" background="0xFFFFFF"> de la necesaria para sustituirlo por un recurso renovable utilizado de manera </text>
+      <target>
+       <answer>sostenible</answer>
+       <response fill="_" length="10" maxLength="10" show="s" />
+       <text>sostenible</text>
+      </target>
+      <text size="20" family="Arial" background="0xFFFFFF">.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="Desarrollo Rural Sustentable en Exaltación de la Cruz" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x660066" background="0xFFCCCC" />
+     </style>
+     <p>Información provista por la Municipalidad de Exaltación de la Cruz</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFF6666">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="326.0" cellHeight="301.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0xFF3399" background="0xCCFFFF" />
+     </style>
+     <p>DESARROLLO SUSTENTABLE Y AGRICULTURA FAMILIAR</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@text.Order" name="Evolución del concepto DESARROLLO" code="" type="orderParagraphs">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x660066" background="0xFFCCCC" />
+     </style>
+     <p>Ordena los párrafos</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x660066" background="0xFFCCCC" />
+     </style>
+     <p>Muy bien hecho</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x003333">
+     <gradient source="0x003333" dest="0x009999" angle="122" cycles="22" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCFFFF" border="true">
+     <size width="743" height="580" />
+    </window>
+   </settings>
+   <checkButton>Evalúate</checkButton>
+   <document>
+    <style name="default" size="14" family="Arial" tabWidth="12" italic="false" background="0xFFFFFF" bold="false" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <target>Evolución del concepto DESARROLLO</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <target>El primer documento que hace referencia al concepto data de la posguerra, siendo la Conferencia de San Francisco de 1945 la que da origen a la Organización de las Naciones Unidas, que hace del DESARROLLO una de sus principales temáticas de reflexión. Durante casi 2 décadas el concepto de desarrollo equivalía a crecimiento económico medido en términos de PBI (Producto Bruto Interno) donde primaba el modelo de industrialización, siendo los países ricos del Norte los modelos a seguir.</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <target>Más el mero crecimiento económico demostró no ser suficiente para alcanzar a todos, por lo que este enfoque cuantitativo va cambiando y a fines de los ’60 se comienza a considerar que para que haya desarrollo, los beneficios debían cubrir las necesidades de alimentación, empleo y no discriminación, ampliando el concepto a lo económico y lo social. Durante los ’70 se suma la necesidad de incorporar al término las nociones de autonomías nacionales con respecto a los países centrales. Durante los ’80 surge el concepto de desarrollo sostenible, refiriéndose al cuidado del medio ambiente junto al boom de la ecología incorporando a la noción espacial la temporal…”para las generaciones futuras”. En los ’90 se consolida, aunque con diversas líneas de pensamiento, el principio de que el desarrollo debe ser considerado desde la objetividad local, regional, territorial, que es donde realmente se hace concreto.</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <target>Si bien el concepto sigue asociado a la economía, la productividad y la eficiencia, ha incorporado también a los individuos, la equidad, la satisfacción de las necesidades básicas, el respeto a las minorías, la sustentabilidad ambiental, la habitabilidad, la valoración del territorio y las localidades, en definitiva, de calidad de vida humana.</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="Inter-relaciones" code="">
+   <description />
+   <messages>
+    <cell avoidOverlapping="true" type="initial">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x660066" background="0xFFCCCC" />
+     </style>
+     <p>Elige la opción correcta</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x660066" background="0xFFCCCC" />
+     </style>
+     <p>¡Bien hecho!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x00CCCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x3300FF" border="true">
+     <size width="662" height="449" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" size="11" family="Arial" tabWidth="12" background="0xFFFFFF" italic="false" bold="false" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text size="20" family="Arial" background="0xFFFFFF">Objetivos de la Municipalidad</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text size="20" family="Arial" background="0xFFFFFF">Definir proyectos </text>
+      <target>
+       <answer>viables</answer>
+       <optionList>
+        <option>sencillos</option>
+        <option>a corto plazo</option>
+        <option>viables</option>
+        <option>baratos</option>
+       </optionList>
+       <text>viables</text>
+      </target>
+      <text size="20" family="Arial" background="0xFFFFFF"> y reconciliar los aspectos económico, social y ambiental de las actividades humanas:</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text size="20" family="Arial" background="0xFFFFFF">- Sostenibilidad </text>
+      <target>
+       <answer>económica</answer>
+       <optionList>
+        <option>económica</option>
+        <option>social</option>
+        <option>medioambiental</option>
+        <option>cultural</option>
+       </optionList>
+       <text>económica</text>
+      </target>
+      <text size="20" family="Arial" background="0xFFFFFF">: sostenibilidad ambiental y social financieramente posible y rentable.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text size="20" family="Arial" background="0xFFFFFF">-Sostenibilidad </text>
+      <target>
+       <answer>social</answer>
+       <optionList>
+        <option>social</option>
+        <option>económica</option>
+        <option>medioambiental</option>
+        <option>cultural</option>
+       </optionList>
+       <text>social</text>
+      </target>
+      <text size="20" family="Arial" background="0xFFFFFF">: la actividad debe tener en cuenta las consecuencias sociales en todos los niveles (trabajadores, clientes, comunidad y sociedad).</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text size="20" family="Arial" background="0xFFFFFF">-Sostenibilidad </text>
+      <target>
+       <answer>ambiental</answer>
+       <optionList>
+        <option>económica</option>
+        <option>ambiental</option>
+        <option>social</option>
+        <option>cultural</option>
+       </optionList>
+       <text>ambiental</text>
+      </target>
+      <text size="20" family="Arial" background="0xFFFFFF">: compatibilidad entre la actividad y la preservación del ecosistema. Incluye impacto, consumo de recursos, residuos, emisiones, etc.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.Order" name="Ordenanzas Municipales" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell type="previous">
+     <style>
+      <font family="Arial" size="18" bold="true" />
+     </style>
+     <p>Leer atentamente el texto y hacer clic para iniciar la actividad</p>
+    </cell>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x660066" background="0xFFCCCC" />
+     </style>
+     <p>Ordena las palabras desordenadas del texto</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x660066" background="0xFFCCCC" />
+     </style>
+     <p>¡Excelente!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xCCFF33">
+     <gradient source="0xCCFF33" dest="0x999999" angle="122" cycles="22" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF0000" transparent="true" border="true">
+     <size width="561" height="353" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <checkButton>Evalúa tu trabajo</checkButton>
+   <prevScreen>
+    <style>
+     <font family="Arial" size="18" bold="true" />
+    </style>
+    <p>ORDENANZAS MUNICIPALES&#xD;</p>
+    <p>&#xD;</p>
+    <p>-03/85 Servicio de Recolección de Residuos&#xD;</p>
+    <p>-10/89 Parque natural. Creación&#xD;</p>
+    <p>-10/92 Prohibición de Descarga de Desechos Industriales&#xD;</p>
+    <p>-12/92 Residuos. Reglamentación sobre Recolección &#xD;</p>
+    <p>-26/92 Industrias. Normas de Radicación &#xD;</p>
+    <p>-29/93 Residuos Tóxicos. Prohibición de Radicación &#xD;</p>
+    <p>-55/96 Tabaco. Prohibición de Fumar en Oficinas Públicas&#xD;</p>
+    <p>-25/98 Quintas. Normas de Funcionamiento&#xD;</p>
+    <p>-39/03 Ordenamiento de Espacios Verdes en Exaltación de la Cruz&#xD;</p>
+    <p>-76/09 Feed Lot&#xD;</p>
+    <p>-101/12 Referencia Regular para Uso de Agroquímicos</p>
+   </prevScreen>
+   <document>
+    <style name="default" size="11" family="Arial" tabWidth="12" background="0xFFFFFF" italic="false" bold="false" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <target>ORDENANZAS MUNICIPALES</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <target>-03/85 Servicio de Recolección de Residuos</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <target>-10/89 Parque natural. Creación</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <target>-10/92 Prohibición de Descarga de Desechos Industriales</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <target>-12/92 Residuos. Reglamentación sobre Recolección </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <target>-26/92 Industrias. Normas de Radicación </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <target>-29/93 Residuos Tóxicos. Prohibición de Radicación </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <target>-55/96 Tabaco. Prohibición de Fumar en Oficinas Públicas</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <target>-25/98 Quintas. Normas de Funcionamiento</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <target>-39/03 Ordenamiento de Espacios Verdes en Exaltación de la Cruz</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <target>-76/09 Feed Lot</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <target>-101/12 Referencia Regular para Uso de Agroquímicos</target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="Quiz" code="">
+   <description />
+   <messages>
+    <cell imgAlign="right,middle" avoidOverlapping="true" type="initial">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x660066" background="0xFF99CC" />
+     </style>
+     <p>¿A qué superficie hacen referencia los números:rural, industrial, urbana o total?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x660066" background="0xFF99CC" />
+     </style>
+     <p>Perfecto</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xCCFF33" dest="0x999999" angle="122" cycles="22" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF99CC" border="true" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="204.0" cellHeight="30.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell id="0">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x660066" background="0xFF99CC" />
+     </style>
+     <p>63.417 hectáreas</p>
+    </cell>
+    <cell id="1">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x660066" background="0xFF99CC" />
+     </style>
+     <p>2.325 hectáreas</p>
+    </cell>
+    <cell id="2">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x660066" background="0xFF99CC" />
+     </style>
+     <p>59.213 hectáreas</p>
+    </cell>
+    <cell id="3">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x660066" background="0xFF99CC" />
+     </style>
+     <p>1.879 hectáreas</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="1" cellWidth="272.0" cellHeight="30.0" border="true" id="answers">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x660066" background="0xFF99CC" />
+     </style>
+     <p>Superficie total|total|sup total|sup.total</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x660066" background="0xFF99CC" />
+     </style>
+     <p>Superficie urbana|urbana|sup urbana|sup.urbana</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x660066" background="0xFF99CC" />
+     </style>
+     <p>Superficie rural|rural|sup rural|sup.rural</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x660066" background="0xFF99CC" />
+     </style>
+     <p>Superficie industrial|industrial|sup industrial|sup.industrial</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="¿Desarrollo sostenible o sustentable?" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x9900CC" background="0xFFCCCC" />
+     </style>
+     <p>¿Cuáles son las palabras que faltan en el texto?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0x9900CC" background="0xFFCCCC" />
+     </style>
+     <p>Correcto</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x003333">
+     <gradient source="0x003333" dest="0x009999" angle="122" cycles="22" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6666" border="true">
+     <size width="711" height="407" />
+    </window>
+   </settings>
+   <checkButton>Evalúa tu trabajo</checkButton>
+   <document>
+    <style name="default" size="18" family="Arial" tabWidth="12" italic="false" background="0xFFFFFF" bold="false" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">DESARROLLO SUSTENTABLE</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Preserva, conserva y protege </text>
+      <target>
+       <answer>sólo</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="16" bold="true" />
+          <color foreground="0x66FF00" background="0xFFFF99" />
+         </style>
+         <p>únicamente</p>
+        </cell>
+       </info>
+       <text>sólo</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF"> los recursos naturales para beneficio de las generaciones futuras, sin contemplar necesidades sociales, políticas ni culturales.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">DESARROLLO SOSTENIBLE</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Satisface necesidades económicas, sociales, de diversidad cultural y de un medio ambiente sano de la actual generación, </text>
+      <target>
+       <answer>sin</answer>
+       <response fill="_" length="3" maxLength="3" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="16" bold="true" />
+          <color foreground="0x66FF00" background="0xFFFF99" />
+         </style>
+         <p>mas no</p>
+        </cell>
+       </info>
+       <text>sin</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF"> poner en riesgo a las generaciones futuras.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">“Satisfacer las necesidades de las generaciones presentes sin comprometer las posibilidades de las del </text>
+      <target>
+       <answer>futuro</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <info>
+        <cell width="80" height="27">
+         <style>
+          <font family="Arial" size="16" bold="true" />
+          <color foreground="0x66FF00" background="0xFFFF99" />
+         </style>
+         <p>por venir</p>
+        </cell>
+       </info>
+       <text>futuro</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF"> para atender sus propias necesidades”.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">Comisión Brundtland (2004).</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">“El desarrollo sostenible </text>
+      <target>
+       <answer>debe</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <info>
+        <cell width="100" height="40">
+         <style>
+          <font family="Arial" size="16" bold="true" />
+          <color foreground="0x66FF00" background="0xFFFF99" />
+         </style>
+         <p>es obligatorio</p>
+        </cell>
+       </info>
+       <text>debe</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF"> permitir el crecimiento económico y el uso de los recursos naturales a nivel mundial, teniendo muy en cuenta los aspectos medioambientales y sociales globales, para que en el largo plazo no se comprometa ni se degrade la vida en el planeta, ni la calidad de vida de la especie humana.”</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+ </activities>
+ <mediaBag />
+</JClicProject>
+

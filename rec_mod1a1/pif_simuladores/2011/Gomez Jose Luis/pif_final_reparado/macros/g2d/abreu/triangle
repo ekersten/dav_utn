@@ -1,0 +1,11 @@
+tipo_de_macro=R2
+id='x1' expresión='0' evaluar='una-sola-vez' constante='si'
+id='x2' expresión='1' evaluar='una-sola-vez' constante='si'
+id='x3' expresión='0.5' evaluar='una-sola-vez' constante='si'
+id='y1' expresión='0' evaluar='una-sola-vez' constante='si'
+id='y2' expresión='0' evaluar='una-sola-vez' constante='si'
+id='y3' expresión='1' evaluar='una-sola-vez' constante='si'
+id='rojo' expresión='1' evaluar='una-sola-vez' constante='si'
+id='verde' expresión='0' evaluar='una-sola-vez' constante='si'
+id='azul' expresión='0' evaluar='una-sola-vez' constante='si'
+tipo='polígono' color='gris' expresión='(x1,y1)(x2,y2)(x3,y3)(x1,y1)' relleno='(rojo,verde,azul,00)' 

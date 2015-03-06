@@ -1,0 +1,8 @@
+tipo_de_macro=R3
+id='a' evaluar='una-sola-vez' constante='si'
+id='x0' evaluar='una-sola-vez' constante='si'
+id='y0' evaluar='una-sola-vez' constante='si'
+id='z0' evaluar='una-sola-vez' constante='si'
+tipo='superficie' expresión='x=4*u-2 y=4*v-2 z=h' color='7fffffff' color_reverso='7fc0c0c0' aristas='si' cortar='si' Nu='1' Nv='1' 
+tipo='superficie' expresión='y=4*u-2 z=4*v-2 x=0' color='7fffffff' color_reverso='7fc0c0c0' aristas='si' cortar='si' Nu='1' Nv='1' 
+tipo='superficie' expresión='z=4*u-2 x=4*v-2 y=0' color='7fffffff' color_reverso='7fc0c0c0' aristas='si' cortar='si' Nu='1' Nv='1' 

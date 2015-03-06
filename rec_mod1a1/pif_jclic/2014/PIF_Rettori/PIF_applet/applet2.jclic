@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="applet2" version="0.1.3">
+ <settings>
+  <title>applet</title>
+  <revision description="created" date="8/9/14" />
+  <descriptors />
+ </settings>
+ <sequence>
+  <item id="Welcome" name="rompecabezas facil" />
+  <item name="juego de memoria facil" />
+  <item name="sopa de letras" />
+  <item id="Identification" name="asociacion compleja" />
+  <item name="actividad de exploracion" />
+  <item name="actividad de identificacion" />
+ </sequence>
+ <activities>
+  <activity class="@panels.Explore" name="actividad de exploracion" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <color background="0xCCFF00" />
+     </style>
+     <p>Typical animals in Argentina</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color background="0xCCFF00" />
+     </style>
+     <p>Well done</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <color background="0xCCFF00" />
+     </style>
+     <p>Try it again</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x33CCFF">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFF66FF" border="true" />
+   </settings>
+   <cells rows="2" cols="2" cellWidth="105.0" cellHeight="93.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell id="0" txtAlign="right,bottom" image="armadillo.jpg">
+     <style borderStroke="3.6" markerStroke="2.7">
+      <color background="0xFF6633" />
+     </style>
+    </cell>
+    <cell id="1" txtAlign="right,bottom" image="condor.jpg">
+     <style borderStroke="3.6" markerStroke="2.7">
+      <color background="0xFF6633" />
+     </style>
+    </cell>
+    <cell id="2" txtAlign="right,bottom" image="llama.jpg">
+     <style borderStroke="3.6" markerStroke="2.7">
+      <color background="0xFF6633" />
+     </style>
+    </cell>
+    <cell id="3" txtAlign="right,bottom" image="vicuña.jpg">
+     <style borderStroke="3.6" markerStroke="2.7">
+      <color background="0xFF6633" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="4" cols="1" cellWidth="79.0" cellHeight="58.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <style borderStroke="3.6" markerStroke="2.7">
+      <color background="0x99CC00" />
+     </style>
+     <p>armadillo</p>
+    </cell>
+    <cell>
+     <style borderStroke="3.6" markerStroke="2.7">
+      <color background="0x99CC00" />
+     </style>
+     <p>Condor</p>
+    </cell>
+    <cell>
+     <style borderStroke="3.6" markerStroke="2.7">
+      <color background="0x99CC00" />
+     </style>
+     <p>llama</p>
+    </cell>
+    <cell>
+     <style borderStroke="3.6" markerStroke="2.7">
+      <color background="0x99CC00" />
+     </style>
+     <p>vicuña</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.Identify" name="actividad de identificacion">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x66FF00" />
+     </style>
+     <p>Animals in danger of extinction</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color background="0x66FF00" />
+     </style>
+     <p>Well done</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <color background="0xFF9900" />
+     </style>
+     <p>Try it again</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="83.0" cellHeight="67.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell id="1" txtAlign="right,bottom" image="zebra.jpg" />
+    <cell id="1" txtAlign="right,bottom" image="canguro.jpg" />
+    <cell id="1" txtAlign="right,bottom" image="aguila.jpg" />
+    <cell id="0" image="pato.jpg" />
+    <cell id="0" image="tortuga.jpg" />
+    <cell id="0" image="conejo.jpg" />
+   </cells>
+   <cells rows="2" cols="3" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <cell>
+     <p>Zebra</p>
+    </cell>
+    <cell>
+     <p>Kangaroo</p>
+    </cell>
+    <cell>
+     <p>Eagle</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="asociacion compleja" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x99CC00" />
+     </style>
+     <p>Choose the right options</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color background="0x99CC00" />
+     </style>
+     <p>Well done</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <color background="0x99CC00" />
+     </style>
+     <p>Try it again</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x00FF99">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6666" border="true" />
+   </settings>
+   <cells rows="3" cols="2" cellWidth="131.0" cellHeight="72.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell id="2" txtAlign="right,bottom" image="abeja.jpg">
+     <style borderStroke="2.8" markerStroke="2.7">
+      <color background="0x99CC00" />
+     </style>
+     <p>Bee</p>
+    </cell>
+    <cell id="2" txtAlign="right,bottom" image="mariposa.jpg">
+     <style borderStroke="2.8" markerStroke="2.7">
+      <color background="0x99CC00" />
+     </style>
+     <p>Butterfly</p>
+    </cell>
+    <cell id="0" txtAlign="right,bottom" image="vaca.jpg">
+     <style borderStroke="2.8" markerStroke="2.7">
+      <color background="0x99CC00" />
+     </style>
+     <p>Cow</p>
+    </cell>
+    <cell id="0" txtAlign="right,bottom" image="caballo.jpg">
+     <style borderStroke="2.8" markerStroke="2.7">
+      <color background="0x99CC00" />
+     </style>
+     <p>Horse</p>
+    </cell>
+    <cell id="1" txtAlign="right,bottom" image="cheetah.jpg">
+     <style borderStroke="2.8" markerStroke="2.7">
+      <color background="0x99CC00" />
+     </style>
+     <p>Cheetah</p>
+    </cell>
+    <cell id="1" txtAlign="right,bottom" image="zorro.JPG">
+     <style borderStroke="2.8" markerStroke="2.7">
+      <color background="0x99CC00" />
+     </style>
+     <p>Fox</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="122.0" cellHeight="70.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell>
+     <style borderStroke="2.8" markerStroke="2.7">
+      <color background="0xFF6633" />
+     </style>
+     <p>Farm animals</p>
+    </cell>
+    <cell>
+     <style borderStroke="2.8" markerStroke="2.7">
+      <color background="0xFF6633" />
+     </style>
+     <p>Wild animals</p>
+    </cell>
+    <cell>
+     <style borderStroke="2.8" markerStroke="2.7">
+      <color background="0xFF6633" />
+     </style>
+     <p>Insects</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="juego de memoria facil">
+   <messages>
+    <cell type="initial">
+     <style>
+      <color background="0xFF9900" />
+     </style>
+     <p>Find the hidden animals</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color background="0xFF9900" />
+     </style>
+     <p>Well done</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <color background="0xFF9900" />
+     </style>
+     <p>Try it again</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFF33FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCFF00" border="true" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="111.0" cellHeight="60.0" border="true" id="primary">
+    <style borderStroke="1.5" markerStroke="2.7">
+     <font family="Arial" size="17" bold="true" />
+     <color foreground="0x0000CC" background="0xFFFF00" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="i01-tigre de bengala.jpg" />
+    <cell image="tiburon blancoi.jpg" />
+    <cell image="leon sudafricano.JPG" />
+    <cell image="jaguar.JPG" />
+    <cell image="i01-gorila.jpg" />
+    <cell image="delfin rosado.jpg" />
+   </cells>
+   <cells rows="2" cols="6" cellWidth="50.0" cellHeight="30.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell>
+     <p>tiger</p>
+    </cell>
+    <cell>
+     <p>shark</p>
+    </cell>
+    <cell>
+     <p>lion</p>
+    </cell>
+    <cell>
+     <p>jaguar</p>
+    </cell>
+    <cell>
+     <p>gorilla</p>
+    </cell>
+    <cell>
+     <p>dolphin</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="rompecabezas facil" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color background="0xFF9900" />
+     </style>
+     <p>Welcome</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color background="0xFF9900" />
+     </style>
+     <p>Well done</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <color background="0xFF9900" />
+     </style>
+     <p>Try it again</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0x33FFFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCFF00" border="true" />
+   </settings>
+   <cells rows="3" cols="4" border="true" image="tigre de bengala.jpg">
+    <style borderStroke="4.0" markerStroke="2.7" />
+    <shaper class="@ClassicJigSaw" cols="4" rows="3" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="sopa de letras" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Comic Sans MS" size="20" />
+      <color foreground="0x990000" />
+      <gradient source="0xFFCC00" dest="0x66FF00" angle="39" />
+     </style>
+     <p>Animals in danger of extinction - Find the hidden words</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Comic Sans MS" size="20" />
+      <color foreground="0x990000" />
+      <gradient source="0xFFCC00" dest="0x66FF00" angle="39" />
+     </style>
+     <p>Well Done</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <textGrid rows="11" columns="9" cellWidth="26.0" cellHeight="24.0" border="true">
+    <style borderStroke="2.7" markerStroke="2.7">
+     <font family="Arial" size="17" bold="true" />
+     <color background="0x00FFCC" />
+    </style>
+    <text>
+     <row>GORILLA***S</row>
+     <row>D*********H</row>
+     <row>***T******A</row>
+     <row>***LION***R</row>
+     <row>*****G****K</row>
+     <row>******E****</row>
+     <row>*******R***</row>
+     <row>DOLPHIN****</row>
+     <row>****JAGUAR*</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">SHARK</clue>
+    <clue id="1">DOLPHIN</clue>
+    <clue id="2">JAGUAR</clue>
+    <clue id="3">GORILLA</clue>
+    <clue id="4">TIGER</clue>
+    <clue id="5">LION</clue>
+   </clues>
+   <cells rows="2" cols="3" cellWidth="55.0" cellHeight="43.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="tiburon blanco.JPG" />
+    <cell image="i01-delfin rosado.jpg" />
+    <cell image="i01-jaguar.JPG" />
+    <cell image="gorila.jpg" />
+    <cell image="i02-tigre de bengala.jpg" />
+    <cell image="i01-leon sudafricano.JPG" />
+   </cells>
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="abeja.jpg" file="abeja.jpg" />
+  <media name="aguila.jpg" file="aguila.jpg" />
+  <media name="armadillo.jpg" file="armadillo.jpg" />
+  <media name="caballo.jpg" file="caballo.jpg" />
+  <media name="canguro.jpg" file="canguro.jpg" />
+  <media name="cheetah.jpg" file="cheetah.jpg" />
+  <media name="condor.jpg" file="condor.jpg" />
+  <media name="conejo.jpg" file="conejo.jpg" />
+  <media name="delfin rosado.jpg" file="delfin rosado.jpg" />
+  <media name="gorila.jpg" file="gorila.jpg" />
+  <media name="i01-delfin rosado.jpg" file="i01-delfin rosado.jpg" />
+  <media name="i01-gorila.jpg" file="i01-gorila.jpg" />
+  <media name="i01-jaguar.JPG" file="i01-jaguar.JPG" />
+  <media name="i01-leon sudafricano.JPG" file="i01-leon sudafricano.JPG" />
+  <media name="i01-tigre de bengala.jpg" file="i01-tigre de bengala.jpg" />
+  <media name="i02-tigre de bengala.jpg" file="i02-tigre de bengala.jpg" />
+  <media name="jaguar.JPG" file="jaguar.JPG" />
+  <media name="leon sudafricano.JPG" file="leon sudafricano.JPG" />
+  <media name="llama.jpg" file="llama.jpg" />
+  <media name="mariposa.jpg" file="mariposa.jpg" />
+  <media name="pato.jpg" file="pato.jpg" />
+  <media name="tiburon blanco.JPG" file="tiburon blanco.JPG" />
+  <media name="tiburon blancoi.jpg" file="tiburon blancoi.jpg" />
+  <media name="tigre de bengala.jpg" file="tigre de bengala.jpg" />
+  <media name="tortuga.jpg" file="tortuga.jpg" />
+  <media name="vaca.jpg" file="vaca.jpg" />
+  <media name="vicuña.jpg" file="vicuña.jpg" />
+  <media name="zebra.jpg" file="zebra.jpg" />
+  <media name="zorro.JPG" file="zorro.JPG" />
+ </mediaBag>
+</JClicProject>
+

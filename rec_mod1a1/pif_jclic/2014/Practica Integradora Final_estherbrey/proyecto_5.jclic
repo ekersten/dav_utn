@@ -1,0 +1,1736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="proyecto_5" version="0.1.3">
+ <settings>
+  <title>proyecto 5</title>
+  <revision description="created" date="10/5/14" />
+  <author name="Esther Brey" rol="docente" />
+  <organization name="DGCyE" />
+  <language>español (es)</language>
+  <descriptors area="Biología" level="Educación secundaria" />
+  <skin file="@orange.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="información general" />
+  <item name="Sopa de letras" />
+  <item name="Asociación compleja Pubertad" />
+  <item name="Memory" />
+  <item name="Actividad de exploración" />
+  <item name="Ordenar palabras en el texto" />
+  <item name="Asociación simple" />
+  <item name="Ordenar párrafos en el texto" />
+  <item name="Asociación compleja" />
+  <item name="Rellenar agujeros en blanco" />
+  <item name="Rellenar agujeros con lista" />
+  <item name="Identificar palabras" />
+  <item name="Actividad de identificación" />
+  <item name="Rompecabezas_embrion" />
+  <item name="Rellenar agujeros en blanco con inicial" />
+ </sequence>
+ <activities>
+  <activity class="@panels.Explore" name="Actividad de exploración" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="initial">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xFF9933" border="0x336600" />
+      <gradient source="0xFF9933" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Explora el sistema reproductor masculino</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Jovenes.jpg" type="final">
+     <style borderStroke="3.3" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xFF9900" border="0x336600" />
+      <gradient source="0xFF9933" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>¡Muy bien!</p>
+    </cell>
+    <cell imgAlign="left,middle" border="true" image="Jovenes.jpg" type="finalError">
+     <style borderStroke="3.1" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xFF9900" border="0x336600" />
+      <gradient source="0xFF9933" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Inténtalo otra vez</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://recursostic.educacion.es/ciencias/biosfera/web/alumno/3ESO/apararep/anamasc.htm" report="false">
+    <container bgColor="0xFFFF00">
+     <gradient source="0xCCFF00" dest="0xFFCC00" angle="0" cycles="24" />
+     <counters time="true" actions="false" score="false" />
+    </container>
+    <window bgColor="0xCCFF00" border="true">
+     <gradient source="0xCCFF00" dest="0xFFFFFF" angle="0" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="4" cellWidth="139.0" cellHeight="235.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="12" bold="true" />
+     <color foreground="0x006600" background="0xFFFF99" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell id="0">
+     <p>Es un repliegue cutáneo con forma de bolsa suspendida debajo del pene, que tiene funciones de protección; en él se alojan los testículos.</p>
+    </cell>
+    <cell id="1">
+     <p>Es el extremo dilatado del pene. Está cubierto por un repliegue de piel llamado prepucio.</p>
+    </cell>
+    <cell id="2">
+     <p>Produce una secreción alcalina que constituye el 25% del semen y sirve para neutralizar la acidez característica del sistema reproductor femenino.</p>
+    </cell>
+    <cell id="3">
+     <p>Es el órgano copulador, en su interior se extiende la uretra que conduce y expulsa los espermatozoides durante la eyaculación.</p>
+    </cell>
+    <cell id="4">
+     <p>Es un conducto de 5 cm de longitud, que se continúa con el conducto deferente.</p>
+    </cell>
+    <cell id="5">
+     <p>Son glándulas anexas que desembocan en el conducto eyaculador. Producen una sustancia viscosa que constituye el 60% del semen y que aporta energía a los espermatozoides.</p>
+    </cell>
+    <cell id="6">
+     <p>Producen un líquido lubricante que se segrega antes de la salida del semen y que facilita el pasaje de éste por la uretra y la penetración del pene en el sistema reproductor femenino.</p>
+    </cell>
+    <cell id="7">
+     <p>Son dos estructuras de forma ovoidea que miden de 4 a 5 cm de longitud. Dentro de cada testículo, se encuentran los tubos seminíferos, donde se producen los espermatozoides.</p>
+    </cell>
+   </cells>
+   <cells rows="8" cols="1" cellWidth="190.0" cellHeight="72.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="18" bold="true" />
+     <color foreground="0x006600" background="0xCCFF00" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="8" />
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="Varón.png">
+     <media type="PLAY_AUDIO" level="1" file="slidedown.mp3" />
+     <p>ESCROTO</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Varón.png">
+     <media type="PLAY_AUDIO" level="1" file="slidedown.mp3" />
+     <p>GLANDE</p>
+    </cell>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="Varón.png">
+     <media type="PLAY_AUDIO" level="1" file="slidedown.mp3" />
+     <p>PRÓSTATA</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Varón.png">
+     <media type="PLAY_AUDIO" level="1" file="slidedown.mp3" />
+     <p>PENE</p>
+    </cell>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="Varón.png">
+     <media type="PLAY_AUDIO" level="1" file="slidedown.mp3" />
+     <p>EPIDÍDIMO</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Varón.png">
+     <media type="PLAY_AUDIO" level="1" file="slidedown.mp3" />
+     <p>VESÍCULAS SEMINALES</p>
+    </cell>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="Varón.png">
+     <media type="PLAY_AUDIO" level="1" file="slidedown.mp3" />
+     <p>GLÁNDULAS </p>
+     <p>BULBO</p>
+     <p>URETRALES</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Varón.png">
+     <media type="PLAY_AUDIO" level="1" file="slidedown.mp3" />
+     <p>TESTÍCULOS</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.Identify" name="Actividad de identificación" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="initial">
+     <style borderStroke="3.3" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xFFCC00" border="0x336600" />
+      <gradient source="0xFFFF00" dest="0xFF9933" angle="0" />
+     </style>
+     <p>¿Cuáles de las afirmaciones son FALSAS?</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="final">
+     <style borderStroke="3.7" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xFF9900" border="0x336600" />
+      <gradient source="0xFFFF00" dest="0xFF9933" angle="0" />
+     </style>
+     <p>¡Muy bien!</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="finalError">
+     <style borderStroke="3.4" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xFF9900" border="0x336600" />
+      <gradient source="0xFFFF00" dest="0xFF9933" angle="0" />
+     </style>
+     <p>Inténtalo otra vez</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://recursostic.educacion.es/ciencias/biosfera/web/alumno/3ESO/apararep/fecundi.htm" maxTime="90" countDownTime="true" report="true" reportActions="false">
+    <container bgColor="0x99FF00">
+     <gradient source="0xCCFF00" dest="0xFFFFFF" angle="99" cycles="17" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x99FF00" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="3" cols="5" cellWidth="170.0" cellHeight="164.0" border="true" id="primary">
+    <style>
+     <color background="0xFFCC00" alternative="0xCC0000" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="3" />
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="Screaming-SmallChild.mp3" />
+     <p>El semen está compuesto por espermatozoides y líquidos formados por glándulas accesorias.</p>
+    </cell>
+    <cell id="1">
+     <p>Los estrógenos son hormonas que participan en la formación de espermatozoides.</p>
+    </cell>
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="Screaming-SmallChild.mp3" />
+     <p>En la Trompa de Falopio es el lugar donde puede ocurrir la fecundación.</p>
+    </cell>
+    <cell id="1">
+     <p>La fecundación es la salida del óvulo del ovario.</p>
+    </cell>
+    <cell id="1">
+     <p>La gametogénesis genera células iguales al resto de las células dentro del cuerpo.</p>
+    </cell>
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="Screaming-SmallChild.mp3" />
+     <p>La gametogénesis ocurre en las gónadas.</p>
+    </cell>
+    <cell id="1">
+     <p>Los espermatozoides sólo están presentes en el semen eyaculado al finalizar el coito.</p>
+    </cell>
+    <cell id="1">
+     <p>La mujer comienza a fabricar ovocitos en la pubertad.</p>
+    </cell>
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="Screaming-SmallChild.mp3" />
+     <p>El proceso por el cual se generan espermatozoides dura aproximadamente 20 días.</p>
+    </cell>
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="Screaming-SmallChild.mp3" />
+     <p>El período de fertilidad del ciclo femenino se extiende desde el día 10 al día 16.</p>
+    </cell>
+    <cell id="1">
+     <p>La concentración de hormonas femeninas decrece durante la fase lútea.</p>
+    </cell>
+    <cell id="1">
+     <p>El sistema reproductor femenino comparte la última porción de su recorrido con el sistema excretor.</p>
+    </cell>
+    <cell id="1">
+     <p>La ovulación ocurre al inicio del ciclo menstrual de la mujer.</p>
+    </cell>
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="Screaming-SmallChild.mp3" />
+     <p>La pubertad indica el comienzo de la etapa reproductiva de una persona.</p>
+    </cell>
+    <cell id="1">
+     <p>La mucosa del útero o endometrio permanece sin cambios durante todo el ciclo menstrual.</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="5" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="3" />
+    <cell />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="cheer-03.mp3" />
+     <p>¡CORRECTO! Los estrógenos participan en la formación de óvulos.</p>
+    </cell>
+    <cell />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="cheer-03.mp3" />
+     <p>¡CORRECTO! La fecundación es la unión del óvulo con el espermatozoide.</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="cheer-03.mp3" />
+     <p>¡CORRECTO! La gametogénesis genera células con la mitad del material genético que las células originales.</p>
+    </cell>
+    <cell />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="cheer-03.mp3" />
+     <p>¡CORRECTO! También hay espermatozoides en el líquido preseminal.</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="cheer-03.mp3" />
+     <p>¡CORRECTO! Los ovocitos primarios se forman durante su desarrollo embrionario.</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="cheer-03.mp3" />
+     <p>¡CORRECTO! La concentración de hormonas crece en esta fase.</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="cheer-03.mp3" />
+     <p>¡CORRECTO! El sistema reproductor femenino está separado del sistema excretor.</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="cheer-03.mp3" />
+     <p>¡CORRECTO! La menstruación ocurre al inicio del ciclo menstrual.</p>
+    </cell>
+    <cell />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="cheer-03.mp3" />
+     <p>¡CORRECTO! En el transcurso del ciclo el endometrio se engrosa y prepara para albergar el óvulo en caso de que sea fecundado.</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Asociación compleja" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="initial">
+     <style borderStroke="3.5" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xCCFF33" border="0xFFFF00" />
+      <gradient source="0xFFFF66" dest="0x99FF00" angle="0" />
+     </style>
+     <p>Relaciona los órganos con su sistema reproductor</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="final">
+     <style borderStroke="3.8" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0x33FF00" border="0xFFFF00" />
+      <gradient source="0xFFFF00" dest="0x99FF00" angle="0" />
+     </style>
+     <p>¡Muy bien!</p>
+    </cell>
+    <cell imgAlign="left,middle" border="true" image="Jovenes.jpg" type="finalError">
+     <style borderStroke="3.5" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0x66FF00" border="0xFFFF00" />
+      <gradient source="0xFFFF66" dest="0x99FF00" angle="0" />
+     </style>
+     <p>Inténtalo otra vez.</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://recursostic.educacion.es/ciencias/biosfera/web/alumno/3ESO/apararep/anafem.htm" maxTime="30" countDownTime="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFFFF33">
+     <gradient source="0xCCCC00" dest="0xFFFFFF" angle="43" cycles="5" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCFF33" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="3" cols="5" cellWidth="115.0" cellHeight="134.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="18" />
+     <color background="0xFFFF66" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="3" />
+    <cell id="1">
+     <style>
+      <font family="Arial" size="14" />
+      <color background="0xFFFF66" />
+     </style>
+     <p>TESTÍCULOS</p>
+    </cell>
+    <cell id="1">
+     <style>
+      <font family="Arial" size="14" />
+      <color background="0xFFFF66" />
+     </style>
+     <p>EPIDÍDIMO</p>
+    </cell>
+    <cell id="1">
+     <style>
+      <font family="Arial" size="14" />
+      <color background="0xFFFF66" />
+     </style>
+     <p>CONDUCTO DEFERENTE</p>
+    </cell>
+    <cell id="1">
+     <style>
+      <font family="Arial" size="14" />
+      <color background="0xFFFF66" />
+     </style>
+     <p>PENE</p>
+    </cell>
+    <cell id="1">
+     <style>
+      <font family="Arial" size="14" />
+      <color background="0xFFFF66" />
+     </style>
+     <p>PRÓSTATA</p>
+    </cell>
+    <cell id="1">
+     <style>
+      <font family="Arial" size="14" />
+      <color background="0xFFFF66" />
+     </style>
+     <p>VESÍCULAS SEMINALES</p>
+    </cell>
+    <cell id="0">
+     <style>
+      <font family="Arial" size="14" />
+      <color background="0xFFFF66" />
+     </style>
+     <p>OVARIOS</p>
+    </cell>
+    <cell id="0">
+     <style>
+      <font family="Arial" size="14" />
+      <color background="0xFFFF66" />
+     </style>
+     <p>ÚTERO</p>
+    </cell>
+    <cell id="1">
+     <style>
+      <font family="Arial" size="20" />
+      <color background="0xFFFF66" />
+     </style>
+     <p>GLÁNDULAS BULBOURETRALES</p>
+    </cell>
+    <cell id="0">
+     <style>
+      <font family="Arial" size="14" />
+      <color background="0xFFFF66" />
+     </style>
+     <p>TROMPAS DE FALOPIO</p>
+    </cell>
+    <cell id="0">
+     <style>
+      <font family="Arial" size="14" />
+      <color background="0xFFFF66" />
+     </style>
+     <p>VAGINA</p>
+    </cell>
+    <cell id="0">
+     <style>
+      <font family="Arial" size="14" />
+      <color background="0xFFFF66" />
+     </style>
+     <p>LABIOS MAYORES Y MENORES</p>
+    </cell>
+    <cell id="0">
+     <style>
+      <font family="Arial" size="14" />
+      <color background="0xFFFF66" />
+     </style>
+     <p>CLÍTORIS</p>
+    </cell>
+    <cell id="1">
+     <style>
+      <font family="Arial" size="14" />
+      <color background="0xFFFF66" />
+     </style>
+     <p>ESCROTO</p>
+    </cell>
+    <cell id="1">
+     <style>
+      <font family="Arial" size="14" />
+      <color background="0xFFFF66" />
+     </style>
+     <p>GLANDE</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="1" cellWidth="127.0" cellHeight="114.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="14" />
+     <color background="0xFFCC00" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell imgAlign="middle,bottom" avoidOverlapping="true">
+     <p>SISTEMA REPRODUCTOR FEMENINO</p>
+    </cell>
+    <cell>
+     <p>SISTEMA REPRODUCTOR MASCULINO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Asociación compleja Pubertad" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="initial">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <color background="0x99FF00" border="0x33CC00" />
+      <gradient source="0x99FF00" dest="0xFFFF99" angle="0" />
+     </style>
+     <p>Relaciona los cambios que se producen en cada sexo con el tipo de caracter sexual</p>
+    </cell>
+    <cell imgAlign="left,middle" border="true" image="Jovenes.jpg" type="final">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0x33CC00" border="0x33CC00" />
+      <gradient source="0x99FF00" dest="0xFFFF99" angle="0" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="applause-3.mp3" />
+     <p>¡Muy bien!</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="finalError">
+     <style borderStroke="3.1" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0x33CC00" border="0x33CC00" />
+      <gradient source="0x99FF00" dest="0xFFFF99" angle="0" />
+     </style>
+     <p>Inténtalo otra vez</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://recursostic.educacion.es/ciencias/biosfera/web/alumno/3ESO/apararep/aparep.htm" maxTime="70" countDownTime="true" report="true" reportActions="false">
+    <helpWindow showSolution="false" />
+    <container bgColor="0xFFFF00">
+     <gradient source="0x99FF00" dest="0xFFFF00" angle="118" cycles="2" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x99FF00" transparent="true" border="true" />
+   </settings>
+   <cells rows="2" cols="5" cellWidth="111.0" cellHeight="123.0" border="true" id="primary">
+    <style>
+     <color background="0x99FF00" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell id="1">
+     <p>Aumenta la masa muscular, se ensanchan los hombros.</p>
+    </cell>
+    <cell id="1">
+     <p>Crece la barba, el vello púbico,el del pecho y el de las axilas.</p>
+    </cell>
+    <cell id="1">
+     <p>La voz es más grave.</p>
+    </cell>
+    <cell id="1">
+     <p>El pene crece.</p>
+    </cell>
+    <cell id="0">
+     <p>Los testículos crecen, producen hormonas y espermatozoides.</p>
+    </cell>
+    <cell id="3">
+     <p>Se ensanchan las caderas.</p>
+    </cell>
+    <cell id="3">
+     <p>Las mamas se desarrollan y aumentan de tamaño.</p>
+    </cell>
+    <cell id="3">
+     <p>Crece el vello púbico y el de las axilas.</p>
+    </cell>
+    <cell id="3">
+     <p>La vagina aumenta de tamaño.</p>
+    </cell>
+    <cell id="2">
+     <p>Los ovarios crecen, producen hormonas y maduran los óvulos.</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="1" cellWidth="138.0" cellHeight="77.0" border="true" id="secondary">
+    <style transparent="true" borderStroke="0.7" markerStroke="2.7">
+     <color background="0xFFFF00" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Varón.png">
+     <p>CARACTER SEXUAL PRIMARIO</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Varón.png">
+     <p>CARACTER SEXUAL SECUNDARIO</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="mujer.jpg">
+     <p>CARACTER SEXUAL PRIMARIO</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="mujer.jpg">
+     <p>CARACTER SEXUAL SECUNDARIO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="Asociación simple" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="initial">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xFF9900" border="0x990000" />
+      <gradient source="0xFF9900" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Relaciona los órganos señalados con la flecha con su correspondiente nombre</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="final">
+     <style borderStroke="3.1" markerStroke="5.0">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xFF9900" border="0x990000" />
+      <gradient source="0xFF9900" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>¡Muy bien!</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="finalError">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xFF9900" border="0x990000" />
+      <gradient source="0xFF9900" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Inténtalo otra vez</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://recursostic.educacion.es/ciencias/biosfera/web/alumno/3ESO/apararep/anafem.htm" maxTime="15" countDownTime="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFFCCCC">
+     <gradient source="0xFF6600" dest="0xFFFFFF" angle="43" cycles="5" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6666" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="2" cellWidth="207.0" cellHeight="180.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color foreground="0x990000" background="0xEFEFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell txtAlign="middle,top" imgAlign="middle,bottom" avoidOverlapping="true" image="Aparato-reproductor-femenino1.jpg">
+     <p>¿Qué órgano es?</p>
+    </cell>
+    <cell txtAlign="middle,top" imgAlign="middle,bottom" image="Aparato-reproductor-femenino2.jpg">
+     <p>¿Qué órgano es?</p>
+    </cell>
+    <cell txtAlign="middle,top" imgAlign="middle,bottom" image="Aparato-reproductor-femenino3.jpg">
+     <p>¿Qué órgano es?</p>
+    </cell>
+    <cell txtAlign="middle,top" imgAlign="middle,bottom" image="Aparato-reproductor-femenino4.jpg">
+     <p>¿Qué órgano es?</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="2" cellWidth="138.0" cellHeight="114.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="17" bold="true" />
+     <color foreground="0x990000" background="0xFFCCCC" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell>
+     <p>OVARIO</p>
+    </cell>
+    <cell>
+     <p>VAGINA</p>
+    </cell>
+    <cell>
+     <p>ÚTERO</p>
+    </cell>
+    <cell>
+     <p>TROMPA DE FALOPIO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.Identify" name="Identificar palabras" code="" type="identifyWords">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="initial">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xFFFF00" border="0x66FF00" />
+      <gradient source="0xFFFF00" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Encuentra las células especiales que menciona el texto</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="final">
+     <style borderStroke="2.9" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xFFFF00" border="0x66FF00" />
+      <gradient source="0xFFFF00" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="cheer-03.mp3" />
+     <p>¡Muy bien!</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="finalError">
+     <style borderStroke="2.9" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xFFFF00" border="0x66FF00" />
+      <gradient source="0xFFFF00" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="witchlaugh.mp3" />
+     <p>Inténtalo otra vez</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="40" countDownTime="true" maxActions="2" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Utiliza las imágenes como ayuda</p>
+    </helpWindow>
+    <container bgColor="0xFFFF66">
+     <gradient source="0xFFFFCC" dest="0xFFFF66" angle="50" cycles="8" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x66CC00" border="true">
+     <size width="780" height="477" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <checkButton>Evalúate</checkButton>
+   <document>
+    <style name="default" italic="false" family="Arial" background="0xFFFFFF" tabWidth="12" size="14" bold="false" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16" bold="true">Células especiales para la nutrición y la secreción:</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14" bold="false">Entre las espermatogonias, se encuentran las células de </text>
+      <target>Sértoli</target>
+      <text family="Arial" background="0xFFFFFF" size="14" bold="false"> que son las encargadas de suministrar sustancias nutritivas a aquellas. En los túbulos seminíferos, a su vez, se localizan las células de </text>
+      <target>Leydig</target>
+      <text family="Arial" background="0xFFFFFF">,</text>
+      <text family="Arial" background="0xFFFFFF" size="14" bold="false"> que producen las hormonas sexuales masculinas (la </text>
+      <text family="Arial" italic="true" foreground="0x009999" background="0xFFFFFF" bold="true" size="14">testosterona</text>
+      <text family="Arial" background="0xFFFFFF" size="14" bold="false">).</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14" bold="false">A su vez, cada ovocito se halla rodeado por una capa de células planas, las células </text>
+      <target>foliculares</target>
+      <text family="Arial" background="0xFFFFFF" size="14" bold="false">, y su estrutura completa es un folículo primario.  Estos foliculos inmaduros (sin división) se mantienen hasta la pubertad.  Luego, comienzan a dividirse formando capas y secretando un fluído que contiene hormonas sexuales femeninas (</text>
+      <text family="Arial" italic="true" foreground="0x009999" background="0xFFFFFF" bold="true" size="14">estrógenos</text>
+      <text family="Arial" background="0xFFFFFF" size="14" bold="false"> y </text>
+      <text family="Arial" italic="true" foreground="0x009999" background="0xFFFFFF" bold="true" size="14">progesterona</text>
+      <text family="Arial" background="0xFFFFFF" size="14" bold="false">).</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" Alignment="1">
+      <cell txtAlign="middle,top" imgAlign="left,middle" width="340" height="294" image="Túbulo seminífero.jpg">
+       <style>
+        <font family="Arial" size="16" bold="true" />
+        <color background="0xFFFFFF" />
+        <gradient source="0xFFFFFF" dest="0xFFFFFF" angle="0" />
+       </style>
+       <p>TÚBULO SEMINÍFERO</p>
+      </cell>
+      <cell txtAlign="middle,top" imgAlign="right,middle" width="400" height="180" image="Desarrollo folicular.jpg">
+       <style>
+        <font family="Arial" size="16" bold="true" />
+        <color background="0xFFFFFF" />
+        <gradient source="0xFFFFFF" dest="0xFFFFFF" angle="0" />
+       </style>
+       <p>DESARROLLO FOLICULAR</p>
+      </cell>
+     </p>
+    </section>
+   </document>
+  </activity>
+  <activity class="@memory.MemoryGame" name="Memory" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="initial">
+     <style borderStroke="3.3" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0x33FF00" border="0x336600" />
+      <gradient source="0x33FF00" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Encuentra las parejas: estructura - nombre</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Jovenes.jpg" type="final">
+     <style borderStroke="3.3" markerStroke="5.0">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0x33FF00" border="0x336600" />
+      <gradient source="0x33FF00" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="applause-3.mp3" />
+     <p> ¡Muy bien!</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="finalError">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0x009900" border="0x336600" />
+      <gradient source="0x33FF00" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Inténtalo otra vez</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFF66">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCFFCC" border="true" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="181.0" cellHeight="186.0" border="true" id="primary">
+    <style shadow="true" borderStroke="3.0" markerStroke="2.7">
+     <font family="Arial" size="26" />
+     <color background="0xFFFFFF" shadow="0xFFFF66" alternative="0x000000" border="0x33FF00" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="Epididimo+testiculo.jpg" />
+    <cell image="Gameta Fem.jpg" />
+    <cell image="Gameta Masc.jpg" />
+    <cell image="Ovario.jpg" />
+    <cell image="Reproductor femenino.png" />
+    <cell image="Reproductor masculino.png" />
+   </cells>
+   <cells rows="2" cols="3" cellWidth="50.0" cellHeight="30.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell>
+     <p>TESTICULO</p>
+    </cell>
+    <cell>
+     <p>OVULO</p>
+    </cell>
+    <cell>
+     <p>ESPERMATOZOIDE</p>
+    </cell>
+    <cell>
+     <p>OVARIO</p>
+    </cell>
+    <cell>
+     <p>SISTEMA REPRODUCTOR FEMENINO</p>
+    </cell>
+    <cell>
+     <p>SISTEMA REPRODUCTOR MASCULINO</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.Order" name="Ordenar palabras en el texto" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="previous">
+     <style borderStroke="3.0" markerStroke="5.0">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xFFCC33" border="0xCCFF33" />
+      <gradient source="0xFFCC33" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="slidedown.mp3" />
+     <p>Lee con atención y haz clic sobre el texto cuando estes listo para comenzar con la actividad</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="initial">
+     <style borderStroke="3.1" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xFFCC33" border="0xCCFF33" />
+      <gradient source="0xFFCC33" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Ordena las palabras del texto que no están en su sitio</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="final">
+     <style borderStroke="3.5" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xFFCC33" border="0xCCFF33" />
+      <gradient source="0xFFCC33" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="cheer-03.mp3" />
+     <p>¡Muy bien!</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="finalError">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xFFCC33" border="0xCCFF33" />
+      <gradient source="0xFFCC33" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="witchlaugh.mp3" />
+     <p>Inténtalo otra vez</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://recursostic.educacion.es/ciencias/biosfera/web/alumno/3ESO/apararep/anamasc.htm" maxTime="50" countDownTime="true" maxActions="3" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFFCC33">
+     <gradient source="0xFFCC33" dest="0xFFFF00" angle="0" cycles="8" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF6600" border="true">
+     <size width="780" height="356" />
+    </window>
+   </settings>
+   <checkButton>Comprueba si lo has hecho bien</checkButton>
+   <prevScreen>
+    <style>
+     <font family="Arial" size="16" />
+     <color background="0xCCFF00" />
+    </style>
+    <p>¿CUÁL ES EL CAMINO QUE RECORREN LOS ESPERMATOZOIDES?&#xD;</p>
+    <p>&#xD;</p>
+    <p>     Los espermatozoides se producen dentro de los testículos, que son órganos protegidos por una "bolsa" llamada escroto.&#xD;</p>
+    <p>&#xD;</p>
+    <p>     El interior de cada testículo posee una gran cantidad de tubos conocidos como   túbulos seminíferos, que constituyen verdaderas fábricas de espermatozoides. Los espermatozoides que produce cada testículo se almacenan en el epidídimo, donde cumplen las últimas etapas de su maduración, desde allí, pasan por los conductos deferentes hacia el conducto eyaculador común. En el recorrido, las secreciones elaboradas por la próstata, la vesícula seminal y las glándulas de Cowper o bulbouretrales se mezclan con los espermatozoides, y les proporcionan un medio líquido, que facilite su transporte. El fluído así compuesto se denomina esperma o semen y recorrerá la uretra (vía común con el sistema urinario), al momento de la eyaculación, es decir, la expulsión del semen fuera del cuerpo.</p>
+   </prevScreen>
+   <document>
+    <style name="default" family="Arial" italic="false" background="0xFFFFFF" tabWidth="12" bold="false" size="14" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text italic="false" family="Arial" foreground="0x000000" background="0xFFFFFF" bold="true" size="16">¿Cuál es el camino que recorren los espermatozoides?</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text italic="false" family="Arial" foreground="0x000000" background="0xFFFFFF" bold="false" size="14">     Los espermatozoides se producen dentro de los testículos, que son órganos protegidos por una "bolsa" llamada </text>
+      <text italic="true" family="Arial" foreground="0x000000" background="0xFFFFFF" bold="false" size="14">escroto</text>
+      <text italic="false" family="Arial" foreground="0x000000" background="0xFFFFFF" bold="false" size="14">.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text italic="false" family="Arial" foreground="0x000000" background="0xFFFFFF" bold="false" size="14">     El interior de cada testículo posee una gran cantidad de tubos conocidos como   túbulos </text>
+      <target>seminíferos,</target>
+      <text italic="false" family="Arial" foreground="0x000000" background="0xFFFFFF" bold="false" size="14"> que constituyen verdaderas fábricas de espermatozoides. Los espermatozoides que produce cada testículo se almacenan en el </text>
+      <target>epidídimo,</target>
+      <text italic="false" family="Arial" foreground="0x000000" background="0xFFFFFF" bold="false" size="14"> donde cumplen las últimas etapas de su maduración, desde allí, pasan por los conductos </text>
+      <target>deferentes</target>
+      <text italic="false" family="Arial" foreground="0x000000" background="0xFFFFFF" bold="false" size="14"> hacia el conducto eyaculador común. En el recorrido, las secreciones elaboradas por la </text>
+      <text italic="true" family="Arial" foreground="0x009999" background="0xFFFFFF" bold="true" size="14">próstata</text>
+      <text italic="false" family="Arial" foreground="0x000000" background="0xFFFFFF" bold="false" size="14">, la </text>
+      <text italic="true" family="Arial" foreground="0x009999" background="0xFFFFFF" bold="true" size="14">vesícula seminal</text>
+      <text italic="false" family="Arial" foreground="0x000000" background="0xFFFFFF" bold="true" size="14"> </text>
+      <text italic="false" family="Arial" foreground="0x000000" background="0xFFFFFF" bold="false" size="14">y las </text>
+      <text italic="true" family="Arial" foreground="0x009999" background="0xFFFFFF" bold="true" size="14">glándulas de Cowper o</text>
+      <text italic="false" family="Arial" foreground="0x000000" background="0xFFFFFF" bold="true" size="14"> </text>
+      <text italic="true" family="Arial" foreground="0x009999" background="0xFFFFFF" bold="true" size="14">bulbouretrales</text>
+      <text italic="false" family="Arial" foreground="0x000000" background="0xFFFFFF" bold="false" size="14"> se mezclan con los espermatozoides, y les proporcionan un medio líquido, que facilite su transporte. El fluído así compuesto se denomina esperma o semen y recorrerá la </text>
+      <target>uretra</target>
+      <text italic="false" family="Arial" foreground="0x000000" background="0xFFFFFF" bold="false" size="14"> (vía común con el sistema urinario), al momento de la </text>
+      <text italic="true" family="Arial" foreground="0x000000" background="0xFFFFFF" bold="false" size="14">eyaculación</text>
+      <text italic="false" family="Arial" foreground="0x000000" background="0xFFFFFF" bold="false" size="14">, es decir, la expulsión del semen fuera del cuerpo.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" Alignment="1">
+      <cell width="250" height="250" image="Reproductor masculino.png" />
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.Order" name="Ordenar párrafos en el texto" code="" type="orderParagraphs">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="previous">
+     <style borderStroke="3.1" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xCCCC00" border="0x666600" />
+      <gradient source="0xCCCC00" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="slidedown.mp3" />
+     <p>Lee con atención y haz clic sobre el texto cuando estés listo para comenzar con la actividad</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="initial">
+     <style borderStroke="3.1" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xCCCC00" border="0x666600" />
+      <gradient source="0xCCCC00" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Ordena las párrafos del texto que no estén en su sitio</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="final">
+     <style borderStroke="3.3" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xCCCC00" border="0x666600" />
+      <gradient source="0xCCCC00" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="cheer-03.mp3" />
+     <p>¡Muy bien!</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="finalError">
+     <style borderStroke="3.1" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xCCCC00" border="0x666600" />
+      <gradient source="0xCCCC00" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="witchlaugh.mp3" />
+     <p>Inténtalo otra vez</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://recursostic.educacion.es/ciencias/biosfera/web/alumno/3ESO/apararep/ciclom.htm" maxTime="60" countDownTime="true" maxActions="3" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Utiliza la imágen como ayuda</p>
+    </helpWindow>
+    <container bgColor="0xCCFF66">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="713" height="399" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <checkButton>Compruéba si lo has hecho bien</checkButton>
+   <prevScreen>
+    <style transparent="true">
+     <color background="0xFFFF66" />
+     <gradient source="0xFFFF66" dest="0xFFFFFF" angle="0" />
+    </style>
+    <p>EL CICLO MENSTRUAL:&#xD;</p>
+    <p>&#xD;</p>
+    <p>     El ciclo menstrual comienza con la maduración del folículo ovárico por acción de las hormonas de la hipófisis (FSH y LH).&#xD;</p>
+    <p>&#xD;</p>
+    <p>     A medida que el folículo ovárico se agranda,  produce cantidades mayores de hormonas (progesterona y estrógenos), que viajan al útero y provocan el desarrollo de la capa que lo reviste, el endometrio, que se hace más grueso y rico en vasos sanguíneos.&#xD;</p>
+    <p>&#xD;</p>
+    <p>     Aproximadamente al día 14 del ciclo, se produce la ovulación y el óvulo comienza a su recorrido por las trompas de Falopio hacia el útero. &#xD;</p>
+    <p>&#xD;</p>
+    <p>     Las células del folículo se reorganizan; se  transforman en cuerpo lúteo y éste comienza a producir hormonas (progesterona y estrógenos).&#xD;</p>
+    <p>&#xD;</p>
+    <p>     En caso de que no se produzca la fecundación, el cuerpo lúteo se reabsorbe (involuciona) y en consecuencia los niveles de hormonas en sangre decrecen. Al cabo de unos pocos días el óvulo muere.&#xD;</p>
+    <p>&#xD;</p>
+    <p>     Al decaer la producción de estrógenos y progesterona el endometrio se desprende y libera al exterior, hemorragia denominada menstruación. El ciclo vuelve a comenzar.&#xD;</p>
+   </prevScreen>
+   <document>
+    <style name="default" italic="false" family="Arial" background="0xFFFFFF" tabWidth="12" size="14" bold="false" />
+    <style name="target" base="default" foreground="0x0033CC" target="true" background="0xFFFFFF" />
+    <style name="targetError" base="target" foreground="0xFF0000" background="0xFFFFFF" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text background="0xFFFFFF" size="16" bold="true">El ciclo menstrual:</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <target>     El ciclo menstrual comienza con la maduración del folículo ovárico por acción de las hormonas de la hipófisis (FSH y LH).</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text background="0xFFFFFF" size="14">     A medida que el folículo ovárico se agranda,  produce cantidades mayores de hormonas (progesterona y estrógenos), que viajan al útero y provocan el desarrollo de la capa que lo reviste, el </text>
+      <text background="0xFFFFFF" size="14" bold="false">endometrio</text>
+      <text background="0xFFFFFF" size="14">, que se hace más grueso y rico en vasos sanguíneos.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <target>     Aproximadamente al día 14 del ciclo, se produce la ovulación y el óvulo comienza a su recorrido por las trompas de Falopio hacia el útero. </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <target>     Las células del folículo se reorganizan; se  transforman en cuerpo lúteo y éste comienza a producir hormonas (progesterona y estrógenos).</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text size="14">     En caso de que no se produzca la fecundación, el cuerpo lúteo se reabsorbe (involuciona) y en consecuencia los niveles de hormonas en sangre decrecen. Al cabo de unos pocos días el óvulo muere.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <target>     Al decaer la producción de estrógenos y progesterona el endometrio se desprende y libera al exterior, hemorragia denominada menstruación. El ciclo vuelve a comenzar.</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" Alignment="1">
+      <cell width="450" height="300" image="Ciclo ovarico y uterino.jpg">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="Rellenar agujeros con lista" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="initial">
+     <style borderStroke="3.1" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xFFFF00" border="0x99FF00" />
+      <gradient source="0xFFFF00" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Selecciona la opción correcta</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="final">
+     <style borderStroke="3.3" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xFFFF00" border="0x99FF00" />
+      <gradient source="0xFFFF00" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="cheer-03.mp3" />
+     <p>¡Muy bien!</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="finalError">
+     <style borderStroke="3.5" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xFFFF00" border="0x99FF00" />
+      <gradient source="0xFFFF00" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="witchlaugh.mp3" />
+     <p>Inténtalo otra vez</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://recursos.cnice.mec.es/biosfera/alumno/3ESO/apararep/fisiofem.htm" maxTime="100" countDownTime="true" maxActions="9" countDownActions="true" report="true" reportActions="false">
+    <container bgColor="0xFF9900">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF99" border="true">
+     <size width="677" height="396" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <document>
+    <style name="default" family="Arial" italic="false" background="0xFFFFFF" tabWidth="12" bold="false" size="11" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <cell width="98" height="102" image="Gameta Masc.jpg">
+       <style>
+        <font family="Arial" size="16" bold="true" />
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+      <text family="Arial" background="0xFFFFFF" size="16" bold="true">¿Como se forman los espermatozoides?</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="14" bold="false">El varón produce espermatocitos continuamente desde </text>
+      <target>
+       <answer>la pubertad</answer>
+       <optionList>
+        <option>el nacimiento</option>
+        <option>la pubertad</option>
+       </optionList>
+       <text>la pubertad</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF" size="14" bold="false">. Dichas células se dividen de manera tal que cada espermatozoide resultante tenga la </text>
+      <target>
+       <answer>mitad de la</answer>
+       <optionList>
+        <option>mitad de la</option>
+        <option>misma </option>
+       </optionList>
+       <text>mitad de la</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF" size="14" bold="false"> información genética necesaria para dar origen a un ser humano. Este tipo de división se denomina </text>
+      <target>
+       <answer>meiosis</answer>
+       <optionList>
+        <option>mitosis</option>
+        <option>meiosis</option>
+       </optionList>
+       <text>meiosis</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF" size="14" bold="false"> y en este caso en particular se trata de la </text>
+      <text family="Arial" italic="true" foreground="0x009999" background="0xFFFFFF" bold="true" size="14">espermatogénesis</text>
+      <text family="Arial" background="0xFFFFFF" size="14" bold="false">.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <cell width="86" height="82" image="Gameta Fem.jpg">
+       <style>
+        <font family="Arial" size="16" bold="true" />
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+      <text family="Arial" background="0xFFFFFF" size="16"> </text>
+      <text italic="false" family="Arial" background="0xFFFFFF" bold="true" size="16">¿Cómo se forman los óvulos?</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text italic="false" family="Arial" background="0xFFFFFF" bold="false" size="14">En la mujer, la mayor parte de los ovocitos están formados desde </text>
+      <target>
+       <answer>su etapa embrionaria</answer>
+       <optionList>
+        <option>la pubertad</option>
+        <option>su etapa embrionaria</option>
+       </optionList>
+       <text>su etapa embrionaria</text>
+      </target>
+      <text italic="false" family="Arial" background="0xFFFFFF" bold="false" size="14">.  En cada ovulación, uno de ellos reanuda su división </text>
+      <target>
+       <answer>meiótica</answer>
+       <optionList>
+        <option>mitótica</option>
+        <option>meiótica</option>
+       </optionList>
+       <text>meiótica</text>
+      </target>
+      <text italic="false" family="Arial" background="0xFFFFFF" bold="false" size="14"> para dar como resultado un óvulo. La maduración se completa una vez que el espermatozoide entra en contacto con el óvulo y se produce la </text>
+      <target>
+       <answer>fecundación</answer>
+       <optionList>
+        <option>fecundación</option>
+        <option>implantación</option>
+       </optionList>
+       <text>fecundación</text>
+      </target>
+      <text italic="false" family="Arial" background="0xFFFFFF" bold="false" size="14">.   Todo éste proceso de se denomina </text>
+      <text family="Arial" italic="true" foreground="0x009999" background="0xFFFFFF" bold="true" size="14">ovogénesis</text>
+      <text italic="false" family="Arial" background="0xFFFFFF" bold="false" size="14">.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="Rellenar agujeros en blanco" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="previous">
+     <style borderStroke="3.1" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xCCFF00" border="0x339900" />
+      <gradient source="0xCCFF00" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="slidedown.mp3" />
+     <p>Lee el texto, luego haz clic sobre el texto y completa la actividad que sigue</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="initial">
+     <style borderStroke="3.3" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xCCFF00" border="0x339900" />
+      <gradient source="0xCCFF00" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Rellena los espacios en blanco</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="final">
+     <style borderStroke="3.1" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xCCFF00" border="0x339900" />
+      <gradient source="0xCCFF00" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="cheer-03.mp3" />
+     <p>¡Muy bien!</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="finalError">
+     <style borderStroke="2.9" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xCCFF00" border="0x339900" />
+      <gradient source="0xCCFF00" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="witchlaugh.mp3" />
+     <p>Inténtalo otra vez</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://recursostic.educacion.es/ciencias/biosfera/web/alumno/3ESO/apararep/fisiomas.htm" maxTime="300" countDownTime="true" maxActions="25" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Utiliza la imágen como ayuda</p>
+    </helpWindow>
+    <container bgColor="0xFFFFCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x66FF00" border="true">
+     <size width="603" height="532" />
+    </window>
+   </settings>
+   <prevScreen>
+    <style>
+     <color background="0xCCFF00" />
+     <gradient source="0xCCFF00" dest="0xFFFFFF" angle="0" />
+    </style>
+    <p>CARACTERÍSTICAS GENERALES DE LA REPRODUCCIÓN HUMANA: LA GAMETOGÉNESIS&#xD;</p>
+    <p>&#xD;</p>
+    <p>     La reproducción humana  es de tipo sexual.  Además consta de estructuras que producen gametos o células sexuales: los espermatozoides en el varón y los óvulos en la mujer.&#xD;</p>
+    <p>&#xD;</p>
+    <p>     Los gametos se originan en las gónadas o glándulas sexuales, situadas en la parte inferior de la cavidad abdominal. En el varón, las gónadas son los testículos y en la mujer, los ovarios.&#xD;</p>
+    <p>&#xD;</p>
+    <p>     El proceso que actúa durante su formación en el interior de las gónadas se denomina gametogénesis, y que particularmente en el varón se llama espermatogénesis y en la mujer ovogénesis.  Se inicia en las llamadas células germinales primarias, las que progresivamente se dividirán por mitosis y meiosis y se transformarán en gametos.&#xD;</p>
+    <p>&#xD;</p>
+    <p>     A diferencia de los varones que comienzan la producción de espermatozoides durante la pubertad y  la continúan durante toda la vida, las mujeres nacen con todos los óvulos que serán liberados durante toda su vida fértil, alrededor de 400.000, de los cuales uno de cada mil saldrá del ovario durante la ovulación, cada veintiocho días a partir del comienzo de la pubertad.&#xD;</p>
+    <p>&#xD;</p>
+    <p>     En el varón, la espermatogénesis se inicia con la formación de unas células germinales, las espermatogonias, que están ubicadas en las paredes de los túbulos seminíferos de los testículos desde antes del nacimiento.  En la pubertad, las espermatogonias aumentan de tamaño y originan los espermatocitos primarios.  Estos, mediante su división por meiosis, producen los espermatocitos secundarios, los que, al dividirse nuevamente, forman las espermátidas.  Cada espermátida, dará lugar a un espermatozoide maduro. &#xD;</p>
+    <p>&#xD;</p>
+    <p>     En la mujer, las células germinales que se encuentran en el ovario del embrión femenino proliferan por mitosis y originan ovogonias.  Los ovocitos primarios atraviesan la meiosis I aunque se detienen en la profase I, y de ésta manera, se mantienen desde el nacimiento hasta el reinicio de su maduración.  Antes de la ovulación, el ovocito secundario comienza la meiosis II y se libera del ovario sin haber completado esta división. &#xD;</p>
+   </prevScreen>
+   <document>
+    <style name="default" family="Courier New" italic="false" background="0xFFFFCC" tabWidth="12" bold="false" size="14" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" background="0xFFFFFF" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFCC" size="16" bold="true">Características generales de la reproducción humana: la gametogénesis</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFCC">     La reproducción humana  es de tipo </text>
+      <target>
+       <answer>sexual</answer>
+       <response fill="~" length="6" maxLength="6" />
+       <text>sexual</text>
+      </target>
+      <text family="Arial" background="0xFFFFCC">.  Además consta de estructuras que producen gametos o células sexuales: los </text>
+      <target>
+       <answer>espermatozoides</answer>
+       <response fill="~" length="15" maxLength="15" />
+       <text>espermatozoides</text>
+      </target>
+      <text family="Arial" background="0xFFFFCC"> en el varón y los </text>
+      <target>
+       <answer>óvulos</answer>
+       <response fill="~" length="6" maxLength="6" />
+       <text>óvulos</text>
+      </target>
+      <text family="Arial" background="0xFFFFCC"> en la mujer.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFCC">     Los gametos se originan en las </text>
+      <target>
+       <answer>gónadas</answer>
+       <response fill="~" length="7" maxLength="7" />
+       <text>gónadas</text>
+      </target>
+      <text family="Arial" background="0xFFFFCC"> o glándulas sexuales, situadas en la parte inferior de la cavidad abdominal. En el varón, las gónadas son los </text>
+      <target>
+       <answer>testículos</answer>
+       <response fill="~" length="10" maxLength="10" />
+       <text>testículos</text>
+      </target>
+      <text family="Arial" background="0xFFFFCC"> y en la mujer, los </text>
+      <target>
+       <answer>ovarios</answer>
+       <response fill="~" length="7" maxLength="7" />
+       <text>ovarios</text>
+      </target>
+      <text family="Arial" background="0xFFFFCC">.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFCC">     El proceso que actúa durante su formación en el interior de las gónadas se denomina gametogénesis, y que particularmente en el varón se llama </text>
+      <target>
+       <answer>espermatogénesis</answer>
+       <response fill="~" length="16" maxLength="16" />
+       <text>espermatogénesis</text>
+      </target>
+      <text family="Arial" background="0xFFFFCC"> y en la mujer </text>
+      <target>
+       <answer>ovogénesis</answer>
+       <response fill="~" length="10" maxLength="10" />
+       <text>ovogénesis</text>
+      </target>
+      <text family="Arial" background="0xFFFFCC">.  Se inicia en las llamadas células germinales primarias, las que progresivamente se dividirán por mitosis y meiosis y se transformarán en gametos.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFCC">     A diferencia de los varones que comienzan la producción de espermatozoides durante la </text>
+      <target>
+       <answer>pubertad</answer>
+       <response fill="~" length="8" maxLength="8" />
+       <text>pubertad</text>
+      </target>
+      <text family="Arial" background="0xFFFFCC"> y  la continúan durante toda la vida, las mujeres nacen con todos los óvulos que serán liberados durante toda su vida fértil, alrededor de 400.000, de los cuales uno de cada mil saldrá del ovario durante la </text>
+      <target>
+       <answer>ovulación</answer>
+       <response fill="~" length="9" maxLength="9" />
+       <text>ovulación</text>
+      </target>
+      <text family="Arial" background="0xFFFFCC">, cada veintiocho días a partir del comienzo de la pubertad.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFCC">     En el varón, la espermatogénesis se inicia con la división por </text>
+      <target>
+       <answer>mitosis</answer>
+       <response fill="~" length="7" maxLength="7" />
+       <text>mitosis</text>
+      </target>
+      <text family="Arial" background="0xFFFFCC"> de unas células germinales, las </text>
+      <target>
+       <answer>espermatogonias</answer>
+       <response fill="~" length="15" maxLength="15" />
+       <text>espermatogonias</text>
+      </target>
+      <text family="Arial" background="0xFFFFCC">, que están ubicadas en las paredes de los túbulos seminíferos de los testículos desde antes del nacimiento.  En la pubertad, las espermatogonias aumentan de tamaño y originan los </text>
+      <target>
+       <answer>espermatocitos</answer>
+       <response fill="~" length="14" maxLength="14" />
+       <text>espermatocitos</text>
+      </target>
+      <text family="Arial" background="0xFFFFCC"> primarios.  Estos, mediante su división por </text>
+      <target>
+       <answer>meiosis</answer>
+       <response fill="~" length="7" maxLength="7" />
+       <text>meiosis</text>
+      </target>
+      <text family="Arial" background="0xFFFFCC">, producen los espermatocitos secundarios, los que, al dividirse nuevamente, forman las </text>
+      <target>
+       <answer>espermátidas</answer>
+       <response fill="~" length="12" maxLength="12" />
+       <text>espermátidas</text>
+      </target>
+      <text family="Arial" background="0xFFFFCC">.  Cada espermátida, dará lugar a un </text>
+      <target>
+       <answer>espermatozoide</answer>
+       <response fill="~" length="14" maxLength="14" />
+       <text>espermatozoide</text>
+      </target>
+      <text family="Arial" background="0xFFFFCC"> maduro. </text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFCC">     En la mujer, las células germinales que se encuentran en el ovario del embrión femenino proliferan por </text>
+      <target>
+       <answer>mitosis</answer>
+       <response fill="~" length="7" maxLength="7" />
+       <text>mitosis</text>
+      </target>
+      <text family="Arial" background="0xFFFFCC"> y originan </text>
+      <target>
+       <answer>ovogonias</answer>
+       <response fill="~" length="9" maxLength="9" />
+       <text>ovogonias</text>
+      </target>
+      <text family="Arial" background="0xFFFFCC">.  Los </text>
+      <target>
+       <answer>ovocitos</answer>
+       <response fill="~" length="8" maxLength="8" />
+       <text>ovocitos</text>
+      </target>
+      <text family="Arial" background="0xFFFFCC"> primarios atraviesan la meiosis I aunque se detienen en la profase I, y de ésta manera, se mantienen desde el nacimiento hasta el reinicio de su maduración.  Antes de la ovulación, el </text>
+      <target>
+       <answer>ovocito</answer>
+       <response fill="~" length="7" maxLength="7" />
+       <text>ovocito</text>
+      </target>
+      <text family="Arial" background="0xFFFFCC"> secundario comienza la </text>
+      <target>
+       <answer>meiosis II</answer>
+       <response fill="~" length="10" maxLength="10" />
+       <text>meiosis II</text>
+      </target>
+      <text family="Arial" background="0xFFFFCC"> y se libera del ovario sin haber completado esta división. </text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" Alignment="1">
+      <cell width="500" height="400" image="Gametogenesis.jpg">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <color background="0xFFFFCC" />
+       </style>
+       <media type="PLAY_AUDIO" level="1" file="slidedown.mp3" />
+      </cell>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="Rellenar agujeros en blanco con inicial" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="previous">
+     <style borderStroke="3.3" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xFF6600" border="0x990000" />
+      <gradient source="0xFF6600" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="slidedown.mp3" />
+     <p>Lee el texto y luego haz clic sobre el mismo para continuar con la actividad</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="initial">
+     <style borderStroke="3.1" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xFF6600" border="0x990000" />
+      <gradient source="0xFF6600" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Completa los espacios en blanco a continuación de la inicial que aparece como ayuda</p>
+    </cell>
+    <cell imgAlign="left,middle" border="true" image="Jovenes.jpg" type="final">
+     <style borderStroke="2.9" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xFF6600" border="0x990000" />
+      <gradient source="0xFF6600" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="cheer-03.mp3" />
+     <p>¡Muy bien!</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="finalError">
+     <style borderStroke="3.3" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color background="0xFF6600" border="0x990000" />
+      <gradient source="0xFF6600" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="witchlaugh.mp3" />
+     <p>Inténtalo otra vez</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://recursostic.educacion.es/ciencias/biosfera/web/alumno/3ESO/apararep/parto.htm" maxTime="45" countDownTime="true" maxActions="2" countDownActions="true" report="true" reportActions="false">
+    <container bgColor="0xFFFFCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF9900" border="true">
+     <size width="780" height="493" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <checkButton>Evalúate</checkButton>
+   <prevScreen>
+    <style>
+     <color background="0xFFCC00" />
+     <gradient source="0xFFCC00" dest="0xFFFFFF" angle="0" />
+    </style>
+    <p>LAS PRIMERAS ETAPAS DE LA GESTACIÓN:&#xD;</p>
+    <p>&#xD;</p>
+    <p>     En el momento de la fecundación el núcleo del espermatozoide se fusiona con el óvulo y forma, un huevo que recibe el nombre de cigoto.  Este sigue su camino por la Trompa de Falopio hasta el útero, cuya mucosa ya está preparada para recibirlo, mientras realiza ese recorrido, el cigoto comienza a dividirse.&#xD;</p>
+    <p>&#xD;</p>
+    <p>     El cigoto se divide en dos, cuatro, ocho, dieciséis, treinta y dos células idénticas, y así sucesivamente, hasta formar una pequeña esfera maciza, la mórula. Luego, las células se dirigen a la periferia y forman una esfera hueca, la blástula. Esta comienza a plegarse, de modo que forma tres capas de tejido, de las que derivan luego todos los demás tejidos del cuerpo: esta es la etapa de gástrula. Los tejidos primordiales son el endodermo, el mesodermo y el ectodermo. El endodermo origina el epitelio pulmonar, las glándulas digestivas y el intestino.  Del mesodermo derivan los sistemas excretor y circulatorio, los huesos y los músculos. Por último, a partir del ectodermo se desarrollan la piel y el sistema nervioso.&#xD;</p>
+   </prevScreen>
+   <document>
+    <style name="default" italic="false" family="Arial" background="0xFFFFFF" tabWidth="12" size="14" bold="false" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text size="16" bold="true">Las primeras etapas de la gestación:</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text size="14">     En el momento de la fecundación el núcleo del espermatozoide se fusiona con el óvulo y forma, un huevo que recibe el nombre de cigoto. Este sigue su camino por la Trompa de Falopio hasta el útero, cuya mucosa ya está preparada para recibirlo, mientras realiza ese recorrido, el cigoto comienza a dividirse.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text size="14">     El </text>
+      <text foreground="0x009999" size="14" bold="true">c</text>
+      <target>
+       <answer>igoto</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>igoto</text>
+      </target>
+      <text size="14"> se divide en dos, cuatro, ocho, dieciséis, treinta y dos células idénticas, y así sucesivamente, hasta formar una pequeña esfera maciza, la </text>
+      <text foreground="0x009999" size="14" bold="true">m</text>
+      <target>
+       <answer>órula</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>órula</text>
+      </target>
+      <text size="14">. Luego, las células se dirigen a la periferia y forman una esfera hueca, la </text>
+      <text foreground="0x009999" size="14" bold="true">b</text>
+      <target>
+       <answer>lástula</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>lástula</text>
+      </target>
+      <text size="14">. Esta comienza a plegarse, de modo que forma tres capas de tejido, de las que derivan luego todos los demás tejidos del cuerpo: esta es la etapa de </text>
+      <text foreground="0x009999" size="14" bold="true">g</text>
+      <target>
+       <answer>ástrula</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>ástrula</text>
+      </target>
+      <text size="14">. Los tejidos primordiales son el endodermo, el mesodermo y el ectodermo. El </text>
+      <text foreground="0x009999" size="14" bold="true">e</text>
+      <target>
+       <answer>ndodermo</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>ndodermo</text>
+      </target>
+      <text size="14"> origina el epitelio pulmonar, las glándulas digestivas y el intestino.  Del </text>
+      <text foreground="0x009999" size="14" bold="true">m</text>
+      <target>
+       <answer>esodermo</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>esodermo</text>
+      </target>
+      <text size="14"> derivan los sistemas excretor y circulatorio, los huesos y los músculos. Por último, a partir del </text>
+      <text foreground="0x009999" size="14" bold="true">e</text>
+      <target>
+       <answer>ctodermo</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>ctodermo</text>
+      </target>
+      <text size="14"> se desarrollan la piel y el sistema nervioso.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" Alignment="1">
+      <cell width="450" height="350" image="Primera-semana-de-gestacion2.png">
+       <style borderStroke="0.7" markerStroke="5.0">
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="Rompecabezas_embrion" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="initial">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color foreground="0x990000" background="0xFFCCCC" border="0x990000" />
+      <gradient source="0xFFCCCC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Ordena las piezas de este rompecabezas</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="final">
+     <style borderStroke="2.9" markerStroke="5.0">
+      <font family="Arial" size="17" italic="true" />
+      <color foreground="0x990000" background="0xFFCCCC" border="0x990000" />
+      <gradient source="0xFFCCCC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="applause-3.mp3" />
+     <p>¡Muy bien!</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="finalError">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color foreground="0x990000" background="0xFFCCCC" border="0x990000" />
+      <gradient source="0xFFCCCC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Inténtalo otra vez</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxTime="45" countDownTime="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x990000">
+     <gradient source="0x990000" dest="0xFFFFFF" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFCCCC" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="3" cols="4" border="true" image="embrioneshumano.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="4" rows="3" baseWidthFactor="0.59" toothHeightFactor="0.629" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="Sopa de letras" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="initial">
+     <style borderStroke="3.1" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color foreground="0x336600" background="0xFFCC00" border="0x336600" />
+      <gradient source="0xFFCC00" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Descubre las seis palabras que esconde ésta sopa</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="final">
+     <style borderStroke="2.8" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color foreground="0x336600" background="0xFFCC00" border="0x336600" />
+      <gradient source="0xFFCC00" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="applause-3.mp3" />
+     <p>¡Muy bien!</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="finalError">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="17" italic="true" />
+      <color foreground="0x336600" background="0xFFCC00" border="0x336600" />
+      <gradient source="0xFFCC00" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Inténtalo otra vez</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="50" countDownTime="true" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Las palabras se ubican en posición horizontal, vertical y diagonal.</p>
+    </helpWindow>
+    <container bgColor="0xCCCC00">
+     <gradient source="0xCCCC00" dest="0xFFFFFF" angle="0" cycles="4" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCCC00" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <textGrid rows="20" columns="12" cellWidth="23.0" cellHeight="23.0" border="false">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>********************</row>
+     <row>***ESPERMATOZOIDE***</row>
+     <row>********************</row>
+     <row>*REPRODUCTORFEMENINO</row>
+     <row>*****V**************</row>
+     <row>*****U********O*****</row>
+     <row>*****L***TESTICULO**</row>
+     <row>*****O******R*******</row>
+     <row>***********A********</row>
+     <row>**********V*********</row>
+     <row>REPRODUCTORMASCULINO</row>
+     <row>********************</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">OVULO</clue>
+    <clue id="1">ESPERMATOZOIDE</clue>
+    <clue id="2">OVARIO</clue>
+    <clue id="3">TESTICULO</clue>
+    <clue id="4">REPRODUCTORFEMENINO</clue>
+    <clue id="5">REPRODUCTORMASCULINO</clue>
+   </clues>
+   <cells rows="3" cols="2" cellWidth="92.0" cellHeight="92.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="2.7">
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell image="Gameta Fem.jpg" />
+    <cell image="Gameta Masc.jpg" />
+    <cell image="Ovario.jpg" />
+    <cell image="Epididimo+testiculo.jpg" />
+    <cell image="Reproductor femenino.png" />
+    <cell image="Reproductor masculino.png" />
+   </cells>
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="información general" code="">
+   <description>
+    <p>Sistema reproductor humano</p>
+   </description>
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="initial">
+     <style shadow="true" borderStroke="4.5" markerStroke="2.7">
+      <font family="Century" size="18" bold="true" italic="true" />
+      <color foreground="0x990000" shadow="0xFFFFFF" border="0xFFCC33" />
+      <gradient source="0xFFFF66" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Bienvenidos al Proyecto "Reproducción humana"</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="final">
+     <style shadow="true" borderStroke="4.2" markerStroke="2.7">
+      <font family="Century" size="18" italic="true" />
+      <color foreground="0x990000" shadow="0xFFFFFF" border="0xFFCC33" />
+      <gradient source="0xFFFF66" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Has finalizado la actividad</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" border="true" image="Jovenes.jpg" type="finalError">
+     <style shadow="true" borderStroke="4.3" markerStroke="2.7">
+      <font family="Century" size="18" bold="true" italic="true" />
+      <color foreground="0x990000" shadow="0xFFFFFF" border="0xFFCC33" />
+      <gradient source="0xFFFF66" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Debes volver a repetirlo</p>
+    </cell>
+   </messages>
+   <settings margin="10" infoUrl="http://recursostic.educacion.es/ciencias/biosfera/web/alumno/3ESO/apararep/rephuma.htm" report="false">
+    <container bgColor="0x99CC00">
+     <image name="Jovenes.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x99FF33" border="true">
+     <position x="33" y="33" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="246.0" cellHeight="156.0" border="true">
+    <style borderStroke="0.7" markerStroke="2.7">
+     <font family="Arial" size="17" bold="true" italic="true" />
+     <color foreground="0xCC0000" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell imgAlign="right,middle" border="true">
+     <style shadow="true" margin="12" borderStroke="5.0" markerStroke="2.7">
+      <font family="Century" size="28" bold="true" italic="true" />
+      <color foreground="0x990000" shadow="0xFFFFFF" border="0xFFCC33" />
+      <gradient source="0xFFFF66" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Reproducción humana</p>
+    </cell>
+   </cells>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="Aparato-reproductor-femenino1.jpg" file="Aparato-reproductor-femenino1.jpg" />
+  <media name="Aparato-reproductor-femenino2.jpg" file="Aparato-reproductor-femenino2.jpg" />
+  <media name="Aparato-reproductor-femenino3.jpg" file="Aparato-reproductor-femenino3.jpg" />
+  <media name="Aparato-reproductor-femenino4.jpg" file="Aparato-reproductor-femenino4.jpg" />
+  <media name="Ciclo ovarico y uterino.jpg" file="Ciclo ovarico y uterino.jpg" />
+  <media name="Desarrollo folicular.jpg" file="Desarrollo folicular.jpg" />
+  <media name="embrioneshumano.jpg" file="embrioneshumano.jpg" />
+  <media name="Epididimo+testiculo.jpg" file="Epididimo+testiculo.jpg" />
+  <media name="Gameta Fem.jpg" file="Gameta Fem.jpg" />
+  <media name="Gameta Masc.jpg" file="Gameta Masc.jpg" />
+  <media name="Gametogenesis.jpg" file="Gametogenesis.jpg" />
+  <media name="Jovenes.jpg" file="Jovenes.jpg" />
+  <media name="mujer.jpg" file="mujer.jpg" />
+  <media name="Ovario.jpg" file="Ovario.jpg" />
+  <media name="Túbulo seminífero.jpg" file="Túbulo seminífero.jpg" />
+  <media name="applause-3.mp3" file="applause-3.mp3" />
+  <media name="cheer-03.mp3" file="cheer-03.mp3" />
+  <media name="Screaming-SmallChild.mp3" file="Screaming-SmallChild.mp3" />
+  <media name="slidedown.mp3" file="slidedown.mp3" />
+  <media name="witchlaugh.mp3" file="witchlaugh.mp3" />
+  <media name="Primera-semana-de-gestacion2.png" file="Primera-semana-de-gestacion2.png" />
+  <media name="Reproductor femenino.png" file="Reproductor femenino.png" />
+  <media name="Reproductor masculino.png" file="Reproductor masculino.png" />
+  <media name="Varón.png" file="Varón.png" />
+ </mediaBag>
+</JClicProject>
+

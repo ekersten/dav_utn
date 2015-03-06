@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="tarea_5_susana_riva" version="0.1.3">
+ <settings>
+  <title>Sistema nervioso</title>
+  <revision description="created" date="2/9/14" />
+  <author name="Susana Riva" mail="su_riva@yahoo.com.ar" />
+  <description>
+   <p>En éste proyecto hay actividades que permiten introducirse en el estudio del Sistema nervioso humano</p>
+  </description>
+  <descriptors area="Biología" level="tercero ES" />
+  <skin file="@green.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="pantalla de información" />
+  <item id="sistema nervioso" name="Rellenar agujeros con lista" />
+  <item id="partes" name="actividad de exploración" />
+  <item id="neuronas" name="Rellenar  agujeros con ayuda" />
+  <item id="neurona" name="puzzle" />
+  <item id="estructuras" name="asociación simple" />
+ </sequence>
+ <activities>
+  <activity class="@text.FillInBlanks" name="Rellenar  agujeros con ayuda" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial Black" size="17" />
+      <color foreground="0x660066" background="0xFFFF99" />
+     </style>
+     <p>Donde se encuentran las iniciales escriba la palabra que falta</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial Black" size="17" />
+      <color foreground="0x660066" background="0xFFFF99" />
+     </style>
+     <p>Buen trabajo!!! Felicitaciones!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x33FFFF">
+     <gradient source="0x009999" dest="0x99FFFF" angle="75" cycles="2" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="444" />
+    </window>
+   </settings>
+   <checkButton>Evalúate</checkButton>
+   <document>
+    <style name="default" background="0xFFFFFF" italic="false" size="14" bold="false" family="Arial Black" tabWidth="12" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial" Alignment="1">
+      <text background="0xFFFFFF" family="Arial Black">Las neuronas</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" Alignment="1" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Son las </text>
+      <target>
+       <answer>células</answer>
+       <response fill="_" length="7" maxLength="7" show="c" />
+       <info>
+        <cell width="113" height="61" image="celula.jpg">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <color background="0xFFFFCC" />
+         </style>
+        </cell>
+       </info>
+       <text>células</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> fundamentales y básicas del sistema </text>
+      <target>
+       <answer>nervioso</answer>
+       <response fill="_" length="8" maxLength="8" show="n" />
+       <info>
+        <cell width="50" height="87" image="nervioso.jpg" />
+       </info>
+       <text>nervioso</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">.  Se especializan en conducir impulsos nerviosos.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Las neuronas presentan una diversidad de formas y tamaños.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Típicamente en una neurona se pueden distinguir tres partes fundamentales:</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Soma o cuerpo celular: es la parte más voluminosa de la neurona. Este contiene al núcleo, donde se halla la información </text>
+      <target>
+       <answer>genética</answer>
+       <response fill="_" length="8" maxLength="8" show="g" />
+       <info>
+        <cell width="74" height="50" image="genetica.jpg" />
+       </info>
+       <text>genética</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> que dirige la actividad de la neurona. Rodeando al núcleo, se encuentra el citoplasma, en el cual se ubican las </text>
+      <target>
+       <answer>organelas</answer>
+       <response fill="_" length="9" maxLength="9" show="o" />
+       <info>
+        <cell width="81" height="76" image="mitocondria.jpg" />
+       </info>
+       <text>organelas</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> celulares importantes para el funcionamiento de la neurona. </text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Dendritas: son prolongaciones citoplasmáticas cortas que se originan del soma neural. Su función es recibir impulsos de otras neuronas, los cuales serán transmitidos a todo el soma de la neurona. </text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Axón: es una prolongación única y larga de citoplasma. En algunas ocasiones, puede medir hasta un metro de longitud. Tiene como función transmitir el impulso nervioso desde el soma neuronal hasta otro lugar del sistema.  Los axones constituyen las </text>
+      <target>
+       <answer>fibras</answer>
+       <response fill="_" length="6" maxLength="6" show="f" />
+       <info>
+        <cell width="76" height="51" image="nervios.gif" />
+       </info>
+       <text>fibras</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> nerviosas.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Las </text>
+      <target>
+       <answer>neuronas</answer>
+       <response fill="_" length="8" maxLength="8" show="n" />
+       <info>
+        <cell width="47" height="69" image="neurona.jpg" />
+       </info>
+       <text>neuronas</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> están especializadas en recibir señales del ambiente externo, el ambiente interno o de otras neuronas, en integrar las señales recibidas y en transmitir la información integrada a otras neuronas, </text>
+      <target>
+       <answer>músculos</answer>
+       <response fill="_" length="8" maxLength="8" show="m" />
+       <info>
+        <cell width="51" height="61" image="musculo.jpg" />
+       </info>
+       <text>músculos</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> o glándulas.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="Rellenar agujeros con lista" code="">
+   <description />
+   <messages>
+    <cell type="previous">
+     <style>
+      <font family="Arial Black" size="17" />
+      <color foreground="0x660066" background="0xFFFF99" />
+     </style>
+     <p>Lea el texto y luego presione sobre él</p>
+    </cell>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="Arial Black" size="17" />
+      <color foreground="0x660066" background="0xFFFF99" />
+     </style>
+     <p>Elija la opción correcta</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial Black" size="17" />
+      <color foreground="0x660066" background="0xFFFF99" />
+     </style>
+     <p>Buenísimo!!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x00CCCC">
+     <gradient source="0x009999" dest="0x99FFFF" angle="75" cycles="2" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true">
+     <size width="623" height="386" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <prevScreen>
+    <style borderStroke="2.6" markerStroke="2.7">
+     <font family="Arial" size="12" />
+     <color background="0xFFFFFF" border="0x660066" />
+    </style>
+    <p>                                                                    &#xD;</p>
+    <p>&#xD;</p>
+    <p>                                                                       Sistema nervioso&#xD;</p>
+    <p>&#xD;</p>
+    <p>&#xD;</p>
+    <p>&#xD;</p>
+    <p>El sistema nervioso es una red de tejidos cuya unidad básica son las neuronas. Su función primordial es la de captar y procesar rápidamente las señales ejerciendo control y coordinación sobre los demás órganos para lograr una oportuna y eficaz interacción con el medio ambiente cambiante. Esta rapidez de respuestas que proporciona la presencia del sistema nervioso diferencia a la mayoría de los animales de otros seres pluricelulares de respuesta motil lenta que no lo poseen como los vegetales, hongos, mohos o algas.&#xD;</p>
+    <p>&#xD;</p>
+    <p>Cabe mencionar que también existen grupos de animales (parazoa y mesozoa) como los poríferos, placozoos y mesozoos que no tienen sistema nervioso porque sus tejidos no alcanzan la misma diferenciación que consiguen los demás animales ya sea porque sus dimensiones o estilos de vida son simples, arcaicos, de bajos requerimientos o de tipo parasitario.&#xD;</p>
+    <p>&#xD;</p>
+    <p>Las neuronas son células especializadas, cuya función es coordinar las acciones de los animales por medio de señales químicas y eléctricas enviadas de un extremo al otro del organismo.&#xD;</p>
+   </prevScreen>
+   <document>
+    <style name="default" size="12" italic="false" background="0xFFFFFF" tabWidth="12" family="Arial" bold="false" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p Alignment="1" background="0xFFFFFF" family="Arial" />
+     <p Alignment="1" background="0xFFFFFF" family="Arial" />
+     <p Alignment="1" background="0xFFFFFF" family="Arial">
+      <text size="16" background="0xFFFFFF" family="Arial Black">Sistema nervioso</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text size="12" background="0xFFFFFF" family="Arial">El sistema </text>
+      <target>
+       <answer>nervioso</answer>
+       <optionList>
+        <option>nervioso</option>
+        <option>endócrino</option>
+        <option>digestivo</option>
+        <option>circulatorio</option>
+       </optionList>
+       <text>nervioso</text>
+      </target>
+      <text size="12" background="0xFFFFFF" family="Arial"> es una red de </text>
+      <target>
+       <answer>tejidos</answer>
+       <optionList>
+        <option>membranas</option>
+        <option>tejidos</option>
+        <option>rayos</option>
+       </optionList>
+       <text>tejidos</text>
+      </target>
+      <text size="12" background="0xFFFFFF" family="Arial"> cuya unidad básica son las </text>
+      <target>
+       <answer>neuronas</answer>
+       <optionList>
+        <option>neuronas</option>
+        <option>mitocondrias</option>
+        <option>plaquetas</option>
+       </optionList>
+       <text>neuronas</text>
+      </target>
+      <text size="12" background="0xFFFFFF" family="Arial">. Su función primordial es la de captar y procesar rápidamente las señales ejerciendo control y coordinación sobre los demás </text>
+      <target>
+       <answer>órganos</answer>
+       <optionList>
+        <option>individuos</option>
+        <option>órganos</option>
+        <option>componentes</option>
+       </optionList>
+       <text>órganos</text>
+      </target>
+      <text size="12" background="0xFFFFFF" family="Arial"> para lograr una oportuna y eficaz interacción con el medio ambiente cambiante. Esta rapidez de respuestas que proporciona la presencia del sistema nervioso diferencia a la mayoría de los animales de otros seres </text>
+      <target>
+       <answer>pluricelulares</answer>
+       <optionList>
+        <option>pluricelulares</option>
+        <option>unicelulares</option>
+        <option>protistas</option>
+       </optionList>
+       <text>pluricelulares</text>
+      </target>
+      <text size="12" background="0xFFFFFF" family="Arial"> de respuesta motil lenta que no lo poseen como los vegetales, hongos, mohos o algas.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text size="12" background="0xFFFFFF" family="Arial">Cabe mencionar que también existen grupos de animales (parazoa y mesozoa) como los </text>
+      <target>
+       <answer>poríferos</answer>
+       <optionList>
+        <option>moluscos</option>
+        <option>bivalvos</option>
+        <option>poríferos</option>
+       </optionList>
+       <text>poríferos</text>
+      </target>
+      <text size="12" background="0xFFFFFF" family="Arial">, placozoos y mesozoos que no tienen sistema nervioso porque sus tejidos no alcanzan la misma diferenciación que consiguen los demás animales ya sea porque sus dimensiones o estilos de vida son simples, </text>
+      <target>
+       <answer>arcaicos</answer>
+       <optionList>
+        <option>arcaicos</option>
+        <option>desarrollados</option>
+        <option>evolucionados</option>
+       </optionList>
+       <text>arcaicos</text>
+      </target>
+      <text size="12" background="0xFFFFFF" family="Arial">, de bajos requerimientos o de tipo parasitario.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text size="12" background="0xFFFFFF" family="Arial">Las neuronas son </text>
+      <target>
+       <answer>células</answer>
+       <optionList>
+        <option>órganos</option>
+        <option>estructuras</option>
+        <option>células</option>
+       </optionList>
+       <text>células</text>
+      </target>
+      <text size="12" background="0xFFFFFF" family="Arial"> especializadas, cuya función es coordinar las acciones de los animales por medio de señales químicas y eléctricas enviadas de un extremo al otro del organismo.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@panels.Explore" name="actividad de exploración" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial Black" size="16" />
+      <color foreground="0x660066" background="0xFFFF99" />
+     </style>
+     <p>Observe la ubicación de algunas estructuras componentes de Sistema nervioso</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x009999">
+     <gradient source="0x009999" dest="0x99FFFF" angle="75" cycles="2" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="356.0" cellHeight="145.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell id="0" txtAlign="right,middle" avoidOverlapping="true" image="anatomia cerebro.jpg">
+     <style>
+      <font family="Arial Black" size="10" />
+      <color foreground="0x660066" background="0xFFFFFF" />
+     </style>
+     <p>cerebro</p>
+    </cell>
+    <cell id="1" txtAlign="right,middle" image="cerebelo.jpg">
+     <style>
+      <font family="Arial Black" size="10" />
+      <color foreground="0x660066" background="0xFFFFFF" />
+     </style>
+     <p>cerebelo</p>
+    </cell>
+    <cell id="2" txtAlign="right,middle" avoidOverlapping="true" image="medula espinal 2.jpg">
+     <style>
+      <font family="Arial Black" size="10" />
+      <color foreground="0x660066" background="0xFFFFFF" />
+     </style>
+     <p>médula espinal</p>
+    </cell>
+    <cell id="3" txtAlign="right,middle" avoidOverlapping="true" image="nervio periferico.jpg">
+     <style>
+      <font family="Arial Black" size="12" />
+      <color foreground="0x660066" background="0xFFFFFF" />
+     </style>
+     <p>nervios periféricos</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="1" cellWidth="242.0" cellHeight="145.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell image="sistema-nervioso 2.jpg">
+     <style>
+      <font family="Arial Black" size="10" />
+      <color foreground="0x660066" background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="sistema-nervioso 3.jpg">
+     <style>
+      <font family="Arial Black" size="10" />
+      <color foreground="0x660066" background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="sistema-nervioso 4.jpg">
+     <style>
+      <font family="Arial Black" size="10" />
+      <color foreground="0x660066" background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="sistema-nervioso 5.jpg">
+     <style>
+      <font family="Arial Black" size="10" />
+      <color foreground="0x660066" background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="asociación simple" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial Black" size="17" />
+      <color foreground="0x660066" background="0xFFFF99" />
+     </style>
+     <p>Observe y relacione la imagen con su nombre</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial Black" size="17" />
+      <color foreground="0x660066" background="0xFFFF99" />
+     </style>
+     <p>Excelente!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x00CCCC">
+     <gradient source="0x009999" dest="0x33FFFF" angle="31" cycles="2" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="5" cellWidth="176.0" cellHeight="238.0" border="true" id="primary">
+    <style borderStroke="1.5" markerStroke="2.7">
+     <color border="0x660066" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell txtAlign="middle,top" imgAlign="middle,bottom" avoidOverlapping="true" image="cerebelo.jpg">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="Arial Black" size="14" />
+      <color foreground="0x660066" background="0xFFFFFF" />
+     </style>
+     <p>¿De qué estructura se trata?</p>
+    </cell>
+    <cell txtAlign="middle,top" imgAlign="right,middle" avoidOverlapping="true" image="medula espinal 2.jpg">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="Arial Black" size="14" />
+      <color foreground="0x660066" background="0xFFFFFF" />
+     </style>
+     <p>¿De qué estructura se trata?</p>
+    </cell>
+    <cell txtAlign="middle,top" imgAlign="middle,bottom" avoidOverlapping="true" image="nervio periferico.jpg">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="Arial Black" size="16" />
+      <color foreground="0x660066" background="0xFFFFFF" />
+     </style>
+     <p>¿De qué estructura se trata?</p>
+    </cell>
+    <cell txtAlign="right,top" imgAlign="left,middle" image="neurona.jpg">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="Arial Black" size="16" />
+      <color foreground="0x660066" background="0xFFFFFF" />
+     </style>
+     <p>¿De qué estructura se trata?</p>
+    </cell>
+    <cell txtAlign="middle,top" imgAlign="middle,bottom" image="anatomia cerebro.jpg">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="Arial Black" size="16" />
+      <color foreground="0x660066" background="0xFFFFFF" />
+     </style>
+     <p>¿De qué estructura se trata?</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="176.0" cellHeight="30.0" border="true" id="secondary">
+    <style borderStroke="1.0" markerStroke="2.7">
+     <color border="0x660066" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="Arial Black" size="17" />
+      <color foreground="0x660066" background="0xFFFFFF" />
+     </style>
+     <p>Cerebelo</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="Arial Black" size="17" />
+      <color foreground="0x660066" background="0xFFFFFF" />
+     </style>
+     <p>Médula espinal</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="Arial Black" size="17" />
+      <color foreground="0x660066" background="0xFFFFFF" />
+     </style>
+     <p>Nervios</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="Arial Black" size="16" />
+      <color foreground="0x660066" background="0xFFFFFF" />
+     </style>
+     <p>Neurona</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="Arial Black" size="16" />
+      <color foreground="0x660066" background="0xFFFFFF" />
+     </style>
+     <p>encéfalo</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="pantalla de información" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial Black" size="17" />
+      <color foreground="0x660066" background="0xFFFFCC" />
+     </style>
+     <p>Selecciona una pestaña</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x009999" dest="0x99FFFF" angle="75" cycles="2" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="5" cols="1" cellWidth="518.0" cellHeight="65.0" border="true">
+    <style borderStroke="1.3" markerStroke="2.7">
+     <font family="Arial Black" size="17" />
+     <color foreground="0xCC0000" background="0xFF3366" border="0x660066" />
+     <gradient source="0x00CC33" dest="0xCCFFFF" angle="25" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="5" />
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Rellenar agujeros con lista" />
+     <p>El Sistema nervioso humano</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="actividad de exploración" />
+     <p>Ubicación de partes del sistema nervioso</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Rellenar  agujeros con ayuda" />
+     <p>Células nerviosas</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="puzzle" />
+     <p>La neurona</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="asociación simple" />
+     <p>Estructuras del sistema nervioso</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="puzzle" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial Black" size="17" />
+      <color foreground="0x660066" background="0xFFFF99" />
+     </style>
+     <p>Ubicar las piezas del rompecabezas de manera tal que quede conformada una neurona</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial Black" size="17" />
+      <color foreground="0x660066" background="0xFFFF99" />
+     </style>
+     <p>Felicitaciones!!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial Black" size="17" />
+      <color foreground="0x660066" background="0xFFFF99" />
+     </style>
+     <p>No te desanimes!!! Inténtalo otra vez.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxTime="60" countDownTime="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x33FFFF">
+     <gradient source="0x009999" dest="0x33FFFF" angle="31" cycles="2" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="3" cols="3" border="true" image="neurona 2.jpg">
+    <style borderStroke="0.5" markerStroke="2.7" />
+    <shaper class="@JigSaw" cols="3" rows="3" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="nervios.gif" file="nervios.gif" />
+  <media name="anatomia cerebro.jpg" file="anatomia cerebro.jpg" />
+  <media name="celula.jpg" file="celula.jpg" />
+  <media name="cerebelo.jpg" file="cerebelo.jpg" />
+  <media name="genetica.jpg" file="genetica.jpg" />
+  <media name="medula espinal 2.jpg" file="medula espinal 2.jpg" />
+  <media name="mitocondria.jpg" file="mitocondria.jpg" />
+  <media name="musculo.jpg" file="musculo.jpg" />
+  <media name="nervio periferico.jpg" file="nervio periferico.jpg" />
+  <media name="nervioso.jpg" file="nervioso.jpg" />
+  <media name="neurona 2.jpg" file="neurona 2.jpg" />
+  <media name="neurona.jpg" file="neurona.jpg" />
+  <media name="sistema-nervioso 2.jpg" file="sistema-nervioso 2.jpg" />
+  <media name="sistema-nervioso 3.jpg" file="sistema-nervioso 3.jpg" />
+  <media name="sistema-nervioso 4.jpg" file="sistema-nervioso 4.jpg" />
+  <media name="sistema-nervioso 5.jpg" file="sistema-nervioso 5.jpg" />
+ </mediaBag>
+</JClicProject>
+

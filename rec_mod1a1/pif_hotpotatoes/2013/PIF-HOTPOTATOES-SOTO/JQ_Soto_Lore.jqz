@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jquiz-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>lore</dc:creator>
+    <dc:title>COMPUTADORA</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>6</version>
+
+<data>
+<title>COMPUTADORA</title>
+
+<timer><seconds>195</seconds><include-timer>1</include-timer></timer>
+
+<reading>
+<include-reading>1</include-reading>
+<reading-title>Computadora</reading-title>
+<reading-text>Una computadora o computador (del ingl&amp;#x00E9;s computer y este del lat&amp;#x00ED;n computare -calcular), es una colecci&amp;#x00F3;n de circuitos integrados y otros componentes relacionados que puede ejecutar con exactitud, rapidez y de acuerdo a lo indicado por un usuario o autom&amp;#x00E1;ticamente por otro programa, es decir, es una m&amp;#x00E1;quina electr&amp;#x00F3;nica que recibe y procesa datos para convertirlos en informaci&amp;#x00F3;n &amp;#x00FA;til. Tiene como base a la placa base, tambi&amp;#x00E9;n conocida como placa madre o tarjeta madre (del ingl&amp;#x00E9;s motherboard o mainboard) es una tarjeta de circuito impreso a la que se conectan los componentes que constituyen la computadora u ordenador. Tiene instalados una serie de circuitos integrados, entre los que se encuentra el circuito integrado auxiliar, que sirve como centro de conexi&amp;#x00F3;n entre el microprocesador, la memoria de acceso aleatorio (RAM), las ranuras de expansi&amp;#x00F3;n y otros dispositivos. Se compone de hardware (Parte dura) se refiere a todas las partes tangibles de un sistema inform&amp;#x00E1;tico; sus componentes son: el&amp;#x00E9;ctricos, electr&amp;#x00F3;nicos, electromec&amp;#x00E1;nicos y mec&amp;#x00E1;nicos, y software (parte blanda) al equipamiento l&amp;#x00F3;gico o soporte l&amp;#x00F3;gico de un sistema inform&amp;#x00E1;tico, que comprende el conjunto de los componentes l&amp;#x00F3;gicos necesarios que hacen posible la realizaci&amp;#x00F3;n de tareas espec&amp;#x00ED;ficas
+La Unidad Central de Procesamiento (del ingl&amp;#x00E9;s: Central Processing Unit, CPU) o procesador, es el componente principal del ordenador y otros dispositivos programables, que interpreta las instrucciones contenidas en los programas y procesa los datos. Las CPU proporcionan la caracter&amp;#x00ED;stica fundamental del ordenador digital (la programabilidad) y son uno de los componentes necesarios encontrados en los ordenadores de cualquier tiempo, junto con la memoria principal y los dispositivos de entrada/salida.
+La memoria es una secuencia de celdas de almacenamiento numeradas, donde cada una es un bit o unidad de informaci&amp;#x00F3;n. Las &amp;#x00AB;celdas&amp;#x00BB; contienen datos que se necesitan para llevar a cabo las instrucciones, con el computador.
+La memoria de acceso aleatorio (en ingl&amp;#x00E9;s: random-access memory) se utiliza como memoria de trabajo para el sistema operativo, los programas y la mayor&amp;#x00ED;a del software. Es all&amp;#x00ED; donde se cargan todas las instrucciones que ejecutan el procesador. Se puede leer o escribir en una posici&amp;#x00F3;n de memoria, no siendo necesario seguir un orden para acceder a la informaci&amp;#x00F3;n de la manera m&amp;#x00E1;s r&amp;#x00E1;pida posible, mientras este encendido el computador.
+Un sistema operativo (del ingl&amp;#x00E9;s Operating System) es un programa o conjunto de programas que en un sistema inform&amp;#x00E1;tico gestiona los recursos de hardware y provee servicios a los programas de aplicaci&amp;#x00F3;n, ejecut&amp;#x00E1;ndose en modo privilegiado respecto de los restantes y anteriores pr&amp;#x00F3;ximos y viceversa.</reading-text>
+
+</reading>
+
+<questions><question-record><question>&amp;#x00BF;C&amp;#x00DA;AL ES LA TAREA DE UNA COMPUTADORA?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>COLECCI&amp;#x00D3;N DE CIRCUITOS INTEGRADOS QUE RECIBE Y PROCESA DATOS</text><feedback>MUY BIEN</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>PROCESAR DATOS Y ENVIARLOS</text><feedback>INCORRECTO</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>REALIZAR C&amp;#x00C1;LCULOS</text><feedback>INCORRECTO</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>RECIBE Y ENVIA DATOS</text><feedback>INCORRECTO</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>&amp;#x00BF;C&amp;#x00DA;ALES SON LOS ELEMENTOS B&amp;#x00C1;SICOS DE UNA COMPUTADORA?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>4</question-type><answers><answer><text>SOFTWARE DE APLICACI&amp;#x00D3;N Y SISTEMA OPERATIVO</text><feedback>INTENTA OTRA VEZ</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>SOFTWARE Y HARDWARE</text><feedback>TE FELICITO!!</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>CPU, MONITOR Y TECLADO</text><feedback>NO.. NO!!</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>TECLADO, MOUSE Y MONITOR</text><feedback>ES IMPORTANTE PERO FALTAN COSAS</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>PARTE QUE NO PUEDE SER TOCADA, Y LA PARTE QUE PUEDE SER CAMBIADA</text><feedback>MUY BIEN!!</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers><must-select-all>1</must-select-all></question-record><question-record><question>&amp;#x00BF;QU&amp;#x00C9; FINALIDAD TIENE LA PLACA BASE?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>3</question-type><answers><answer><text>ES EL SOPORTE DEL MICROPROCESADOR</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>TARJETA DE CIRCUITO IMPRESO QUE COMUNICA A TODOS LOS COMPONENTES</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>UNIDAD DE PROCESAMIENTO CENTRAL</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>&amp;#x00BF;QU&amp;#x00C9; SIGNIFICA LAS LETRAS RAM Y DE QU&amp;#x00C9; SE OCUPA?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>3</question-type><answers><answer><text>MEMORIA DE ACCESO AL AZAR, DONDE SE CARGAN INSTRUCCIONES QUE EJECUTA EL PROCESADOR</text><feedback>ES CORRECTO!!</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>MEMORIA DE SOLO LECTURA, SE OCUPA DE GUARDAR INFORMACI&amp;#x00D3;N DE MANERA PERMANENTE</text><feedback>INCORRECTO</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>MEMORIA DE LECTURA, SE HABILITA CUANDO SE PRENDE EL EQUIPO Y DE DESHABILITA CUANDO SE APAGA</text><feedback>INCORRECTO</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>&amp;#x00BF;QU&amp;#x00C9; ES LA CPU?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>ES EL GABINETE</text><feedback>NO ES CORRECTO</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>MICROPROCESADOR</text><feedback>ES CORRECTO</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>CIRCUITO IMPRESO</text><feedback>NO ES CORRECTO</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>UNIDAD CENTRAL DE PROCESAMEINTO</text><feedback>ES CORRECTO</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>&amp;#x00BF;QU&amp;#x00C9; ES UN SISTEMA OPERATIVO Y CUAL ES SU TAREA PRINCIPAL?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>4</question-type><answers><answer><text>ES UN CONJUNTO DE PROGRAMAS QUE CONTROLAN A LOS PROGRAMAS Y EL HARDWARE</text><feedback>MUY BIEN!!</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>ES UN PROGRAMA QUE SE USA PARA JUGAR Y HACER DIBUJOS</text><feedback>NO ES CORRECTO</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>ES EL PROGRAMA QUE NECESITA LA M&amp;#x00C1;QUINA PARA TRABAJAR CON C&amp;#x00C1;LCULOSY TEXTOS</text><feedback>NO ES CORRECTO</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>ES UN PROGRAMA QUE GESTIONA EL HARDWARE Y SOFTWARE Y TIENE UN ENTORNO GR&amp;#x00C1;FICO, ES MULTIUSUARIO Y MULTITAREA</text><feedback>TE FELICITO!!!</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers><must-select-all>1</must-select-all></question-record></questions>
+</data>
+
+<hotpot-config-file>
+<jquiz>
+<exercise-subtitle>Quiz</exercise-subtitle>
+<instructions></instructions>
+<guess-correct>Correcto!!</guess-correct>
+<guess-incorrect>Lo siento! Pruebe otra vez.</guess-incorrect>
+<partly-incorrect>Your answer is partly wrong: </partly-incorrect>
+<enter-a-guess>Please enter a guess.</enter-a-guess>
+<next-correct-letter>Next correct letter in the answer: </next-correct-letter>
+<correct-answers>Correct answers: </correct-answers>
+<show-answer-caption>Mostrar respuesta</show-answer-caption>
+<include-hint>1</include-hint>
+<include-show-answer>1</include-show-answer>
+<next-ex-url></next-ex-url>
+<send-email>0</send-email>
+<continuous-scoring>1</continuous-scoring>
+<show-correct-first-time>1</show-correct-first-time>
+<shuffle-questions>0</shuffle-questions>
+<shuffle-answers>0</shuffle-answers>
+<show-limited-questions>0</show-limited-questions>
+<questions-to-show>2</questions-to-show>
+<short-answer-tries-on-hybrid-q>2</short-answer-tries-on-hybrid-q>
+<separate-javascript-file>0</separate-javascript-file>
+<case-sensitive>0</case-sensitive>
+<include-keypad>0</include-keypad>
+</jquiz>
+
+<global>
+<your-score-is>su puntuaci&amp;#x00F3;n es</your-score-is>
+<correct-indicator>:-)</correct-indicator>
+<incorrect-indicator>:-(</incorrect-indicator>
+<correct-first-time>Questions answered correctly first time: </correct-first-time>
+<completed-so-far>Questions completed so far: </completed-so-far>
+<exercise-completed>You have completed the exercise.</exercise-completed>
+<keypad-characters></keypad-characters>
+<times-up>Su tiempo ha terminado</times-up>
+<next-ex-caption>=&amp;#x003E;</next-ex-caption>
+<back-caption>&amp;#x003C;=</back-caption>
+<contents-caption>Index</contents-caption>
+<include-next-ex>1</include-next-ex>
+<include-contents>1</include-contents>
+<include-back>0</include-back>
+<contents-url>contents.htm</contents-url>
+<graphic-url></graphic-url>
+<font-face>&quot;Bookman Old Style&quot;,Geneva,Arial,sans-serif</font-face>
+<font-size>small</font-size>
+<page-bg-color>#808080</page-bg-color>
+<title-color>#80ff00</title-color>
+<ex-bg-color>#cdff9b</ex-bg-color>
+<text-color>#000000</text-color>
+<link-color>#0000FF</link-color>
+<vlink-color>#0000CC</vlink-color>
+<nav-bar-color>#ff8040</nav-bar-color>
+<formmail-url>http://yourserver.com/cgi-bin/FormMail.pl</formmail-url>
+<email>you@yourserver.com</email>
+<name-please>Please enter your name:</name-please>
+<user-string-1>one</user-string-1>
+<user-string-2>two</user-string-2>
+<user-string-3>three</user-string-3>
+<header-code></header-code>
+<correct-first-time>Questions answered correctly first time: </correct-first-time>
+<check-caption>Comprobar</check-caption>
+<ok-caption>Correcto</ok-caption>
+<next-q-caption>=&amp;#x003E;</next-q-caption>
+<last-q-caption>&amp;#x003C;=</last-q-caption>
+<hint-caption>Pista</hint-caption>
+<show-all-questions-caption>Mostrar todas las preguntas</show-all-questions-caption>
+<show-one-by-one-caption>Mostrar preguntas de una en una</show-one-by-one-caption>
+<show-also-correct>1</show-also-correct>
+<process-for-rtl>0</process-for-rtl>
+<include-scorm-12>0</include-scorm-12>
+</global>
+</hotpot-config-file>
+</hotpot-jquiz-file>

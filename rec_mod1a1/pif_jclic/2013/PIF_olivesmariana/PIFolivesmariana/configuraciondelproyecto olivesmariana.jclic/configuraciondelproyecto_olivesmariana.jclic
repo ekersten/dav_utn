@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="configuraciondelproyecto_olivesmariana" version="0.1.3">
+ <settings>
+  <title>Periodo neolitico</title>
+  <revision description="created" date="6/27/13" />
+  <author name="Olives Mariana" rol="Docente" />
+  <descriptors area="Ciencias Sociales" level="Secundaria Básica" />
+  <skin file="@orange.xml" />
+ </settings>
+ <sequence>
+  <item id="inicio" name="los Homínidos: primeros pasos,primeras huellas">
+   <jump action="STOP" id="back" />
+  </item>
+  <item id="start" name="bienvenida" />
+  <item name="asociacion compleja">
+   <jump action="RETURN" id="forward" />
+   <jump action="STOP" id="back" />
+  </item>
+  <item name="asociacion simple">
+   <jump action="RETURN" id="forward" />
+   <jump action="STOP" id="back" />
+  </item>
+  <item name="identificacion">
+   <jump action="RETURN" id="forward" />
+   <jump action="STOP" id="back" />
+  </item>
+  <item name="exploracion">
+   <jump action="RETURN" id="forward" />
+   <jump action="STOP" id="back" />
+  </item>
+  <item name="texto: rellenar agujeros">
+   <jump action="RETURN" id="forward" />
+   <jump action="STOP" id="back" />
+  </item>
+  <item name="homotec">
+   <jump action="RETURN" id="forward" />
+   <jump action="STOP" id="back" />
+  </item>
+  <item name="caracteristicas">
+   <jump action="RETURN" id="forward" />
+   <jump action="STOP" id="back" />
+  </item>
+  <item name="EXPANSION TERRITORIAL">
+   <jump action="RETURN" id="forward" />
+   <jump action="STOP" id="back" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@panels.InformationScreen" name="los Homínidos: primeros pasos,primeras huellas">
+   <messages>
+    <cell border="true" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xCC00CC" />
+      <gradient source="0xCC00CC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Bienvenidos al maravilloso mundo de la evolución</p>
+    </cell>
+   </messages>
+   <settings margin="15" report="true" reportActions="false">
+    <container bgColor="0xCC00CC">
+     <gradient source="0x660066" dest="0xFFFFFF" angle="89" cycles="2" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF00CC" border="true">
+     <gradient source="0xFF00FF" dest="0xFFFFFF" angle="263" cycles="50" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="i01-evolucion humana.gif">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="bienvenida" code="">
+   <description />
+   <messages>
+    <cell avoidOverlapping="true" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xCC00CC" />
+      <gradient source="0xCC00CC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Elige una opción. Y comenzamos a trabajar</p>
+    </cell>
+   </messages>
+   <settings margin="15" report="true" reportActions="false">
+    <helpWindow>
+     <p>Coloca el cursor del mouse arriba  de la actividad y dale clik</p>
+    </helpWindow>
+    <container bgColor="0xCC00CC">
+     <gradient source="0x660066" dest="0xFFFFFF" angle="89" cycles="2" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF00CC" border="true">
+     <gradient source="0xFF00FF" dest="0xFFFFFF" angle="263" cycles="50" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="4" cols="2" cellWidth="200.0" cellHeight="80.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="4" />
+    <cell>
+     <style borderStroke="2.9" markerStroke="2.7">
+      <font family="Comic Sans MS" size="17" />
+      <color background="0xFF9999" border="0x00FF00" />
+      <gradient source="0xFF66CC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="asociacion compleja" />
+     <p>Asociacion compleja</p>
+    </cell>
+    <cell>
+     <style borderStroke="3.3" markerStroke="2.7">
+      <color background="0xFF9999" border="0x33FF00" />
+      <gradient source="0xFF66CC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="asociacion simple" />
+     <p>Asociacion simple</p>
+    </cell>
+    <cell>
+     <style borderStroke="2.9" markerStroke="2.7">
+      <font family="Comic Sans MS" size="17" />
+      <color background="0xFF9999" border="0x00FF00" />
+      <gradient source="0xFF66CC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="exploracion" />
+     <p>Actividad de Exploración</p>
+    </cell>
+    <cell>
+     <style borderStroke="2.9" markerStroke="2.7">
+      <font family="Comic Sans MS" size="17" />
+      <color background="0xFF9999" border="0x00FF00" />
+      <gradient source="0xFF66CC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="identificacion" />
+     <p>Actividad de Identificación</p>
+    </cell>
+    <cell>
+     <style borderStroke="2.9" markerStroke="2.7">
+      <font family="Comic Sans MS" size="17" />
+      <color background="0xFF9999" border="0x00FF00" />
+      <gradient source="0xFF66CC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="homotec" />
+     <p>Memotec</p>
+    </cell>
+    <cell>
+     <style borderStroke="2.9" markerStroke="2.7">
+      <font family="Comic Sans MS" size="17" />
+      <color background="0xFF9999" border="0x00FF00" />
+      <gradient source="0xFF66CC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="caracteristicas" />
+     <p>Sopa de letra</p>
+    </cell>
+    <cell>
+     <style borderStroke="2.9" markerStroke="2.7">
+      <font family="Comic Sans MS" size="17" />
+      <color background="0xFF9999" border="0x00FF00" />
+      <gradient source="0xFF66CC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="EXPANSION TERRITORIAL" />
+     <p>Rompecabeza</p>
+    </cell>
+    <cell>
+     <style borderStroke="2.9" markerStroke="2.7">
+      <font family="Comic Sans MS" size="17" />
+      <color background="0xFF9999" border="0x00FF00" />
+      <gradient source="0xFF66CC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="texto: rellenar agujeros" />
+     <p>Completar texto</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="asociacion compleja">
+   <messages>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="Lapices_movimiento.gif" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xCC00CC" />
+      <gradient source="0xCC00CC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Relaciona las caracteristicas con el período correspondiente</p>
+    </cell>
+    <cell avoidOverlapping="true" image="carita buen trabajo.gif" type="final">
+     <style>
+      <color background="0xCC00CC" />
+      <gradient source="0xCC00CC" dest="0xFFFFFF" angle="0" />
+     </style>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="BankGothic Lt BT" size="17" />
+      <color background="0xFF99FF" />
+     </style>
+     <p>No  recordas.Vuelve a leer.  Busca en ayuda</p>
+    </cell>
+   </messages>
+   <settings margin="15" infoUrl="http://www.historiauniversal.com/2009/04edad-de-piedra-paleolitico.html" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>busca en informacion</p>
+    </helpWindow>
+    <container bgColor="0xCC00CC">
+     <gradient source="0x660066" dest="0xFFFFFF" angle="89" cycles="2" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF00CC" border="true">
+     <gradient source="0xFF00FF" dest="0xFFFFFF" angle="263" cycles="50" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="5" cols="2" cellWidth="128.0" cellHeight="55.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell id="0">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="GulimChe" size="18" bold="true" />
+      <color background="0xFF66FF" />
+     </style>
+     <p>NOMADISMO</p>
+    </cell>
+    <cell id="1">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="GulimChe" size="18" bold="true" />
+      <color background="0xFF66FF" />
+     </style>
+     <p>TRANSICION</p>
+    </cell>
+    <cell id="0">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="GulimChe" size="18" bold="true" />
+      <color background="0xFF66FF" />
+     </style>
+     <p>ECONOMIA DEPREDADORA</p>
+    </cell>
+    <cell id="2">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="GulimChe" size="18" bold="true" />
+      <color background="0xFF66FF" />
+     </style>
+     <p>SEDENTARISMO</p>
+    </cell>
+    <cell id="0">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="GulimChe" size="18" bold="true" />
+      <color background="0xFF66FF" />
+     </style>
+     <p>BANDA</p>
+    </cell>
+    <cell id="2">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="GulimChe" size="18" bold="true" />
+      <color background="0xFF66FF" />
+     </style>
+     <p>ECONOMIA PRODUCTIVA</p>
+    </cell>
+    <cell id="2">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="GulimChe" size="18" bold="true" />
+      <color background="0xFF66FF" />
+     </style>
+     <p>REVOLUCION</p>
+    </cell>
+    <cell id="2">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="GulimChe" size="18" />
+      <color background="0xFF66FF" />
+     </style>
+     <p>TRIBUS</p>
+    </cell>
+    <cell id="1">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="GulimChe" size="18" bold="true" />
+      <color background="0xFF66FF" />
+     </style>
+     <p>SEMI NOMADISMO</p>
+    </cell>
+    <cell id="2">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="GulimChe" size="18" />
+      <color background="0xFF66FF" />
+     </style>
+     <p>ALDEA</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="168.0" cellHeight="50.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell border="true">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="GulimChe" size="18" bold="true" />
+      <color background="0xFFCCFF" />
+     </style>
+     <p>PALEOLÍTICO</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="GulimChe" size="18" bold="true" />
+      <color background="0xFFCCFF" />
+     </style>
+     <p>MESOLÍTICO</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="GulimChe" size="18" bold="true" />
+      <color background="0xFFCCFF" />
+     </style>
+     <p>NEOLÍTICO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="asociacion simple" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xCC00CC" />
+      <gradient source="0xCC00CC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Descubre a que hominido le corresponde cada imágen</p>
+    </cell>
+    <cell avoidOverlapping="true" image="1aplaudir.gif" type="final">
+     <style>
+      <color background="0xCC00CC" />
+      <gradient source="0xCC00CC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Muy Bien!!</p>
+    </cell>
+   </messages>
+   <settings margin="15" maxTime="60" countDownTime="false" maxActions="15" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xCC00CC">
+     <gradient source="0x660066" dest="0xFFFFFF" angle="89" cycles="2" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF00CC" border="true">
+     <gradient source="0xFF00FF" dest="0xFFFFFF" angle="263" cycles="50" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="1" cols="4" cellWidth="217.0" cellHeight="242.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell txtAlign="middle,top" imgAlign="middle,top" image="images (1).jpg">
+     <style borderStroke="4.9" markerStroke="2.7">
+      <font family="Arial" size="14" />
+      <color background="0xFFCC99" border="0x99FFFF" />
+      <gradient source="0xFFCC99" dest="0xFFFFFF" angle="0" cycles="3" />
+     </style>
+     <p>¿A qué homínido corresponde?</p>
+    </cell>
+    <cell txtAlign="middle,top" imgAlign="middle,top" image="homo_habilis_003.jpg">
+     <style borderStroke="4.9" markerStroke="2.7">
+      <font family="Arial" size="14" />
+      <color background="0xFFCC99" border="0x99FFFF" />
+      <gradient source="0xFFCC99" dest="0xFFFFFF" angle="0" cycles="3" />
+     </style>
+     <p>¿A que homínido corresponde?</p>
+    </cell>
+    <cell txtAlign="middle,top" imgAlign="middle,bottom" avoidOverlapping="true" image="paleolitic.jpg">
+     <style borderStroke="4.9" markerStroke="2.7">
+      <color background="0xFFCC99" border="0x99FFFF" />
+      <gradient source="0xFFCC99" dest="0xFFFFFF" angle="0" cycles="3" />
+     </style>
+     <p>¿A que homínido corresponde?</p>
+    </cell>
+    <cell imgAlign="middle,bottom" avoidOverlapping="true" image="fire.field.erectus.jpg">
+     <style borderStroke="4.9" markerStroke="2.7">
+      <color background="0xFFCC99" border="0x99FFFF" />
+      <gradient source="0xFFCC99" dest="0xFFFFFF" angle="0" cycles="3" />
+     </style>
+     <p>¿A qué hominido corresponde?</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="4" cellWidth="218.0" cellHeight="49.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <style borderStroke="4.9" markerStroke="2.7">
+      <font family="GulimChe" size="18" />
+      <color background="0xFFCC99" border="0x99FFFF" />
+      <gradient source="0xFFCC99" dest="0xFFFFFF" angle="0" cycles="3" />
+     </style>
+     <p>Homo Neandenthal</p>
+    </cell>
+    <cell border="true">
+     <style borderStroke="1.6" markerStroke="2.7">
+      <font family="GulimChe" size="17" />
+      <color background="0xFFCC99" border="0x99FFFF" />
+      <gradient source="0xFFCC99" dest="0xFFFFFF" angle="0" cycles="3" />
+     </style>
+     <p>HOMO HABILIS</p>
+    </cell>
+    <cell border="true">
+     <style borderStroke="1.6" markerStroke="2.7">
+      <font family="GulimChe" size="17" />
+      <color background="0xFFCC99" border="0x99FFFF" />
+      <gradient source="0xFFCC99" dest="0xFFFFFF" angle="0" cycles="3" />
+     </style>
+     <p>HOMO SAPIENS</p>
+    </cell>
+    <cell border="true">
+     <style borderStroke="2.3" markerStroke="2.7">
+      <font family="GulimChe" size="17" />
+      <color background="0xFFCC99" border="0x99FFFF" />
+      <gradient source="0xFFCC99" dest="0xFFFFFF" angle="0" cycles="3" />
+     </style>
+     <p>HOMO ERECTUS</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.Explore" name="exploracion">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xCC00CC" />
+      <gradient source="0xCC00CC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>descubre la imagen que le corresponde</p>
+    </cell>
+    <cell avoidOverlapping="true" image="carita_sonriente-7337.gif" type="final">
+     <style>
+      <color background="0xCC00CC" />
+      <gradient source="0xCC00CC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Te Felicito. Lo lograste</p>
+    </cell>
+   </messages>
+   <settings margin="15" report="true" reportActions="false">
+    <container bgColor="0xCC00CC">
+     <gradient source="0x660066" dest="0xFFFFFF" angle="89" cycles="2" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF00CC" border="true">
+     <gradient source="0xFF00FF" dest="0xFFFFFF" angle="263" cycles="50" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="170.0" cellHeight="118.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell id="0" image="img.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFCCFF" />
+     </style>
+    </cell>
+    <cell id="1" txtAlign="middle,top" imgAlign="middle,top" image="homo_habilis_003.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="12" />
+      <color background="0xFFCCFF" />
+     </style>
+     <p>Homo Habilis</p>
+    </cell>
+    <cell id="2" txtAlign="middle,top" image="neolitico4.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="12" />
+      <color background="0xFFCCFF" />
+     </style>
+     <p>agricultura</p>
+    </cell>
+    <cell id="3" txtAlign="middle,top" imgAlign="middle,top" image="erectus.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="12" />
+      <color background="0xFFCCFF" />
+     </style>
+     <p>Homo Erectus</p>
+    </cell>
+    <cell id="4" txtAlign="middle,top" imgAlign="middle,top" image="homo sapiens.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="10" />
+      <color background="0xFFCCFF" />
+     </style>
+     <p>Paleolitico superior</p>
+    </cell>
+    <cell id="5" txtAlign="middle,top" image="images (8).jpg">
+     <style borderStroke="0.8" markerStroke="5.0">
+      <font family="Arial" size="11" />
+      <color background="0xFFCCFF" />
+     </style>
+     <p>Monumentos megaliticos</p>
+    </cell>
+   </cells>
+   <cells rows="6" cols="1" cellWidth="117.0" cellHeight="60.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="6" />
+    <cell image="ceramica_2.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFCCFF" />
+     </style>
+    </cell>
+    <cell image="paleolitico1.jpg">
+     <style borderStroke="0.8" markerStroke="5.0">
+      <font family="Arial" size="11" />
+      <color background="0xFFCCFF" />
+     </style>
+    </cell>
+    <cell image="images (9).jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="12" />
+      <color background="0xFFCCFF" />
+     </style>
+    </cell>
+    <cell image="fuego.gif">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="12" />
+      <color background="0xFFCCFF" />
+     </style>
+    </cell>
+    <cell image="BisonteEncogido.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="10" />
+      <color background="0xFFCCFF" />
+     </style>
+    </cell>
+    <cell image="zz.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="9" />
+      <color background="0xFFCCFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@panels.Identify" name="identificacion">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xCC00CC" />
+      <gradient source="0xCC00CC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>¿Cuál de estos animales  de la megafauna no son carnívoros?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color background="0xCC00CC" />
+      <gradient source="0xCC00CC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Tigre diente de sable:  animal carnívoro extinguido, pariente cercano de los actuales felinos</p>
+    </cell>
+   </messages>
+   <settings margin="15" report="true" reportActions="false">
+    <container bgColor="0xCC00CC">
+     <gradient source="0x660066" dest="0xFFFFFF" angle="89" cycles="2" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF00CC" border="true">
+     <gradient source="0xFF00FF" dest="0xFFFFFF" angle="263" cycles="50" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="2" cellWidth="500.0" cellHeight="500.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell id="1" txtAlign="middle,top" image="castor gigante.jpg">
+     <style borderStroke="1.9" markerStroke="2.7">
+      <font family="Franklin Gothic Book" size="17" />
+      <color background="0xFFFF99" />
+     </style>
+     <p>Castor gigante</p>
+    </cell>
+    <cell id="0" txtAlign="middle,top" image="dientesdesable.jpg">
+     <style borderStroke="1.9" markerStroke="2.7">
+      <font family="Franklin Gothic Book" size="17" />
+      <color background="0xFFFF99" />
+     </style>
+     <p>Tigre diente de Sable</p>
+    </cell>
+    <cell id="1" txtAlign="middle,top" image="gliptodonte.jpg">
+     <style borderStroke="1.9" markerStroke="2.7">
+      <font family="Franklin Gothic Book" size="17" />
+      <color background="0xFFFF99" />
+     </style>
+     <p>Gliptodonte</p>
+    </cell>
+    <cell id="1" txtAlign="middle,top" image="images (3).jpg">
+     <style borderStroke="1.9" markerStroke="2.7">
+      <font family="Franklin Gothic Book" size="17" />
+      <color background="0xFFFF99" />
+     </style>
+     <p>Rinoceronte Lanudo</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="2" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell txtAlign="middle,top" image="castor gigante.jpg">
+     <style borderStroke="1.9" markerStroke="2.7">
+      <font family="Franklin Gothic Book" size="20" />
+      <color background="0xFFFF99" alternative="0x000000" />
+     </style>
+     <p>Es uno de los roedores más grande que jamás han existido. Vivió en América del Norte.Era buen nadador</p>
+    </cell>
+    <cell txtAlign="middle,top" image="dientesdesable.jpg">
+     <style borderStroke="1.9" markerStroke="2.7">
+      <font family="Franklin Gothic Book" size="17" bold="true" />
+      <color background="0xFFFF99" alternative="0x000000" />
+     </style>
+     <p>Felino carnívoro de 400 Kg. Tenían unos colmillos superiores muy desarrollados</p>
+    </cell>
+    <cell txtAlign="middle,top" imgAlign="middle,bottom" image="gliptodonte.jpg">
+     <style borderStroke="1.9" markerStroke="2.7">
+      <font family="Franklin Gothic Book" size="20" bold="true" />
+      <color background="0xFFFF99" alternative="0x000000" />
+     </style>
+     <p>Enorme mamífero, vivió en américa del sur. Tenía caparazón que le blindaba y protegia de los depredadores de la época</p>
+    </cell>
+    <cell txtAlign="middle,top" image="images (10).jpg">
+     <style borderStroke="1.9" markerStroke="2.7">
+      <font family="Franklin Gothic Book" size="20" bold="true" />
+      <color background="0xFFFF99" alternative="0x000000" />
+     </style>
+     <p>Eran herívoro se caracterizaban por su gran tamaño</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="homotec">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xCC00CC" />
+      <gradient source="0xCC00CC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Comienza a dar vuelta las ficha. Usa tu mente</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color background="0xCC00CC" />
+      <gradient source="0xCC00CC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Bien hecho!! =)</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Harrington" size="17" bold="true" />
+      <color background="0x00CCCC" />
+     </style>
+     <p>uy !!!</p>
+    </cell>
+   </messages>
+   <settings margin="15" report="true" reportActions="false">
+    <container bgColor="0xCC00CC">
+     <gradient source="0x660066" dest="0xFFFFFF" angle="89" cycles="2" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF00CC" border="true">
+     <gradient source="0xFF00FF" dest="0xFFFFFF" angle="263" cycles="50" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="220.0" cellHeight="156.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="i01-171australopithecus.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="10" />
+      <color background="0xFF3333" />
+     </style>
+     <p>Australopithecus Afarensis</p>
+    </cell>
+    <cell txtAlign="middle,top" imgAlign="right,middle" image="i01-homo erectus.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="10" />
+      <color background="0xFFCC00" />
+     </style>
+     <p>Homo Erectus</p>
+    </cell>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="i01-homo habilis.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="10" />
+      <color background="0x33FF00" />
+     </style>
+     <p>Homo Habilis</p>
+    </cell>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="i01-images (1).jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="8" />
+      <color background="0x009966" />
+     </style>
+     <p>Homo Neardental</p>
+    </cell>
+    <cell txtAlign="middle,bottom" imgAlign="middle,bottom" border="false" image="australopithecus_africanus_by_zdenek_burian_1952.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="11" />
+      <color background="0xFF66FF" />
+     </style>
+     <p>Australopithecus Africanus</p>
+    </cell>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="i01-homo sapiens.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="8" />
+      <color background="0x0033FF" />
+     </style>
+     <p>homo Sapiens Sapiens</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="caracteristicas">
+   <description>
+    <p>Bucar las palabras escondidas</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xCC00CC" />
+      <gradient source="0xCC00CC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Busca las 12 palabras escondidas relacionadas con el Paleolítico Superior</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color background="0xCC00CC" />
+      <gradient source="0xCC00CC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Excelente!!</p>
+    </cell>
+   </messages>
+   <settings margin="15" report="true" reportActions="false">
+    <container bgColor="0xCC00CC">
+     <gradient source="0x660066" dest="0xFFFFFF" angle="89" cycles="2" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF00CC" border="true">
+     <gradient source="0xFF00FF" dest="0xFFFFFF" angle="263" cycles="50" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <textGrid rows="28" columns="14" cellWidth="44.0" cellHeight="34.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>ABC********B************N***</row>
+     <row>DEF*PESCA**A************O***</row>
+     <row>GHI********N************M***</row>
+     <row>***********D************A***</row>
+     <row>*B**ECONOMIADEPREDADORA*D***</row>
+     <row>*U***A*****S**********S*E***</row>
+     <row>*R***Z***RECOLECCION**T*S***</row>
+     <row>*I***A****************A*****</row>
+     <row>*L*******PERFORADORES*S*****</row>
+     <row>*E**ARCOYFLECHA*************</row>
+     <row>*S**HOMOSAPIENS*************</row>
+     <row>****************************</row>
+     <row>***MAGDALENIENSE************</row>
+     <row>****************************</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">BANDAS</clue>
+    <clue id="1">CAZA</clue>
+    <clue id="2">ECONOMIADEPREDADORA</clue>
+    <clue id="3">MAGDALENIENSE</clue>
+    <clue id="4">ARCOYFLECHA</clue>
+    <clue id="5">NOMADES</clue>
+    <clue id="6">BURILES</clue>
+    <clue id="7">ASTAS</clue>
+    <clue id="8">PERFORADORES</clue>
+    <clue id="9">PESCA</clue>
+    <clue id="10">RECOLECCION</clue>
+    <clue id="11">HOMOSAPIENS</clue>
+   </clues>
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="EXPANSION TERRITORIAL">
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xCC00CC" />
+      <gradient source="0xCC00CC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>COMIENZA ARMAR  EL MAPA POR DONDE INMIGRARON LOS PRIMEROS HOMÍNIDOS</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color background="0xCC00CC" />
+      <gradient source="0xCC00CC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>EXCELENTE!! A hora elabora un informe en tu carpeta sobre la dispersión de los seres humanos desde África al resto del planeta</p>
+    </cell>
+   </messages>
+   <settings margin="15" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xCC00CC">
+     <gradient source="0x660066" dest="0xFFFFFF" angle="89" cycles="2" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF00CC" border="true">
+     <gradient source="0xFF00FF" dest="0xFFFFFF" angle="263" cycles="50" />
+    </window>
+   </settings>
+   <cells rows="3" cols="4" border="true" image="articles-19534_recurso_jpg (1).jpg">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="3" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="texto: rellenar agujeros" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xCC00CC" />
+      <gradient source="0xCC00CC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Completa el siguiente texto</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color background="0xCC00CC" />
+      <gradient source="0xCC00CC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Buen Trabajo</p>
+    </cell>
+   </messages>
+   <settings margin="15" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>prehistoria, erectus, inferior, superior, medio, australopitecus, escritura, habilis, venus, rupestre,</p>
+    </helpWindow>
+    <container bgColor="0xCC00CC">
+     <gradient source="0x660066" dest="0xFFFFFF" angle="89" cycles="2" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF00CC" border="true">
+     <gradient source="0xFF00FF" dest="0xFFFFFF" angle="263" cycles="50" />
+     <size width="700" height="400" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <document>
+    <style name="default" bold="false" size="12" tabWidth="12" italic="false" background="0xFFFFFF" family="Arial" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text size="16" family="Comic Sans MS">	 La etapa anterior a la Historia se llama </text>
+      <target>
+       <answer>prehistoria,</answer>
+       <response fill="_" length="12" maxLength="12" />
+       <text>prehistoria,</text>
+      </target>
+      <text size="16" family="Comic Sans MS">, que comienza con la aparición del hombre y termina con la aparición de la </text>
+      <target>
+       <answer>escritura</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>escritura</text>
+      </target>
+      <text size="16" family="Comic Sans MS"> (año 3000 antes de Cristo). Esta se divide en 2 etapas: la edad de </text>
+      <target>
+       <answer>piedra</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>piedra</text>
+      </target>
+      <text size="16" family="Comic Sans MS">, o paleolítico y la edad de los </text>
+      <target>
+       <answer>metales</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>metales</text>
+      </target>
+      <text size="16" family="Comic Sans MS">. La conocemos estudiando los restos materiales.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text size="16" family="Comic Sans MS">	Dentro de la edad de la piedra y según el nivel tecnológico en el pulido de útiles de piedra tenemos el paleolítico </text>
+      <target>
+       <answer>inferio</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>inferior </text>
+      </target>
+      <text size="16" family="Comic Sans MS">(desde hace 3 millones de años) que se asocia a varios homínidos: el </text>
+      <target>
+       <answer>australopiteco</answer>
+       <response fill="_" length="14" maxLength="14" />
+       <text>australopiteco</text>
+      </target>
+      <text size="16" family="Comic Sans MS"> (primer bípedo), el Homo </text>
+      <target>
+       <answer>habilis</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>habilis</text>
+      </target>
+      <text size="16" family="Comic Sans MS"> (aprende a elaborar instrumentos tallando o golpeando piedras: cuchillos, raspadores, hachas o bifaces, puntas de flecha, y arpones de hueso) y el Homo </text>
+      <target>
+       <answer>erectus</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>erectus</text>
+      </target>
+      <text size="16" family="Comic Sans MS"> (el primero que domina el fuego). Después viene el paleolítico </text>
+      <target>
+       <answer>medio</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>medio</text>
+      </target>
+      <text size="16" family="Comic Sans MS"> (desde hace 120 mil años) que se asocia al Homo Neandertal. Luego el paleolítico </text>
+      <target>
+       <answer>superior</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>superior</text>
+      </target>
+      <text size="16" family="Comic Sans MS"> (desde hace 40 mil años hasta hace 10 mil) que se asocia al Homo sapiens (nosotros) el que hace las pinturas </text>
+      <target>
+       <answer>rupestres</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>rupestres</text>
+      </target>
+      <text size="16" family="Comic Sans MS"> (en cuevas) y estatuillas de </text>
+      <target>
+       <answer>Venus.</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>Venus.</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text size="16">	</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="01EXCELENTE.gif" file="01EXCELENTE.gif" />
+  <media name="1aplaudir.gif" file="1aplaudir.gif" />
+  <media name="arx1222979106w.gif" file="arx1222979106w.gif" />
+  <media name="bici2.gif" file="bici2.gif" />
+  <media name="carita buen trabajo.gif" file="carita buen trabajo.gif" />
+  <media name="carita_sonriente-7337.gif" file="carita_sonriente-7337.gif" />
+  <media name="evolucion humana.gif" file="evolucion humana.gif" />
+  <media name="fuego.gif" file="fuego.gif" />
+  <media name="i01-evolucion humana.gif" file="i03-evolucion humana.gif" />
+  <media name="Lapices_movimiento.gif" file="Lapices_movimiento.gif" />
+  <media name="making tools 2.gif" file="making tools 2.gif" />
+  <media name="minialt.gif" file="minialt.gif" />
+  <media name="minialt2.gif" file="minialt2.gif" />
+  <media name="171australopithecus.jpg" file="171australopithecus.jpg" />
+  <media name="34666091 (1).jpg" file="34666091 (1).jpg" />
+  <media name="4.jpg" file="4.jpg" />
+  <media name="APIC393.jpg" file="APIC393.jpg" />
+  <media name="articles-19534_recurso_jpg (1).jpg" file="i03-articles-19534_recurso_jpg (1).jpg" />
+  <media name="australopithecus_africanus_by_zdenek_burian_1952.jpg" file="i02-australopithecus_africanus_by_zdenek_burian_1952.jpg" />
+  <media name="BisonteEncogido.jpg" file="BisonteEncogido.jpg" />
+  <media name="castor gigante.jpg" file="castor gigante.jpg" />
+  <media name="ceramica_2.jpg" file="ceramica_2.jpg" />
+  <media name="cromagnon.jpg" file="cromagnon.jpg" />
+  <media name="dientesdesable.jpg" file="dientesdesable.jpg" />
+  <media name="elpaleolitico.jpg" file="elpaleolitico.jpg" />
+  <media name="erectus.jpg" file="erectus.jpg" />
+  <media name="fire.field.erectus.jpg" file="fire.field.erectus.jpg" />
+  <media name="gliptodonte.jpg" file="gliptodonte.jpg" />
+  <media name="herr.jpg" file="herr.jpg" />
+  <media name="homo erectus.jpg" file="homo erectus.jpg" />
+  <media name="homo habilis.jpg" file="homo habilis.jpg" />
+  <media name="homo sapiens.jpg" file="homo sapiens.jpg" />
+  <media name="homo_habilis_003.jpg" file="homo_habilis_003.jpg" />
+  <media name="i01-171australopithecus.jpg" file="i03-171australopithecus.jpg" />
+  <media name="i01-homo erectus.jpg" file="i03-homo erectus.jpg" />
+  <media name="i01-homo habilis.jpg" file="i03-homo habilis.jpg" />
+  <media name="i01-homo sapiens.jpg" file="i03-homo sapiens.jpg" />
+  <media name="i01-images (1).jpg" file="i03-images (1).jpg" />
+  <media name="idaenelpaleolitica.jpg" file="idaenelpaleolitica.jpg" />
+  <media name="image012.jpg" file="image012.jpg" />
+  <media name="images (1).jpg" file="images (1).jpg" />
+  <media name="images (10).jpg" file="images (10).jpg" />
+  <media name="images (11).jpg" file="images (11).jpg" />
+  <media name="images (12).jpg" file="images (12).jpg" />
+  <media name="images (2).jpg" file="images (2).jpg" />
+  <media name="images (3).jpg" file="images (3).jpg" />
+  <media name="images (4).jpg" file="images (4).jpg" />
+  <media name="images (5).jpg" file="images (5).jpg" />
+  <media name="images (6).jpg" file="images (6).jpg" />
+  <media name="images (7).jpg" file="images (7).jpg" />
+  <media name="images (8).jpg" file="images (8).jpg" />
+  <media name="images (9).jpg" file="images (9).jpg" />
+  <media name="images.jpg" file="images.jpg" />
+  <media name="img.jpg" file="img.jpg" />
+  <media name="mega.jpg" file="mega.jpg" />
+  <media name="megaterio.jpg" file="megaterio.jpg" />
+  <media name="neolitico.jpg" file="neolitico.jpg" />
+  <media name="neolitico4.jpg" file="neolitico4.jpg" />
+  <media name="paleolitic.jpg" file="paleolitic.jpg" />
+  <media name="paleolitico1.jpg" file="paleolitico1.jpg" />
+  <media name="piedrapulida.jpg" file="piedrapulida.jpg" />
+  <media name="Revolucion Neolitica_2.jpg" file="Revolucion Neolitica_2.jpg" />
+  <media name="telar.jpg" file="telar.jpg" />
+  <media name="uso-del-fuego.jpg" file="uso-del-fuego.jpg" />
+  <media name="Vida-en-el-Paleolítico-2.jpg" file="Vida-en-el-Paleolítico-2.jpg" />
+  <media name="Vida_neo.jpg" file="Vida_neo.jpg" />
+  <media name="vidapaleolitico" file="Vida-en-el-Paleolítico-2.jpg" />
+  <media name="zz.jpg" file="zz.jpg" />
+  <media name="bach.mid" file="bach.mid" />
+  <media name="bressol.mid" file="bressol.mid" />
+  <media name="mozart.mid" file="mozart.mid" />
+  <media name="novena.mid" file="novena.mid" />
+  <media name="20070717klphisuni_6.Ees.SCO.png" file="20070717klphisuni_6.Ees.SCO.png" />
+  <media name="400px-Migración_humana_fuera_de_África_mapa_ADN_genético.png" file="400px-Migración_humana_fuera_de_África_mapa_ADN_genético.png" />
+  <media name="bycicle.wav" file="bycicle.wav" />
+  <media name="car.wav" file="car.wav" />
+  <media name="lorry.wav" file="lorry.wav" />
+  <media name="motorcyc.wav" file="motorcyc.wav" />
+  <media name="muybien.wav" file="muybien.wav" />
+  <media name="nuria.wav" file="nuria.wav" />
+  <media name="ohhh.wav" file="ohhh.wav" />
+ </mediaBag>
+</JClicProject>
+

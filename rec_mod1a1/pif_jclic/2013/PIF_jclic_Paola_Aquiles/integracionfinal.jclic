@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="integracionfinal" version="0.1.3">
+ <settings>
+  <title>Proyecto Jclic</title>
+  <revision description="created" date="8/5/13" />
+  <author name="Paola Aquiles" mail="paolaaquilessa@gmail.com" rol="Profesora de Informática Bachillerato de Adultos" organization="E. E. S. N º 1" />
+  <language>español (es)</language>
+  <description>
+   <p>Reforzando contenidos</p>
+  </description>
+  <descriptors area="Informática" level="Secundaria de Adultos" />
+  <skin file="@blue.xml" />
+ </settings>
+ <sequence>
+  <item id="INICIO" name="INICIO DE LA ACTIVIDAD">
+   <jump tag="SOPA DE LETRA" id="forward" />
+  </item>
+  <item id="SOPA DE LETRA" name="Sopa de letras">
+   <jump tag="componentes de hardware" id="forward" />
+  </item>
+  <item id="componentes de hardware" name="Actividad de Identificación">
+   <jump tag="tuiteo" id="forward" />
+  </item>
+  <item id="tuiteo" name="rellenar agujeros con lista desplegable">
+   <jump tag="hipervínculos" id="forward" />
+  </item>
+  <item id="hipervínculos" name="Actividad de Exploración">
+   <jump tag="hardware" id="forward" />
+  </item>
+  <item id="hardware" name="Memo test">
+   <jump tag="Asociación Simple" id="forward" />
+  </item>
+  <item id="Asociación Simple" name="Asociación simple">
+   <jump tag="Asociación Compleja" id="forward" />
+  </item>
+  <item id="Asociación Compleja" name="Asociación Compleja">
+   <jump tag="Rompecabezas" id="forward" />
+  </item>
+  <item id="Rompecabezas" name="Rompecabezas hardware y software">
+   <jump action="RETURN" id="forward" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@panels.Explore" name="Actividad de Exploración" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="Arial" size="18" />
+      <color foreground="0xFFFFFF" background="0x3333FF" />
+     </style>
+     <p>Haz clic en los hipervínculos para obtener información...</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="18" />
+      <color foreground="0xFFFFFF" background="0x3333FF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Inicio de las Actividades" />
+     <p>ETAPA CUMPLIDA !!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x000000">
+     <image name="i01-pregunta.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x9999FF" border="true">
+     <gradient source="0x6666FF" dest="0x666666" angle="77" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="3" cellWidth="147.0" cellHeight="148.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell id="0" image="HIPERVINCULO.jpg">
+     <media type="URL" level="1" file="http://es.wikipedia.org/wiki/Entrada/salida" />
+    </cell>
+    <cell id="1" image="HIPERVINCULO.jpg">
+     <media type="URL" level="1" file="http://es.wikipedia.org/wiki/Dispositivo_de_almacenamiento_de_datos" />
+    </cell>
+    <cell id="2" image="HIPERVINCULO.jpg">
+     <media type="URL" level="1" file="http://es.wikipedia.org/wiki/Sistema_inform%C3%A1tico" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="3" cellWidth="156.0" cellHeight="195.0" border="true" id="secondary">
+    <style transparent="true" borderStroke="1.6" markerStroke="2.7">
+     <color background="0x000000" border="0x006666" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell image="dispositivos-de-entrada.jpg" />
+    <cell image="i01-dispositivos de almacenamiento.jpg" />
+    <cell image="sist-informaticos.jpg" />
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.Identify" name="Actividad de Identificación" code="">
+   <description>
+    <p>PANTALLA DE INICIO</p>
+   </description>
+   <messages>
+    <cell avoidOverlapping="true" image="pregunta.jpg" type="initial">
+     <style shadow="true">
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x000000" />
+     </style>
+     <p>¿Qué imágen no es un componente de HARDWARE?</p>
+    </cell>
+    <cell avoidOverlapping="true" image="dispositivos de almacenamiento.jpg" type="final">
+     <style shadow="true">
+      <color foreground="0xFFFFFF" background="0x000000" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Inicio de las Actividades" />
+     <p>SON DISPOSITIVOS DE ALMACENAMIENTO</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="4" cellWidth="106.0" cellHeight="127.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="2.7">
+     <font family="Bell MT" size="18" />
+     <color foreground="0xFFFFFF" background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell id="0" image="i01-impresora.jpg" />
+    <cell id="0" image="i01-monitor.jpg" />
+    <cell id="0" image="i01-mouse.jpg" />
+    <cell id="1" image="dispositivos de almacenamiento.jpg" />
+   </cells>
+   <cells rows="1" cols="4" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <p>IMPRESORA</p>
+    </cell>
+    <cell>
+     <p>MONITOR</p>
+    </cell>
+    <cell>
+     <p>MOUSE</p>
+    </cell>
+    <cell />
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Asociación Compleja">
+   <messages>
+    <cell type="initial">
+     <style shadow="true" borderStroke="0.7" markerStroke="2.7">
+      <font family="Bell MT" size="18" bold="true" />
+      <color background="0x00CCCC" />
+     </style>
+     <p>Relacioná cada parte del Hardware con su correspondiente imagen</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Bell MT" size="18" bold="true" />
+      <color background="0x00CCCC" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Inicio de las Actividades" />
+     <p>FELICITACIONES</p>
+    </cell>
+    <cell type="finalError">
+     <style shadow="true">
+      <font family="Bell MT" size="18" bold="true" />
+      <color background="0x00CCCC" />
+     </style>
+     <p>UPS !!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://www.google.com.ar/imgres?imgurl=http://4.bp.blogspot.com/-fZej1DSZTJs/TWVYNr3p_bI/AAAAAAAAABQ/s8XlO-3Yg1s/s1600/hardware.jpg&amp;imgrefurl=http://operaequipodecomputocbtis7714starling.blogspot.com/2011/02/hardware-y-software.html&amp;h=248&amp;w=386&amp;sz=11&amp;tbnid=-zwPdWL4mZQOJM:&amp;tbnh=90&amp;tbnw=140&amp;zoom=1&amp;usg=__87Xve4eOV5p4-DEEaILpZ4J0KO4=&amp;docid=6SkNrcx_Y39KhM&amp;sa=X&amp;ei=XG3ZUaOIPIa7igLYloDoBw&amp;sqi=2&amp;ved=0CEAQ9QEwBA&amp;dur=621" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="i02-pregunta.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="6" cellWidth="82.0" cellHeight="83.0" border="true" id="primary">
+    <style>
+     <font family="Bell MT" size="20" bold="true" />
+     <color background="0x00CCCC" />
+    </style>
+    <shaper class="@Rectangular" cols="6" rows="1" />
+    <cell id="0">
+     <p>TECLADO</p>
+    </cell>
+    <cell id="1">
+     <p>MOUSE</p>
+    </cell>
+    <cell id="2">
+     <p>MONITOR</p>
+    </cell>
+    <cell id="3">
+     <p>IMPRESORA</p>
+    </cell>
+    <cell>
+     <p>SCANNER</p>
+    </cell>
+    <cell>
+     <p>GABINETE</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="4" cellWidth="87.0" cellHeight="75.0" border="true" id="secondary">
+    <style borderStroke="1.7" markerStroke="2.7">
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFFFFF" border="0x00CCCC" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell image="i02-teclado.jpg" />
+    <cell image="i03-mouse.jpg" />
+    <cell image="i03-monitor.jpg" />
+    <cell image="i03-impresora.jpg" />
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="Asociación simple">
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Bell MT" size="18" bold="true" />
+      <color background="0x00CCCC" />
+     </style>
+     <p>REPACEMOS LO APRENDIDO EN CLASE !!!</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Bell MT" size="18" bold="true" />
+      <color background="0x00CCCC" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Inicio de las Actividades" />
+     <p>LO LOGRASTE  </p>
+    </cell>
+    <cell type="finalError">
+     <style shadow="true">
+      <font family="Bell MT" size="18" bold="true" />
+      <color background="0x00CCCC" />
+     </style>
+     <p>VUELVE A INTENTARLO</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://es.wikipedia.org/wiki/Hardware" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x000000">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="4" cellWidth="144.0" cellHeight="180.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="2.7">
+     <font family="Arial Black" size="18" />
+     <color background="0xFFFFFF" border="0xCC9900" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell txtAlign="middle,top" avoidOverlapping="true" image="i02-gabinete.jpg">
+     <p>Qué componente de Hardware es?</p>
+    </cell>
+    <cell avoidOverlapping="true" image="i03-impresora.jpg">
+     <p>Qué componente de Hardware es?</p>
+    </cell>
+    <cell avoidOverlapping="true" image="i03-monitor.jpg">
+     <p>Qué componente de Hardware es?</p>
+    </cell>
+    <cell avoidOverlapping="true" image="i02-teclado.jpg">
+     <p>Qué componente de Hardware es?</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="4" cellWidth="144.0" cellHeight="40.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="2.7">
+     <font family="Bauhaus 93" size="18" />
+     <color background="0x00CCCC" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <p>GABINETE</p>
+    </cell>
+    <cell>
+     <p>IMPRESORA</p>
+    </cell>
+    <cell>
+     <p>MONITOR</p>
+    </cell>
+    <cell>
+     <p>TECLADO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="INICIO DE LA ACTIVIDAD" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFF00" />
+     </style>
+     <p>BIENVENIDOS</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color background="0xFFFF00" />
+     </style>
+     <p>FELICITACIONES</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x00CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="BIENVENIDO.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@memory.MemoryGame" name="Memo test">
+   <description>
+    <p>Juego de memoria con elementos que forman parte del Hardware en un sistema informático</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Batang" size="18" bold="true" />
+      <color foreground="0xFFFFFF" background="0x000000" />
+     </style>
+     <p>ELEMENTOS QUE COMPONEN EL HARDWARE DE UN SISTEMA INFORMÁTICO</p>
+     <p>¡TE DESAFÍO A ENCONTRARLOS!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Batang" size="18" bold="true" />
+      <color foreground="0xFFFFFF" background="0x000000" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Rompecabezas hardware y software" />
+     <p>¡¡¡ FELICITACIONES !!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Batang" size="18" bold="true" />
+      <color foreground="0xFFFFFF" background="0x000000" />
+     </style>
+     <p>UPS</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://html.rincondelvago.com/componentes-de-hardware.html" report="true" reportActions="false">
+    <helpWindow>
+     <p>Imágenes escondidas: Gabinete, Impresora, Monitor, Mouse, Scanner y Teclado.</p>
+    </helpWindow>
+    <container bgColor="0x666600">
+     <image name="fondo.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="false" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="186.0" cellHeight="153.0" border="true" id="primary">
+    <style shadow="true" transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Book Antiqua" size="26" bold="true" />
+     <color foreground="0xFFFFFF" shadow="0xCC0033" border="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="i01-gabinete.jpg" />
+    <cell image="i02-impresora.jpg" />
+    <cell image="i02-monitor.jpg" />
+    <cell image="i02-mouse.jpg" />
+    <cell image="i01-scanner.jpg" />
+    <cell image="i01-teclado.jpg" />
+   </cells>
+   <cells rows="2" cols="3" cellWidth="50.0" cellHeight="30.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell>
+     <p>GABINETE</p>
+    </cell>
+    <cell>
+     <p>IMPRESORA</p>
+    </cell>
+    <cell>
+     <p>MONITOR</p>
+    </cell>
+    <cell>
+     <p>MOUSE</p>
+    </cell>
+    <cell>
+     <p>SCANNER</p>
+    </cell>
+    <cell>
+     <p>TECLADO</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="Rompecabezas hardware y software" code="">
+   <description />
+   <messages>
+    <cell avoidOverlapping="true" border="true" image="pc.jpg" type="initial">
+     <style shadow="true">
+      <font family="Chiller" size="28" />
+      <color background="0xFFFFFF" shadow="0xCCCCCC" />
+     </style>
+     <p>COMIENZA A USAR TU INGENIO</p>
+     <p>SUERTE !!!</p>
+    </cell>
+    <cell border="true" type="final">
+     <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Chiller" size="24" />
+      <color foreground="0x333333" background="0xFFFFFF" shadow="0xCCCCCC" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Sopa de letras" />
+     <p>¡¡¡ FELICITACIONES !!!</p>
+    </cell>
+    <cell type="finalError">
+     <style shadow="true">
+      <font family="Chiller" size="28" />
+      <color background="0xFFFFFF" shadow="0xCCCCCC" />
+     </style>
+     <media type="UNKNOWN" level="1" />
+     <p>UPS!!!</p>
+    </cell>
+   </messages>
+   <settings margin="6" infoUrl="http://es.wikipedia.org/wiki/Hardware" dragCells="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x3399FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCCCCC" border="false" />
+   </settings>
+   <cells rows="3" cols="3" border="true" image="pc.jpg">
+    <style borderStroke="0.9" markerStroke="2.7">
+     <color background="0xCCCCCC" inactive="0x666666" alternative="0xFFFFFF" border="0xFFFF99" />
+    </style>
+    <shaper class="@ClassicJigSaw" cols="3" rows="3" baseWidthFactor="0.7" toothHeightFactor="0.7140000000000001" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="Sopa de letras" code="">
+   <description>
+    <p>Sopa de letras con palabras que forman parte del Hardware en un sistema operativo</p>
+   </description>
+   <messages>
+    <cell avoidOverlapping="true" image="elementos de hardware.jpg" type="initial">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="Batang" size="16" bold="true" />
+      <color foreground="0x993300" background="0xFFCC00" />
+     </style>
+     <p>Encuentra palabras relacionadas con el Hardware de un Sistema Informático</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Batang" size="16" bold="true" />
+      <color foreground="0x993300" background="0xFFCC00" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Memo test" />
+     <p>DESAFÍO LOGRADO !!!</p>
+    </cell>
+    <cell border="true" type="finalError">
+     <style>
+      <font family="Batang" size="16" bold="true" />
+      <color foreground="0x993300" background="0xFFCC00" />
+     </style>
+     <p>UPS !!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://marrepa.blogspot.com.ar/2009/03/ventajas-y-desventajas-del-hardware.html" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="sopa-de-letras fondo.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="false" />
+   </settings>
+   <textGrid rows="11" columns="9" cellWidth="30.0" cellHeight="31.0" border="true">
+    <style shadow="true" borderStroke="0.9" markerStroke="2.7">
+     <color foreground="0x993300" background="0xFFCC66" />
+    </style>
+    <text>
+     <row>GABINETE**T</row>
+     <row>DEFM******E</row>
+     <row>GHIP******C</row>
+     <row>***R******L</row>
+     <row>***E******A</row>
+     <row>MOUSE*****D</row>
+     <row>**MONITOR*O</row>
+     <row>***R*******</row>
+     <row>*SCANNER***</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">GABINETE</clue>
+    <clue id="1">IMPRESORA</clue>
+    <clue id="2">MONITOR</clue>
+    <clue id="3">MOUSE</clue>
+    <clue id="4">SCANNER</clue>
+    <clue id="5">TECLADO</clue>
+   </clues>
+   <cells rows="6" cols="1" cellWidth="90.0" cellHeight="44.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="6" />
+    <cell image="gabinete.jpg">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0" />
+    </cell>
+    <cell image="impresora.jpg">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0" />
+    </cell>
+    <cell image="monitor.jpg">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0" />
+    </cell>
+    <cell image="mouse.jpg">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0" />
+    </cell>
+    <cell image="scanner.jpg">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0" />
+    </cell>
+    <cell image="teclado.jpg">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0" />
+    </cell>
+   </cells>
+   <layout position="BA" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="rellenar agujeros con lista desplegable" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color background="0xCCCCFF" />
+     </style>
+     <p>Seleccioná la opción correcta</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color background="0xCCCCFF" />
+     </style>
+     <p>Felicitaciones !!!</p>
+    </cell>
+   </messages>
+   <settings margin="12" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="libro.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF66CC" transparent="true" border="true">
+     <size width="600" height="300" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" size="11" background="0xFFFFFF" italic="false" tabWidth="12" bold="false" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" Alignment="1" family="Arial">
+      <text size="22" foreground="0xFF33CC" bold="true" family="Arial Black">El </text>
+      <target>
+       <answer>ritmo</answer>
+       <optionList>
+        <option>ritmo</option>
+        <option>tecleo</option>
+        <option>factor</option>
+       </optionList>
+       <text>ritmo</text>
+      </target>
+      <text size="22" foreground="0xFF33CC" bold="true" family="Arial Black"> de tuiteo revela si el autor es persona, empresa o ‘bot’</text>
+     </p>
+     <p background="0xFFFFFF" Alignment="1" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text size="24" foreground="0xFF33CC" family="Batang">Un equipo de investigadores del Imperial College de </text>
+      <target>
+       <answer>Londres</answer>
+       <optionList>
+        <option>Londres</option>
+        <option>Brasil</option>
+        <option>Argentina</option>
+        <option>Canadá</option>
+       </optionList>
+       <text>Londres</text>
+      </target>
+      <text size="24" foreground="0xFF33CC" family="Batang"> ha logrado descifrar si es una empresa, un programa </text>
+      <target>
+       <answer>informático</answer>
+       <optionList>
+        <option>televisivo</option>
+        <option>informático</option>
+        <option>radial</option>
+        <option>informativo</option>
+       </optionList>
+       <text>informático</text>
+      </target>
+      <text size="24" foreground="0xFF33CC" family="Batang"> o una persona quien </text>
+      <target>
+       <answer>tuitea</answer>
+       <optionList>
+        <option>habla</option>
+        <option>escucha</option>
+        <option>escribe</option>
+        <option>tuitea</option>
+       </optionList>
+       <text>tuitea</text>
+      </target>
+      <text size="24" foreground="0xFF33CC" family="Batang"> solo con analizar el ritmo en que lo hacen, según un estudio que se publica esta semana en PLOS ONE</text>
+      <text size="22" foreground="0xFF33CC" family="Arial Black">.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="BIENVENIDO.jpg" file="BIENVENIDO.jpg" />
+  <media name="dispositivos de almacenamiento.jpg" file="dispositivos de almacenamiento.jpg" />
+  <media name="dispositivos-de-entrada.jpg" file="dispositivos-de-entrada.jpg" />
+  <media name="elementos de hardware.jpg" file="elementos de hardware.jpg" />
+  <media name="fondo.jpg" file="fondo.jpg" />
+  <media name="gabinete.jpg" file="gabinete.jpg" />
+  <media name="HIPERVINCULO.jpg" file="HIPERVINCULO.jpg" />
+  <media name="i01-dispositivos de almacenamiento.jpg" file="i01-dispositivos de almacenamiento.jpg" />
+  <media name="i01-gabinete.jpg" file="i01-gabinete.jpg" />
+  <media name="i01-impresora.jpg" file="i01-impresora.jpg" />
+  <media name="i01-monitor.jpg" file="i01-monitor.jpg" />
+  <media name="i01-mouse.jpg" file="i01-mouse.jpg" />
+  <media name="i01-pregunta.jpg" file="i01-pregunta.jpg" />
+  <media name="i01-scanner.jpg" file="i01-scanner.jpg" />
+  <media name="i01-teclado.jpg" file="i01-teclado.jpg" />
+  <media name="i02-gabinete.jpg" file="gabinete.jpg" />
+  <media name="i02-impresora.jpg" file="i02-impresora.jpg" />
+  <media name="i02-monitor.jpg" file="i02-monitor.jpg" />
+  <media name="i02-mouse.jpg" file="i02-mouse.jpg" />
+  <media name="i02-pregunta.jpg" file="pregunta.jpg" />
+  <media name="i02-teclado.jpg" file="teclado.jpg" />
+  <media name="i03-impresora.jpg" file="impresora.jpg" />
+  <media name="i03-monitor.jpg" file="monitor.jpg" />
+  <media name="i03-mouse.jpg" file="mouse.jpg" />
+  <media name="impresora.jpg" file="impresora.jpg" />
+  <media name="libro.jpg" file="libro.jpg" />
+  <media name="monitor.jpg" file="monitor.jpg" />
+  <media name="mouse.jpg" file="mouse.jpg" />
+  <media name="pc.jpg" file="pc.jpg" />
+  <media name="pregunta.jpg" file="pregunta.jpg" />
+  <media name="scanner.jpg" file="scanner.jpg" />
+  <media name="sist-informaticos.jpg" file="sist-informaticos.jpg" />
+  <media name="sopa-de-letras fondo.jpg" file="sopa-de-letras fondo.jpg" />
+  <media name="teclado.jpg" file="teclado.jpg" />
+ </mediaBag>
+</JClicProject>
+

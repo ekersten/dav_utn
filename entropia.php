@@ -23,7 +23,7 @@
 				<div class="column medium-9 principal">
 					<h1>ENTROPIA</h1>
 					<ul class="breadcrumbs">
-						<li><a href="modelo1a1.php">Programa de Entes de Gobierno y R.S.E</a></li>
+						<li><a href="modelo1a1.php">Programas para organismos públicos y R.S.E.</a></li>
 						<li class="actual">Entropia</li>
 						<!-- <li>Información General</li> -->
 					</ul>
@@ -31,7 +31,7 @@
 					<p><span class="destacado">El impulso de esta iniciativa es lograr que un mayor porcentaje de alumnos de sectores de bajos recursos puedan acceder a carreras de ingeniería,</span>  pretendiendo no solo contribuir a satisfacer una demanda del mercado profesional, sino también colaborar con la ruptura de los círculos de pobreza. El objetivo último perseguido por Entropía es igualar las posibilidades de muchos estudiantes, que por razones socioeconómicas y culturales, ven a la Facultad de Ingeniería como algo de difícil alcance.</p>
 					<p>La forma de trabajo planteada por este programa propone una preparación previa al examen de ingreso a la Universidad. La misma contempla  la participación en clases presenciales, sumadas al uso de un campus virtual, que permite a los alumnos trabajar en cualquier momento y lugar, fuera de la institución escolar. Durante este trayecto, los alumnos podrán trabajar con diversos sistemas y contenidos digitales, más motivadores. Este nuevo escenario de trabajo ha logrado mejores niveles de abstracción con materiales tradicionales, desarrollados didáctica y pedagógicamente por docentes de la UTN.BA en colaboración con Samsung Electronics Argentina. Por otro lado, la empresa fue la encargada de equipar tecnológicamente   el aula que permite el desarrollo de las clases a través del Campus Virtual.</p>
 					<p>A su vez, durante este trayecto, <span class="destacado">los alumnos son acompañados por estudiantes avanzados de la UTN.BA, quienes participan del programa cumpliendo la función de tutores y realizando apoyo y seguimiento a los alumnos, </span>y que a su vez son supervisados por docentes graduados de la Universidad, con el objetivo de mejorar su rendimiento académico y asegurar la continuidad en todas las instancias del programa. </p>
-					<p>La primera experiencia de Entropía se está llevando adelante en la sede Lugano de la FRBA, con la participación de 35 alumnos de escuelas técnicas y comerciales de  la Ciudad Autónoma de Buenos Aires, y con la participación de cuatro estudiantes de las carreras de Ingeniería Industrial y Eléctrica oficiando como tutores.</p>
+					<p>La primera experiencia de Entropía se realizó durante el año 2014 en la sede Lugano de la FRBA, con la participación de 35 alumnos de escuelas técnicas y comerciales de  la Ciudad Autónoma de Buenos Aires, y con la participación de cuatro estudiantes de las carreras de Ingeniería Industrial y Eléctrica oficiando como tutores.</p>
 				</div>
 			</div>
 		</section>

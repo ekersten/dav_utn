@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<hotpot-jcross-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description rdf:about="">
+</rdf:Description>
+</rdf:RDF>
+<version>6</version>
+<data>
+<title>Palabras Cruzadas.Modelos At&amp;#x00f3;micos.             &amp;#x003C;object classid=&quot;CLSID:6BF52A52-394A-11d3-B153-00C04F79FAA6&quot; width=&quot;100&quot; height=&quot;30&quot;&amp;#x003E; &amp;#x003C;param name=&quot;url&quot; value=&quot;El Ultimo Mohicano.mp3&quot; /&amp;#x003E; &amp;#x003C;param name=&quot;autostart&quot; value=&quot;false&quot; /&amp;#x003E; &amp;#x003C;param name=&quot;showcontrols&quot; value=&quot;true&quot; /&amp;#x003E; &amp;#x003C;object classid=&quot;clsid:02bf25d5-8c17-4b23-bc80-d3488abddc6b&quot; data=&quot;El Ultimo Mohicano.mp3&quot; width=&quot;100&quot; height=&quot;30&quot;&amp;#x003E; &amp;#x003C;param name=&quot;src&quot; value=&quot;El Ultimo Mohicano.mp3&quot; /&amp;#x003E; &amp;#x003C;param name=&quot;autoplay&quot; value=&quot;false&quot; /&amp;#x003E; &amp;#x003C;param name=&quot;controller&quot; value=&quot;true&quot; /&amp;#x003E; &amp;#x003C;object type=&quot;audio/quicktime&quot; data=&quot;El Ultimo Mohicano.mp3&quot; width=&quot;100&quot; height=&quot;30&quot;&amp;#x003E; &amp;#x003C;param name=&quot;src&quot; value=&quot;El Ultimo Mohicano.mp3&quot; /&amp;#x003E; &amp;#x003C;param name=&quot;autoplay&quot; value=&quot;false&quot; /&amp;#x003E; &amp;#x003C;param name=&quot;controller&quot; value=&quot;true&quot; /&amp;#x003E; &amp;#x003C;object classid=&quot;CLSID:CFCDAA03-8BE4-11cf-B84B-0020AFBBCCFA&quot; width=&quot;100&quot; height=&quot;30&quot;&amp;#x003E; &amp;#x003C;param name=&quot;src&quot; value=&quot;El Ultimo Mohicano.mp3&quot; /&amp;#x003E; &amp;#x003C;param name=&quot;autostart&quot; value=&quot;false&quot; /&amp;#x003E; &amp;#x003C;param name=&quot;controls&quot; value=&quot;ControlPanel&quot; /&amp;#x003E; &amp;#x003C;object classid=&quot;clsid:d27cdb6e-ae6d-11cf-96b8-444553540000&quot; codebase=&quot;http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,14,0&quot; type=&quot;application/x-shockwave-flash&quot; width=&quot;100&quot; height=&quot;30&quot;&amp;#x003E; &amp;#x003C;param name=&quot;movie&quot; value=&quot;El Ultimo Mohicano.mp3&quot; /&amp;#x003E; &amp;#x003C;/object&amp;#x003E;&amp;#x003C;/object&amp;#x003E;&amp;#x003C;/object&amp;#x003E;&amp;#x003C;/object&amp;#x003E;&amp;#x003C;/object&amp;#x003E;                  </title>
+<timer>
+<include-timer>0</include-timer>
+<seconds>957</seconds>
+</timer>
+<reading>
+<reading-text></reading-text>
+<include-reading>0</include-reading>
+<reading-title></reading-title>
+</reading>
+<crossword>
+<grid>
+<row><cell>N</cell><cell>E</cell><cell>U</cell><cell>T</cell><cell>R</cell><cell>O</cell><cell>N</cell><cell>E</cell><cell>S</cell><cell></cell><cell></cell><cell></cell><cell></cell></row>
+<row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>L</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row>
+<row><cell></cell><cell>P</cell><cell>R</cell><cell>O</cell><cell>T</cell><cell>O</cell><cell>N</cell><cell>E</cell><cell>S</cell><cell></cell><cell></cell><cell></cell><cell></cell></row>
+<row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>C</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row>
+<row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>A</cell><cell>T</cell><cell>O</cell><cell>M</cell><cell>O</cell><cell></cell><cell></cell></row>
+<row><cell></cell><cell>N</cell><cell></cell><cell>T</cell><cell></cell><cell>O</cell><cell></cell><cell>R</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row>
+<row><cell>R</cell><cell>U</cell><cell>T</cell><cell>H</cell><cell>E</cell><cell>R</cell><cell>F</cell><cell>O</cell><cell>R</cell><cell>D</cell><cell></cell><cell></cell><cell></cell></row>
+<row><cell></cell><cell>C</cell><cell></cell><cell>O</cell><cell></cell><cell>B</cell><cell></cell><cell>N</cell><cell></cell><cell>A</cell><cell></cell><cell></cell><cell></cell></row>
+<row><cell></cell><cell>L</cell><cell></cell><cell>M</cell><cell></cell><cell>I</cell><cell></cell><cell>E</cell><cell></cell><cell>L</cell><cell></cell><cell></cell><cell></cell></row>
+<row><cell></cell><cell>E</cell><cell></cell><cell>S</cell><cell></cell><cell>T</cell><cell></cell><cell>S</cell><cell></cell><cell>T</cell><cell></cell><cell></cell><cell></cell></row>
+<row><cell></cell><cell>O</cell><cell></cell><cell>O</cell><cell></cell><cell>A</cell><cell></cell><cell></cell><cell>B</cell><cell>O</cell><cell>H</cell><cell>R</cell><cell></cell></row>
+<row><cell></cell><cell></cell><cell></cell><cell>N</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>N</cell><cell></cell><cell></cell><cell></cell></row>
+<row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row>
+</grid>
+<clues>
+<item><word>NEUTRONES</word><def>Part&#x00ed;culas sub at&#x00f3;micas sin carga que solo aportan masa.	</def></item>
+<item><word>PROTONES</word><def>Part&#x00ed;culas subat&#x00f3;micas con carga positva</def></item>
+<item><word>ATOMO</word><def>M&#x00ed;nima part&#x00ed;culas que forman a los elementos y que tiene carga positiva, negativa y neutra.</def></item>
+<item><word>RUTHERFORD</word><def>Modelo at&#x00f3;mico, tambi&#x00e9;n llamado Jimmy Neutron</def></item>
+<item><word>BOHR</word><def>Modelo at&#x00f3;mico actual.</def></item>
+<item><word>ELECTRONES</word><def>Part&#x00ed;culas subat&#x00f3;micas con carga negativa que se encuentran en las &#x00f3;rbitas.</def></item>
+<item><word>NUCLEO</word><def>Centro del &#x00e1;tomo donde se encuentran las part&#x00ed;culas con carga postiva y las neutras.</def></item>
+<item><word>THOMSON</word><def>Modelo at&#x00f3;mico llamado bud&#x00ed;n de pasas.</def></item>
+<item><word>ORBITA</word><def>Lugar circular donde se encuentran las part&#x00ed;culas con cargas negativas</def></item>
+<item><word>DALTON</word><def>Primer modelo at&#x00f3;mico</def></item>
+</clues>
+</crossword>
+</data>
+<hotpot-config-file>
+<global>
+<separate-js-file>0</separate-js-file>
+<clue-caption>[?]</clue-caption>
+<next-q-caption>=&amp;#x003E;</next-q-caption>
+<last-q-caption>&amp;#x003C;=</last-q-caption>
+<incorrect-indicator>:-(</incorrect-indicator>
+<font-size>small</font-size>
+<include-next-ex>0</include-next-ex>
+<restart-caption>Restaurar</restart-caption>
+<contents-url>../index.html</contents-url>
+<include-timer>1</include-timer>
+<font-face>Geneva,Arial</font-face>
+<include-scorm-12>0</include-scorm-12>
+<user-string-3>three</user-string-3>
+<show-correct-first-time>0</show-correct-first-time>
+<user-string-2>two</user-string-2>
+<user-string-1>one</user-string-1>
+<vlink-color>#0000cc</vlink-color>
+<title-color>#000033</title-color>
+<correct-indicator>:-)</correct-indicator>
+<contents-caption>Volver al &amp;#x00ed;ndice</contents-caption>
+<show-all-questions-caption>Mostrar todas las preguntas</show-all-questions-caption>
+<undo-caption>Anular</undo-caption>
+<header-code></header-code>
+<hint-caption>Pista</hint-caption>
+<check-button-caption>Check</check-button-caption>
+<email>correo@lagaleriadelvino.com.com</email>
+<show-one-by-one-caption>Mostrar preguntas una a una</show-one-by-one-caption>
+<name-please>Escribe tu nombre, por favor:</name-please>
+<formmail-url>http://www.dimensis.com/cgi-bin/FormMail.pl</formmail-url>
+<next-ex-caption>=&amp;#x003E;</next-ex-caption>
+<back-caption>&amp;#x003C;=</back-caption>
+<text-color>#000000</text-color>
+<page-bg-color>#ffffff</page-bg-color>
+<times-up>&amp;#x00a1;Tiempo Finalizado!</times-up>
+<nav-bar-color>#000066</nav-bar-color>
+<include-contents>1</include-contents>
+<your-score-is>&amp;#x003C;br&amp;#x003E;Tu puntuaci&amp;#x00f3;n es: </your-score-is>
+<graphic-url></graphic-url>
+<link-color>#0000ff</link-color>
+<keypad-characters></keypad-characters>
+<show-also-correct>1</show-also-correct>
+<correct-first-time>&amp;#x003C;br&amp;#x003E;Respuestas correctas a la primera: </correct-first-time>
+<include-cgi>0</include-cgi>
+<ex-bg-color>#bbbbee</ex-bg-color>
+<ok-caption>OK</ok-caption>
+<process-for-rtl>0</process-for-rtl>
+<check-caption>Verificar</check-caption>
+<include-back>0</include-back>
+<next-correct-letter>Fue insertada una letra correcta.</next-correct-letter>
+</global>
+<jcross>
+<instructions>Para ver las definiciones de las palabras, haz click en el n&amp;#x00fa;mero a la derecha. Escribe la palabra frente a la definici&amp;#x00f3;n y pulsa en el bot&amp;#x00f3;n Insertar; para colocar la palabra a la derecha. 
+Se tuvises dudas, haz click en el bot&amp;#x00f3;n &quot;Ver Pista&quot;. Pero cuidado, cada vez que pidas una pista, disminuir&amp;#x00e1;s tu puntuaci&amp;#x00f3;n.
+Cuando termines, haz click en el bot&amp;#x00f3;n &quot;Verificar resultados&quot;.</instructions>
+<header-code></header-code>
+<clues-across>Horizontal - </clues-across>
+<include-hint>1</include-hint>
+<include-keypad>0</include-keypad>
+<click-to-add>Click on a word to add it to the sentence.</click-to-add>
+<guess-incorrect>Algunas de tus respuestas estaban incorrectas, y fueron eliminadas.</guess-incorrect>
+<case-sensitive>0</case-sensitive>
+<next-correct-part>Next correct part is: </next-correct-part>
+<next-ex-url>proximo.htm</next-ex-url>
+<send-email>0</send-email>
+<show-also-correct>1</show-also-correct>
+<this-much-correct>This much of your answer is correct: </this-much-correct>
+<exercise-subtitle>Palabras Cruzadas</exercise-subtitle>
+<capitalize-first-letter>0</capitalize-first-letter>
+<include-clue-list>0</include-clue-list>
+<clues-down>Vertical - </clues-down>
+<guess-correct>&amp;#x00a1;Correcto! Buen trabajo.</guess-correct>
+<next-correct-letter>Fue insertada una letra correcta.</next-correct-letter>
+<include-show-answer>0</include-show-answer>
+<separate-javascript-file>0</separate-javascript-file>
+<enter-caption>&amp;#x003C;b&amp;#x003E;Insertar&amp;#x003C;/b&amp;#x003E;</enter-caption>
+<also-correct>Also correct: </also-correct>
+</jcross>
+</hotpot-config-file>
+
+</hotpot-jcross-file>

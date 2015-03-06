@@ -1,0 +1,5 @@
+tipo_de_macro=R2
+id=a expresión='1' constante=si evaluar=una-sola-vez
+id=b expresión='1' constante=si evaluar=una-sola-vez
+tipo='poligono' fondo='false' color='negro' expresión='(a,b)(a-0.3,b-0.15)(a-0.6,b-0.3)(a-0.9,b-0.4)(a-1.2,b-0.45)(a-1.5,b-0.5)(a-1.4,b-0.25)(a-1.35,b)(a-1.4,b+0.25)(a-1.5,b+0.5)(a-1.2,b+0.45)(a-0.9,b+0.4)(a-0.6,b+0.3)(a-0.3,b+0.15)(a,b)' relleno='azul' 
+tipo='arco' fondo='false' color='azul' centro='(a+0.06,b)' radio='0.06' fin='360' relleno='azul'  

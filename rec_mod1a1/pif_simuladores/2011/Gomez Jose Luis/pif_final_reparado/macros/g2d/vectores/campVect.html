@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>RungeKutta</title></head>
+<body BGCOLOR="#eeeeee">
+<p align="center">
+<FONT size=+2>Macro: RungeKutta</FONT><br>tipo 2D
+</p>
+<p align="center">
+<applet name="campVect"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=480 height=360>
+   <param name="nombre" value="campVect">
+   <param name="Versi&oacute;n" value="3.503">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="escala='125' despl_imagen='arr-izq' fondo='blanco' red='grisClaro' red10='gris' ejes='grisObscuro' texto='rosa' n&uacute;meros='si'">
+   <param name="C_00" value="tipo='num&eacute;rico' id='escala' regi&oacute;n='exterior' valor='120' decimales='4*(escala<10)' nombre='zoom' incr='0.1*escala' min='0.001' max='1000000' visible='no' pos_mensajes='centro'">
+   <param name="C_01" value="tipo='num&eacute;rico' id='Ox' regi&oacute;n='exterior' incr='10' pos_mensajes='centro'">
+   <param name="C_02" value="tipo='num&eacute;rico' id='Oy' regi&oacute;n='exterior' incr='10' pos_mensajes='centro'">
+   <param name="A_00" value="id='normal' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_01" value="id='dl' expresi&oacute;n='0.3' evaluar='una-sola-vez' constante='si'">
+   <param name="A_02" value="id='factor' expresi&oacute;n='0.2' evaluar='una-sola-vez' constante='si'">
+   <param name="A_03" value="id='ancho' expresi&oacute;n='600' evaluar='una-sola-vez' constante='si'">
+   <param name="A_04" value="id='alto' expresi&oacute;n='400' evaluar='una-sola-vez' constante='si'">
+   <param name="A_05" value="inicio='m=ent((ancho/escala)/dl); n=ent((alto/escala)/dl)' hacer='x0=-(m-1)*dl/2-Ox/escala;y0=-(n-1)*dl/2+Oy/escala;M=m*n;N=ent(abs(T/dt))' id='INIT' evaluar='siempre' algoritmo='si'">
+   <param name="A_06" value="id='X(s)' expresi&oacute;n='x0+(s%m)*dl'">
+   <param name="A_07" value="id='Y(s)' expresi&oacute;n='y0+ent(s/m)*dl'">
+   <param name="A_08" value="id='fx(x,y)' expresi&oacute;n='x-y'">
+   <param name="A_09" value="id='fy(x,y)' expresi&oacute;n='x+y'">
+   <param name="A_10" value="id='Nx(x,y)' expresi&oacute;n='fx(x,y)/sqrt(fx(x,y)^2+fy(x,y)^2)'">
+   <param name="A_11" value="id='Ny(x,y)' expresi&oacute;n='fy(x,y)/sqrt(fx(x,y)^2+fy(x,y)^2)'">
+   <param name="G_00" value="tipo='flecha' fondo='si' dibujar-si='normal=0' color='8080ff' expresi&oacute;n='(X(s),Y(s))(X(s)+factor*fx(X(s),Y(s)),Y(s)+factor*fy(X(s),Y(s)))' familia='s' s.intervalo='[0,M-1]' s.pasos='M-1' tama&ntilde;o='1' ancho='0' ancho='0' punta='2' flecha='8080ff'">
+   <param name="G_01" value="tipo='flecha' fondo='si' dibujar-si='normal=1' color='8080ff' expresi&oacute;n='(X(s),Y(s))(X(s)+factor*Nx(X(s),Y(s)),Y(s)+factor*Ny(X(s),Y(s)))' familia='s' s.intervalo='[0,M-1]' s.pasos='M-1' tama&ntilde;o='1' ancho='0' ancho='0' punta='2' flecha='8080ff'">
+</applet>
+</p>
+<p align="center">
+Esta escena se usa para generar el macro.<br>
+</p>
+<p align="center">
+<applet name="mi_campVect"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=480 height=360>
+   <param name="nombre" value="mi_campVect">
+   <param name="Versi&oacute;n" value="3.503">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=si config=si inicio=si limpiar=si">
+   <param name="E_00" value="despl_imagen='arr-izq' fondo='blanco' red='grisClaro' red10='gris' ejes='gris' texto='rosa'">
+   <param name="C_00" value="tipo='num&eacute;rico' id='escala' regi&oacute;n='norte' valor='120' decimales='4*(escala<10)' nombre='zoom' incr='0.1*escala' min='0.001' max='1000000' visible='no' pos_mensajes='centro'">
+   <param name="C_01" value="tipo='num&eacute;rico' id='O.x' pos_mensajes='centro'">
+   <param name="C_02" value="tipo='num&eacute;rico' id='O.y' pos_mensajes='centro'">
+   <param name="C_03" value="tipo='num&eacute;rico' id='cv.dl' valor='0.3' nombre='dl' min='0.1' visible='si' acci&oacute;n='limpiar' pos_mensajes='centro'">
+   <param name="C_04" value="tipo='num&eacute;rico' id='cv.normal' interfaz='men&uacute;' valor='1' nombre='normal' visible='no' opciones='no,si' acci&oacute;n='limpiar' pos_mensajes='centro'">
+   <param name="C_05" value="tipo='num&eacute;rico' id='cv.factor' valor='0.2' nombre='factor' incr='0.5*cv.factor' min='0' visible='si' acci&oacute;n='limpiar' pos_mensajes='centro'">
+   <param name="A_00" value="id='pi' expresi&oacute;n='3.1416' evaluar='una-sola-vez' constante='si'">
+   <param name="A_01" value="id='Fx' expresi&oacute;n='1' editable='si'">
+   <param name="A_02" value="id='Fy' expresi&oacute;n='y+x' editable='si'">
+   <param name="A_03" value="id='cv.ancho' expresi&oacute;n='_w' evaluar='una-sola-vez' constante='si'">
+   <param name="A_04" value="id='cv.alto' expresi&oacute;n='_w' evaluar='una-sola-vez' constante='si'">
+   <param name="A_05" value="id='cv.fx(x,y)' expresi&oacute;n='Fx'">
+   <param name="A_06" value="id='cv.fy(x,y)' expresi&oacute;n='Fy'">
+   <param name="G_00" value="tipo='macro' expresi&oacute;n='vectores/campVect' nombre='cv'">
+</applet>
+</p>
+<p align="center">
+Esta escena es una aplicación del macro.<br>
+El usuario puede definir como quiera el campo vectorial escribiendo las expresiones<br>
+para sus coordenadas Fx y Fy y pulsando <b>intro</b>. <br>
+<b>dl</b> es la separación vertical y horizontal entre dos flechas consecutivas.<br>
+<b>normal</b> significa que las flechas se toman de magnitud 1, si normal=no <br>
+entonces las flechas tienen la magnitud raíz(Fx^2+Fy^2).<br>
+<b>factor</b> se multiplica por la magnitud de las flechas para escalarlas.<br>
+</p>
+<hr>
+
+<p><font size="2" face="Arial"><strong><cite><dfn><samp><tt>Autor: José Luis Abreu León</tt></samp></dfn></cite></strong></font></p>
+
+</body>
+</html>
+
+

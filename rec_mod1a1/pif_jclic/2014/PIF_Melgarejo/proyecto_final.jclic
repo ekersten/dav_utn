@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="proyecto_final" version="0.1.3">
+ <settings>
+  <title>proyecto_final</title>
+  <revision description="created" date="8/7/14" />
+  <descriptors />
+ </settings>
+ <sequence>
+  <item id="INICIO" name="completar texto">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="SOPA_DE_LETRAS">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="asociación compleja">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="juego_memo">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="RELLENAR AGUJEROS">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item id="Principal" name="pantalla de información">
+   <jump action="STOP" id="forward" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@text.FillInBlanks" name="RELLENAR AGUJEROS" code="">
+   <description />
+   <messages>
+    <cell type="previous">
+     <style />
+    </cell>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0x9999FF" />
+     </style>
+     <p>Lea atentamente el texto, luego complete la palabra o frase que falta</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x990066" background="0x6666FF" />
+     </style>
+     <p>buen trabajo</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xFF0066" />
+     </style>
+     <p>error</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="80" countDownTime="true" maxActions="15" countDownActions="true" report="true" reportActions="false">
+    <container bgColor="0x0099FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFCCCC" border="true">
+     <size width="570" height="435" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <prevScreen maxTime="90">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFCCFF" />
+    </style>
+    <p>Dispositivos utilizados en red&#xD;</p>
+    <p>&#xD;</p>
+    <p>Placa de red  Ethernet:&#xD;</p>
+    <p>Dispositivo principal de la red. Por medio de él se conectan los demás  dispositivos&#xD;</p>
+    <p>&#xD;</p>
+    <p> Hub:&#xD;</p>
+    <p>Actualmente se encuentra en desuso. Fue el primer dispositivo que permitió conectar varios equipos.                                                                                                   Recibía la señal de una PC y la reenviaba al resto de las PC.&#xD;</p>
+    <p>                                                                                     &#xD;</p>
+    <p>Puente o Bridge:&#xD;</p>
+    <p>Trabaja en la capa 1 del modelo OSI, su única función es regenerar la  señal  de entrada y enviarla a su salida.&#xD;</p>
+    <p>.&#xD;</p>
+    <p>Router inalámbricos:&#xD;</p>
+    <p>Dispositivo principal pero no utiliza cables, sino ondas de radio.&#xD;</p>
+    <p>                   &#xD;</p>
+    <p>Router:&#xD;</p>
+    <p>Dispositivo que permite conectarnos una WAN trabajar en la capa 3 del modelo OSI. Toma decisiones, toma la mejor ruta para él envío de paquetes.&#xD;</p>
+    <p>&#xD;</p>
+    <p>Placa de red  Ethernet inalámbricos: &#xD;</p>
+    <p> Dispositivo que para acceder a la conexión proporcionada por ellos se pueden establecer contraseñas. Tiene las mismas características que una tradicional.&#xD;</p>
+    <p>&#xD;</p>
+    <p>Switch:&#xD;</p>
+    <p>Puente multipuerto. Reemplazó la combinación de Hub y puentes&#xD;</p>
+    <p>Posee una pequeña memoria donde se almacenan las direcciones MAC de los equipos conectados en él. Trabaja en la capa 2 del Modelo OSI (enlace de datos).                                                                                          &#xD;</p>
+    <p>&#xD;</p>
+    <p> Firewall:&#xD;</p>
+    <p> Examina cada paquete de la red y decide si enviarla o bloquear su acceso para permitir solo el tráfico seguro.&#xD;</p>
+    <p>                                                                                            &#xD;</p>
+    <p>Repetidor:         &#xD;</p>
+    <p>Trabaja en la capa 1 del modelo OSI, su única función es regenerar la señal  de entrada y enviarla a su salida.&#xD;</p>
+   </prevScreen>
+   <document>
+    <style name="default" size="11" tabWidth="12" background="0xFFFFFF" italic="false" bold="false" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p Alignment="1" background="0xFFFFFF" family="Arial">
+      <text bold="true">Dispositivos utilizados en red</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Placa de red  Ethernet:</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Dispositivo principal de la </text>
+      <target>
+       <answer>red</answer>
+       <response fill="_" length="3" maxLength="3" />
+       <text>red</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">. Por medio de él se conectan los demás  dispositivos</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial"> Hub:</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Actualmente se encuentra en </text>
+      <target>
+       <answer>desuso</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>desuso</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">. Fue el primer dispositivo que permitió conectar varios equipos.   </text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Recibía la señal de una PC y la reenviaba al resto </text>
+      <target>
+       <answer>de las PC</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>de las PC</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">                                                                                     </text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Puente o Bridge:</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Trabaja en la </text>
+      <target>
+       <answer>capa 1</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>capa 1</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> del modelo OSI, su única función es regenerar la  señal  de entrada y enviarla a su </text>
+      <target>
+       <answer>salida</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>salida</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Router inalámbricos:</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Dispositivo principal pero no utiliza cables, sino </text>
+      <target>
+       <answer>ondas</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>ondas</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> de radio.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">                   </text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Router:</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Dispositivo que permite conectarnos una WAN trabajar en la capa 3 del modelo OSI. Toma decisiones, toma la mejor ruta para él envío de paquetes.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Placa de red  Ethernet inalámbricos: </text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial"> Dispositivo que para acceder a la conexión proporcionada por ellos se pueden establecer contraseñas. Tiene las mismas características que una tradicional.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Switch:</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Puente </text>
+      <target>
+       <answer>multipuerto</answer>
+       <response fill="_" length="11" maxLength="11" />
+       <text>multipuerto</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">. Reemplazó la combinación de Hub y puentes</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Posee una pequeña </text>
+      <target>
+       <answer>memoria</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>memoria</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> donde se almacenan las direcciones </text>
+      <target>
+       <answer>MAC</answer>
+       <response fill="_" length="3" maxLength="3" />
+       <text>MAC</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> de los equipos conectados en él. Trabaja en la </text>
+      <target>
+       <answer>capa 2</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>capa 2</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> del Modelo OSI (enlace de datos).                                                                                          </text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial"> Firewall:</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial"> Examina cada </text>
+      <target>
+       <answer>paquete</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>paquete</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> de la red y decide si enviarla o bloquear su acceso para permitir solo el </text>
+      <target>
+       <answer>tráfico</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>tráfico</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> seguro.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">                                                                                            </text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Repetidor:         </text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Trabaja en la </text>
+      <target>
+       <answer>capa 1</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>capa 1</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> del modelo OSI, su única función es regenerar la señal  de entrada y enviarla a su salida.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="SOPA_DE_LETRAS" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial Narrow" size="17" />
+      <color foreground="0xFF00CC" background="0xCC99FF" border="0x0000CC" />
+     </style>
+     <p>encuentre las palabras escritas en el texto !</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Castellar" size="17" />
+      <color foreground="0x33FFFF" background="0x3300CC" />
+     </style>
+     <p>que tengas buenos dias!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial Black" size="17" />
+      <color foreground="0x0000FF" background="0xCC0000" />
+     </style>
+     <p>no has acertado !</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxTime="70" countDownTime="true" maxActions="15" countDownActions="true" report="true" reportActions="false">
+    <container bgColor="0x6633FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF33" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <textGrid rows="11" columns="12" cellWidth="20.0" cellHeight="20.0" border="true">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="20" bold="true" />
+     <color foreground="0x6600CC" background="0x00CCCC" />
+    </style>
+    <text>
+     <row>F*CRACKF*A*</row>
+     <row>CIA*R**III*</row>
+     <row>**BJ*C*BBB*</row>
+     <row>C*4R*ORR*A*</row>
+     <row>*5**AAA*CAA</row>
+     <row>**A*OO**OO*</row>
+     <row>**9PPIP*AA*</row>
+     <row>*JTTIA*TXT*</row>
+     <row>RII**L*FII*</row>
+     <row>CC******AC*</row>
+     <row>AROUTER*LAA</row>
+     <row>***********</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">RJ45</clue>
+    <clue id="1">RJ9</clue>
+    <clue id="2">FIBRAOPTICA</clue>
+    <clue id="3">RACK</clue>
+    <clue id="4">COAXIAL</clue>
+    <clue id="5">ROUTER</clue>
+   </clues>
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="asociación compleja" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x339900" background="0xCC99FF" />
+     </style>
+     <p>Relacionar con l oque corresponde</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFF00CC" background="0xCCCCFF" />
+     </style>
+     <p>Muy bien</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFCCCC" background="0xFF0033" />
+     </style>
+     <p>ERROR</p>
+    </cell>
+   </messages>
+   <settings margin="5" maxTime="100" countDownTime="true" maxActions="13" countDownActions="true" report="true" reportActions="false">
+    <container bgColor="0x6666FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x99FF99" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="7" cellWidth="65.0" cellHeight="188.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="16" />
+     <color background="0xCC99FF" border="0x6600FF" />
+    </style>
+    <shaper class="@Rectangular" cols="7" rows="1" />
+    <cell id="1">
+     <p>reemplazó la combinación de hubs y puentes</p>
+    </cell>
+    <cell id="3">
+     <p>trabaja en la capa 2 del modelo OSI</p>
+    </cell>
+    <cell id="4">
+     <p>1ª dispositivo que permitió conectar varios equipos. Consistia en repetir la señal que recibía.</p>
+    </cell>
+    <cell id="2">
+     <p>Nos permite conectarnos a Internet.</p>
+    </cell>
+    <cell id="0">
+     <p>mismas caracteristicas que la original.conexiones inalámbricas.</p>
+    </cell>
+    <cell id="0">
+     <p>se puede establecer contraseñas</p>
+    </cell>
+    <cell id="3">
+     <p>se basa en direcciones MAC</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="1" cellWidth="62.0" cellHeight="51.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="18" bold="true" />
+     <color background="0x9999FF" border="0xFF66CC" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="5" />
+    <cell>
+     <p>router inalámbrico</p>
+    </cell>
+    <cell>
+     <p>swich</p>
+    </cell>
+    <cell>
+     <p>router</p>
+    </cell>
+    <cell>
+     <p>puente o bridge</p>
+    </cell>
+    <cell>
+     <p>hub</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.Complete" name="completar texto" code="">
+   <description />
+   <messages>
+    <cell type="previous">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x66FF66" background="0xFFCCCC" />
+     </style>
+     <p>lea atentamente el texto</p>
+    </cell>
+    <cell type="initial">
+     <style>
+      <color foreground="0xFFCCCC" background="0xCC99FF" />
+     </style>
+     <p>Complete con la palabra que falta</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color foreground="0xFFFFFF" background="0x9966FF" />
+     </style>
+     <p>Buen trabajo!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <color foreground="0xFFFFFF" background="0xFF0000" />
+     </style>
+     <p>Tuvo errores!</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="200" countDownTime="false" maxActions="36" countDownActions="true" report="true" reportActions="true">
+    <helpWindow showSolution="false">
+     <p>Debes leer atentamente</p>
+    </helpWindow>
+    <container bgColor="0xFFFFFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCCCFF" border="true">
+     <size width="780" height="551" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <automation class="@tagreplace.TagReplace" tagStart="[" tagEnd="]" />
+   <checkButton>Evaluación</checkButton>
+   <prevScreen>
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="12" bold="true" />
+     <color foreground="0x666600" background="0xFFFFFF" />
+    </style>
+    <p>Usos de computadoras en los negocios&#xD;</p>
+    <p>Las computadoras se han convertido en un requisito en la industria de negocios. Facilitan completar tareas que son tediosas y oportuna para los seres humanos. Las empresas que utilizan computadoras son muchas. Aunque muchas de las funciones no son insustituibles, las empresas se ha convertido en dependientes de su precisión y la puntualidad.&#xD;</p>
+    <p>Contabilidad&#xD;</p>
+    <p>El éxito del negocio depende de la precisión. Muchas empresas utilizan el software de contabilidad y los sistemas de "ledgering" para garantizar la exactitud de su situación financiera.&#xD;</p>
+    <p>Interacción con el cliente&#xD;</p>
+    <p>Actualmente, las computadoras ayudan a los centros de llamadas con preguntas de los clientes, reciben pagos y asistencia en general. Los sistemas automatizados de voz están disponibles sin restricción de tiempo, y son siempre amables.&#xD;</p>
+    <p>Programación&#xD;</p>
+    <p>La programación es de gran importancia para muchas empresas, especialmente las empresas dedicadas a la fabricación y las entregas. Los sistemas permiten a las empresas asegurarse de que están cumpliendo con sus objetivos a la vez de ser eficiente.&#xD;</p>
+    <p>Comunicación&#xD;</p>
+    <p>La comunicación es más importante en los negocios. Las computadoras ofrecen a las empresas una amplia gama de métodos de comunicación que incluyen, pero no se limitan a, correo electrónico, chat, conferencia web y VoIP.&#xD;</p>
+    <p>Sitios web y publicidad&#xD;</p>
+    <p>La combinación de sitios web, publicidad y marketing proporciona un medio sencillo y rápido a la globalización comercial enorme. Los sitios web hacen que la compañía se encuentre rápidamente al alcance de todos.&#xD;</p>
+    <p>&#xD;</p>
+    <p>&#xD;</p>
+    <p>Diferentes usos de la computadora en los negocios&#xD;</p>
+    <p>Las computadoras son utilizadas en todos los aspectos de gestión de un negocio. La computadora se usa para mejorar la productividad y proporciona resultados que de otra forma no podrían ser posibles. En los negocios se usa la computadora para mantener registros, desarrollar presupuestos y proyecciones, preparar documentos de mercadotecnia, buscar y mantener contacto con otros empleados y clientes. Las empresas deben ver su operación y asegurarse de que están usando las computadoras al máximo.&#xD;</p>
+    <p>Mantener registros&#xD;</p>
+    <p> &#xD;</p>
+    <p>World and computers image by way4arer from Fotolia.com&#xD;</p>
+    <p>Los programas de las computadoras como QuickBooks y otros programas contables permiten a las empresas mantener sus registros detallados. Estos programas dan seguimiento a las cuentas por cobrar, cuentas por pagar y ventas. Estos programas también proporcionan una manera fácil de enviar facturas a clientes y manejar las funciones de la nómina. La productividad y precisión de la oficina puede incrementarse en gran medida cuando se utiliza un programa de contabilidad.&#xD;</p>
+    <p>Presupuestos y pronósticos&#xD;</p>
+    <p> &#xD;</p>
+    <p>World and computers image by way4arer from Fotolia.com&#xD;</p>
+    <p>Las computadoras pueden ser utilizadas para preparar con detalle los presupuestos y pronósticos empresariales. Los programas de contabilidad de bajo costo permiten inclusive a personas con limitados conocimientos en computación desarrollar presupuestos con detalle que mantendrán a la compañía por buen camino. También pueden usarse para pronosticar futuras ventas y negocios en expansión. Las hojas de cálculo como Excel puede también utilizarse para presupuestos y pronósticos.&#xD;</p>
+    <p>Preparación de los documentos de mercadotecnia&#xD;</p>
+    <p> &#xD;</p>
+    <p>World and computers image by way4arer from Fotolia.com&#xD;</p>
+    <p>Hay una amplia variedad de programas que permiten a los negocios preparar fácil y dinámicamente los documentos de mercadotecnia. Adobe Photoshop proporciona muchas plantillas que los usuarios pueden manipular para producir llamativos materiales personalizados de marketing. Estos programas hacen que sea fácil para las personas que no tienen un fondo creativo para preparar documentos de aspecto profesional y documentos rápidos y con facilidad.&#xD;</p>
+    <p>Investigación&#xD;</p>
+    <p> &#xD;</p>
+    <p>World and computers image by way4arer from Fotolia.com&#xD;</p>
+    <p>El internet ofrece una tremenda cantidad de información que los negocios pueden usar para mantener una ventaja. Las empresas pueden usar el internet para investigar los productos y precios de sus competidores estudiándolos por medio de sitios web. Ellas también pueden echar un vistazo en como los clientes ven sus propios productos mediante la lectura de comentarios de los clientes en sitios como Amazon. Cuando se lanza un nuevo producto la compañía puede realizar estudios de mercado a través de cuestionarios y encuestas en línea.&#xD;</p>
+    <p>Comunicación&#xD;</p>
+    <p> &#xD;</p>
+    <p>World and computers image by way4arer from Fotolia.com&#xD;</p>
+    <p>Uno de los más grandes beneficios de la computadora en el lugar de trabajo es la mejora de la comunicación que ofrece. Los compañeros de trabajo pueden comunicarse fácilmente entre ellos a través de correo electrónico. Los departamentos de servicio al cliente pueden utilizar los servicios de correo electrónico y mensajería instantánea para comunicarse efectivamente con los clientes. La conferencia web es una alternativa barata para las reuniones de las empresas. En lugar de viajar a una reunión, los asistentes pueden participar en una junta desde su oficina. Las empresas también pueden utilizar el correo electrónico y sitios Web para anunciar sus productos y servicios.&#xD;</p>
+    <p>Consejo&#xD;</p>
+    <p> &#xD;</p>
+    <p>World and computers image by way4arer from Fotolia.com&#xD;</p>
+    <p>La actualización de los equipos con regularidad es vital para un negocio. Las computadoras obsoletas pueden causar serios problemas, bloquearse con frecuencia y reducen la productividad de los trabajadores. Como la tecnología evoluciona, la potencia de la computación necesaria para ejecutar programas de vanguardia aumenta. Estos nuevos programas se ejecutarán a menudo con deficiencia en los equipos obsoletos. Como resultado, en el largo plazo de la estrategia costo-efectiva es mantener los equipos de su negocio actualizados.&#xD;</p>
+    <p>Ventajas de tener computadoras en la oficina&#xD;</p>
+    <p>La llegada de las computadoras ha revolucionado a muchas industrias, y el trabajo en la oficina no es la excepción. Las computadoras han ayudado a mejorar la eficiencia y precisión de los trabajadores al proporcionar diferentes softwares y funciones de comunicación para ayudar a las tareas del trabajo. Las computadoras son ahora parte de casi cualquier oficina y la mayoría de lugares de trabajo son prácticamente inútiles sin una.&#xD;</p>
+    <p>Comunicación&#xD;</p>
+    <p>Las comunicaciones internas y externas son mucho más fáciles con el uso de correos electrónicos y sistemas internos de mensajería en las computadoras. El personal de la oficina es capaz de pasar información a través de la oficina rápida y efectivamente, y la mayoría de ambientes de trabajo tienen un sistema de alerta en las computadoras individuales cuando un mensaje o correo electrónico nuevo es recibido. El Internet también mejora las opciones de comunicación con Skype y otros programas de comunicación que permiten video conferencias nacionales o internacionales con facilidad y menor costo.&#xD;</p>
+    <p>Almacenamiento de datos&#xD;</p>
+    <p>El almacenamiento y retiro de datos de las computadoras se vuelve mejor mientras la tecnología avanza. Los archivos se pueden retirar fácilmente a través de funciones de búsqueda, y los discos duros pueden almacenar volúmenes sin precedentes de archivos y datos. Para oficinas con grandes bases de datos, como gubernamentales, organizaciones de caridad y otras asociaciones basadas en miembros, estas funciones de almacenamiento proporcionan unas ventajas sin precedentes a comparación del almacenamiento tradicional de archivos de papel, como también la facilidad y velocidad del retiro de la información, la facilidad de cambiar registros, la facilidad de seguir los cambios hechos por un cliente, miembro o para encontrar registros de ciudadanías.&#xD;</p>
+   </prevScreen>
+   <document>
+    <style name="default" size="11" tabWidth="12" background="0xFFFFFF" italic="false" bold="false" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p Alignment="1" background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" bold="true" family="Arial">Usos de computadoras en los negocios</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Las computadoras se han convertido en un requisito en la </text>
+      <target>industria de negocios</target>
+      <text background="0xFFFFFF" family="Arial">. Facilitan completar tareas que son tediosas y oportuna para los seres humanos. Las empresas que utilizan computadoras son muchas. Aunque muchas de las funciones no son insustituibles, las empresas se ha convertido en dependientes de su precisión y la puntualidad.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" bold="true" family="Arial">Contabilidad</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">El éxito del negocio depende de la precisión. Muchas empresas utilizan el </text>
+      <target>software de contabilidad</target>
+      <text background="0xFFFFFF" family="Arial"> y los sistemas de "ledgering" para garantizar la exactitud de su situación financiera.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" bold="true" family="Arial">Interacción con el cliente</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Actualmente, las computadoras ayudan a los centros de llamadas con preguntas de los clientes, reciben pagos y asistencia en general. Los </text>
+      <target>sistemas automatizados</target>
+      <text background="0xFFFFFF" family="Arial"> de voz están disponibles sin restricción de tiempo, y son siempre amables.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" bold="true" family="Arial">Programación</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">La programación es de gran importancia para muchas empresas, especialmente las empresas dedicadas a la </text>
+      <target>fabricación y las entregas</target>
+      <text background="0xFFFFFF" family="Arial">. Los sistemas permiten a las empresas asegurarse de que están cumpliendo con sus objetivos a la vez de ser eficiente.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" bold="true" family="Arial">Comunicación</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">La </text>
+      <target>comunicación</target>
+      <text background="0xFFFFFF" family="Arial"> es más importante en los negocios. Las computadoras ofrecen a las empresas una amplia gama de métodos de comunicación que incluyen, pero no se limitan a, correo electrónico, chat, conferencia web y VoIP.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" bold="true" family="Arial">Sitios web y publicidad</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">La combinación de </text>
+      <target>sitios web, publicidad y marketing</target>
+      <text background="0xFFFFFF" family="Arial"> proporciona un medio sencillo y rápido a la globalización comercial enorme. Los sitios web hacen que la compañía se encuentre rápidamente al alcance de todos.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" bold="true" family="Arial">Diferentes usos de la computadora en los negocios</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Las computadoras son utilizadas en todos los aspectos de gestión de un negocio. La computadora se usa para mejorar la </text>
+      <target>productividad</target>
+      <text background="0xFFFFFF" family="Arial"> y proporciona resultados que de otra forma no podrían ser posibles. En los negocios se usa la computadora para mantener </text>
+      <target>registros</target>
+      <text background="0xFFFFFF" family="Arial">, desarrollar </text>
+      <target>presupuestos y proyecciones</target>
+      <text background="0xFFFFFF" family="Arial">, preparar documentos de mercadotecnia, buscar y mantener contacto con otros empleados y clientes. Las empresas deben ver su operación y asegurarse de que están usando las computadoras al máximo.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" bold="true" family="Arial">Mantener registros</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Los programas de las computadoras como </text>
+      <target>QuickBook</target>
+      <text background="0xFFFFFF" family="Arial">s y otros programas contables permiten a las empresas mantener sus registros detallados. Estos programas dan seguimiento a las cuentas por cobrar, cuentas por pagar y ventas. Estos programas también proporcionan una manera fácil de enviar facturas a clientes y manejar las funciones de la nómina. La productividad y precisión de la oficina puede incrementarse en gran medida cuando se utiliza un programa de </text>
+      <target>contabilidad</target>
+      <text background="0xFFFFFF" family="Arial">.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" bold="true" family="Arial">Presupuestos y pronósticos</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial"> Las computadoras pueden ser utilizadas para preparar con detalle los presupuestos y pronósticos empresariales. Los programas de contabilidad de bajo costo permiten inclusive a personas con limitados conocimientos en computación desarrollar presupuestos con detalle que mantendrán a la compañía por buen camino. También pueden usarse para pronosticar futuras ventas y negocios en expansión. Las hojas de cálculo como Excel puede también utilizarse para presupuestos y pronósticos.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" bold="true" family="Arial">Preparación de los documentos de mercadotecnia</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Hay una amplia variedad de programas que permiten a los negocios preparar fácil y dinámicamente los documentos de mercadotecnia. </text>
+      <target>Adobe Photoshop</target>
+      <text background="0xFFFFFF" family="Arial"> proporciona muchas plantillas que los usuarios pueden manipular para producir llamativos materiales personalizados de marketing. Estos programas hacen que sea fácil para las personas que no tienen un fondo creativo para preparar documentos de aspecto profesional y documentos rápidos y con facilidad.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" bold="true" family="Arial">Investigación</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial"> El internet ofrece una tremenda cantidad de información que los negocios pueden usar para mantener una ventaja. Las empresas pueden usar el internet para investigar </text>
+      <target>los productos y precios</target>
+      <text background="0xFFFFFF" family="Arial"> de sus competidores estudiándolos por medio de sitios web. Ellas también pueden echar un vistazo en como los clientes ven sus propios productos mediante la lectura de comentarios de los clientes en sitios como Amazon. Cuando se lanza un nuevo producto la compañía puede realizar estudios de mercado a través de cuestionarios y encuestas en línea.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" bold="true" family="Arial">Comunicación</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial"> Uno de los más grandes beneficios de la computadora en el lugar de trabajo es la mejora de la comunicación que ofrece. Los compañeros de trabajo pueden </text>
+      <target>comunicarse</target>
+      <text background="0xFFFFFF" family="Arial"> fácilmente entre ellos a través de </text>
+      <target>correo electrónico</target>
+      <text background="0xFFFFFF" family="Arial">. Los departamentos de servicio al cliente pueden utilizar los servicios de correo electrónico y mensajería instantánea para comunicarse efectivamente con los clientes. La conferencia web es una alternativa barata para las reuniones de las empresas. En lugar de viajar a una reunión, los asistentes pueden participar en una junta desde su oficina. Las empresas también pueden utilizar el correo electrónico y sitios Web para anunciar sus productos y servicios.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" bold="true" family="Arial">Consejo</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial"> La actualización de los equipos con regularidad es vital para un negocio. Las computadoras obsoletas pueden causar serios problemas, bloquearse con frecuencia y reducen la productividad de los trabajadores. Como la tecnología evoluciona, la potencia de la computación necesaria para ejecutar programas de vanguardia aumenta. Estos nuevos programas se ejecutarán a menudo con deficiencia en los equipos obsoletos. Como resultado, en el largo plazo de la estrategia costo-efectiva es mantener los equipos de su </text>
+      <target>negocio actualizados</target>
+      <text background="0xFFFFFF" family="Arial">.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" bold="true" family="Arial">Ventajas de tener computadoras en la oficina</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">La llegada de las computadoras ha revolucionado a muchas industrias, y el trabajo en la oficina no es la excepción. Las computadoras han ayudado a mejorar la eficiencia y precisión de los trabajadores al proporcionar diferentes softwares y funciones de comunicación para ayudar a las tareas del trabajo. Las computadoras son ahora parte de casi cualquier oficina y la mayoría de lugares de trabajo son prácticamente inútiles sin una.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" bold="true" family="Arial">Comunicación</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Las comunicaciones internas y externas son mucho más fáciles con el uso de </text>
+      <target>correos electrónicos y sistemas internos de mensajería</target>
+      <text background="0xFFFFFF" family="Arial"> en las computadoras. El personal de la oficina es capaz de pasar información a través de la oficina rápida y efectivamente, y la mayoría de ambientes de trabajo tienen un sistema de alerta en las computadoras individuales cuando un mensaje o correo electrónico nuevo es recibido. El Internet también mejora las opciones de comunicación con Skype y otros programas de comunicación que permiten video conferencias nacionales o internacionales con facilidad y menor costo.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" bold="true" family="Arial">Almacenamiento de datos</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">El almacenamiento y retiro de datos de las computadoras se vuelve mejor mientras la tecnología avanza. Los archivos se pueden retirar fácilmente a través de funciones de búsqueda, y los </text>
+      <target>discos duros</target>
+      <text background="0xFFFFFF" family="Arial"> pueden almacenar volúmenes sin precedentes de archivos y datos. Para oficinas con grandes bases de datos, como gubernamentales, organizaciones de caridad y otras asociaciones basadas en miembros, estas funciones de almacenamiento proporcionan unas ventajas sin precedentes a comparación del almacenamiento tradicional de archivos de papel, como también la facilidad y velocidad del retiro de la información, la facilidad de cambiar </text>
+      <target>registros</target>
+      <text background="0xFFFFFF" family="Arial">, la facilidad de seguir los cambios hechos por un </text>
+      <target>cliente</target>
+      <text background="0xFFFFFF" family="Arial">, miembro o para encontrar registros de ciudadanías.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="juego_memo" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>hola debes acertar!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x660033" background="0x009999" inactive="0x009999" />
+     </style>
+     <p>que tengas buenos dias!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x3300CC" background="0xFF0033" />
+     </style>
+     <p>debes mejorar la memoria!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="60" countDownTime="true" maxActions="20" countDownActions="false" report="true" reportActions="false">
+    <helpWindow>
+     <p>debe leer más!!</p>
+    </helpWindow>
+    <container bgColor="0x0066CC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x3366FF" border="true" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="245.0" cellHeight="106.0" border="true" id="primary">
+    <style>
+     <font family="Arial Black" size="20" />
+     <color foreground="0x003366" background="0xCC0099" inactive="0x999900" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell txtAlign="middle,bottom" avoidOverlapping="true" image="coaxial.bmp">
+     <p>coaxial</p>
+    </cell>
+    <cell avoidOverlapping="true" image="RJ45.bmp">
+     <p>rj45</p>
+    </cell>
+    <cell avoidOverlapping="true" image="RJ9.bmp">
+     <p>rj9</p>
+    </cell>
+    <cell avoidOverlapping="true" image="rack.bmp">
+     <p>rack</p>
+    </cell>
+    <cell avoidOverlapping="true" image="router.bmp">
+     <p>router</p>
+    </cell>
+    <cell avoidOverlapping="true" image="fibra óptica.bmp">
+     <p>fibra óptica</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="pantalla de información" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xFF66CC" />
+     </style>
+     <p>Elija una opción</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x0033FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x9999FF" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="1" cols="5" cellWidth="92.0" cellHeight="145.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color foreground="0x660066" background="0xFF66CC" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="juego_memo" />
+     <p>Juego de memoria</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color foreground="0x660066" background="0xFF66CC" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="SOPA_DE_LETRAS" />
+     <p>Sopa de letras</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color foreground="0x660066" background="0xFF66CC" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="asociación compleja" />
+     <p>Asociación compleja</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="16" />
+      <color foreground="0x660066" background="0xFF66CC" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="completar texto" />
+     <p>Completar texto</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="16" />
+      <color foreground="0x660066" background="0xFF66CC" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="RELLENAR AGUJEROS" />
+     <p>Rellenar agujeros</p>
+    </cell>
+   </cells>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="coaxial.bmp" file="coaxial.bmp" />
+  <media name="Dibujo1.bmp" file="Dibujo1.bmp" />
+  <media name="fibra óptica.bmp" file="fibra óptica.bmp" />
+  <media name="rack.bmp" file="rack.bmp" />
+  <media name="RJ45.bmp" file="RJ45.bmp" />
+  <media name="RJ9.bmp" file="RJ9.bmp" />
+  <media name="router.bmp" file="router.bmp" />
+ </mediaBag>
+</JClicProject>
+

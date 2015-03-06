@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>Lente Esférica</title></head>
+<body BGCOLOR="#eeeeee">
+<p align="center">
+<FONT size=+2>Macro: lenteEsferica</FONT><br>tipo 2D
+</p>
+<p align="center">
+<applet name="lenteEsferica"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=240 height=200>
+   <param name="nombre" value="lenteEsferica">
+   <param name="Versi&oacute;n" value="3.40">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='gris' texto='no'">
+   <param name="A_00" value="id='r' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_01" value="id='a' expresi&oacute;n='0.1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_02" value="id='r1' expresi&oacute;n='2' evaluar='una-sola-vez' constante='si'">
+   <param name="A_03" value="id='r2' expresi&oacute;n='2' evaluar='una-sola-vez' constante='si'">
+   <param name="A_04" value="id='n1' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_05" value="id='n2' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_06" value="id='f' expresi&oacute;n='1/(1/r1+1/r2)'">
+   <param name="A_07" value="id='rojo' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_08" value="id='verde' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_09" value="id='azul' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="G_00" value="tipo='pol&iacute;gono' color='(rojo,verde,azul)' expresi&oacute;n='(-a+sgn(r1)*(ra&iacute;z(r1^2-r^2)-ra&iacute;z(r1^2-y^2)),y)(a-sgn(r2)*(ra&iacute;z(r2^2-r^2)-ra&iacute;z(r2^2-y^2)),y)(a-sgn(r2)*(ra&iacute;z(r2^2-r^2)-ra&iacute;z(r2^2-(y+r/8)^2)),y+r/8)(-a+sgn(r1)*(ra&iacute;z(r1^2-r^2)-ra&iacute;z(r1^2-(y+r/8)^2)),y+r/8)' familia='y' y.intervalo='[-r,r-r/8]' y.pasos='16' relleno='(rojo,verde,azul)'">
+   <param name="G_01" value="tipo='segmento' color='negro' expresi&oacute;n='(-a,p*r)(a,p*r)' familia='p' p.intervalo='[-1,1]' p.pasos='1' tama&ntilde;o='0'">
+   <param name="G_02" value="tipo='curva' dibujar-si='r1^2>=r^2' color='negro' expresi&oacute;n='(-a+sgn(r1)*ra&iacute;z(r1^2-r^2)-r1*cos(t),r1*sen(t))' t.intervalo='[-asen(r/r1),asen(r/r1)]' t.pasos='24' relleno='(rojo,verde,azul)' visible='no'">
+   <param name="G_03" value="tipo='curva' dibujar-si='r2^2>=r^2' color='negro' expresi&oacute;n='(a-sgn(r2)*ra&iacute;z(r2^2-r^2)+r2*cos(t),r2*sen(t))' t.intervalo='[-asen(r/r2),asen(r/r2)]' t.pasos='24' relleno='(rojo,verde,azul)' visible='no'">
+</applet>
+</p>
+<p align="center">
+Esta escena se usa para generar el macro.
+</p>
+<p align="center">
+<applet name="mi_lenteEsferica"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=360 height=240>
+   <param name="nombre" value="mi_lenteEsferica">
+   <param name="Versi&oacute;n" value="3.32">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no filas_sur=2">
+   <param name="E_00" value="despl_imagen='arr-izq' fondo='blanco' red='grisClaro' red10='negro' ejes='gris' texto='rosa'">
+   <param name="C_00" value="tipo='num&eacute;rico' id='LE.r' interfaz='pulsador' regi&oacute;n='sur' valor='1' nombre='LE.r' incr='0.01' min='0' visible='si' acci&oacute;n=' '">
+   <param name="C_01" value="tipo='num&eacute;rico' id='LE.a' interfaz='pulsador' regi&oacute;n='sur' valor='0.2' nombre='LE.a' incr='0.01' min='0' max='0.5' visible='si' acci&oacute;n=' '">
+   <param name="C_02" value="tipo='num&eacute;rico' id='LE.r1' interfaz='pulsador' regi&oacute;n='sur' valor='3' nombre='LE.r1' incr='0.05' visible='si' acci&oacute;n=' '">
+   <param name="C_03" value="tipo='num&eacute;rico' id='LE.r2' interfaz='pulsador' regi&oacute;n='sur' valor='-2' nombre='LE.r2' incr='0.05' visible='si' acci&oacute;n=' '">
+   <param name="G_00" value="tipo='macro' expresi&oacute;n='optica/lenteEsferica' nombre='LE'">
+</applet>
+</p>
+<p align="center">
+Esta escena es una aplicación del macro que muestra sus parámetros.
+</p>
+
+<p align="center">
+</p>
+<p align="center">
+Esta otra escena es una aplicación práctica del macro en una escena de óptica geométrica.
+</p>
+
+<hr>
+
+<p><font size="2" face="Arial"><strong><cite><dfn><samp><tt>Autor: José Luis Abreu León</tt></samp></dfn></cite></strong></font></p>
+
+</body>
+</html>
+
+

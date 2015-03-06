@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>ejes</title></head>
+<body BGCOLOR="#eeeeee">
+<p align="center">
+<FONT size=+2>Macro: planos</FONT><br>tipo 3D
+</p>
+<p align="center">
+<applet name="planos"
+        code="Descartes.class"
+        codebase="../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=240 height=200>
+   <param name="nombre" value="planos">
+   <param name="Versi&oacute;n" value="3.40">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="R3='si' id='Principal' escala='36' despl_imagen='arr-izq' fondo='blanco' despliegue='pintor'">
+   <param name="A_00" value="id='a' evaluar='una-sola-vez' constante='si'">
+   <param name="A_01" value="id='x0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_02" value="id='y0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_03" value="id='z0' evaluar='una-sola-vez' constante='si'">
+   <param name="S_00" value="espacio='Principal' tipo='superficie' expresi&oacute;n='x=4*u-2 y=4*v-2 z=h' color='7fffffff' color_reverso='7fc0c0c0' aristas='si' cortar='si' Nu='1' Nv='1'">
+   <param name="S_01" value="espacio='Principal' tipo='superficie' expresi&oacute;n='y=4*u-2 z=4*v-2 x=0' color='7fffffff' color_reverso='7fc0c0c0' aristas='si' cortar='si' Nu='1' Nv='1'">
+   <param name="S_02" value="espacio='Principal' tipo='superficie' expresi&oacute;n='z=4*u-2 x=4*v-2 y=0' color='7fffffff' color_reverso='7fc0c0c0' aristas='si' cortar='si' Nu='1' Nv='1'">
+</applet>
+</p>
+<p align="center">
+Esta escena se usa para generar el macro.
+</p>
+<p align="center">
+<applet name="mis_planos"
+        code="Descartes.class"
+        codebase="../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=360 height=240>
+   <param name="nombre" value="mis_planos">
+   <param name="Versi&oacute;n" value="3.0">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="id='Principal' R3='true' escala='36' despl_imagen='arr-izq' fondo='blanco' despliegue='pintor' cortar='true'">
+   <param name="S_00" value="espacio='Principal' tipo='macro' nombre='m_p' expresi&oacute;n='planos' rotini='(0,0,-40)' color_reverso='rosa' aristas='false' cortar='false'">
+</applet>
+</p>
+<p align="center">
+Esta escena es una aplicación del macro (este macro no tiene parámetros).
+</p>
+<hr>
+
+<p><font size="2" face="Arial"><strong><cite><dfn><samp><tt>Autor: José Luis Abreu León</tt></samp></dfn></cite></strong></font></p>
+
+</body>
+</html>
+

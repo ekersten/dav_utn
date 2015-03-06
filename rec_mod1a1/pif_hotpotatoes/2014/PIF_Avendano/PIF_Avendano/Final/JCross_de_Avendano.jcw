@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jcross-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>Jose Luis Avendaño</dc:creator>
+    <dc:title>Inform&amp;#x00E1;tica en Palabras Cruzadas</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>6</version>
+
+<data>
+<title>Inform&amp;#x00E1;tica en Palabras Cruzadas</title>
+
+
+
+<timer><seconds>59</seconds><include-timer>0</include-timer></timer><reading>
+<include-reading>0</include-reading>
+<reading-title></reading-title>
+<reading-text></reading-text>
+
+</reading>
+
+<crossword>
+<grid><row><cell>C</cell><cell>O</cell><cell>N</cell><cell>T</cell><cell>R</cell><cell>A</cell><cell>S</cell><cell>E</cell><cell>&amp;#x00D1;</cell><cell>A</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>H</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>N</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>G</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>A</cell><cell></cell><cell></cell><cell>I</cell><cell>N</cell><cell>T</cell><cell>E</cell><cell>R</cell><cell>N</cell><cell>E</cell><cell>T</cell><cell></cell><cell>I</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>T</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>I</cell><cell></cell><cell>O</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>G</cell><cell></cell><cell>F</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>V</cell><cell></cell><cell>M</cell><cell></cell><cell>B</cell><cell>I</cell><cell>N</cell><cell>A</cell><cell>R</cell><cell>I</cell><cell>O</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>I</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>B</cell><cell></cell><cell>R</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell>H</cell><cell>A</cell><cell>R</cell><cell>D</cell><cell>W</cell><cell>A</cell><cell>R</cell><cell>E</cell><cell></cell><cell>Y</cell><cell></cell><cell>E</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>U</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>T</cell><cell></cell><cell>F</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>S</cell><cell>O</cell><cell>F</cell><cell>T</cell><cell>W</cell><cell>A</cell><cell>R</cell><cell>E</cell><cell></cell><cell>O</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>E</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>X</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>C</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>R</cell><cell></cell><cell>V</cell><cell></cell><cell>L</cell><cell>I</cell><cell>N</cell><cell>U</cell><cell>X</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell>P</cell><cell>A</cell><cell>G</cell><cell>I</cell><cell>N</cell><cell>A</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>M</cell><cell></cell><cell>R</cell><cell></cell><cell>D</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>U</cell><cell></cell><cell>O</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>S</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></grid>
+
+<clues><item><word>CONTRASE&amp;#x00D1;A</word><def>En ingl&amp;#x00E9;s &amp;#x201C;password&amp;#x201D;. C&amp;#x00F3;digo utilizado para acceder a un sistema restringido.</def></item><item><word>INTERNET</word><def>La red mundial de redes de computadoras interconectadas alrededor del mundo.</def></item><item><word>BINARIO</word><def>C&amp;#x00F3;digo &amp;#x00F3; sistema de numeraci&amp;#x00F3;n en el que los n&amp;#x00FA;meros se representan utilizando solamente, ceros y unos.</def></item><item><word>HARDWARE</word><def>Conjunto de elementos f&amp;#x00ED;sicos que constituyen un sistema inform&amp;#x00E1;tico, lo que podemos tocar.</def></item><item><word>SOFTWARE</word><def>Conjunto de programas y rutinas que permiten a la computadora realizar determinadas tareas.</def></item><item><word>LINUX</word><def>&amp;#x003C;img src=&quot;Tux.png&quot; alt=&quot;Tux.png&quot; title=&quot;Tux&quot; width=&quot;200&quot; height=&quot;232&quot; style=&quot;float: left;&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;GNU / ..... Sistema Operativo libre. </def></item><item><word>PAGINA</word><def>Documento electr&amp;#x00F3;nico el cual contiene informaci&amp;#x00F3;n textual, visual y/o sonora que se encuentra alojado en un servidor y puede ser accesible mediante el uso de navegadores.</def></item><item><word>CHAT</word><def>Comunicaci&amp;#x00F3;n simult&amp;#x00E1;nea en tiempo real, entre dos o m&amp;#x00E1;s personas a trav&amp;#x00E9;s de internet.</def></item><item><word>ANTIVIRUS</word><def>Programa cuya finalidad es prevenir los virus inform&amp;#x00E1;ticos as&amp;#x00ED; como sanar los ya existentes en un sistema inform&amp;#x00E1;tico.</def></item><item><word>GIGABYTE</word><def>Unidad de memoria que equivale a 1.024 MB.</def></item><item><word>ROM</word><def>Memoria de solo lectura que almacena instrucciones y datos de forma permanente.</def></item><item><word>FIREFOX</word><def>Navegador de web gr&amp;#x00E1;fico, gratuito, de c&amp;#x00F3;digo abierto, desarrollado por la Fundaci&amp;#x00F3;n Mozilla y miles de colaboradores en el mundo.</def></item><item><word>TECLADO</word><def>Perif&amp;#x00E9;rico de entrada, que permite introducir datos a una computadora o dispositivo digital.</def></item><item><word>RAM</word><def>Memoria vol&amp;#x00E1;til de s&amp;#x00F3;lo lectura, habitualmente utilizada como almac&amp;#x00E9;n temporal de datos.</def></item><item><word>VIRUS</word><def>&amp;#x003C;img src=&quot;virus.png&quot; alt=&quot;virus.png&quot; title=&quot;virus&quot; width=&quot;200&quot; height=&quot;156&quot; style=&quot;float: left;&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;Programa que tiene por objeto alterar el normal funcionamiento de la computadora, sin el permiso o el conocimiento del usuario.</def></item><item><word>VIRUS</word><def>&amp;#x003C;img src=&quot;virus.png&quot; alt=&quot;virus.png&quot; title=&quot;virus&quot; width=&quot;200&quot; height=&quot;156&quot; style=&quot;float: left;&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;Programa que tiene por objeto alterar el normal funcionamiento de la computadora, sin el permiso o el conocimiento del usuario.</def></item></clues>
+</crossword>
+</data>
+
+<hotpot-config-file>
+<jcross>
+<exercise-subtitle>Palabras Cruzadas</exercise-subtitle>
+<instructions>Para ver las definiciones de las palabras, haz click en el n&amp;#x00FA;mero dos de la derecha. Escribe la palabra frente a la definici&amp;#x00F3;n y pulsa en el bot&amp;#x00F3;n Insertar; para colocar la palabra a la derecha. 
+Se tuvises dudas, haz click en el bot&amp;#x00F3;n &quot;Ver Pista&quot;. Pero cuidado, cada vez que pidas una pista, disminuir&amp;#x00E1;s tu puntuaci&amp;#x00F3;n.
+Cuando termines, haz click en el bot&amp;#x00F3;n &quot;Verificar resultados&quot;.
+Usa el teclado en may&amp;#x00FA;sculas.</instructions>
+<guess-correct>&amp;#x00A1;Correcto! Buen trabajo.</guess-correct>
+<guess-incorrect>Algunas de tus respuestas estaban incorrectas, y fueron eliminadas.</guess-incorrect>
+<clues-across>Horizontal - </clues-across>
+<clues-down>Vertical - </clues-down>
+<next-correct-letter>Fue insertada una letra correcta.</next-correct-letter>
+<include-keypad>0</include-keypad>
+<include-clue-list>1</include-clue-list>
+<enter-caption>&amp;#x003C;b&amp;#x003E;Insertar&amp;#x003C;/b&amp;#x003E;</enter-caption>
+<include-hint>1</include-hint>
+<case-sensitive>0</case-sensitive>
+<next-ex-url>proximo.htm</next-ex-url>
+<send-email>0</send-email>
+<separate-javascript-file>0</separate-javascript-file>
+</jcross>
+
+<global>
+<your-score-is>&amp;#x003C;br&amp;#x003E;Tu puntuaci&amp;#x00F3;n es: </your-score-is>
+<check-caption>Verificar</check-caption>
+<ok-caption>OK</ok-caption>
+<hint-caption>Pista</hint-caption>
+<keypad-characters></keypad-characters>
+<process-for-rtl>0</process-for-rtl>
+<include-scorm-12>0</include-scorm-12>
+<next-ex-caption>=&amp;#x003E;</next-ex-caption>
+<back-caption>&amp;#x003C;=</back-caption>
+<contents-caption>Volver al &amp;#x00ED;ndice</contents-caption>
+<include-next-ex>0</include-next-ex>
+<include-contents>0</include-contents>
+<include-back>0</include-back>
+<contents-url>../index.html</contents-url>
+<graphic-url></graphic-url>
+<font-face>Geneva,Arial</font-face>
+<font-size>small</font-size>
+<page-bg-color>#ffffff</page-bg-color>
+<title-color>#000033</title-color>
+<ex-bg-color>#ffcc00</ex-bg-color>
+<text-color>#000000</text-color>
+<link-color>#0000ff</link-color>
+<vlink-color>#0000cc</vlink-color>
+<nav-bar-color>#000066</nav-bar-color>
+<formmail-url>http://www.dimensis.com/cgi-bin/FormMail.pl</formmail-url>
+<email>correo@lagaleriadelvino.com.com</email>
+<name-please>Escribe tu nombre, por favor:</name-please>
+<user-string-1>one</user-string-1>
+<user-string-2>two</user-string-2>
+<user-string-3>three</user-string-3>
+<header-code></header-code>
+</global>
+</hotpot-config-file>
+</hotpot-jcross-file>

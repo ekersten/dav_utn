@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="proyecto_final" version="0.1.3">
+ <settings>
+  <title>Alimentacion saludable</title>
+  <revision description="created" date="8/12/14" />
+  <author name="Debora Farina" mail="deborafarina13@gmail.com" rol="Docente" />
+  <descriptors area="Salud y adolescencia" level="Secundarios" />
+  <skin file="@orange.xml" />
+ </settings>
+ <sequence>
+  <item id="Inicio" name="pantalla de informacion 2">
+   <jump action="RETURN" id="forward" />
+  </item>
+  <item name="Asociacion compleja">
+   <jump action="RETURN" id="forward" />
+  </item>
+  <item name="Actividad de exploracion">
+   <jump action="RETURN" id="forward" />
+  </item>
+  <item name="Actividad de identificacion">
+   <jump action="RETURN" id="forward" />
+  </item>
+  <item name="Asociacion simple">
+   <jump action="RETURN" id="forward" />
+  </item>
+  <item name="pantalla de informacion 2" />
+  <item name="SOPA DE LETRAS">
+   <jump action="RETURN" id="forward" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@panels.Explore" name="Actividad de exploracion" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color background="0xF0F0F0" />
+     </style>
+     <p>Selecciona la palabra y escucharas su descripción</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="521.0" cellHeight="95.0" border="true" id="primary">
+    <style margin="2" borderStroke="0.7" markerStroke="2.7">
+     <font family="Bradley Hand ITC" size="36" bold="true" />
+     <color foreground="0xFF0000" background="0xF0F0F0" shadow="0xF0F0F0" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell id="0" imgAlign="right,middle" avoidOverlapping="true" image="1122132small.jpg">
+     <p>Las Frutas</p>
+    </cell>
+    <cell id="1" imgAlign="right,middle" avoidOverlapping="true" image="Verduras-anti-envejecimiento.jpg">
+     <p>Las Verduras</p>
+    </cell>
+    <cell id="2" imgAlign="right,middle" avoidOverlapping="true" image="carnes-saludables.jpg">
+     <p>Las Carnes</p>
+    </cell>
+    <cell id="3" imgAlign="right,middle" avoidOverlapping="true" image="alimentos_cereales.jpg">
+     <p>Los Cereales</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="1" cellWidth="45.0" cellHeight="94.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="2.7">
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xF0F0F0" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell image="nota.gif">
+     <media type="PLAY_AUDIO" level="1" file="Las Frutas.mp3" />
+    </cell>
+    <cell image="nota.gif">
+     <media type="PLAY_AUDIO" level="1" file="Las verduras.mp3" />
+    </cell>
+    <cell image="nota.gif">
+     <media type="PLAY_AUDIO" level="1" file="las carnes.mp3" />
+    </cell>
+    <cell image="nota.gif">
+     <media type="PLAY_AUDIO" level="1" file="los cereales.mp3" />
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.Identify" name="Actividad de identificacion" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Bradley Hand ITC" size="24" bold="true" />
+      <color background="0xF0F0F0" />
+     </style>
+     <p>¿Cuales son Frutas?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Bradley Hand ITC" size="28" bold="true" />
+      <color background="0xF0F0F0" />
+     </style>
+     <p>Zanahoria: es una Horatliza</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="4" cellWidth="126.0" cellHeight="150.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="2.7">
+     <font family="Arial" size="17" bold="true" />
+     <color foreground="0xF0F0F0" background="0xF0F0F0" alternative="0x000000" border="0xFFCC33" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell id="1" image="453frutas-verano-03.jpg" />
+    <cell id="1" image="principales-frutasrgjssrtu.jpg" />
+    <cell id="1" image="principales-frutasrwgerwtg.jpg" />
+    <cell id="0" image="Mejores_alimentos_saludables_zanahoria.jpg" />
+   </cells>
+   <cells rows="1" cols="4" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell image="453frutas-verano-03.jpg">
+     <style>
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xF0F0F0" background="0x000000" alternative="0x00FFFF" />
+     </style>
+     <p>Durazno: es una fruta que tiene piel atersiopelada, posee carne amarilla o blanquecina de sabor dulce y aroma delicado.</p>
+    </cell>
+    <cell txtAlign="middle,top" imgAlign="middle,bottom" image="principales-frutasrgjssrtu.jpg">
+     <p>Pera: es una fruta jugosa, carnosa y una de las mas importantes pruducidas en las regiones templadas.</p>
+    </cell>
+    <cell image="principales-frutasrwgerwtg.jpg">
+     <style>
+      <font family="Arial" size="28" bold="true" />
+      <color foreground="0xF0F0F0" background="0xF0F0F0" alternative="0x000000" />
+     </style>
+     <p>Banana: es una fruta rica en almidón cubierta con una corteza que puede ser de color verde,amarillo, rojo, púrpura o marrón.</p>
+    </cell>
+    <cell />
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="Asociacion compleja" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0x0000CC" />
+     </style>
+     <p>Ordenalos segun su categoria</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color foreground="0x00FF00" background="0xF0F0F0" />
+     </style>
+     <p>¡¡¡Buen trabajo!!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <color foreground="0xFF0000" background="0xF0F0F0" />
+     </style>
+     <p>Intentalo otra vez</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x00FFFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0000FF" border="true" />
+   </settings>
+   <cells rows="8" cols="1" cellWidth="117.0" cellHeight="30.0" border="false" id="primary">
+    <style borderStroke="0.7" markerStroke="2.7">
+     <font family="Bradley Hand ITC" size="18" bold="true" />
+     <color background="0xF0F0F0" />
+     <gradient source="0x00FFFF" dest="0xFFFFFF" angle="0" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="8" />
+    <cell id="1">
+     <p>Banana</p>
+    </cell>
+    <cell id="0">
+     <p>Lechuga</p>
+    </cell>
+    <cell id="0">
+     <p>Tomate</p>
+    </cell>
+    <cell id="2">
+     <p>Pollo</p>
+    </cell>
+    <cell id="2">
+     <p>Pescado</p>
+    </cell>
+    <cell id="1">
+     <p>Naranja</p>
+    </cell>
+    <cell id="1">
+     <p>Manzana</p>
+    </cell>
+    <cell>
+     <p>Pan</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="197.0" cellHeight="53.0" border="true" id="secondary">
+    <style>
+     <font family="Bradley Hand ITC" size="22" bold="true" />
+     <color background="0xF0F0F0" />
+     <gradient source="0x00FFFF" dest="0xFFFFFF" angle="0" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell>
+     <p>Verduras</p>
+    </cell>
+    <cell>
+     <p>Frutas</p>
+    </cell>
+    <cell>
+     <p>Carnes</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="Asociacion simple" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color background="0xF0F0F0" />
+     </style>
+     <p>Busca el nombre de la imagen</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" />
+      <color foreground="0x33CC00" background="0xF0F0F0" />
+     </style>
+     <p>Bien hecho!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="alimentacion6.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="4" cellWidth="144.0" cellHeight="180.0" border="true" id="primary">
+    <style>
+     <color background="0xF0F0F0" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell txtAlign="middle,top" imgAlign="middle,bottom" avoidOverlapping="true" image="comidas-saludables-queso.jpg">
+     <style margin="15" borderStroke="0.0" markerStroke="2.7">
+      <font family="Arial" size="18" bold="true" />
+      <color background="0xF0F0F0" />
+     </style>
+     <p>¿Que Alimento es?</p>
+    </cell>
+    <cell txtAlign="middle,top" imgAlign="middle,bottom" avoidOverlapping="true" image="principales-frutashthth.jpg">
+     <style margin="15" borderStroke="0.0" markerStroke="2.7">
+      <font family="Arial" size="18" bold="true" />
+      <color background="0xF0F0F0" />
+     </style>
+     <p>¿Que Alimento es?</p>
+    </cell>
+    <cell txtAlign="middle,top" imgAlign="middle,bottom" avoidOverlapping="true" image="alimentos-saludables-prohibidos-beneficiosos.jpg">
+     <style margin="15" borderStroke="0.0" markerStroke="2.7">
+      <font family="Arial" size="18" bold="true" />
+      <color background="0xF0F0F0" />
+     </style>
+     <p>¿Que alimento es?</p>
+    </cell>
+    <cell txtAlign="middle,top" imgAlign="middle,bottom" avoidOverlapping="true" image="pan-integral.jpg">
+     <style margin="15" borderStroke="0.0" markerStroke="2.7">
+      <font family="Arial" size="18" bold="true" />
+      <color background="0xF0F0F0" />
+     </style>
+     <p>¿Que alimento es?</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="4" cellWidth="144.0" cellHeight="40.0" border="true" id="secondary">
+    <style>
+     <color background="0xF0F0F0" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <p>Queso</p>
+    </cell>
+    <cell>
+     <p>Naranja</p>
+    </cell>
+    <cell>
+     <p>Carne</p>
+    </cell>
+    <cell>
+     <p>Pan</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="SOPA DE LETRAS" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color background="0xF0F0F0" />
+     </style>
+     <p>BUSCA LAS 8 PALABRAS OCULTAS </p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="22" />
+      <color foreground="0x009933" background="0xF0F0F0" />
+     </style>
+     <p>Bien hecho!!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="22" />
+      <color foreground="0xCC0000" background="0xF0F0F0" />
+     </style>
+     <p>Intentalo de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="100" countDownTime="false" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <textGrid rows="10" columns="10" cellWidth="82.0" cellHeight="39.0" border="false">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>ACEITE****</row>
+     <row>*******C**</row>
+     <row>F**C***A**</row>
+     <row>R*VERDURAS</row>
+     <row>U**R***N**</row>
+     <row>T**E*P*E**</row>
+     <row>AGUA*A*S**</row>
+     <row>S**L*N****</row>
+     <row>***E******</row>
+     <row>***S*LECHE</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">ACEITE</clue>
+    <clue id="1">VERDURAS</clue>
+    <clue id="2">FRUTAS</clue>
+    <clue id="3">AGUA</clue>
+    <clue id="4">LECHE</clue>
+    <clue id="5">CEREALES</clue>
+    <clue id="6">PAN</clue>
+    <clue id="7">CARNES</clue>
+   </clues>
+   <cells rows="8" cols="1" cellWidth="153.0" cellHeight="43.0" border="true" id="secondary">
+    <style>
+     <color background="0xF0F0F0" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="8" />
+    <cell>
+     <p>ACEITE</p>
+    </cell>
+    <cell>
+     <p>CARNES</p>
+    </cell>
+    <cell>
+     <p>VERDURAS</p>
+    </cell>
+    <cell>
+     <p>FRUTAS</p>
+    </cell>
+    <cell>
+     <p>CEREALES</p>
+    </cell>
+    <cell>
+     <p>PAN</p>
+    </cell>
+    <cell>
+     <p>LECHE</p>
+    </cell>
+    <cell>
+     <p>AGUA</p>
+    </cell>
+   </cells>
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="pantalla de informacion 2" code="">
+   <description />
+   <messages />
+   <settings margin="8" infoUrl="http://es.wikipedia.org/wiki/Alimento" useOrder="true" report="false">
+    <helpWindow />
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="5" cols="1" cellWidth="508.0" cellHeight="92.0" border="true">
+    <style shadow="true" borderStroke="0.7" markerStroke="2.7">
+     <font family="Arial" size="22" bold="true" />
+     <color foreground="0xFF0000" background="0xF0F0F0" shadow="0xF0F0F0" />
+     <gradient source="0x3333FF" dest="0xFFFFFF" angle="0" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="5" />
+    <cell>
+     <style shadow="true" borderStroke="0.0" markerStroke="2.7">
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0xFF0000" background="0xF0F0F0" shadow="0xF0F0F0" />
+      <gradient source="0x3333FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Asociacion simple" />
+     <p>Determina los el nombre de los diferentes alimentos</p>
+    </cell>
+    <cell>
+     <style shadow="true" borderStroke="0.0" markerStroke="2.7">
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0xFF0000" background="0xF0F0F0" shadow="0xF0F0F0" />
+      <gradient source="0x3333FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Asociacion compleja" />
+     <p>Reune los alimentos de acuerdo con sus variedades</p>
+    </cell>
+    <cell>
+     <style shadow="true" borderStroke="0.0" markerStroke="2.7">
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0xFF0000" background="0xF0F0F0" shadow="0xF0F0F0" />
+      <gradient source="0x3333FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Actividad de exploracion" />
+     <p>Escucha las definiciones con atención </p>
+    </cell>
+    <cell>
+     <style shadow="true" borderStroke="0.0" markerStroke="2.7">
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0xFF0000" background="0xF0F0F0" shadow="0xF0F0F0" />
+      <gradient source="0x3333FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Actividad de identificacion" />
+     <p>Selecciona solamente las frutas</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="SOPA DE LETRAS" />
+     <p>Sopa de letras</p>
+    </cell>
+   </cells>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="nota.gif" file="nota.gif" />
+  <media name="1122132small.jpg" file="1122132small.jpg" />
+  <media name="453frutas-verano-03.jpg" file="453frutas-verano-03.jpg" />
+  <media name="alimentacion6.jpg" file="alimentacion6.jpg" />
+  <media name="alimentos-saludables-prohibidos-beneficiosos.jpg" file="alimentos-saludables-prohibidos-beneficiosos.jpg" />
+  <media name="alimentos_cereales.jpg" file="alimentos_cereales.jpg" />
+  <media name="carnes-saludables.jpg" file="carnes-saludables.jpg" />
+  <media name="comidas-saludables-queso.jpg" file="comidas-saludables-queso.jpg" />
+  <media name="Mejores_alimentos_saludables_zanahoria.jpg" file="Mejores_alimentos_saludables_zanahoria.jpg" />
+  <media name="pan-integral.jpg" file="pan-integral.jpg" />
+  <media name="principales-frutashthth.jpg" file="principales-frutashthth.jpg" />
+  <media name="principales-frutasrgjssrtu.jpg" file="principales-frutasrgjssrtu.jpg" />
+  <media name="principales-frutasrwgerwtg.jpg" file="principales-frutasrwgerwtg.jpg" />
+  <media name="Verduras-anti-envejecimiento.jpg" file="Verduras-anti-envejecimiento.jpg" />
+  <media name="las carnes.mp3" file="las carnes.mp3" />
+  <media name="Las Frutas.mp3" file="Las Frutas.mp3" />
+  <media name="Las verduras.mp3" file="Las verduras.mp3" />
+  <media name="los cereales.mp3" file="los cereales.mp3" />
+ </mediaBag>
+</JClicProject>
+

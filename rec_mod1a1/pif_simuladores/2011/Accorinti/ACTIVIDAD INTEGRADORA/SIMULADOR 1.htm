@@ -1,0 +1,53 @@
+<p><table width="100%" border="3" align="center" cellpadding="2" cellspacing="1">
+  <tr>
+    <td align="center" valign="middle"><a href="SIMULADOR 1.htm">Simulador 1</a></td>
+    <td align="center" valign="middle"><a href="SIMULADOR 2.htm">Simulador 2</a></td>
+    <td align="center" valign="middle"><a href="SIMULADOR 3.htm">Simulador 3</a></td>
+  </tr>
+</table>
+
+  </p>
+<p>
+  <applet name="base" width=680 height=400
+        code="descinst.Descartes.class"
+        codebase="./"
+        archive="descinst.jar,http://recursostic.educacion.es/descartes/web/plugin/descinst.jar"
+        MAYSCRIPT>
+    <param name="tama&ntilde;o" value="680x400">
+    <param name="sonido" value="s&iacute;">
+    <param name="&aacute;lgebra" value="s&iacute;">
+    <param name="decimal_symbol" value=",">
+    <param name="antialias" value="no">
+    <param name="nombre" value="base">
+    <param name="Versi&oacute;n" value="4.41, 2010-12-16">
+    <param name="Idioma" value="espa&ntilde;ol">
+    <param name="Botones" value="cr&eacute;ditos=no config=no inicio=s&iacute; limpiar=no">
+    <param name="E_00" value="tipo='R2' despl_imagen='arr-izq' fondo='88a4e388' red='grisClaro' red10='grisClaro' ejes='gris' texto='rosa'">
+    <param name="C_00" value="id='escala' tipo='num&eacute;rico' min='0.001' decimales='4*(escala&lt;10)' fijo='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+    <param name="C_01" value="id='r' tipo='num&eacute;rico' nombre='radio' valor='1' incr='0.25' min='1' max='3.25' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+    <param name="C_02" value="id='A' tipo='gr&aacute;fico' color='naranja' color-int='naranja' tama&ntilde;o='6' constricci&oacute;n='x^2+y^2=r^2' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+    <param name="C_03" value="id='A.x' tipo='num&eacute;rico' regi&oacute;n='exterior' nombre='A.x' valor='r' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+    <param name="C_04" value="id='A.y' tipo='num&eacute;rico' regi&oacute;n='exterior' nombre='A.y' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+    <param name="C_05" value="id='alfa' tipo='num&eacute;rico' nombre='alfa' incr='5' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+    <param name="A_00" value="id='pi' constante='s&iacute;' expresi&oacute;n='3.1416' evaluar='una-sola-vez'">
+    <param name="A_01" value="id='A.1' expresi&oacute;n='r*cos((alfa*pi)/180)'">
+    <param name="A_02" value="id='A.2' expresi&oacute;n='r*sen((alfa*pi)/180)'">
+    <param name="A_03" value="id='A.3' expresi&oacute;n='r*tan((alfa*pi)/180)'">
+    <param name="A_04" value="id='A.x' expresi&oacute;n='r*cos((alfa*pi)/180)'">
+    <param name="A_05" value="id='A.y' expresi&oacute;n='r*sen((alfa*pi)/180)'">
+    <param name="G_00" value="tipo='ecuaci&oacute;n' expresi&oacute;n='x^2+y^2=r^2' ancho='2' visible='s&iacute;'">
+    <param name="G_01" value="tipo='segmento' expresi&oacute;n='(0,0)(r,A.3)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+    <param name="G_02" value="tipo='segmento' color='verde' expresi&oacute;n='(0,0)(A.1,0)' texto='C' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' ancho='2'">
+    <param name="G_03" value="tipo='segmento' color='negro' expresi&oacute;n='(A.1,0)(A.1,A.2)' texto='S' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' ancho='2'">
+    <param name="G_04" value="tipo='segmento' color='rojo' expresi&oacute;n='(r,0)(r,A.3)' texto='T' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' ancho='2'">
+    <param name="G_05" value="tipo='texto' expresi&oacute;n='[20,20]' texto='coordenadas [A.x],[A.y]' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+    <param name="G_06" value="tipo='texto' expresi&oacute;n='[20,40]' texto='&aacute;ngulos[alfa]&ordm;,[alfa*pi/180] rad' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+    <param name="G_07" value="tipo='texto' expresi&oacute;n='[20,60]' texto='seno [sen((alfa*pi)/180)] ' fijo='s&iacute;'">
+    <param name="G_08" value="tipo='texto' expresi&oacute;n='[20,80]' texto='coseno [cos((alfa*pi)/180)]' fijo='s&iacute;'">
+    <param name="G_09" value="tipo='texto' expresi&oacute;n='[20,100]' texto='tangente [tan((alfa*pi)/180)] ' fijo='s&iacute;'">
+    <param name="G_10" value="tipo='texto' expresi&oacute;n='[20,120]' texto='secante [1/(cos((alfa*pi)/180))]' fijo='s&iacute;'">
+    <param name="G_11" value="tipo='texto' dibujar-si='x&gt;0' expresi&oacute;n='[20,140]' texto='cosecante [1/(sen((alfa*pi)/180))]' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+    <param name="G_12" value="tipo='texto' dibujar-si='x&gt;0' expresi&oacute;n='[20,160]' texto='cotangente [1/(tan((alfa*pi)/180))]' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+    <font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+  </applet>
+</p>

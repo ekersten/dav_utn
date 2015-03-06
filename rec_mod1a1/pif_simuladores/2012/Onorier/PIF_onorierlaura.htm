@@ -1,0 +1,54 @@
+<applet name="vacio" width=900 height=500
+        code="descinst.Descartes.class"
+        codebase="./"
+        archive="descinst.jar,http://recursostic.educacion.es/descartes/web/plugin/descinst.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="900x500">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="vacio">
+   <param name="Versi&oacute;n" value="4.41, 2010-12-16">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=s&iacute; limpiar=s&iacute;">
+   <param name="E_00" value="tipo='R2' id='dibujo' ancho='500' escala='1' O.x='-30' O.y='80' imagen='Imagenes/Coyotecorrecaminos.jpg' despl_imagen='expand.' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_01" value="tipo='R2' id='marte' ancho='500' dibujar-si='n8=1' escala='1' O.x='-30' O.y='80' imagen='Imagenes/coyotemarte.png' despl_imagen='expand.' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='altura.grafico' x='500' y='0' dibujar-si='n5=0' escala='10' O.x='-150' O.y='200' despl_imagen='arr-izq' fondo='ff90ff' red='b8c4c8' red10='889498' ejes='negro' texto='405860' n&uacute;meros='s&iacute;' eje-x='t' eje-y='h/10 [m]'">
+   <param name="E_03" value="tipo='R2' id='velocidad.grafico' x='500' dibujar-si='n5=1' escala='5' O.x='-150' O.y='200' despl_imagen='arr-izq' fondo='ffff81' red='b8c4c8' red10='889498' ejes='negro' texto='405860' n&uacute;meros='s&iacute;' eje-x='t' eje-y='V [m/s]'">
+   <param name="E_04" value="tipo='R2' id='aceleracion.grafico' x='500' dibujar-si='n5=2' escala='40' O.x='-150' O.y='200' despl_imagen='arr-izq' fondo='9cffff' red='b8c4c8' red10='889498' ejes='negro' texto='405860' n&uacute;meros='s&iacute;' eje-x='t' eje-y='g [m/s/s]'">
+   <param name="C_00" value="id='Ox' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='altura.grafico' nombre='O.x' incr='100' decimales='0' fijo='s&iacute;' visible='no' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_01" value="id='Oy' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='grafico' fijo='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_02" value="id='grafico.escala' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='altura.grafico' nombre='zoom' valor='1' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' evaluar='s&iacute;' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='ab_der'">
+   <param name="C_03" value="id='dibujo.escala' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='altura.grafico' nombre='altura' valor='1' incr='0.1*escala' min='0.000001' max='1000000' decimales='(escala&lt;0.01)+(escala&lt;0.1)+(escala&lt;1)+(escala&lt;10)+(escala&lt;100)+(escala&lt;1000)+(escala&lt;10000)+(escala&lt;100000)' fijo='s&iacute;' visible='no' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_04" value="id='n5' tipo='num&eacute;rico' interfaz='men&uacute;' regi&oacute;n='interior' espacio='altura.grafico' nombre='Graficar:' expresi&oacute;n='(300,0)' fijo='s&iacute;' visible='no' opciones='h vs. t,V vs. t,g vs. t' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_05" value="id='n5' tipo='num&eacute;rico' interfaz='men&uacute;' regi&oacute;n='interior' espacio='velocidad.grafico' nombre='Graficar:' expresi&oacute;n='(300,0)' fijo='s&iacute;' visible='no' opciones='h vs. t,V vs. t,g vs. t' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_06" value="id='n5' tipo='num&eacute;rico' interfaz='men&uacute;' regi&oacute;n='interior' espacio='aceleracion.grafico' nombre='Graficar:' expresi&oacute;n='(300,0)' fijo='s&iacute;' visible='no' opciones='h vs. t,V vs. t,g vs. t' par&aacute;metro.fuente='Monospaced,PLAIN,12' evaluar='s&iacute;' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_07" value="id='n8' tipo='num&eacute;rico' interfaz='men&uacute;' regi&oacute;n='interior' espacio='dibujo' expresi&oacute;n='(10,0)' fijo='s&iacute;' visible='no' opciones='En la Tierra,En Marte' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_08" value="id='n8' tipo='num&eacute;rico' interfaz='men&uacute;' regi&oacute;n='interior' espacio='marte' expresi&oacute;n='(10,0)' fijo='s&iacute;' visible='no' opciones='En la Tierra,En Marte' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_00" value="id='t' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_01" value="id='ht(t)' expresi&oacute;n='300+0.5*-gt*t^2' mientras='ht&gt;0'">
+   <param name="A_02" value="id='vft(t)' expresi&oacute;n='gt*t'">
+   <param name="A_03" value="id='gt' constante='s&iacute;' expresi&oacute;n='9.8' evaluar='una-sola-vez'">
+   <param name="A_04" value="id='gm' constante='s&iacute;' expresi&oacute;n='3.7' evaluar='una-sola-vez'">
+   <param name="A_05" value="id='vfm(t)' expresi&oacute;n='gm*t'">
+   <param name="A_06" value="id='hm(t)' expresi&oacute;n='300+0.5*-gm*t^2'">
+   <param name="G_00" value="espacio='dibujo' tipo='imagen' dibujar-si='n8=0' expresi&oacute;n='(0,ht(t))' archivo='Imagenes/Coyotecayendo.gif'">
+   <param name="G_01" value="espacio='marte' tipo='imagen' dibujar-si='n8=1' expresi&oacute;n='(0,hm(t))' archivo='Imagenes/Coyotecayendo.gif'">
+   <param name="G_02" value="espacio='altura.grafico' tipo='punto' dibujar-si='n8=0' expresi&oacute;n='(t,ht(t)/10)' rastro='azul' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_03" value="espacio='velocidad.grafico' tipo='punto' color='008700' dibujar-si='n8=0' expresi&oacute;n='(t,vft(t))' rastro='008700' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_04" value="espacio='aceleracion.grafico' tipo='punto' color='ff9300' dibujar-si='n8=0' expresi&oacute;n='(t,gt)' rastro='ff9300' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_05" value="espacio='altura.grafico' tipo='punto' color='turquesa' dibujar-si='n8=1' expresi&oacute;n='(t,hm(t)/10)' rastro='turquesa' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_06" value="espacio='velocidad.grafico' tipo='punto' color='verde' dibujar-si='n8=1' expresi&oacute;n='(t,vfm(t))' rastro='verde' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_07" value="espacio='aceleracion.grafico' tipo='punto' color='amarillo' dibujar-si='n8=1' expresi&oacute;n='(t,gm)' rastro='amarillo' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_08" value="espacio='dibujo' tipo='texto' color='blanco' dibujar-si='n8=0' expresi&oacute;n='[20,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs40\b h inicial= 300m\b0}' fuente='Courier New Negrita,BOLD,20' fijo='s&iacute;'">
+   <param name="G_09" value="espacio='marte' tipo='texto' color='blanco' dibujar-si='n8=1' expresi&oacute;n='[20,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs40\b h inicial= 300m\b0}' fuente='Courier New Negrita,BOLD,20' fijo='s&iacute;'">
+   <param name="G_10" value="espacio='dibujo' tipo='texto' color='blanco' dibujar-si='n8=0' expresi&oacute;n='[20,70]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;\f3\fcharset0 Courier New;}\f1\fs40\b V= {\*\mjaformula{\expr vft(t)\decimals 2\fixed1}}\i{\*\mjaformula{\fraction{\num m}{\den s}}}\b0\i0}' fuente='Courier New Negrita,BOLD,20' fijo='s&iacute;'">
+   <param name="G_11" value="espacio='marte' tipo='texto' color='blanco' dibujar-si='n8=1' expresi&oacute;n='[20,70]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;\f3\fcharset0 Courier New;}\f1\fs40\b V= {\*\mjaformula{\expr vfm(t)\decimals 2\fixed1}}\i{\*\mjaformula{\fraction{\num m}{\den s}}}\b0\i0}' fuente='Courier New Negrita,BOLD,20' fijo='s&iacute;'">
+   <param name="G_12" value="espacio='dibujo' tipo='texto' color='blanco' dibujar-si='n8=0' expresi&oacute;n='[20,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;\f3\fcharset0 Courier New;}\f1\fs40\b g= {\*\mjaformula{\expr gt\decimals 2\fixed1}}\i{\*\mjaformula{\fraction{\num m}{\den s{\supix 2}}}}\b0\i0}' fuente='Courier New Negrita,BOLD,20' fijo='s&iacute;'">
+   <param name="G_13" value="espacio='marte' tipo='texto' color='blanco' dibujar-si='n8=1' expresi&oacute;n='[20,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;\f3\fcharset0 Courier New;}\f1\fs40\b g= {\*\mjaformula{\expr gm\decimals 2\fixed1}}\i{\*\mjaformula{\fraction{\num m}{\den s{\supix 2}}}}\b0\i0}' fuente='Courier New Negrita,BOLD,20' fijo='s&iacute;'">
+   <param name="G_14" value="espacio='dibujo' tipo='texto' color='blanco' dibujar-si='n8=0' expresi&oacute;n='[20,170]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs40\b t= {\*\mjaformula{\expr t\decimals 2\fixed1}}s\b0}' fuente='Courier New Negrita,BOLD,20' fijo='s&iacute;'">
+   <param name="G_15" value="espacio='marte' tipo='texto' color='blanco' dibujar-si='n8=1' expresi&oacute;n='[20,170]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs40\b t= {\*\mjaformula{\expr t\decimals 2\fixed1}}\b0 s}' fuente='Courier New Negrita,BOLD,20' fijo='s&iacute;'">
+   <param name="Animaci&oacute;n" value="controles='s&iacute;' auto='no' inicio='t=0' hacer='t=t+0.25;' mientras='t&lt;17'">
+<font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+</applet>

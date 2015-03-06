@@ -1,0 +1,26 @@
+<applet width=480 height=480
+        code="descinst.Descartes.class"
+        archive="descinst.jar,http://recursostic.educacion.es/descartes/web/plugin/descinst.jar"
+        MAYSCRIPT>
+   <param name="Versión" value="2.41">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=no limpiar=no">
+   <param name="Espacio" value="fondo=negro red=grisClaro red10=no ejes=rojo texto=negro eje-x='X' eje-y='Y'">
+   <param name="C_00" value="id=B tipo=numérico valor='2' decimales='1' incr='0.1' min='0' max='5' nombre=r">
+   <param name="C_01" value="id=C tipo=numérico valor='20' decimales='0' incr='5' min='-360' max='360' nombre=Rho">
+   <param name="A_00" value="id=pi expresión='3.1416'">
+   <param name="A_01" value="id=c expresión='C.x*sen(pi*C/180)/sen(pi*A/180)'">
+   <param name="A_02" value="id=b expresión='C.x*sen(pi*B/180)/sen(pi*A/180)'">
+   <param name="A_03" value="id=x expresión='B*cos(C*pi/180)'">
+   <param name="A_04" value="id=y expresión='B*sin(C*pi/180)'">
+   <param name="G_00" value="tipo=punto expresión='(x,y)' texto=' P([x],[y])' decimales=1 tamaño=3 fuente='Courier,BOLD,12'">
+   <param name="G_01" value="tipo=arco centro='(0,0)' radio='1' inicio='0' fin='C' color=rojo texto='Rho' ancho=2 relleno=amarillo">
+   <param name="G_02" value="tipo=segmento expresión='(0,0)(x,y)' ancho=2">
+   <param name="G_03" value="tipo=texto expresión='[10,10]' texto='Coordenadas Polares' fuente='Courier,BOLD,18'">
+   <param name="G_04" value="tipo=texto expresión='[10,400]' texto='x=[x]' fuente='Courier,BOLD,13'">
+   <param name="G_05" value="tipo=texto expresión='[10,420]' texto='y=[y]' fuente='Courier,BOLD,13'">
+   <param name="G_06" value="tipo=texto expresión='[10,380]' texto='Coordenadas Cartesianas' fuente='Courier,BOLD,18'">
+   <param name="G_07" value="tipo=texto expresión='[10,40]' texto='radio = [B]' fuente='Courier,BOLD,13'">
+   <param name="G_08" value="tipo=texto expresión='[10,60]' texto='angulo = [C]°' decimales=0 fuente='Courier,BOLD,13'">
+<font face="Arial" size="3">Esta unidad interactiva requiere la máquina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+</applet>

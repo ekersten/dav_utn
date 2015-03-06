@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="santosaliciaextincion" version="0.1.3">
+ <settings>
+  <title>Santosaliciaextincion</title>
+  <revision description="created" date="9/23/13" />
+  <author name="Alicia Santos" mail="profesoraaliciasantos@yahoo.com.ar" rol="Profe" organization="EET8 de Lanús">
+   <comments>
+    <p>Actividades interactivas para el espacio Derechos del Trabajo</p>
+   </comments>
+  </author>
+  <description>
+   <p>Actividades interactivas sobre causas de extinción contrato de trabajo</p>
+  </description>
+  <descriptors />
+ </settings>
+ <sequence>
+  <item id="start" name="Sopa de letras" />
+  <item name="Actividad de exploración" />
+  <item name="Completar texto" />
+  <item name="Asociación simple" />
+  <item name="Identificar conceptos que no son causa directa de extinción" />
+  <item id="start" name="Información sobre las actividades" delay="3" />
+ </sequence>
+ <activities>
+  <activity class="@panels.Explore" name="Actividad de exploración" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Hacé clic sobre cada imagen y buscá información sobre el tema relacionado</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>¿dudas? Consultá a tu profe!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x33FFFF">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x9933FF" border="true">
+     <gradient source="0x3333FF" dest="0xFFFFFF" angle="91" cycles="11" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="1" cols="3" cellWidth="159.0" cellHeight="179.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell id="0" avoidOverlapping="true" image="despido injustificado.jpg">
+     <media type="URL" level="1" file="http://www.petruzela.com.ar/textosvigentesLCT.html" />
+     <p>despido</p>
+    </cell>
+    <cell id="1" avoidOverlapping="true" image="renuncia.jpg">
+     <media type="URL" level="1" file="http://www.derechotrabajo.com.ar/notas.asp?ID=55" />
+     <p>Renuncia</p>
+    </cell>
+    <cell id="2" avoidOverlapping="true" image="enfermo.jpg">
+     <media type="URL" level="1" file="http://www.problemaslaborales.com.ar/enfermedad.htm" />
+     <p>Accidente o enfermedad inculpable</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="77.0" cellHeight="59.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell image="signopregunta.jpg" />
+    <cell image="signopregunta.jpg" />
+    <cell image="signopregunta.jpg" />
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="Asociación simple" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Asocia cada causa deextinció con sus consecuencias</p>
+    </cell>
+    <cell border="true" type="final">
+     <style />
+     <p>Muy Bien!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>Revisa tus errores</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0033FF">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="139" cycles="21" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" cycles="11" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="124.0" cellHeight="105.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell border="true" image="fallecimiento.jpg">
+     <style borderStroke="2.8" markerStroke="2.7">
+      <font family="Arial" size="17" bold="true" />
+     </style>
+     <p>muerte trabajador</p>
+    </cell>
+    <cell border="true" image="embarazo.jpg">
+     <style borderStroke="2.6" markerStroke="2.7">
+      <font family="Arial" size="17" bold="true" />
+     </style>
+     <p>Despido por maternidad</p>
+    </cell>
+    <cell txtAlign="middle,bottom" border="true" image="casamiento.png">
+     <style borderStroke="4.2" markerStroke="3.4" />
+     <p> matrimonio</p>
+    </cell>
+    <cell txtAlign="middle,top" border="true" image="quiebra.png">
+     <style borderStroke="4.2" markerStroke="3.4">
+      <font family="Arial" size="17" bold="true" />
+     </style>
+     <p>Quiebra</p>
+    </cell>
+    <cell txtAlign="middle,bottom" imgAlign="middle,top" border="true" image="renuncia.jpg">
+     <style borderStroke="4.2" markerStroke="3.4" />
+     <p>Renuncia</p>
+    </cell>
+    <cell txtAlign="middle,bottom" imgAlign="middle,top" border="true" image="despido">
+     <style borderStroke="4.2" markerStroke="3.4">
+      <font family="Arial" size="17" bold="true" />
+     </style>
+     <p>Despido con causa</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="120.0" cellHeight="104.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell>
+     <style borderStroke="4.2" markerStroke="3.4">
+      <font family="Arial" size="10" bold="true" />
+     </style>
+     <p>50% de la indemnización establecida por el art 245 LCT</p>
+    </cell>
+    <cell border="true">
+     <style borderStroke="4.2" markerStroke="3.4">
+      <font family="Arial" size="11" bold="true" />
+     </style>
+     <p>Indemnización art. 245 LCT + 12 meses de sueldo</p>
+    </cell>
+    <cell border="true">
+     <style borderStroke="4.2" markerStroke="3.4">
+      <font family="Arial" size="11" bold="true" />
+     </style>
+     <p>Indemnización art. 245 LCT + 12 meses de sueldo</p>
+    </cell>
+    <cell border="true">
+     <style borderStroke="4.2" markerStroke="3.4">
+      <font family="Arial" size="11" bold="true" />
+     </style>
+     <p>50% indemnización (art 245 LCT). Si es fraudulenta, 100%</p>
+    </cell>
+    <cell border="true">
+     <style borderStroke="4.2" markerStroke="3.4">
+      <font family="Arial" size="11" bold="true" />
+     </style>
+     <p>No corresponde indemnización por despido</p>
+    </cell>
+    <cell border="true">
+     <style borderStroke="4.2" markerStroke="3.4">
+      <font family="Arial" size="11" bold="true" />
+     </style>
+     <p>No corresponde indemnización por despido</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="Completar texto" code="">
+   <description>
+    <p>Completar el texto según corresponda</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Completar el texto según corresponda Los errores aparecen en rojo</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>¡Excelente!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>Probá de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="false" />
+    <container bgColor="0x0000CC">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="139" cycles="19" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF00CC" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" cycles="6" />
+    </window>
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <document>
+    <style name="default" size="11" italic="false" bold="false" tabWidth="12" background="0xFFFFFF" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p size="11" italic="false" bold="false" background="0xFFFFFF" family="Arial">
+      <text size="11" italic="false" bold="true" background="0xFFFFFF" family="Arial">Despido sin causa:</text>
+     </p>
+     <p size="11" italic="false" bold="false" background="0xFFFFFF" family="Arial" />
+     <p size="11" italic="false" bold="false" background="0xFFFFFF" family="Arial">
+      <text size="11" italic="false" bold="true" background="0xFFFFFF" family="Arial">Según el artículo 245 de la LCT, cuando el trabajador es despedido sin causa, tiene derecho a cobrar una indemnización equivalente a un mes de sueldo por cada año de servicio o fracción mayor a </text>
+      <target>
+       <answer>tres</answer>
+       <optionList>
+        <option>dos</option>
+        <option>seis</option>
+        <option>tres</option>
+       </optionList>
+       <text>tres</text>
+      </target>
+      <text size="11" italic="false" bold="true" background="0xFFFFFF" family="Arial"> meses.  La base de cálculo es la mejor remuneración recibida por el trabajador en los últimos </text>
+      <target>
+       <answer>doce</answer>
+       <optionList>
+        <option>doce</option>
+        <option>seis</option>
+        <option>ocho</option>
+       </optionList>
+       <text>doce</text>
+      </target>
+      <text size="11" italic="false" bold="true" background="0xFFFFFF" family="Arial"> meses previos a la fecha de despido.</text>
+     </p>
+     <p size="11" italic="false" bold="false" background="0xFFFFFF" family="Arial">
+      <text size="11" italic="false" bold="true" background="0xFFFFFF" family="Arial">Además, el empleador tiene la obligación de preavisar.</text>
+     </p>
+     <p size="11" italic="false" bold="false" background="0xFFFFFF" family="Arial">
+      <text size="11" italic="false" bold="true" background="0xFFFFFF" family="Arial">Si el trabajador está en período de prueba, tiene derecho a un preaviso de 15 días.  Si el trabajador tiene una antigüedad en el empleo menor a </text>
+      <target>
+       <answer>cinco</answer>
+       <optionList>
+        <option>cinco</option>
+        <option>tres</option>
+        <option>diez</option>
+       </optionList>
+       <text>cinco</text>
+      </target>
+      <text size="11" italic="false" bold="true" background="0xFFFFFF" family="Arial"> años, le corresponde un preaviso de un mes y si la antigüedad es maypor o igual a cinco años, le corresponden </text>
+      <target>
+       <answer>dos</answer>
+       <optionList>
+        <option>dos</option>
+        <option>tres</option>
+        <option>seis</option>
+       </optionList>
+       <text>dos</text>
+      </target>
+      <text size="11" italic="false" bold="true" background="0xFFFFFF" family="Arial"> meses de preaviso.  El trabajador también está </text>
+      <target>
+       <answer>obligado</answer>
+       <optionList>
+        <option>obligado</option>
+        <option>eximido</option>
+       </optionList>
+       <text>obligado</text>
+      </target>
+      <text size="11" italic="false" bold="true" background="0xFFFFFF" family="Arial"> a avisar con quince días de anticipación su decisión de renunciar al empleo.</text>
+     </p>
+     <p size="11" italic="false" bold="false" background="0xFFFFFF" family="Arial">
+      <text size="11" italic="false" bold="true" background="0xFFFFFF" family="Arial">La parte que omita el preaviso - sea empleador o empleado - debe abonar a la otra parte una indemnización sustitutiva de </text>
+      <text size="11" italic="false" bold="false" background="0xFFFFFF" family="Arial">preaviso</text>
+      <text size="11" italic="false" bold="true" background="0xFFFFFF" family="Arial"> equivalente a la </text>
+      <target>
+       <answer>remuneración</answer>
+       <optionList>
+        <option>remuneración</option>
+        <option>mitad de la remuneración</option>
+       </optionList>
+       <text>remuneración</text>
+      </target>
+      <text size="11" italic="false" bold="true" background="0xFFFFFF" family="Arial"> que le correspondería cobrar al trabajador durante los plazos señalados anteriormente.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.Identify" name="Identificar conceptos que no son causa directa de extinción" code="" type="identifyWords">
+   <description />
+   <messages>
+    <cell border="true" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x6633FF" />
+     </style>
+     <p>Identifica los conceptos que no son causa de extinción de contrato laboral</p>
+    </cell>
+    <cell border="true" type="final">
+     <style>
+      <color background="0x33FFCC" />
+     </style>
+     <p>Muy bien</p>
+    </cell>
+    <cell border="true" type="finalError">
+     <style>
+      <color background="0xFF0033" />
+     </style>
+     <p>Tus errores aparecen en rojo</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x6600CC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00FFCC" border="true" />
+   </settings>
+   <checkButton>Autoevaluate</checkButton>
+   <document>
+    <style name="default" size="11" italic="false" bold="false" tabWidth="12" background="0xFFFFFF" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial">
+      <text size="12" bold="true" family="Arial">Identifica cuáles de los siguientes conceptos NO son causa directa de extinción del contrato de trabajo:</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text size="12" bold="true" family="Arial">Abandono de trabajo</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text size="12" bold="true" family="Arial">Renuncia</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text size="12" bold="true" family="Arial">Despido con causa</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <target>Embarazo</target>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <target>Suspensión</target>
+      <text size="12" bold="true" family="Arial"> por indisciplina</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text size="12" bold="true" family="Arial">Despido sin causa</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text size="12" bold="true" family="Arial">Quiebra </text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text size="12" bold="true" family="Arial">Quiebra fraudulenta</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text size="12" bold="true" family="Arial">Fuerza mayor</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <target>matrimonio</target>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <target>Nacimiento</target>
+      <text size="12" bold="true" family="Arial"> de hijo con Síndrome de Down</text>
+     </p>
+    </section>
+   </document>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Información sobre las actividades" code="">
+   <description>
+    <p>Actividades interactivas sobre formas de extinción de contrato de trabajo</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>El contrato laboral no solo se extingue por Despido</p>
+    </cell>
+    <cell border="false" type="final">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <color background="0x5A006BA7" />
+     </style>
+     <p>Actividades realizadas</p>
+    </cell>
+    <cell border="true" type="finalError">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <color background="0xFFC0C0" />
+     </style>
+     <p>Volvé a realizar las actividades</p>
+    </cell>
+   </messages>
+   <settings margin="9" report="false">
+    <container bgColor="0xFF2300">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="62" cycles="6" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF00" transparent="true" border="true">
+     <gradient source="0x000000" dest="0xFFFFFF" angle="0" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="despido injustificado.jpg">
+    <style borderStroke="4.4" markerStroke="2.7">
+     <color foreground="0x6600FF" background="0xFFFF66" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell txtAlign="middle,top" imgAlign="left,middle" avoidOverlapping="true" border="true">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xFF0033" />
+      <gradient source="0x000000" dest="0xFFFFFF" angle="0" cycles="8" />
+     </style>
+     <media type="RECORD_AUDIO" level="1" buffer="1" length="3" autoStart="true" />
+     <p>Extinción del contrato de trabajo</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@textGrid.WordSearch" name="Sopa de letras" code="">
+   <description>
+    <p>Hallar conceptos causantes de extinción de contrato laboral</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Encuentra causas de extinción del contrato laboral</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Excelente!</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>Probá de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFF3366">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0066FF" border="true" />
+    <skin file="@orange.xml" />
+   </settings>
+   <textGrid rows="20" columns="20" cellWidth="20.0" cellHeight="20.0" border="true">
+    <style borderStroke="1.7" markerStroke="2.7">
+     <color background="0xFF0000" />
+    </style>
+    <text>
+     <row>ABC************M**JF</row>
+     <row>DEFRENUNCIA****U**K*</row>
+     <row>GHI************T**M*</row>
+     <row>MUTUOACUERDO***U**L*</row>
+     <row>***DESPIDO*****O**E*</row>
+     <row>***************A**C*</row>
+     <row>INHABILITACION*C**H*</row>
+     <row>******************J*</row>
+     <row>*FALLECIMIENTO****I*</row>
+     <row>******************E*</row>
+     <row>*ABANDONOTRABAJO**N*</row>
+     <row>RESCINCIONMATERNIDAD</row>
+     <row>******************O*</row>
+     <row>********************</row>
+     <row>********************</row>
+     <row>********************</row>
+     <row>********************</row>
+     <row>********************</row>
+     <row>********************</row>
+     <row>********************</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">RESCINCIONMATERNIDAD</clue>
+    <clue id="1">RENUNCIA</clue>
+    <clue id="2">DESPIDO</clue>
+    <clue id="3">FALLECIMIENTO</clue>
+    <clue id="4">INHABILITACION</clue>
+    <clue id="5">ABANDONOTRABAJO</clue>
+    <clue id="6">MUTUOACUERDO</clue>
+   </clues>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="despido" file="despido injustificado.jpg" />
+  <media name="despido injustificado.jpg" file="despido injustificado.jpg" />
+  <media name="embarazo.jpg" file="embarazo.jpg" />
+  <media name="enfermo.jpg" file="enfermo.jpg" />
+  <media name="fallecimiento.jpg" file="fallecimiento.jpg" />
+  <media name="renuncia.jpg" file="renuncia.jpg" />
+  <media name="signopregunta.jpg" file="signopregunta.jpg" />
+  <media name="casamiento.png" file="casamiento.png" />
+  <media name="quiebra.png" file="quiebra.png" />
+ </mediaBag>
+</JClicProject>
+

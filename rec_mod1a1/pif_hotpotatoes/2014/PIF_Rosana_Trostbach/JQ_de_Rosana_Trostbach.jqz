@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jquiz-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>trostbach</dc:creator>
+    <dc:title>Historia del Libro</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>6</version>
+
+<data>
+<title>Historia del Libro</title>
+
+<timer><seconds>900</seconds><include-timer>1</include-timer></timer>
+
+<reading>
+<include-reading>1</include-reading>
+<reading-title></reading-title>
+<reading-text>&amp;#x003C;img src=&quot;monje leyendo.gif&quot; alt=&quot;monje leyendo.gif&quot; title=&quot;monje leyendo&quot; width=&quot;209&quot; height=&quot;207&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</reading-text>
+
+</reading>
+
+<questions><question-record><question>&amp;#x00BF;Cu&amp;#x00E1;l era la escritura que se utilizaba en el antiguo Egipto?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>Jerogl&amp;#x00ED;fico - Sir&amp;#x00ED;aco - Dem&amp;#x00F3;tico</text><feedback>Incorrecto</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Jerogl&amp;#x00ED;fico - Hier&amp;#x00E1;tico - Dem&amp;#x00F3;tico</text><feedback>Muy Bien!!!</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Hebreo - Griego - Jerogl&amp;#x00ED;fico</text><feedback>Incorrecto</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>&amp;#x00BF;A qu&amp;#x00E9; se denomina xilograf&amp;#x00ED;a?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>Grabar en metal</text><feedback>Incorrecto</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Grabar en piedra</text><feedback>Incorrecto</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Grabar en madera</text><feedback>Muy Bien!!!</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>&amp;#x00BF;A qu&amp;#x00E9; se designaba &quot;Casas de la vida&quot; en Egipto?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>Bibliotecas</text><feedback>Muy Bien!!!</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Santuarios</text><feedback>Incorrecto</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Pir&amp;#x00E1;mides</text><feedback>Incorrecto</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>&amp;#x00BF;Qu&amp;#x00E9; era un amanuense?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>4</question-type><answers><answer><text>Un artesano</text><feedback>Incorrecto</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Un escriba</text><feedback>Muy Bien!!!</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Un m&amp;#x00FA;sico</text><feedback>Incorrecto</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Un copista</text><feedback>Muy Bien!!!</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers><must-select-all>1</must-select-all></question-record><question-record><question>&amp;#x00BF;Con qu&amp;#x00E9; material se elaboraba el pergamino?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>4</question-type><answers><answer><text>Hoja de palmera</text><feedback>Incorrecto</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Cuero de animal</text><feedback>Muy Bien!!!</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Piel de animal</text><feedback>Muy Bien!!!</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Lino</text><feedback>Incorrecto</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers><must-select-all>1</must-select-all></question-record><question-record><question>&amp;#x00BF;Qu&amp;#x00E9; es un C&amp;#x00F3;dice?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>Reliquia</text><feedback>Incorrecto</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Manuscrito</text><feedback>Muy Bien!!!</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Vela sagrada</text><feedback>Incorrecto</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Vaso funerario</text><feedback>Incorrecto</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>En China, &amp;#x00BF;qu&amp;#x00E9; materiales empleaban para la escritura?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>4</question-type><answers><answer><text>Concha de tortuga</text><feedback>Muy Bien!!!</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>C&amp;#x00E1;scara de arroz</text><feedback>Incorrecto</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Corteza de &amp;#x00E1;rbol</text><feedback>Incorrecto</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Ca&amp;#x00F1;a de bamb&amp;#x00FA;</text><feedback>Muy Bien!!!</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers><must-select-all>1</must-select-all></question-record><question-record><question>Los papiros griegos m&amp;#x00E1;s antiguos, &amp;#x00BF;de qu&amp;#x00E9; siglo proceden? </question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>VI ac</text><feedback>Incorrecto</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>IV ac</text><feedback>Muy Bien!!!</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>I ac</text><feedback>Incorrecto</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>III ac</text><feedback>Incorrecto</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>T&apos;Sai Lun invent&amp;#x00F3; el papel, &amp;#x00BF;qu&amp;#x00E9; elementos emple&amp;#x00F3; como materia prima?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>4</question-type><answers><answer><text>Fibra de morera</text><feedback>Muy Bien!!!</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Seda</text><feedback>Incorrecto</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Viejas redes de pesca</text><feedback>Muy Bien!!!</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Raices de &amp;#x00E1;rboles</text><feedback>Incorrecto</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers><must-select-all>1</must-select-all></question-record><question-record><question>&amp;#x00BF;Qu&amp;#x00E9; orden religiosa dedic&amp;#x00F3; gran atenci&amp;#x00F3;n a los libros?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>Franciscanos</text><feedback>Incorrecto</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Jesuitas</text><feedback>Incorrecto</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Salesianos</text><feedback>Incorrecto</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Benedictinos</text><feedback>Muy Bien!!!</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record></questions>
+</data>
+
+<hotpot-config-file>
+<jquiz>
+<exercise-subtitle>Escritura - Libros - Bibliotecas</exercise-subtitle>
+<instructions>Selecciona las respuestas correctas para cada pregunta pulsando sobre la o las letras correspondientes.</instructions>
+<guess-correct>Correcto!</guess-correct>
+<guess-incorrect>Intento incorrecto:</guess-incorrect>
+<partly-incorrect>Su respuesta es parcialmente incorrecta:</partly-incorrect>
+<enter-a-guess>Por favor introduzca una respuesta</enter-a-guess>
+<next-correct-letter></next-correct-letter>
+<correct-answers>Respuestas correctas:</correct-answers>
+<show-answer-caption>Mostrar respuesta</show-answer-caption>
+<include-hint>1</include-hint>
+<include-show-answer>1</include-show-answer>
+<next-ex-url>nextpage.htm</next-ex-url>
+<send-email>0</send-email>
+<continuous-scoring>1</continuous-scoring>
+<show-correct-first-time>1</show-correct-first-time>
+<shuffle-questions>0</shuffle-questions>
+<shuffle-answers>0</shuffle-answers>
+<show-limited-questions>0</show-limited-questions>
+<questions-to-show>2</questions-to-show>
+<short-answer-tries-on-hybrid-q>2</short-answer-tries-on-hybrid-q>
+<separate-javascript-file>0</separate-javascript-file>
+<case-sensitive>0</case-sensitive>
+<include-keypad>0</include-keypad>
+</jquiz>
+
+<global>
+<your-score-is>Su puntuaci&amp;#x00F3;n es: </your-score-is>
+<correct-indicator>:-)</correct-indicator>
+<incorrect-indicator>X</incorrect-indicator>
+<correct-first-time>Respuestas correctas al primer intento:</correct-first-time>
+<completed-so-far>Preguntas contestadas hasta este punto:</completed-so-far>
+<exercise-completed>Ejercicio completado.</exercise-completed>
+<keypad-characters></keypad-characters>
+<times-up>Tu tiempo ha finalizado!</times-up>
+<next-ex-caption>=&amp;#x003E;</next-ex-caption>
+<back-caption>&amp;#x003C;=</back-caption>
+<contents-caption>Index</contents-caption>
+<include-next-ex>1</include-next-ex>
+<include-contents>1</include-contents>
+<include-back>0</include-back>
+<contents-url>contents.htm</contents-url>
+<graphic-url></graphic-url>
+<font-face>Geneva,Arial,sans-serif</font-face>
+<font-size>small</font-size>
+<page-bg-color>#0080ff</page-bg-color>
+<title-color>#ff0000</title-color>
+<ex-bg-color>#ffff00</ex-bg-color>
+<text-color>#0000ff</text-color>
+<link-color>#ff8000</link-color>
+<vlink-color>#ff8000</vlink-color>
+<nav-bar-color>#000000</nav-bar-color>
+<formmail-url>http://yourserver.com/cgi-bin/FormMail.pl</formmail-url>
+<email>you@yourserver.com</email>
+<name-please>Please enter your name:</name-please>
+<user-string-1>one</user-string-1>
+<user-string-2>two</user-string-2>
+<user-string-3>three</user-string-3>
+<header-code></header-code>
+<correct-first-time>Respuestas correctas al primer intento:</correct-first-time>
+<check-caption>Verificar</check-caption>
+<ok-caption>Correcto</ok-caption>
+<next-q-caption>=&amp;#x003E;</next-q-caption>
+<last-q-caption>&amp;#x003C;=</last-q-caption>
+<hint-caption>Pista</hint-caption>
+<show-all-questions-caption>Mostrar todas las preguntas</show-all-questions-caption>
+<show-one-by-one-caption>Mostrar preguntas de una en una</show-one-by-one-caption>
+<show-also-correct>1</show-also-correct>
+<process-for-rtl>0</process-for-rtl>
+<include-scorm-12>0</include-scorm-12>
+</global>
+</hotpot-config-file>
+</hotpot-jquiz-file>

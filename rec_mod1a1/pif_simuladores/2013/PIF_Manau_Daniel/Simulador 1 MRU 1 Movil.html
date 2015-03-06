@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>TITULO</title>
+</head>
+<body BGCOLOR="ffffff">
+
+<p align="left">
+<applet name="Tarea 2" width=800 height=600
+        code="descinst.Descartes.class"
+        codebase="./"
+        archive="descinst.jar,http://recursostic.educacion.es/descartes/web/plugin/descinst.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="800x600">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="Tarea 2">
+   <param name="Versi&oacute;n" value="4.41, 2010-12-16">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=s&iacute; config=s&iacute; inicio=s&iacute; limpiar=s&iacute;">
+   <param name="E_00" value="tipo='R2' id='Gr&aacute;fico1' x='0' y='+160' ancho='50%' alto='70%' O.x='-180' O.y='+170' despl_imagen='mosaico' fondo='rosa' red='gris' red10='grisObscuro' ejes='negro' texto='rosa' n&uacute;meros='s&iacute;' eje-x='T' eje-y='E'">
+   <param name="E_01" value="tipo='R2' id='Gr&aacute;ficp2' x='400' y='+160' ancho='50%' alto='70%' O.x='-180' despl_imagen='expand.' fondo='ffcf00' red='gris' red10='negro' ejes='negro' texto='rosa' n&uacute;meros='s&iacute;' eje-x='T' eje-y='V'">
+   <param name="E_02" value="tipo='R2' id='Pista' x='0' y='0' ancho='100%' alto='30%' O.x='-380' O.y='60' despl_imagen='centrada' fondo='blanco' red='no' red10='no' ejes='negro' texto='rosa' n&uacute;meros='s&iacute;'">
+   <param name="C_00" value="id='Gr&aacute;fico1.escala' tipo='num&eacute;rico' regi&oacute;n='interior' espacio='Gr&aacute;fico1' nombre='Escala' expresi&oacute;n='(300,0)' valor='10' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_01" value="id='Gr&aacute;ficp2.escala' tipo='num&eacute;rico' regi&oacute;n='interior' espacio='Gr&aacute;ficp2' nombre='Escala' expresi&oacute;n='(300,0)' valor='50' incr='10' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_02" value="id='Pista.escala' tipo='num&eacute;rico' regi&oacute;n='interior' espacio='Pista' nombre='Escala' expresi&oacute;n='(700,0)' valor='10' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_03" value="id='Vel.Auto' tipo='num&eacute;rico' regi&oacute;n='norte' espacio='Gr&aacute;fico1' nombre='Vel.Auto' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_00" value="id='pi' constante='s&iacute;' expresi&oacute;n='3.1416' evaluar='una-sola-vez'">
+   <param name="A_01" value="id='INICIO' algoritmo='s&iacute;' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='CALCULOS' algoritmo='s&iacute;' evaluar='siempre'">
+   <param name="A_03" value="id='Espacio(t)' expresi&oacute;n='Vel.Auto*t'">
+   <param name="A_04" value="id='Velocidad(t)' expresi&oacute;n='Vel.Auto'">
+   <param name="G_00" value="espacio='Pista' tipo='imagen' expresi&oacute;n='(Espacio(t),8)' archivo='Img PIF/Auto 1.GIF'">
+   <param name="G_01" value="espacio='Gr&aacute;fico1' tipo='ecuaci&oacute;n' expresi&oacute;n='y=Vel.Auto*x' ancho='3' visible='s&iacute;'">
+   <param name="G_02" value="espacio='Gr&aacute;ficp2' tipo='ecuaci&oacute;n' expresi&oacute;n='y=Vel.Auto' ancho='3' visible='s&iacute;'">
+   <param name="G_03" value="espacio='Pista' tipo='texto' expresi&oacute;n='[600,30]' texto='E[Espacio(t)],' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_04" value="espacio='Pista' tipo='texto' expresi&oacute;n='[660,30]' texto='V[Velocidad(vb)]' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_05" value="espacio='Gr&aacute;fico1' tipo='punto' expresi&oacute;n='(t,Espacio(t))' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='5'">
+   <param name="Animaci&oacute;n" value="controles='s&iacute;' auto='no' inicio='t=0;' hacer='t=t+0.5' mientras='t&lt;30'">
+<font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+</applet></p>
+
+</body>
+</html>

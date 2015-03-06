@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jquiz-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>CLAUDIA VENANCIO</dc:creator>
+    <dc:title>Lana&amp;#x003C;a style=&quot;cursor: pointer; text-decoration: underline;&quot; onclick=&quot;window.open(&apos;http://www.youtube.com/watch?v=Jei_6mgyS1k&apos;);return false;&quot;&amp;#x003E;Enlace para mirar Video&amp;#x003C;/a&amp;#x003E;</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>6</version>
+
+<data>
+<title>Lana&amp;#x003C;a style=&quot;cursor: pointer; text-decoration: underline;&quot; onclick=&quot;window.open(&apos;http://www.youtube.com/watch?v=Jei_6mgyS1k&apos;);return false;&quot;&amp;#x003E;Enlace para mirar Video&amp;#x003C;/a&amp;#x003E;</title>
+
+<timer><seconds>1200</seconds><include-timer>1</include-timer></timer>
+
+<reading>
+<include-reading>0</include-reading>
+<reading-title></reading-title>
+<reading-text></reading-text>
+
+</reading>
+
+<questions><question-record><question>Que es la Lana?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>2</question-type><answers><answer><text>Fibra textil organica, producida por la oveja</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Como se denomina la cosecha de la lana?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>2</question-type><answers><answer><text>Esquila</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>tiempo que ha transcurrido entre esquila</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>4</question-type><answers><answer><text>12 meses</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>24 meses</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>18 meses</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>2 meses</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers><must-select-all>1</must-select-all></question-record><question-record><question>Cuales son los pasos desde el productor a la exportacion?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>4</question-type><answers><answer><text>productor-lavado-barraca-bobinado-secado-cardado</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>productor-barraca-reclacificacion-lavado-secado-cardado-peinado-bobinado-exportacion</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>productor-barraca-secado-lavado-cardado-peinado-bobinado-exportacion</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers><must-select-all>1</must-select-all></question-record></questions>
+</data>
+
+<hotpot-config-file>
+<jquiz>
+<exercise-subtitle>Preguntas</exercise-subtitle>
+<instructions>Mirar el video y responder las siguientes preguntas</instructions>
+<guess-correct>intento correcto</guess-correct>
+<guess-incorrect>intento incorrecto</guess-incorrect>
+<partly-incorrect>Su respuesta es parcialmente incorrecta</partly-incorrect>
+<enter-a-guess>Por favor introduzca una respuesta</enter-a-guess>
+<next-correct-letter>Siguiente letra correcta de la respuesta </next-correct-letter>
+<correct-answers>Respuesta correctas</correct-answers>
+<show-answer-caption>Mostrar Respuesta</show-answer-caption>
+<include-hint>1</include-hint>
+<include-show-answer>1</include-show-answer>
+<next-ex-url>nextpage.htm</next-ex-url>
+<send-email>0</send-email>
+<continuous-scoring>1</continuous-scoring>
+<show-correct-first-time>1</show-correct-first-time>
+<shuffle-questions>1</shuffle-questions>
+<shuffle-answers>1</shuffle-answers>
+<show-limited-questions>0</show-limited-questions>
+<questions-to-show>2</questions-to-show>
+<short-answer-tries-on-hybrid-q>2</short-answer-tries-on-hybrid-q>
+<separate-javascript-file>0</separate-javascript-file>
+<case-sensitive>0</case-sensitive>
+<include-keypad>0</include-keypad>
+</jquiz>
+
+<global>
+<your-score-is>Su puntuaci&amp;#x00F3;n es</your-score-is>
+<correct-indicator>Correcto</correct-indicator>
+<incorrect-indicator>Incorrecto</incorrect-indicator>
+<correct-first-time>Respuesta correctas al primer intento: </correct-first-time>
+<completed-so-far>pregunta contestadas hasta este punto:</completed-so-far>
+<exercise-completed>Ejercicio completado</exercise-completed>
+<keypad-characters></keypad-characters>
+<times-up>Su tiempo ha terminado</times-up>
+<next-ex-caption>Siguiente ejercicio</next-ex-caption>
+<back-caption>Atras</back-caption>
+<contents-caption>Ir al contenido</contents-caption>
+<include-next-ex>1</include-next-ex>
+<include-contents>1</include-contents>
+<include-back>0</include-back>
+<contents-url>contents.htm</contents-url>
+<graphic-url></graphic-url>
+<font-face>Calibri,Geneva,Arial,sans-serif</font-face>
+<font-size>small</font-size>
+<page-bg-color>#80ff80</page-bg-color>
+<title-color>#000000</title-color>
+<ex-bg-color>#b9ffb9</ex-bg-color>
+<text-color>#000000</text-color>
+<link-color>#0000FF</link-color>
+<vlink-color>#0000CC</vlink-color>
+<nav-bar-color>#008000</nav-bar-color>
+<formmail-url>http://yourserver.com/cgi-bin/FormMail.pl</formmail-url>
+<email>you@yourserver.com</email>
+<name-please>Please enter your name:</name-please>
+<user-string-1>one</user-string-1>
+<user-string-2>two</user-string-2>
+<user-string-3>three</user-string-3>
+<header-code></header-code>
+<correct-first-time>Respuesta correctas al primer intento: </correct-first-time>
+<check-caption>Comprobar respuesta</check-caption>
+<ok-caption>OK</ok-caption>
+<next-q-caption>Siguiente pregunta</next-q-caption>
+<last-q-caption>Pregunta anterior</last-q-caption>
+<hint-caption>Pista</hint-caption>
+<show-all-questions-caption>Mostrar todas las preguntas  </show-all-questions-caption>
+<show-one-by-one-caption>Mostrar preguntas de una en una</show-one-by-one-caption>
+<show-also-correct>1</show-also-correct>
+<process-for-rtl>0</process-for-rtl>
+<include-scorm-12>0</include-scorm-12>
+</global>
+</hotpot-config-file>
+</hotpot-jquiz-file>

@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+
+
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Bezier</title></head><body>
+<table style="text-align: left; width: 800px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: middle; height: 160px; background-color: black; text-align: center;"><img style="width: 800px; height: 158px;" alt="" src="imagenes/logo.jpg"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle; height: 42px; text-align: center; background-color: black;">
+      <table style="text-align: left; width: 804px; height: 32px; margin-left: auto; margin-right: auto; background-color: black;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; text-align: center;"><a href="index.html"><img onmouseover='src="imagenes/b01a.png"' onmouseout='src="imagenes/b01.png"' style="border: 0px solid ; width: 100px; height: 30px;" alt="" src="imagenes/b01.png"></a><br>
+            </td>
+            <td style="vertical-align: middle; text-align: center;"><a href="mano%20alzada.html"><img onmouseout='src="imagenes/b02.png"' style="border: 0px solid ; width: 150px; height: 30px;" onmouseover='src="imagenes/b02a.png"' alt="" src="imagenes/b02.png"></a><br>
+            </td>
+            <td style="vertical-align: middle; text-align: center;"><a href="polilinea.html"><img onmouseover='src="imagenes/b03a.png"' style="border: 0px solid ; width: 100px; height: 30px;" onmouseout='src="imagenes/b03.png"' onclick="" alt="" src="imagenes/b03.png"></a><br>
+            </td>
+            <td style="vertical-align: middle; text-align: center;"><a href="curva%20de%20tes%20puntos.html"><img onmouseover='src="imagenes/b04a.png"' style="border: 0px solid ; width: 200px; height: 30px;" onmouseout='src="imagenes/b04.png"' alt="" src="imagenes/b04.png"></a><br>
+            </td>
+            <td style="vertical-align: middle; text-align: center;"><a href="file:///C:/Users/Guillermo/Documents/Mis-sitios-web/Integradora/bezier.html"><img onmouseover='src="imagenes/b05a.png"' onmouseout='src="imagenes/b05.png"' style="border: 0px solid ; width: 100px; height: 30px;" alt="" src="imagenes/b05.png"></a><br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; height: 179px; background-color: rgb(204, 204, 204);">
+      <div style="text-align: center;">
+
+      </div><br>
+<p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;">
+
+</p>
+      <h1 style="text-align: left; margin-left: 40px;"><span style="font-weight: normal;" lang="ES"><span style="color: rgb(204, 0, 0); font-weight: bold;"><a name="Las_Curvas_según_Bézier"></a>Las
+Curvas según Bézier<a href="#Como_practica_realize_el_siguiente"><img style="border: 0px solid ; width: 100px; height: 55px;" onmouseover='src="imagenes/estatico.gif"' onmouseout='src="imagenes/botonprac.gif"' alt="" src="imagenes/botonprac.gif" align="top" hspace="130"></a></span><o:p></o:p></span></h1>
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><span lang="ES">Las 'curvas de Bézier' pueden tener forma recta
+o realmente curva; algunos la denominan como 'líneas de Bézier'. La forma de
+una curva o línea está controlada por la posición de sus nodos y sus puntos de
+control.<o:p></o:p></span></big></p>
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><b><span lang="ES">Nodo:</span></b><span lang="ES"> Un nodo no es
+más que un punto en el espacio que sirve para unir el principio y el final de
+un trayecto. Para crear cualquier trayecto necesitamos como mínimo 2 nodos.
+Para crearlo basta hacer clic en la posición deseada.<o:p></o:p></span></big></p>
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><b><span lang="ES">Trayecto:</span></b><span lang="ES"> es la
+línea recta o curva formada por la unión de dos nodos.<o:p></o:p></span></big></p>
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><b><span lang="ES">Puntos de control:</span></b><span lang="ES">
+cada nodo tiene por lo menos un punto de control, que funciona a modo de
+palanca, manecilla o manejador y permite modificar el trayecto respectivo.<o:p></o:p></span></big></p>
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><b><span lang="ES">Curva:</span></b><span lang="ES"> es la suma de
+todos los trayectos necesarios para crear una forma y puede estar constituida
+por dos o muchísimos nodos. <o:p></o:p></span></big></p>
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><span style=""><img style="width: 261px; height: 279px;" alt="" src="imagenes/be01.png"><br>
+</span><span lang="ES"></span></big></p>
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><b><span lang="ES">Lo Básico: Crear líneas rectas<o:p></o:p></span></b></big></p>
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><span lang="ES">El uso más sencillo de la herramienta Bézier es
+la creación de líneas rectas, para ello sólo basta hacer clic donde queremos
+iniciar el trayecto y arrastrando sin presionar el ratón, volvemos a hacer clic
+donde terminará el trayecto.<o:p></o:p></span></big></p>
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><span lang="ES">- Usando la <b>tecla CTRL</b> restringimos los
+trayectos para que sean perfectamente horizontales, verticales o diagonales.<o:p></o:p></span></big></p>
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><span style=""><img style="width: 214px; height: 166px;" alt="" src="imagenes/be02.png"><br>
+</span><span lang="ES"><o:p></o:p></span></big></p>
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><span lang="ES">- Para terminar un trayecto, presionamos la
+barra espaciadora.<br>
+- Para volver a la herramienta Bézier y crear un trayecto distinto, presionamos
+nuevamente la barra espaciadora.<o:p></o:p></span></big></p>
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><span lang="ES">A continuación nos ejercitaremos en el arte de
+crear y manipular curvas, trayectos y nodos de la mano de las herramientas
+BÉZIER Y FORMA, creando simples números como el ejemplo:<o:p></o:p></span></big></p>
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><span style=""><img style="width: 276px; height: 98px;" alt="" src="imagenes/be03.png"><br>
+</span><span lang="ES"><o:p></o:p></span></big></p>
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><b><span lang="ES">Lo intermedio: Crear líneas rectas y luego
+curvar<o:p></o:p></span></b></big></p>
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><span lang="ES">El modo más sencillo de manipular curvas
+consiste en crear líneas curvas rectas (aunque suene contradictorio) como vimos
+en el ejemplo anterior; luego podemos usar el arsenal de posibilidades que nos
+brinda la herramienta forma. Con esta técnica los números serán primeramente
+rectos, así:<o:p></o:p></span></big></p>
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><span style=""><img style="width: 350px; height: 110px;" alt="" src="imagenes/be04.png"><br>
+</span><span lang="ES"><o:p></o:p></span></big></p>
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><span lang="ES">- Para modificar la curva seleccionamos todos
+los nodos y haciendo clic el comando de la barra de Propiedades <b>Convertir
+línea en curva</b> ya tenemos la opción de modificar los trayectos como curvas.
+Pero por ahora, todos los nodos son asimétricos.<o:p></o:p></span></big></p>
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><span lang="ES">- Seleccionamos los nodos que queremos cambiar a
+<b>Uniforme</b> o <b>Simétrico</b> para suavizar las curvas.<o:p></o:p></span></big></p>
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><span lang="ES">- Modificamos la posición de algunos nodos a
+para darle la forma deseada.<br>
+- Manipulando los puntos de control mejoramos la forma.<o:p></o:p></span></big></p>
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><span style=""><img style="width: 276px; height: 122px;" alt="" src="imagenes/be05.png"><br>
+</span><span lang="ES"><o:p></o:p></span></big></p>
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><span lang="ES">Para seleccionar nodos debemos tener activa la
+herramienta Forma. Los podemos seleccionar uno por uno haciendo clic sobre
+ellos presionando MAYÚS o con una marquesina sobre todos los nodos deseados. En
+la barra de Propiedades tenemos la opción de seleccionar todos los nodos
+automáticamente con <i><span style="font-weight: bold;">Seleccionar todos los nodos</span>.</i></span></big></p>
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><br>
+      <big><span lang="ES"><i> </i><o:p></o:p></span></big></p>
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><b><span lang="ES">Lo avanzado: Crear rectas o Curvas sobre la
+marcha<o:p></o:p></span></b></big></p>
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><span lang="ES">Esta técnica no significa que sea la mejor ni la
+peor, pero requiere más dominio y práctica. A algunos les va muy bien usarla y
+a otros les resulta incómoda. Consiste en dibujar las curvas en un solo paso,
+sin parar, alternando entre líneas rectas y curvas. En todo caso, al final
+siempre tendremos la posibilidad de modificarlas con la herramienta Forma. La
+diferencia es que haciendo clic y arrastrando creamos el nodo y manipulamos los
+puntos de control a la vez.<o:p></o:p></span></big></p>
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><span lang="ES">- Un clic y un arrastre crea un nodo y sus
+puntos de control.<br>
+- Para cambiar la dirección del trayecto sobre la marcha, o sea, crear un nodo
+asimétrico usamos la <b>tecla C</b> y arrastramos en el sentido deseado.<o:p></o:p></span></big></p>
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><span lang="ES">En el ejemplo, el círculo rojo con flecha indica
+dónde se crea el nodo y hacia dónde se arrastran sus puntos de control para
+crear la curva.<o:p></o:p></span></big></p>
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><span style=""><img style="width: 201px; height: 186px;" alt="" src="imagenes/be06.png"><br>
+</span></big></p>
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><br>
+      <big><span style=""></span></big></p>
+      
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><span lang="ES"><o:p>&nbsp;</o:p></span></big></p>
+
+
+      <p style="margin: 6pt 0cm 6pt 40px;"><big><b><span lang="ES">Calcar imágenes: </span></b><strong><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;" lang="ES">Utilizando una
+fotografía como base para realizar la ilustración.</span></strong><span lang="ES"><o:p></o:p></span></big></p>
+
+
+      
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><span lang="ES">Calcar imágenes es una forma muy sencilla de
+dibujar curvas, pues nos permite guiarnos como si esta fuera una plantilla. La
+foto tiene ahora muchos colores y contrastes oscuros. Si copiamos directamente
+el contorno negro sobre la foto nuestra vista se cansará rápidamente. Por eso
+conviene reducir la intensidad de los colores hasta un grado que nos permita
+reconocer el objeto en la pantalla. Con el contorno negro y la herramienta mano
+alzada podemos ir dibujando por encima de la foto aclarada sin perjudicar tanto
+los ojos. <o:p></o:p></span></big></p>
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><span lang="ES">para poder dibujar tranquilamente sobre
+fotografías es necesario hacer clic sobre la fotografía con el botón derecho
+del ratón y seleccionar la opción Bloquear Objeto, de esto modo no se activará
+la vectorización automática y no se podrá mover la fotografía accidentalmente .
+Cuando ya no se necesite la fotografía de base vuelva a hacer clic con el botón
+derecho del ratón sobre la misma y seleccione la opción Desbloquear Objeto,
+para poder eliminarla.<o:p></o:p></span></big></p>
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><span lang="ES"><br>
+<span style="">&nbsp;</span>Lo esencial para trabajar así es crear
+los trayectos rectos para luego curvar.<o:p></o:p></span></big></p>
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><span lang="ES">- De preferencia debemos crear pocos nodos, para
+luego ir añadiéndolos a medida que necesitemos.<o:p></o:p></span></big></p>
+
+
+      
+
+
+      
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><span lang="ES">- Un paso importante aquí es modificar el tipo
+de nodo; como inicialmente todos son <b>Asimétricos</b> (esquinados)
+necesitamos suavizar algunos convirtiéndolos a <b>Uniforme</b>.</span></big></p>
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><span lang="ES">- Donde se
+requieren cambios bruscos de dirección la elección es obvia: <b>Simétrico.</b></span></big></p>
+<br>
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><br>
+      </p>
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><span><span style="background-color: rgb(255, 153, 0);"><a name="Como_practica_realize_el_siguiente"></a>Como practica realize el siguiente ejercicio:</span></span></big></p>
+      <br>
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><big><span><span style="background-color: rgb(255, 153, 0);"></span></span></big><img style="width: 380px; height: 600px;" alt="" src="imagenes/hombre.png" align="middle" hspace="180"></p>
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><br>
+      </p>
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><img style="width: 430px; height: 600px;" alt="" src="imagenes/mujer.png" align="middle" hspace="180"></p>
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><a href="#Las_Curvas_seg%FAn_B%E9zier"><img style="border: 0px solid ; width: 50px; height: 48px;" alt="" src="imagenes/arriba.gif" hspace="350" vspace="30"></a><br>
+
+      <big><span lang="ES"><b><o:p></o:p></b></span></big></p>
+
+
+
+
+      <p class="MsoNormal" style="margin: 6pt 0cm 6pt 40px;"><br>
+      <span><o:p></o:p></span></p>
+
+
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+</body></html>

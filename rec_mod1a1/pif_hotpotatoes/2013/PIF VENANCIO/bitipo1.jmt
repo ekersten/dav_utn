@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jmatch-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>CLAUDIA VENANCIO</dc:creator>
+    <dc:title>BIOTIPOS</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>6</version>
+
+<data>
+<title>BIOTIPOS</title>
+
+<timer><seconds>300</seconds><include-timer>1</include-timer></timer>
+
+<reading>
+<include-reading>0</include-reading>
+<reading-title>BIOTIPO OVINOS</reading-title>
+<reading-text>El conocimiento de los biotipos y de las razas nos permiten evaluar correctamente cual es el animal 
+ideal desde el punto de vista ecol&amp;#x00F3;gico y econ&amp;#x00F3;mico para cada medio.
+Se diferencian &amp;#x00E9;stos grandes grupos por sus caracter&amp;#x00ED;sticas morfo-fisiol&amp;#x00F3;gicas y de productividad, ubica 
+a los ovinos por sus aptitudes en diferentes tipos comerciales.</reading-text>
+
+</reading>
+
+<matching-exercise>
+<default-right-item></default-right-item>
+
+<pair>
+<left-item><text>Biotipo Carnicero</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>&amp;#x003C;img src=&quot;carnicero.jpg&quot; alt=&quot;carnicero.jpg&quot; title=&quot;carnicero&quot; width=&quot;160&quot; height=&quot;120&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>Biotipo Lanero</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>&amp;#x003C;img src=&quot;lanar.jpg&quot; alt=&quot;lanar.jpg&quot; title=&quot;lanar&quot; width=&quot;160&quot; height=&quot;120&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>Biotipo Doble Proposito</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>&amp;#x003C;img src=&quot;doble proposito.jpg&quot; alt=&quot;doble proposito.jpg&quot; title=&quot;doble proposito&quot; width=&quot;160&quot; height=&quot;120&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>Bitipo Lechero</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>&amp;#x003C;img src=&quot;lechero.jpg&quot; alt=&quot;lechero.jpg&quot; title=&quot;lechero&quot; width=&quot;160&quot; height=&quot;120&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</text>
+<fixed>0</fixed>
+</right-item></pair>
+</matching-exercise>
+</data>
+
+<hotpot-config-file>
+<jmatch>
+<exercise-subtitle>Clasificaci&amp;#x00F3;n de los distintos biotipos ovinos</exercise-subtitle>
+<instructions>Arrastrar las imagenes a su nombre</instructions>
+<next-ex-url>nextpage.htm</next-ex-url>
+<send-email>0</send-email>
+<show-limited-questions>0</show-limited-questions>
+<questions-to-show>1</questions-to-show>
+<shuffle-questions>0</shuffle-questions>
+<separate-javascript-file>0</separate-javascript-file>
+<next-caption>Siguiente</next-caption>
+<delete-caption>Borrar</delete-caption>
+<guess-correct>Intento incorrecto</guess-correct>
+<guess-incorrect>Intento incorrecto</guess-incorrect>
+</jmatch>
+
+<global>
+<your-score-is>Su puntuaci&amp;#x00F3;n es</your-score-is>
+<correct-indicator>Correcto</correct-indicator>
+<incorrect-indicator>Incorrecto</incorrect-indicator>
+<process-for-rtl>0</process-for-rtl>
+<include-scorm-12>0</include-scorm-12>
+<times-up>Su tiempo ha terminado</times-up>
+<check-caption>Comprobar respuesta</check-caption>
+<ok-caption>OK</ok-caption>
+<next-ex-caption>Siguiente ejercicio</next-ex-caption>
+<back-caption>Atras</back-caption>
+<contents-caption>Ir al contenido</contents-caption>
+<include-next-ex>1</include-next-ex>
+<include-contents>1</include-contents>
+<include-back>0</include-back>
+<contents-url>contents.htm</contents-url>
+<graphic-url></graphic-url>
+<font-face>Calibri,Geneva,Arial,sans-serif</font-face>
+<font-size>small</font-size>
+<page-bg-color>#80ff80</page-bg-color>
+<title-color>#000000</title-color>
+<ex-bg-color>#ff0080</ex-bg-color>
+<text-color>#000000</text-color>
+<link-color>#0000FF</link-color>
+<vlink-color>#0000CC</vlink-color>
+<nav-bar-color>#008000</nav-bar-color>
+<formmail-url>http://yourserver.com/cgi-bin/FormMail.pl</formmail-url>
+<email>you@yourserver.com</email>
+<name-please>Please enter your name:</name-please>
+<user-string-1>one</user-string-1>
+<user-string-2>two</user-string-2>
+<user-string-3>three</user-string-3>
+<header-code></header-code>
+</global>
+</hotpot-config-file>
+</hotpot-jmatch-file>

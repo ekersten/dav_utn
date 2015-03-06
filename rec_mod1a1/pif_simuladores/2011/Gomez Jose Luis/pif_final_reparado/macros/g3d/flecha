@@ -1,0 +1,8 @@
+tipo_de_macro=R3
+id='longitud' expresión='1' evaluar='una-sola-vez' constante='si'
+id='punta' expresión='0.1' evaluar='una-sola-vez' constante='si'
+id='rojo' expresión='1' evaluar='una-sola-vez' constante='si'
+id='verde' expresión='0.5' evaluar='una-sola-vez' constante='si'
+id='azul' expresión='0.25' evaluar='una-sola-vez' constante='si'
+tipo='segmento' expresión='(0,0,0)(0,longitud,0)' color='gris' cortar='si' 
+tipo='cono' expresión='Punta' rotini='(90,0,0)' posini='(0,longitud,0)' color='(rojo,verde,azul)' color_reverso='(rojo/2,verde/2,azul/2)' aristas='si' Nu='4' Nv='1' ancho='punta' largo='punta' alto='punta' 

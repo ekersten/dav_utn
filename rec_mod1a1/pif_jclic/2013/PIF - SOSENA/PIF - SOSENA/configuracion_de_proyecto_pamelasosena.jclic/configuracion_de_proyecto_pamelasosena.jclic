@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="configuracion_de_proyecto_pamelasosena" version="0.1.3">
+ <settings>
+  <title>Obras pictóricas y artistas del siglo XX</title>
+  <revision description="created" date="8/23/13" />
+  <author name="Pamela Sosena" mail="pamelasosena@gmail.com" rol="Docente" organization="EEST N°1" />
+  <language>español (es)</language>
+  <descriptors area="Arte" level="6° año" />
+  <skin file="@blue.xml" />
+ </settings>
+ <sequence>
+  <item id="Inicio" name="informacion general" delay="1">
+   <description>
+    <p>Inicio</p>
+   </description>
+   <jump tag="Identificar" id="forward">
+    <jump action="RETURN" threshold="80" id="upper" />
+   </jump>
+  </item>
+  <item id="Identificar" name="Rompecabeza Pintura del siglo XX" delay="1" />
+  <item id="Identificar" name="Juego de memoria de obras pictóricas del siglo XX" delay="1" />
+  <item id="identificar" name="Sopa de letras Vanguardias artísticas del siglo XX" delay="1" />
+  <item id="identificar" name="Actividad de Identificación" delay="1">
+   <jump tag="Explorar" id="forward" />
+  </item>
+  <item id="Explorar" name="Actividad de Exploración" delay="1">
+   <jump tag="Completar" id="forward">
+    <jump action="RETURN" threshold="80" id="upper" />
+   </jump>
+  </item>
+  <item id="Completar" name="rellenar agujeros 4 palabras" delay="1" />
+  <item id="Completar" name="rellenar agujeros con lista desplegable">
+   <jump action="EXIT" id="forward" />
+   <jump action="STOP" id="back" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@panels.Explore" name="Actividad de Exploración" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="18" bold="true" />
+      <color foreground="0xFFFFFF" background="0x000066" border="0x000066" />
+     </style>
+     <p>Haz un clic sobre cada maestro vanguardista para obtener información</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x000000">
+     <image name="preg.jpg" tiled="true" />
+     <counters time="true" actions="false" score="false" />
+    </container>
+    <window bgColor="0x000066" border="false" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="3" cellWidth="147.0" cellHeight="148.0" border="true" id="primary">
+    <style transparent="true" borderStroke="2.4" markerStroke="2.7">
+     <font family="Arial" size="17" bold="true" />
+     <color background="0x000066" border="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell id="0" avoidOverlapping="true" image="autoretrato.jpg">
+     <style transparent="true" borderStroke="2.3" markerStroke="5.0">
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0xFFFFFF" background="0x000066" border="0xFFFFFF" />
+     </style>
+     <media type="URL" level="1" file="http://elcubisme.wordpress.com/un-autor-picasso/" />
+     <p>PABLO PICASSO</p>
+    </cell>
+    <cell id="1" avoidOverlapping="true" image="andy_warhol_autorretrato-25247.jpg">
+     <style transparent="true" borderStroke="2.3" markerStroke="5.0">
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0xFFFFFF" background="0x000066" border="0xFFFFFF" />
+     </style>
+     <media type="URL" level="1" file="http://www.arteespana.com/andywarhol.htm" />
+     <p>ANDY WARHOL</p>
+    </cell>
+    <cell id="2" avoidOverlapping="true" image="images (1).jpg">
+     <style transparent="true" borderStroke="2.3" markerStroke="5.0">
+      <font family="Arial" size="22" bold="true" />
+      <color foreground="0xFFFFFF" background="0x000066" border="0xFFFFFF" />
+     </style>
+     <media type="URL" level="1" file="http://www.xn--salvadordal-ycb.com/" />
+     <p>SALVADOR DALI</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="3" cellWidth="156.0" cellHeight="195.0" border="true" id="secondary">
+    <style transparent="true" borderStroke="2.1" markerStroke="2.7">
+     <font family="Arial" size="17" bold="true" />
+     <color background="0x000000" border="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell avoidOverlapping="true" image="picasso-los-musico.jpg">
+     <style transparent="true" borderStroke="2.3" markerStroke="2.7">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x000066" border="0xFFFFFF" />
+     </style>
+     <p>CUBISMO</p>
+    </cell>
+    <cell avoidOverlapping="true" image="i01-andy-warhol-01-1-.jpg">
+     <style transparent="true" borderStroke="2.3" markerStroke="2.7">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x000066" border="0xFFFFFF" />
+     </style>
+     <p>ARTE POP</p>
+    </cell>
+    <cell avoidOverlapping="true" image="i01-la_persistencia_de_la_memoria.jpg">
+     <style transparent="true" borderStroke="2.3" markerStroke="2.7">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x000066" border="0xFFFFFF" />
+     </style>
+     <p>SURREALISMO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.Identify" name="Actividad de Identificación" code="">
+   <description />
+   <messages>
+    <cell avoidOverlapping="true" image="preg.jpg" type="initial">
+     <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x000066" shadow="0x006666" border="0x000066" />
+     </style>
+     <p>¿Qué obra pictórica no es un movimiento artístico del siglo XX ?</p>
+    </cell>
+    <cell avoidOverlapping="true" image="monet.jpg" type="final">
+     <style shadow="true">
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x000066" shadow="0x006666" border="0x000066" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Actividad de Exploración" />
+     <p>ES UNA PINTURA IMPRESIONISTA </p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://es.wikipedia.org/wiki/Impresionismo" report="true" reportActions="false">
+    <container bgColor="0x006666">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x000066" border="false" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="4" cellWidth="106.0" cellHeight="127.0" border="true" id="primary">
+    <style transparent="true" borderStroke="0.7" markerStroke="2.7">
+     <font family="Dialog" size="18" />
+     <color foreground="0xFFFFFF" background="0xFFFFFF" border="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell id="0" image="picasso-los-musico.jpg" />
+    <cell id="0" image="i01-la_persistencia_de_la_memoria.jpg" />
+    <cell id="0" image="i01-piet_mondrian_tableau_11_1921-25.jpg" />
+    <cell id="1" image="monet.jpg" />
+   </cells>
+   <cells rows="1" cols="4" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <p>IMPRESORA</p>
+    </cell>
+    <cell>
+     <p>MONITOR</p>
+    </cell>
+    <cell>
+     <p>MOUSE</p>
+    </cell>
+    <cell />
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="Juego de memoria de obras pictóricas del siglo XX" code="">
+   <description>
+    <p>Descubre a que movimiento artístico son las obras pictóricas </p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style shadow="true" borderStroke="0.7" markerStroke="2.7">
+      <font family="Dialog" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x3333FF" shadow="0x000066" />
+     </style>
+     <p>DESCUBRE A QUE MOVIMIENTO ARTISTICO CORRESPONDEN CADA UNA DE LAS OBRAS PICTORICAS</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Dialog" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x3333FF" shadow="0x000066" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Sopa de letras Vanguardias artísticas del siglo XX" />
+     <p>FELICITACIONES!</p>
+    </cell>
+    <cell type="finalError">
+     <style shadow="true">
+      <font family="Dialog" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x3333FF" shadow="0x000066" />
+     </style>
+     <p>UPS!</p>
+    </cell>
+   </messages>
+   <settings margin="3" infoUrl="http://vanguardias-sigloxx.blogspot.com.ar/" report="true" reportActions="false">
+    <helpWindow>
+     <p>lAS OBRAS PICTORICAS CORRESPONDEN A: CUBISMO, ARTE POP, SURREALISMO, ARTE ABSTRACTO, EXPRESIONISMO, FAUVISMO.</p>
+    </helpWindow>
+    <container bgColor="0x000066">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x3333FF" border="false" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="200.0" cellHeight="100.0" border="true" id="primary">
+    <style transparent="true" borderStroke="2.0" markerStroke="2.0">
+     <color background="0x3333FF" inactive="0x000066" border="0x000066" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="1907_picasso_demoiselles.jpg" />
+    <cell image="andy-warhol-01-1-.jpg" />
+    <cell image="el_grito_-_Munch_(1896)_expresionismo.jpg" />
+    <cell image="fauvismo-2.jpg" />
+    <cell image="la_persistencia_de_la_memoria.jpg" />
+    <cell image="piet_mondrian_tableau_11_1921-25.jpg" />
+   </cells>
+   <cells rows="2" cols="3" cellWidth="50.0" cellHeight="30.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell border="true">
+     <style shadow="true" transparent="true">
+      <font family="Dialog" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x3333FF" shadow="0x000066" />
+     </style>
+     <p>CUBISMO</p>
+    </cell>
+    <cell border="true">
+     <style shadow="true" transparent="true">
+      <font family="Dialog" size="20" />
+      <color foreground="0xFFFFFF" background="0x3333FF" shadow="0x000066" />
+     </style>
+     <p>ARTE POP</p>
+    </cell>
+    <cell border="true">
+     <style shadow="true" transparent="true">
+      <font family="Dialog" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x3333FF" shadow="0x000066" />
+     </style>
+     <p>EXPRESIONISMO</p>
+    </cell>
+    <cell border="true">
+     <style shadow="true" transparent="true">
+      <font family="Dialog" size="20" />
+      <color foreground="0xFFFFFF" background="0x3333FF" shadow="0x000066" />
+     </style>
+     <p>FAUVISMO</p>
+    </cell>
+    <cell border="true">
+     <style shadow="true" transparent="true">
+      <font family="Dialog" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x3333FF" shadow="0x000066" />
+     </style>
+     <p>SURREALISMO</p>
+    </cell>
+    <cell border="true">
+     <style shadow="true" transparent="true">
+      <font family="Dialog" size="20" />
+      <color foreground="0xFFFFFF" background="0x3333FF" shadow="0x000066" />
+     </style>
+     <p>ARTE ABSTRACTO</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="Rompecabeza Pintura del siglo XX" code="">
+   <description>
+    <p>Descifrar obra pictórica vanguardista del siglo XX</p>
+   </description>
+   <messages>
+    <cell avoidOverlapping="true" image="mujer que llora.jpg" type="initial">
+     <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Dialog" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x3333FF" shadow="0x000066" />
+     </style>
+     <p>REALIZA EL ARMADO DE LA PINTURA CUBISTA</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Dialog" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x3333FF" shadow="0x000066" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Juego de memoria de obras pictóricas del siglo XX" />
+     <p>LO LOGRASTE, FELICITACIONES!</p>
+    </cell>
+    <cell type="finalError">
+     <style shadow="true">
+      <font family="Dialog" size="20" bold="true" />
+      <color foreground="0xFFFFFF" background="0x3333FF" shadow="0x000066" />
+     </style>
+     <p>VUELVE A INTENTARLO</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://iesmh.edu.gva.es/unrayoquenocesa/2012/12/mujer-que-llora/" dragCells="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x000066">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x3333FF" transparent="true" border="false" />
+   </settings>
+   <cells rows="5" cols="3" border="true" image="mujer que llora.jpg">
+    <style borderStroke="2.4" markerStroke="2.7">
+     <color background="0x3333FF" inactive="0x3333FF" border="0xFFFFFF" />
+    </style>
+    <shaper class="@ClassicJigSaw" cols="3" rows="5" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="Sopa de letras Vanguardias artísticas del siglo XX" code="">
+   <description>
+    <p>Descifrar las vanguardias del siglo XX que se encuentran en la sopa de letras</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style shadow="true" borderStroke="0.7" markerStroke="2.0">
+      <font family="Dialog" size="20" bold="true" />
+      <color foreground="0xF0F0F0" background="0x3333FF" shadow="0x000066" />
+     </style>
+     <p>DESCUBRE LOS MOVIMIENTOS ARTISTICOS DEL SIGLO XX</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Dialog" size="20" bold="true" />
+      <color foreground="0xF0F0F0" background="0x3333FF" shadow="0x000066" />
+     </style>
+     <p>DESAFIO LOGRADO!</p>
+    </cell>
+    <cell type="finalError">
+     <style shadow="true">
+      <font family="Dialog" size="20" bold="true" />
+      <color foreground="0xF0F0F0" background="0x3333FF" shadow="0x000066" />
+     </style>
+     <p>VUELVE A INTENTARLO</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://www.slideshare.net/NU3V3/2-semestre-arte-sigloxx" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="2012_7_19_V4sxnM1UXZHyBaq9gLxO91.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x990000" border="false" />
+   </settings>
+   <textGrid rows="17" columns="11" cellWidth="40.0" cellHeight="30.0" border="true">
+    <style>
+     <font family="Dialog" size="20" bold="true" />
+     <color foreground="0xFFCC33" background="0x990000" border="0xFFFFFF" />
+    </style>
+    <text>
+     <row>SC***************</row>
+     <row>*U**ARTEABSTRACTO</row>
+     <row>*BR*R************</row>
+     <row>*I*RT************</row>
+     <row>*S**EXPRESIONISMO</row>
+     <row>*M**PA***********</row>
+     <row>*O**O*L**********</row>
+     <row>****P**I*********</row>
+     <row>********S********</row>
+     <row>*********M*******</row>
+     <row>***FAUVISMO******</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">SURREALISMO</clue>
+    <clue id="1">CUBISMO</clue>
+    <clue id="2">ARTEPOP</clue>
+    <clue id="3">ARTEABSTRACTO</clue>
+    <clue id="4">EXPRESIONISMO</clue>
+    <clue id="5">FAUVISMO</clue>
+   </clues>
+   <cells rows="6" cols="1" cellWidth="50.0" cellHeight="30.0" border="false" id="secondary">
+    <style transparent="true">
+     <font family="Arial" size="17" bold="true" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="6" />
+    <cell image="la_persistencia_de_la_memoria.jpg" />
+    <cell image="1907_picasso_demoiselles.jpg" />
+    <cell image="andy-warhol-01-1-.jpg" />
+    <cell image="piet_mondrian_tableau_11_1921-25.jpg" />
+    <cell image="el_grito_-_Munch_(1896)_expresionismo.jpg" />
+    <cell image="fauvismo-2.jpg" />
+   </cells>
+   <layout position="BA" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="informacion general" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="Arial" size="17" bold="true" />
+     </style>
+     <p>BIENVENIDOS!</p>
+     <p>DAMOS COMIENZO CON LAS ACTIVIDADES...</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://www.arteespana.com/cubismo.htm" report="false">
+    <container bgColor="0x000000">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCCCCC" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="guernica.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Georgia" size="17" bold="true" />
+     <color background="0x000000" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@text.FillInBlanks" name="rellenar agujeros 4 palabras" code="">
+   <description />
+   <messages>
+    <cell type="previous">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x003366" border="0x003366" />
+     </style>
+     <p>Lea atentamente este texto y luego haga clic sobre el mismo para comenzar con la actividad</p>
+    </cell>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x003366" border="0x003366" />
+     </style>
+     <p>Te invito a que completes los espacios vacío...</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x003366" border="0x003366" />
+     </style>
+     <p>Texto completo... FELICITACIONES!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x006633">
+     <image name="3.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x003366" transparent="true" border="false">
+     <size width="600" height="400" />
+    </window>
+   </settings>
+   <prevScreen>
+    <style>
+     <font family="Garamond" size="18" />
+     <color foreground="0x003399" background="0xFFFFFF" border="0x003399" />
+    </style>
+    <p>Cultura&#xD;</p>
+    <p>KENNETH KEMBLE. BERNI EN LA COLECCION FORTABAT. LA FUNDACION LEBENSOHN. ARTE ACTUAL EN PROA&#xD;</p>
+    <p>&#xD;</p>
+    <p>Crear sin mediar fronteras&#xD;</p>
+    <p>28.07.2013 |&#xD;</p>
+    <p>Por Albino Dieguez Videla&#xD;</p>
+    <p>&#xD;</p>
+    <p>Pinturas y collages -algunos nunca exhibidos- assemblages, objetos y un video documental conforman la exposición del Malba dedicada a Kenneth Kemble, que coincide con los quince años de su muerte y los noventa de su nacimiento.[...]&#xD;</p>
+    <p>Hijo de padre escocés y madre alemana, Kemble nació en Buenos Aires en 1923, estudió con el pintor Raúl Russo en 1950, luego con André Lhote en París, y a su regreso a Buenos Aires (1956) fue uno de los fundadores del movimiento informalista desde el que un grupo de artistas se planteó acabar con cierto "buen gusto" local en materia creativa.&#xD;</p>
+    <p>Kemble comenzó a trabajar en sus pinturas o técnicas mixtas con trapos de piso, arpillera, papeles, maderas, chapas, y toda clase de materiales descartables, con la idea de salirse de la práctica artística tradicional.[...]&#xD;</p>
+    <p>&#xD;</p>
+    <p>BERNI Y VENECIA&#xD;</p>
+    <p>La Colección de Arte Amalia Lacroze de Fortabat presenta la muestra "Berni y las representaciones argentinas en la Bienal de Venecia".&#xD;</p>
+    <p>Cumplidos cincuenta años en 2012 del primer premio para nuestro país obtenido por Antonio Berni, se da un panorama de los artistas que han participado de las diferentes ediciones de la Bienal de Venecia a lo largo de la historia. La propuesta se estructura a través de un conjunto de núcleos temáticos que plantean una reflexión sobre la idea de representación nacional y sobre la forma en que el arte argentino se ha exhibido al mundo en los siglos XX y XXI, con curaduría de Rodrigo Alonso. [...]&#xD;</p>
+    <p>La sección central está dedicada a los artistas premiados de los envíos: Antonio Berni (Gran Premio de Grabado y Dibujo en 1962) y Julio Le Parc (Gran Premio de Pintura en 1966). También hace referencia a la mediática aparición de Nicolás García Uriburu y a su coloración del Gran Canal (1968). En las obras de estos artistas todavía se percibe la tensión entre la representación de la vida nacional y la experimentación en el marco de los lenguajes de vanguardia. [...]&#xD;</p>
+   </prevScreen>
+   <document>
+    <style name="default" italic="false" foreground="0x003399" size="18" tabWidth="12" family="Garamond" background="0xFFFFFF" bold="true" />
+    <style name="target" base="default" target="true" foreground="0x009900" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p Alignment="1" family="Arial" background="0xFFFFFF" />
+     <p Alignment="0" family="Arial" background="0xFFFFFF">
+      <text foreground="0x003399" size="18" family="Garamond" background="0xFFFFFF">Cultura</text>
+     </p>
+     <p Alignment="0" family="Arial" background="0xFFFFFF">
+      <text foreground="0x003399" size="18" family="Garamond" background="0xFFFFFF">KENNETH KEMBLE. BERNI EN LA COLECCION FORTABAT. LA FUNDACION LEBENSOHN. ARTE ACTUAL EN PROA</text>
+     </p>
+     <p Alignment="0" family="Arial" background="0xFFFFFF" />
+     <p Alignment="0" family="Arial" background="0xFFFFFF">
+      <text foreground="0x003399" size="18" family="Garamond" background="0xFFFFFF">Crear sin mediar fronteras</text>
+     </p>
+     <p Alignment="0" family="Arial" background="0xFFFFFF">
+      <text foreground="0x003399" size="18" family="Garamond" background="0xFFFFFF">28.07.2013 |</text>
+     </p>
+     <p Alignment="0" family="Arial" background="0xFFFFFF">
+      <text foreground="0x003399" size="18" family="Garamond" background="0xFFFFFF">Por Albino Dieguez Videla</text>
+     </p>
+     <p Alignment="0" family="Arial" background="0xFFFFFF" />
+     <p Alignment="0" family="Arial" background="0xFFFFFF">
+      <text foreground="0x003399" size="18" family="Garamond" background="0xFFFFFF">Pinturas y collages -algunos nunca exhibidos- assemblages, objetos y un video documental conforman la exposición del Malba dedicada a Kenneth Kemble, que coincide con los quince años de su muerte y los noventa de su nacimiento.</text>
+      <text foreground="0x003399" family="Arial" background="0xFFFFFF">[...]</text>
+     </p>
+     <p Alignment="0" family="Arial" background="0xFFFFFF">
+      <text foreground="0x003399" size="18" family="Garamond" background="0xFFFFFF">Hijo de padre escocés y madre alemana, Kemble nació en Buenos Aires en 1923, estudió con el pintor Raúl Russo en 1950, luego con André Lhote en París, y a su regreso a Buenos Aires (1956) fue uno de los fundadores del movimiento informalista desde el que un grupo de artistas se planteó acabar con cierto "buen gusto" local en materia creativa.</text>
+     </p>
+     <p Alignment="0" family="Arial" background="0xFFFFFF">
+      <text foreground="0x003399" size="18" family="Garamond" background="0xFFFFFF">Kemble comenzó a trabajar en sus </text>
+      <target>
+       <answer>pinturas</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <info mode="onError">
+        <cell width="161" height="77">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <font family="Arial" size="18" bold="true" />
+          <color foreground="0xFFFFFF" background="0x000066" border="0x000066" />
+         </style>
+         <p>Se llaman así a las creaciones de los artistas que se expresan en lienzos o láminas.</p>
+        </cell>
+       </info>
+       <text>pinturas</text>
+      </target>
+      <text foreground="0x003399" size="18" family="Garamond" background="0xFFFFFF"> o técnicas mixtas con trapos de piso, arpillera, </text>
+      <target>
+       <answer>papeles</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <info mode="onError">
+        <cell width="162" height="76">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <font family="Arial" size="18" bold="true" />
+          <color foreground="0xFFFFFF" background="0x000066" border="0x000066" />
+         </style>
+         <p>Material hecho con pasta vegetal molida y blanqueada que se dispone en finas láminas y se usa para escribir,dibujar,etc.</p>
+        </cell>
+       </info>
+       <text>papeles</text>
+      </target>
+      <text foreground="0x003399" size="18" family="Garamond" background="0xFFFFFF">, maderas, chapas, y toda clase de materiales descartables, con la idea de salirse de la práctica artística tradicional.[...]</text>
+     </p>
+     <p Alignment="0" family="Arial" background="0xFFFFFF" />
+     <p Alignment="0" family="Arial" background="0xFFFFFF">
+      <text foreground="0x003399" size="18" family="Garamond" background="0xFFFFFF">BERNI Y VENECIA</text>
+     </p>
+     <p Alignment="0" family="Arial" background="0xFFFFFF">
+      <text foreground="0x003399" size="18" family="Garamond" background="0xFFFFFF">La Colección de Arte Amalia Lacroze de Fortabat presenta la muestra "Berni y las representaciones argentinas en la Bienal de Venecia".</text>
+     </p>
+     <p Alignment="0" family="Arial" background="0xFFFFFF">
+      <text foreground="0x003399" size="18" family="Garamond" background="0xFFFFFF">Cumplidos cincuenta años en 2012 del primer premio para nuestro país obtenido por Antonio </text>
+      <target>
+       <answer>Berni</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <info mode="onError">
+        <cell width="128" height="70">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <font family="Arial" size="18" bold="true" />
+          <color foreground="0xFFFFFF" background="0x000066" border="0x000066" />
+         </style>
+         <p>Muralista y pintor argentino</p>
+        </cell>
+       </info>
+       <text>Berni</text>
+      </target>
+      <text foreground="0x003399" size="18" family="Garamond" background="0xFFFFFF">, se da un panorama de los artistas que han participado de las diferentes ediciones de la Bienal de Venecia a lo largo de la historia. La propuesta se estructura a través de un conjunto de núcleos temáticos que plantean una reflexión sobre la idea de representación nacional y sobre la forma en que el arte argentino se ha exhibido al mundo en los siglos XX y XXI, con curaduría de Rodrigo Alonso. [...]</text>
+     </p>
+     <p Alignment="0" family="Arial" background="0xFFFFFF">
+      <text foreground="0x003399" size="18" family="Garamond" background="0xFFFFFF">La sección central está dedicada a los artistas premiados de los envíos: Antonio Berni (Gran Premio de Grabado y Dibujo en 1962) y Julio Le Parc (Gran Premio de Pintura en 1966). También hace referencia a la mediática aparición de Nicolás García Uriburu y a su coloración del Gran Canal (1968). En las </text>
+      <target>
+       <answer>obras</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <info mode="onError">
+        <cell width="169" height="59">
+         <style borderStroke="0.7" markerStroke="5.0">
+          <font family="Arial" size="18" bold="true" />
+          <color foreground="0xFFFFFF" background="0x000066" border="0x000066" />
+         </style>
+         <p> Productos,creaciones</p>
+        </cell>
+       </info>
+       <text>obras</text>
+      </target>
+      <text foreground="0x003399" size="18" family="Garamond" background="0xFFFFFF"> de estos artistas todavía se percibe la tensión entre la representación de la vida nacional y la experimentación en el marco de los lenguajes de vanguardia. [...]</text>
+     </p>
+     <p Alignment="0" family="Arial" background="0xFFFFFF" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="rellenar agujeros con lista desplegable" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x003366" border="0x003366" />
+     </style>
+     <p>Completa con la opción correcta</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x003366" border="0x003366" />
+     </style>
+     <p>LO LOGRASTE!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x003366">
+     <image name="Sin título.png" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x006633" transparent="true" border="false">
+     <size width="600" height="400" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" bold="true" size="18" tabWidth="12" background="0xFFFFFF" family="Garamond" italic="false" />
+    <style name="target" base="default" target="true" foreground="0x006600" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p Alignment="0" background="0xFFFFFF" family="Arial">
+      <text bold="true" size="22" foreground="0x003399" background="0xFFFFFF" family="Garamond">El arte público se sumó a la lucha de Abuelas en el Espacio Memoria</text>
+     </p>
+     <p Alignment="0" background="0xFFFFFF" family="Arial" />
+     <p Alignment="0" background="0xFFFFFF" family="Arial">
+      <text bold="false" size="16" foreground="0x003399" background="0xFFFFFF" family="Garamond">Diversos artistas intervinieron afiches -con el rostro de hombres y mujeres apropiados durante la última dictadura y que lograron reencontrarse con sus familias biológicas- que serán pegados en distintos sitios de la ciudad de Buenos Aires con el objetivo de que las personas con dudas sobre su </text>
+      <target>
+       <answer>origen</answer>
+       <optionList>
+        <option>origen</option>
+        <option>raíz</option>
+        <option>procedencia</option>
+       </optionList>
+       <text>origen</text>
+      </target>
+      <text bold="false" size="16" foreground="0x003399" background="0xFFFFFF" family="Garamond"> se acerquen a Abuelas de Plaza de Mayo. </text>
+     </p>
+     <p Alignment="0" background="0xFFFFFF" family="Arial">
+      <text bold="true" size="18" foreground="0x003399" background="0xFFFFFF" family="Garamond"> </text>
+     </p>
+     <p Alignment="0" background="0xFFFFFF" family="Arial">
+      <text bold="true" size="18" foreground="0x003399" background="0xFFFFFF" family="Garamond">La jornada "Afiches con Historias" se realizó este domingo 14 en la Casa de la Militancia de H.I.J.O.S. Su </text>
+      <target>
+       <answer>objetivo</answer>
+       <optionList>
+        <option>próposito</option>
+        <option>fin</option>
+        <option>objetivo</option>
+       </optionList>
+       <text>objetivo</text>
+      </target>
+      <text bold="true" size="18" foreground="0x003399" background="0xFFFFFF" family="Garamond"> fue concientizar a la población acerca de la existencia de casi 400 nietos y nietas que aún viven con la identidad cambiada.[...]</text>
+     </p>
+     <p Alignment="0" background="0xFFFFFF" family="Arial">
+      <text bold="true" size="18" foreground="0x003399" background="0xFFFFFF" family="Garamond">El muralista Marcelo Carpita, coordinador de la campaña de Murales con Historias, agradeció a todos los artistas “de oficio, profesión o convicción” que participaron de la jornada y explicó que los afiches serán colocados en diferentes espacios públicos de toda la Ciudad de Buenos Aires. “Es difícil desprenderse de la </text>
+      <target>
+       <answer>obra</answer>
+       <optionList>
+        <option>creación</option>
+        <option>realización</option>
+        <option>obra</option>
+       </optionList>
+       <text>obra</text>
+      </target>
+      <text bold="true" size="18" foreground="0x003399" background="0xFFFFFF" family="Garamond"> en tanto objeto, pero el arte público busca la interacción con el público transeúnte y apunta a resignificar el espacio público y quedar registrado en la </text>
+      <target>
+       <answer>memoria</answer>
+       <optionList>
+        <option>recuerdo</option>
+        <option>memoria</option>
+        <option>historia</option>
+       </optionList>
+       <text>memoria</text>
+      </target>
+      <text bold="true" size="18" foreground="0x003399" background="0xFFFFFF" family="Garamond"> del pueblo”, señaló. [...]</text>
+     </p>
+     <p Alignment="1" background="0xFFFFFF" family="Arial" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="1907_picasso_demoiselles.jpg" file="1907_picasso_demoiselles.jpg" />
+  <media name="2012_7_19_V4sxnM1UXZHyBaq9gLxO91.jpg" file="2012_7_19_V4sxnM1UXZHyBaq9gLxO91.jpg" />
+  <media name="3.jpg" file="3.jpg" />
+  <media name="andy-warhol-01-1-.jpg" file="andy-warhol-01-1-.jpg" />
+  <media name="andy_warhol_autorretrato-25247.jpg" file="andy_warhol_autorretrato-25247.jpg" />
+  <media name="autoretrato.jpg" file="autoretrato.jpg" />
+  <media name="el_grito_-_Munch_(1896)_expresionismo.jpg" file="el_grito_-_Munch_(1896)_expresionismo.jpg" />
+  <media name="fauvismo-2.jpg" file="fauvismo-2.jpg" />
+  <media name="guernica.jpg" file="guernica.jpg" />
+  <media name="i01-andy-warhol-01-1-.jpg" file="i01-andy-warhol-01-1-.jpg" />
+  <media name="i01-la_persistencia_de_la_memoria.jpg" file="i01-la_persistencia_de_la_memoria.jpg" />
+  <media name="i01-piet_mondrian_tableau_11_1921-25.jpg" file="i01-piet_mondrian_tableau_11_1921-25.jpg" />
+  <media name="images (1).jpg" file="images (1).jpg" />
+  <media name="la_persistencia_de_la_memoria.jpg" file="la_persistencia_de_la_memoria.jpg" />
+  <media name="monet.jpg" file="monet.jpg" />
+  <media name="mujer que llora.jpg" file="mujer que llora.jpg" />
+  <media name="picasso-los-musico.jpg" file="picasso-los-musico.jpg" />
+  <media name="piet_mondrian_tableau_11_1921-25.jpg" file="piet_mondrian_tableau_11_1921-25.jpg" />
+  <media name="preg.jpg" file="preg.jpg" />
+  <media name="Sin título.png" file="Sin título.png" />
+ </mediaBag>
+</JClicProject>
+

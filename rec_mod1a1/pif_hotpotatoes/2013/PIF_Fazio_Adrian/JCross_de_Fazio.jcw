@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jcross-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>adrian</dc:creator>
+    <dc:title>Herramientas</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>6</version>
+
+<data>
+<title>Herramientas</title>
+
+
+
+<timer><seconds>60</seconds><include-timer>0</include-timer></timer><reading>
+<include-reading>0</include-reading>
+<reading-title></reading-title>
+<reading-text></reading-text>
+
+</reading>
+
+<crossword>
+<grid><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>E</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>D</cell><cell></cell><cell></cell><cell>M</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>S</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>E</cell><cell></cell><cell></cell><cell>A</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>C</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>S</cell><cell>E</cell><cell>R</cell><cell>R</cell><cell>U</cell><cell>C</cell><cell>H</cell><cell>O</cell><cell></cell><cell></cell><cell>O</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>T</cell><cell></cell><cell></cell><cell>T</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>F</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>O</cell><cell></cell><cell>P</cell><cell>I</cell><cell>N</cell><cell>Z</cell><cell>A</cell><cell></cell><cell></cell><cell></cell><cell>I</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>R</cell><cell></cell><cell></cell><cell>L</cell><cell></cell><cell></cell><cell>L</cell><cell></cell><cell></cell><cell></cell><cell>N</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>N</cell><cell></cell><cell></cell><cell>L</cell><cell></cell><cell>S</cell><cell>I</cell><cell>E</cell><cell>R</cell><cell>R</cell><cell>A</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>I</cell><cell></cell><cell></cell><cell>O</cell><cell></cell><cell></cell><cell>C</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>L</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>A</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>L</cell><cell>I</cell><cell>M</cell><cell>A</cell><cell></cell><cell></cell><cell>T</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>A</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>E</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>D</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>O</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>R</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></grid>
+
+<clues><item><word>SERRUCHO</word><def>Es un tipo de sierra de hoja dentada y trapezoidal que por el extremo m&amp;#x00E1;s ancho va unida a un solo mango de madera o de pl&amp;#x00E1;stico, utilizada para practicar cortes, sobre todo en madera.&amp;#x003C;img src=&quot;serrucho.jpg&quot; alt=&quot;serrucho.jpg&quot; title=&quot;serrucho&quot; width=&quot;144&quot; height=&quot;153&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</def></item><item><word>PINZA</word><def>Es una herramienta cuyos extremos se aproximan para sujetar algo. Funciona con el mecanismo de palancas simples, que pueden ser accionadas manualmente o con mecanismos hidr&amp;#x00E1;ulicos, neum&amp;#x00E1;ticos o el&amp;#x00E9;ctricos.&amp;#x003C;img src=&quot;pinza.jpg&quot; alt=&quot;pinza.jpg&quot; title=&quot;pinza&quot; width=&quot;360&quot; height=&quot;270&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</def></item><item><word>SIERRA</word><def>Es una herramienta que sirve para cortar metales u otros materiales. Consiste en una hoja con el filo dentado y se maneja a mano o por otras fuentes de energ&amp;#x00ED;a, como vapor, agua o electricidad. &amp;#x003C;img src=&quot;sierra.jpg&quot; alt=&quot;sierra.jpg&quot; title=&quot;sierra&quot; width=&quot;363&quot; height=&quot;196&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</def></item><item><word>LIMA</word><def>Es una herramienta manual de corte/desgaste utilizada en el desgaste y el afinado de piezas de distintos materiales como metal, pl&amp;#x00E1;stico o madera. Est&amp;#x00E1; formada por una barra de acero al carbono templado (llamada ca&amp;#x00F1;a de corte) que posee unas ranuras llamadas dientes y que en la parte posterior est&amp;#x00E1; equipada con una empu&amp;#x00F1;adura o mango.&amp;#x003C;img src=&quot;lima.jpg&quot; alt=&quot;lima.jpg&quot; title=&quot;lima&quot; width=&quot;300&quot; height=&quot;222&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</def></item><item><word>ESCOFINA</word><def>Es una herramienta de carpinter&amp;#x00ED;a usada para perfilar la madera. Consiste de una punta o espiga, una larga barra de acero o vientre, un tal&amp;#x00F3;n o base y una leng&amp;#x00FC;eta.&amp;#x003C;img src=&quot;escofina.jpg&quot; alt=&quot;escofina.jpg&quot; title=&quot;escofina&quot; width=&quot;345&quot; height=&quot;401&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</def></item><item><word>DESTORNILLADOR</word><def>Es una herramienta que se utiliza para apretar y aflojar tornillos y otros elementos de m&amp;#x00E1;quinas que requieren poca fuerza de apriete y que generalmente son de di&amp;#x00E1;metro peque&amp;#x00F1;o.&amp;#x003C;img src=&quot;destornillador.jpg&quot; alt=&quot;destornillador.jpg&quot; title=&quot;destornillador&quot; width=&quot;300&quot; height=&quot;222&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</def></item><item><word>MARTILLO</word><def>Es una herramienta de percusi&amp;#x00F3;n utilizada para golpear directa o indirectamente una pieza, causando su desplazamiento o deformaci&amp;#x00F3;n.&amp;#x003C;img src=&quot;martillo.jpg&quot; alt=&quot;martillo.jpg&quot; title=&quot;martillo&quot; width=&quot;300&quot; height=&quot;222&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</def></item><item><word>ALICATE</word><def>Es una especie de tenaza met&amp;#x00E1;lica provista de dos brazos que suele ser utilizada para m&amp;#x00FA;ltiples funciones como sujetar elementos peque&amp;#x00F1;os o cortar y modelar conductores.&amp;#x003C;img src=&quot;alicate.jpg&quot; alt=&quot;alicate.jpg&quot; title=&quot;alicate&quot; width=&quot;411&quot; height=&quot;400&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</def></item><item><word>ALICATE</word><def>Es una especie de tenaza met&amp;#x00E1;lica provista de dos brazos que suele ser utilizada para m&amp;#x00FA;ltiples funciones como sujetar elementos peque&amp;#x00F1;os o cortar y modelar conductores.&amp;#x003C;img src=&quot;alicate.jpg&quot; alt=&quot;alicate.jpg&quot; title=&quot;alicate&quot; width=&quot;411&quot; height=&quot;400&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</def></item><item><word>ALICATE</word><def>Es una especie de tenaza met&amp;#x00E1;lica provista de dos brazos que suele ser utilizada para m&amp;#x00FA;ltiples funciones como sujetar elementos peque&amp;#x00F1;os o cortar y modelar conductores.&amp;#x003C;img src=&quot;alicate.jpg&quot; alt=&quot;alicate.jpg&quot; title=&quot;alicate&quot; width=&quot;411&quot; height=&quot;400&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</def></item></clues>
+</crossword>
+</data>
+
+<hotpot-config-file>
+<jcross>
+<exercise-subtitle>Crucigrama</exercise-subtitle>
+<instructions>Completa el crucigrama, luego haga clic en &quot;Check&quot; para comprobar tu respuesta. Si usted est&amp;#x00E1; atascado, puede hacer clic en &quot;Pista&quot; para ver una letra. Haga clic en un n&amp;#x00FA;mero de la cuadr&amp;#x00ED;cula para ver la pista o pistas para ese n&amp;#x00FA;mero.</instructions>
+<guess-correct>Correcto! Bien hecho.</guess-correct>
+<guess-incorrect>Algunas de sus respuestas son incorrectas. Cuadrados incorrectos se han omitiese.</guess-incorrect>
+<clues-across>Horizontales:</clues-across>
+<clues-down>Verticales:</clues-down>
+<next-correct-letter>Una letra correcta ha sido a&amp;#x00F1;adido.</next-correct-letter>
+<include-keypad>0</include-keypad>
+<include-clue-list>1</include-clue-list>
+<enter-caption>Enter</enter-caption>
+<include-hint>1</include-hint>
+<case-sensitive>0</case-sensitive>
+<next-ex-url>JMatch_de_Fazio.htm</next-ex-url>
+<send-email>0</send-email>
+<separate-javascript-file>0</separate-javascript-file>
+</jcross>
+
+<global>
+<your-score-is>Su puntuaci&amp;#x00F3;n es</your-score-is>
+<check-caption>Check</check-caption>
+<ok-caption>OK</ok-caption>
+<hint-caption>Hint</hint-caption>
+<keypad-characters></keypad-characters>
+<process-for-rtl>0</process-for-rtl>
+<include-scorm-12>0</include-scorm-12>
+<next-ex-caption>=&amp;#x003E;</next-ex-caption>
+<back-caption>&amp;#x003C;=</back-caption>
+<contents-caption>Siguiente Ejercicio</contents-caption>
+<include-next-ex>1</include-next-ex>
+<include-contents>1</include-contents>
+<include-back>1</include-back>
+<contents-url>contents.htm</contents-url>
+<graphic-url></graphic-url>
+<font-face>Geneva,Arial,sans-serif</font-face>
+<font-size>small</font-size>
+<page-bg-color>#ffff80</page-bg-color>
+<title-color>#800000</title-color>
+<ex-bg-color>#FFFFFF</ex-bg-color>
+<text-color>#000000</text-color>
+<link-color>#0000FF</link-color>
+<vlink-color>#0000CC</vlink-color>
+<nav-bar-color>#8080ff</nav-bar-color>
+<formmail-url>http://yourserver.com/cgi-bin/FormMail.pl</formmail-url>
+<email>you@yourserver.com</email>
+<name-please>Please enter your name:</name-please>
+<user-string-1>one</user-string-1>
+<user-string-2>two</user-string-2>
+<user-string-3>three</user-string-3>
+<header-code></header-code>
+</global>
+</hotpot-config-file>
+</hotpot-jcross-file>

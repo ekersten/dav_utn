@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jcross-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>Daniela</dc:creator>
+    <dc:title>EL LENGUAJE AUDIOVISUAL</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>6</version>
+
+<data>
+<title>EL LENGUAJE AUDIOVISUAL</title>
+
+
+
+<timer><seconds>120</seconds><include-timer>1</include-timer></timer><reading>
+<include-reading>0</include-reading>
+<reading-title></reading-title>
+<reading-text></reading-text>
+
+</reading>
+
+<crossword>
+<grid><row><cell>P</cell><cell>R</cell><cell>E</cell><cell>P</cell><cell>R</cell><cell>O</cell><cell>D</cell><cell>U</cell><cell>C</cell><cell>C</cell><cell>I</cell><cell>O</cell><cell>N</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>N</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>G</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>F</cell><cell></cell><cell></cell><cell>P</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>D</cell><cell>E</cell><cell>N</cell><cell>O</cell><cell>T</cell><cell>A</cell><cell>T</cell><cell>I</cell><cell>V</cell><cell>O</cell><cell></cell><cell></cell><cell>I</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>N</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>R</cell><cell></cell><cell></cell><cell>C</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>E</cell><cell></cell><cell>P</cell><cell>O</cell><cell>L</cell><cell>I</cell><cell>S</cell><cell>E</cell><cell>M</cell><cell>I</cell><cell>C</cell><cell>A</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>R</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>A</cell><cell></cell><cell></cell><cell>D</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>A</cell><cell></cell><cell>A</cell><cell>U</cell><cell>D</cell><cell>A</cell><cell>C</cell><cell>I</cell><cell>T</cell><cell>Y</cell><cell></cell><cell>O</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>L</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>I</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>V</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell>S</cell><cell>T</cell><cell>O</cell><cell>R</cell><cell>Y</cell><cell>B</cell><cell>O</cell><cell>A</cell><cell>R</cell><cell>D</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></grid>
+
+<clues><item><word>PREPRODUCCION</word><def>Etapa del desarrollo de un video en la que se prepara lo necesario para la filmaci&amp;#x00F3;n (personajes, vestuario, decorados, utiler&amp;#x00ED;a, etc.)</def></item><item><word>DENOTATIVO</word><def>Significado de la imagen com&amp;#x00FA;n a todos los observadores y en el cual se observan los elementos que la componen: personajes, objetos, escenarios, etc.</def></item><item><word>POLISEMICA</word><def>Tipo de imagen que ofrece varios significados y sugiere distintas interpretaciones seg&amp;#x00FA;n el receptor que podr&amp;#x00E1; sacar sus propias conclusiones.</def></item><item><word>AUDACITY</word><def>Software libre utilizado para editar sonidos.&amp;#x003C;img src=&quot;Software.jpg&quot; alt=&quot;Software.jpg&quot; title=&quot;Software&quot; width=&quot;43&quot; height=&quot;35&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</def></item><item><word>STORYBOARD</word><def>Tipo de gui&amp;#x00F3;n que consiste en una secuencia de im&amp;#x00E1;genes dibujadas en borrador, que ilustran los eventos importantes de la pel&amp;#x00ED;cula &amp;#x003C;img src=&quot;Dibujos.jpg&quot; alt=&quot;Dibujos.jpg&quot; title=&quot;Dibujos&quot; width=&quot;252&quot; height=&quot;60&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</def></item><item><word>INFORMATIVA</word><def>Funci&amp;#x00F3;n de la imagen cuando el mensaje de la misma es un pictograma (signo que representa un s&amp;#x00ED;mbolo, objeto real o figura) que permiten identificar ciertos lugares, se&amp;#x00F1;ales de tr&amp;#x00E1;nsito, etc.&amp;#x003C;img src=&quot;Imagen.png&quot; alt=&quot;Imagen.png&quot; title=&quot;Imagen&quot; width=&quot;32&quot; height=&quot;32&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;
+</def></item><item><word>GENERAL</word><def>Plano en el que se visualiza el personaje u objeto en su entorno (en un paisaje, en la calle, en un cuarto, etc.) &amp;#x003C;img src=&quot;Plano.jpg&quot; alt=&quot;Plano.jpg&quot; title=&quot;Plano&quot; width=&quot;50&quot; height=&quot;50&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</def></item><item><word>PICADO</word><def>&amp;#x00C1;ngulo de la c&amp;#x00E1;mara que se realiza desde arriba. Produce sensaci&amp;#x00F3;n de inferioridad o sumisi&amp;#x00F3;n &amp;#x003C;img src=&quot;Angulo.png&quot; alt=&quot;Angulo.png&quot; title=&quot;Angulo&quot; width=&quot;47&quot; height=&quot;92&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</def></item><item><word>PICADO</word><def>&amp;#x00C1;ngulo de la c&amp;#x00E1;mara que se realiza desde arriba. Produce sensaci&amp;#x00F3;n de inferioridad o sumisi&amp;#x00F3;n &amp;#x003C;img src=&quot;Angulo.png&quot; alt=&quot;Angulo.png&quot; title=&quot;Angulo&quot; width=&quot;47&quot; height=&quot;92&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</def></item><item><word>PICADO</word><def>&amp;#x00C1;ngulo de la c&amp;#x00E1;mara que se realiza desde arriba. Produce sensaci&amp;#x00F3;n de inferioridad o sumisi&amp;#x00F3;n &amp;#x003C;img src=&quot;Angulo.png&quot; alt=&quot;Angulo.png&quot; title=&quot;Angulo&quot; width=&quot;47&quot; height=&quot;92&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</def></item><item><word>PICADO</word><def>&amp;#x00C1;ngulo de la c&amp;#x00E1;mara que se realiza desde arriba. Produce sensaci&amp;#x00F3;n de inferioridad o sumisi&amp;#x00F3;n &amp;#x003C;img src=&quot;Angulo.png&quot; alt=&quot;Angulo.png&quot; title=&quot;Angulo&quot; width=&quot;47&quot; height=&quot;92&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</def></item></clues>
+</crossword>
+</data>
+
+<hotpot-config-file>
+<jcross>
+<exercise-subtitle>Elementos y conceptos b&amp;#x00E1;sicos</exercise-subtitle>
+<instructions>Completar el crucigrama ubicando el cursor sobre la casilla con el n&amp;#x00FA;mero horizontal o vertical correspondiente.
+Ingresar la palabra en el cuadro de texto y pulsar el bot&amp;#x00F3;n Aceptar.
+Si existen dudas pulsar el bot&amp;#x00F3;n Pista para obtener la primera letra de la palabra.</instructions>
+<guess-correct>Excelente!</guess-correct>
+<guess-incorrect>Hay errores en alguna de las respuestas</guess-incorrect>
+<clues-across>Horizontal</clues-across>
+<clues-down>Vertical</clues-down>
+<next-correct-letter>Se ha agregado una letra correcta</next-correct-letter>
+<include-keypad>0</include-keypad>
+<include-clue-list>1</include-clue-list>
+<enter-caption>Aceptar</enter-caption>
+<include-hint>1</include-hint>
+<case-sensitive>0</case-sensitive>
+<next-ex-url>JCloze_de_Pietrasanta.htm</next-ex-url>
+<send-email>0</send-email>
+<separate-javascript-file>0</separate-javascript-file>
+</jcross>
+
+<global>
+<your-score-is>Tu puntuaci&amp;#x00F3;n es:</your-score-is>
+<check-caption>Comprobar</check-caption>
+<ok-caption>OK</ok-caption>
+<hint-caption>&amp;#x003C;img src=&quot;Pista.jpg&quot; alt=&quot;Pista.jpg&quot; title=&quot;Pista&quot; width=&quot;32&quot; height=&quot;32&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</hint-caption>
+<keypad-characters></keypad-characters>
+<process-for-rtl>0</process-for-rtl>
+<include-scorm-12>0</include-scorm-12>
+<next-ex-caption>Siguiente ejercicio&amp;#x003C;img src=&quot;Siguiente_ejercicio.png&quot; alt=&quot;Siguiente_ejercicio.png&quot; title=&quot;Siguiente_ejercicio&quot; width=&quot;40&quot; height=&quot;32&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</next-ex-caption>
+<back-caption>Ejercicio anterior&amp;#x003C;img src=&quot;Ejercicio_anterior.png&quot; alt=&quot;Ejercicio_anterior.png&quot; title=&quot;Ejercicio_anterior&quot; width=&quot;40&quot; height=&quot;32&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</back-caption>
+<contents-caption>Index</contents-caption>
+<include-next-ex>1</include-next-ex>
+<include-contents>0</include-contents>
+<include-back>1</include-back>
+<contents-url>contents.htm</contents-url>
+<graphic-url></graphic-url>
+<font-face>Geneva,Arial,sans-serif</font-face>
+<font-size>small</font-size>
+<page-bg-color>#800000</page-bg-color>
+<title-color>#ff8000</title-color>
+<ex-bg-color>#FFFFFF</ex-bg-color>
+<text-color>#000000</text-color>
+<link-color>#0000FF</link-color>
+<vlink-color>#0000CC</vlink-color>
+<nav-bar-color>#ffff80</nav-bar-color>
+<formmail-url>http://yourserver.com/cgi-bin/FormMail.pl</formmail-url>
+<email>you@yourserver.com</email>
+<name-please>Please enter your name:</name-please>
+<user-string-1>one</user-string-1>
+<user-string-2>two</user-string-2>
+<user-string-3>three</user-string-3>
+<header-code></header-code>
+</global>
+</hotpot-config-file>
+</hotpot-jcross-file>

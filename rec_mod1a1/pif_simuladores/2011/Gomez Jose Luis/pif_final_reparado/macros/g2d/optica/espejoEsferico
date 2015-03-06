@@ -1,0 +1,11 @@
+tipo_de_macro=R2
+id='r' expresión='2' evaluar='una-sola-vez' constante='si'
+id='a' expresión='30' evaluar='una-sola-vez' constante='si'
+id='dr' expresión='0.1' evaluar='una-sola-vez' constante='si'
+id='rojo' expresión='0.5' evaluar='una-sola-vez' constante='si'
+id='verde' expresión='0.7' evaluar='una-sola-vez' constante='si'
+id='azul' expresión='0.3' evaluar='una-sola-vez' constante='si'
+tipo='segmento' dibujar-si='r#0' color='8000ffff' expresión='(-r+r*cos(s*a*pi/180),r*sen(s*a*pi/180))(-r+(r+dr)*cos(s*a*pi/180),(r+dr)*sen(s*a*pi/180))' familia='s' s.intervalo='[-1,1]' s.pasos='4*abs(a)' tamaño='0' 
+tipo='arco' dibujar-si='r>0' color='negro' centro='(-r,0)' radio='r+s*dr' inicio='-a' fin='a' familia='s' s.intervalo='[0,1]' s.pasos='1' 
+tipo='arco' dibujar-si='r<0' color='negro' centro='(-r,0)' radio='-r-s*dr' inicio='180-a' fin='180+a' familia='s' s.intervalo='[0,1]' s.pasos='1' 
+tipo='segmento' dibujar-si='r#0' color='negro' expresión='(-r+r*cos(s*a*pi/180),r*sen(s*a*pi/180))(-r+(r+dr)*cos(s*a*pi/180),(r+dr)*sen(s*a*pi/180))' familia='s' s.intervalo='[-1,1]' s.pasos='1' tamaño='0' 

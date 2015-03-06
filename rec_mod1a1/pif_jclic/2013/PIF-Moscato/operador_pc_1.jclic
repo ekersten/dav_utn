@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="operador_pc_1" version="0.1.3">
+ <settings>
+  <title>Operador PC 1</title>
+  <revision description="created" date="9/6/13" />
+  <author name="Maria Cristina Moscato" rol="Profesora" organization="Centro de Formación Profesional Nº 401 - San Antonio de Areco" />
+  <organization name="Centro de Formación Profesional Nº 401" address="Azcuenaga 248" pc="2760" city="San Antonio de Areco" country="Argentina" state="Buenos Aires">
+   <comments>
+    <p>Formar jóvenes y Adultos para el trabajo</p>
+   </comments>
+  </organization>
+  <language>español (es)</language>
+  <description>
+   <p>Este proyecto pretende una revisión, de los conocimientos adquiridos en las practicas profesionalizantes de Operador PC Nivel 1 - Basico</p>
+  </description>
+  <descriptors area="Especialidad Informatica Basica" level="Adultos y Formación Profesional" />
+  <skin file="@green.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="Identificación" />
+  <item id="Elementos" name="Descubriendo elementos" />
+  <item id="Vocabulario Informatico" name="indentificar palabras (terminologia)">
+   <description>
+    <p>Reconocer la terminologia</p>
+   </description>
+  </item>
+  <item id="Perifericos" name="Ordenar palabras en el texto">
+   <description>
+    <p>En el texto se describen distintos perifericos</p>
+   </description>
+  </item>
+  <item id="Hardware" name="Asociación de Conceptos">
+   <description>
+    <p>Elementos fisicos que componen la computadora</p>
+   </description>
+  </item>
+  <item id="Archivos y carpetas" name="rellenar agujeros en blanco">
+   <description>
+    <p>Con la lectura del texto el alumno encontrará una descripción del Sistema Windows 7 y su contenido</p>
+   </description>
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@associations.ComplexAssociation" name="Asociación de Conceptos" code="">
+   <description>
+    <p>Encontrar los conceptos correspondientes a elementos de entrasa, salida y almacenamiento</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arno Pro" size="20" italic="true" />
+      <color foreground="0x003399" background="0xFFFFCC" />
+     </style>
+     <p>Encuentra la asociación correspondiente.</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="feliz-expresion.jpg" type="final">
+     <style>
+      <font family="Berlin Sans FB" size="18" bold="true" />
+      <color foreground="0x00CC00" background="0xFFFFCC" />
+     </style>
+     <p>Excelente!!</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="emoticon.jpg" type="finalError">
+     <style>
+      <font family="Arial" size="14" bold="true" />
+      <color foreground="0xCC0000" background="0xFFFFCC" />
+     </style>
+     <p>Comienza de nuevo..</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="15" countDownTime="true" maxActions="8" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Elementos fisicos que componen la computadora, llamados Hardware. Algunos elementos son de comunicacion entre el usuario y la computadora, otros sirven para almacenar la información</p>
+    </helpWindow>
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x009933" dest="0x99FF99" angle="52" cycles="3" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="4" cols="2" cellWidth="109.0" cellHeight="60.0" border="true" id="primary">
+    <style>
+     <font family="Bodoni MT" size="18" bold="true" />
+     <color foreground="0xFFFFFF" background="0x003399" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="4" />
+    <cell id="0">
+     <p>Teclado</p>
+    </cell>
+    <cell id="2">
+     <p>Monitor</p>
+    </cell>
+    <cell id="2">
+     <p>Impresora</p>
+    </cell>
+    <cell id="1">
+     <p>Pendrive</p>
+    </cell>
+    <cell id="1">
+     <p>Disco rígido</p>
+    </cell>
+    <cell>
+     <p>Sistema Operativo</p>
+    </cell>
+    <cell id="0">
+     <p>Mouse</p>
+    </cell>
+    <cell id="1">
+     <p>CDRom</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="133.0" cellHeight="45.0" border="true" id="secondary">
+    <style>
+     <font family="Arno Pro" size="22" bold="true" italic="true" />
+     <color foreground="0xFFFFCC" background="0x9999FF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell>
+     <p>Entrada</p>
+    </cell>
+    <cell>
+     <p>Almacenamiento</p>
+    </cell>
+    <cell>
+     <p>Salida</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="Descubriendo elementos" code="">
+   <description>
+    <p>Deberá encontrar los elementos de  entrada, salida y alamcenamiento de una computadora</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arno Pro" size="18" bold="true" />
+      <color foreground="0x000099" background="0xFFFFCC" />
+     </style>
+     <p>Descubra los elementos de entrada, salida y alamcenamiento</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arno Pro" size="18" italic="true" />
+      <color foreground="0x009900" background="0xFFFFCC" />
+     </style>
+     <p>Muy Bien!!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arno Pro" size="18" bold="true" />
+      <color foreground="0x000099" background="0xFF9966" />
+     </style>
+     <p>Comenzar de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="30" countDownTime="true" report="true" reportActions="true">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x339900" dest="0x66FF66" angle="139" cycles="9" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <textGrid rows="12" columns="12" cellWidth="30.0" cellHeight="30.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>C***PENDRIVE</row>
+     <row>*O**********</row>
+     <row>*IMPRESORA**</row>
+     <row>**OP********</row>
+     <row>**N*U*******</row>
+     <row>**I**TECLADO</row>
+     <row>**T***AC****</row>
+     <row>**O****DVD**</row>
+     <row>**R****RO***</row>
+     <row>*******O*R**</row>
+     <row>***ESUOM**A*</row>
+     <row>************</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">COMPUTADORA</clue>
+    <clue id="1">PENDRIVE</clue>
+    <clue id="2">IMPRESORA</clue>
+    <clue id="3">MONITOR</clue>
+    <clue id="4">TECLADO</clue>
+    <clue id="5">DVD</clue>
+    <clue id="6">CDROM</clue>
+    <clue id="7">MOUSE</clue>
+   </clues>
+   <cells rows="4" cols="2" cellWidth="85.0" cellHeight="65.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="4" />
+    <cell image="computadora.gif" />
+    <cell image="pendrive.bmp" />
+    <cell image="impresora multifuncion.jpg" />
+    <cell image="monitor.bmp" />
+    <cell image="teclado 1.jpg" />
+    <cell image="dvd.jpg" />
+    <cell image="cdrom.jpg" />
+    <cell image="mouse.gif" />
+   </cells>
+   <layout position="BA" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="Identificación" code="">
+   <description>
+    <p>Se usa como disparador, el alumno debera encontrar el personaje con el cual se identifica, en un tiempo determinado</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="BankGothic Md BT" size="18" bold="true" />
+      <color background="0xFFFFCC" />
+     </style>
+     <p>Armar el puzzle</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="BankGothic Lt BT" size="18" bold="true" />
+      <color foreground="0xFF3333" background="0xFFFFCC" />
+     </style>
+     <p>Lo haz logrado!!! ¿Con quién te identificas?</p>
+    </cell>
+    <cell avoidOverlapping="true" type="finalError">
+     <style>
+      <font family="Arno Pro" size="22" bold="true" italic="true" />
+      <color foreground="0x0000FF" background="0xFFFFCC" />
+     </style>
+     <p>Comenzar de nuevo....</p>
+    </cell>
+   </messages>
+   <settings margin="19" dragCells="true" maxTime="50" countDownTime="true" maxActions="9" countDownActions="false" report="true" reportActions="true">
+    <container bgColor="0x65DC62">
+     <gradient source="0x339900" dest="0x66FF66" angle="139" cycles="9" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="3" cols="3" border="true" image="no tiene wifi.bmp">
+    <style />
+    <shaper class="@JigSaw" cols="3" rows="3" baseWidthFactor="0.25" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@text.Order" name="Ordenar palabras en el texto" code="" type="orderWords">
+   <description>
+    <p>Encontrará información sobre perifericos de entrada. Para que sirve una tableta</p>
+   </description>
+   <messages>
+    <cell type="previous">
+     <style>
+      <font family="Arial Narrow" size="18" bold="true" />
+      <color foreground="0x000099" background="0xCCFFCC" />
+     </style>
+     <p>Leer atentamente el texto, y luego realizar un clic sobre él para realizar la actividad </p>
+    </cell>
+    <cell type="initial">
+     <style>
+      <font family="Arno Pro" size="18" italic="true" />
+      <color foreground="0x0000CC" background="0xFFFFCC" />
+     </style>
+     <p>Ordenar las palabras según corresponda</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arno Pro" size="20" bold="true" />
+      <color foreground="0x009900" background="0xFFFFCC" />
+     </style>
+     <p>¡Felicitaciones!! Lo has logrado...</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="20" countDownActions="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x009933" dest="0x99FF99" angle="52" cycles="3" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true">
+     <size width="591" height="559" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <checkButton>Verifica</checkButton>
+   <prevScreen>
+    <style>
+     <font family="Arial Narrow" size="18" />
+     <color background="0xFFFFFF" />
+    </style>
+    <p>TABLETA&#xD;</p>
+    <p>Es un tipo de computadora portátil, de mayor tamaño que un smartphone o una PDA, integrado en una pantalla táctil (sencilla o multitáctil) con la que se interactúa primariamente con los dedos o una pluma stylus (pasiva o activa), sin necesidad de teclado físico ni ratón. Estos últimos se ven reemplazados por un teclado virtual y, en determinados modelos, por una mini-trackball integrada en uno de los bordes de la pantalla.&#xD;</p>
+    <p>Utilidades&#xD;</p>
+    <p>•	Lectura de libros electrónicos&#xD;</p>
+    <p>•	Lectura fuera de línea de páginas web (ej. utilizando el navegador Opera)&#xD;</p>
+    <p>•	Lectura de cómics&#xD;</p>
+    <p>•	Consulta y edición de documentos ofimáticos&#xD;</p>
+    <p>•	Navegación web (mediante Wi-Fi, USB o 3G Interno)&#xD;</p>
+    <p>•	Llamadas telefónicas, si son 3G, sustituyendo así al teléfono móvil; se suele utilizar un manos libre bluetooth&#xD;</p>
+    <p>•	GPS&#xD;</p>
+    <p>•	Reproducción de música&#xD;</p>
+    <p>•	Visualización de vídeos y películas&#xD;</p>
+    <p>•	Cámara fotográfica y de video HD&#xD;</p>
+    <p>•	Videoconferencia&#xD;</p>
+    <p>•	Juegos&#xD;</p>
+    <p>La tableta funciona como una computadora, solo que más orientada a la multimedia, lectura de contenidos y a la navegación web que a usos profesionales. Para que pueda leerse una memoria o disco duro externo USB, debe contar con USB OTG&#xD;</p>
+    <p>Dependiendo del sistema operativo que implementen y su configuración, al conectarse por USB a una computadora, se pueden presentar como dispositivos de almacenamiento, mostrando sólo la posible tarjeta de memoria conectada, la memoria flash interna e incluso la flash ROM. &#xD;</p>
+    <p>Algunas tabletas presentan conectores minijack de 3,5, VGA o HDMI para poder conectarse a un televisor o a un monitor de computadora.</p>
+   </prevScreen>
+   <document>
+    <style name="default" tabWidth="12" background="0xFFFFFF" italic="false" size="11" bold="false" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p Alignment="1" background="0xFFFFFF" family="Arial">
+      <text foreground="0x3333FF" background="0xFFFFFF" size="16" family="Bodoni MT Black">TABLETA</text>
+     </p>
+     <p Alignment="1" background="0xFFFFFF" family="Arial">
+      <cell avoidOverlapping="true" width="60" height="50" border="true" image="i01-220px-Samsung_Galaxy_Tab_10_1_(2).jpg" />
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro">Es un tipo de computadora</text>
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arial Black"> </text>
+      <target>portátil,</target>
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro"> de mayor tamaño que un smartphone o una PDA, integrado en una pantalla</text>
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arial Black"> </text>
+      <target>táctil</target>
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro"> (sencilla o multitáctil) con la que se interactúa primariamente con los dedos o una pluma stylus (pasiva o activa), sin necesidad</text>
+      <text foreground="0xFF66CC" background="0xFFFFFF" size="14" family="Arial Rounded MT Bold"> </text>
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro">de </text>
+      <target>teclado</target>
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro"> físico ni </text>
+      <target>ratón.</target>
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro"> Estos últimos se ven reemplazados por un teclado</text>
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arial Black"> </text>
+      <target>virtual</target>
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arial Black"> </text>
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro">y, en determinados modelos, por una mini-trackball integrada en uno de los bordes de la </text>
+      <target>pantalla.</target>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro">Utilidades</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro">•	Lectura de libros </text>
+      <target>electrónicos</target>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro">•	Lectura fuera de línea de páginas </text>
+      <target>web</target>
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro"> (ej. utilizando el navegador Opera)</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro">•	Lectura de cómics</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro">•	Consulta y edición de </text>
+      <target>documentos</target>
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro"> ofimáticos</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro">•	</text>
+      <target>Navegación</target>
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro"> web (mediante Wi-Fi, USB o 3G Interno)</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro">•	Llamadas telefónicas, si son 3G, sustituyendo así al teléfono móvil; se suele utilizar un manos libre </text>
+      <target>bluetooth</target>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro">•	GPS</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro">•	Reproducción de música</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro">•	Visualización de</text>
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arial Black"> </text>
+      <target>vídeos</target>
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arial Black"> </text>
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro">y películas</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro">•	</text>
+      <target>Cámara</target>
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arial Black"> </text>
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro">fotográfica y de video HD</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro">•	Videoconferencia</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro">•	Juegos</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro">La tableta funciona como una computadora, solo que más orientada a la </text>
+      <target>multimedia,</target>
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro"> lectura de contenidos y a la navegación web que a usos profesionales. Para que pueda leerse una memoria o </text>
+      <target>disco</target>
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro"> duro externo </text>
+      <target>USB,</target>
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro"> debe contar con USB OTG</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro">Dependiendo del sistema </text>
+      <target>operativo</target>
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro"> que implementen y su configuración, al conectarse por USB a una </text>
+      <target>computadora,</target>
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro"> se pueden presentar como </text>
+      <target>dispositivos</target>
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro"> de almacenamiento, mostrando sólo la posible </text>
+      <target>tarjeta</target>
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro"> de memoria conectada, la </text>
+      <target>memoria</target>
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro"> flash interna e incluso la flash </text>
+      <target>ROM.</target>
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro"> </text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro">Algunas </text>
+      <target>tabletas</target>
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro"> presentan conectores minijack de 3,5, VGA o HDMI para poder conectarse a un televisor o a un </text>
+      <target>monitor</target>
+      <text foreground="0x000000" background="0xFFFFFF" size="16" family="Arno Pro"> de computadora.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" checkCase="true" />
+  </activity>
+  <activity class="@text.Identify" name="indentificar palabras (terminologia)" code="" type="identifyWords">
+   <description>
+    <p>Reconocer la terminologia en el texto</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Courier New" size="17" bold="true" />
+      <color foreground="0x000099" background="0xFFFFCC" />
+     </style>
+     <p>Identificar los distintos elementos de hardware</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Calibri" size="16" bold="true" />
+      <color foreground="0xFF3333" background="0xFFFFCC" />
+     </style>
+     <p>¿Lo has logrado!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x3333FF">
+     <gradient source="0x009933" dest="0x99FF99" angle="75" cycles="3" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true">
+     <size width="426" height="380" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <checkButton>Evalúate</checkButton>
+   <document>
+    <style name="default" tabWidth="12" background="0xFFFFFF" italic="false" size="11" bold="false" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p Alignment="1" background="0xFFFFFF" family="Arial">
+      <text foreground="0x009900" size="14" family="Bell Gothic Std Black">LAPIZ OPTICO</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">El lápiz </text>
+      <target>óptico</target>
+      <text background="0xFFFFFF" family="Arial"> es un </text>
+      <target>periférico</target>
+      <text background="0xFFFFFF" family="Arial"> de entrada para computadoras, tomando en la forma de una varita fotosensible, que puede ser usado para apuntar a objetos mostrados en un televisor de CRT o un </text>
+      <target>monitor,</target>
+      <text background="0xFFFFFF" family="Arial"> en una manera similar a una </text>
+      <target>pantalla</target>
+      <text background="0xFFFFFF" family="Arial"> táctil pero con mayor exactitud posicional. Este periférico es habitualmente usado para sustituir al </text>
+      <target>Mouse</target>
+      <text background="0xFFFFFF" family="Arial"> o, con menor éxito, a la </text>
+      <target>tableta</target>
+      <text background="0xFFFFFF" family="Arial"> digitalizadora. Está conectado a un </text>
+      <target>cable</target>
+      <text background="0xFFFFFF" family="Arial"> eléctrico y requiere de un software especial para su funcionamiento</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">El </text>
+      <target>lápiz</target>
+      <text background="0xFFFFFF" family="Arial"> contiene sensores luminosos y envía una señal a la </text>
+      <target>computadora</target>
+      <text background="0xFFFFFF" family="Arial"> cada vez que registra una luz.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">El lápiz óptico fue creado en 1952 como parte de la Computadora Whirlwind, desarrollado por el Instituto Tecnología de Massachusetts. Se hizo bastante popular durante los años 80. El lápiz óptico fue compatible también con varias </text>
+      <target>tarjetas</target>
+      <text background="0xFFFFFF" family="Arial"> gráficas de los IBM PCs, incluyendo el Color Graphics Adapter (CGA), el Hercules Graphics Card (HGC), y el Enhanced Graphics Adapter (EGA). </text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Se creía hace mucho tiempo que este periférico podría funcionar con cualquiera pantalla basada en CRT, pero no con las pantallas de cristal líquido, los </text>
+      <target>proyectores,</target>
+      <text background="0xFFFFFF" family="Arial"> u otros </text>
+      <target>dispositivos</target>
+      <text background="0xFFFFFF" family="Arial"> de visualización. Sin embargo, en 2011, Fairlight Instruments lanzó su Fairlight CMI-30A, que use un monitor </text>
+      <target>LCD</target>
+      <text background="0xFFFFFF" family="Arial"> de 17 pulgadas, controlable con lápices ópticos</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+    </section>
+   </document>
+  </activity>
+  <activity class="@text.FillInBlanks" name="rellenar agujeros en blanco" code="" forceOkToAdvance="true">
+   <description>
+    <p>Lectura de texto y completar palabras que faltan, revision sobre Sistema Operativo, Archivos y Carpetas</p>
+   </description>
+   <messages>
+    <cell type="previous">
+     <style>
+      <font family="Arno Pro" size="17" bold="true" italic="true" />
+      <color foreground="0x336600" background="0xFFFFCC" />
+     </style>
+     <p>Leer el texto completo con atención, si es necesario volver a leer</p>
+    </cell>
+    <cell type="initial">
+     <style>
+      <font family="Arno Pro" size="17" bold="true" italic="true" />
+      <color foreground="0xFF3333" background="0xFFFFCC" />
+     </style>
+     <p>Completar las palabras que faltan</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial Black" size="18" italic="true" />
+      <color foreground="0x009933" background="0xFFFFCC" />
+     </style>
+     <p>Felicitaciones!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="18" bold="true" />
+      <color foreground="0x000099" background="0xFFFFCC" />
+     </style>
+     <p>Empezar de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="true">
+    <container bgColor="0x3399FF">
+     <gradient source="0x009933" dest="0x99FF99" angle="33" cycles="5" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" transparent="true" border="true">
+     <size width="652" height="580" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <prevScreen>
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="12" />
+     <color foreground="0x3333FF" background="0xFFFFFF" />
+    </style>
+    <p>WINDOWS 7 - BIBLIOTECAS&#xD;</p>
+    <p>&#xD;</p>
+    <p>Las bibliotecas de Windows 7 permiten organizar archivos de una manera excelente. Con las bibliotecas podemos agrupar varias carpetas y archivos, pudiendo acceder desde un sólo icono y accesible desde la ventana del explorador.&#xD;</p>
+    <p>Otro punto a favor de las bibliotecas es que podemos ordenar su contenido según fecha de creación, orden alfabético, etc., sin que esto afecte a la carpeta real donde están almacenados los archivos.&#xD;</p>
+    <p>Las bibliotecas de Windows 7 nos ofrecen grandes ventajas a los amantes del orden en nuestro PC. Vamos a ver cómo se crean y gestionan las bibliotecas!&#xD;</p>
+    <p>El primer paso es hacer clic sobre el icono del explorador de Windows situado en la barra de tareas.&#xD;</p>
+    <p>&#xD;</p>
+    <p>Por defecto, el explorador de Windows 7, toma como carpeta inicial las Bibliotecas.&#xD;</p>
+    <p>En ella podremos ver 4 elementos creados por defecto, que más tarde podremos configurar y definir. Ahora nos centraremos en crear un nuevo elemento.&#xD;</p>
+    <p>Para ello hacemos clic con el botón derecho del ratón en cualquier parte libre de la ventana y seleccionamos Nuevo &gt; Biblioteca&#xD;</p>
+    <p>Se creará un nuevo elemento y lo nombraremos como queramos, al igual que hacemos cuando creamos una carpeta.&#xD;</p>
+    <p>&#xD;</p>
+    <p>Una vez creado, hacemos doble clic sobre el nuevo elemento para definir una primera carpeta de origen.&#xD;</p>
+    <p>Aparecerá la siguiente ventana, hacemos clic sobre el botón Incluir una carpeta y seleccionamos del explorador la carpeta que deseemos.&#xD;</p>
+    <p>Ahora, vamos a ver cómo gestionar nuestra carpeta adecuadamente, así como, incluir más carpetas en los elementos que deseemos.&#xD;</p>
+    <p>Para ello hacemos clic con el botón derecho del ratón sobre la biblioteca que queramos modificar y seleccionamos Propiedades del menú contextual.&#xD;</p>
+    <p>En la nueva ventana que se abre, cliquearemos sobre el botón Nueva Carpeta para incluir otra carpeta más de origen.&#xD;</p>
+    <p>Así mismo, seleccionaremos del menú bajo Optimizar biblioteca para: el tipo de archivos que va a contener nuestra biblioteca.&#xD;</p>
+    <p>De este modo conseguiremos la mejor visualización y criterios de ordenación para la biblioteca que hemos creado.&#xD;</p>
+    <p>Esta nueva funcionalidad de Windows 7, nos va a permitir una mayor rapidez para acceder y ordenar los ficheros de nuestro PC, todos los cambios (borrar, cambiar nombre, etc.) afectarán a las carpetas de origen correspondientes, pero no cómo se visualizan.&#xD;</p>
+    <p>Podemos tener todos los videos, por ejemplo, que tenemos desperdigados en múltiples carpetas en una sola biblioteca con los criterios de orden que queramos, con acceso desde el explorador de Windows a un clic  y con un control total de los archivos que están separados en múltiples carpetas de un sólo vistazo.&#xD;</p>
+   </prevScreen>
+   <document>
+    <style name="default" tabWidth="12" background="0xFFFFFF" italic="false" size="14" bold="false" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p Alignment="1" background="0xFFFFFF" family="Arial">
+      <text foreground="0x3333FF" size="14" bold="true" family="Arial Black">WINDOWS 7 - BIBLIOTECAS</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Las </text>
+      <target>
+       <answer>bibliotecas</answer>
+       <response fill="_" length="11" maxLength="11" />
+       <text>bibliotecas</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> de Windows 7 permiten organizar archivos de una manera excelente. Con las bibliotecas podemos agrupar varias </text>
+      <target>
+       <answer>carpetas</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>carpetas</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> y </text>
+      <target>
+       <answer>archivos</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>archivos</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial">, pudiendo acceder desde un sólo </text>
+      <target>
+       <answer>icono</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>icono</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> y accesible desde la ventana del explorador.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Otro punto a favor de las bibliotecas es que podemos ordenar su contenido según fecha de creación, orden alfabético, etc., sin que esto afecte a la carpeta real donde están almacenados los archivos.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Las bibliotecas de Windows 7 nos ofrecen grandes ventajas a los amantes del orden en nuestro PC. Vamos a ver cómo se crean y gestionan las bibliotecas!</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">El primer paso es hacer clic sobre el </text>
+      <target>
+       <answer>icono</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>icono</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> del explorador de Windows situado en la barra de tareas.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Por defecto, el explorador de Windows 7, toma como carpeta inicial las Bibliotecas.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">En ella podremos ver 4 elementos creados por defecto, que más tarde podremos configurar y definir. Ahora nos centraremos en crear un nuevo elemento.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Para ello hacemos clic con el botón derecho del ratón en cualquier parte libre de la ventana y seleccionamos Nuevo &gt; Biblioteca</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Se creará un nuevo elemento y lo nombraremos como queramos, al igual que hacemos cuando creamos una carpeta.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Una vez creado, hacemos doble clic sobre el nuevo elemento para definir una primera carpeta de origen.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Aparecerá la siguiente ventana, hacemos clic sobre el botón Incluir una carpeta y seleccionamos del explorador la carpeta que deseemos.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Ahora, vamos a ver cómo gestionar nuestra carpeta adecuadamente, así como, incluir más carpetas en los elementos que deseemos.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Para ello hacemos clic con el botón derecho del </text>
+      <target>
+       <answer>ratón</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>ratón</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> sobre la biblioteca que queramos modificar y seleccionamos Propiedades del menú contextual.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">En la nueva ventana que se abre, cliquearemos sobre el botón Nueva Carpeta para incluir otra carpeta más de origen.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Así mismo, seleccionaremos del menú bajo Optimizar biblioteca para: el tipo de archivos que va a contener nuestra biblioteca.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">De este modo conseguiremos la mejor visualización y criterios de ordenación para la biblioteca que hemos creado.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Esta nueva funcionalidad de Windows 7, nos va a permitir una mayor rapidez para acceder y ordenar los </text>
+      <target>
+       <answer>ficheros</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>ficheros</text>
+      </target>
+      <text background="0xFFFFFF" family="Arial"> de nuestra PC, todos los cambios (borrar, cambiar nombre, etc.) afectarán a las carpetas de origen correspondientes, pero no cómo se visualizan.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Arial">Podemos tener todos los videos, por ejemplo, que tenemos desperdigados en múltiples carpetas en una sola biblioteca con los criterios de orden que queramos, con acceso desde el explorador de Windows a un clic  y con un control total de los archivos que están separados en múltiples carpetas de un sólo vistazo.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" checkCase="true" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="monitor.bmp" file="monitor.bmp" />
+  <media name="no tiene wifi.bmp" file="no tiene wifi.bmp" />
+  <media name="pendrive.bmp" file="pendrive.bmp" />
+  <media name="computadora.gif" file="computadora.gif" />
+  <media name="mouse.gif" file="mouse.gif" />
+  <media name="cdrom.jpg" file="cdrom.jpg" />
+  <media name="dvd.jpg" file="dvd.jpg" />
+  <media name="emoticon.jpg" file="emoticon.jpg" />
+  <media name="feliz-expresion.jpg" file="feliz-expresion.jpg" />
+  <media name="i01-220px-Samsung_Galaxy_Tab_10_1_(2).jpg" file="i01-220px-Samsung_Galaxy_Tab_10_1_(2).jpg" />
+  <media name="impresora multifuncion.jpg" file="impresora multifuncion.jpg" />
+  <media name="teclado 1.jpg" file="teclado 1.jpg" />
+ </mediaBag>
+</JClicProject>
+

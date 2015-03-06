@@ -1,0 +1,1134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="aprendo_oficios" version="0.1.3">
+ <settings>
+  <title>Aprendo carpinteria Emilio Fernandez</title>
+  <revision description="created" date="10/9/14" />
+  <author name="Emilio" rol="diseño" />
+  <description>
+   <p>Aplicacion interactica creada para practicar y evaluar conocimientos adquiridos pertenecientes a carpinteria</p>
+  </description>
+  <descriptors area="Talleres" level="Primaria" />
+ </settings>
+ <sequence>
+  <item id="start" name="PANTALLA DE INFORMACION" delay="4" />
+  <item id="1" name="asociacion simple" delay="1" />
+  <item id="2" name="asociacion compleja" delay="1" />
+  <item id="3" name="exploracion" delay="1" />
+  <item id="4" name="ordenar elementos" delay="1" />
+  <item id="5" name="puzzle doble" delay="1" />
+  <item id="6" name="respuest escrita" delay="1" />
+  <item id="7" name="pantalla de informacion pintura" delay="1" />
+  <item id="8" name="pinturas" delay="1" />
+  <item id="9" name="puzzle pintura de intercambio" delay="1" />
+  <item id="10" name="sopa de letras pintura" delay="1" />
+  <item id="11" name="completar texto pintura" delay="1" />
+  <item id="12" name="puzzle deintercambio pintura" delay="1" />
+  <item id="13" name="pantalla de informacion electricidad" delay="1" />
+  <item id="14" name="JUEGO DE MEMORIA ELECTRICCIDAD" delay="1" />
+  <item id="15" name="identificar elementos electricidad" delay="1" />
+  <item name="puzzle de agujero electricidad">
+   <jump action="STOP" id="forward" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@memory.MemoryGame" name="JUEGO DE MEMORIA ELECTRICCIDAD" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial Black" size="17" />
+      <color foreground="0xFFFFFF" background="0x666666" />
+     </style>
+     <p>Une cada una de las herramientas que vamos a usar con su nombre. debes juntar un recuadro con otro y memorizar su lugar</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial Black" size="17" />
+      <color foreground="0xFFFFFF" />
+     </style>
+     <p>muy bien hecho!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <color foreground="0x333300" background="0xFFFF00" />
+     </style>
+     <p>vuelve a intentarlo</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="40" countDownTime="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="electricidad (1).jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="7" cellWidth="111.0" cellHeight="104.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="20" bold="true" />
+     <color foreground="0x0033FF" background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="7" rows="1" />
+    <cell image="ALICATE.jpg" />
+    <cell image="CINTA.jpg" />
+    <cell image="destornillador.jpg" />
+    <cell image="enchufe.jpg" />
+    <cell image="Interruptor_sencillo_2.jpg" />
+    <cell image="descarga.jpg" />
+    <cell image="PELACABLES.jpg" />
+   </cells>
+   <cells rows="1" cols="7" cellWidth="50.0" cellHeight="30.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="7" rows="1" />
+    <cell>
+     <p>ALICATE</p>
+    </cell>
+    <cell>
+     <p>CINTA AISLADORA</p>
+    </cell>
+    <cell>
+     <p>DESTORNILLADOR</p>
+    </cell>
+    <cell>
+     <p>ENCHUFE</p>
+    </cell>
+    <cell>
+     <p>INTERRUPTOR</p>
+    </cell>
+    <cell>
+     <p>CABLES</p>
+    </cell>
+    <cell>
+     <p>PELACABLES</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="PANTALLA DE INFORMACION" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x3333FF" background="0x33FF00" />
+     </style>
+     <p>Espera en pocos segundo la primera actividad comenzara</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="Herramientas-de-carpinteria.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="435.0" cellHeight="305.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Times New Roman" size="48" />
+      <color foreground="0x33FFCC" background="0xFF3333" />
+     </style>
+     <p>Recordando lo que aprendimos sobre carpinteria</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="asociacion compleja" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x0033FF" background="0x00FF00" />
+     </style>
+     <p>Une cada herramiente con el cuadro que indica para que se usa</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color foreground="0x0033FF" background="0x00FF00" />
+     </style>
+     <p>Bien hecho</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="Herramientas-de-carpinteria.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="false" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="5" cols="3" cellWidth="103.0" cellHeight="69.0" border="true" id="primary">
+    <style>
+     <color foreground="0xFFFFFF" background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="5" />
+    <cell id="3" image="escuadra.jpg" />
+    <cell id="1" image="Cincel.jpg" />
+    <cell id="4" image="pinza.jpg" />
+    <cell id="0" image="maza.jpg" />
+    <cell id="3" image="cinta metrica.jpg" />
+    <cell id="2" image="escofina.jpg" />
+    <cell id="1" image="formol.JPG">
+     <style>
+      <color foreground="0x0033FF" background="0x999999" />
+     </style>
+    </cell>
+    <cell id="4" image="destornillador.jpg" />
+    <cell id="0" image="martillo carpintero.jpg" />
+    <cell id="0" image="mazo de madera.jpg" />
+    <cell id="3" image="escuadra.jpg" />
+    <cell id="1" image="serrucho.jpg" />
+    <cell id="4" image="Tenaza Carpintero con Deeping.jpg" />
+    <cell id="2" image="lija.jpg" />
+    <cell id="2" image="garlopa.jpg">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x0033FF" background="0x999999" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="5" cols="1" cellWidth="183.0" cellHeight="74.0" border="true" id="secondary">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="5" />
+    <cell>
+     <p>Herramienta de golpe</p>
+    </cell>
+    <cell>
+     <p>Herramienta de corte</p>
+    </cell>
+    <cell>
+     <p>Herramienta de desgaste</p>
+    </cell>
+    <cell>
+     <p>Herramienta para medir</p>
+    </cell>
+    <cell>
+     <p>Herramienta de ajuste</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="3" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <cell image="Yellow_smiley.jpg" />
+    <cell image="Yellow_smiley.jpg" />
+    <cell image="Yellow_smiley.jpg" />
+    <cell image="Yellow_smiley.jpg" />
+    <cell image="Yellow_smiley.jpg" />
+    <cell image="Yellow_smiley.jpg" />
+    <cell image="Yellow_smiley.jpg">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="Yellow_smiley.jpg" />
+    <cell image="Yellow_smiley.jpg" />
+    <cell image="Yellow_smiley.jpg" />
+    <cell image="Yellow_smiley.jpg" />
+    <cell image="Yellow_smiley.jpg" />
+    <cell image="Yellow_smiley.jpg" />
+    <cell image="Yellow_smiley.jpg" />
+    <cell image="Yellow_smiley.jpg">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="asociacion simple" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x0033FF" background="0x33FF33" />
+     </style>
+     <p>Une cada herramienta con su nombre</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x0033FF" background="0x33FF33" />
+     </style>
+     <p>Bien hecho</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x0033FF" background="0x33FF33" />
+     </style>
+     <p>Repasa los nombres de tu carpeta y vuelve a intentarlo</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="11" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="Herramientas-de-carpinteria.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="9" cellWidth="77.0" cellHeight="95.0" border="true" id="primary">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="9" rows="1" />
+    <cell image="escuadra.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="formol.JPG">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x666666" />
+     </style>
+    </cell>
+    <cell image="garlopa.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x666666" />
+     </style>
+    </cell>
+    <cell image="images.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="lapiz car.JPG">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="martillo carpintero.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="nivel.jpg" />
+    <cell image="serrucho.jpg" />
+    <cell image="Tenaza Carpintero con Deeping.jpg" />
+   </cells>
+   <cells rows="1" cols="9" cellWidth="75.0" cellHeight="38.0" border="true" id="secondary">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="9" rows="1" />
+    <cell>
+     <p>Escuadra</p>
+    </cell>
+    <cell>
+     <p>Formol</p>
+    </cell>
+    <cell>
+     <p>Garlopa de mano</p>
+    </cell>
+    <cell>
+     <p>Prensa</p>
+    </cell>
+    <cell>
+     <p>Lapiz carpintero</p>
+    </cell>
+    <cell>
+     <p>Martillo</p>
+    </cell>
+    <cell>
+     <p>Nivel</p>
+    </cell>
+    <cell>
+     <p>Serrucho</p>
+    </cell>
+    <cell>
+     <p>Tenaza</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="completar texto pintura" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0x3399FF" />
+     </style>
+     <p> Completa con las palabras correctas este texto de como pintar antes de que se termine el tiempo</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0x3399FF" />
+     </style>
+     <p>Genial! La pintaste!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x333333" background="0xFF3300" />
+     </style>
+     <p>Vuelve a intentarlo </p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="40" countDownTime="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="paleta-pintura-2[1].jpg" tiled="false" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true">
+     <size width="503" height="297" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <document>
+    <style name="default" italic="false" tabWidth="12" family="Arial" background="0xFFFFFF" size="22" bold="false" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="22">Para pintar primero debe cubrirse la mesa y todo lo que pueda mancharse con </text>
+      <target>
+       <answer>diario</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <info mode="onError">
+        <cell width="100" height="62">
+         <style>
+          <color background="0xFFFF00" />
+         </style>
+         <p>Trae las noticias para leer y luego se lo puede utilizar como papel</p>
+        </cell>
+       </info>
+       <text>diario</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF" size="22">, luego se pone el objeto a pintar sobre la superficie ya protegida. Entonces se destapa la pintura y se la </text>
+      <target>
+       <answer>revuelve</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <info mode="onError">
+        <cell width="136" height="68">
+         <style>
+          <color background="0xFFFF00" />
+         </style>
+         <p>accion que hace que tdod se mezcle</p>
+        </cell>
+       </info>
+       <text>revuelve</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF" size="22"> para volverla consistente, solo así  se podra pintar </text>
+      <target>
+       <answer>parejo</answer>
+       <optionList>
+        <option>parejo</option>
+        <option>veteado</option>
+        <option>rapido</option>
+        <option>granadiente</option>
+       </optionList>
+       <text>parejo</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF" size="22"> y uniforme.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="22">Una vez terminado se deja secar el objeto lejos del </text>
+      <target>
+       <answer>polvo</answer>
+       <optionList>
+        <option>viento</option>
+        <option>polvo</option>
+        <option>sol</option>
+       </optionList>
+       <text>polvo</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF" size="22"> y se limpia el pincel con </text>
+      <target>
+       <answer>aguarras</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <info mode="onError">
+        <cell width="131" height="80">
+         <style>
+          <color background="0xFFFF00" />
+         </style>
+         <p>liquido que se compra en la ferreteria para diluir y limpiar pintura</p>
+        </cell>
+       </info>
+       <text>aguarras</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@panels.Explore" name="exploracion" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x0033FF" background="0x00FF00" />
+     </style>
+     <p>Has clik sobre cada herrramienta para saber cuales necesitas para colocar una repisa en la pared, si aparece una carita de ok, esta bien. al finalizar pasa a la siguiente actividad</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color foreground="0x0033FF" background="0x00FF00" />
+     </style>
+     <p>Vuelve a hacerlo o pasa a la siguente actividad</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <color foreground="0x0033FF" background="0x00FF00" />
+     </style>
+     <p>Vuelve a hacerlo o pasa a la siguente actividad</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="30" countDownActions="false" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="Herramientas-de-carpinteria.jpg" tiled="true" />
+     <counters time="false" actions="true" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="false" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="3" cols="5" cellWidth="105.0" cellHeight="118.0" border="true" id="primary">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="3" />
+    <cell id="0" image="cinta metrica.jpg" />
+    <cell id="0" image="destornillador.jpg" />
+    <cell id="0" image="lapiz car.JPG" />
+    <cell id="0" image="nivel.jpg" />
+    <cell id="0" image="tornillos.jpg" />
+    <cell id="0" image="tarugos.jpg" />
+    <cell id="0" image="Hand_Drill.jpg" />
+    <cell id="1" image="lija.jpg" />
+    <cell id="1" image="garlopa.jpg" />
+    <cell id="1" image="clavos.JPG" />
+    <cell id="1" image="maza.jpg" />
+    <cell id="1" image="serrucho.jpg" />
+    <cell id="1" image="Tenaza Carpintero con Deeping.jpg" />
+    <cell id="1" image="calibre.jpg" />
+    <cell id="1" image="escofina.jpg" />
+   </cells>
+   <cells rows="2" cols="1" cellWidth="170.0" cellHeight="112.0" border="true" id="secondary">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell image="Yellow_smiley.jpg" />
+    <cell image="not ok.png" />
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.Identify" name="identificar elementos electricidad" code="" type="identifyWords">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial Black" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x666666" />
+     </style>
+     <p>has click sobre los elementos que usaremos para armar un circuito electrico simple</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial Black" size="17" />
+      <color foreground="0xFFFFFF" background="0x666666" />
+     </style>
+     <p>Bien hecho!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial Black" size="17" />
+      <color foreground="0x333300" background="0xFFFF00" />
+     </style>
+     <p>se acabo el tiempo, vuelve a intentarlo</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>vuelve a ver la actividad anterior</p>
+    </helpWindow>
+    <container bgColor="0xC0C0C0">
+     <image name="electricidad (1).jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true">
+     <size width="456" height="152" />
+    </window>
+    <eventSounds>
+     <sound id="finishedOk" file="Bravo aplausos clapping.mp3" />
+    </eventSounds>
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <document>
+    <style name="default" italic="false" tabWidth="12" family="Arial" background="0xFFFFFF" size="20" bold="false" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="22">barniz - serrucho - </text>
+      <target>alicate</target>
+      <text family="Arial" background="0xFFFFFF" size="22"> - tempera - espatula - </text>
+      <target>cinta aisladora</target>
+      <text family="Arial" background="0xFFFFFF" size="22"> - pincel - </text>
+      <target>pelacables</target>
+      <text family="Arial" background="0xFFFFFF" size="22"> - aguarras - pintura - </text>
+      <target>enchufe</target>
+      <text family="Arial" background="0xFFFFFF" size="22">   - </text>
+      <target>interruptor</target>
+      <text family="Arial" background="0xFFFFFF" size="22"> - nilon - martillo - agujereadora - tornillos</text>
+     </p>
+    </section>
+   </document>
+  </activity>
+  <activity class="@text.Order" name="ordenar elementos" code="" type="orderParagraphs">
+   <description />
+   <messages>
+    <cell type="previous">
+     <style />
+    </cell>
+    <cell type="initial">
+     <style>
+      <color foreground="0x0033FF" background="0x33FF00" />
+     </style>
+     <p>lee atentamente las instrucciones para colocar una repisa, cuando hayas terminado has click cobre la imagen y pon en orden las directivas para colocar la repisa</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color foreground="0x0033FF" background="0x00FF00" />
+     </style>
+     <p>Buen trabajo</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="Herramientas-de-carpinteria.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="false">
+     <size width="756" height="427" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <prevScreen maxTime="25" />
+   <document>
+    <style name="default" italic="false" tabWidth="12" family="Arial" background="0xFFFFFF" size="20" bold="false" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <target>-Usar la cinta metrica para determinar la altura a la que ira le repisa</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <target>-Presentar la repisa y usar el nivel para asegurar que no quede inclinada a un lado</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <target>-Marcar donde iran los agujeros para sujetarla</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <target>-Utilizar la maquina de agujear con la mecha que concida con el diametro de los tarugos para taladrar</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <target>-Colocar los tarugos dentro de los agujeros</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <target>-presentar la repisa , poner los tornillos y ajustarlos</target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="pantalla de informacion electricidad" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="electricidad (1).jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="false" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="409.0" cellHeight="309.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style>
+      <font family="Times New Roman" size="48" />
+      <color foreground="0x33FFFF" background="0xFF0033" />
+     </style>
+     <p>En estas actividades nos preparamos para realizar un circuito electrico simple</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="pantalla de informacion pintura" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="paleta-pintura-2[1].jpg" tiled="false" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="436.0" cellHeight="306.0" border="true">
+    <style>
+     <color foreground="0x33FFFF" background="0xFF3300" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style>
+      <font family="Times New Roman" size="48" />
+      <color foreground="0x33FFFF" background="0xFF0033" />
+     </style>
+     <p>Ahora repasamos lo aprendido sobre como pintar la repisa</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="pinturas" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial Black" size="17" bold="true" />
+      <color foreground="0x333333" background="0x3399FF" />
+     </style>
+     <p>Une el tipo de pintura que se uso con la imagen del trabajo al que corresponda</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial Black" size="17" />
+      <color foreground="0x333333" background="0x3399FF" />
+     </style>
+     <p>Bien hecho</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial Black" size="17" bold="true" />
+      <color background="0xFF3300" />
+     </style>
+     <p>Vuelve a intentarlo</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="40" countDownTime="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="paleta-pintura-2[1].jpg" tiled="false" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="176.0" cellHeight="73.0" border="true" id="primary">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell id="0">
+     <p>Pintura al latex</p>
+    </cell>
+    <cell id="1">
+     <p>Barniz sintetico</p>
+    </cell>
+    <cell id="2">
+     <p>Esmalte sintetico</p>
+    </cell>
+    <cell id="3">
+     <p>Tempera</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="1" cellWidth="206.0" cellHeight="133.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0x999999" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell image="latex.jpg" />
+    <cell image="mesa barnizada.png" />
+    <cell image="esmalte.jpg" />
+    <cell image="florero de manos.JPG" />
+   </cells>
+   <cells rows="4" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell image="Yellow_smiley.jpg" />
+    <cell image="Yellow_smiley.jpg" />
+    <cell image="Yellow_smiley.jpg" />
+    <cell image="Yellow_smiley.jpg" />
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.HolePuzzle" name="puzzle de agujero electricidad" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial Black" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x666666" />
+     </style>
+     <p>Has circular los recuadros por la casilla vacia de manera que puedas armar la imagen de un circuito electrico simple</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFFFF" background="0x666666" />
+     </style>
+     <p>Genial!! has terminado todas las actividades</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial Black" size="17" />
+      <color foreground="0x333300" background="0xFFFF33" />
+     </style>
+     <p>Intentalo de nuevo o has click sobre el boton de ayuda para ver la imagen a formar</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="electricidad (1).jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <eventSounds>
+     <sound id="finishedOk" file="Bravo aplausos clapping.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="4" border="true" image="circuito electrico simple.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="puzzle deintercambio pintura" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0x3399FF" />
+     </style>
+     <p>para que no sirve la tempera?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0x3399FF" />
+     </style>
+     <p>Correcto, la tempera destiñe con el agua y no se adiere bien a los objetos que van a ser tocados</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0xFFFF33" background="0xFF3300" />
+     </style>
+     <p>prueba otra vez</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="10" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="paleta-pintura-2[1].jpg" tiled="false" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="156.0" cellHeight="63.0" border="true">
+    <style>
+     <color foreground="0xFFFF00" background="0xFF6666" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell>
+     <p>La pintura</p>
+    </cell>
+    <cell>
+     <p>tempera</p>
+    </cell>
+    <cell>
+     <p>no sirve para</p>
+    </cell>
+    <cell>
+     <p>pintar objetos </p>
+    </cell>
+    <cell>
+     <p>de uso </p>
+    </cell>
+    <cell>
+     <p>cotidiano</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="puzzle doble" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x0033FF" background="0x00FF33" />
+     </style>
+     <p>para terminar un rompecabezas de las herramientas de un tablero de trabajo</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color foreground="0x0033FF" background="0x00FF00" />
+     </style>
+     <p>Exelente! la has clavado!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0x00FF33" dest="0xFFFFFF" angle="72" cycles="27" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="3" border="true" image="Herramientas-de-carpinteria.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="3" rows="4" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="puzzle pintura de intercambio" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial Black" size="17" />
+      <color background="0x3399FF" />
+     </style>
+     <p>Intercambia las imagenes de lugar arrastrando una sobre la otra y contestando: Para que sirven?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0x3399FF" />
+     </style>
+     <p>Genial! Una pinturita!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xFF3300" />
+     </style>
+     <p>Se acabo el tiempo, vuelve a intentarlo</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxTime="25" countDownTime="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="paleta-pintura-2[1].jpg" tiled="false" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="actividad pintura.jpg">
+    <style />
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.038571,0.009877,0.111429,0.261728</shape>
+     <shape comment="1">rectangle:0.06,0.296296,0.121429,0.279012</shape>
+     <shape comment="2">rectangle:0.034286,0.683951,0.131429,0.301235</shape>
+     <shape comment="3">rectangle:0.277143,0.520988,0.145714,0.25679</shape>
+     <shape comment="4">rectangle:0.54,0.024691,0.1,0.325926</shape>
+    </shaper>
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="respuest escrita" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x0033FF" background="0x00FF00" />
+     </style>
+     <p>has click sobre la pregunta, escucha el audio y contesta escribiendo en el recuadro verde</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color foreground="0x0033FF" background="0x00FF00" />
+     </style>
+     <p>Buen oido!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <color foreground="0xFFFF00" background="0xFF0033" />
+     </style>
+     <p>Vuelvelo a intentar</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="37" countDownTime="false" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>es uno de estos vervos: clavando, agujereando, serruchando, martillando, taladrando</p>
+    </helpWindow>
+    <container bgColor="0xC0C0C0">
+     <image name="Herramientas-de-carpinteria.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="3" cols="1" cellWidth="182.0" cellHeight="88.0" border="true" id="primary">
+    <style>
+     <color foreground="0x00FF00" background="0x0033FF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell id="0">
+     <media type="PLAY_AUDIO" level="1" file="Martillo Efecto de Sonido.mp3" />
+     <p>Que esta haciendo?</p>
+    </cell>
+    <cell id="1">
+     <media type="PLAY_AUDIO" level="1" file="SONIDO SERRUCHO.mp3" />
+     <p>Que esta haciendo?</p>
+    </cell>
+    <cell id="2">
+     <media type="PLAY_AUDIO" level="1" file="Sound Drill (Taladro).mp3" />
+     <p>Que esta haciendo?</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="156.0" cellHeight="55.0" border="true" id="answers">
+    <style>
+     <color background="0xCCFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell>
+     <p>martillando|clavando</p>
+    </cell>
+    <cell>
+     <p>serruchando|cortando</p>
+    </cell>
+    <cell>
+     <p>agujereando|taladrando</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="3" />
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="sopa de letras pintura" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0x3399FF" />
+     </style>
+     <p>Busca en esta sopa de letras los nombres de los elementos utilizados para pintar </p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0x3399FF" />
+     </style>
+     <p>Genial! </p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <color background="0xFF3300" />
+     </style>
+     <p>busca mejor</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>pincel, aguarras, diarios, guantes, pintura</p>
+    </helpWindow>
+    <container bgColor="0xC0C0C0">
+     <image name="paleta-pintura-2[1].jpg" tiled="false" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false">
+     <position x="0" y="0" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <textGrid rows="12" columns="9" cellWidth="34.0" cellHeight="30.0" border="false">
+    <style transparent="true">
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>PINTURA*****</row>
+     <row>**********A*</row>
+     <row>*D********G*</row>
+     <row>*I*PINCEL*U*</row>
+     <row>*A********A*</row>
+     <row>*R*GUANTESR*</row>
+     <row>*I********R*</row>
+     <row>*O********A*</row>
+     <row>*S********S*</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">PINTURA</clue>
+    <clue id="1">DIARIOS</clue>
+    <clue id="2">GUANTES</clue>
+    <clue id="3">PINCEL</clue>
+    <clue id="4">AGUARRAS</clue>
+   </clues>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="actividad pintura.jpg" file="actividad pintura.jpg" />
+  <media name="ALICATE.jpg" file="ALICATE.jpg" />
+  <media name="calibre.jpg" file="calibre.jpg" />
+  <media name="Cincel.jpg" file="Cincel.jpg" />
+  <media name="cinta metrica.jpg" file="cinta metrica.jpg" />
+  <media name="CINTA.jpg" file="CINTA.jpg" />
+  <media name="circuito electrico simple.jpg" file="circuito electrico simple.jpg" />
+  <media name="clavos.JPG" file="clavos.JPG" />
+  <media name="descarga.jpg" file="descarga.jpg" />
+  <media name="destornillador.jpg" file="destornillador.jpg" />
+  <media name="electricidad (1).jpg" file="electricidad (1).jpg" />
+  <media name="enchufe.jpg" file="enchufe.jpg" />
+  <media name="escofina.jpg" file="escofina.jpg" />
+  <media name="escuadra.jpg" file="escuadra.jpg" />
+  <media name="esmalte.jpg" file="esmalte.jpg" />
+  <media name="florero de manos.JPG" file="florero de manos.JPG" />
+  <media name="formol.JPG" file="formol.JPG" />
+  <media name="garlopa.jpg" file="garlopa.jpg" />
+  <media name="Hand_Drill.jpg" file="Hand_Drill.jpg" />
+  <media name="Herramientas-de-carpinteria.jpg" file="Herramientas-de-carpinteria.jpg" />
+  <media name="images.jpg" file="images.jpg" />
+  <media name="Interruptor_sencillo_2.jpg" file="Interruptor_sencillo_2.jpg" />
+  <media name="lapiz car.JPG" file="lapiz car.JPG" />
+  <media name="latex.jpg" file="latex.jpg" />
+  <media name="lija.jpg" file="lija.jpg" />
+  <media name="martillo carpintero.jpg" file="martillo carpintero.jpg" />
+  <media name="maza.jpg" file="maza.jpg" />
+  <media name="mazo de madera.jpg" file="mazo de madera.jpg" />
+  <media name="nivel.jpg" file="nivel.jpg" />
+  <media name="paleta-pintura-2[1].jpg" file="paleta-pintura-2[1].jpg" />
+  <media name="PELACABLES.jpg" file="PELACABLES.jpg" />
+  <media name="pinza.jpg" file="pinza.jpg" />
+  <media name="serrucho.jpg" file="serrucho.jpg" />
+  <media name="tarugos.jpg" file="tarugos.jpg" />
+  <media name="Tenaza Carpintero con Deeping.jpg" file="Tenaza Carpintero con Deeping.jpg" />
+  <media name="tornillos.jpg" file="tornillos.jpg" />
+  <media name="Yellow_smiley.jpg" file="Yellow_smiley.jpg" />
+  <media name="Bravo aplausos clapping.mp3" file="Bravo aplausos clapping.mp3" />
+  <media name="Martillo Efecto de Sonido.mp3" file="Martillo Efecto de Sonido.mp3" />
+  <media name="SONIDO SERRUCHO.mp3" file="SONIDO SERRUCHO.mp3" />
+  <media name="Sound Drill (Taladro).mp3" file="Sound Drill (Taladro).mp3" />
+  <media name="mesa barnizada.png" file="mesa barnizada.png" />
+  <media name="not ok.png" file="not ok.png" />
+ </mediaBag>
+</JClicProject>
+

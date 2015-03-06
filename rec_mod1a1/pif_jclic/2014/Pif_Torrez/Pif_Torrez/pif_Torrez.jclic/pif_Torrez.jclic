@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="pif_pennino" version="0.1.3">
+ <settings>
+  <title>pif</title>
+  <revision description="created" date="10/20/12" />
+  <author name="Ruben Dario Pennino" mail="rubdarp@gmail.com" rol="Alumno" organization="UTN" />
+  <descriptors />
+  <skin file="@blue.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="Informacion" navButtons="fwd" />
+  <item id="menu" name="menu">
+   <jump tag="menu" id="forward" />
+   <jump tag="menu" id="back" />
+  </item>
+  <item name="definicion">
+   <jump tag="menu" id="forward" />
+   <jump tag="menu" id="back" />
+  </item>
+  <item name="hardware">
+   <jump tag="menu" id="forward" />
+   <jump tag="menu" id="back" />
+  </item>
+  <item name="completar">
+   <jump tag="menu" id="forward" />
+   <jump tag="menu" id="back" />
+  </item>
+  <item name="puzzle">
+   <jump tag="menu" id="forward" />
+   <jump tag="menu" id="back" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@panels.InformationScreen" name="Informacion" code="">
+   <description />
+   <messages>
+    <cell border="true" type="initial">
+     <style shadow="true" borderStroke="2.9" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x000099" background="0x99CCFF" shadow="0xFFFFCC" border="0xCC0000" />
+     </style>
+     <p>Bienvenido. Para acceder al menú principal, realiza un click.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x99CCFF">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x99CCFF" border="true" />
+    <eventSounds enabled="false" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="854.0" cellHeight="533.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell imgAlign="middle,bottom" avoidOverlapping="true" image="informacion.jpg">
+     <style shadow="true" borderStroke="2.9" markerStroke="5.0">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x000099" background="0x99CCFF" shadow="0xFFFFCC" border="0xCC0000" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="menu" />
+     <p>Actividades para reforzar tus conocimientos</p>
+     <p>sobre hardware y software.</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@text.FillInBlanks" name="completar" code="">
+   <description />
+   <messages>
+    <cell border="true" type="previous">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x000066" background="0x99CCFF" border="0x660000" />
+     </style>
+     <p>Leer atentamente y luego hacer un click sobre el texto para completar la actividad.</p>
+    </cell>
+    <cell txtAlign="left,top" border="true" type="initial">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x000099" background="0x99CCFF" border="0x660033" />
+     </style>
+     <p>Completar el texto...</p>
+    </cell>
+    <cell txtAlign="right,bottom" type="final">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <color foreground="0x000099" background="0x99CCFF" border="0x660033" />
+     </style>
+     <p>Muy Bien!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="true">
+    <helpWindow showSolution="false">
+     <p>Tienes que leer este texto y memorizar algunas palabras claves, como por ejemplo Linux.</p>
+    </helpWindow>
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x99CCFF" border="true">
+     <size width="602" height="604" />
+    </window>
+    <eventSounds enabled="false" />
+    <skin file="@blue.xml" />
+   </settings>
+   <prevScreen>
+    <style />
+    <p>Linux es un sistema operativo cuyo creador fue Linus Torvalds a principios de la década de los 90.&#xD;</p>
+    <p>&#xD;</p>
+    <p>El sistema lo diseñan y construyen cientos de programadores dispersos por todo el mundo.&#xD;</p>
+    <p>&#xD;</p>
+    <p>El objetivo ha sido crear un sistema operativo similar al UNIX pero de libre distribución y cuyo código fuente fuese abierto, pudiendo de esta manera ser utilizado por cualquier persona.&#xD;</p>
+    <p>&#xD;</p>
+    <p>El sistema Linux surgió como un entretenimiento de Linus Torvalds mientras era estudiante de la Universidad de Helsinki, en Finlandia. Linus comenzó la programación del sistema basándose en un pequeño Unix utilizado en ambientes académicos para enseñanza llamado minix.&#xD;</p>
+    <p>&#xD;</p>
+    <p>El nombre Linux se refiere estrictamente al núcleo Linux (Kernel) pero comúnmente se utiliza para referirse a las distribuciones GNU/Linux en general.&#xD;</p>
+    <p>&#xD;</p>
+    <p>Es distribuido bajo licencia pública general de GNU (GNU GPL) y esta disponible en Internet en miles de servidores; también puede adquirirse mediante distribuidores como Red Hat, SuSE, Debian, entre otros.&#xD;</p>
+    <p>&#xD;</p>
+    <p>Una distribución es una recopilación de Linux con el agregado de programas y archivos, organizados y listos para su instalación. Es la forma en que están integrados el nucleo y estos programas.</p>
+   </prevScreen>
+   <document>
+    <style name="default" size="11" italic="false" tabWidth="12" family="Arial" bold="false" background="0xFFFFFF" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <target>
+       <answer>Linux</answer>
+       <response fill="*" length="5" maxLength="5" />
+       <text>Linux</text>
+      </target>
+      <text size="16" foreground="0x000099" bold="true" background="0xFFFFCC"> es un sistema operativo cuyo creador fue Linus Torvalds a principios de la década de los 90.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text size="16" foreground="0x000099" bold="true" background="0xFFFFCC">El </text>
+      <target>
+       <answer>sistema</answer>
+       <response fill="*" length="7" maxLength="7" />
+       <text>sistema</text>
+      </target>
+      <text size="16" foreground="0x000099" bold="true" background="0xFFFFCC"> lo diseñan y construyen cientos de programadores dispersos por todo el mundo.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text size="16" foreground="0x000099" bold="true" background="0xFFFFCC">El objetivo ha sido crear un sistema operativo similar al </text>
+      <target>
+       <answer>UNIX</answer>
+       <response fill="*" length="4" maxLength="4" />
+       <text>UNIX</text>
+      </target>
+      <text size="16" foreground="0x000099" bold="true" background="0xFFFFCC"> pero de libre distribución y cuyo código fuente fuese abierto, pudiendo de esta manera ser utilizado por cualquier persona.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text size="16" foreground="0x000099" bold="true" background="0xFFFFCC">El sistema Linux surgió como un entretenimiento de Linus </text>
+      <target>
+       <answer>Torvalds</answer>
+       <response fill="*" length="8" maxLength="8" />
+       <text>Torvalds</text>
+      </target>
+      <text size="16" foreground="0x000099" bold="true" background="0xFFFFCC"> mientras era estudiante de la Universidad de Helsinki, en Finlandia. Linus comenzó la programación del sistema basándose en un pequeño Unix utilizado en ambientes académicos para enseñanza llamado minix.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text size="16" foreground="0x000099" bold="true" background="0xFFFFCC">El nombre Linux se refiere estrictamente al </text>
+      <target>
+       <answer>núcleo</answer>
+       <response fill="*" length="6" maxLength="6" />
+       <text>núcleo</text>
+      </target>
+      <text size="16" foreground="0x000099" bold="true" background="0xFFFFCC"> Linux (Kernel) pero comúnmente se utiliza para referirse a las distribuciones GNU/Linux en general.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text size="16" foreground="0x000099" bold="true" background="0xFFFFCC">Es distribuido bajo licencia pública general de GNU (GNU GPL) y esta disponible en Internet en miles de servidores; también puede adquirirse mediante distribuidores como Red Hat, SuSE, Debian, entre otros.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text size="16" foreground="0x000099" bold="true" background="0xFFFFCC">Una </text>
+      <target>
+       <answer>distribución</answer>
+       <response fill="*" length="12" maxLength="12" />
+       <text>distribución</text>
+      </target>
+      <text size="16" foreground="0x000099" bold="true" background="0xFFFFCC"> es una recopilación de Linux con el agregado de programas y archivos, organizados y listos para su instalación. Es la forma en que están integrados el nucleo y estos programas.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="definicion" code="">
+   <description />
+   <messages>
+    <cell border="true" type="initial">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x000066" background="0x99CCFF" border="0x660000" />
+     </style>
+     <p>Responder a que pertenece las siguientes definiciones,</p>
+    </cell>
+    <cell txtAlign="right,middle" border="true" type="final">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x000099" background="0x99CCFF" border="0x660000" />
+     </style>
+     <p>Muy bien..</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="true">
+    <helpWindow showSolution="false">
+     <p>Leer las definiciones y escribir a que corresponde.</p>
+    </helpWindow>
+    <container bgColor="0x99CCFF">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x99CCFF" border="true" />
+    <eventSounds enabled="false" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="2" cols="2" cellWidth="553.0" cellHeight="131.0" border="true" id="primary">
+    <style borderStroke="2.0" markerStroke="2.7">
+     <font family="Arial" size="17" bold="true" />
+     <color foreground="0x000099" background="0x99CCFF" border="0x990033" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell id="0">
+     <p>son programas para que la computadora cumpla una determinada función teniendo en cuenta las instrucciones del usuario.</p>
+    </cell>
+    <cell id="1">
+     <p>es todo componente físico que puede ser electrónico y/o mecánico o no, interno o externo de una computadora. </p>
+    </cell>
+    <cell id="2">
+     <p>es todo componente electrónico y/o mecanico, conectado directa o indirectamente al motherboard y que pueda transmitir y/o recivir datos.</p>
+    </cell>
+    <cell id="3">
+     <p>el software es libre, si garantiza las siguientes libertades a traves de la licencia GPL: La libertad de ejecutar el programa, con cualquier propósito. La libertad de estudiar el funcionamiento y estructura del programa. La libertad de distribuir copias del programa. La libertad de mejorar el programa y hacer publicas esas mejoras. La libertad 2 y 4 requieren del acceso al código fuente como condición necesaria.</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="2" cellWidth="252.0" cellHeight="81.0" border="true" id="answers">
+    <style borderStroke="2.7" markerStroke="2.7">
+     <color foreground="0x000099" background="0x99CCFF" border="0x990033" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell>
+     <p>Software|software</p>
+    </cell>
+    <cell>
+     <p>Hardware|hardware</p>
+    </cell>
+    <cell>
+     <p>Periferico|periferico</p>
+    </cell>
+    <cell>
+     <p>Software libre|software libre</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="hardware" code="">
+   <description />
+   <messages>
+    <cell txtAlign="left,middle" border="true" type="initial">
+     <style borderStroke="3.0" markerStroke="3.7">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x000099" background="0x99CCFF" border="0x660033" />
+     </style>
+     <p>Componentes de hardware..</p>
+    </cell>
+    <cell txtAlign="right,middle" border="true" type="final">
+     <style borderStroke="3.3" markerStroke="4.7">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x000099" background="0x99CCFF" border="0x660033" />
+     </style>
+     <p>Ecxelente!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x99CCFF">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x99CCFF" border="true" />
+    <eventSounds enabled="false" />
+    <skin file="@blue.xml" />
+   </settings>
+   <textGrid rows="24" columns="24" cellWidth="20.0" cellHeight="20.0" border="true">
+    <style borderStroke="0.6" markerStroke="2.7">
+     <color foreground="0x000099" background="0x99CCFF" border="0x990033" />
+    </style>
+    <text>
+     <row>ABC*********************</row>
+     <row>DEF*********************</row>
+     <row>GHI******M**************</row>
+     <row>****C*****I****D********</row>
+     <row>****O******C***I********</row>
+     <row>****O*******R**S********</row>
+     <row>****L********O*C********</row>
+     <row>****E*********PO********</row>
+     <row>*PUERTOUSB*****R********</row>
+     <row>***************IO*******</row>
+     <row>***************G*C******</row>
+     <row>***************I**E*****</row>
+     <row>***************D***S****</row>
+     <row>***************O****A***</row>
+     <row>*********************D**</row>
+     <row>**********A***********O*</row>
+     <row>**********I************R</row>
+     <row>*MOTHERBOARD************</row>
+     <row>**********O*************</row>
+     <row>**********M*************</row>
+     <row>**********E*************</row>
+     <row>**********M*************</row>
+     <row>************************</row>
+     <row>************************</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">COOLER</clue>
+    <clue id="1">MICROPROCESADOR</clue>
+    <clue id="2">DISCORIGIDO</clue>
+    <clue id="3">MOTHERBOARD</clue>
+    <clue id="4">MEMORIA</clue>
+    <clue id="5">PUERTOUSB</clue>
+   </clues>
+   <cells rows="3" cols="2" cellWidth="151.0" cellHeight="131.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="2.7">
+     <color background="0x99CCFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell image="cooler.jpg" />
+    <cell image="cpu.jpg" />
+    <cell image="hdd.jpg" />
+    <cell image="Motherboard.jpg" />
+    <cell image="ram.jpg" />
+    <cell image="usb.jpg" />
+   </cells>
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="menu" code="">
+   <description />
+   <messages>
+    <cell border="true" type="initial">
+     <style borderStroke="3.0" markerStroke="4.7">
+      <font family="Arial" size="20" />
+      <color foreground="0x000099" background="0x99CCFF" border="0x660033" />
+     </style>
+     <p>Seleccionar una actividad del menú...</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x99CCFF">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x99CCFF" border="false" />
+    <eventSounds enabled="false" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="853.0" cellHeight="233.0" border="true">
+    <style shadow="true" borderStroke="2.0" markerStroke="2.7">
+     <font family="Arial" size="17" bold="true" />
+     <color foreground="0x000099" background="0x99CCFF" shadow="0xFFFFCC" border="0x990033" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell border="true">
+     <style shadow="true" borderStroke="2.9" markerStroke="2.7">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x000099" background="0x99CCFF" shadow="0xFFFFCC" border="0x990033" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="definicion" />
+     <p>Definiciones...</p>
+    </cell>
+    <cell>
+     <style shadow="true" borderStroke="2.9" markerStroke="2.7">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x000099" background="0x99CCFF" shadow="0xFFFFCC" border="0x660033" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="hardware" />
+     <p>Sopa de letras...</p>
+    </cell>
+    <cell border="true">
+     <style shadow="true" borderStroke="2.7" markerStroke="2.7">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x000099" background="0x99CCFF" shadow="0xFFFFCC" border="0x660033" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="completar" />
+     <p>Completar el siguiente texto...</p>
+    </cell>
+    <cell>
+     <style shadow="true" borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="24" bold="true" />
+      <color foreground="0x000099" background="0x99CCFF" shadow="0xFFFFCC" border="0x660033" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="puzzle" />
+     <p>Rompecabezas.</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="puzzle" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="2.9" markerStroke="3.7">
+      <font family="Arial" size="20" bold="true" />
+      <color foreground="0x000099" background="0x99CCFF" border="0x660033" />
+     </style>
+     <p>Armar el rompecabezas y responder que tipo de matherboard es?</p>
+    </cell>
+    <cell txtAlign="right,bottom" type="final">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="20" />
+      <color foreground="0x000099" background="0x99CCFF" border="0x660033" />
+     </style>
+     <p>Te felicito...</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="true">
+    <helpWindow showSolution="false" />
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="false" score="false" />
+    </container>
+    <window bgColor="0x99CCFF" border="true" />
+    <eventSounds enabled="false" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="6" cols="6" border="true" image="atx.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="6" rows="6" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="atx.jpg" file="atx.jpg" />
+  <media name="cooler.jpg" file="cooler.jpg" />
+  <media name="cpu.jpg" file="cpu.jpg" />
+  <media name="hdd.jpg" file="hdd.jpg" />
+  <media name="informacion.jpg" file="informacion.jpg" />
+  <media name="Motherboard.jpg" file="Motherboard.jpg" />
+  <media name="ram.jpg" file="ram.jpg" />
+  <media name="usb.jpg" file="usb.jpg" />
+ </mediaBag>
+</JClicProject>
+

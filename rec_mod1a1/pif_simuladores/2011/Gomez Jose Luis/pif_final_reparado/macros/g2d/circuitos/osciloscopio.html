@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>osciloscopio</title></head>
+<body BGCOLOR="#eeeeee">
+<p align="center">
+<FONT size=+2>Macro: osciloscopio</FONT><br>tipo 2D
+</p>
+<p align="center">
+<applet name="osciloscopio"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=480 height=360>
+   <param name="nombre" value="osciloscopio">
+   <param name="Versi&oacute;n" value="3.5">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="despl_imagen='arr-izq' fondo='blanco' red='grisClaro' red10='no' ejes='no' texto='no'">
+   <param name="A_00" value="id='ddsierra' expresi&oacute;n='0' evaluar='siempre' constante='si'">
+   <param name="A_01" value="id='sinusoidal' expresi&oacute;n='1' evaluar='siempre' constante='si'">
+   <param name="A_02" value="id='ondax' expresi&oacute;n='ddsierra' evaluar='una-sola-vez' constante='si'">
+   <param name="A_03" value="id='onday' expresi&oacute;n='sinusoidal' evaluar='una-sola-vez' constante='si'">
+   <param name="A_04" value="id='Ax' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_05" value="id='Ay' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_06" value="id='frx' expresi&oacute;n='30' evaluar='una-sola-vez' constante='si'">
+   <param name="A_07" value="id='Vy' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_08" value="id='fry' expresi&oacute;n='60' evaluar='una-sola-vez' constante='si'">
+   <param name="A_09" value="id='fasey' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_10" value="id='x1' expresi&oacute;n='-1.2' evaluar='una-sola-vez' constante='si'">
+   <param name="A_11" value="id='y1' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_12" value="id='x2' expresi&oacute;n='1.2' evaluar='una-sola-vez' constante='si'">
+   <param name="A_13" value="id='y2' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_14" value="id='INIT' evaluar='una-sola-vez' algoritmo='si'">
+   <param name="A_15" value="inicio='x=(x1+x2)/2;y=(y1+y2)/2;dx=x2-x1;dy=y2-y1' hacer='L=sqrt((x2-x1)^2+(y2-y1)^2);R=L/2;T=1/frx;' id='CALC' evaluar='siempre' algoritmo='si'">
+   <param name="A_16" value="id='x(t)' expresi&oacute;n='(ondax=ddsierra)*frx*t+(ondax=sinusoidal)*sen(2*pi*frx*t)/2'">
+   <param name="A_17" value="inicio='r=(onday=ddsierra)*(fry*t-fasey);r=r+(onday=sinusoidal)*sen(2*pi*fry*t-fasey)/2' hacer='r=r+(r<-0.5);r=r-(r>0.5);' mientras='(r<-0.5)|(r>0.5)' id='y(t)' expresi&oacute;n='r' algoritmo='si'">
+   <param name="A_18" value="id='rojo' expresi&oacute;n='0.8' evaluar='una-sola-vez' constante='si'">
+   <param name="A_19" value="id='verde' expresi&oacute;n='0.8' evaluar='una-sola-vez' constante='si'">
+   <param name="A_20" value="id='azul' expresi&oacute;n='0.8' evaluar='una-sola-vez' constante='si'">
+   <param name="G_00" value="tipo='pol&iacute;gono' color='grisObscuro' expresi&oacute;n='(x-1.2*R,y-R)(x-1.2*R,y+2.1*R)(x+1.2*R,y+2.1*R)(x+1.2*R,y-R)(x-1.2*R,y-R)' relleno='(rojo,verde,azul,0)'">
+   <param name="G_01" value="tipo='arco' color='gris' centro='(x,y+R)' radio='0.9*R' fin='360' decimales='0' relleno='negro' ancho='3'">
+   <param name="G_02" value="tipo='curva' dibujar-si='(Ax*x(t))^2+(Ay*Vy*y(t))^2<0.81' color='ccff00' expresi&oacute;n='(x+Ax*R*x(t),y+R+Ay*Vy*R*y(t+s))' familia='s' s.intervalo='[0,3*T]' s.pasos='3' t.intervalo='[-T/2,T/2]' t.pasos='128' visible='no'">
+   <param name="G_03" value="tipo='punto' dibujar-si='vernum>0' color='negro' expresi&oacute;n='(x-R/2+R/10,y-7*R/12)' texto='[v]' tama&ntilde;o='0'">
+   <param name="G_04" value="tipo='arco' color='grisObscuro' centro='(x-R/2+s*R/2,y-R/4)' radio='R/8' fin='360' familia='s' s.intervalo='[0,2]' s.pasos='2' relleno='grisClaro'">
+   <param name="G_05" value="tipo='arco' color='grisObscuro' centro='(x-R/3+s*2*R/3,y-2*R/3)' radio='R/8' fin='360' familia='s' s.intervalo='[0,1]' s.pasos='1' relleno='grisClaro'">
+   <param name="G_06" value="tipo='arco' color='grisObscuro' centro='(x-R+s*2*R,y1)' radio='R/12' fin='360' familia='s' s.intervalo='[0,1]' s.pasos='1' relleno='rojo'">
+   <param name="G_07" value="tipo='arco' color='gris' centro='(x,y+R)' radio='0.9*R' fin='360' ancho='3'">
+</applet>
+</p>
+<p align="center">
+Esta escena se usa para generar el macro.
+</p>
+<p align="center">
+<applet name="mi_osciloscopio"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=480 height=250>
+   <param name="nombre" value="mi_osciloscopio">
+   <param name="Versi&oacute;n" value="3.40">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="id='E1' O.y='30' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_00" value="tipo='num&eacute;rico' id='ondax' interfaz='men&uacute;' regi&oacute;n='este' espacio='E1' expresi&oacute;n='(10,10,150,23)' nombre='ondax' visible='no' opciones='ddsierra,sinusoidal'">
+   <param name="C_01" value="tipo='num&eacute;rico' id='frx' interfaz='pulsador' regi&oacute;n='este' espacio='E1' expresi&oacute;n='(10,40,150,23)' valor='30' nombre='frx' incr='10' min='10' visible='si'">
+   <param name="C_02" value="tipo='num&eacute;rico' id='o1.Ax' interfaz='pulsador' regi&oacute;n='este' espacio='E1' expresi&oacute;n='(10,100,150,23)' valor='1' decimales='3' nombre='Ax' incr='0.01' visible='si'">
+   <param name="C_03" value="tipo='num&eacute;rico' id='o1.Ay' interfaz='pulsador' regi&oacute;n='este' espacio='E1' valor='0.005' decimales='3' nombre='Ay' incr='0.001' min='0.001' visible='si'">
+   <param name="C_04" value="tipo='num&eacute;rico' id='onday' interfaz='men&uacute;' regi&oacute;n='este' espacio='E1' nombre='onday' visible='no' opciones='ddsierra,sinusoidal'">
+   <param name="C_05" value="tipo='num&eacute;rico' id='fry' interfaz='pulsador' regi&oacute;n='este' espacio='E1' valor='60' nombre='fry' incr='1' min='10' visible='si'">
+   <param name="C_06" value="tipo='num&eacute;rico' id='o1.Vy' interfaz='pulsador' regi&oacute;n='este' espacio='E1' valor='220' nombre='Vy' incr='10' visible='si'">
+   <param name="C_07" value="tipo='num&eacute;rico' id='fasey' interfaz='pulsador' regi&oacute;n='este' espacio='E1' valor='30' nombre='fasey' incr='5' visible='si' opciones='no,si'">
+   <param name="C_08" value="tipo='gr&aacute;fico' id='C1' espacio='E1' color='azul' color-int='rojo' expresi&oacute;n='(-1.2,0)'">
+   <param name="C_09" value="tipo='gr&aacute;fico' id='C2' espacio='E1' color='azul' color-int='rojo' expresi&oacute;n='(1.2,0)' constricci&oacute;n='y=C1.y'">
+   <param name="A_00" value="inicio='o1.rojo=0.75;o1.verde=0.5;o1.azul=0.5' hacer='ondax=o1.sinusoidal;onday=o1.sinusoidal;' id='INICIO' evaluar='una-sola-vez' algoritmo='si'">
+   <param name="A_01" value="hacer='o1.ondax=ondax;o1.onday=onday;o1.frx=frx;o1.fry=fry;o1.fasey=fasey*pi/180;o1.x1=C1.x;o1.y1=C1.y;o1.x2=C2.x;o1.y2=C1.y;;;' id='CALCULOS' evaluar='siempre' algoritmo='si'">
+   <param name="G_00" value="espacio='E1' tipo='macro' expresi&oacute;n='circuitos/osciloscopio' nombre='o1'">
+</applet>
+</p>
+<p align="center">
+Esta escena es una aplicación del macro que muestra sus parámetros.
+</p>
+<hr>
+
+<p><font size="2" face="Arial"><strong><cite><dfn><samp><tt>Autor: José Luis Abreu León</tt></samp></dfn></cite></strong></font></p>
+
+</body>
+</html>

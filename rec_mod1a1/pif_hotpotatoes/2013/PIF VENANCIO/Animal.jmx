@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jmix-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>CLAUDIA VENANCIO</dc:creator>
+    <dc:title>Produccion Ovina</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>6</version>
+
+<data>
+<title>Produccion Ovina</title>
+
+<timer><seconds>600</seconds><include-timer>1</include-timer></timer>
+
+<reading>
+<include-reading>1</include-reading>
+<reading-title>Descripci&amp;#x00F3;n de los ovinos</reading-title>
+<reading-text>La oveja (ovis aries) es un mam&amp;#x00ED;fero rumiante de la familia de los b&amp;#x00F3;vidos, de tama&amp;#x00F1;o mediano, cuerpo cubierto de un pelo espeso, rizado y suave denominado lana, cuernos ausentes, presentes en ambos sexos o s&amp;#x00F3;lo en los machos, orejas alargadas y estrechas, y extremidades finas y acabadas en pezu&amp;#x00F1;as. El macho recibe el nombre espec&amp;#x00ED;fico de carnero, mientras el de la oveja se reserva para la hembra y los ejemplares de menos de un a&amp;#x00F1;o de ambos sexos reciben el nombre de corderos.</reading-text>
+
+</reading>
+
+<jumbled-order-exercise><main-order><segment>La oveja</segment>
+<segment>es un mam&amp;#x00ED;fero rumiante,</segment>
+<segment>de tama&amp;#x00F1;o mediano,</segment>
+<segment>cuerpo cubierto de un pelo espeso, rizado y suave denominado lana.</segment>
+<segment>El macho recibe el nombre espec&amp;#x00ED;fico de carnero,</segment>
+<segment>mientras el de la oveja se reserva para la hembra</segment>
+<segment>y los ejemplares de menos de un a&amp;#x00F1;o de ambos sexos reciben el nombre de corderos.</segment>
+<segment>&amp;#x003C;img src=&quot;carnero-oveja.jpg&quot; alt=&quot;carnero-oveja.jpg&quot; title=&quot;carnero-oveja&quot; width=&quot;359&quot; height=&quot;145&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</segment>
+</main-order><alternate>rumiante, mediano y con lana.</alternate>
+<alternate></alternate>
+</jumbled-order-exercise>
+</data>
+
+<hotpot-config-file>
+<jmix>
+<exercise-subtitle>Ovinos</exercise-subtitle>
+<instructions>Ordenar la oraci&amp;#x00F3;n</instructions>
+<guess-correct>Correcto</guess-correct>
+<guess-incorrect>intento Incorrecto</guess-incorrect>
+<this-much-correct>Esta parte de tu respuesta es correcta</this-much-correct>
+<next-correct-part>Se ha a&amp;#x00F1;adido una letra correcta</next-correct-part>
+<click-to-add>Haga clic para a&amp;#x00F1;adir una palabra a la frase:</click-to-add>
+<also-correct>Estas respuestas tambien sn correctas.</also-correct>
+<include-undo>1</include-undo>
+<include-restart>1</include-restart>
+<include-hint>1</include-hint>
+<next-ex-url>nextpage.htm</next-ex-url>
+<send-email>0</send-email>
+<capitalize-first-letter>0</capitalize-first-letter>
+<separate-javascript-file>0</separate-javascript-file>
+</jmix>
+
+<global>
+
+<times-up>Su tiempo ha terminado</times-up>
+<check-caption>Comprobar respuesta</check-caption>
+<ok-caption>OK</ok-caption>
+<undo-caption>Deshacer</undo-caption>
+<hint-caption>Pista</hint-caption>
+<restart-caption>Reiniciar</restart-caption>
+<your-score-is>Su puntuaci&amp;#x00F3;n es</your-score-is>
+<show-also-correct>1</show-also-correct>
+<process-for-rtl>0</process-for-rtl>
+<include-scorm-12>0</include-scorm-12>
+<next-ex-caption>Siguiente ejercicio</next-ex-caption>
+<back-caption>Atras</back-caption>
+<contents-caption>Ir a Contenidos</contents-caption>
+<include-next-ex>1</include-next-ex>
+<include-contents>1</include-contents>
+<include-back>0</include-back>
+<contents-url>contents.htm</contents-url>
+<contents-url>contents.htm</contents-url>
+<graphic-url></graphic-url>
+<font-face>Geneva,Arial,sans-serif</font-face>
+<font-size>small</font-size>
+<page-bg-color>#C0C0C0</page-bg-color>
+<title-color>#000000</title-color>
+<ex-bg-color>#FFFFFF</ex-bg-color>
+<text-color>#000000</text-color>
+<link-color>#0000FF</link-color>
+<vlink-color>#0000CC</vlink-color>
+<nav-bar-color>#0000ff</nav-bar-color>
+<formmail-url>http://yourserver.com/cgi-bin/FormMail.pl</formmail-url>
+<email>you@yourserver.com</email>
+<name-please>Please enter your name:</name-please>
+<user-string-1>one</user-string-1>
+<user-string-2>two</user-string-2>
+<user-string-3>three</user-string-3>
+<header-code></header-code>
+</global>
+</hotpot-config-file>
+</hotpot-jmix-file>

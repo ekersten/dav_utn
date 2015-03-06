@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="imagenes" version="0.1.3">
+ <settings>
+  <title>Imagen</title>
+  <revision description="created" date="9/2/13" />
+  <author name="Actis, Daniela B." rol="Profesora" />
+  <descriptors area="NTICx" level="SECUNDARIA" />
+  <skin file="@blue.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="Pantalla principal" navButtons="none">
+   <jump action="EXIT" id="back" />
+  </item>
+  <item name="Crucigrama" navButtons="fwd">
+   <jump tag="start" id="forward" />
+  </item>
+  <item name="Rompecabeza" navButtons="fwd">
+   <jump tag="start" id="forward" />
+  </item>
+  <item name="Ordenar palabras" navButtons="fwd">
+   <jump tag="start" id="forward" />
+  </item>
+  <item name="Sopa de letras" navButtons="fwd">
+   <jump tag="start" id="forward" />
+  </item>
+  <item name="Memotest" navButtons="fwd">
+   <jump tag="start" id="forward" />
+  </item>
+  <item name="Identifico por condicion" navButtons="fwd">
+   <jump tag="start" id="forward" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@textGrid.CrossWord" name="Crucigrama" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="i07.jpg" type="initial">
+     <style>
+      <font family="Berlin Sans FB Demi" size="24" />
+      <color foreground="0x33FFFF" background="0x000000" />
+     </style>
+     <p>¿Armamos el crucigrama????</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="right,middle" avoidOverlapping="true" image="i07.jpg" type="final">
+     <style>
+      <font family="Berlin Sans FB Demi" size="24" />
+      <color foreground="0x33FFFF" background="0x000000" />
+     </style>
+     <p>¡Muy bien! Las imágenes son parte de nuestra vida cotidiana.</p>
+    </cell>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="i07.jpg" type="finalError">
+     <style>
+      <font family="Berlin Sans FB Demi" size="24" />
+      <color foreground="0x33FFFF" background="0x000000" />
+     </style>
+     <p>Hummmm.... no esas no son las palabras correctas. ¿Intentamos nuevamente?????</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="60" countDownTime="false" maxActions="30" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="IMM.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <textGrid rows="10" columns="9" cellWidth="20.0" cellHeight="20.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>FOTOGRAFIA</row>
+     <row>****R*****</row>
+     <row>D*PLANO***</row>
+     <row>E***F*****</row>
+     <row>TGRAFFITTI</row>
+     <row>A***I*****</row>
+     <row>L***T*****</row>
+     <row>L***T*****</row>
+     <row>E**PINTURA</row>
+    </text>
+   </textGrid>
+   <cells rows="1" cols="3" cellWidth="411.0" cellHeight="104.0" border="true" id="acrossClues">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell id="8" item="2" />
+    <cell id="8" item="1" txtAlign="left,middle" imgAlign="right,middle" avoidOverlapping="true" image="32.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Comic Sans MS" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+     <p>Esta imagen no debe ser real parece una...</p>
+    </cell>
+    <cell id="8" item="0" />
+    <cell id="2" item="1" txtAlign="right,middle" imgAlign="left,middle" avoidOverlapping="true" image="011.JPG">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Comic Sans MS" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+     <p>Solo veo la cara debe ser un primer.....</p>
+    </cell>
+    <cell id="2" item="1" />
+    <cell id="1" item="0" />
+    <cell id="7" item="2" />
+    <cell id="7" item="1" />
+    <cell id="7" item="0" />
+    <cell id="6" item="2" />
+    <cell id="6" item="1" />
+    <cell id="6" item="0" />
+    <cell id="5" item="2" />
+    <cell id="5" item="1" />
+    <cell id="5" item="0" />
+    <cell id="4" item="0" txtAlign="left,middle" imgAlign="right,middle" avoidOverlapping="true" image="6.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Comic Sans MS" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+     <p>¡Genial! Este tipo de pintura callejera se llama...</p>
+    </cell>
+    <cell id="4" item="0" />
+    <cell id="3" item="2" />
+    <cell id="3" item="1" />
+    <cell id="3" item="0" />
+    <cell id="2" item="0">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+    <cell id="1" item="0" />
+    <cell id="0" item="0" txtAlign="right,middle" imgAlign="left,middle" avoidOverlapping="true" image="13.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Comic Sans MS" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+     <p>La imagen pertenece a una...</p>
+    </cell>
+    <cell id="0" />
+    <cell id="1" />
+    <cell id="2" />
+   </cells>
+   <cells rows="1" cols="3" cellWidth="411.0" cellHeight="104.0" border="true" id="downClues">
+    <style />
+    <cell id="2" item="0" />
+    <cell id="2" item="2" />
+    <cell id="2" item="1">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+    <cell id="9" item="3" />
+    <cell id="9" item="1" />
+    <cell id="9" item="2" />
+    <cell id="9" item="0" />
+    <cell id="8" item="3" />
+    <cell id="8" item="1" />
+    <cell id="8" item="2" />
+    <cell id="8" item="0" />
+    <cell id="7" item="3" />
+    <cell id="7" item="1" />
+    <cell id="7" item="2" />
+    <cell id="7" item="0" />
+    <cell id="1" item="0" />
+    <cell id="1" item="1" image="2.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+    <cell id="6" item="4" txtAlign="right,middle" imgAlign="left,middle" avoidOverlapping="true" image="18.jpg">
+     <p>y esta???? Es un plano..</p>
+    </cell>
+    <cell id="6" item="3" />
+    <cell id="6" item="2" />
+    <cell id="6" item="1" />
+    <cell id="6" item="0" />
+    <cell id="5" item="4" />
+    <cell id="5" item="2" />
+    <cell id="5" item="1" />
+    <cell id="5" item="3" />
+    <cell id="5" item="0" />
+    <cell id="4" item="1" />
+    <cell id="4" item="0" txtAlign="left,middle" imgAlign="right,middle" avoidOverlapping="true" image="5.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Comic Sans MS" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+     <p>Esto se debe ser un...</p>
+    </cell>
+    <cell id="3" item="3">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+    <cell id="3" item="2" />
+    <cell id="3" item="1" />
+    <cell id="3" item="3" />
+    <cell id="3" item="0" />
+    <cell id="2" item="3" />
+    <cell id="1" item="2" />
+    <cell id="0" item="1" txtAlign="right,middle" imgAlign="left,middle" avoidOverlapping="true" image="18.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Comic Sans MS" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+     <p>y este??? Es un plano...</p>
+    </cell>
+    <cell id="0" item="0">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+    <cell id="0" />
+    <cell id="1" />
+    <cell id="2" />
+   </cells>
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.Identify" name="Identifico por condicion" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="i07.jpg" type="initial">
+     <style>
+      <font family="Berlin Sans FB Demi" size="24" />
+      <color foreground="0x33FFFF" background="0x000000" />
+     </style>
+     <p>¡¡Graffittis, pinturas, fotografias.... todo mezclado!! ¿Buscamos los graffittis?</p>
+    </cell>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="i07.jpg" type="final">
+     <style>
+      <font family="Berlin Sans FB Demi" size="24" />
+      <color foreground="0x33FFFF" background="0x000000" />
+     </style>
+     <p>¡Excelente! Todo quedo ordenado.</p>
+    </cell>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="i07.jpg" type="finalError">
+     <style>
+      <font family="Berlin Sans FB Demi" size="24" />
+      <color foreground="0x33FFFF" background="0x000000" />
+     </style>
+     <p>No... esa imagen no es de ese tipo.</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="100" countDownTime="false" maxActions="60" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="IMM.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="3" cols="4" cellWidth="162.0" cellHeight="131.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="3" />
+    <cell id="0" image="35.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="7.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+    <cell id="0" image="33.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="3.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+    <cell id="0" image="36.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="2.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="6.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="4.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+    <cell id="0" image="15.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+    <cell id="0" image="19.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+    <cell id="0" image="31.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+    <cell id="0" image="IMAGEN1.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="Memotest" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="i07.jpg" type="initial">
+     <style>
+      <font family="Berlin Sans FB Demi" size="24" />
+      <color foreground="0x33FFFF" background="0x000000" />
+     </style>
+     <p>¡Busquemos los identicos!</p>
+    </cell>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="i07.jpg" type="final">
+     <style>
+      <font family="Berlin Sans FB Demi" size="24" />
+      <color foreground="0x33FFFF" background="0x000000" />
+     </style>
+     <p>¡¡Muy bien!! ¡Que buena memoria visual!!!</p>
+    </cell>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="i07.jpg" type="finalError">
+     <style>
+      <font family="Berlin Sans FB Demi" size="24" />
+      <color foreground="0x33FFFF" background="0x000000" />
+     </style>
+     <p>¿Intentamos de nuevo? Recuerda: tienes que encontrar los identicos.</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="100" countDownTime="false" maxActions="60" countDownActions="false" report="true" reportActions="false">
+    <helpWindow />
+    <container bgColor="0xC0C0C0">
+     <image name="IMM.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="118.0" cellHeight="97.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell image="IMAGEN8.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+    <cell image="14.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+    <cell image="16.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+    <cell image="40.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+    <cell image="41.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+    <cell image="i07.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+    <cell image="i08.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+    <cell image="i03.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+    <cell image="i04.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.Order" name="Ordenar palabras" code="" type="orderWords">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="i07.jpg" type="initial">
+     <style>
+      <font family="Berlin Sans FB Demi" size="24" />
+      <color foreground="0x33FFFF" background="0x000000" />
+     </style>
+     <p>¡¡Ordenemos las palabras para leer el texto!!</p>
+    </cell>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="i07.jpg" type="final">
+     <style>
+      <font family="Berlin Sans FB Demi" size="24" />
+      <color foreground="0x33FFFF" background="0x000000" />
+     </style>
+     <p>¡Excelente! Ahora si podemos leer!!!</p>
+    </cell>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="i07.jpg" type="finalError">
+     <style>
+      <font family="Berlin Sans FB Demi" size="24" />
+      <color foreground="0x33FFFF" background="0x000000" />
+     </style>
+     <p>Me parece que no quedaron bien ordenadas.....</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="60" countDownTime="false" maxActions="20" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="IMM.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="400" height="373" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <checkButton></checkButton>
+   <document>
+    <style name="default" family="Arial" background="0xFFFFFF" size="11" bold="false" tabWidth="12" italic="false" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" background="0xFFFFFF" Alignment="1">
+      <text family="Comic Sans MS" size="18" foreground="0x660000">Imagen</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Comic Sans MS" size="14">El termino </text>
+      <target family="Comic Sans MS" foreground="0x0000FF" target="true" name="target">imagen</target>
+      <text family="Comic Sans MS" size="14"> es utilizado en múltiples contextos y con diversos sentidos:  Se hace referencia a “imágenes fijas” tales como las fotografías, las pinturas, los graffitis, o las publicidades graficas, como así también se identifican </text>
+      <target family="Comic Sans MS" foreground="0x0000FF" target="true" name="target">“imágenes</target>
+      <text family="Comic Sans MS" size="14"> en movimiento”, por ejemplo, las películas, los programas de </text>
+      <target family="Comic Sans MS" foreground="0x0000FF" target="true" name="target">tv,</target>
+      <text family="Comic Sans MS" size="14"> los videojuegos  o las reproducciones de una cámara de vigilancia. Además, se suele hablar de “imágenes  mentales” e “imágenes literarias”, de la “imagen pública” que tiene una </text>
+      <target family="Comic Sans MS" foreground="0x0000FF" target="true" name="target">persona</target>
+      <text family="Comic Sans MS" size="14"> o la imagen de una </text>
+      <target family="Comic Sans MS" foreground="0x0000FF" target="true" name="target">empresa</target>
+      <text family="Comic Sans MS" size="14"> o una marca. Desde la estampa de una </text>
+      <target family="Comic Sans MS" foreground="0x0000FF" target="true" name="target">remera</target>
+      <text family="Comic Sans MS" size="14"> o un collage hasta una pintura rupestre o un </text>
+      <target family="Comic Sans MS" foreground="0x0000FF" target="true" name="target">paisaje</target>
+      <text family="Comic Sans MS" size="14"> de la naturaleza (una montaña, un lago, etc.) se nombran recurriendo al término </text>
+      <target family="Comic Sans MS" foreground="0x0000FF" target="true" name="target">“imagen”.</target>
+      <text family="Comic Sans MS" size="14"> Imágenes visuales: aquellas que podemos percibir con los </text>
+      <target family="Comic Sans MS" foreground="0x0000FF" target="true" name="target">ojos,</target>
+      <text family="Comic Sans MS" size="14"> que tienen “presencia física”, y que podemos compartir con los demás.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="Pantalla principal" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="i07.jpg" type="initial">
+     <style>
+      <font family="Berlin Sans FB Demi" size="24" />
+      <color foreground="0x33FFFF" background="0x000000" />
+     </style>
+     <p>Elije una de las actividades y ¡¡¡SUERTE!!!</p>
+    </cell>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="i07.jpg" type="final">
+     <style>
+      <font family="Berlin Sans FB Demi" size="24" />
+      <color foreground="0x33FFFF" background="0x000000" />
+     </style>
+     <p>Tienes mucha habilidad visual, felicitaciones</p>
+    </cell>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="i07.jpg" type="finalError">
+     <style>
+      <font family="Berlin Sans FB Demi" size="24" />
+      <color foreground="0x33FFFF" background="0x000000" />
+     </style>
+     <p>Solo debes elejir una a la vez. ¿Intentamos nuevamente?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="IMM.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x330033" dest="0x000000" angle="89" cycles="5" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="3" cols="2" cellWidth="280.0" cellHeight="94.0" border="true">
+    <style transparent="true" />
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell>
+     <style transparent="true" borderStroke="1.9" markerStroke="5.0">
+      <font family="Comic Sans MS" size="48" />
+      <color foreground="0xFFFFFF" shadow="0xCCFFFF" border="0xCCFFFF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Crucigrama" />
+     <p>Crucigrama</p>
+    </cell>
+    <cell>
+     <style transparent="true" borderStroke="2.1" markerStroke="5.0">
+      <font family="Comic Sans MS" size="48" />
+      <color foreground="0xFFFFFF" shadow="0xCCFFFF" border="0xCCFFFF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Memotest" />
+     <p>Memotest</p>
+    </cell>
+    <cell txtAlign="middle,bottom" imgAlign="middle,bottom">
+     <style transparent="true" borderStroke="1.7" markerStroke="5.0">
+      <font family="Comic Sans MS" size="48" />
+      <color foreground="0xFFFFFF" shadow="0xCCFFFF" border="0xCCFFFF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Rompecabeza" />
+     <p>Rompecabezas</p>
+    </cell>
+    <cell txtAlign="middle,bottom">
+     <style transparent="true" borderStroke="2.1" markerStroke="5.0">
+      <font family="Comic Sans MS" size="48" />
+      <color foreground="0xFFFFFF" shadow="0xCCFFFF" border="0xCCFFFF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Identifico por condicion" />
+     <p>Identifico</p>
+    </cell>
+    <cell>
+     <style transparent="true" borderStroke="2.1" markerStroke="5.0">
+      <font family="Comic Sans MS" size="48" />
+      <color foreground="0xFFFFFF" shadow="0xCCFFFF" border="0xCCFFFF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Sopa de letras" />
+     <p>Sopa de letras</p>
+    </cell>
+    <cell>
+     <style transparent="true" borderStroke="2.0" markerStroke="5.0">
+      <font family="Comic Sans MS" size="48" />
+      <color foreground="0xFFFFFF" shadow="0xCCFFFF" border="0xCCFFFF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Ordenar palabras" />
+     <p>Ordeno palabras</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@puzzles.HolePuzzle" name="Rompecabeza" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="i07.jpg" type="initial">
+     <style>
+      <font family="Berlin Sans FB Demi" size="24" />
+      <color foreground="0x33FFFF" background="0x000000" />
+     </style>
+     <p>En este rompecabeza debemos ir moviendo las piezas tantas veces como sea necesario.</p>
+    </cell>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="i07.jpg" type="final">
+     <style>
+      <font family="Berlin Sans FB Demi" size="24" />
+      <color foreground="0x33FFFF" background="0x000000" />
+     </style>
+     <p>¡Has armado muy bien este rompecabezas! </p>
+    </cell>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="i07.jpg" type="finalError">
+     <style>
+      <font family="Berlin Sans FB Demi" size="24" />
+      <color foreground="0x33FFFF" background="0x000000" />
+     </style>
+     <p>Intenta nuevamente, y recuerda ir moviendo la ficha hasta llegar al lugar correcto.</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="100" countDownTime="false" maxActions="60" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="IMM.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="2" cols="3" border="true" image="40.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MV Boli" size="28" />
+      <color foreground="0xFFFFFF" background="0x000000" shadow="0xCCFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="Sopa de letras" code="">
+   <description />
+   <messages>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="i07.jpg" type="initial">
+     <style>
+      <font family="Berlin Sans FB Demi" size="24" />
+      <color foreground="0x33FFFF" background="0x000000" />
+     </style>
+     <p>¡¡¡Una sopa de letras, a buscar las palabras escondidas!!!</p>
+    </cell>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="i07.jpg" type="final">
+     <style>
+      <font family="Berlin Sans FB Demi" size="24" />
+      <color foreground="0x33FFFF" background="0x000000" />
+     </style>
+     <p>¡¡Felicitaciones, las encontraste a todas!!</p>
+    </cell>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="i07.jpg" type="finalError">
+     <style>
+      <font family="Berlin Sans FB Demi" size="24" />
+      <color foreground="0x33FFFF" background="0x000000" />
+     </style>
+     <p>¡¡Noooo.... intenta nuevamente, habia mas palabras escondidad!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="IMM.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <textGrid rows="11" columns="12" cellWidth="20.0" cellHeight="20.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>F**I*******</row>
+     <row>O**M*****G*</row>
+     <row>TPLANOS**R*</row>
+     <row>O**G*****A*</row>
+     <row>G**E*****F*</row>
+     <row>RPINTURASF*</row>
+     <row>A**E*****I*</row>
+     <row>F**S*****T*</row>
+     <row>I*DIBUJOST*</row>
+     <row>A********I*</row>
+     <row>S********S*</row>
+     <row>***********</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">PINTURAS</clue>
+    <clue id="1">FOTOGRAFIAS</clue>
+    <clue id="2">DIBUJOS</clue>
+    <clue id="3">GRAFFITTIS</clue>
+    <clue id="4">IMAGENES</clue>
+    <clue id="5">PLANOS</clue>
+   </clues>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="011.JPG" file="011.JPG" />
+  <media name="13.jpg" file="13.jpg" />
+  <media name="14.jpg" file="14.jpg" />
+  <media name="15.jpg" file="15.jpg" />
+  <media name="16.jpg" file="16.jpg" />
+  <media name="18.jpg" file="18.jpg" />
+  <media name="19.jpg" file="19.jpg" />
+  <media name="2.jpg" file="2.jpg" />
+  <media name="3.jpg" file="3.jpg" />
+  <media name="31.jpg" file="31.jpg" />
+  <media name="32.jpg" file="32.jpg" />
+  <media name="33.jpg" file="33.jpg" />
+  <media name="35.jpg" file="35.jpg" />
+  <media name="36.jpg" file="36.jpg" />
+  <media name="4.jpg" file="4.jpg" />
+  <media name="40.jpg" file="40.jpg" />
+  <media name="41.jpg" file="41.jpg" />
+  <media name="5.jpg" file="5.jpg" />
+  <media name="6.jpg" file="6.jpg" />
+  <media name="7.jpg" file="7.jpg" />
+  <media name="i03.jpg" file="i03.jpg" />
+  <media name="i04.jpg" file="i04.jpg" />
+  <media name="i07.jpg" file="i07.jpg" />
+  <media name="i08.jpg" file="i08.jpg" />
+  <media name="IMAGEN1.jpg" file="IMAGEN1.jpg" />
+  <media name="IMAGEN8.jpg" file="IMAGEN8.jpg" />
+  <media name="IMM.jpg" file="IMM.jpg" />
+ </mediaBag>
+</JClicProject>
+

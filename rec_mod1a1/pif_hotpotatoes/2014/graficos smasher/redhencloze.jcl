@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jcloze-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>cecilia</dc:creator>
+    <dc:title>The Red Hen Cloze</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>6</version>
+
+<data>
+<title>The Red Hen Cloze</title>
+
+<timer><seconds>60</seconds><include-timer>0</include-timer></timer>
+
+<reading>
+<include-reading>0</include-reading>
+<reading-title></reading-title>
+<reading-text></reading-text>
+
+</reading>
+
+<gap-fill>The little <question-record><question></question><answer><text>Red Hen</text><feedback></feedback><correct>1</correct></answer><clue>R H</clue></question-record> &amp;#x003C;img src=&quot;redhen.gif&quot; alt=&quot;redhen.gif&quot; title=&quot;redhen&quot; width=&quot;145&quot; height=&quot;147&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;was in the farmyard with her chickens, when she found a grain of wheat.
+ 
+&quot;Who will plant this <question-record><question></question><answer><text>wheat</text><feedback></feedback><correct>1</correct></answer><clue></clue></question-record>?&amp;#x003C;img src=&quot;wheat.gif&quot; alt=&quot;wheat.gif&quot; title=&quot;wheat&quot; width=&quot;100&quot; height=&quot;245&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;&quot; she said.
+ 
+&quot;Not I,&quot; said the Goose.
+ 
+&quot;Not I,&quot; said the <question-record><question></question><answer><text>Duck</text><feedback></feedback><correct>1</correct></answer><clue></clue></question-record>.&amp;#x003C;img src=&quot;duck.gif&quot; alt=&quot;duck.gif&quot; title=&quot;duck&quot; width=&quot;140&quot; height=&quot;101&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;
+ 
+&quot;I will, then,&quot; said the little Red Hen, and she planted the grain of wheat.
+ 
+When the wheat was ripe she said, &quot;Who will take this wheat to the <question-record><question></question><answer><text>mill</text><feedback></feedback><correct>1</correct></answer><clue></clue></question-record>?&amp;#x003C;img src=&quot;mill.jpg&quot; alt=&quot;mill.jpg&quot; title=&quot;mill&quot; width=&quot;120&quot; height=&quot;154&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;&quot;
+ 
+&quot;Not I,&quot; said the Goose.
+ 
+&quot;Not I,&quot; said the Duck.
+ 
+&quot;I will, then,&quot; said the little Red Hen, and she took the wheat to the mill.
+ 
+When she brought the <question-record><question></question><answer><text>flour</text><feedback></feedback><correct>1</correct></answer><clue></clue></question-record> &amp;#x003C;img src=&quot;descarga.jpg&quot; alt=&quot;descarga.jpg&quot; title=&quot;descarga&quot; width=&quot;180&quot; height=&quot;124&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;home she said, &quot;Who will make some <question-record><question></question><answer><text>bread</text><feedback></feedback><correct>1</correct></answer><clue></clue></question-record> with this flour?&quot;
+ 
+&quot;Not I,&quot; said the Goose.
+ 
+&quot;Not I,&quot; said the Duck.
+ 
+&quot;I will, then,&quot; said the little Red Hen.
+ 
+When the bread was baked, she said, &quot;Who will eat this bread?&quot;
+ 
+&quot;I will,&quot; said the <question-record><question></question><answer><text>Goose</text><feedback></feedback><correct>1</correct></answer><clue>G</clue></question-record> &amp;#x003C;img src=&quot;goose.gif&quot; alt=&quot;goose.gif&quot; title=&quot;goose&quot; width=&quot;160&quot; height=&quot;161&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E; 
+&quot;I will,&quot; said the Duck
+ 
+&quot;No, you won&apos;t,&quot; said the little Red Hen. &quot;I shall eat it myself.  Cluck! cluck!&quot;  And she called her <question-record><question></question><answer><text>chickens</text><feedback></feedback><correct>1</correct></answer><clue></clue></question-record> &amp;#x003C;img src=&quot;images.jpg&quot; alt=&quot;images.jpg&quot; title=&quot;images&quot; width=&quot;180&quot; height=&quot;135&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;to help her.
+  </gap-fill>
+</data>
+
+<hotpot-config-file>
+<jcloze>
+<exercise-subtitle>Gap-fill exercise</exercise-subtitle>
+<instructions>Fill in all the gaps, then press &quot;Check&quot; to check your answers. Use the &quot;Hint&quot; button to get a free letter if an answer is giving you trouble. You can also click on the &quot;[?]&quot; button to get a clue. Note that you will lose points if you ask for hints or clues!</instructions>
+<guesses-correct>Correct! Well done.</guesses-correct>
+<guesses-incorrect>Some of your answers are incorrect. Incorrect answers have been left in place for you to change.</guesses-incorrect>
+<next-correct-letter>The next correct letter has been added to the answer.</next-correct-letter>
+<include-hint>1</include-hint>
+<case-sensitive>0</case-sensitive>
+<include-word-list>0</include-word-list>
+<use-drop-down-list>0</use-drop-down-list>
+<minimum-gap-size>6</minimum-gap-size>
+<next-ex-url>nextpage.htm</next-ex-url>
+<send-email>0</send-email>
+<include-clues>1</include-clues>
+<include-keypad>0</include-keypad>
+<separate-javascript-file>0</separate-javascript-file>
+</jcloze>
+
+<global>
+
+<times-up>Your time is over!</times-up>
+<check-caption>Check</check-caption>
+<ok-caption>OK</ok-caption>
+<hint-caption>Hint</hint-caption>
+<clue-caption>[?]</clue-caption>
+<process-for-rtl>0</process-for-rtl>
+<include-scorm-12>0</include-scorm-12>
+<your-score-is>Your score is </your-score-is>
+<keypad-characters></keypad-characters>
+<next-ex-caption>=&amp;#x003E;</next-ex-caption>
+<back-caption>&amp;#x003C;=</back-caption>
+<contents-caption>Index</contents-caption>
+<include-next-ex>1</include-next-ex>
+<include-contents>1</include-contents>
+<include-back>0</include-back>
+<contents-url>contents.htm</contents-url>
+<contents-url>contents.htm</contents-url>
+<graphic-url></graphic-url>
+<font-face>Geneva,Arial,sans-serif</font-face>
+<font-size>small</font-size>
+<page-bg-color>#C0C0C0</page-bg-color>
+<title-color>#000000</title-color>
+<ex-bg-color>#FFFFFF</ex-bg-color>
+<text-color>#000000</text-color>
+<link-color>#0000FF</link-color>
+<vlink-color>#0000CC</vlink-color>
+<nav-bar-color>#000000</nav-bar-color>
+<formmail-url>http://yourserver.com/cgi-bin/FormMail.pl</formmail-url>
+<email>you@yourserver.com</email>
+<name-please>Please enter your name:</name-please>
+<user-string-1>one</user-string-1>
+<user-string-2>two</user-string-2>
+<user-string-3>three</user-string-3>
+<header-code></header-code>
+</global>
+</hotpot-config-file>
+</hotpot-jcloze-file>

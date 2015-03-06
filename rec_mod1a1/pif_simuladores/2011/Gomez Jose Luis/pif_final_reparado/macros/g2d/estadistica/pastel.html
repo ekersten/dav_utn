@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>Diagrama de Pastel</title></head>
+<body BGCOLOR="#eeeeee">
+<p align="center">
+<FONT size=+2>Macro: pastel</FONT><br>tipo 2D
+</p>
+<p align="center">
+<applet name="pastel"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=480 height=360>
+   <param name="nombre" value="pastel">
+   <param name="Versi&oacute;n" value="3.5">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="escala='80' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="A_00" value="id='R' expresi&oacute;n='2' evaluar='una-sola-vez' constante='si'">
+   <param name="A_01" value="id='N' expresi&oacute;n='2+ent(6*rnd)' evaluar='una-sola-vez' constante='si'">
+   <param name="A_02" value="id='prct' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_03" value="id='V' tama&ntilde;o='N+1' evaluar='una-sola-vez' vector='si'">
+   <param name="A_04" value="inicio='n=0' hacer='V[n]=0.2+rnd;n=n+1' mientras='n<=N' id='EJEMPLO' evaluar='una-sola-vez' algoritmo='si'">
+   <param name="A_05" value="inicio='n=0;sum=0' hacer='sum=sum+V[n];n=n+1' mientras='n<=N' id='Suma()' expresi&oacute;n='sum' algoritmo='si'">
+   <param name="A_06" value="id='A' tama&ntilde;o='N+2' evaluar='una-sola-vez' vector='si'">
+   <param name="A_07" value="inicio='S=Suma(); A[0]=0; n=1; A[N+1]=360' hacer='A[n]=A[n-1]+(V[n-1]*360)/S;n=n+1' mientras='n<=N' id='CALCULOS' evaluar='siempre' algoritmo='si'">
+   <param name="G_00" value="tipo='arco' color='blanco' radio='R' inicio='A[s]' fin='A[s+1]' familia='s' s.intervalo='[0,N]' s.pasos='N' relleno='(0.5+((s%3)=0)*0.5,0.5+(((s+1)%3)=0)*0.5,0.5+(((s+2)%3)=0)*0.5,0)' ancho='2'">
+   <param name="G_01" value="tipo='segmento' color='blanco' expresi&oacute;n='(0,0)(R*cos(pi*A[s]/180),R*sen(pi*A[s]/180))' familia='s' s.intervalo='[0,N+1]' s.pasos='N+1' tama&ntilde;o='1' ancho='2'">
+   <param name="G_02" value="tipo='punto' dibujar-si='prct' color='negro' expresi&oacute;n='(R*cos(pi*(A[s]+A[s-1])/360)/2,R*sen(pi*(A[s]+A[s-1])/360)/2)' familia='s' s.intervalo='[1,N+1]' s.pasos='N' texto='[(A[s]-A[s-1])*100/360] %' tama&ntilde;o='0'">
+</applet>
+</p>
+<p align="center">
+Esta escena se usa para generar el macro.
+</p>
+<p align="center">
+<applet name="mi_pastel"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=480 height=360>
+   <param name="nombre" value="mi_pastel">
+   <param name="Versi&oacute;n" value="3.5">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="fijo='si' escala='48' despl_imagen='arr-izq' fondo='negro' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_00" value="tipo='num&eacute;rico' id='a' regi&oacute;n='este' valor='1' nombre='a' min='0' visible='si' pos_mensajes='centro'">
+   <param name="C_01" value="tipo='num&eacute;rico' id='b' regi&oacute;n='este' valor='2' nombre='b' min='0' visible='si' pos_mensajes='centro'">
+   <param name="C_02" value="tipo='num&eacute;rico' id='c' regi&oacute;n='este' valor='3' nombre='c' min='0' visible='si' pos_mensajes='centro'">
+   <param name="C_03" value="tipo='num&eacute;rico' id='d' regi&oacute;n='este' valor='4' nombre='d' min='0' visible='si' pos_mensajes='centro'">
+   <param name="C_04" value="tipo='num&eacute;rico' id='e' regi&oacute;n='este' valor='5' nombre='e' min='0' visible='si' pos_mensajes='centro'">
+   <param name="C_05" value="tipo='num&eacute;rico' id='f' regi&oacute;n='este' valor='6' nombre='f' min='0' visible='si' pos_mensajes='centro'">
+   <param name="C_06" value="tipo='num&eacute;rico' id='mdp.prct' interfaz='men&uacute;' regi&oacute;n='este' expresi&oacute;n='(20,20,120,23)' valor='1' nombre='mdp.prct' visible='no' opciones='no,si' pos_mensajes='centro'">
+   <param name="C_07" value="tipo='num&eacute;rico' id='mdp.R' regi&oacute;n='este' valor='2' nombre='mdp.R' min='1' visible='si' pos_mensajes='centro'">
+   <param name="C_08" value="tipo='num&eacute;rico' id='alfa' regi&oacute;n='este' nombre='alfa' incr='1' visible='si' pos_mensajes='centro'">
+   <param name="C_09" value="tipo='num&eacute;rico' id='x' regi&oacute;n='este' nombre='x' visible='si' pos_mensajes='centro'">
+   <param name="C_10" value="tipo='num&eacute;rico' id='y' regi&oacute;n='este' nombre='y' visible='si' pos_mensajes='centro'">
+   <param name="A_00" value="inicio='mdp.N=5' hacer='mdp.V[0]=a;mdp.V[1]=b;mdp.V[2]=c;mdp.V[3]=d;mdp.V[4]=e;mdp.V[5]=f;' id='INICIAR' evaluar='siempre' algoritmo='si'">
+   <param name="G_00" value="tipo='macro' expresi&oacute;n='estadistica/pastel' rotini='alfa' posini='[x,y]' nombre='mdp'">
+</applet>
+</p>
+<p align="center">
+Esta escena es una aplicación del macro que muestra algunos de sus parámetros.
+</p>
+<hr>
+
+<p><font size="2" face="Arial"><strong><cite><dfn><samp><tt>Autor: José Luis Abreu León</tt></samp></dfn></cite></strong></font></p>
+
+</body>
+</html>
+
+

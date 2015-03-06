@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>Campo Vectorial</title></head>
+<body BGCOLOR="#eeeeee">
+<p align="center">
+<FONT size=+2>Macro: campo</FONT><br>tipo 2D
+</p>
+<p align="center">
+<applet code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=480 height=360>
+   <param name="Versi&oacute;n" value="3.502">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="fijo='si' escala='40' despl_imagen='arr-izq' fondo='blanco' red='grisClaro' red10='gris' ejes='grisObscuro' texto='no' n&uacute;meros='si'">
+   <param name="C_00" value="tipo='num&eacute;rico' id='escala' regi&oacute;n='exterior' valor='120' decimales='4*(escala<10)' nombre='zoom' incr='0.1*escala' min='0.001' max='1000000' visible='no' pos_mensajes='centro'">
+   <param name="C_01" value="tipo='num&eacute;rico' id='Ox' regi&oacute;n='exterior' incr='10' pos_mensajes='centro'">
+   <param name="C_02" value="tipo='num&eacute;rico' id='Oy' regi&oacute;n='exterior' incr='10' pos_mensajes='centro'">
+   <param name="C_03" value="tipo='num&eacute;rico' id='T' valor='1' nombre='T' visible='si' pos_mensajes='centro'">
+   <param name="A_00" value="id='dl' expresi&oacute;n='0.5' evaluar='una-sola-vez' constante='si'">
+   <param name="A_01" value="id='DT' expresi&oacute;n='0.1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_02" value="id='T' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_03" value="id='R' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_04" value="id='S' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_05" value="id='factor' expresi&oacute;n='0.2' evaluar='una-sola-vez' constante='si'">
+   <param name="A_06" value="id='normal' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_07" value="id='curvas' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_08" value="id='simetria' expresi&oacute;n='2' evaluar='una-sola-vez' constante='si'">
+   <param name="A_09" value="id='Fx' expresi&oacute;n='1+x^2'">
+   <param name="A_10" value="id='Fy' expresi&oacute;n='x^2-y^2'">
+   <param name="A_11" value="inicio='m=ent((480/escala)/dl); n=ent((360/escala)/dl)' hacer='x0=-(m-1)*dl/2-Ox/escala;y0=-(n-1)*dl/2+Oy/escala;M=m*n;N=ent(abs(T/dt))' id='INIT' evaluar='siempre' algoritmo='si'">
+   <param name="A_12" value="id='fx(x,y)' expresi&oacute;n='Fx'">
+   <param name="A_13" value="id='fy(x,y)' expresi&oacute;n='Fy'">
+   <param name="A_14" value="inicio='i=0;u=x1;v=y1;n=abs(t/DT);dt=sgn(t)*DT;tt=0;' hacer='p=u;q=v;fx0=fx(p,q);fy0=fy(p,q);dt=sgn(t)*DT;DD=sqrt(fx0^2+fy0^2);dt=(DD<=1)?dt:dt/sqrt(DD);k1x=fx0*dt;k1y=fy0*dt;tt=tt+dt/2;k2x=fx(p+k1x/2,q+k1y/2)*dt;k2y=fy(p+k1x/2,q+k1y/2)*dt;k3x=fx(p+k2x/2,q+k2y/2)*dt;k3y=fy(p+k2x/2,q+k2y/2)*dt;tt=tt+dt/2;k4x=fx(p+k3x,q+k3y)*dt;k4y=fy(p+k3x,q+k3y)*dt;i=i+1;u=p+(k1x+2*k2x+2*k3x+k4x)/6;v=q+(k1y+2*k2y+2*k3y+k4y)/6;' mientras='(abs(dt)>0)&(abs(tt)<=abs(t))' id='P(x1,y1,t)' expresi&oacute;n='u' algoritmo='si'">
+   <param name="A_15" value="inicio='i=0;u=x1;v=y1;n=abs(t/DT);dt=sgn(t)*DT;tt=0;' hacer='p=u;q=v;fx0=fx(p,q);fy0=fy(p,q);dt=sgn(t)*DT;DD=sqrt(fx0^2+fy0^2);dt=(DD<=1)?dt:dt/sqrt(DD);k1x=fx0*dt;k1y=fy0*dt;tt=tt+dt/2;k2x=fx(p+k1x/2,q+k1y/2)*dt;k2y=fy(p+k1x/2,q+k1y/2)*dt;k3x=fx(p+k2x/2,q+k2y/2)*dt;k3y=fy(p+k2x/2,q+k2y/2)*dt;tt=tt+dt/2;k4x=fx(p+k3x,q+k3y)*dt;k4y=fy(p+k3x,q+k3y)*dt;i=i+1;u=p+(k1x+2*k2x+2*k3x+k4x)/6;v=q+(k1y+2*k2y+2*k3y+k4y)/6;' mientras='(abs(dt)>0)&(abs(tt)<=abs(t))' id='Q(x1,y1,t)' expresi&oacute;n='v' algoritmo='si'">
+   <param name="A_16" value="id='X(s)' expresi&oacute;n='x0+(s%m)*dl'">
+   <param name="A_17" value="id='Y(s)' expresi&oacute;n='y0+ent(s/m)*dl'">
+   <param name="A_18" value="id='Nx(x,y)' expresi&oacute;n='factor*fx(x,y)/sqrt(fx(x,y)^2+fy(x,y)^2)'">
+   <param name="A_19" value="id='Ny(x,y)' expresi&oacute;n='factor*fy(x,y)/sqrt(fx(x,y)^2+fy(x,y)^2)'">
+   <param name="G_00" value="tipo='flecha' fondo='si' dibujar-si='normal=0' color='8080ff' expresi&oacute;n='(X(s),Y(s))(X(s)+fx(X(s),Y(s)),Y(s)+fy(X(s),Y(s)))' familia='s' s.intervalo='[0,M-1]' s.pasos='M-1' tama&ntilde;o='1' ancho='0' ancho='0' punta='2' flecha='8080ff'">
+   <param name="G_01" value="tipo='flecha' fondo='si' dibujar-si='normal=1' color='8080ff' expresi&oacute;n='(X(s),Y(s))(X(s)+Nx(X(s),Y(s)),Y(s)+Ny(X(s),Y(s)))' familia='s' s.intervalo='[0,M-1]' s.pasos='M-1' tama&ntilde;o='1' ancho='0' ancho='0' punta='2' flecha='8080ff'">
+   <param name="G_02" value="tipo='curva' dibujar-si='curvas&(simetria=0)' color='000080' expresi&oacute;n='(P(-S+S*(s%4)/2,-S+S*(s/8),t),Q(-S+S*(s%4)/2,-S+S*(s/8),t))' familia='s' s.intervalo='[0,16]' s.pasos='16' t.intervalo='[0,T]' t.pasos='16' visible='no'">
+   <param name="G_03" value="tipo='curva' dibujar-si='curvas&(simetria=0)' color='000080' expresi&oacute;n='(P(-S+S*(s%4)/2,-S+S*(s/8),t),Q(-S+S*(s%4)/2,-S+S*(s/8),t))' familia='s' s.intervalo='[0,16]' s.pasos='16' t.intervalo='[0,-T]' t.pasos='16' visible='no'">
+   <param name="G_04" value="tipo='curva' dibujar-si='curvas&(simetria=1)' color='000080' expresi&oacute;n='(P(s,0,t),Q(s,0,t))' familia='s' s.intervalo='[-S,S]' s.pasos='8' t.intervalo='[0,T]' t.pasos='16' visible='no'">
+   <param name="G_05" value="tipo='curva' dibujar-si='curvas&(simetria=1)' color='000080' expresi&oacute;n='(P(s,0,t),Q(s,0,t))' familia='s' s.intervalo='[-S,S]' s.pasos='8' t.intervalo='[0,-T]' t.pasos='16' visible='no'">
+   <param name="G_06" value="tipo='curva' dibujar-si='curvas&(simetria=2)' color='000080' expresi&oacute;n='(P(0,s,t),Q(0,s,t))' familia='s' s.intervalo='[-S,S]' s.pasos='8' t.intervalo='[0,T]' t.pasos='16' visible='no'">
+   <param name="G_07" value="tipo='curva' dibujar-si='curvas&(simetria=2)' color='000080' expresi&oacute;n='(P(0,s,t),Q(0,s,t))' familia='s' s.intervalo='[-S,S]' s.pasos='8' t.intervalo='[0,-T]' t.pasos='16' visible='no'">
+   <param name="G_08" value="tipo='curva' dibujar-si='curvas&(simetria=3)' color='000080' expresi&oacute;n='(P(R*cos(s),R*sen(s),t),Q(R*cos(s),R*sen(s),t))' familia='s' s.intervalo='[0,2*pi]' s.pasos='16' t.intervalo='[0,T]' t.pasos='16' visible='no'">
+   <param name="G_09" value="tipo='curva' dibujar-si='curvas&(simetria=3)' color='000080' expresi&oacute;n='(P(R*cos(s),R*sen(s),t),Q(R*cos(s),R*sen(s),t))' familia='s' s.intervalo='[0,2*pi]' s.pasos='16' t.intervalo='[0,-T]' t.pasos='16' visible='no'">
+</applet>
+</p>
+<p align="center">
+Esta escena se usa para generar el macro.
+</p>
+<p align="center">
+<applet name="mi_campo"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=480 height=360>
+   <param name="nombre" value="mi_campo">
+   <param name="Versi&oacute;n" value="3.502">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=si config=si inicio=si limpiar=si">
+   <param name="E_00" value="despl_imagen='arr-izq' fondo='blanco' red='grisClaro' red10='negro' ejes='gris' texto='no'">
+   <param name="C_00" value="tipo='num&eacute;rico' id='escala' regi&oacute;n='norte' valor='40' decimales='4*(escala<10)' nombre='zoom' incr='0.1*escala' min='0.001' max='1000000' visible='no' pos_mensajes='centro'">
+   <param name="C_01" value="tipo='num&eacute;rico' id='O.x' pos_mensajes='centro'">
+   <param name="C_02" value="tipo='num&eacute;rico' id='O.y' pos_mensajes='centro'">
+   <param name="C_03" value="tipo='num&eacute;rico' id='mc.T' valor='1.5' nombre='mc.T' visible='si' pos_mensajes='centro'">
+   <param name="C_04" value="tipo='num&eacute;rico' id='mc.curvas' interfaz='men&uacute;' valor='1' nombre='mc.curvas' visible='no' opciones='no,s&iacute;' pos_mensajes='centro'">
+   <param name="A_00" value="id='mc.dl' expresi&oacute;n='0.75' evaluar='una-sola-vez' constante='si'">
+   <param name="A_01" value="id='mc.Fx' expresi&oacute;n='-y-x/ra&iacute;z(x^2+y^2)' editable='si'">
+   <param name="A_02" value="id='mc.Fy' expresi&oacute;n='x-y/ra&iacute;z(x^2+y^2)' editable='si'">
+   <param name="A_03" value="id='mc.simetria' expresi&oacute;n='3' evaluar='una-sola-vez' constante='si'">
+   <param name="A_04" value="id='mc.factor' expresi&oacute;n='0.5' evaluar='una-sola-vez' constante='si'">
+   <param name="A_05" value="id='mc.R' expresi&oacute;n='2' evaluar='una-sola-vez' constante='si'">
+   <param name="G_00" value="tipo='macro' expresi&oacute;n='electromag/campo' nombre='mc'">
+</applet>
+</p>
+<p align="center">
+Estas escenas son aplicaciones del macro.
+</p>
+<p align="center">
+<applet name="mi_campo"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=480 height=360>
+   <param name="nombre" value="mi_campo">
+   <param name="Versi&oacute;n" value="3.502">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=si config=si inicio=si limpiar=si">
+   <param name="E_00" value="despl_imagen='arr-izq' fondo='blanco' red='grisClaro' red10='negro' ejes='gris' texto='no'">
+   <param name="C_00" value="tipo='num&eacute;rico' id='escala' regi&oacute;n='norte' valor='40' decimales='4*(escala<10)' nombre='zoom' incr='0.1*escala' min='0.001' max='1000000' visible='no' pos_mensajes='centro'">
+   <param name="C_01" value="tipo='num&eacute;rico' id='O.x' pos_mensajes='centro'">
+   <param name="C_02" value="tipo='num&eacute;rico' id='O.y' pos_mensajes='centro'">
+   <param name="C_03" value="tipo='num&eacute;rico' id='mc.T' valor='1.5' nombre='mc.T' visible='si' pos_mensajes='centro'">
+   <param name="C_04" value="tipo='num&eacute;rico' id='mc.curvas' interfaz='men&uacute;' nombre='mc.curvas' visible='no' opciones='no,s&iacute;' pos_mensajes='centro'">
+   <param name="C_05" value="tipo='num&eacute;rico' id='d' valor='1' nombre='d' visible='si' acci&oacute;n='limpiar' pos_mensajes='centro'">
+   <param name="A_00" value="id='mc.dl' expresi&oacute;n='0.5' evaluar='una-sola-vez' constante='si'">
+   <param name="A_01" value="id='mc.Fx' expresi&oacute;n='-(x+d)/((x+d)^2+y^2)+(x-d)/((x-d)^2+y^2)' editable='si'">
+   <param name="A_02" value="id='mc.Fy' expresi&oacute;n='-y/((x+d)^2+y^2)+y/((x-d)^2+y^2)' editable='si'">
+   <param name="A_03" value="id='mc.factor' expresi&oacute;n='0.5' evaluar='una-sola-vez' constante='si'">
+   <param name="A_04" value="id='mc.simetria' expresi&oacute;n='2' evaluar='una-sola-vez' constante='si'">
+   <param name="A_05" value="id='mc.R' expresi&oacute;n='2' evaluar='una-sola-vez' constante='si'">
+   <param name="A_06" value="id='mc.S' expresi&oacute;n='2' evaluar='una-sola-vez' constante='si'">
+   <param name="G_00" value="tipo='macro' expresi&oacute;n='electromag/campo' nombre='mc'">
+</applet>
+</p>
+<hr>
+
+<p><font size="2" face="Arial"><strong><cite><dfn><samp><tt>Autor: José Luis Abreu León</tt></samp></dfn></cite></strong></font></p>
+
+</body>
+</html>
+
+

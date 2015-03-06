@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>ejes</title></head>
+<body BGCOLOR="#eeeeee">
+<p align="center">
+<FONT size=+2>Macro: rectangulo</FONT><br>tipo 2D
+</p>
+<p align="center">
+<applet name="rectangulo"
+        code="Descartes.class"
+        codebase="../../"
+        archive="Descartes.jar"
+        MAYSCRIPT
+        width=240 height=200>
+   <param name="nombre" value="rectangulo">
+   <param name="Versi&oacute;n" value="3.5">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="O.x='-96' O.y='72' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='gris' texto='no'">
+   <param name="A_00" value="id='a' expresi&oacute;n='4' evaluar='una-sola-vez' constante='si'">
+   <param name="A_01" value="id='b' expresi&oacute;n='3' evaluar='una-sola-vez' constante='si'">
+   <param name="A_02" value="id='rojo' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_03" value="id='verde' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_04" value="id='azul' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="A_05" value="id='transp' expresi&oacute;n='0' evaluar='una-sola-vez' constante='si'">
+   <param name="G_00" value="tipo='pol&iacute;gono' color='negro' expresi&oacute;n='(0,0)(a,0)(a,b)(0,b)(0,0)' relleno='(rojo,verde,azul,transp)'">
+</applet>
+</p>
+<p align="center">
+Esta escena se usa para generar el macro.
+</p>
+<p align="center">
+<applet name="mi_rectangulo"
+        code="Descartes.class"
+        codebase="../../"
+        archive="Descartes.jar"
+        MAYSCRIPT
+        width=360 height=240>
+   <param name="nombre" value="mi_rectangulo">
+   <param name="Versi&oacute;n" value="3.5">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="escala='24' despl_imagen='arr-izq' fondo='blanco' red='grisClaro' red10='negro' ejes='gris' texto='no'">
+   <param name="C_00" value="tipo='num&eacute;rico' id='x' interfaz='pulsador' regi&oacute;n='sur' valor='2' nombre='x' visible='si'">
+   <param name="C_01" value="tipo='num&eacute;rico' id='y' interfaz='pulsador' regi&oacute;n='sur' valor='-1' nombre='y' visible='si'">
+   <param name="C_02" value="tipo='num&eacute;rico' id='alfa' interfaz='pulsador' regi&oacute;n='sur' valor='135' nombre='alfa' incr='1' visible='si'">
+   <param name="C_03" value="tipo='num&eacute;rico' id='a' interfaz='pulsador' regi&oacute;n='norte' valor='4' nombre='a' visible='si'">
+   <param name="C_04" value="tipo='num&eacute;rico' id='b' interfaz='pulsador' regi&oacute;n='norte' valor='3' nombre='b' visible='si'">
+   <param name="A_00" value="id='m_t.a' expresi&oacute;n='a' evaluar='siempre' constante='si'">
+   <param name="A_01" value="id='m_t.b' expresi&oacute;n='b' evaluar='siempre' constante='si'">
+   <param name="A_02" value="id='m_t.rojo' expresi&oacute;n='1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_03" value="id='m_t.verde' expresi&oacute;n='0.1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_04" value="id='m_t.azul' expresi&oacute;n='0.2' evaluar='una-sola-vez' constante='si'">
+   <param name="A_05" value="id='m_t.transp' expresi&oacute;n='0.33' evaluar='una-sola-vez' constante='si'">
+   <param name="G_00" value="tipo='macro' expresi&oacute;n='rectangulo' rotini='alfa' posini='[x,y]' nombre='m_t'">
+</applet>
+</p>
+<p align="center">
+Esta escena es una aplicación del macro que muestra sus parámetros.
+</p>
+<hr>
+
+<p><font size="2" face="Arial"><strong><cite><dfn><samp><tt>Autor: José Luis Abreu León</tt></samp></dfn></cite></strong></font></p>
+
+</body>
+</html>
+
+

@@ -52,44 +52,44 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <th class="azul">Programación en Visual Basic .Net</th>
-                                <td><span class="icon icon-x"></span></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>4 días</td>
-                                <td>Presencial</td>
-                                <td>Tutor</td>
-                                <td>Informática</td>
-                            </tr>
-                            <tr>
                                 <th class="azul">Scratch</th>
                                 <td></td>
                                 <td><span class="icon icon-x"></span></td>
-                                <td><span class="icon icon-x"></span></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td>2 meses</td>
-                                <td>Virtual</td>
+                                <td></td>
+                                <td>1 día</td>
+                                <td>Presencial</td>
                                 <td>Tutor</td>
                                 <td>Informática / Primario</td>
                             </tr>
                             <tr>
                                 <th class="azul">App Inventor</th>
                                 <td></td>
+                                <td><span class="icon icon-x"></span></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>1 día</td>
+                                <td>Presencial</td>
+                                <td>Tutor</td>
+                                <td>Informática</td>
+                            </tr>
+                            <tr>
+                                <th class="azul">HTML-PHP</th>
                                 <td></td>
                                 <td></td>
                                 <td><span class="icon icon-x"></span></td>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -100,13 +100,13 @@
                                 <td>Informática</td>
                             </tr>
                             <tr>
-                                <th class="azul">Premier</th>
-                                <td></td>
+                                <th class="azul">Dreamweaver</th>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td><span class="icon icon-x"></span></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -116,13 +116,13 @@
                                 <td>Informática</td>
                             </tr>
                             <tr>
-                                <th class="azul">In Design</th>
-                                <td></td>
+                                <th class="azul">Illustrator</th>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td><span class="icon icon-x"></span></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -131,21 +131,37 @@
                                 <td>Tutor</td>
                                 <td>Informática</td>
                             </tr>
-                            <tr>
-                                <th class="verde">Herramienta de Google</th>
+                             <tr>
+                                <th class="azul">Premiere</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                                 <td><span class="icon icon-x"></span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>1 día</td>
+                                <td>Presencial</td>
+                                <td>Tutor</td>
+                                <td>Informática</td>
+                            </tr>
+                             <tr>
+                                <th class="azul">Java</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                                 <td><span class="icon icon-x"></span></td>
-                                <td><span class="icon icon-x"></span></td>
-                                <td><span class="icon icon-x"></span></td>
-                                <td><span class="icon icon-x"></span></td>
-                                <td><span class="icon icon-x"></span></td>
-                                <td><span class="icon icon-x"></span></td>
-                                <td><span class="icon icon-x"></span></td>
-                                <td><span class="icon icon-x"></span></td>
-                                <td>2 meses</td>
-                                <td>Virtual</td>
-                                <td>Autoformación</td>
-                                <td>General</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>2 días</td>
+                                <td>Presencial</td>
+                                <td>Tutor</td>
+                                <td>Informática</td>
                             </tr>
                             <tr>
                                 <th class="verde">Creación de Videotutoriales</th>
@@ -160,7 +176,7 @@
                                 <td><span class="icon icon-x"></span></td>
                                 <td>1 mes</td>
                                 <td>Virtual</td>
-                                <td>Tutor</td>
+                                <td>Autoformación</td>
                                 <td>General</td>
                             </tr>
                             <tr>
@@ -176,7 +192,7 @@
                                 <td><span class="icon icon-x"></span></td>
                                 <td>1 mes</td>
                                 <td>Virtual</td>
-                                <td>Tutor</td>
+                                <td>Autoformación</td>
                                 <td>General</td>
                             </tr>
                             <tr>
@@ -192,7 +208,7 @@
                                 <td><span class="icon icon-x"></span></td>
                                 <td>1 mes</td>
                                 <td>Virtual</td>
-                                <td>Tutor</td>
+                                <td>Autoformación</td>
                                 <td>General</td>
                             </tr>
                             <tr>
@@ -208,7 +224,7 @@
                                 <td><span class="icon icon-x"></span></td>
                                 <td>1 mes</td>
                                 <td>Virtual</td>
-                                <td>Tutor</td>
+                                <td>Autoformación</td>
                                 <td>General</td>
                             </tr>
                             <tr>
@@ -224,7 +240,7 @@
                                 <td><span class="icon icon-x"></span></td>
                                 <td>1 mes</td>
                                 <td>Virtual</td>
-                                <td>Tutor</td>
+                                <td>Autoformación</td>
                                 <td>General</td>
                             </tr>
                             <tr>
@@ -240,7 +256,7 @@
                                 <td><span class="icon icon-x"></span></td>
                                 <td>1 mes</td>
                                 <td>Virtual</td>
-                                <td>Tutor</td>
+                                <td>Autoformación</td>
                                 <td>General</td>
                             </tr>
                         </tbody>
@@ -258,24 +274,7 @@
                 <div class="column small-12">
                     <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4 grilla">
                         <li class="item">
-                            <h4 class="titulo">Programación en Viasual Basic.NET</h4>
-                            <div class="imagen">
-                                <img src="img/capacitacion/visual.jpg" width="320" />
-                                <div class="info">
-                                    <div class="row">
-                                        <div class="column small-12">
-                                            <p>Los docentes podrán familiarizarse con este lenguaje de programación orientado a objetos, y aprender a utilizar pedagógicamente los recursos tecnológicos que ofrece.</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="column small-6 text-left"><p><strong>Duración:</strong><br/>4 días</p></div>
-                                        <div class="column small-6 text-right"><p><strong>Modalidad:</strong><br/>Presencial</p></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="item">
-                            <h4 class="titulo">Scratch</h4>
+                             <h4 class="titulo">Scratch</h4>
                             <div class="imagen">
                                 <img src="img/capacitacion/scratch.jpg" width="320" />
                                 <div class="info">
@@ -285,14 +284,14 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="column small-6 text-left"><p><strong>Duración:</strong><br/>2 meses</p></div>
-                                        <div class="column small-6 text-right"><p><strong>Modalidad:</strong><br/>Virtual con tutoría</p></div>
+                                        <div class="column small-6 text-left"><p><strong>Duración:</strong><br/>1 día</p></div>
+                                        <div class="column small-6 text-right"><p><strong>Modalidad:</strong><br/>Presencial</p></div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> 
                         </li>
                         <li class="item">
-                            <h4 class="titulo">App Inventor</h4>
+                          <h4 class="titulo">App Inventor</h4>
                             <div class="imagen">
                                 <img src="img/capacitacion/appinventor.jpg" width="320" />
                                 <div class="info">
@@ -302,14 +301,65 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="column small-6 text-left"><p><strong>Duración:</strong><br/>2 días</p></div>
+                                        <div class="column small-6 text-left"><p><strong>Duración:</strong><br/>1 día</p></div>
                                         <div class="column small-6 text-right"><p><strong>Modalidad:</strong><br/>Presencial</p></div>
                                     </div>
                                 </div>
                             </div>
                         </li>
                         <li class="item">
-                            <h4 class="titulo">Premier</h4>
+                          <h4 class="titulo">HTML-PHP</h4>
+                            <div class="imagen">
+                                <img src="img/capacitacion/htmlphp.jpg" width="320" />
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="column small-12">
+                                            <p>Este taller propone avanzar un paso más en el diseño de páginas web, permitiendo que usted pueda explorar y comprender junto a sus alumnos el estándar HTML y dotar de funcionalidad a sus páginas. Se recomienda para trabajar con alumnos de 16 años en adelante.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column small-6 text-left"><p><strong>Duración:</strong><br/>2 días</p></div>
+                                        <div class="column small-6 text-right"><p><strong>Modalidad:</strong><br/>Presencial</p></div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </li>
+                        <li class="item">
+                            <h4 class="titulo">Dreamweaver</h4>
+                            <div class="imagen">
+                                <img src="img/capacitacion/dreamweaver.jpg" width="320" />
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="column small-12">
+                                            <p>Es una herramienta destinada a la construcción, diseño y edición de sitios y aplicaciones Web. Permite agregar rápidamente diseño y funcionalidad a las páginas, sin la necesidad de programar manualmente el código HTML.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column small-6 text-left"><p><strong>Duración:</strong><br/>1 día</p></div>
+                                        <div class="column small-6 text-right"><p><strong>Modalidad:</strong><br/>Presencial</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                              <h4 class="titulo">Illustrator</h4>
+                            <div class="imagen">
+                                <img src="img/capacitacion/illustrator.jpg" width="320" />
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="column small-12">
+                                            <p>Editor de gráficos vectoriales pensado para la creación artística de dibujos para ilustración. Esta herramienta cuenta con infinidad de opciones creativas, que se presentan de manera sencilla, permitiendo una gran versatilidad a la hora de producir gráficos. </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column small-6 text-left"><p><strong>Duración:</strong><br/>1 día</p></div>
+                                        <div class="column small-6 text-right"><p><strong>Modalidad:</strong><br/>Presencial</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                          <h4 class="titulo">Premiere</h4>
                             <div class="imagen">
                                 <img src="img/capacitacion/premier.jpg" width="320" />
                                 <div class="info">
@@ -324,41 +374,25 @@
                                     </div>
                                 </div>
                             </div>
-                        </li>
+                            </li>
+                             </li>
                         <li class="item">
-                            <h4 class="titulo">In Desing</h4>
+                          <h4 class="titulo">Java</h4>
                             <div class="imagen">
-                                <img src="img/capacitacion/indesign.jpg" width="320" />
+                                <img src="img/capacitacion/java.jpg" width="320" />
                                 <div class="info">
                                     <div class="row">
                                         <div class="column small-12">
-                                            <p>Esta herramienta de diseño y maquetación editorial le permitirá producir documentos en los que se integren textos y gráficos de manera fàcil y dinámica, lo que lo convierte en una aplicación ideal para realizar proyectos editoriales con los alumnos, como ser la revista del colegio.</p>
+                                            <p>En el taller de JAVA se presentarán las nociones básicas de este entorno de programación. Es un temario de nivel fundamentos, pensado para trabajar en escuelas con orientación en informática, y con alumnos del último año.</p>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="column small-6 text-left"><p><strong>Duración:</strong><br/>1 día</p></div>
+                                        <div class="column small-6 text-left"><p><strong>Duración:</strong><br/>2 días</p></div>
                                         <div class="column small-6 text-right"><p><strong>Modalidad:</strong><br/>Presencial</p></div>
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                        <li class="item">
-                            <h4 class="titulo">Herramientas Google</h4>
-                            <div class="imagen">
-                                <img src="img/capacitacion/google.jpg" width="320" />
-                                <div class="info">
-                                    <div class="row">
-                                        <div class="column small-12">
-                                            <p>El curso aborda tres herramientas gratuitas de Google que pueden usarse en el ámbito educativo: Google Calendar, una agenda virtual que puede convertirse en agenda institucional; Google Docs, un espacio para compartir documentos y editarlos cooperativamente; y Google Grupos, una comunidad virtual muy simple de usar para la interacción entre docentes, alumnos y/o padres.</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="column small-6 text-left"><p><strong>Duración:</strong><br/>2 meses</p></div>
-                                        <div class="column small-6 text-right"><p><strong>Modalidad:</strong><br/>Autoformación</p></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+                            </li>
                         <li class="item">
                             <h4 class="titulo">Creación de Videotutoriales</h4>
                             <div class="imagen">

@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="modulo_6_matiasguarino" version="0.1.3">
+ <settings>
+  <title>Módulo 4</title>
+  <revision description="created" date="10/12/11" />
+  <descriptors />
+  <eventSounds>
+   <sound id="click" file="water-droplet-2.wav" />
+   <sound id="actionError" file="vaca.mp3" />
+   <sound id="actionOk" file="CLAP4.WAV" />
+   <sound id="finishedOk" file="timbales.mp3" />
+  </eventSounds>
+  <skin file="@default.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="Inicio" navButtons="none">
+   <jump tag="start" id="back" />
+  </item>
+  <item name="Desaparecidas" />
+  <item name="Con opciones">
+   <jump tag="start" id="back" />
+  </item>
+  <item name="Con primera letra">
+   <jump tag="start" id="back" />
+  </item>
+  <item name="Identificar sustantivos">
+   <jump tag="start" id="back" />
+  </item>
+  <item name="Ordenar párrafos">
+   <jump tag="start" id="back" />
+  </item>
+  <item name="Ordenar palabras">
+   <jump tag="start" id="back" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@text.FillInBlanks" name="Con opciones" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <gradient source="0xFFCCCC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Seleccioná la palabra correcta en cada caso para completar el texto</p>
+    </cell>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="Gallo.jpg" type="final">
+     <style>
+      <gradient source="0xFFCCCC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>¡Bárbaro! Terminaste</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xCCFFCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xCCFFCC" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="click" file="water-droplet-2.wav" />
+     <sound id="actionError" file="vaca.mp3" />
+     <sound id="actionOk" file="CLAP4.WAV" />
+     <sound id="finishedOk" file="timbales.mp3" />
+    </eventSounds>
+   </settings>
+   <document>
+    <style name="default" italic="false" background="0xFFFFFF" size="11" bold="false" tabWidth="12" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial">
+      <text size="14" family="Century Gothic">El Sistema digestivo es el conjunto de órganos (boca, faringe, esófago, estómago, intestino delgado e intestino grueso) encargados del proceso de la </text>
+      <target>
+       <answer>digestión</answer>
+       <optionList>
+        <option>digestión</option>
+        <option>circulación</option>
+        <option>respiración</option>
+       </optionList>
+       <text>digestión</text>
+      </target>
+      <text size="14" family="Century Gothic">, es decir, la transformación de los alimentos para que puedan ser </text>
+      <target>
+       <answer>absorbidos</answer>
+       <optionList>
+        <option>absorbidos</option>
+        <option>achicados</option>
+        <option>digeridos</option>
+        <option>combinados</option>
+       </optionList>
+       <text>absorbidos</text>
+      </target>
+      <text size="14" family="Century Gothic"> y utilizados por las células del organismo.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text size="14" family="Century Gothic">El proceso de la digestión es el mismo en todos los animales monogástricos: transformar los glúcidos, lípidos y proteínas en unidades más </text>
+      <target>
+       <answer>sencillas</answer>
+       <optionList>
+        <option>sencillas</option>
+        <option>complejas</option>
+       </optionList>
+       <text>sencillas</text>
+      </target>
+      <text size="14" family="Century Gothic">, gracias a las enzimas digestivas, para que puedan ser absorbidas y transportadas por la </text>
+      <target>
+       <answer>sangre</answer>
+       <optionList>
+        <option>sangre</option>
+        <option>boca</option>
+        <option>zona</option>
+       </optionList>
+       <text>sangre</text>
+      </target>
+      <text size="14" family="Century Gothic">.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="Con primera letra" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <gradient source="0xFFCCCC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Completá las palabras faltantes, como pista, ¡tenés la primera letra!</p>
+    </cell>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="Gallo.jpg" type="final">
+     <style>
+      <gradient source="0xFFCCCC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>¡Muy bien! ¡Terminaste la actividad!</p>
+    </cell>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="Vacagrita.jpg" type="finalError">
+     <style>
+      <gradient source="0xFFCCCC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>¡Epa! Eso no es correcto...</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xCCFFCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFFFFCC" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="click" file="water-droplet-2.wav" />
+     <sound id="actionError" file="vaca.mp3" />
+     <sound id="actionOk" file="CLAP4.WAV" />
+     <sound id="finishedOk" file="timbales.mp3" />
+    </eventSounds>
+   </settings>
+   <document>
+    <style name="default" italic="false" background="0xFFFFFF" size="11" bold="false" tabWidth="12" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial">
+      <text size="14" family="Century Gothic">El sistema </text>
+      <target>
+       <answer>respiratorio</answer>
+       <response fill="_" length="12" maxLength="12" show="R" />
+       <text>respiratorio</text>
+      </target>
+      <text size="14" family="Century Gothic"> es el encargado de captar oxígeno y eliminar el dióxido de carbono procedente del metabolismo celular.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial">
+      <text size="14" family="Century Gothic">Generalmente incluye tubos, como los </text>
+      <target>
+       <answer>bronquios</answer>
+       <response fill="_" length="9" maxLength="9" show="b" />
+       <text>bronquios</text>
+      </target>
+      <text size="14" family="Century Gothic">, usados para cargar aire en los </text>
+      <target>
+       <answer>pulmones</answer>
+       <response fill="_" length="8" maxLength="8" show="p" />
+       <text>pulmones</text>
+      </target>
+      <text size="14" family="Century Gothic">, donde ocurre el intercambio gaseoso. El </text>
+      <target>
+       <answer>diafragma</answer>
+       <response fill="_" length="9" maxLength="9" show="d" />
+       <text>diafragma</text>
+      </target>
+      <text size="14" family="Century Gothic">, como todo músculo puede contraerse y relajarse. En la inhalación, se contrae y se allana y la cavidad torácica se amplía. Esta contracción crea un vacío que succiona el aire hacia los pulmones. En la exhalación, se relaja y retoma su forma de domo y el aire es expulsado de los pulmones.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="Desaparecidas" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <gradient source="0xFFCCCC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Completá el texto con las palabras faltantes. ¡ojo con la ortografía!</p>
+    </cell>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="Gallo.jpg" type="final">
+     <style>
+      <gradient source="0xFFCCCC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>¡Buenísimo! ¡Completaste bien las cuatro palabras!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xCCFFCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFCCCC" border="true">
+     <gradient source="0xCCCCFF" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="click" file="water-droplet-2.wav" />
+     <sound id="actionError" file="vaca.mp3" />
+     <sound id="actionOk" file="CLAP4.WAV" />
+     <sound id="finishedOk" file="timbales.mp3" />
+    </eventSounds>
+   </settings>
+   <document>
+    <style name="default" italic="false" background="0xFFFFFF" size="11" bold="false" tabWidth="12" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial">
+      <text size="14" family="Century Gothic">El sistema </text>
+      <target>
+       <answer>circulatorio</answer>
+       <response fill="_" length="12" maxLength="12" />
+       <text>circulatorio</text>
+      </target>
+      <text size="14" family="Century Gothic"> es la estructura anatómica que comprende conjuntamente tanto al sistema cardiovascular que conduce y hace circular la </text>
+      <target>
+       <answer>sangre</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>sangre</text>
+      </target>
+      <text size="14" family="Century Gothic">, como al sistema linfático, que conduce la linfa.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text size="14" family="Century Gothic">Su función principal es la de pasar </text>
+      <target>
+       <answer>nutrientes</answer>
+       <response fill="_" length="10" maxLength="10" />
+       <text>nutrientes</text>
+      </target>
+      <text size="14" family="Century Gothic"> (tales como aminoácidos, electrolitos y linfa), gases, hormonas, células sanguíneas, etc. a las </text>
+      <target>
+       <answer>células</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>células</text>
+      </target>
+      <text size="14" family="Century Gothic"> del cuerpo, recoger los desechos metabólicos que se han de eliminar después por los riñones, en la orina, y por el aire exhalado en los pulmones, rico en dióxido de carbono (CO2).</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.Identify" name="Identificar sustantivos" code="" type="identifyWords">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <gradient source="0xFFCCCC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>De la siguiente lista de órganos, cliqueá en aquellos que pertenecen al sistema excretor</p>
+    </cell>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="Gallo.jpg" type="final">
+     <style>
+      <gradient source="0xFFCCCC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>¡Buenísimo! ¡Terminaste la actividad correctamente!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xCCFFCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x9999FF" dest="0xFFFFFF" angle="0" />
+     <size width="200" height="308" />
+    </window>
+    <eventSounds>
+     <sound id="click" file="water-droplet-2.wav" />
+     <sound id="actionError" file="vaca.mp3" />
+     <sound id="actionOk" file="CLAP4.WAV" />
+     <sound id="finishedOk" file="timbales.mp3" />
+    </eventSounds>
+   </settings>
+   <checkButton>PROBAR</checkButton>
+   <document>
+    <style name="default" italic="false" background="0xFFFFFF" size="11" bold="false" tabWidth="12" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" Alignment="1" family="Arial">
+      <text size="14" family="Century Gothic">CORAZÓN</text>
+     </p>
+     <p background="0xFFFFFF" Alignment="1" family="Arial" />
+     <p background="0xFFFFFF" Alignment="1" family="Arial">
+      <text size="14" family="Century Gothic">PULMÓN</text>
+     </p>
+     <p background="0xFFFFFF" Alignment="1" family="Arial" />
+     <p background="0xFFFFFF" Alignment="1" family="Arial">
+      <target>RIÑÓN</target>
+     </p>
+     <p background="0xFFFFFF" Alignment="1" family="Arial" />
+     <p background="0xFFFFFF" Alignment="1" family="Arial">
+      <target>URETRA</target>
+     </p>
+     <p background="0xFFFFFF" Alignment="1" family="Arial" />
+     <p background="0xFFFFFF" Alignment="1" family="Arial">
+      <text size="14" family="Century Gothic">TESTÍCULO</text>
+     </p>
+     <p background="0xFFFFFF" Alignment="1" family="Arial" />
+     <p background="0xFFFFFF" Alignment="1" family="Arial">
+      <target>VEJIGA</target>
+     </p>
+     <p background="0xFFFFFF" Alignment="1" family="Arial" />
+     <p background="0xFFFFFF" Alignment="1" family="Arial">
+      <text size="14" family="Century Gothic">BRONQUIO</text>
+     </p>
+     <p background="0xFFFFFF" Alignment="1" family="Arial" />
+     <p background="0xFFFFFF" Alignment="1" family="Arial">
+      <target>URÉTER</target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+    </section>
+   </document>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Inicio" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <gradient source="0xFF9999" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Seleccioná la actividad que desees realizar. Se recomienda hacerlas en orden.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xCCFFCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCFFCC" border="true">
+     <gradient source="0x9933FF" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="click" file="water-droplet-2.wav" />
+     <sound id="actionError" file="vaca.mp3" />
+     <sound id="actionOk" file="CLAP4.WAV" />
+     <sound id="finishedOk" file="timbales.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="3" cellWidth="150.0" cellHeight="150.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell id="0" border="true">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <gradient source="0x99FF99" dest="0xFFFFFF" angle="91" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Con opciones" />
+     <p>Completar con opciones</p>
+    </cell>
+    <cell id="1">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <gradient source="0x99FF99" dest="0xFFFFFF" angle="91" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Desaparecidas" />
+     <p>Completar</p>
+    </cell>
+    <cell id="2">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <gradient source="0x99FF99" dest="0xFFFFFF" angle="91" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Con primera letra" />
+     <p>Completar con ayudita</p>
+    </cell>
+    <cell id="3">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <gradient source="0x99FF99" dest="0xFFFFFF" angle="91" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Identificar sustantivos" />
+     <p>Identificar palabras</p>
+    </cell>
+    <cell id="4">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <gradient source="0x99FF99" dest="0xFFFFFF" angle="91" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Ordenar párrafos" />
+     <p>Ordenar párrafos</p>
+    </cell>
+    <cell id="5">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <gradient source="0x99FF99" dest="0xFFFFFF" angle="91" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Ordenar palabras" />
+     <p>Ordenar palabras</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@text.Order" name="Ordenar palabras" code="" type="orderWords">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <gradient source="0xFFCCCC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Ordená las palabras que están en azul, para que el texto sea correcto.</p>
+    </cell>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="Gallo.jpg" type="final">
+     <style>
+      <gradient source="0xFFCCCC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>¡Buenísimo, quedó ordenadísimo!</p>
+    </cell>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="Vacagrita.jpg" type="finalError">
+     <style>
+      <gradient source="0xFFCCCC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>¡Epa! todavía hay algo desordenado... Revisalo y volvé a intentarlo!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xCCFFCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0xFF9900" dest="0xFFFFFF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="click" file="water-droplet-2.wav" />
+     <sound id="actionError" file="vaca.mp3" />
+     <sound id="actionOk" file="CLAP4.WAV" />
+     <sound id="finishedOk" file="timbales.mp3" />
+    </eventSounds>
+   </settings>
+   <checkButton>Probar el resultado</checkButton>
+   <document>
+    <style name="default" italic="false" background="0xFFFFFF" size="11" bold="false" tabWidth="12" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text size="14" family="Century Gothic">Recorrido del alimento a través del tubo digestivo:</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text size="14" family="Century Gothic">EL alimento ingresa por la </text>
+      <target size="14" foreground="0x0000FF" target="true" family="Century Gothic" name="target">boca,</target>
+      <text italic="false" background="0xFFFFFF" size="14" bold="false" tabWidth="12" family="Century Gothic" name="default"> luego pasa a la </text>
+      <target size="14" foreground="0x0000FF" target="true" family="Century Gothic" name="target">faringe,</target>
+      <text italic="false" background="0xFFFFFF" size="14" bold="false" tabWidth="12" family="Century Gothic" name="default"> de allí al </text>
+      <target size="14" foreground="0x0000FF" target="true" family="Century Gothic" name="target">esófago,</target>
+      <text italic="false" background="0xFFFFFF" size="14" bold="false" tabWidth="12" family="Century Gothic" name="default"> al </text>
+      <target size="14" foreground="0x0000FF" target="true" family="Century Gothic" name="target">estómago,</target>
+      <text italic="false" background="0xFFFFFF" size="14" bold="false" tabWidth="12" family="Century Gothic" name="default"> al </text>
+      <text italic="false" background="0xFFFFFF" size="14" bold="false" tabWidth="12" family="Century Gothic" name="default">intestino</text>
+      <text italic="false" background="0xFFFFFF" size="14" bold="false" tabWidth="12" family="Century Gothic" name="default"> </text>
+      <target size="14" foreground="0x0000FF" target="true" family="Century Gothic" name="target">delgado</target>
+      <text italic="false" background="0xFFFFFF" size="14" bold="false" tabWidth="12" family="Century Gothic" name="default"> y al </text>
+      <target size="14" foreground="0x0000FF" target="true" family="Century Gothic" name="target">grueso.</target>
+      <text italic="false" background="0xFFFFFF" size="14" bold="false" tabWidth="12" family="Century Gothic" name="default"> Luego, los desechos son eliminados por el </text>
+      <target size="14" foreground="0x0000FF" target="true" family="Century Gothic" name="target">ano.</target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.Order" name="Ordenar párrafos" code="" type="orderParagraphs">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <gradient source="0xFFCCCC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Ordená los párrafos para dejar la secuencia correcta....</p>
+    </cell>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="Gallo.jpg" type="final">
+     <style>
+      <gradient source="0xFFCCCC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>¡Muy Bien! Finalizaste correctamente la actividad.</p>
+    </cell>
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="Vacagrita.jpg" type="finalError">
+     <style>
+      <gradient source="0xFFCCCC" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>No, aun no es correcta la secuencia... ¡probá de nuevo!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xCCFFCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <gradient source="0x999900" dest="0xFFFFFF" angle="0" />
+     <size width="500" height="470" />
+    </window>
+    <eventSounds>
+     <sound id="click" file="water-droplet-2.wav" />
+     <sound id="actionError" file="vaca.mp3" />
+     <sound id="actionOk" file="CLAP4.WAV" />
+     <sound id="finishedOk" file="timbales.mp3" />
+    </eventSounds>
+   </settings>
+   <checkButton>Probá cómo quedó...</checkButton>
+   <document>
+    <style name="default" italic="false" background="0xFFFFFF" size="11" bold="false" tabWidth="12" family="Arial" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial">
+      <text size="14" family="Century Gothic">EL tubo digestivo:</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <target size="14" foreground="0x0000FF" target="true" family="Century Gothic" name="target">En</target>
+      <target size="14" foreground="0x0000FF" target="true" family="Century Gothic" name="target"> la boca ya empieza propiamente la digestión. Los dientes trituran los alimentos y las secreciones de las glándulas salivales los humedecen e inician su descomposición química.</target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <target size="14" foreground="0x0000FF" target="true" family="Century Gothic" name="target">Luego,</target>
+      <target size="14" foreground="0x0000FF" target="true" family="Century Gothic" name="target"> el bolo alimenticio cruza la faringe, sigue por el esófago y llega al estómago, una bolsa muscular de litro y medio de capacidad, en condiciones normales, cuya mucosa segrega el potente jugo gástrico, en el estómago, el alimento es agitado hasta convertirse en el quimo.</target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <target size="14" foreground="0x0000FF" target="true" family="Century Gothic" name="target">A</target>
+      <target size="14" foreground="0x0000FF" target="true" family="Century Gothic" name="target"> la salida del estómago, el tubo digestivo se prolonga con el intestino delgado, de unos seis metros de largo, aunque muy replegado sobre sí mismo.</target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <target size="14" foreground="0x0000FF" target="true" family="Century Gothic" name="target">En</target>
+      <target size="14" foreground="0x0000FF" target="true" family="Century Gothic" name="target"> su primera porción o duodeno recibe secreciones que contienen una gran cantidad de enzimas que degradan los alimentos y los transforman en sustancias solubles simples.</target>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <target size="14" foreground="0x0000FF" target="true" family="Century Gothic" name="target">El</target>
+      <target size="14" foreground="0x0000FF" target="true" family="Century Gothic" name="target"> tubo digestivo continúa por el intestino grueso, de algo más de metro y medio de longitud. Su porción final es el recto, que termina en el ano, por donde se evacuan al exterior los restos indigeribles de los alimentos.</target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="Gallo.jpg" file="Gallo.jpg" />
+  <media name="Vacagrita.jpg" file="Vacagrita.jpg" />
+  <media name="timbales.mp3" file="timbales.mp3" />
+  <media name="vaca.mp3" file="vaca.mp3" />
+  <media name="CLAP4.WAV" file="CLAP4.WAV" />
+  <media name="water-droplet-2.wav" file="water-droplet-2.wav" />
+ </mediaBag>
+</JClicProject>
+

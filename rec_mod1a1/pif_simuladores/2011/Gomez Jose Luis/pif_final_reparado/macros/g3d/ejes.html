@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>ejes</title></head>
+<body BGCOLOR="#eeeeee">
+<p align="center">
+<FONT size=+2>Macro: ejes</FONT><br>tipo 3D
+</p>
+<p align="center">
+<applet name="ejes"
+        code="Descartes.class"
+        codebase="../../"
+        archive="Descartes3.jar"
+        width=240 height=200>
+   <param name="nombre" value="ejes">
+   <param name="Versi&oacute;n" value="3.0 beta 1">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="id='Principal' R3='true' escala='96' O.y='40' fondo='blanco' despliegue_del_fondo='arriba-izquierda' despliegue='orden' cortar='false'">
+   <param name="A_00" value="id=longitud expresi&oacute;n='1' constante=si evaluar=una-sola-vez">
+   <param name="A_01" value="id=punta expresi&oacute;n='0.1' constante=si evaluar=una-sola-vez">
+   <param name="S_00" value="espacio='Principal' tipo='segmento' expresi&oacute;n='(0,0,0)(longitud,0,0)' color='gris' color_reverso='rosa' aristas='false' cortar='true'">
+   <param name="S_01" value="espacio='Principal' tipo='Cono' expresi&oacute;n='Ejex' Nu='4' Nv='1' ancho='punta' largo='punta' alto='punta' color='rojo' color_reverso='rosa' aristas='true' rotini='(0,-90,0)' posini='(longitud,0,0)' cortar='false'">
+   <param name="S_02" value="espacio='Principal' tipo='segmento' expresi&oacute;n='(0,0,0)(0,longitud,0)' color='gris' color_reverso='rosa' aristas='false' cortar='true'">
+   <param name="S_03" value="espacio='Principal' tipo='Cono' expresi&oacute;n='Ejey' Nu='4' Nv='1' ancho='punta' largo='punta' alto='punta' color='00c900' color_reverso='88ff88' aristas='true' rotini='(90,0,0)' posini='(0,longitud,0)' cortar='false'">
+   <param name="S_04" value="espacio='Principal' tipo='segmento' expresi&oacute;n='(0,0,0)(0,0,longitud)' color='gris' color_reverso='rosa' aristas='false' cortar='true'">
+   <param name="S_05" value="espacio='Principal' tipo='Cono' expresi&oacute;n='Ejez' Nu='4' Nv='1' ancho='punta' largo='punta' alto='punta' color='azul' color_reverso='turquesa' aristas='true' rotini='(0,180,0)' posini='(0,0,longitud)' cortar='false'">
+</applet>
+</p>
+<p align="center">
+Esta escena se usa para generar el macro.
+</p>
+<p align="center">
+<applet name="mis_ejes"
+        code="Descartes.class"
+        codebase="../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=360 height=240>
+   <param name="nombre" value="mis_ejes">
+   <param name="Versi&oacute;n" value="3.0">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="id='Principal' R3='true' escala='96' O.y='40' despl_imagen='arr-izq' fondo='blanco' despliegue='orden' cortar='false'">
+   <param name="C_00" value="id=m_e.longitud tipo=num&eacute;rico valor='1'">
+   <param name="C_01" value="id=m_e.punta tipo=num&eacute;rico valor='0.1' incr='0.01'">
+   <param name="S_00" value="espacio='Principal' tipo='macro' nombre='m_e' expresi&oacute;n='ejes' rotini='(0,0,-30)' color_reverso='rosa' aristas='false' cortar='false'">
+</applet>
+</p>
+<p align="center">
+Esta escena es una aplicación del macro que muestra sus parámetros.
+</p>
+<hr>
+
+<p><font size="2" face="Arial"><strong><cite><dfn><samp><tt>Autor: José Luis Abreu León</tt></samp></dfn></cite></strong></font></p>
+
+</body>
+</html>
+

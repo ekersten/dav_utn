@@ -1,0 +1,11 @@
+bateria
+bobina
+bombilla
+condensador
+conmutador
+generador
+interruptor
+medidor
+osciloscopio
+reostato
+resistencia

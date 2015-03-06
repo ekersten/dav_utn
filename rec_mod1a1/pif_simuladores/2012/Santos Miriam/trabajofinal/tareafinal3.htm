@@ -1,0 +1,37 @@
+<applet name="vacio" width=800 height=400
+        code="descinst.Descartes.class"
+        codebase="./"
+        archive="descinst.jar,http://recursostic.educacion.es/descartes/web/plugin/descinst.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="800x400">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="vacio">
+   <param name="Versi&oacute;n" value="4.41, 2010-12-16">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=s&iacute; limpiar=no">
+   <param name="E_00" value="tipo='R2' id='grafico' x='0' y='0' ancho='100%' alto='100%' O.x='-280' O.y='150' despl_imagen='arr-izq' fondo='39ffff' red='b8c4c8' red10='889498' ejes='negro' texto='405860' n&uacute;meros='s&iacute;' eje-x='temperatura(&deg;C)' eje-y='Calor(cal)'">
+   <param name="C_00" value="id='grafico.escala' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='grafico' nombre='zoom' valor='5' incr='0.1*escala' min='0.000001' max='100' discreto='s&iacute;' decimales='(escala&lt;0.01)+(escala&lt;0.1)+(escala&lt;1)+(escala&lt;10)+(escala&lt;100)+(escala&lt;1000)+(escala&lt;10000)+(escala&lt;100000)' fijo='s&iacute;' visible='no' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='x&gt;0' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_01" value="id='Ox' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='grafico' fijo='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_02" value="id='Oy' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='grafico' fijo='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_03" value="id='t' tipo='num&eacute;rico' espacio='grafico' nombre='temperatura ' incr='1' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_04" value="id='ma' tipo='num&eacute;rico' espacio='grafico' nombre='masa agua' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_05" value="id='mb' tipo='num&eacute;rico' espacio='grafico' nombre='masa aceite' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_00" value="id='pi' constante='s&iacute;' expresi&oacute;n='3.1416' evaluar='una-sola-vez'">
+   <param name="A_01" value="id='Calora(t)' expresi&oacute;n='ma*1*t'">
+   <param name="A_02" value="id='Calorb(t)' expresi&oacute;n='mb*0.47*t'">
+   <param name="A_03" value="id='t' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_04" value="id='f(t)' expresi&oacute;n='0.5*t'">
+   <param name="G_00" value="espacio='grafico' tipo='ecuaci&oacute;n' dibujar-si='x&gt;0' expresi&oacute;n='y=ma*1*x' visible='no'">
+   <param name="G_01" value="espacio='grafico' tipo='ecuaci&oacute;n' color='rojo' dibujar-si='x&gt;0' expresi&oacute;n='y=mb*0.47*x' visible='no'">
+   <param name="G_02" value="espacio='grafico' tipo='punto' expresi&oacute;n='(t,Calora(t))' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='4'">
+   <param name="G_03" value="espacio='grafico' tipo='punto' color='rojo' expresi&oacute;n='(t,Calorb(t))' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='4'">
+   <param name="G_04" value="espacio='grafico' tipo='imagen' expresi&oacute;n='(120,60)' archivo='imagenes/termometro.jpg'">
+   <param name="G_05" value="espacio='grafico' tipo='segmento' color='rojo' expresi&oacute;n='(121.5,24)(121.5,f(t))' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' ancho='3'">
+   <param name="G_06" value="espacio='grafico' tipo='texto' expresi&oacute;n='[10,220]' texto='Calor abs agua[Calora(t)]' fuente='Times New Roman,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_07" value="espacio='grafico' tipo='texto' color='rojo' expresi&oacute;n='[9,250]' texto='Calor abs aceite[Calorb(t)]' fuente='Times New Roman,PLAIN,12' fijo='s&iacute;'">
+   <param name="Animaci&oacute;n" value="controles='s&iacute;' auto='no' inicio='t=0;' hacer='t=t+1' mientras='t&lt;100'">
+<font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+</applet>

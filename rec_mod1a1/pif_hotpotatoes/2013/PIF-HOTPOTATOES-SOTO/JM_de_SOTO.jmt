@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jmatch-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>lore</dc:creator>
+    <dc:title>COMPONENTES DE HARDWARE</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>6</version>
+
+<data>
+<title>COMPONENTES DE HARDWARE</title>
+
+<timer><seconds>60</seconds><include-timer>1</include-timer></timer>
+
+<reading>
+<include-reading>0</include-reading>
+<reading-title></reading-title>
+<reading-text></reading-text>
+
+</reading>
+
+<matching-exercise>
+<default-right-item>? ??</default-right-item>
+
+<pair>
+<left-item><text>&amp;#x003C;img src=&quot;Imagen-animada-Monitor-comico-06.gif&quot; alt=&quot;Imagen-animada-Monitor-comico-06.gif&quot; title=&quot;Imagen-animada-Monitor-comico-06&quot; width=&quot;80&quot; height=&quot;70&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;   MONITOR</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>ENTRADA</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>&amp;#x003C;img src=&quot;teclado.gif&quot; alt=&quot;teclado.gif&quot; title=&quot;teclado&quot; width=&quot;231&quot; height=&quot;57&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;   TECLADO</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>SALIDA</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>&amp;#x003C;img src=&quot;mouse.gif&quot; alt=&quot;mouse.gif&quot; title=&quot;mouse&quot; width=&quot;113&quot; height=&quot;101&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;  MOUSE</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>SALIDA</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>&amp;#x003C;img src=&quot;webcam.gif&quot; alt=&quot;webcam.gif&quot; title=&quot;webcam&quot; width=&quot;150&quot; height=&quot;125&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;   WEBCAM</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>SALIDA/ENTRADA</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>&amp;#x003C;img src=&quot;scanner.gif&quot; alt=&quot;scanner.gif&quot; title=&quot;scanner&quot; width=&quot;115&quot; height=&quot;100&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;  ESCANER</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>SALIDA/ENTRADA</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>&amp;#x003C;img src=&quot;Electricidad-Microfonos-Electricidad-224.gif&quot; alt=&quot;Electricidad-Microfonos-Electricidad-224.gif&quot; title=&quot;Electricidad-Microfonos-Electricidad-224&quot; width=&quot;96&quot; height=&quot;144&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;  MICROFONO</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>ENTRADA</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>&amp;#x003C;img src=&quot;altavoz-01.gif&quot; alt=&quot;altavoz-01.gif&quot; title=&quot;altavoz-01&quot; width=&quot;63&quot; height=&quot;46&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;  PARLANTES</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>ENTRADA</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>&amp;#x003C;img src=&quot;impresora1.gif&quot; alt=&quot;impresora1.gif&quot; title=&quot;impresora1&quot; width=&quot;144&quot; height=&quot;104&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E; IMPRESORA</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>ENTRADA</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>&amp;#x003C;img src=&quot;modem03.gif&quot; alt=&quot;modem03.gif&quot; title=&quot;modem03&quot; width=&quot;140&quot; height=&quot;85&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E; M&amp;#x00D3;DEM</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>SALIDA</text>
+<fixed>0</fixed>
+</right-item></pair>
+</matching-exercise>
+</data>
+
+<hotpot-config-file>
+<jmatch>
+<exercise-subtitle>Matching exercise</exercise-subtitle>
+<instructions>Match the items on the right to the items on the left.</instructions>
+<next-ex-url>nextpage.htm</next-ex-url>
+<send-email>0</send-email>
+<show-limited-questions>0</show-limited-questions>
+<questions-to-show>1</questions-to-show>
+<shuffle-questions>0</shuffle-questions>
+<separate-javascript-file>0</separate-javascript-file>
+<next-caption>Next</next-caption>
+<delete-caption>Delete</delete-caption>
+<guess-correct>Correct! Well done.</guess-correct>
+<guess-incorrect>Sorry! Try again. Incorrect matches have been removed.</guess-incorrect>
+</jmatch>
+
+<global>
+<your-score-is>su puntuaci&amp;#x00F3;n es</your-score-is>
+<correct-indicator>:-)</correct-indicator>
+<incorrect-indicator>:-(</incorrect-indicator>
+<process-for-rtl>0</process-for-rtl>
+<include-scorm-12>0</include-scorm-12>
+<times-up>Su tiempo ha terminado</times-up>
+<check-caption>Check</check-caption>
+<ok-caption>OK</ok-caption>
+<next-ex-caption>=&amp;#x003E;</next-ex-caption>
+<back-caption>&amp;#x003C;=</back-caption>
+<contents-caption>Index</contents-caption>
+<include-next-ex>1</include-next-ex>
+<include-contents>1</include-contents>
+<include-back>0</include-back>
+<contents-url>contents.htm</contents-url>
+<graphic-url></graphic-url>
+<font-face>&quot;Bookman Old Style&quot;,Geneva,Arial,sans-serif</font-face>
+<font-size>small</font-size>
+<page-bg-color>#808080</page-bg-color>
+<title-color>#80ff00</title-color>
+<ex-bg-color>#cdff9b</ex-bg-color>
+<text-color>#000000</text-color>
+<link-color>#0000FF</link-color>
+<vlink-color>#0000CC</vlink-color>
+<nav-bar-color>#ff8040</nav-bar-color>
+<formmail-url>http://yourserver.com/cgi-bin/FormMail.pl</formmail-url>
+<email>you@yourserver.com</email>
+<name-please>Please enter your name:</name-please>
+<user-string-1>one</user-string-1>
+<user-string-2>two</user-string-2>
+<user-string-3>three</user-string-3>
+<header-code></header-code>
+</global>
+</hotpot-config-file>
+</hotpot-jmatch-file>

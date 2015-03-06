@@ -1,0 +1,1913 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="PIFmaxalvarez" version="0.1.3">
+ <settings>
+  <title>Sustainable Urbanism</title>
+  <revision description="created" date="9/15/13" />
+  <author name="Max Alvarez" mail="e.english.lessons@gmail.com" url="http:sites.google.com/site/englishsocialnetworking" rol="English Language Teacher" organization="English through Social Networking" />
+  <organization name="E.E.S.T. No. 8 Almafuerte" mail="docentestecnica8lanus@yahoo.com.ar" address="749 Jean Jaures" pc="1824" city="Lanús" country="Argentina" state="Buenos Aires" />
+  <language>English (en)</language>
+  <description>
+   <p>An approach to architecture that keeps old communities and helps them take root and develop, taking care of their surrounding environment.</p>
+  </description>
+  <descriptors area="English Language, Construction" level="Secondary Education">built environment, urbanisation, sustainable urbanism, new urbanism</descriptors>
+  <eventSounds>
+   <sound id="start" file="carignition1.mp3_1" />
+   <sound id="click" file="camerafocusing03.mp3_1" />
+   <sound id="actionError" file="explosion04.mp3_1" />
+   <sound id="actionOk" file="drumroll.mp3" />
+   <sound id="finishedError" file="bombfallingandexploding01.mp3_1" />
+   <sound id="finishedOk" file="clong1.mp3_1" />
+  </eventSounds>
+  <skin file="@blue.xml" />
+ </settings>
+ <sequence>
+  <item id="Start" name="00. Title Page">
+   <jump action="STOP" id="back" />
+  </item>
+  <item id="Contents" name="00. Contents" />
+  <item id="Activities" name="00. Activities">
+   <jump action="STOP" id="forward" />
+  </item>
+  <item id="Built Environment" name="01. The Built Environment">
+   <jump tag="Contents" id="back" />
+  </item>
+  <item name="02. The Detached House" />
+  <item name="03. Types of Homes I" />
+  <item name="04. Types of Homes II">
+   <jump tag="Contents" id="forward">
+    <jump tag="Sustainable Urbanism 1" threshold="6" id="upper" />
+    <jump tag="Built Environment" threshold="3" id="lower" />
+   </jump>
+  </item>
+  <item id="Sustainable Urbanism 1" name="05. Sustainable Urbanism I">
+   <jump tag="Contents" id="back" />
+  </item>
+  <item name="06. New Urbanism (Sustainable Urbanism)" />
+  <item name="07. Urban Agglomeration" />
+  <item name="08. Urban Sprawl" />
+  <item name="09. Urban Sprawl in Argentina">
+   <jump tag="Contents" id="forward">
+    <jump tag="Sustainable Urbanism 2" threshold="2" id="upper" />
+    <jump tag="Sustainable Urbanism 1" threshold="1" id="lower" />
+   </jump>
+  </item>
+  <item id="Sustainable Urbanism 2" name="10. Sustainable Urbanism II">
+   <jump tag="Contents" id="back" />
+  </item>
+  <item name="11. Urbanisation" />
+  <item name="12. Sustainable Urbanisation I" />
+  <item name="13. Sustainable Urbanisation II" />
+  <item name="14. Prolegomena: Urban Development as Urban Safety" />
+  <item name="15. Urban Basic Services" />
+  <item name="16. Youth and the Prosperity of Cities">
+   <jump tag="Contents" id="forward">
+    <jump action="RETURN" threshold="10" id="upper" />
+    <jump tag="Sustainable Urbanism 2" threshold="6" id="lower" />
+   </jump>
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@panels.InformationScreen" name="00. Title Page" code="">
+   <description>
+    <p>Title page</p>
+   </description>
+   <messages>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="building1.jpg_1" type="initial">
+     <style margin="7" borderStroke="4.3" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+     </style>
+     <p>Click on the screen to get started</p>
+    </cell>
+   </messages>
+   <settings margin="10" infoUrl="http://plus.google.com/u/0/102495967533281954785/about" report="true" reportActions="true">
+    <helpWindow>
+     <p>Click on the 'information' button and learn more about the author.</p>
+    </helpWindow>
+    <container bgColor="0x0099CC">
+     <image name="building1.jpg_1" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFF33" transparent="true" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="750.0" cellHeight="100.0" border="true">
+    <style margin="7" borderStroke="4.0" markerStroke="2.7">
+     <font family="Century Gothic" size="24" bold="true" />
+     <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell border="true">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="00. Contents" />
+     <p>SUSTAINABLE URBANISM</p>
+     <p>by </p>
+     <p>Max Alvarez</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="00. Contents" code="">
+   <description>
+    <p>Contents to be covered in this project.</p>
+   </description>
+   <messages>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="building1.jpg_1" type="initial">
+     <style margin="7" borderStroke="4.1" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+     </style>
+     <p>Click on the screen to move on.</p>
+    </cell>
+   </messages>
+   <settings margin="10" infoUrl="http://en.wikipedia.org/wiki/Sustainable_Urbanism" report="true" reportActions="true">
+    <helpWindow>
+     <p>Click on the 'information' button and read the Wikipedia entry.</p>
+    </helpWindow>
+    <container bgColor="0x0099CC">
+     <image name="building1.jpg_1" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFF33" transparent="true" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="750.0" cellHeight="100.0" border="true">
+    <style margin="7" borderStroke="4.1" markerStroke="5.0">
+     <font family="Century Gothic" size="24" bold="true" />
+     <color foreground="0x0033FF" background="0x0099CC" shadow="0x000099" border="0xFFFF66" />
+     <gradient source="0x0099CC" dest="0xFFFF33" angle="0" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell id="0">
+     <p>In this project, you're going to learn about:</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" image="building1.jpg_1">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="01. The Built Environment" />
+     <p>The Built Environment: Typical homes in the UK</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" image="UrbanSprawl1.jpg_1">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="05. Sustainable Urbanism I" />
+     <p>Sustainable Urbanism I: Sustainable Urbanism, </p>
+     <p>Urban Aglomeration &amp; Urban Sprawl</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" image="NewUrbanism1.jpg">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="10. Sustainable Urbanism II" />
+     <p>Sustainable Urbanism II: Urbanisation, </p>
+     <p>Sustainable Urbanisation &amp; Urban Safety, </p>
+     <p>Urban Basic Services, </p>
+     <p>and Young People &amp; Prosperous Cities</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="00. Activities" code="">
+   <description>
+    <p>List of activities.</p>
+   </description>
+   <messages>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="building1.jpg_1" type="initial">
+     <style margin="7" borderStroke="4.1" markerStroke="5.0">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+     </style>
+     <p>Click on an activity to get started.</p>
+    </cell>
+   </messages>
+   <settings margin="10" infoUrl="http://en.wikipedia.org/wiki/Sustainable_Urbanism" report="true" reportActions="true">
+    <helpWindow>
+     <p>Click on the 'information' button and read the Wikipedia entry.</p>
+    </helpWindow>
+    <container bgColor="0x0099CC">
+     <image name="building1.jpg_1" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFF33" transparent="true" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="16" cols="1" cellWidth="734.0" cellHeight="42.0" border="true">
+    <style margin="7" borderStroke="4.1" markerStroke="2.1">
+     <font family="Century Gothic" size="24" bold="true" />
+     <color foreground="0x0033FF" background="0x0099CC" shadow="0x000099" border="0xFFFF66" />
+     <gradient source="0x0099CC" dest="0xFFFF33" angle="0" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="16" />
+    <cell id="0">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="01. The Built Environment" />
+     <p>The Built Environment</p>
+    </cell>
+    <cell id="1">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="02. The Detached House" />
+     <p>The Detached House</p>
+    </cell>
+    <cell id="2">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="03. Types of Homes I" />
+     <p>Types of Homes I</p>
+    </cell>
+    <cell id="3">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="04. Types of Homes II" />
+     <p>Types of Homes II</p>
+    </cell>
+    <cell id="4">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="05. Sustainable Urbanism I" />
+     <p>Sustainable Urbanism I</p>
+    </cell>
+    <cell id="5">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="06. New Urbanism (Sustainable Urbanism)" />
+     <p>New Urbanism (Sustainable Urbanism)</p>
+    </cell>
+    <cell id="6">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="07. Urban Agglomeration" />
+     <p>Urban Agglomeration</p>
+    </cell>
+    <cell id="7">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="08. Urban Sprawl" />
+     <p>Urban Sprawl</p>
+    </cell>
+    <cell id="8">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="09. Urban Sprawl in Argentina" />
+     <p>Urban Sprawl in Argentina</p>
+    </cell>
+    <cell id="9">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="10. Sustainable Urbanism II" />
+     <p>Sustainable Urbanism II</p>
+    </cell>
+    <cell id="10">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="11. Urbanisation" />
+     <p>Urbanisation</p>
+    </cell>
+    <cell id="11">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="12. Sustainable Urbanisation I" />
+     <p>Sustainable Urbanisation I</p>
+    </cell>
+    <cell id="12">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="13. Sustainable Urbanisation II" />
+     <p>Sustainable Urbanisation II</p>
+    </cell>
+    <cell id="13">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="14. Prolegomena: Urban Development as Urban Safety" />
+     <p>Prolegomena: Urban Development as Urban Safety</p>
+    </cell>
+    <cell id="14">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="15. Urban Basic Services" />
+     <p>Urban Basic Services</p>
+    </cell>
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="16. Youth and the Prosperity of Cities" />
+     <p>Youth and the Prosperity of Cities</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="01. The Built Environment" code="">
+   <description>
+    <p>Set of learning objectives.</p>
+   </description>
+   <messages>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="terracedhouses10.jpg_1" type="initial">
+     <style margin="7" borderStroke="3.8" markerStroke="5.0">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+     </style>
+     <p>Click on the screen to start the first activity in this sequence.</p>
+    </cell>
+   </messages>
+   <settings margin="10" infoUrl="http://resources.woodlands-junior.kent.sch.uk/customs/questions/houses.htm" maxTime="120" countDownTime="true" maxActions="10" countDownActions="true" report="true" reportActions="true">
+    <helpWindow>
+     <p>You should read about different houses around the world. Click on the 'information' button.</p>
+    </helpWindow>
+    <container bgColor="0x0099CC">
+     <gradient source="0xFFFF33" dest="0x0099CC" angle="0" />
+     <image name="terracedhouses10.jpg_1" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF33" transparent="true" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="500.0" cellHeight="200.0" border="true">
+    <style margin="7" borderStroke="3.0" markerStroke="3.3">
+     <font family="Century Gothic" size="24" bold="true" />
+     <color foreground="0x0033FF" background="0x0099CC" alternative="0x333333" border="0xFFFF66" />
+     <gradient source="0x0099CC" dest="0xFFFF33" angle="0" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell txtAlign="left,middle" avoidOverlapping="true">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="02. The Detached House" />
+     <p>The Built Environment:</p>
+     <p>In these activities, you're going to learn about typical homes in the UK. You're going to develop your vocabulary skills, too.</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="02. The Detached House" code="">
+   <description>
+    <p>A scrambled definition of 'detached house'.</p>
+   </description>
+   <messages>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="terracedhouses10.jpg_1" type="initial">
+     <style margin="7" borderStroke="3.8" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+     </style>
+     <p>Unscramble the definition.</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="terracedhouses10.jpg_1" type="final">
+     <style margin="7" borderStroke="3.1" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+     </style>
+     <p>Correct!</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="terracedhouses10.jpg_1" type="finalError">
+     <style margin="7" borderStroke="3.1" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF00" background="0xFF0000" border="0xFFFF00" />
+     </style>
+     <p>Please, try again.</p>
+    </cell>
+   </messages>
+   <settings margin="10" infoUrl="http://www.ldoceonline.com/dictionary/terraced-house" dragCells="true" maxTime="120" countDownTime="true" maxActions="12" countDownActions="true" report="true" reportActions="true">
+    <helpWindow showSolution="false">
+     <p>When talking about houses, DETACHED means SEPARATED, NOT CONNECTED, NOT JOINED. Click on the information button and read the word focus box under the dictionary entry for TERRACED HOUSE.</p>
+    </helpWindow>
+    <container bgColor="0x0099CC">
+     <gradient source="0x0099CC" dest="0xFFFF33" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF33" transparent="true" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="220.0" cellHeight="100.0" border="false">
+    <style margin="7" borderStroke="3.1" markerStroke="2.7">
+     <font family="Courier New" size="16" bold="true" />
+     <color foreground="0xFFFF33" background="0x0099CC" border="0xCCCCCC" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell>
+     <style margin="7" borderStroke="3.3" markerStroke="2.7">
+      <font family="SansSerif" size="20" bold="true" />
+      <color foreground="0x0099CC" background="0xFFFF33" border="0xCCCCCC" />
+     </style>
+     <p>Detached house:</p>
+    </cell>
+    <cell>
+     <p>This is</p>
+    </cell>
+    <cell>
+     <p>a house that</p>
+    </cell>
+    <cell>
+     <p>is separated from,</p>
+    </cell>
+    <cell>
+     <p>or not connected to,</p>
+    </cell>
+    <cell>
+     <p>any other building.</p>
+    </cell>
+   </cells>
+   <scramble times="30" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="03. Types of Homes I" code="">
+   <description>
+    <p>A memory game in which six photos of different types of homes must be matched to their corresponding name.</p>
+   </description>
+   <messages>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="terracedhouses10.jpg_1" type="initial">
+     <style margin="7" borderStroke="3.0" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+     </style>
+     <p>Find the pairs. Match each photo and its corresponding word.</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="terracedhouses10.jpg_1" type="final">
+     <style margin="7" borderStroke="3.3" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+     </style>
+     <p>Correct!</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="terracedhouses10.jpg_1" type="finalError">
+     <style margin="7" borderStroke="3.3" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF00" background="0xFF0000" border="0xFFFF00" />
+     </style>
+     <p>Please, try again.</p>
+    </cell>
+   </messages>
+   <settings margin="10" infoUrl="http://resources.woodlands-junior.kent.sch.uk/customs/questions/houses/main/" dragCells="true" maxTime="120" countDownTime="true" maxActions="12" countDownActions="true" report="true" reportActions="true">
+    <helpWindow>
+     <p>Click on the information button and read about the main types of homes in the UK.</p>
+    </helpWindow>
+    <container bgColor="0x0099CC">
+     <gradient source="0x0099CC" dest="0xFFFF33" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF33" transparent="true" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="6" cellWidth="220.0" cellHeight="210.0" border="true" id="primary">
+    <style margin="7" borderStroke="0.7" markerStroke="2.7">
+     <font family="Arial Black" size="18" bold="true" />
+     <color foreground="0x0099CC" background="0xF0F0F0" inactive="0xFFFF66" border="0x0099CC" />
+    </style>
+    <shaper class="@Rectangular" cols="6" rows="1" />
+    <cell image="flats1.jpg_1" />
+    <cell image="detachedhouse1.jpg_1" />
+    <cell image="Bungalowhouse6.jpg_1" />
+    <cell image="terracedhouses10.jpg_1" />
+    <cell image="semidetachedhouses8.jpg_1" />
+    <cell image="tenementbuilding1.jpg_1" />
+   </cells>
+   <cells rows="2" cols="6" cellWidth="50.0" cellHeight="30.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="6" rows="1" />
+    <cell>
+     <p>block of flats</p>
+    </cell>
+    <cell>
+     <p>detached house</p>
+    </cell>
+    <cell>
+     <p>bungalow</p>
+    </cell>
+    <cell>
+     <p>terraced houses</p>
+    </cell>
+    <cell>
+     <p>semi-detached houses</p>
+    </cell>
+    <cell>
+     <p>tenement building</p>
+    </cell>
+   </cells>
+   <scramble times="30" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="04. Types of Homes II" code="">
+   <description>
+    <p>Looking for the hidden words referring to six different types of homes.</p>
+   </description>
+   <messages>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="terracedhouses10.jpg_1" type="initial">
+     <style margin="7" borderStroke="3.3" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+     </style>
+     <p>Find six different types of homes.</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="terracedhouses10.jpg_1" type="final">
+     <style margin="7" borderStroke="2.8" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+     </style>
+     <p>Good job!</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="terracedhouses10.jpg_1" type="finalError">
+     <style margin="7" borderStroke="3.3" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF00" background="0xFF0000" border="0xFFFF00" />
+     </style>
+     <p>Please, try again.</p>
+    </cell>
+   </messages>
+   <settings margin="10" infoUrl="http://slideshare.net/tuust/types-of-houses-2405997" maxTime="120" countDownTime="true" maxActions="12" countDownActions="true" report="true" reportActions="true">
+    <helpWindow showSolution="false">
+     <p>Click on the information button and watch the slides about the different types of homes in the UK.</p>
+    </helpWindow>
+    <container bgColor="0x0099CC">
+     <gradient source="0x0099CC" dest="0xFFFF33" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF33" transparent="true" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <textGrid rows="20" columns="20" cellWidth="50.0" cellHeight="50.0" border="false">
+    <style margin="7" borderStroke="3.5" markerStroke="2.7">
+     <font family="Tahoma" size="18" bold="true" />
+     <color foreground="0xFFFF33" background="0x0099CC" border="0x0099CC" />
+    </style>
+    <text>
+     <row>********************</row>
+     <row>*******T************</row>
+     <row>*******E************</row>
+     <row>*******N************</row>
+     <row>******TERRACEDHOUSES</row>
+     <row>*******M***********H</row>
+     <row>*******E***********A</row>
+     <row>*******N***********N</row>
+     <row>*******T***********T</row>
+     <row>*******B***********Y</row>
+     <row>*******U***********T</row>
+     <row>*******I***********O</row>
+     <row>******BLOCKOFFLATS*W</row>
+     <row>***C***D***********N</row>
+     <row>**COUNCILESTATE****H</row>
+     <row>***T***N***********O</row>
+     <row>***T***G***********U</row>
+     <row>***A***************S</row>
+     <row>***G***************E</row>
+     <row>***E***************S</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">BLOCKOFFLATS</clue>
+    <clue id="1">COTTAGE</clue>
+    <clue id="2">COUNCILESTATE</clue>
+    <clue id="3">SHANTYTOWNHOUSES</clue>
+    <clue id="4">TENEMENTBUILDING</clue>
+    <clue id="5">TERRACEDHOUSES</clue>
+   </clues>
+   <cells rows="2" cols="3" cellWidth="303.0" cellHeight="229.0" border="false" id="secondary">
+    <style borderStroke="0.7" markerStroke="2.7">
+     <font family="Arial" size="17" bold="true" />
+     <color foreground="0x0099CC" background="0xCCCCCC" border="0x0099CC" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="flats1.jpg_1" />
+    <cell image="cottage1.jpg_1" />
+    <cell image="councilestate6.jpg_1" />
+    <cell image="shantytownhouse5.jpg_1" />
+    <cell image="tenementbuilding1.jpg_1" />
+    <cell image="terracedhouses10.jpg_1" />
+   </cells>
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="05. Sustainable Urbanism I" code="">
+   <description>
+    <p>Set of learning objectives.</p>
+   </description>
+   <messages>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="UrbanSprawl1.jpg_1" type="initial">
+     <style margin="7" borderStroke="4.1" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+     </style>
+     <p>Click on the screen to start the first activity in this sequence.</p>
+    </cell>
+   </messages>
+   <settings margin="10" infoUrl="http://www.esua.com/e-learning/what-is-sustainable-urbanism#TOC-What-is-sustainability-" report="true" reportActions="true">
+    <helpWindow>
+     <p>Click on the 'information' button and read the section about 'sustainability'.</p>
+    </helpWindow>
+    <container bgColor="0x0099CC">
+     <image name="UrbanSprawl1.jpg_1" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFF33" transparent="true" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="500.0" cellHeight="203.0" border="true">
+    <style margin="7" borderStroke="4.2" markerStroke="2.7">
+     <font family="Century Gothic" size="24" bold="true" />
+     <color foreground="0x0033FF" background="0x0099CC" shadow="0x000099" border="0xFFFF66" />
+     <gradient source="0x0099CC" dest="0xFFFF33" angle="0" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell txtAlign="left,middle" border="true">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="06. New Urbanism (Sustainable Urbanism)" />
+     <p>Sustainable Urbanism I:</p>
+     <p>In these activities, you're going to learn some basic facts about sustainable urbanisation. You're going to develop your listening, reading and vocabulary skills, too.</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="06. New Urbanism (Sustainable Urbanism)" code="">
+   <description>
+    <p>Interview with Kevin Whitehead, an architech and new urbanist who talks about the trend of New Urbanism (sustainable urbanism).</p>
+   </description>
+   <messages>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="UrbanSprawl1.jpg_1" type="initial">
+     <style margin="7" borderStroke="4.0" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+     </style>
+     <p>As you listen to the interview, match the questions to the corresponding answers.</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="UrbanSprawl1.jpg_1" type="final">
+     <style margin="7" borderStroke="3.3" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+     </style>
+     <p>Well done!</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="UrbanSprawl1.jpg_1" type="finalError">
+     <style margin="7" borderStroke="4.1" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF00" background="0xFF0000" border="0xFFFF00" />
+     </style>
+     <p>Please, try again.</p>
+    </cell>
+   </messages>
+   <settings margin="10" infoUrl="http://www.esua.com/e-learning/what-is-sustainable-urbanism#TOC-What-is-sustainability-" maxTime="360" countDownTime="true" maxActions="12" countDownActions="true" report="true" reportActions="true">
+    <helpWindow showSolution="false">
+     <p>Click on the 'information' button and read the entry bout 'sustainability'.</p>
+    </helpWindow>
+    <container bgColor="0x0099CC">
+     <gradient source="0x0099CC" dest="0xFFFF33" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF33" transparent="true" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="6" cellWidth="999.0" cellHeight="951.0" border="true" id="primary">
+    <style margin="7" borderStroke="3.1" markerStroke="2.7">
+     <font family="Calibri" size="18" bold="true" />
+     <color foreground="0xFFFF33" background="0x0099CC" border="0x0099CC" />
+    </style>
+    <shaper class="@Rectangular" cols="6" rows="1" />
+    <cell avoidOverlapping="true" image="NewUrbanism1.jpg">
+     <media type="PLAY_AUDIO" level="1" file="NewUrbanism01.mp3_1" />
+    </cell>
+    <cell avoidOverlapping="true" image="NewUrbanism1.jpg">
+     <media type="PLAY_AUDIO" level="1" file="NewUrbanism02.mp3_1" />
+    </cell>
+    <cell avoidOverlapping="true" image="NewUrbanism1.jpg">
+     <media type="PLAY_AUDIO" level="1" file="NewUrbanism03.mp3_1" />
+    </cell>
+    <cell avoidOverlapping="true" image="NewUrbanism1.jpg">
+     <media type="PLAY_AUDIO" level="1" file="NewUrbanism04.mp3_1" />
+    </cell>
+    <cell avoidOverlapping="true" image="NewUrbanism1.jpg">
+     <media type="PLAY_AUDIO" level="1" file="NewUrbanism05.mp3_1" />
+    </cell>
+    <cell avoidOverlapping="true" image="NewUrbanism1.jpg">
+     <media type="PLAY_AUDIO" level="1" file="NewUrbanism06.mp3_1" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="6" cellWidth="999.0" cellHeight="350.0" border="true" id="secondary">
+    <style margin="5" borderStroke="3.0" markerStroke="2.7">
+     <font family="Century Gothic" size="20" bold="true" />
+     <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF66" />
+    </style>
+    <shaper class="@Rectangular" cols="6" rows="1" />
+    <cell txtAlign="left,middle">
+     <p>Why is contemporary architecture getting more and more spectacular?</p>
+    </cell>
+    <cell txtAlign="left,middle">
+     <p>Is New Urbanism just a way of reacting against important and expensive signature buildings?</p>
+    </cell>
+    <cell txtAlign="left,middle">
+     <p>How do you mean exactly?</p>
+    </cell>
+    <cell txtAlign="left,middle">
+     <p>So, what are you interested in?</p>
+    </cell>
+    <cell txtAlign="left,middle">
+     <p>Could you give us an example?</p>
+    </cell>
+    <cell>
+     <p>How are you planning to do that exactly?</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="BUA" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="07. Urban Agglomeration" code="">
+   <description>
+    <p>The ten most densily populated cities around the world in 1950 and 2010.</p>
+   </description>
+   <messages>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="UrbanSprawl1.jpg_1" type="initial">
+     <style margin="7" borderStroke="3.8" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+     </style>
+     <p>Match the city and the corresponding category.</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="UrbanSprawl1.jpg_1" type="final">
+     <style margin="7" borderStroke="4.1" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+     </style>
+     <p>Well done!</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="UrbanSprawl1.jpg_1" type="finalError">
+     <style margin="7" borderStroke="4.1" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF00" background="0xFF0000" border="0xFFFF00" />
+     </style>
+     <p>Please, try again.</p>
+    </cell>
+   </messages>
+   <settings margin="10" infoUrl="http://www.geohive.com/earth/cy_aggmillion2.aspx" maxTime="180" countDownTime="true" maxActions="32" countDownActions="true" report="true" reportActions="true">
+    <helpWindow showSolution="false">
+     <p>Click on the 'information' button and compare the 10 largest urban agglomerations in 1950 to those in 2010.</p>
+    </helpWindow>
+    <container bgColor="0x0099CC">
+     <image name="PopulationAgglomeration.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF33" transparent="true" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="5" cols="4" cellWidth="350.0" cellHeight="210.0" border="true" id="primary">
+    <style margin="7" borderStroke="2.9" markerStroke="5.0">
+     <font family="Century Gothic" size="20" bold="true" />
+     <color foreground="0xFFFF33" background="0x0099CC" inactive="0x333333" border="0xFFFF66" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="5" />
+    <cell>
+     <p>Los Angeles (USA)</p>
+    </cell>
+    <cell id="2">
+     <p>Tokyo (Japan)</p>
+    </cell>
+    <cell>
+     <p>Saint Petersburg (Russia)</p>
+    </cell>
+    <cell id="0">
+     <p>Paris (France)</p>
+    </cell>
+    <cell id="0">
+     <p>Moscow (Russia)</p>
+    </cell>
+    <cell id="0">
+     <p>Buenos Aires (Argentina)</p>
+    </cell>
+    <cell id="0">
+     <p>Chicago (USA)</p>
+    </cell>
+    <cell id="2">
+     <p>Kolkata (India)</p>
+    </cell>
+    <cell id="2">
+     <p>Shangai (China)</p>
+    </cell>
+    <cell id="0">
+     <p>Osaka-Kobe (Japan)</p>
+    </cell>
+    <cell id="1">
+     <p>Delhi (India)</p>
+    </cell>
+    <cell id="1">
+     <p>Mexico City (Mexico)</p>
+    </cell>
+    <cell id="1">
+     <p>Sao Paulo (Brazil)</p>
+    </cell>
+    <cell id="1">
+     <p>Mumbai (India)</p>
+    </cell>
+    <cell id="1">
+     <p>Beijing (China)</p>
+    </cell>
+    <cell id="1">
+     <p>Dhaka (Bangladesh)</p>
+    </cell>
+    <cell id="2">
+     <p>New York (USA)</p>
+    </cell>
+    <cell>
+     <p>Istambul (Turkey)</p>
+    </cell>
+    <cell id="0">
+     <p>London (UK)</p>
+    </cell>
+    <cell>
+     <p>Berlin (Germany)</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="550.0" cellHeight="230.0" border="true" id="secondary">
+    <style margin="7" borderStroke="3.3" markerStroke="1.9">
+     <font family="Century Gothic" size="18" bold="true" />
+     <color foreground="0x0099CC" background="0xFFFF33" border="0x0099CC" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell>
+     <p>within the 10 highest urban agglomerations in 1950</p>
+    </cell>
+    <cell>
+     <p>within the 10 highest urban agglomerations in 2010</p>
+    </cell>
+    <cell>
+     <p>within the 10 highest urban agglomerations in both 1950 and 2010</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@panels.Explore" name="08. Urban Sprawl" code="">
+   <description>
+    <p>Patterns of Urban Sprawl.</p>
+   </description>
+   <messages>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="UrbanSprawl1.jpg_1" type="initial">
+     <style margin="7" borderStroke="4.0" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+     </style>
+     <p>Click on the type of urban sprawl.</p>
+    </cell>
+   </messages>
+   <settings margin="10" infoUrl="http://pages.towson.edu/morgan/files/Sprawl_Development.pdf" report="true" reportActions="true">
+    <helpWindow>
+     <p>Click on the 'information' button and read about urban sprawl (pages 3 to 5).</p>
+    </helpWindow>
+    <container bgColor="0x0099CC">
+     <gradient source="0x0099CC" dest="0xFFFF33" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFF33" transparent="true" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="3" cols="1" cellWidth="350.0" cellHeight="150.0" border="true" id="primary">
+    <style margin="7" borderStroke="3.3" markerStroke="5.0">
+     <font family="Century Gothic" size="24" bold="true" />
+     <color foreground="0xFFFF33" background="0x0099CC" inactive="0x333333" border="0xFFFF66" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell id="0">
+     <p>Low-density continuous sprawl</p>
+    </cell>
+    <cell id="1">
+     <p>Ribbon sprawl</p>
+    </cell>
+    <cell id="2">
+     <p>Leapfrog development sprawl</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="350.0" cellHeight="150.0" border="true" id="secondary">
+    <style margin="7" borderStroke="3.4" markerStroke="5.0">
+     <font family="Century Gothic" size="18" bold="true" />
+     <color foreground="0x0099CC" background="0xFFFF33" inactive="0x333333" border="0x0099CC" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell txtAlign="left,middle" imgAlign="right,middle" avoidOverlapping="true" image="lowdensitycontinuoussprawl.jpg_1">
+     <media type="PLAY_AUDIO" level="1" file="childreninschoolplayground.mp3_1" />
+     <p>The highly consumptive use of land for urban purposes along the margings of existing metropolitan areas (Barnes et al., 2012: 5).</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="right,middle" avoidOverlapping="true" image="ribbonsprawl.jpg_1">
+     <media type="PLAY_AUDIO" level="1" file="childreninschoolplayground.mp3_1" />
+     <p>Urban development that follows major transportation paths outward from urban centres (Barnes et al., 2012: 5).</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="right,middle" avoidOverlapping="true" image="leapfrogdevelopmentsprawl.jpg_1">
+     <media type="PLAY_AUDIO" level="1" file="childreninschoolplayground.mp3_1" />
+     <p>A discontinuous pattern of urbanisation with patches of developed lands that are widely separated from each other and from the boundaries (Barnes et al., 2012: 5).</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.Identify" name="09. Urban Sprawl in Argentina" code="">
+   <description>
+    <p>Different urban sprawl patterns in Argentinian cities.</p>
+   </description>
+   <messages>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="UrbanSprawl1.jpg_1" type="initial">
+     <style margin="7" borderStroke="3.8" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+     </style>
+     <p>Which cities aren't examples of leapfrog development sprawl?</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="UrbanSprawl1.jpg_1" type="final">
+     <style margin="7" borderStroke="4.2" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+     </style>
+     <p>Leapfrog development sprawl: a discontinuous urbanisation pattern with developed land patches widely separated.</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="UrbanSprawl1.jpg_1" type="finalError">
+     <style margin="7" borderStroke="3.8" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF00" background="0xFF0000" border="0xFFFF00" />
+     </style>
+     <p>Please, try again.</p>
+    </cell>
+   </messages>
+   <settings margin="10" infoUrl="http://pages.towson.edu/morgan/files/Sprawl_Development.pdf" maxTime="90" countDownTime="true" maxActions="4" countDownActions="true" report="true" reportActions="true">
+    <helpWindow>
+     <p>Click on the 'information' button and read about the three urban sprawl patterns (page 5).</p>
+    </helpWindow>
+    <container bgColor="0x0099CC">
+     <gradient source="0x0099CC" dest="0xFFFF33" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF33" transparent="true" border="true">
+     <gradient source="0x003399" dest="0x000099" angle="0" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="2" cols="2" cellWidth="850.0" cellHeight="650.0" border="true" id="primary">
+    <style margin="7" borderStroke="3.0" markerStroke="2.1">
+     <font family="Century Gothic" size="18" bold="true" />
+     <color foreground="0xFFFF33" background="0x0099CC" inactive="0x333333" alternative="0x0033FF" border="0xFFFF66" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell id="0" txtAlign="left,bottom" imgAlign="middle,top" avoidOverlapping="true" image="leapfrogdevelopmentsprawlLaPlataCABACampanaZarate2resized1.jpg_1" />
+    <cell id="1" imgAlign="middle,top" avoidOverlapping="true" image="ribbonsprawlSanClementeSanBernardo7resized.jpg_1" />
+    <cell id="1" imgAlign="middle,top" avoidOverlapping="true" image="lowdensitycontinuoussprawlSaltoBA3resized1.jpg_1" />
+    <cell id="0" txtAlign="left,bottom" imgAlign="middle,top" avoidOverlapping="true" image="leapfrogdevelopmentsprawlTrelewGaiman4resized.jpg_1" />
+   </cells>
+   <cells rows="2" cols="2" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell imgAlign="middle,top" />
+    <cell txtAlign="left,bottom" imgAlign="middle,top" avoidOverlapping="true" image="ribbonsprawlSanClementeSanBernardo7resized.jpg_1">
+     <p>Ribbon sprawl is urban development that follows main roads and motorways outward from cities. Lands next to main roads are developed.</p>
+    </cell>
+    <cell txtAlign="left,bottom" imgAlign="middle,top" avoidOverlapping="true" image="lowdensitycontinuoussprawlSaltoBA3resized1.jpg_1">
+     <p>Low-density continuous sprawl is urban development that extends in a radial pattern along the margins of cities.</p>
+    </cell>
+    <cell />
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="10. Sustainable Urbanism II" code="">
+   <description>
+    <p>Set of learning objectives.</p>
+   </description>
+   <messages>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="NewUrbanism1.jpg" type="initial">
+     <style margin="7" borderStroke="4.1" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+     </style>
+     <p>Click on the screen to start the first activity in this sequence.</p>
+    </cell>
+   </messages>
+   <settings margin="10" infoUrl="http://bettercities.net/about-new-urbanism" report="true" reportActions="true">
+    <helpWindow>
+     <p>Click on the 'information' button and read the blog entry.</p>
+    </helpWindow>
+    <container bgColor="0x0099CC">
+     <image name="NewUrbanism1.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFF33" transparent="true" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="500.0" cellHeight="200.0" border="true">
+    <style margin="7" borderStroke="4.1" markerStroke="2.7">
+     <font family="Century Gothic" size="24" bold="true" />
+     <color foreground="0x0033FF" background="0x0099CC" shadow="0x000099" border="0xFFFF66" />
+     <gradient source="0x0099CC" dest="0xFFFF33" angle="0" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell txtAlign="left,middle" border="true">
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="11. Urbanisation" />
+     <p>Sustainable Urbanism II:</p>
+     <p>In these activities, you're going to learn about sustainable urbanisation. You're going to develop your reading and vocabulary skills, too.</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@text.FillInBlanks" name="11. Urbanisation" code="" autoJump="true">
+   <description>
+    <p>Fill-in-blank activity with help pop-ups: As Ss watch and listen to the video (consciousness-raising campaign), they fill in the blanks. Ss can press F1 and a window with the definition of the missing item pops up.</p>
+   </description>
+   <messages>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="NewUrbanism1.jpg" type="initial">
+     <style margin="7" borderStroke="4.1" markerStroke="3.1">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+     </style>
+     <p>As you watch and listen to the video, complete the transcript.</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="NewUrbanism1.jpg" type="final">
+     <style margin="7" borderStroke="4.1" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+     </style>
+     <p>Good job!</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="NewUrbanism1.jpg" type="finalError">
+     <style margin="7" borderStroke="4.1" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF00" background="0xFF0000" border="0xFFFF00" />
+     </style>
+     <p>Please, try again.</p>
+    </cell>
+   </messages>
+   <settings margin="10" infoUrl="http://youtu.be/7Szh_QIK9ao" maxTime="180" countDownTime="true" maxActions="10" countDownActions="true" report="true" reportActions="true">
+    <helpWindow showSolution="false">
+     <p>Play the video several times. Click on the 'information' button. Press F1 as you click on the missing words to get extra help.</p>
+    </helpWindow>
+    <container bgColor="0x0099CC">
+     <image name="PopulationAgglomeration.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF33" transparent="true" border="true">
+     <size width="800" height="550" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <checkButton>Check your performance</checkButton>
+   <document>
+    <style name="default" tabWidth="12" foreground="0x000000" background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" background="0xFFFFFF" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" bold="true" size="24" family="Verdana">Urbanisation</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" width="350" height="61" border="true" image="UrbanSprawl2.jpg">
+       <style margin="7" borderStroke="4.0" markerStroke="2.7">
+        <font family="Century Gothic" size="16" bold="true" />
+        <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF66" />
+       </style>
+       <media type="URL" level="1" file="http://youtu.be/7Szh_QIK9ao" />
+       <p>Click here (or on the 'i' button) and watch the video online.</p>
+      </cell>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Verdana">Today, for the first time in history, half of the world’s </text>
+      <target>
+       <answer>population</answer>
+       <response fill="*" length="10" maxLength="10" />
+       <info mode="onDemand" maxTime="5">
+        <cell txtAlign="left,middle" width="221" height="81">
+         <style margin="7" borderStroke="4.1" markerStroke="3.1">
+          <font family="Century Gothic" size="16" bold="true" />
+          <color foreground="0x0033CC" background="0x00FF00" border="0x0099CC" />
+         </style>
+         <p>The number of people living in a particular area.</p>
+        </cell>
+       </info>
+       <text>population</text>
+      </target>
+      <text background="0xFFFFFF" family="Verdana"> or 3.3 billion* people live in urban areas. As we live through a century of rapid urbanisation, we have become used to a skyline of </text>
+      <target>
+       <answer>skyscrapers</answer>
+       <response fill="*" length="11" maxLength="11" />
+       <info mode="onDemand" maxTime="5">
+        <cell txtAlign="left,middle" imgAlign="left,middle" width="261" height="65" border="true">
+         <style margin="7" borderStroke="4.1" markerStroke="3.1">
+          <font family="Century Gothic" size="16" bold="true" />
+          <color foreground="0x0033CC" background="0x00FF00" border="0x0099CC" />
+         </style>
+         <p>Very tall modern buildings in a city.</p>
+        </cell>
+       </info>
+       <text>skyscrapers</text>
+      </target>
+      <text background="0xFFFFFF" family="Verdana">.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Verdana">But the sad truth is that of the 3.3 billion* urban </text>
+      <target>
+       <answer>dwellers</answer>
+       <response fill="*" length="8" maxLength="8" />
+       <info mode="onDemand" maxTime="5">
+        <cell txtAlign="left,middle" imgAlign="left,middle" width="275" height="62" border="true">
+         <style margin="7" borderStroke="4.1" markerStroke="3.1">
+          <font family="Century Gothic" size="16" bold="true" />
+          <color foreground="0x0033CC" background="0x00FF00" border="0x0099CC" />
+         </style>
+         <p>Persons who live in a particular place; in this case, in a city.</p>
+        </cell>
+       </info>
+       <text>dwellers</text>
+      </target>
+      <text background="0xFFFFFF" family="Verdana"> in the world today, over 1 billion do not share in the benefits that cities have to offer.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Verdana">While the modern era provides many inconveniences, rapid urbanisation has had a significant environmental impact on a scale that has resulted in irreversible changes to the natural </text>
+      <target>
+       <answer>environment</answer>
+       <response fill="*" length="11" maxLength="11" />
+       <info mode="onDemand" maxTime="5">
+        <cell txtAlign="left,middle" imgAlign="left,middle" width="239" height="58" border="true">
+         <style margin="7" borderStroke="4.1" markerStroke="3.1">
+          <font family="Century Gothic" size="16" bold="true" />
+          <color foreground="0x0033CC" background="0x00FF00" border="0x0099CC" />
+         </style>
+         <p>The air, land and water on the Earth; the natural features of a place.</p>
+        </cell>
+       </info>
+       <text>environment</text>
+      </target>
+      <text background="0xFFFFFF" family="Verdana">.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" family="Verdana">(*) N.B.: increased to 3.5 billion by October 2011</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" bold="true" family="Verdana">Source</text>
+      <text background="0xFFFFFF" family="Verdana">:</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" size="12" family="Verdana">United Nations Human Settlements Programme. (2009). Urbanisation. UN-HABITAT. Uploaded by epitunhabitat unhabitat on 11.05.2009. Available at https://www.youtube.com/watch?feature=player_embedded&amp;v=7Szh_QIK9ao [retrieved 18.08.2013]</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="12. Sustainable Urbanisation I" code="" autoJump="true">
+   <description>
+    <p>Fill-in-blank activity with option menus: As Ss read the text (brochure), they choose the most appropriate option.</p>
+   </description>
+   <messages>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="NewUrbanism1.jpg" type="initial">
+     <style margin="7" borderStroke="4.0" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+     </style>
+     <p>As you read the text, choose the most appropriate option.</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="NewUrbanism1.jpg" type="final">
+     <style margin="7" borderStroke="4.0" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+     </style>
+     <p>Good job!</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="NewUrbanism1.jpg" type="finalError">
+     <style margin="7" borderStroke="4.3" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF00" background="0xFF0000" border="0xFFFF00" />
+     </style>
+     <p>Please, try again.</p>
+    </cell>
+   </messages>
+   <settings margin="10" infoUrl="http://es.scribd.com/doc/136409002/Time-to-think-urban-UN-Habitat-s-vision-of-urbanisation#download" maxTime="600" countDownTime="true" maxActions="20" countDownActions="true" report="true" reportActions="true">
+    <helpWindow showSolution="false">
+     <p>Click on the 'information' button. Read page 6 in the text.</p>
+    </helpWindow>
+    <container bgColor="0x0099CC">
+     <image name="EcoCitySinoSingaporeTianjin.jpg_1" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF33" transparent="true" border="true">
+     <size width="990" height="890" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <checkButton>Check your answers</checkButton>
+   <document>
+    <style name="default" tabWidth="12" background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <text background="0xFFFFFF" bold="true" size="22" italic="false" family="Verdana">Sustainable Urbanisation I: A New Vision</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana">The world is fast becoming predominantly urban. At the beginning of the 19th century, only 2 % of the world’s population was urban. The population living in urban areas reached 50 % at the beginning of the 21st century and is expected to reach 60 % by 2030. At the same time, the world’s population has grown from 900 million to 7 billion.</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana">The fastest rates of urbanisation are in the developing </text>
+      <target>
+       <answer>world</answer>
+       <optionList>
+        <option>arena</option>
+        <option>city</option>
+        <option>forum</option>
+        <option>world</option>
+       </optionList>
+       <text>world</text>
+      </target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana">, which is facing huge challenges related to poverty, segregation between the rich and the poor, poor basic services, inadequate housing, lack of proper means of livelihood and climate </text>
+      <target>
+       <answer>change</answer>
+       <optionList>
+        <option>change</option>
+        <option>level</option>
+        <option>pattern</option>
+        <option>study</option>
+       </optionList>
+       <text>change</text>
+      </target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> risks.</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana">Historical economic studies have established that there is a positive correlation between planned urbanisation and development. It is also clear that the urban economy is more productive due to the proximity of the factors of production, increased specialisation and market sizes. Because of this, proper urbanisation should be used as a powerful tool for creating </text>
+      <target>
+       <answer>employment</answer>
+       <optionList>
+        <option>careers</option>
+        <option>employment</option>
+        <option>profession</option>
+        <option>trade</option>
+       </optionList>
+       <text>employment</text>
+      </target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> and livelihoods. This requires a mind-set shift away from viewing urbanisation mainly as a problem towards viewing urbanisation as a very powerful tool for </text>
+      <target>
+       <answer>development</answer>
+       <optionList>
+        <option>development</option>
+        <option>growth</option>
+        <option>innovation</option>
+        <option>progress</option>
+       </optionList>
+       <text>development</text>
+      </target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> and as a strategy against poverty and lack of adequate housing and urban basic services.</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana">Cities and towns in developing countries are facing serious </text>
+      <target>
+       <answer>challenges</answer>
+       <optionList>
+        <option>challenges</option>
+        <option>difficulties</option>
+        <option>obstacles</option>
+        <option>problems</option>
+       </optionList>
+       <text>challenges</text>
+      </target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> due to the lack of proper urban policies, which include unemployment - especially among the youth; high percentages of people living in slums; the dominance of the informal sector; inadequate urban basic </text>
+      <target>
+       <answer>services</answer>
+       <optionList>
+        <option>amenities</option>
+        <option>resources</option>
+        <option>services</option>
+        <option>utilities</option>
+       </optionList>
+       <text>services</text>
+      </target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> - especially water, sanitation, drainage and energy; unplanned peri-urban expansion; social and political conflict over land; high levels of vulnerability to natural disasters - partly resulting from climate change; and poor mobility systems.</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana">Slums and the informal sector are the spontaneous form of urbanisation consisting of a series of survival strategies, most borne out of poverty and desperation. Given the lack of urban planning, the slum represents the only housing and livelihood </text>
+      <target>
+       <answer>opportunity</answer>
+       <optionList>
+        <option>chance</option>
+        <option>opportunity</option>
+        <option>option</option>
+        <option>possibility</option>
+       </optionList>
+       <text>opportunity</text>
+      </target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> for many. A strong pro-active policy should prevent the development of slums, promote strong local institutions and encourage people’s </text>
+      <target>
+       <answer>involvement</answer>
+       <optionList>
+        <option>commitment</option>
+        <option>engagement</option>
+        <option>involvement</option>
+        <option>participation</option>
+       </optionList>
+       <text>involvement</text>
+      </target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> in decision-making.</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <text background="0xFFFFFF" bold="false" size="18" italic="false" family="Verdana">Source:</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <text background="0xFFFFFF" bold="false" size="11" italic="false" family="Verdana">United Nations Human Settlements Programme. (2013). Time to Think Urban. Sustainable Urbanisation: A New Vision, p. 6. Nairobi: UN-HABITAT. Available at http://es.scribd.com/doc/136409002/Time-to-think-urban-UN-Habitat-s-vision-of-urbanisation#download [retrieved 18.08.2013]</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="13. Sustainable Urbanisation II" code="" autoJump="true">
+   <description>
+    <p>Fill-in-blank activity with hints: As Ss read the text (research report), they fill in the gaps with the missing words.</p>
+   </description>
+   <messages>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="NewUrbanism1.jpg" type="initial">
+     <style margin="7" borderStroke="4.1" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+     </style>
+     <p>As you read the text, write the missing words after each blue letter. The blue letter is the first letter of the missing word.</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="NewUrbanism1.jpg" type="final">
+     <style margin="7" borderStroke="4.0" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+     </style>
+     <p>Good job!</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="NewUrbanism1.jpg" type="finalError">
+     <style margin="7" borderStroke="4.1" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF00" background="0xFF0000" border="0xFFFF00" />
+     </style>
+     <p>Please, try again.</p>
+    </cell>
+   </messages>
+   <settings margin="10" infoUrl="http://www.un.org/millenniumgoals/pdf/Think%20Pieces/18_urbanization.pdf" maxTime="600" countDownTime="true" maxActions="20" countDownActions="true" report="true" reportActions="true">
+    <helpWindow showSolution="false">
+     <p>Click on the 'information' button. Read pages 3-5 in the text.</p>
+    </helpWindow>
+    <container bgColor="0x0099CC">
+     <image name="EcoCitySinoSingaporeTianjin.jpg_1" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF33" transparent="true" border="true">
+     <size width="999" height="890" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <checkButton>Check your answers</checkButton>
+   <document>
+    <style name="default" tabWidth="12" background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <text background="0xFFFFFF" bold="true" size="22" italic="false" family="Verdana">Sustainable Urbanisation II: Social Impacts</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana">The change in the dominant habitat of world population makes the process of urbanisation to be among the most significant global trends of the twenty-first century. Cities and urban places in general now occupy the centre stage in global </text>
+      <target>
+       <answer>development</answer>
+       <response fill="_" length="11" maxLength="11" show="d" />
+       <text>development</text>
+      </target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana">. They no longer function as mere spaces for settlement, production and services. They now profoundly shape and influence social and political relations at every level; determining advances and setbacks in modes of production; and providing new content to norms, culture and aesthetics. Cities have become a major locus of power and politics consequently influencing vision achievement and dictating policy outcomes. They are also a major factor in environmental trends and sustainability processes. Urbanisation is thus providing the setting, the underlying base and the momentum for global </text>
+      <target>
+       <answer>change</answer>
+       <response fill="_" length="6" maxLength="6" show="c" />
+       <text>change</text>
+      </target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana">.</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana">The shift towards a dominantly urban world is not simply a demographic </text>
+      <target>
+       <answer>phenomenon</answer>
+       <response fill="_" length="10" maxLength="10" show="p" />
+       <text>phenomenon</text>
+      </target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> characterized by an anticipated population movement and change from one locale and profile to another. Rather it is a transformative process as well as a galvanizing momentum permeating many aspects of global development. It is also a dynamic which, if effectively steered and deployed, can potentially serve as a force for enabling the world to overcome some of the current and future </text>
+      <target>
+       <answer>challenges</answer>
+       <response fill="_" length="10" maxLength="10" show="c" />
+       <text>challenges</text>
+      </target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana">.</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana">Indeed, the demographics of urbanisation tend to project several critical elements, such as the volume and rate of change at which the new human habitat is evolving. Interestingly, only 60 years ago or so (1950), the number of people living in urban centres was slightly higher in the developed nations (58.5 per cent, or 426.9 million) compared to developing countries. By 1970, the proportion of people living in urban and rural areas was virtually equal at around 630 million. Today, of every 10 urban </text>
+      <target>
+       <answer>residents</answer>
+       <response fill="_" length="9" maxLength="9" show="r" />
+       <text>residents</text>
+      </target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> in the world more than seven are found in developing countries, which are also hosts to an overwhelming proportion of humankind (82 per cent of the world’s population). Moreover, of the 187,066 new city </text>
+      <target>
+       <answer>dwellers</answer>
+       <response fill="_" length="8" maxLength="8" show="d" />
+       <text>dwellers</text>
+      </target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> that will be added to the world’s urban population every day between 2012 and 2015, 91.5 per cent, or 171,213, will be born in a developing country.</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana">Beneath the above numbers are questions of needs, demands and capacities to deliver for this large world </text>
+      <target>
+       <answer>population</answer>
+       <response fill="_" length="10" maxLength="10" show="p" />
+       <text>population</text>
+      </target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> whose life base is fundamentally changing. Not only do new cities have to be built and managed differently, but a whole set of relations and ways of thinking about new agenda items will have to be developed. For example, the entire environmental agenda needs to be recast when the urbanisation dimension is factored in. </text>
+      <target>
+       <answer>Cities</answer>
+       <response fill="_" length="6" maxLength="6" show="C" />
+       <text>Cities</text>
+      </target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> contribute to up to 70 per cent of the total greenhouse gas emissions. Currently, mobility systems within and between cities promote an excessive dependence on fossil fuel and building designs tend to overuse non-renewable resources. The overall urban metabolism is totally unsustainable and it may worsen if no immediate action is taken.</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana">The above elements, coupled with the current urban based and crisis-ridden modes of economic development, underscore the need to pay attention to the urbanisation agenda. On this aspect, there are important lessons to be derived from recent experiences. The opposite dynamism exhibited by emerging </text>
+      <target>
+       <answer>economies</answer>
+       <response fill="_" length="9" maxLength="9" show="e" />
+       <text>economies</text>
+      </target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> as they optimize on opportunities is an experience worthy of consolidation. Other critical factors of urbanisation which will have a bearing on defining the new global agenda include the increasing urban </text>
+      <target>
+       <answer>sprawl</answer>
+       <response fill="_" length="6" maxLength="6" show="s" />
+       <text>sprawl</text>
+      </target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana">; the rise of mega cities, increasing metropolitanization, emergence of urban corridors and regions – all of which generate new demands, novel institutions, and will entail a profound overhaul in international relations.</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana">At the social level, some of the current concerns will continue to deserve priority attention. </text>
+      <target>
+       <answer>Poverty</answer>
+       <response fill="_" length="7" maxLength="7" show="P" />
+       <text>Poverty</text>
+      </target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana">, this time dominantly urban, will be compounded by the rise of the ‘new poor’ particularly in cities of industrial economies. The rising inequality in many parts of the world will generate tension and even conflict whose locus will be in cities and towns. The issue of social </text>
+      <target>
+       <answer>inclusion</answer>
+       <response fill="_" length="9" maxLength="9" show="i" />
+       <text>inclusion</text>
+      </target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> will remain of prime concern as the infrastructure for global mobility improves but at the same time, natural and human-made disasters increase. The political implications of immigration, particularly of the transnational variety, will have to be grappled with.</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <text background="0xFFFFFF" bold="false" size="18" italic="false" family="Verdana">Source:</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <text background="0xFFFFFF" bold="false" size="11" italic="false" family="Verdana">United Nations Human Settlements Programme. (2012). UN System Task Team on the Post-2015 UN Development Agenda. Sustainable Urbanisation. Thematic Think Piece. 1- Introduction, pp. 3-5. UN-HABITAT. Available at http://www.un.org/millenniumgoals/pdf/Think%20Pieces/18_urbanization.pdf [retrieved 18.08.2013]</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.Identify" name="14. Prolegomena: Urban Development as Urban Safety" code="" type="identifyWords">
+   <description>
+    <p>Textual element identification activity: As Ss read the text, they identify 22 collocations (related to the topic) in the text (case study report).</p>
+   </description>
+   <messages>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="NewUrbanism1.jpg" type="previous">
+     <style margin="7" borderStroke="4.0" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF66" />
+     </style>
+     <p>Read the explanation about COLLOCATIONS and the hint. Then, click on the screen to start the activity.</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="NewUrbanism1.jpg" type="initial">
+     <style margin="7" borderStroke="4.0" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+     </style>
+     <p>Read the text carefully and click on the 22 collocations related to sustainable urbanisation.</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="NewUrbanism1.jpg" type="final">
+     <style margin="7" borderStroke="3.7" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+     </style>
+     <p>Good job!</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="NewUrbanism1.jpg" type="finalError">
+     <style margin="7" borderStroke="4.3" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF00" background="0xFF0000" border="0xFFFF00" />
+     </style>
+     <p>Please, try again.</p>
+    </cell>
+   </messages>
+   <settings margin="10" infoUrl="http://oxforddictionary.so8848.com/" maxTime="600" countDownTime="true" maxActions="45" countDownActions="true" report="true" reportActions="true">
+    <helpWindow showSolution="false">
+     <p>A COLLOCATION is a sequence of terms that often go together. Click on the 'information' button to open an online collocation dictionary.</p>
+    </helpWindow>
+    <container bgColor="0x0099CC">
+     <image name="EcoCitySinoSingaporeTianjin.jpg_1" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF33" transparent="true" border="true">
+     <size width="900" height="850" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <checkButton>Check your answers</checkButton>
+   <prevScreen maxTime="120">
+    <style margin="7" borderStroke="4.2" markerStroke="2.7">
+     <font family="Century Gothic" size="16" bold="true" />
+     <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+    </style>
+    <p>A COLLOCATION is a sequence of terms that often go together.</p>
+    <p>There are 6 main collocation types:</p>
+    <p>a) "adjective+noun",</p>
+    <p>b) "noun+noun",</p>
+    <p>c) "verb+noun",</p>
+    <p>d) "adverb+adjective",</p>
+    <p>e) "verb+prepositional phrase" and</p>
+    <p>f) "verb+adverbial particle".</p>
+    <p>e.g.</p>
+    <p>       urban area (adjective+noun)</p>
+    <p>       gross social inequalities (adjective+adjective+noun)</p>
+    <p>       improve living conditions (verb+adjective+noun)</p>
+    <p>       slum upgrading (noun+noun)</p>
+    <p>HINT: The collocations in the text you are going to read consist of two, three or four items. The last item in each of these collocations is a noun.</p>
+    <p>As you read the text, you have to click on each item of the collocations.</p>
+   </prevScreen>
+   <document>
+    <style name="default" tabWidth="12" background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <text background="0xFFFFFF" bold="true" size="22" italic="false" family="Verdana">Prolegomena: Urban Development as Urban Safety</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana">Among the several forms of </text>
+      <target>urban</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> </text>
+      <target>development</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> </text>
+      <target>interventions,</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> </text>
+      <target>slum</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> </text>
+      <target>upgrading</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> offers an incomparable opportunity to provide </text>
+      <target>urban</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> </text>
+      <target>safety</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> for the poor. </text>
+      <target>Slum</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> </text>
+      <target>upgrading,</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> the orchestrated process to improve the </text>
+      <target>built</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> </text>
+      <target>environment</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> of a </text>
+      <target>human</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> </text>
+      <target>settlement,</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> could mobilize many different actors in </text>
+      <target>diverse</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> </text>
+      <target>policy</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> </text>
+      <target>areas</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> at various levels. And it could give momentum to the idea that improving a neighbourhood comprises an overhaul of all dimensions of its life, including the freedom of citizens from the occurrence or risk of injury, danger, or loss, that is, their safety. </text>
+      <target>Contemporary</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> </text>
+      <target>crime</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> </text>
+      <target>prevention</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> </text>
+      <target>tools</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> are up to the task. Progressively, the field has shifted its main concern from reducing measurements of either crime or violence to improving the quality of life. A holistic notion of “safety” has been brought into play and </text>
+      <target>slum-upgrading</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> </text>
+      <target>interventions</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> set a suitable scenario to realize its practical implications.</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana">The Safer Cities Programme of UN-HABITAT has realized that policymakers and </text>
+      <target>urban</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> </text>
+      <target>managers</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> can avail themselves of these auspicious circumstances through a careful consideration of four key factors: the degree of </text>
+      <target>social</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> </text>
+      <target>cohesion,</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> the extent of </text>
+      <target>urban</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> </text>
+      <target>inequalities,</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> the risks of the </text>
+      <target>built</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> </text>
+      <target>environment,</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> and the scope of inclusiveness in </text>
+      <target>urban</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> </text>
+      <target>governance.</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> Experience has shown that authorities are better equipped to build </text>
+      <target>urban</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> </text>
+      <target>safety</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> when they formulate </text>
+      <target>inclusive</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> </text>
+      <target>urban-upgrading</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> </text>
+      <target>policies,</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> which in turn include project components that redesign the morphology of the </text>
+      <target>urban</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> </text>
+      <target>environment</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> to favour self-protection, that profit from and foster the increase of </text>
+      <target>social</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> </text>
+      <target>links</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> –reinforcing </text>
+      <target>social</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> </text>
+      <target>cohesion–,</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> and that reduce the </text>
+      <target>various</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> </text>
+      <target>social</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> </text>
+      <target>inequalities,</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> abating exclusion and bridging the gap of the </text>
+      <target>urban</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> </text>
+      <target>divide.</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> It is easier said than done, indeed. However, a good start is to bear in mind the impact that one would like the </text>
+      <target>urban-upgrading</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> </text>
+      <target>intervention</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> to have in any or all of these four key factors.</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <text background="0xFFFFFF" bold="false" size="18" italic="false" family="Verdana">Source:</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <text background="0xFFFFFF" bold="false" size="11" italic="false" family="Verdana">Velasquez, E. (2010). Prolegomena: Urban Development as Urban Safety, pp. 4-6. United Nations Human Settlements Programme. (2010). Building Urban Safety through Slum Upgrading. Nairobi: UN-HABITAT. Available at http://es.scribd.com/doc/67847562/Building-Urban-Safety-Through-Slum-Upgrading [retrieved 18.08.2013]</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial" />
+    </section>
+   </document>
+  </activity>
+  <activity class="@text.Order" name="15. Urban Basic Services" code="" type="orderParagraphs">
+   <description>
+    <p>Ss have to read the text (brochure) in order to unjumble the paragraphs.</p>
+   </description>
+   <messages>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="NewUrbanism1.jpg" type="previous">
+     <style margin="7" borderStroke="4.1" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF66" />
+     </style>
+     <p>Read this hint carefully. Then, click on the screen to start the activity.</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="NewUrbanism1.jpg" type="initial">
+     <style margin="7" borderStroke="4.2" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+     </style>
+     <p>Read the text carefully and put the paragraphs into the correct order.</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="NewUrbanism1.jpg" type="final">
+     <style margin="7" borderStroke="4.0" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+     </style>
+     <p>Good job!</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="NewUrbanism1.jpg" type="finalError">
+     <style margin="7" borderStroke="3.7" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF00" background="0xFF0000" border="0xFFFF00" />
+     </style>
+     <p>Please, try again.</p>
+    </cell>
+   </messages>
+   <settings margin="10" infoUrl="http://www.scribd.com/doc/136407475/Time-to-Think-Urban-UN-Habitat-Brochure-2013" maxTime="450" countDownTime="true" maxActions="15" countDownActions="true" report="true" reportActions="true">
+    <helpWindow showSolution="false">
+     <p>Click on the 'information' button. Read pages 12-13 in the text.</p>
+    </helpWindow>
+    <container bgColor="0x0099CC">
+     <image name="EcoCitySinoSingaporeTianjin.jpg_1" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF33" transparent="true" border="true">
+     <size width="990" height="850" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <checkButton>Check your performance.</checkButton>
+   <prevScreen maxTime="60">
+    <style margin="7" borderStroke="4.1" markerStroke="2.7">
+     <font family="Century Gothic" size="16" bold="true" />
+     <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF66" />
+    </style>
+    <p>In the following activity, you have to read the text carefully in order to put the paragraphs into the correct order.&#xD;</p>
+    <p>&#xD;</p>
+    <p>As you read the text, pay attention to the way these concepts (lexical chains) are connected to one another as the text unfolds:&#xD;</p>
+    <p>&#xD;</p>
+    <p>URBANISATION --- HALF OF HUMANITY LIVING IN CITIES --- URBAN AREAS&#xD;</p>
+    <p>&#xD;</p>
+    <p>CITIES --- URBAN DWELLERS IN DEVELOPING COUNTRIES&#xD;</p>
+    <p>&#xD;</p>
+    <p>UN-HABITAT --- CITIES&#xD;</p>
+    <p>&#xD;</p>
+    <p>It (= UN-HABITAT) --- BETTER SERVICES --- ENERGY DEMANDS&#xD;</p>
+    <p>&#xD;</p>
+    <p>BASIC SERVICES --- USING ENERGY MORE EFFICIENTLY --- UN-HABITAT&#xD;</p>
+   </prevScreen>
+   <document>
+    <style name="default" tabWidth="12" background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <text background="0xFFFFFF" bold="true" size="22" italic="false" family="Verdana">Urban Basic Services</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <target>Millions of people around the world still lack access to clean drinking water, basic sanitation, modern forms of energy, sustainable mobility and proper waste management. UN-Habitat works in the area of water, sanitation and drainage, mobility, energy and waste management with the objective of increasing equitable access to urban basic services, and improving the standard of living of the urban poor.</target>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <target>As the world becomes more urbanised, urbanisation is increasingly viewed at the heart of the climate agenda. With half of humanity living in cities, urban areas now consume 80 per cent of global energy, and are responsible for the emission of more than 70 per cent of greenhouse gases.</target>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <target>Cities also generate more than 70 per cent of the world’s waste. Between 30 per cent to 40 per cent of urban dwellers in developing countries do not have access to modern forms of energy, such as electricity and clean cooking fuels.</target>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <target>UN-Habitat helps cities exchange views on ways of offsetting these problems, and primarily cutting our reliance on fossil fuels and energy consumption in general. It promotes more efficient, cleaner public transport; energy efficient buildings; and thus less reliance on the automobile; cleaner cooking fuel; access to affordable energy services; and the use of renewable energy sources in urban areas.</target>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <target>UN-Habitat supports efforts by governments in developing countries in their pursuit of the Millennium Development Goals (MDG) for water and sanitation. This is achieved through city-level demonstration projects, institutional strengthening of service providers, and engagement in national policy and reform process.</target>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <target>It also promotes better waste management, drainage, and a range of other strategies whereby smarter and compact cities can deliver better services to their citizens, while at the same time reducing energy demand.</target>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <target>By improving basic services, reducing the urban impact of climate change problems, improving transport systems and using energy more efficiently, UN-Habitat promotes sustainability that is human-centred – cities which improve the relative quality of life of their people, cities geared towards the happiness, rights and fulfilment of their citizens.</target>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <text background="0xFFFFFF" bold="false" size="18" italic="false" family="Verdana">Source:</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial">
+      <text background="0xFFFFFF" bold="false" size="11" italic="false" family="Verdana">United Nations Human Settlements Programme. (2012). Time to Think Urban. UN-HABITAT Brochure 2013. 4- Urban Basic Services, pp. 12-13. Nairobi: UN-HABITAT. Available at http://www.scribd.com/doc/136407475/Time-to-Think-Urban-UN-Habitat-Brochure-2013 [retrieved 18.08.2013]</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Arial" />
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.Order" name="16. Youth and the Prosperity of Cities" code="" type="orderWords" amongParagraphs="true">
+   <description>
+    <p>Ss have to read the text (case study report) in order to unjumble the lexical items.</p>
+   </description>
+   <messages>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="NewUrbanism1.jpg" type="previous">
+     <style margin="7" borderStroke="4.0" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF66" />
+     </style>
+     <p>Read this hint carefully. Then, click on the screen to start the activity.</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="NewUrbanism1.jpg" type="initial">
+     <style margin="7" borderStroke="3.8" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+     </style>
+     <p>Read the text carefully and put the words into the correct order.</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="NewUrbanism1.jpg" type="final">
+     <style margin="7" borderStroke="3.8" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF33" />
+     </style>
+     <p>Good job!</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="NewUrbanism1.jpg" type="finalError">
+     <style margin="7" borderStroke="3.8" markerStroke="2.7">
+      <font family="Century Gothic" size="16" bold="true" />
+      <color foreground="0xFFFF00" background="0xFF0000" border="0xFFFF00" />
+     </style>
+     <p>Please, try again.</p>
+    </cell>
+   </messages>
+   <settings margin="10" infoUrl="http://es.scribd.com/doc/136412297/Youth-in-the-Prosperity-of-Cities" maxTime="900" countDownTime="true" maxActions="20" countDownActions="true" report="true" reportActions="true">
+    <helpWindow showSolution="false">
+     <p>Click on the 'information' button. Read pages 5-6 in the text.</p>
+    </helpWindow>
+    <container bgColor="0x0099CC">
+     <image name="EcoCitySinoSingaporeTianjin.jpg_1" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF33" transparent="true" border="true">
+     <size width="990" height="850" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <checkButton>Check your performance.</checkButton>
+   <prevScreen maxTime="180">
+    <style margin="7" borderStroke="4.2" markerStroke="2.7">
+     <font family="Century Gothic" size="16" bold="true" />
+     <color foreground="0xFFFF33" background="0x0099CC" border="0xFFFF66" />
+    </style>
+    <p>In this activity, you have to apply what you have already learnt about COLLOCATIONS.&#xD;</p>
+    <p>&#xD;</p>
+    <p>HINT: As you read the text carefully, pay close attention to the words that appear BEFORE and AFTER the 'blue words' (= the words that you have to put into the correct gap).&#xD;</p>
+    <p>&#xD;</p>
+    <p>All of the 'blue words' are NOUNS. In the text you are going to read, these nouns are used in these patterns:&#xD;</p>
+    <p>&#xD;</p>
+    <p>a) "... and+NOUN"&#xD;</p>
+    <p>b) "NOUN+NOUN"&#xD;</p>
+    <p>c) "adjective+NOUN"&#xD;</p>
+    <p>d) "adjective+adjective+NOUN"&#xD;</p>
+    <p>e) "NOUN+of+NOUN"&#xD;</p>
+    <p>f) "the+NOUN"&#xD;</p>
+    <p>g) "the+adjective+NOUN"&#xD;</p>
+    <p>h) "the+adjective+adjective+NOUN"</p>
+   </prevScreen>
+   <document>
+    <style name="default" tabWidth="17" background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Verdana">
+      <text background="0xFFFFFF" bold="true" size="22" italic="false" family="Verdana">Youth and the Prosperity of Cities</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Verdana" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Verdana">
+      <cell avoidOverlapping="true" width="600" height="350" image="Table12resized.jpg_1" />
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Verdana" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Verdana">
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana">Prosperity can be narrowly seen in terms of economic flourishing. However, in a wider perspective in which this report is situated, prosperity includes other dimensions of thriving such as quality of life and </text>
+      <target>equity.</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> This report embraces this broader vision taking into account the conceptualization of prosperity adopted in the State of the World Cities 2012-13 report. That is, prosperity comprises four key components: economic productivity and </text>
+      <target>employment,</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> quality of life, infrastructure </text>
+      <target>development,</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> and equity (See Figure 1.2).</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Verdana" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Verdana">
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana">These components are closely interrelated. For example, decent jobs require the right kind of </text>
+      <target>education,</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> skills and depending on the job requirement, some level of vocational </text>
+      <target>training.</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> A city requires affordable and efficient transportation for young people to access its educational facilities and subsequent employment opportunities. Spatial mobility, in turn, requires a safe environment that enables young people to move around without fear. Equity aspects permeate all other components and patterns of social </text>
+      <target>exclusion</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> are seen in all areas. Discriminatory practices against youth are exacerbated by barriers associated with, for example, gender, race and social class.</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Verdana" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Verdana">
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana">Building on the State of Urban Youth report 2010/11, this report emphasizes aspects it found central in the lives of youth, particularly </text>
+      <target>inequality</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> of opportunities and resultant unequal outcomes. While it is important to identify objective conditions of urban prosperity, it is also critical to ascertain and recognize young people’s subjective assessments of these conditions and their place relative to them. After all, it is their perceptions that guide their actions. Depending on how they evaluate their situation, youth will be inclined towards different behaviours, whether negative (e.g., crime) or positive (e.g., civic engagement). Therefore, this report details the opinions of young people themselves regarding various dimensions of urban prosperity, with special attention given to patterns of </text>
+      <target>inclusion</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> and exclusion.</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Verdana" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Verdana">
+      <cell avoidOverlapping="true" width="580" height="180" image="Table13.jpg_1" />
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Verdana" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Verdana">
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana">At the same time, young people do not form their evaluations in a vacuum and their context influences the circumstances and the future they see for themselves. Factors that are important in one city may be less significant elsewhere, while other factors may be shared in common across different cities. It is, therefore, helpful to use a comparative perspective. Indeed, when asked how committed their city is to promoting the various dimensions of prosperity, the responses of the participating youth show similarities as well as differences. For example, in all four cities, youth believe that the greatest local </text>
+      <target>commitment</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> is to infrastructure development, but the proportion of youth expressing this opinion ranges from as low as 8 per cent in São Paulo to a high of 42 per cent in Cairo. The prosperity components where youth see the least commitment by their local governments likewise differs across the cities. In Bangalore, youth least often say that there is a commitment to aspects of </text>
+      <target>productivity</target>
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana"> (14 per cent), whereas it is quality of life in Bangalore (13per cent), and equity in Cairo (19 per cent) and São Paulo (3 per cent). These findings also make clear that the lowest levels of commitment perceived in one city, can exceed the highest commitment levels perceived elsewhere (see Table 1.3).</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Verdana" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Verdana">
+      <text background="0xFFFFFF" bold="false" size="16" italic="false" family="Verdana">A better understanding of these and related perceptions is important for informing policies that promote urban prosperity for all.</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Verdana" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Verdana">
+      <text background="0xFFFFFF" bold="false" size="18" italic="false" family="Verdana">Source:</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Verdana">
+      <text background="0xFFFFFF" bold="false" size="11" italic="false" family="Verdana">United Nations Human Settlements Programme. (2013). Nairobi: UN-HABITAT. Available at http://es.scribd.com/doc/136412297/Youth-in-the-Prosperity-of-Cities [retrieved 18.08.2013]</text>
+     </p>
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Verdana" />
+     <p background="0xFFFFFF" bold="false" size="11" italic="false" family="Verdana" />
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="building1.jpg_1" file="building1.jpg" />
+  <media name="Bungalowhouse6.jpg_1" file="Bungalowhouse6.jpg" />
+  <media name="cottage1.jpg_1" file="cottage1.jpg" />
+  <media name="councilestate6.jpg_1" file="councilestate6.jpg" />
+  <media name="detachedhouse1.jpg_1" file="detachedhouse1.jpg" />
+  <media name="EcoCitySinoSingaporeTianjin.jpg_1" file="EcoCitySinoSingaporeTianjin.jpg" />
+  <media name="flats1.jpg_1" file="flats1.jpg" />
+  <media name="leapfrogdevelopmentsprawl.jpg_1" file="leapfrogdevelopmentsprawl.jpg" />
+  <media name="leapfrogdevelopmentsprawlLaPlataCABACampanaZarate2resized1.jpg_1" file="leapfrogdevelopmentsprawlLaPlataCABACampanaZarate2resized1.jpg" />
+  <media name="leapfrogdevelopmentsprawlTrelewGaiman4resized.jpg_1" file="leapfrogdevelopmentsprawlTrelewGaiman4resized.jpg" />
+  <media name="lowdensitycontinuoussprawl.jpg_1" file="lowdensitycontinuoussprawl.jpg" />
+  <media name="lowdensitycontinuoussprawlSaltoBA3resized1.jpg_1" file="lowdensitycontinuoussprawlSaltoBA3resized1.jpg" />
+  <media name="NewUrbanism1.jpg" file="NewUrbanism1.jpg" />
+  <media name="PopulationAgglomeration.jpg" file="PopulationAgglomeration.jpg" />
+  <media name="ribbonsprawl.jpg_1" file="ribbonsprawl.jpg" />
+  <media name="ribbonsprawlSanClementeSanBernardo7resized.jpg_1" file="ribbonsprawlSanClementeSanBernardo7resized.jpg" />
+  <media name="semidetachedhouses8.jpg_1" file="semidetachedhouses8.jpg" />
+  <media name="shantytownhouse5.jpg_1" file="shantytownhouse5.jpg" />
+  <media name="Table12resized.jpg_1" file="Table12resized.jpg" />
+  <media name="Table13.jpg_1" file="Table13.jpg" />
+  <media name="tenementbuilding1.jpg_1" file="tenementbuilding1.jpg" />
+  <media name="terracedhouses10.jpg_1" file="terracedhouses10.jpg" />
+  <media name="UrbanSprawl1.jpg_1" file="UrbanSprawl1.jpg" />
+  <media name="UrbanSprawl2.jpg" file="UrbanSprawl2.jpg" />
+  <media name="bombfallingandexploding01.mp3_1" file="bombfallingandexploding01.mp3" />
+  <media name="camerafocusing03.mp3_1" file="camerafocusing03.mp3" />
+  <media name="carignition1.mp3_1" file="carignition1.mp3" />
+  <media name="childreninschoolplayground.mp3_1" file="childreninschoolplayground.mp3" />
+  <media name="clong1.mp3_1" file="clong1.mp3" />
+  <media name="drumroll.mp3" file="drumroll.mp3" />
+  <media name="explosion04.mp3_1" file="explosion04.mp3" />
+  <media name="NewUrbanism01.mp3_1" file="NewUrbanism01.mp3" />
+  <media name="NewUrbanism02.mp3_1" file="NewUrbanism02.mp3" />
+  <media name="NewUrbanism03.mp3_1" file="NewUrbanism03.mp3" />
+  <media name="NewUrbanism04.mp3_1" file="NewUrbanism04.mp3" />
+  <media name="NewUrbanism05.mp3_1" file="NewUrbanism05.mp3" />
+  <media name="NewUrbanism06.mp3_1" file="NewUrbanism06.mp3" />
+ </mediaBag>
+</JClicProject>
+

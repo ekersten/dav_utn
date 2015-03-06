@@ -1,0 +1,59 @@
+<applet name="vacio" width=500 height=400
+        code="descinst.Descartes.class"
+        codebase="./"
+        archive="descinst.jar,http://recursostic.educacion.es/descartes/web/plugin/descinst.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="500x400">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="vacio">
+   <param name="Versi&oacute;n" value="4.41, 2010-12-16">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="tipo='R3' id='E3' despl_imagen='arr-izq' fondo='negro' R3='s&iacute;'">
+   <param name="C_00" value="id='escala' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E3' nombre='zoom' valor='48' incr='0.1*escala' min='0.000001' max='1000000' decimales='(escala&lt;0.01)+(escala&lt;0.1)+(escala&lt;1)+(escala&lt;10)+(escala&lt;100)+(escala&lt;1000)+(escala&lt;10000)+(escala&lt;100000)' fijo='s&iacute;' visible='no' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_01" value="id='Ox' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E3' fijo='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_02" value="id='Oy' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E3' fijo='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_03" value="id='r' tipo='num&eacute;rico' espacio='E3' nombre='Radio' valor='2' incr='.1' min='0' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_04" value="id='Theta' tipo='num&eacute;rico' espacio='E3' nombre='Theta' valor='45' incr='1' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_05" value="id='Phi' tipo='num&eacute;rico' espacio='E3' nombre='Phi' valor='45' incr='1' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_00" value="id='pi' constante='s&iacute;' expresi&oacute;n='3.1416' evaluar='una-sola-vez'">
+   <param name="A_01" value="id='x' expresi&oacute;n='r*sin(pi/180 *Phi)*cos(pi/180 * Theta)'">
+   <param name="A_02" value="id='y' expresi&oacute;n='r*sin(pi/180 * Phi)*sin(pi/180 * Theta)'">
+   <param name="A_03" value="id='yy' expresi&oacute;n='y'">
+   <param name="A_04" value="id='xx' expresi&oacute;n='r*cos(pi/180 * Theta)'">
+   <param name="A_05" value="id='xc' expresi&oacute;n='cos(pi/180 * Theta)'">
+   <param name="A_06" value="id='yc' expresi&oacute;n='sin(pi/180 * Theta)'">
+   <param name="A_07" value="id='z' expresi&oacute;n='r*cos(pi/180 * Phi)'">
+   <param name="A_08" value="id='zz' expresi&oacute;n='z'">
+   <param name="A_09" value="id='zc' expresi&oacute;n='cos(pi/180 * Phi)'">
+   <param name="A_10" value="id='ycc' expresi&oacute;n='sin(pi/180 * Phi)'">
+   <param name="S_00" value="espacio='E3' tipo='segmento' color='amarillo' expresi&oacute;n='(4,0,0)(0,0,0)'">
+   <param name="S_01" value="espacio='E3' tipo='segmento' color='amarillo' expresi&oacute;n='(0,4,0)(0,0,0)'">
+   <param name="S_02" value="espacio='E3' tipo='segmento' color='amarillo' expresi&oacute;n='(0,0,0)(0,0,4)'">
+   <param name="S_03" value="espacio='E3' tipo='cono' color='amarillo' color_reverso='amarillo' expresi&oacute;n='Cono' rotini='(90,0,0)' posini='(0,4,0)' aristas='s&iacute;' modelo='metal' ancho='0.2' largo='0.2' alto='0.2' Nu='3' Nv='1'">
+   <param name="S_04" value="espacio='E3' tipo='cono' fondo='s&iacute;' color='amarillo' color_reverso='amarillo' expresi&oacute;n='Cono' rotini='(0,-90,0)' posini='(4,0,0)' aristas='s&iacute;' modelo='metal' ancho='0.2' largo='0.2' alto='0.2' Nu='3' Nv='1'">
+   <param name="S_05" value="espacio='E3' tipo='cono' fondo='s&iacute;' color='amarillo' color_reverso='amarillo' expresi&oacute;n='Cono' rotini='(0,180,0)' posini='(0,0,4)' aristas='s&iacute;' modelo='metal' ancho='0.2' largo='0.2' alto='0.2' Nu='3' Nv='1'">
+   <param name="S_06" value="espacio='E3' tipo='punto' color='negro' color_reverso='negro' expresi&oacute;n='(4,0,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red255\green255\blue255;}\cf0\cb1 X\f1\fs24}' fuente='Times New Roman,PLAIN,12' fijo='s&iacute;'">
+   <param name="S_07" value="espacio='E3' tipo='punto' color='negro' color_reverso='negro' expresi&oacute;n='(0,4,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red255\green255\blue255;}\f1\fs24\cf0\cb1 Y\f2\fs24}' fuente='Times New Roman,PLAIN,12' fijo='s&iacute;'">
+   <param name="S_08" value="espacio='E3' tipo='punto' color='negro' color_reverso='negro' expresi&oacute;n='(0,0,4)' posini='(0.5,0,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red255\green255\blue255;}\cf0\cb1\f1\fs24 Z}' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="S_09" value="nombre='p' espacio='E3' tipo='segmento' color='azul' expresi&oacute;n='(0,0,0)(x,y,z)' ancho='2'">
+   <param name="S_10" value="espacio='E3' tipo='punto' color='azul' color_reverso='azul' expresi&oacute;n='(x,y,z)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;}\f1\fs24 p({\*\mjaformula{\expr xx}},{\*\mjaformula{\expr yy}},{\*\mjaformula{\expr zz}})}' fuente='Monospaced,PLAIN,12' decimales='1' fijo='s&iacute;' ancho='3'">
+   <param name="S_11" value="espacio='E3' tipo='texto' color='azul' expresi&oacute;n='[5,300]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs34\b Coordenadas Cartesianas\fs24\b0}' fuente='Courier New Bold,BOLD,17' fijo='s&iacute;'">
+   <param name="S_12" value="espacio='E3' tipo='texto' color='azul' expresi&oacute;n='[5,320]' texto='X=[xx]' fuente='Times New Roman Bold,BOLD,13' fijo='s&iacute;'">
+   <param name="S_13" value="espacio='E3' tipo='texto' color='azul' expresi&oacute;n='[5,340]' texto='Y=[yy]' fuente='Times New Roman Bold,BOLD,13' fijo='s&iacute;'">
+   <param name="S_14" value="espacio='E3' tipo='texto' color='azul' expresi&oacute;n='[5,360]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Times New Roman;}\f1\fs26\b Z={\*\mjaformula{\expr zz}}\fs24\b0}' fuente='Times New Roman Bold,BOLD,13' fijo='s&iacute;'">
+   <param name="S_15" value="espacio='E3' tipo='texto' color='azul' expresi&oacute;n='[5,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs34\b Coordenadas Esfericas\fs24\b0}' fuente='Courier New Bold,BOLD,17' fijo='s&iacute;'">
+   <param name="S_16" value="espacio='E3' tipo='texto' color='azul' expresi&oacute;n='[5,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs26\b Radio(r) ={\*\mjaformula{\expr r}}\fs24\b0}' fuente='Courier New Bold,BOLD,13' fijo='s&iacute;'">
+   <param name="S_17" value="espacio='E3' tipo='texto' color='azul' expresi&oacute;n='[5,60]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}\f1\fs26\b Theta(\f2\fs30\b0\i\u952 \f1\fs26\b\i0 ) ={\*\mjaformula{\expr Theta}}\fs24\b0}' fuente='Courier New Bold,BOLD,13' fijo='s&iacute;'">
+   <param name="S_18" value="espacio='E3' tipo='texto' color='azul' expresi&oacute;n='[5,80]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}\f1\fs26\b Phi(\f2\fs30\i\u966 \f1\fs26\i0 ) ={\*\mjaformula{\expr Phi}}\fs24\b0}' fuente='Courier New Bold,BOLD,13' fijo='s&iacute;'">
+   <param name="S_19" value="espacio='E3' tipo='curva' dibujar-si=' ' expresi&oacute;n='x=cos(2*pi*u) y=sen(2*pi*u) z=0' ancho='2' Nu='30'">
+   <param name="S_20" value="espacio='E3' tipo='punto' color='negro' color_reverso='negro' expresi&oacute;n='(1,-0.5,.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;\f2\fcharset0 Times New Roman;}{\colortbl\red255\green0\blue255;\red0\green0\blue0;\red255\green255\blue255;}\f1\fs38\i\cf0\cb1\u920 \cf0\cb2\fs34\b\i0}' fuente='Times New Roman Italic,ITALIC,19' fijo='s&iacute;'">
+   <param name="S_21" value="espacio='E3' tipo='segmento' expresi&oacute;n='(0,0,0)(xc,yc,0)' ancho='2'">
+   <param name="S_22" value="espacio='E3' tipo='curva' color='turquesa' dibujar-si=' ' expresi&oacute;n='z=cos(2*pi*u) y=sen(2*pi*u) x=0' ancho='2' Nu='30'">
+   <param name="S_23" value="espacio='E3' tipo='punto' color_reverso='rosa' expresi&oacute;n='(0,.3,1.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Times New Roman;}{\colortbl\red0\green255\blue255;\red0\green0\blue0;\red255\green175\blue175;\red255\green255\blue255;}\f1\fs34\b\cf0\cb1\u966 \cf2\cb3}' fuente='Times New Roman Bold,BOLD,17' fijo='s&iacute;' ancho='0'">
+   <param name="S_24" value="espacio='E3' tipo='segmento' color='turquesa' expresi&oacute;n='(0,0,0)(0,ycc,zc)' ancho='2'">
+<font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">J2RE</a>.</font>
+</applet>

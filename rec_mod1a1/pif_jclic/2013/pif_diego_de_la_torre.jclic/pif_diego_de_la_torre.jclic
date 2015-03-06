@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="pif_diego_de_la_torre" version="0.1.3">
+ <settings>
+  <title>PIF_Diego_de_la_torre</title>
+  <revision description="created" date="3/4/14" />
+  <author name="Diego de la torre" mail="diegodelatorre@live.com.ar" rol="BSC (Brain storm chief)" organization="EEST n 5 R. Noble">
+   <comments>
+    <p>Administrador de Red</p>
+   </comments>
+  </author>
+  <organization name="EEST n 5" address="Peribebuy 2751" pc="1754" city="San Justo" />
+  <descriptors level="Secundaria tecnica" />
+  <skin file="@default.xml" />
+ </settings>
+ <sequence>
+  <item id="inicio" name="Bienvenida" />
+  <item name="Introduccion" />
+  <item name="introduccion 2" />
+  <item id="opciones" name="opciones por area">
+   <jump action="STOP" id="forward" />
+  </item>
+  <item id="matematicas" name="calculo mental">
+   <jump tag="opciones" id="forward" />
+  </item>
+  <item id="arte" name="juego de memoria">
+   <jump tag="opciones" id="back" />
+  </item>
+  <item id="arte" name="identificacion">
+   <jump tag="opciones" id="forward" />
+  </item>
+  <item id="literatura" name="rellenar con opciones">
+   <jump tag="opciones" id="forward" />
+   <jump tag="opciones" id="back" />
+  </item>
+  <item id="geografia" name="i01identificacion">
+   <jump tag="opciones" id="forward" />
+   <jump tag="opciones" id="back" />
+  </item>
+  <item id="fin" name="informacion 2">
+   <jump tag="opciones" id="back" />
+  </item>
+  <item name="fin">
+   <jump action="EXIT" id="forward" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@panels.InformationScreen" name="Bienvenida" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <helpWindow>
+     <p>xx</p>
+    </helpWindow>
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xF5BDF8" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@simple.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="602.0" cellHeight="129.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style shadow="true" borderStroke="8.1" markerStroke="2.7">
+      <font family="Palatino Linotype" size="26" bold="true" />
+      <color background="0xFCFCFC" shadow="0xB9B6B6" border="0xB80202" />
+     </style>
+     <p>Aqui comenzamos una demostración de</p>
+     <p>JCLIC</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Introduccion" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xF5BDF8" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <skin file="@simple.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="583.0" cellHeight="399.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style shadow="true" borderStroke="8.1" markerStroke="2.7">
+      <font family="Palatino Linotype" size="26" bold="true" />
+      <color background="0xFCFCFC" shadow="0xB9B6B6" border="0xB80202" />
+     </style>
+     <p>JClic es una herramienta de autor que permite al profesorado crear con facilidad recursos educativos digitales.</p>
+     <p>JClic está formado por un conjunto de aplicaciones informáticas que sirven para realizar diversos tipos de actividades educativas: rompecabezas, asociaciones, ejercicios de texto, palabras cruzadas ...</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="calculo mental" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xBDDCF8" dest="0xFFFFFF" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <skin file="@default.xml" />
+   </settings>
+   <automation class="@arith.Arith">
+    <operand from="x" to="10" id="A" />
+    <operand from="x" to="10" id="B" />
+    <operations plus="false" minus="false" multiply="true" divide="false" />
+    <unknown result="true" first="false" last="false" operand="false" inverse="false" />
+    <result from="x" to="9999" duplicates="false" />
+   </automation>
+   <cells rows="8" cols="1" cellWidth="199.0" cellHeight="30.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="8" />
+    <cell id="0">
+     <style shadow="true" borderStroke="2.7" markerStroke="2.7">
+      <font family="Palatino Linotype" size="26" bold="true" />
+      <color background="0xFCFCFC" shadow="0xB9B6B6" alternative="0x999999" border="0xB80202" />
+     </style>
+    </cell>
+    <cell id="1">
+     <style shadow="true" borderStroke="2.9" markerStroke="2.7">
+      <font family="Palatino Linotype" size="26" bold="true" />
+      <color background="0xFCFCFC" shadow="0xB9B6B6" border="0xB80202" />
+     </style>
+    </cell>
+    <cell id="2">
+     <style shadow="true" borderStroke="2.7" markerStroke="2.7">
+      <font family="Palatino Linotype" size="26" bold="true" />
+      <color background="0xFCFCFC" shadow="0xB9B6B6" border="0xB80202" />
+     </style>
+    </cell>
+    <cell id="3">
+     <style shadow="true" borderStroke="2.7" markerStroke="2.7">
+      <font family="Palatino Linotype" size="26" bold="true" />
+      <color background="0xFCFCFC" shadow="0xB9B6B6" border="0xB80202" />
+     </style>
+    </cell>
+    <cell id="4">
+     <style shadow="true" borderStroke="2.7" markerStroke="2.7">
+      <font family="Palatino Linotype" size="26" bold="true" />
+      <color background="0xFCFCFC" shadow="0xB9B6B6" border="0xB80202" />
+     </style>
+    </cell>
+    <cell>
+     <style shadow="true" borderStroke="2.7" markerStroke="5.0">
+      <font family="Palatino Linotype" size="26" bold="true" />
+      <color background="0xFFFFFF" shadow="0xB9B6B6" inactive="0x666666" border="0xB80202" />
+     </style>
+    </cell>
+    <cell>
+     <style shadow="true" borderStroke="2.7" markerStroke="5.0">
+      <font family="Palatino Linotype" size="26" bold="true" />
+      <color background="0xFFFFFF" shadow="0xB9B6B6" inactive="0x666666" border="0xB80202" />
+     </style>
+    </cell>
+    <cell>
+     <style shadow="true" borderStroke="2.7" markerStroke="5.0">
+      <font family="Palatino Linotype" size="26" bold="true" />
+      <color background="0xFFFFFF" shadow="0xB9B6B6" inactive="0x666666" border="0xB80202" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="8" cols="1" cellWidth="101.0" cellHeight="30.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="8" />
+    <cell id="0">
+     <style shadow="true" borderStroke="2.7" markerStroke="5.0">
+      <font family="Palatino Linotype" size="26" bold="true" />
+      <color background="0xD7D5D5" shadow="0xB9B6B6" inactive="0x666666" border="0xB80202" />
+     </style>
+    </cell>
+    <cell id="1">
+     <style shadow="true" borderStroke="2.7" markerStroke="2.7">
+      <font family="Palatino Linotype" size="26" bold="true" />
+      <color background="0xDEDADA" shadow="0xB9B6B6" border="0xB80202" />
+     </style>
+    </cell>
+    <cell id="2">
+     <style shadow="true" borderStroke="2.7" markerStroke="2.7">
+      <font family="Palatino Linotype" size="26" bold="true" />
+      <color background="0xDEDADA" shadow="0xB9B6B6" border="0xB80202" />
+     </style>
+    </cell>
+    <cell id="3">
+     <style shadow="true" borderStroke="2.7" markerStroke="2.7">
+      <font family="Palatino Linotype" size="26" bold="true" />
+      <color background="0xDEDADA" shadow="0xB9B6B6" border="0xB80202" />
+     </style>
+    </cell>
+    <cell id="4">
+     <style shadow="true" borderStroke="2.7" markerStroke="2.7">
+      <font family="Palatino Linotype" size="26" bold="true" />
+      <color background="0xDEDADA" shadow="0xB9B6B6" border="0xB80202" />
+     </style>
+    </cell>
+    <cell>
+     <style shadow="true" borderStroke="2.7" markerStroke="5.0">
+      <font family="Palatino Linotype" size="26" bold="true" />
+      <color background="0xCCCCCC" shadow="0xB9B6B6" inactive="0x666666" border="0xB80202" />
+     </style>
+    </cell>
+    <cell>
+     <style shadow="true" borderStroke="2.7" markerStroke="5.0">
+      <font family="Palatino Linotype" size="26" bold="true" />
+      <color background="0xCCCCCC" shadow="0xB9B6B6" inactive="0x666666" border="0xB80202" />
+     </style>
+    </cell>
+    <cell>
+     <style shadow="true" borderStroke="2.7" markerStroke="5.0">
+      <font family="Palatino Linotype" size="26" bold="true" />
+      <color background="0xCCCCCC" shadow="0xB9B6B6" inactive="0x666666" border="0xB80202" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="5" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="8" />
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="fin" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xF5BDF8" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@simple.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="524.0" cellHeight="74.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style shadow="true" borderStroke="8.1" markerStroke="5.0">
+      <font family="Palatino Linotype" size="26" bold="true" />
+      <color background="0xFCFCFC" shadow="0xB9B6B6" border="0xB80202" />
+     </style>
+     <p>The End ...</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.Identify" name="i01identificacion" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Palatino Linotype" size="26" bold="true" />
+      <color foreground="0xCC0000" background="0xFFFFFF" shadow="0xCCCCCC" />
+     </style>
+     <p>¿Cuales "NO" son Saturno?</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="www.wikipedia.org" report="true" reportActions="false">
+    <helpWindow>
+     <p>Aqui podemos dar ayuda con algun dato o referencia o siqueremos podemos mostrar el resultado final</p>
+    </helpWindow>
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@default.xml" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="228.0" cellHeight="84.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell id="1" image="i01-Jupiter.gif">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x000000" />
+     </style>
+    </cell>
+    <cell id="0" image="i01-saturno.gif">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x000000" />
+     </style>
+    </cell>
+    <cell id="1" image="i01-tierra.gif">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x000000" />
+     </style>
+    </cell>
+    <cell id="1" image="i01-mercurio.gif">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x000000" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="4" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell imgAlign="left,bottom" image="i01-Jupiter.gif">
+     <p>Jupiter</p>
+    </cell>
+    <cell imgAlign="left,middle" image="i01-saturno.gif">
+     <p>Saturno</p>
+    </cell>
+    <cell imgAlign="left,bottom" image="i01-tierra.gif">
+     <p>Tierra</p>
+    </cell>
+    <cell imgAlign="left,bottom" image="i01-mercurio.gif">
+     <p>Marte</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.Identify" name="identificacion" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Book Antiqua" size="20" bold="true" />
+      <color foreground="0xFF0033" shadow="0xFFFFFF" />
+      <gradient source="0xFFFFFF" dest="0xFFFFCC" angle="0" cycles="5" />
+     </style>
+     <p>Elijamos los Instrumentos que son de CUERDAS</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Book Antiqua" size="20" bold="true" />
+      <color foreground="0xFF0033" shadow="0xFFFFFF" />
+      <gradient source="0xFFFFFF" dest="0xFFFFCC" angle="0" cycles="5" />
+     </style>
+     <p>Agradecemos tu tiempo</p>
+    </cell>
+    <cell type="finalError">
+     <style shadow="true">
+      <font family="Book Antiqua" size="20" bold="true" />
+      <color foreground="0xFF0033" shadow="0xFFFFFF" />
+      <gradient source="0xFFFFFF" dest="0xFFFFCC" angle="0" cycles="5" />
+     </style>
+     <p>Intentemos otra vez</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://es.wikipedia.org/wiki/Instrumentos_de_cuerda" report="true" reportActions="false">
+    <helpWindow>
+     <p>Solo hay que abrir bien los ojos ........</p>
+    </helpWindow>
+    <container bgColor="0xC0C0C0">
+     <image name="criolla.jpg" tiled="false" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true">
+     <gradient source="0xFFFFFF" dest="0x00FFCC" angle="0" cycles="5" />
+    </window>
+   </settings>
+   <cells rows="2" cols="2" cellWidth="348.0" cellHeight="174.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell id="1" image="bajo.jpg">
+     <style>
+      <font family="Book Antiqua" size="20" bold="true" />
+      <color foreground="0xFF0033" background="0xFFFFFF" />
+      <gradient source="0xFFFFFF" dest="0xFAE3C2" angle="0" />
+     </style>
+    </cell>
+    <cell id="1" image="piano.jpg">
+     <style>
+      <font family="Book Antiqua" size="20" bold="true" />
+      <color foreground="0xFF0033" background="0xFFFFFF" />
+      <gradient source="0xFFFFFF" dest="0xFAE3C2" angle="0" />
+     </style>
+    </cell>
+    <cell id="0" image="bateria imagen.jpg">
+     <style>
+      <font family="Book Antiqua" size="20" bold="true" />
+      <color foreground="0xFF0033" background="0xFFFFFF" />
+      <gradient source="0xFFFFFF" dest="0xFAE3C2" angle="0" />
+     </style>
+    </cell>
+    <cell id="1" image="violin(1).jpg">
+     <style>
+      <font family="Book Antiqua" size="20" bold="true" />
+      <color foreground="0xFF0033" background="0xFFFFFF" />
+      <gradient source="0xFFFFFF" dest="0xFAE3C2" angle="0" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="2" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <cell txtAlign="right,middle" imgAlign="left,middle" avoidOverlapping="true" border="true" image="bajo imagen gif.gif">
+     <style>
+      <font family="Book Antiqua" size="20" bold="true" />
+      <color foreground="0xFF0033" background="0x000000" />
+      <gradient source="0xFFFFFF" dest="0xFAE3C2" angle="0" />
+     </style>
+     <p>El bajo es el encargado de los sonidos mas graves y tiene 4 cuerdas</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="piano gif.gif">
+     <style>
+      <font family="Book Antiqua" size="20" bold="true" />
+      <color foreground="0xFF0033" background="0x000000" />
+      <gradient source="0xFFFFFF" dest="0xFAE3C2" angle="0" />
+     </style>
+     <p>Piano en italiano significa "suave" y es clasificado como instrumento de cuerdas percutidas</p>
+    </cell>
+    <cell txtAlign="right,middle" imgAlign="left,middle" />
+    <cell txtAlign="right,middle" imgAlign="left,middle" avoidOverlapping="true" image="violin 2 gif.gif">
+     <style>
+      <font family="Book Antiqua" size="20" bold="true" />
+      <color foreground="0xFF0033" background="0x000000" />
+      <gradient source="0xFFFFFF" dest="0xFAE3C2" angle="0" />
+     </style>
+     <p>Instrumento de cuerdas frotadas, las cuales originalmente se hacian de tripa de animal</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="informacion 2" code="">
+   <description />
+   <messages />
+   <settings margin="8" infoUrl="http://clic.xtec.cat/es/jclic/howto.htm" report="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xF5BDF8" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <skin file="@simple.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="615.0" cellHeight="209.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell border="true">
+     <style shadow="true" borderStroke="8.0" markerStroke="2.7">
+      <font family="Palatino Linotype" size="26" bold="true" />
+      <color background="0xFFFFFF" shadow="0xCCCCCC" border="0xCC0000" />
+     </style>
+     <p>Para saber mas acerca de JCLIC podes visitar : http://clic.xtec.cat/es/jclic/howto.htm o simplemente en el panel superior hacer clic en el boton "i"</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="introduccion 2" code="">
+   <description />
+   <messages />
+   <settings margin="8" infoUrl="http://www.josedomingo.org/web/mod/page/view.php?id=1469" report="false">
+    <helpWindow>
+     <p>En informaion encontraras una URL que te ayudara...</p>
+    </helpWindow>
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xF5BDF8" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <skin file="@simple.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="510.0" cellHeight="204.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style shadow="true" borderStroke="8.1" markerStroke="2.7">
+      <font family="Palatino Linotype" size="26" bold="true" />
+      <color background="0xFCFCFC" shadow="0xB9B6B6" border="0xB80202" />
+     </style>
+     <p>Aqui veremos varios ejemplos orientados a diferentes areas</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@memory.MemoryGame" name="juego de memoria" code="">
+   <description />
+   <messages>
+    <cell avoidOverlapping="true" type="initial">
+     <style shadow="true">
+      <font family="Dialog" size="22" />
+      <color foreground="0x0057B5" background="0xFFFFDE" shadow="0xFFFFFF" />
+     </style>
+     <p>Ejercitemos la memoria</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Dialog" size="22" />
+      <color foreground="0x0057B6" background="0xFFFFE5" shadow="0xFFFFFF" />
+     </style>
+     <p>Gracias por participar ...</p>
+    </cell>
+    <cell type="finalError">
+     <style shadow="true">
+      <font family="Dialog" size="22" />
+      <color foreground="0x0057B7" background="0xFFFFE6" shadow="0xFFFFFF" />
+     </style>
+     <p>Intentemos otra vez !</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="http://es.wikipedia.org/wiki/Historia_de_la_pintura" maxTime="120" countDownTime="false" report="true" reportActions="false">
+    <helpWindow>
+     <p>PULSANDO EL BOTON DE INFORMACION TENDRAS UNA GRAN AYUDA</p>
+    </helpWindow>
+    <container bgColor="0xC0DAED">
+     <gradient source="0x88C8F1" dest="0xFFFFFF" angle="93" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <skin file="@default.xml" />
+   </settings>
+   <cells rows="1" cols="6" cellWidth="112.0" cellHeight="124.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="6" rows="1" />
+    <cell>
+     <style shadow="true">
+      <font family="Arial" size="22" />
+      <color foreground="0x0057B7" background="0xFFFFE6" shadow="0xFFFFFF" />
+      <gradient source="0xFFF9C4" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>VINCENT VAN GOGH</p>
+    </cell>
+    <cell>
+     <style shadow="true">
+      <font family="Arial" size="22" />
+      <color foreground="0x0057B7" background="0xFFFFE6" shadow="0xFFFFFF" />
+      <gradient source="0xFFF9C4" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>MUNCH</p>
+    </cell>
+    <cell>
+     <style shadow="true">
+      <color foreground="0x0057B7" background="0xFFFFE6" shadow="0xFFFFFF" />
+      <gradient source="0xFFF9C4" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>LEONARDO DA VINCI</p>
+    </cell>
+    <cell>
+     <style shadow="true">
+      <font family="Arial" size="20" />
+      <color foreground="0x0057B7" background="0xFFFFE6" shadow="0xFFFFFF" />
+      <gradient source="0xFFF9C4" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>DIEGO VELAZQUEZ</p>
+    </cell>
+    <cell>
+     <style shadow="true">
+      <font family="Arial" size="20" />
+      <color foreground="0x0057B7" background="0xFFFFE6" shadow="0xFFFFFF" />
+      <gradient source="0xFFF9C4" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>DIEGO RIVERA</p>
+    </cell>
+    <cell>
+     <style shadow="true">
+      <font family="Arial" size="20" />
+      <color foreground="0x0057B7" background="0xFFFFE6" shadow="0xFFFFFF" />
+      <gradient source="0xFFF9C4" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>MIGUEL ANGEL</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="6" cellWidth="50.0" cellHeight="30.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="6" rows="1" />
+    <cell border="true" image="van_gogh_noche_estrellada.jpg">
+     <style shadow="true">
+      <font family="Arial" size="22" />
+      <color foreground="0x0057B7" background="0xFFFFE6" shadow="0xFFFFFF" />
+      <gradient source="0xFFF9C4" dest="0xFFFFFF" angle="0" />
+     </style>
+    </cell>
+    <cell image="munch_el_grito.jpg">
+     <style shadow="true">
+      <font family="Arial" size="22" />
+      <color foreground="0x0057B7" background="0xFFFFE6" shadow="0xFFFFFF" />
+      <gradient source="0xFFF9C4" dest="0xFFFFFF" angle="0" />
+     </style>
+    </cell>
+    <cell image="Mona_Lisa.jpg">
+     <style shadow="true">
+      <font family="Arial" size="22" />
+      <color foreground="0x0057B7" background="0xFFFFE6" shadow="0xFFFFFF" />
+      <gradient source="0xFFF9C4" dest="0xFFFFFF" angle="0" />
+     </style>
+    </cell>
+    <cell image="Velazquez-Meninas.jpg">
+     <style shadow="true">
+      <font family="Arial" size="22" />
+      <color foreground="0x0057B7" background="0xFFFFE6" shadow="0xFFFFFF" />
+      <gradient source="0xFFF9C4" dest="0xFFFFFF" angle="0" />
+     </style>
+    </cell>
+    <cell image="diego_rivera_cargadordeflores.jpg">
+     <style shadow="true">
+      <font family="Arial" size="22" />
+      <color foreground="0x0057B7" background="0xFFFFE6" shadow="0xFFFFFF" />
+      <gradient source="0xFFF9C4" dest="0xFFFFFF" angle="0" />
+     </style>
+    </cell>
+    <cell image="Miguel_angel_La_creación_de_Adán(3).JPG">
+     <style shadow="true">
+      <font family="Arial" size="22" />
+      <color foreground="0x0057B7" background="0xFFFFE6" shadow="0xFFFFFF" />
+      <gradient source="0xFFF9C4" dest="0xFFFFFF" angle="0" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="opciones por area" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <helpWindow>
+     <p>xx</p>
+    </helpWindow>
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xF5BDF8" dest="0xFFFFFF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <skin file="@simple.xml" />
+   </settings>
+   <cells rows="1" cols="5" cellWidth="172.0" cellHeight="118.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell>
+     <style shadow="true" borderStroke="8.1" markerStroke="2.7">
+      <font family="Palatino Linotype" size="26" bold="true" />
+      <color background="0xFCFCFC" shadow="0xB9B6B6" border="0xB80202" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="i01identificacion" />
+     <p>Geografía</p>
+    </cell>
+    <cell>
+     <style shadow="true" borderStroke="8.1" markerStroke="2.7">
+      <font family="Palatino Linotype" size="26" bold="true" />
+      <color background="0xFCFCFC" shadow="0xB9B6B6" border="0xB80202" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="juego de memoria" />
+     <p>Arte</p>
+    </cell>
+    <cell>
+     <style shadow="true" borderStroke="8.1" markerStroke="2.7">
+      <font family="Palatino Linotype" size="26" bold="true" />
+      <color background="0xFCFCFC" shadow="0xB9B6B6" border="0xB80202" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="calculo mental" />
+     <p>Matemáticas</p>
+    </cell>
+    <cell>
+     <style shadow="true" borderStroke="8.1" markerStroke="2.7">
+      <font family="Palatino Linotype" size="26" bold="true" />
+      <color background="0xFCFCFC" shadow="0xB9B6B6" border="0xB80202" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="rellenar con opciones" />
+     <p>Literatura</p>
+    </cell>
+    <cell>
+     <style shadow="true" borderStroke="8.1" markerStroke="2.7">
+      <font family="Palatino Linotype" size="26" bold="true" />
+      <color background="0xFCFCFC" shadow="0xB9B6B6" border="0xB80202" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="informacion 2" />
+     <p>Salir</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@text.FillInBlanks" name="rellenar con opciones" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true">
+      <font family="Dialog" size="22" bold="true" />
+      <color shadow="0xFFFFFF" />
+      <gradient source="0xFF0000" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Ahora un poco de politica</p>
+    </cell>
+    <cell type="final">
+     <style shadow="true">
+      <font family="Dialog" size="20" />
+      <color shadow="0xFFFFFF" />
+      <gradient source="0xFF0000" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Graciassss !!!!!!!!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" infoUrl="www.clarin.com" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Para ver la nota completa solo debemos visitar Clarin Digital del dia 26/01/2014</p>
+    </helpWindow>
+    <container bgColor="0x999999">
+     <gradient source="0x999999" dest="0x99FFFF" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x99CCFF" border="true">
+     <size width="493" height="413" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" italic="false" bold="false" background="0xFFFFFF" tabWidth="12" family="Times New Roman" size="16" />
+    <style name="target" base="default" target="true" foreground="0x6666FF" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Times New Roman" size="16">
+      <text bold="true" family="Times New Roman" size="22">Denuncian que remarcaron los precios entre un cinco y diez por </text>
+      <target>
+       <answer>ciento</answer>
+       <optionList>
+        <option>Mil</option>
+        <option>Ciento</option>
+        <option>Diez</option>
+       </optionList>
+       <text>ciento</text>
+      </target>
+     </p>
+     <p background="0xFFFFFF" family="Times New Roman" size="16" />
+     <p background="0xFFFFFF" family="Times New Roman" size="16" />
+     <p background="0xFFFFFF" family="Times New Roman" size="16">
+      <text bold="false" family="Times New Roman" size="18">El </text>
+      <target>
+       <answer>director</answer>
+       <optionList>
+        <option>Director</option>
+        <option>Jefe</option>
+        <option>Empleado</option>
+       </optionList>
+       <text>director</text>
+      </target>
+      <text bold="false" family="Times New Roman" size="18"> de la Federación de Supermercados y Asociaciones Chinas, Miguel Angel Calvete, afirmó que la suba del dólar ya tiene su correlación en las góndolas, a través de "comerciantes e intermediarios" que aumentaron.</text>
+     </p>
+     <p background="0xFFFFFF" family="Times New Roman" size="16">
+      <text bold="false" family="Times New Roman" size="18">A pesar de los intentos del </text>
+      <target>
+       <answer>Gobierno</answer>
+       <optionList>
+        <option>Estado</option>
+        <option>Director</option>
+        <option>Gobierno</option>
+       </optionList>
+       <text>Gobierno</text>
+      </target>
+      <text bold="false" family="Times New Roman" size="18"> para evitar que los empresarios trasladen la devaluación a los precios y a contramano de la advertencia que realizó ayer el jefe de </text>
+      <target>
+       <answer>Gabinete</answer>
+       <optionList>
+        <option>Ministros</option>
+        <option>Gabinete</option>
+        <option>Gobierno</option>
+       </optionList>
+       <text>Gabinete</text>
+      </target>
+      <text bold="false" family="Times New Roman" size="18">, Jorge Milton Capitanich, sobre el monitoreo de los valores de los productos, la suba del dólar y la depreciación del peso ya tiene su correlación en las góndolas. El director ejecutivo de la Federación de Supermercados y Asociaciones Chinas, Miguel Angel Calvete, denunció remarcaciones de pesos, que se ubican entre un cinco y diez por ciento</text>
+     </p>
+     <p background="0xFFFFFF" family="Times New Roman" size="16" />
+     <p background="0xFFFFFF" family="Times New Roman" size="16">
+      <text background="0xFFFFFF" family="Times New Roman" size="16">					      Clarin digital --26/01/14--</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="bajo imagen gif.gif" file="bajo imagen gif.gif" />
+  <media name="i01-Jupiter.gif" file="i01-Jupiter.gif" />
+  <media name="i01-mercurio.gif" file="i01-mercurio.gif" />
+  <media name="i01-saturno.gif" file="i01-saturno.gif" />
+  <media name="i01-tierra.gif" file="i01-tierra.gif" />
+  <media name="piano gif.gif" file="piano gif.gif" />
+  <media name="violin 2 gif.gif" file="violin 2 gif.gif" />
+  <media name="bajo.jpg" file="bajo.jpg" />
+  <media name="bateria imagen.jpg" file="bateria imagen.jpg" />
+  <media name="criolla.jpg" file="criolla.jpg" />
+  <media name="diego_rivera_cargadordeflores.jpg" file="diego_rivera_cargadordeflores.jpg" />
+  <media name="Miguel_angel_La_creación_de_Adán(3).JPG" file="Miguel_angel_La_creación_de_Adán(3).JPG" />
+  <media name="Mona_Lisa.jpg" file="Mona_Lisa.jpg" />
+  <media name="munch_el_grito.jpg" file="munch_el_grito.jpg" />
+  <media name="piano.jpg" file="piano.jpg" />
+  <media name="van_gogh_noche_estrellada.jpg" file="van_gogh_noche_estrellada.jpg" />
+  <media name="Velazquez-Meninas.jpg" file="Velazquez-Meninas.jpg" />
+  <media name="violin(1).jpg" file="violin(1).jpg" />
+ </mediaBag>
+</JClicProject>
+

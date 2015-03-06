@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>ejes</title></head>
+<body BGCOLOR="#eeeeee">
+<p align="center">
+<FONT size=+2>Macro: espejoEsferico</FONT><br>tipo 2D
+</p>
+<p align="center">
+<applet name="espejoEsferico"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=240 height=200>
+   <param name="nombre" value="espejoEsferico">
+   <param name="Versi&oacute;n" value="3.5">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='gris' texto='no'">
+   <param name="A_00" value="id='r' expresi&oacute;n='2' evaluar='una-sola-vez' constante='si'">
+   <param name="A_01" value="id='a' expresi&oacute;n='30' evaluar='una-sola-vez' constante='si'">
+   <param name="A_02" value="id='dr' expresi&oacute;n='0.1' evaluar='una-sola-vez' constante='si'">
+   <param name="A_03" value="id='rojo' expresi&oacute;n='0.5' evaluar='una-sola-vez' constante='si'">
+   <param name="A_04" value="id='verde' expresi&oacute;n='0.7' evaluar='una-sola-vez' constante='si'">
+   <param name="A_05" value="id='azul' expresi&oacute;n='0.3' evaluar='una-sola-vez' constante='si'">
+   <param name="G_00" value="tipo='segmento' dibujar-si='r#0' color='8000ffff' expresi&oacute;n='(-r+r*cos(s*a*pi/180),r*sen(s*a*pi/180))(-r+(r+dr)*cos(s*a*pi/180),(r+dr)*sen(s*a*pi/180))' familia='s' s.intervalo='[-1,1]' s.pasos='4*abs(a)' tama&ntilde;o='0'">
+   <param name="G_01" value="tipo='arco' dibujar-si='r>0' color='negro' centro='(-r,0)' radio='r+s*dr' inicio='-a' fin='a' familia='s' s.intervalo='[0,1]' s.pasos='1'">
+   <param name="G_02" value="tipo='arco' dibujar-si='r<0' color='negro' centro='(-r,0)' radio='-r-s*dr' inicio='180-a' fin='180+a' familia='s' s.intervalo='[0,1]' s.pasos='1'">
+   <param name="G_03" value="tipo='segmento' dibujar-si='r#0' color='negro' expresi&oacute;n='(-r+r*cos(s*a*pi/180),r*sen(s*a*pi/180))(-r+(r+dr)*cos(s*a*pi/180),(r+dr)*sen(s*a*pi/180))' familia='s' s.intervalo='[-1,1]' s.pasos='1' tama&ntilde;o='0'">
+</applet>
+</p>
+<p align="center">
+Esta escena se usa para generar el macro.
+</p>
+<p align="center">
+<applet name="mi_espejoEsferico"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=360 height=240>
+   <param name="nombre" value="mi_espejoEsferico">
+   <param name="Versi&oacute;n" value="3.32">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no filas_sur=2">
+   <param name="E_00" value="despl_imagen='arr-izq' fondo='blanco' red='grisClaro' red10='negro' ejes='gris' texto='rosa'">
+   <param name="C_00" value="tipo='num&eacute;rico' id='EE.r' interfaz='pulsador' regi&oacute;n='sur' valor='2' nombre='EE.r' min='0.5' max='10' visible='si' acci&oacute;n=' '">
+   <param name="C_01" value="tipo='num&eacute;rico' id='EE.dr' interfaz='pulsador' regi&oacute;n='sur' valor='0.1' nombre='EE.dr' incr='0.01' min='0.05' max='0.5' visible='si' acci&oacute;n=' '">
+   <param name="C_02" value="tipo='num&eacute;rico' id='EE.a' interfaz='pulsador' regi&oacute;n='sur' valor='30' nombre='EE.a' incr='1' min='5' max='90' visible='si' acci&oacute;n=' '">
+   <param name="G_00" value="tipo='macro' expresi&oacute;n='optica/espejoEsferico' nombre='EE'">
+</applet>
+</p>
+<p align="center">
+Esta escena es una aplicación del macro que muestra sus parámetros.
+</p>
+
+<p align="center">
+<applet name="ElEspejoEsferico"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=480 height=360>
+   <param name="nombre" value="ElEspejoEsferico">
+   <param name="Versi&oacute;n" value="3.32">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="fijo='si' O.x='180' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='gris' texto='no'">
+   <param name="C_00" value="tipo='num&eacute;rico' id='EE.r' interfaz='barra' regi&oacute;n='sur' valor='3' nombre='r' min='2.6' max='5' visible='si' acci&oacute;n=' '">
+   <param name="C_01" value="tipo='gr&aacute;fico' id='A' color='azul' color-int='rojo' expresi&oacute;n='(-7,1.25)'">
+   <param name="A_00" value="id='EE.dr' expresi&oacute;n='0.2' evaluar='una-sola-vez' constante='si'">
+   <param name="A_01" value="id='EE.a' expresi&oacute;n='asen(2.5/EE.r)*180/pi' evaluar='siempre' constante='si'">
+   <param name="A_02" value="inicio='s=-A.x;h=A.y;r=EE.r;f=r/2;g=ra&iacute;z(r^2-h^2)' hacer='s1=1/(1/f-1/s);h1=h*s1/s;aux=(g-f)/(s-r);s2=r*(aux+1/2)/(aux+1);h2=h*(r-s2)/(s-r);aux=(g-f)/s;s3=f/(1-aux);h3=h*s3/s;disp=(h1-h2)^2+(s1-s2)^2;disp=disp+(h3-h2)^2+(s3-s2)^2;disp=disp+(h3-h1)^2+(s3-s1)^2' mientras='1<=0' id='calculos' evaluar='siempre' algoritmo='si'">
+   <param name="A_03" value="id='K' expresi&oacute;n='(r+ra&iacute;z((s-r)^2+h^2))/ra&iacute;z((s-r)^2+h^2)' evaluar='siempre' constante='si'">
+   <param name="A_04" value="id='M' expresi&oacute;n='10/ra&iacute;z(s^2+h^2)' evaluar='siempre' constante='si'">
+   <param name="G_00" value="tipo='macro' expresi&oacute;n='optica/espejoEsferico' nombre='EE'">
+   <param name="G_01" value="tipo='punto' color='negro' expresi&oacute;n='(-r,0)' texto='C' tama&ntilde;o='3'">
+   <param name="G_02" value="tipo='punto' color='negro' expresi&oacute;n='(-f,0)' texto='F' tama&ntilde;o='3'">
+   <param name="G_03" value="tipo='flecha' color='gris' expresi&oacute;n='(-s,0)(-s,h)' ancho='3' ancho='3' punta='3' flecha='amarillo'">
+   <param name="G_04" value="tipo='flecha' color='gris' expresi&oacute;n='(-s3,0)(-s3,-h3)' ancho='3' ancho='3' punta='3' flecha='amarillo'">
+   <param name="G_05" value="tipo='flecha' color='gris' expresi&oacute;n='(-s2,0)(-s2,-h2)' ancho='3' ancho='3' punta='3' flecha='amarillo'">
+   <param name="G_06" value="tipo='flecha' color='gris' expresi&oacute;n='(-s1,0)(-s1,-h1)' ancho='3' ancho='3' punta='3' flecha='amarillo'">
+   <param name="G_07" value="tipo='segmento' color='rojo' expresi&oacute;n='(-s,h)(g-r,h)' tama&ntilde;o='0'">
+   <param name="G_08" value="tipo='curva' color='rojo' expresi&oacute;n='(g-r+(-f-g+r)*10*t,h-h*10*t)' visible='no'">
+   <param name="G_09" value="tipo='curva' color='00dd55' expresi&oacute;n='(-s+(-r+s)*K*t,h-h*K*t)' t.pasos='1' visible='no'">
+   <param name="G_10" value="tipo='segmento' color='0088ff' expresi&oacute;n='(-s,h)(0,0)' tama&ntilde;o='0'">
+   <param name="G_11" value="tipo='curva' color='0088ff' expresi&oacute;n='(-s*M*t,-h*M*t)' t.pasos='1' visible='no'">
+   <param name="G_12" value="tipo='texto' dibujar-si='disp<0.02' color='azul' expresi&oacute;n='[240,20]' texto='imagen bien definida' fuente='Serif,PLAIN,20'">
+   <param name="G_13" value="tipo='texto' dibujar-si='disp>=0.02' color='azul' expresi&oacute;n='[240,20]' texto='imagen difusa' fuente='Serif,PLAIN,20'">
+</applet>
+</p>
+<p align="center">
+Esta otra escena es una aplicación práctica del macro en una escena de óptica geométrica.
+</p>
+<p align="center">
+<applet name="ElEspejoEsferico"
+        code="Descartes.class"
+        codebase="../../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=480 height=360>
+   <param name="nombre" value="ElEspejoEsferico">
+   <param name="Versi&oacute;n" value="3.32">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="fijo='si' O.x='180' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='gris' texto='no'">
+   <param name="C_00" value="tipo='num&eacute;rico' id='EE.r' interfaz='barra' regi&oacute;n='sur' valor='3' nombre='r' min='2.6' max='5' visible='si' acci&oacute;n=' '">
+   <param name="C_01" value="tipo='gr&aacute;fico' id='A' color='azul' color-int='rojo' expresi&oacute;n='(-7,1.25)'">
+   <param name="A_00" value="id='EE.dr' expresi&oacute;n='0.2' evaluar='una-sola-vez' constante='si'">
+   <param name="A_01" value="id='EE.a' expresi&oacute;n='asen(2.5/EE.r)*180/pi' evaluar='siempre' constante='si'">
+   <param name="A_02" value="inicio='s=-A.x;h=A.y;r=EE.r;f=r/2;g=ra&iacute;z(r^2-h^2)' hacer='s1=1/(1/f-1/s);h1=h*s1/s;aux=(g-f)/(s-r);s2=r*(aux+1/2)/(aux+1);h2=h*(r-s2)/(s-r);aux=(g-f)/s;s3=f/(1-aux);h3=h*s3/s;disp=(h1-h2)^2+(s1-s2)^2;disp=disp+(h3-h2)^2+(s3-s2)^2;disp=disp+(h3-h1)^2+(s3-s1)^2' mientras='1<=0' id='calculos' evaluar='siempre' algoritmo='si'">
+   <param name="A_03" value="id='K' expresi&oacute;n='(r+ra&iacute;z((s-r)^2+h^2))/ra&iacute;z((s-r)^2+h^2)' evaluar='siempre' constante='si'">
+   <param name="A_04" value="id='M' expresi&oacute;n='10/ra&iacute;z(s^2+h^2)' evaluar='siempre' constante='si'">
+   <param name="G_00" value="tipo='macro' expresi&oacute;n='optica/espejoEsferico' nombre='EE'">
+   <param name="G_01" value="tipo='punto' color='negro' expresi&oacute;n='(-r,0)' texto='C' tama&ntilde;o='3'">
+   <param name="G_02" value="tipo='punto' color='negro' expresi&oacute;n='(-f,0)' texto='F' tama&ntilde;o='3'">
+   <param name="G_03" value="tipo='flecha' color='gris' expresi&oacute;n='(-s,0)(-s,h)' ancho='3' ancho='3' punta='3' flecha='amarillo'">
+   <param name="G_04" value="tipo='segmento' color='rojo' expresi&oacute;n='(-s,h)(g-r,h)' tama&ntilde;o='0'">
+   <param name="G_05" value="tipo='curva' color='rojo' expresi&oacute;n='(g-r+(-f-g+r)*10*t,h-h*10*t)' visible='no'">
+   <param name="G_06" value="tipo='curva' color='00dd55' expresi&oacute;n='(-s+(-r+s)*K*t,h-h*K*t)' t.pasos='1' visible='no'">
+   <param name="G_07" value="tipo='segmento' color='0088ff' expresi&oacute;n='(-s,h)(0,0)' tama&ntilde;o='0'">
+   <param name="G_08" value="tipo='curva' color='0088ff' expresi&oacute;n='(-s*M*t,-h*M*t)' t.pasos='1' visible='no'">
+   <param name="G_09" value="tipo='texto' dibujar-si='disp<0.02' color='azul' expresi&oacute;n='[240,20]' texto='imagen bien definida' fuente='Serif,PLAIN,20'">
+   <param name="G_10" value="tipo='texto' dibujar-si='disp>=0.02' color='azul' expresi&oacute;n='[240,20]' texto='imagen difusa' fuente='Serif,PLAIN,20'">
+   <param name="G_11" value="tipo='flecha' color='gris' expresi&oacute;n='(-S,0)(-S,-H)' ancho='3' ancho='3' punta='3' flecha='amarillo'">
+   <param name="Animaci&oacute;n" value="pausa='75' controles='no' hacer='p=rnd;q=(1-p)*rnd;S=p*s1+q*s2+(1-p-q)*s3;H=p*h1+q*h2+(1-p-q)*h3;;' mientras='0<1'">
+</applet>
+</p>
+<p align="center">
+En esta escena el movimiento de la imagen indica la distorsión.
+</p>
+
+<hr>
+
+<p><font size="2" face="Arial"><strong><cite><dfn><samp><tt>Autor: José Luis Abreu León</tt></samp></dfn></cite></strong></font></p>
+
+</body>
+</html>
+
+
