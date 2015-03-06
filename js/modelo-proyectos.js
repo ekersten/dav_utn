@@ -85,9 +85,9 @@
 				}
 			}
 
-			match_institucion = item.institucion.nombre.toLowerCase().indexOf($scope.texto.toLowerCase()) >= 0 || item.institucion.ubicacion.toLowerCase().indexOf($scope.texto.toLowerCase()) >= 0;
+			// match_institucion = item.institucion.nombre.toLowerCase().indexOf($scope.texto.toLowerCase()) >= 0 || item.institucion.ubicacion.toLowerCase().indexOf($scope.texto.toLowerCase()) >= 0;
 
-			return match_nombre || match_herramienta || match_autor || match_institucion;
+			return match_nombre || match_herramienta || match_autor/* || match_institucion*/;
 
 		};
 	});
