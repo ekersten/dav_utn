@@ -10,7 +10,10 @@
 			}
 			
 		],
-		
+		"institucion": {
+			"ubicacion": "Capital Federal",
+			"nombre": "Colegio"
+		},
 		"imagen": "rec_mod1a1/img/pensato.JPG",
 		"url": "http://www.sceu.frba.utn.edu.ar/dav/rec_mod1a1/pif_simuladores/2011/pensato/Actividad%FINAL/Qca.html"
 	},
