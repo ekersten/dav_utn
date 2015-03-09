@@ -122,7 +122,9 @@
 			_.each(Proyectos.items, function(proyecto) {
 				herramientas.push(proyecto.herramienta);
 			});
-			return _.uniq(herramientas);
+			return _.sortBy(_.uniq(herramientas), function(item) {
+				return item;
+			});
 		};
 
 		$scope.getAnios = function() {
@@ -130,7 +132,9 @@
 			_.each(Proyectos.items, function(proyecto) {
 				anios.push(proyecto.anio);
 			});
-			return _.uniq(anios);
+			return _.sortBy(_.uniq(anios), function(item) {
+				return item;
+			});
 		};
 
 		$scope.herramientas = $scope.getHerramientas();
