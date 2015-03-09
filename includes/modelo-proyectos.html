@@ -1,51 +1,28 @@
-<div class="column medium-12 principal">
-	<div class="row">
-		<div class="column small-4">
-			<h1><a href="#/categorias">Proyectos</a></h1>
-		</div>
-		<div class="column small-4">
-			<form ng-controller="BuscadorController">
+<div class="column small-12 proyectos">
+	<ul class="small-block-grid-1 large-block-grid-2 grilla" ng-if="proyectos.length">
+		<li class="proyecto" ng-repeat="proyecto in proyectos">
+			<div class="inner">
 				<div class="row">
-					<div class="large-12 columns">
-						<div class="row collapse">
-							<div class="small-10 columns">
-								<input type="text" placeholder="Buscar" ng-model="texto">
-							</div>
-							<div class="small-2 columns">
-								<a href="#" ng-click="doSearch($event)" class="button postfix">Buscar</a>
-							</div>
-						</div>
+					<div class="column small-12">
+						<h4>{{proyecto.nombre}}</h4>
+						<h6>Herramienta de Aplicación: {{proyecto.herramienta}}</h6>
 					</div>
 				</div>
-			</form>
-		</div>
-		<div class="column small-4 text-right">
-			<h1><span class="title-icon" ng-class="'icon-' + category.slug"></span>{{ category.nombre }}</h1>
-		</div>
-	</div>
-	<div class="row">
-		<div class="column small-12 proyectos">
-			<ul class="small-block-grid-1 large-block-grid-2 grilla">
-				<li class="proyecto" ng-repeat="proyecto in proyectos | filter: {categoria: categoryFilter}">
-					<div class="inner">
-						<div class="row">
-							<div class="column small-12">
-								<h4>{{proyecto.nombre}}</h4>
-								<h6>Herramienta de Aplicación: {{proyecto.herramienta}}</h6>
-							</div>
-						</div>
-						<div class="row info">
-							<div class="column small-4"><img ng-src="{{proyecto.imagen}}" alt="{{proyecto.nombre}}"></div>
-							<div class="column small-8">
-								<p><strong><ng-pluralize count="{{proyecto.autores.length}}" when="{'one': 'Autor', 'other': 'Autores'}"></ng-pluralize>:</strong> <span ng-repeat="autor in proyecto.autores">{{autor.nombre}}{{$last ? '' : ', '}}</span></p>
-								<p><strong>Año:</strong> {{ proyecto.anio }}</p>
-								<p>{{proyecto.institucion.nombre}} - {{proyecto.institucion.ubicacion}}</p>
-								<p><a ng-href="{{proyecto.url}}" target="_blank">Ver Proyecto</a></p>
-							</div>
-						</div>
+				<div class="row info">
+					<div class="column small-4"><img ng-src="{{proyecto.imagen}}" alt="{{proyecto.nombre}}"></div>
+					<div class="column small-8">
+						<p><strong><ng-pluralize count="{{proyecto.autores.length}}" when="{'one': 'Autor', 'other': 'Autores'}"></ng-pluralize>:</strong> <span ng-repeat="autor in proyecto.autores">{{autor.nombre}}{{$last ? '' : ', '}}</span></p>
+						<p><strong>Año:</strong> {{ proyecto.anio }}</p>
+						<p>{{proyecto.institucion.nombre}} - {{proyecto.institucion.ubicacion}}</p>
+						<p><a ng-href="{{proyecto.url}}" target="_blank">Ver Proyecto</a></p>
 					</div>
-				</li>
-			</ul>
+				</div>
+			</div>
+		</li>
+	</ul>
+	<div class="row text-center" ng-if="!proyectos.length">
+		<div class="column small-12">
+			<h3>No se encontraron proyectos</h3>
 		</div>
 	</div>
 </div>
