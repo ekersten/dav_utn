@@ -1,5 +1,5 @@
 (function() {
-	var app = angular.module('proyectos', []);
+	var app = angular.module('proyectos', ['ngSanitize']);
 	
 
 	app.controller('ProyectosController', function($scope, $http) {

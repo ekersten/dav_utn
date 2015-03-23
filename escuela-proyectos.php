@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" ng-app="proyectos" ng-init="data_src='data/proyectos-ciudadania.json'"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" ng-app="proyectos" ng-init="data_src='data/proyectos-ciudadania.json'"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" ng-app="proyectos" ng-init="data_src='data/proyectos-ciudadania.json'"> <![endif]-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" ng-app="proyectos" ng-init="data_src='data/proyectos-escuela.json'"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" ng-app="proyectos" ng-init="data_src='data/proyectos-escuela.json'"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" ng-app="proyectos" ng-init="data_src='data/proyectos-escuela.json'"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" ng-app="proyectos" ng-init="data_src='data/proyectos-escuela.json'"> <!--<![endif]-->
 	<head>
 		<meta charset="utf-8">
@@ -14,6 +14,7 @@
 		<script src="js/vendor/modernizr.js"></script>
 		<!--[if lt IE 9]><script src="js/vendor/rem.min.js"></script><![endif]-->
 		<script src="js/vendor/angular.min.js"></script>
+		<script src="js/vendor/angular-sanitize.min.js"></script>
 		<?php include('includes/favicon.php'); ?>
 	</head>
 	<body>
@@ -57,8 +58,7 @@
 													<div class="row info">
 														<div class="column small-4"><img ng-src="{{proyecto.imagen}}" alt="{{proyecto.nombre}}"></div>
 														<div class="column small-8">
-															<p><strong><ng-pluralize count="{{proyecto.autores.length}}" when="{'one': 'Autor', 'other': 'Autores'}"></ng-pluralize>:</strong> <span ng-repeat="autor in proyecto.autores">{{autor.nombre}}{{$last ? '' : ', '}}</span></p>
-															<p>{{proyecto.institucion.nombre}} - {{proyecto.institucion.ubicacion}}</p>
+															<p ng-bind-html="proyecto.areas">{{proyecto.areas}}</p>
 															<p><a ng-href="{{proyecto.url}}" target="_blank">Ver Proyecto</a></p>
 														</div>
 													</div>
