@@ -1,51 +1,9 @@
 {
 	"anios":[
 		{
-			"tab":"Proyectos con NTICs",
-			"nombre": "Proyectos con NTICs",
-			"texto": "Estos proyectos permiten incorporar innovación pedagógica en diversas áreas de la currícula escolar, teniendo en cuenta los recursos humanos y el contexto que posee la institución.",
-			"proyectos": [
-				{
-					"nombre": "Biblioteca QR",
-					"sub": "Nivel: Primario",
-					"areas": "<strong>Áreas:</strong> Literatura, Lengua, Informática y TIC",
-					"imagen": "img/escuela/01.jpg",
-					"url": "http://youtu.be/D62hR65oX2A"
-				},
-				{
-					"nombre": "Laboratorio Virtual",
-					"sub": "Nivel: Secundario",
-					"areas": "<strong>Áreas:</strong> Ciencias Exactas",
-					"imagen": "img/escuela/02.jpg",
-					"url": "https://www.youtube.com/watch?v=oLeY95NX48k"
-				},
-				{
-					"nombre": "Desarrollo de Aplicaciones Móviles",
-					"sub": "Nivel: Secundario",
-					"areas": "",
-					"imagen": "img/escuela/03.jpg",
-					"url": "https://www.youtube.com/watch?v=EGol_zevCbw"
-				},
-				{
-					"nombre": "Análisis de Videos",
-					"sub": "Nivel: Secundario",
-					"areas": "<strong>Áreas:</strong> Matemática, Física, Informática y TIC",
-					"imagen": "img/escuela/04.jpg",
-					"url": "https://www.youtube.com/watch?v=vOjej_b4azI"
-				},
-				{
-					"nombre": "Polígonos y Cuerpos Aumentados",
-					"sub": "Nivel: Primaria",
-					"areas": "<strong>Áreas:</strong> Matemática, Arte, Lengua, Informática y TIC",
-					"imagen": "img/escuela/05.jpg",
-					"url": "https://www.youtube.com/watch?v=ULg0y_Pmof0"
-				}
-			]
-		},
-		{
 			"tab":"Aulas Virtuales",
 			"nombre": "Aulas Virtuales",
-			"texto": "Un eje del  programa permite a los docentes desarrollar proyectos de aplicación áulica propios a través de una plataforma Moodle, aprendiendo a su vez  a diseñar, administrar y tutorear aulas virtuales. De este modo, al finalizar esta instancia, la escuela contará con su propio Campus Virtual, conformado por las  propuestas pedagógicas creadas por cada uno de los docentes.",
+			"texto": "Un eje del  programa permite a los docentes desarrollar proyectos de aplicación áulica propios a través de una plataforma Moodle, aprendiendo a su vez  a diseñar, administrar y tutorear aulas virtuales. De este modo, al finalizar esta instancia, la escuela contará con su propio Campus Virtual, conformado por las  propuestas pedagógicas creadas por cada uno de los docentes.</br>Los siguientes proyectos han sido diseñados y desarrollados por docentes de escuelas participantes del programa. ",
 			"proyectos": [
 				{
 					"nombre": "Aulas Nivel Primario :: El mundo de los animales",
@@ -97,6 +55,48 @@
 					"url": "https://www.youtube.com/watch?v=e8Sdr-wYWU4"
 				}
 
+			]
+		},
+		{
+			"tab":"Proyectos con NTICs",
+			"nombre": "Proyectos con NTICs",
+			"texto": "Estas actividades permiten incorporar innovación pedagógica en diversas áreas de la currícula escolar. Los docentes de la escuela aprenden a desarrollar estos proyectos a través de su participación en talleres de capacitación dirigidos por profesionales de la universidad.",
+			"proyectos": [
+				{
+					"nombre": "Biblioteca QR",
+					"sub": "Nivel: Primario",
+					"areas": "<strong>Áreas:</strong> Literatura, Lengua, Informática y TIC",
+					"imagen": "img/escuela/01.jpg",
+					"url": "http://youtu.be/D62hR65oX2A"
+				},
+				{
+					"nombre": "Laboratorio Virtual",
+					"sub": "Nivel: Secundario",
+					"areas": "<strong>Áreas:</strong> Ciencias Exactas",
+					"imagen": "img/escuela/02.jpg",
+					"url": "https://www.youtube.com/watch?v=oLeY95NX48k"
+				},
+				{
+					"nombre": "Desarrollo de Aplicaciones Móviles",
+					"sub": "Nivel: Secundario",
+					"areas": "",
+					"imagen": "img/escuela/03.jpg",
+					"url": "https://www.youtube.com/watch?v=EGol_zevCbw"
+				},
+				{
+					"nombre": "Análisis de Videos",
+					"sub": "Nivel: Secundario",
+					"areas": "<strong>Áreas:</strong> Matemática, Física, Informática y TIC",
+					"imagen": "img/escuela/04.jpg",
+					"url": "https://www.youtube.com/watch?v=vOjej_b4azI"
+				},
+				{
+					"nombre": "Polígonos y Cuerpos Aumentados",
+					"sub": "Nivel: Primaria",
+					"areas": "<strong>Áreas:</strong> Matemática, Arte, Lengua, Informática y TIC",
+					"imagen": "img/escuela/05.jpg",
+					"url": "https://www.youtube.com/watch?v=ULg0y_Pmof0"
+				}
 			]
 		}
 	]

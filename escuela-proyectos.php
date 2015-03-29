@@ -34,9 +34,9 @@
 					</ul>
 					<div ng-controller="ProyectosController" class="proyectos">
 						<ul class="tabs">
-							<li class="tab" id="{{'tab-' + $index}}" ng-repeat="anio in data.anios | orderBy:'tab':true" ng-click="tabClick($index)">{{anio.tab}}</li>
+							<li class="tab" id="{{'tab-' + $index}}" ng-repeat="anio in data.anios" ng-click="tabClick($index)">{{anio.tab}}</li>
 						</ul>
-						<div id="{{'tab-content-' + $index}}" class="tab-content row" ng-repeat="anio in data.anios | orderBy:'tab':true">
+						<div id="{{'tab-content-' + $index}}" class="tab-content row" ng-repeat="anio in data.anios">
 							<div class="column small-12">
 								<div class="row">
 									<div class="column small-12">
