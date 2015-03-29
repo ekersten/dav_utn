@@ -47,7 +47,7 @@
 								<div class="row">
 									<div class="column small-12">
 										<ul class="small-block-grid-1 large-block-grid-2 grilla">
-											<li class="proyecto"ng-repeat="proyecto in anio.proyectos">
+											<li class="proyecto" ng-repeat="proyecto in anio.proyectos" dav-proyecto-fancybox>
 												<div class="inner">
 													<div class="row">
 														<div class="column small-12">
@@ -59,7 +59,7 @@
 														<div class="column small-4"><img ng-src="{{proyecto.imagen}}" alt="{{proyecto.nombre}}"></div>
 														<div class="column small-8">
 															<p ng-bind-html="proyecto.areas">{{proyecto.areas}}</p>
-															<p><a ng-href="{{proyecto.url}}" target="_blank">Ver Proyecto</a></p>
+															<p><a ng-href="{{proyecto.url}}" class="fancybox-media" target="_blank">Ver Proyecto</a></p>
 														</div>
 													</div>
 												</div>

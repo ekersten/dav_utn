@@ -30,4 +30,16 @@
 		$('.proyectos .tab-content .inner').css('height', 'auto');
 		$('.proyectos .tab-content .inner').equalizeHeights();
 	});
+
+	app.directive('davProyectoFancybox', function() {
+		return {
+			restrict: 'A',
+			link: function(scope, element, attrs) {
+				var elA = element.find('a');
+				if (scope.proyecto.url.indeOf('youtu') >= 0) {
+					elA.fancybox();
+				}
+			}
+		};
+	});
 })();
