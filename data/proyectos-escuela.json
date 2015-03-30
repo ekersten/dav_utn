@@ -3,7 +3,7 @@
 		{
 			"tab":"Aulas Virtuales",
 			"nombre": "Aulas Virtuales",
-			"texto": "Un eje del  programa permite a los docentes desarrollar proyectos de aplicación áulica propios a través de una plataforma Moodle, aprendiendo a su vez  a diseñar, administrar y tutorear aulas virtuales. De este modo, al finalizar esta instancia, la escuela contará con su propio Campus Virtual, conformado por las  propuestas pedagógicas creadas por cada uno de los docentes.</br>Los siguientes proyectos han sido diseñados y desarrollados por docentes de escuelas participantes del programa. ",
+			"texto": "Un eje del  programa permite a los docentes desarrollar proyectos de aplicación áulica propios a través de una plataforma Moodle, aprendiendo a su vez  a diseñar, administrar y tutorear aulas virtuales. De este modo, al finalizar esta instancia, la escuela contará con su propio Campus Virtual, conformado por las  propuestas pedagógicas creadas por cada uno de los docentes. <br/>Los siguientes proyectos han sido diseñados y desarrollados por docentes de escuelas participantes del programa. ",
 			"proyectos": [
 				{
 					"nombre": "Aulas Nivel Primario :: El mundo de los animales",

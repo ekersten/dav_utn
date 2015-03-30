@@ -41,7 +41,7 @@
 								<div class="row">
 									<div class="column small-12">
 										<h2>{{anio.nombre}}</h2>
-										<p>{{anio.texto}}</p>
+										<p ng-bind-html="anio.texto">{{anio.texto}}</p>
 									</div>
 								</div>
 								<div class="row">
