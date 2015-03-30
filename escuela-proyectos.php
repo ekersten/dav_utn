@@ -25,7 +25,7 @@
 				<?php include("includes/tabs/escuela.php"); ?>
 			</div>
 			<div class="row contenedor">
-				<div class="column medium-9 principal">
+				<div class="column medium-12 principal">
 					<h1>Proyectos</h1>
 					<ul class="breadcrumbs">
 						<li>Programa para escuelas</li>
@@ -51,7 +51,7 @@
 												<div class="inner">
 													<div class="row">
 														<div class="column small-12">
-															<h4>{{proyecto.nombre}}</h4>
+															<h4 ng-bind-html="proyecto.nombre">{{proyecto.nombre}}</h4>
 															<h6>{{proyecto.sub}}</h6>
 														</div>
 													</div>
@@ -70,9 +70,6 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="column medium-3 secundario">
-					<?php include("includes/lateral/lateral-escuela.php"); ?>
 				</div>
 			</div>
 		</section>
