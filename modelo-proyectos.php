@@ -23,6 +23,9 @@
 		<?php include('includes/favicon.php'); ?>
 	</head>
 	<body>
+		<div id="old_ie_alert">
+			Este buscador solo funciona en versiones de Internet Explorer superiores a la 8. Actualize su versión o utilize un navegador alternativo como Firefox o Chrome
+		</div>
 		<?php include("includes/header.php"); ?>
 		<section class="tpl-2-col modelo1a1">
 			<div class="header-image"></div>
