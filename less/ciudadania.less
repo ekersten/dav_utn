@@ -1,5 +1,5 @@
 section.ciudadania {
-	@color-seccion: @violeta;
+	@color-seccion: @verde;
 
 	.header-image {
 		height: 200px;
@@ -45,16 +45,14 @@ section.ciudadania {
 		}
 	}
 	
-	@color-seccion-oscuro: darken(@color-seccion, 15%);
-	@color-seccion-claro: lighten(@color-seccion, 15%);
+	
 	.experiencias {
 
 		.slide {
-			.outer {
-
-			}
+			@color-seccion-oscuro: darken(@color-seccion, 15%);
+			@color-seccion-claro: lighten(@color-seccion, 15%);
 			
-			&:nth-child(even) { /* par */
+			&:nth-child(even) {
 				.outer {
 					.horizontal-gradient (@color-seccion-oscuro, @color-seccion-claro);
 
