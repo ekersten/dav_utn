@@ -1,5 +1,6 @@
 section.ciudadania {
-	@color-seccion: @verde;
+	@color-seccion: @violeta;
+
 	.header-image {
 		height: 200px;
 		background: url("../img/ciudadania_header.jpg") no-repeat center top;
@@ -43,8 +44,46 @@ section.ciudadania {
 			}
 		}
 	}
-
+	
+	@color-seccion-oscuro: darken(@color-seccion, 15%);
+	@color-seccion-claro: lighten(@color-seccion, 15%);
 	.experiencias {
+
+		.slide {
+			.outer {
+
+			}
+			
+			&:nth-child(even) { /* par */
+				.outer {
+					.horizontal-gradient (@color-seccion-oscuro, @color-seccion-claro);
+
+					&:after {
+						border-left-color: @color-seccion-oscuro;
+						border-top-color: @color-seccion-oscuro;
+						border-right-color: transparent;
+						left: 0;
+					}
+
+					.inner {
+						.texto {
+							&:before {
+								color: @color-seccion-oscuro;
+							}
+						}
+
+						.autor {
+							&:after {
+								color: @color-seccion-claro;	
+							}
+							
+						}
+					}
+				}
+			}
+
+		}
+
 		.slides-pager {
 
 			span {
@@ -69,9 +108,8 @@ section.ciudadania {
 			color:@color-seccion;
 		}
 
-		p>strong{
+		p > strong{
 			color:@color-seccion;
-			font-size: 1.2em;
 		}
 
 	}

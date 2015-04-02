@@ -302,57 +302,177 @@ section.tpl-2-col {
 
 .experiencias {
 
+	@slides-gris: lighten(@gris-claro, 20%);
+
 	.slide {
-		@slides-gris: lighten(@gris-claro, 20%);
-		// background: @slides-gris;
-		padding: 1rem;
-		border-radius: .5rem;
-		position: relative;
+		.outer {
+			.horizontal-gradient (@azul-oscuro, @azul-claro);
+			border-radius: 60px;
+			padding: 9px 10px;
+			position: relative;
+			margin-bottom: 50px;
 
-		&:before, &:after {
-			color: darken(@slides-gris, 15%);
-			display: inline-block;
-			font-family: Georgia, serif;
-			font-size: 10rem;
-			line-height: 1rem;
-			position: absolute;
-		}
+			.inner {
+				background: white;
+				border-radius: 50px;
+				padding: 20px 40px;
 
-		&:before {
-			content: "\201C";
-			left: 0;
-			top: 4rem;
-		
-			
-		}
-		
+				.texto {
+					position: relative;
+					
+					p {
+						font-style: italic;
+						line-height: 1.2rem;
+						font-size: .8rem;
+						margin-top: 0;
+						margin-bottom: 0;
+						padding-left: 40px;
+					}
 
-		&:after {
-			content: "\201D";
-			right: 0;
-			bottom: -1.5rem;
+					&:before {
+						color: darken(@slides-gris, 15%);
+						display: inline-block;
+						font-family: Georgia, serif;
+						font-size: 10rem;
+						line-height: 1rem;
+						position: absolute;
+						content: "\201C";
+						left: -20px;
+						top: 3rem;
+					}
+				}
 
-			
-		}
+				.autor {
+					text-align: right;
+					font-weight: bold;
+					font-family: @font-oswald;
+					text-transform: uppercase;
+					font-size: .8rem;
+					color: darken(@slides-gris, 35%);
+					padding-right: 65px;
+					position: relative;
+					margin-top: 2rem;
+					
 
-		.texto {
-			p {
-				font-style: italic;
-				line-height: 1.2rem;
-				margin-left: 3rem;
+					&:after {
+						color: darken(@slides-gris, 15%);
+						display: inline-block;
+						font-family: Georgia, serif;
+						font-size: 7rem;
+						line-height: 1rem;
+						position: absolute;
+						content: "\201D";
+						right: 0;
+						top: 1.8rem;
+					}
+				}
+			}
+
+			&:after {
+				border: 60px solid red;
+				bottom: -68px;
+				content: "";
+				display: block;
+				height: 0;
+				position: absolute;
+				width: 0;
+				border-bottom-color: transparent;
+				z-index: -1;
 			}
 		}
 
-		.autor {
-			text-align: right;
-			font-weight: bold;
-			font-family: @font-oswald;
-			text-transform: uppercase;
-			font-size: .8rem;
-			color: darken(@slides-gris, 35%);
-			margin-right: 3rem;
+		&:nth-child(even) { /* par */
+			.outer {
+				.horizontal-gradient (@verde-oscuro, @verde-claro);
+
+				&:after {
+					border-left-color: @verde-oscuro;
+					border-top-color: @verde-oscuro;
+					border-right-color: transparent;
+					left: 0;
+				}
+			}
 		}
+
+		&:nth-child(odd) { /* impar */
+			.outer {
+				&:after {
+					border-left-color: transparent;
+					border-top-color: @azul-claro;
+					border-right-color: @azul-claro;
+					right: 0;
+				}
+
+				.inner {
+					.texto {
+						&:before {
+							color: @azul-oscuro;
+						}
+					}
+
+					.autor {
+						&:after {
+							color: @azul-claro;	
+						}
+						
+					}
+				}
+			}
+		}
+		
 	}
+
+	// .slide {
+	// 	@slides-gris: lighten(@gris-claro, 20%);
+	// 	// background: @slides-gris;
+	// 	padding: 1rem;
+	// 	border-radius: .5rem;
+	// 	position: relative;
+
+	// 	&:before, &:after {
+	// 		color: darken(@slides-gris, 15%);
+	// 		display: inline-block;
+	// 		font-family: Georgia, serif;
+	// 		font-size: 10rem;
+	// 		line-height: 1rem;
+	// 		position: absolute;
+	// 	}
+
+	// 	&:before {
+	// 		content: "\201C";
+	// 		left: 0;
+	// 		top: 4rem;
+		
+			
+	// 	}
+		
+
+	// 	&:after {
+	// 		content: "\201D";
+	// 		right: 0;
+	// 		bottom: -1.5rem;
+
+			
+	// 	}
+
+	// 	.texto {
+	// 		p {
+	// 			font-style: italic;
+	// 			line-height: 1.2rem;
+	// 			margin-left: 3rem;
+	// 		}
+	// 	}
+
+	// 	.autor {
+	// 		text-align: right;
+	// 		font-weight: bold;
+	// 		font-family: @font-oswald;
+	// 		text-transform: uppercase;
+	// 		font-size: .8rem;
+	// 		color: darken(@slides-gris, 35%);
+	// 		margin-right: 3rem;
+	// 	}
+	// }
 
 	.slides-pager {
 		text-align: center;

@@ -36,8 +36,13 @@
 					<div class="experiencias" ng-controller="ExperienciasController">
 						<div class="slider">
 							<div class="slide" ng-repeat="item in data.experiencias">
-								<div class="texto" ng-bind-html="item.texto">{{item.texto}}</div>
-								<div class="autor">{{item.autor}}</div>
+								<div class="outer">
+									<div class="inner">
+										<div class="texto" ng-bind-html="item.texto">{{item.texto}}</div>
+										<div class="autor">{{item.autor}}</div>
+									</div>
+								</div>
+								
 							</div>
 						</div>
 						<div class="slides-pager"></div>
