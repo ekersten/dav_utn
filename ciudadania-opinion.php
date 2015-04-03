@@ -47,9 +47,15 @@
 						</div>
 						<div class="slides-pager"></div>
 					</div>
-				</div>
+
+
+				</div>				
 				<div class="column medium-3 secundario">
 					 <?php include("includes/lateral/lateral-ciudadania.php"); ?>
+				</div>
+				<div class="row medium-9 principal">
+					<img src="img/chicos_ciudadania.png" alt="ciudadania digital" style="align=center">
+					
 				</div>
 			</div>
 		</section>
