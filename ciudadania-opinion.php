@@ -39,12 +39,13 @@
 								<div class="outer">
 									<div class="inner">
 										<div class="texto" ng-bind-html="item.texto">{{item.texto}}</div>
-										<div class="autor">{{item.autor}}</div>
+										<div class="autor" ng-bind-html="item.autor">{{item.autor}}</div>
 									</div>
 								</div>
 								
 							</div>
 						</div>
+						<img src="img/chicos_ciudadania.png" alt="ciudadania digital">
 						<div class="slides-pager"></div>
 					</div>
 
@@ -53,10 +54,10 @@
 				<div class="column medium-3 secundario">
 					 <?php include("includes/lateral/lateral-ciudadania.php"); ?>
 				</div>
-				<div class="row medium-9 principal">
-					<img src="img/chicos_ciudadania.png" alt="ciudadania digital" style="align=center">
+			
 					
-				</div>
+					
+				
 			</div>
 		</section>
 		<?php include("includes/footer.php"); ?>
