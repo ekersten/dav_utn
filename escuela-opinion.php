@@ -33,8 +33,8 @@
 						<li><a href="escuela-informacion.php">Escuela 2.0</a></li>
 						<li class="actual">Experiencias</li>
 					</ul>
-					<p>Queremos compartir con Uds. la opinión de los algunos alumnos que ya participaron de esta experiencia y los consejos que ellos quisieron dejarles a los estudiantes que decidan ser parte de la próxima edición de este curso.</p>
-					<div class="experiencias" ng-controller="ExperienciasController">
+					<p>Queremos compartir con Uds. la opinión de los algunos profesores que ya participaron de esta experiencia y los consejos que ellos quisieron dejarles a los estudiantes que decidan ser parte de la próxima edición de este curso.</p>
+					<div class="experiencias" ng-controller="ExperienciasController" ng-cloak>
 						<div class="slider">
 							<div class="slide" ng-repeat="item in data.experiencias">
 								<div class="outer">
@@ -47,7 +47,7 @@
 							</div>
 						</div>
 						
-						<img src="img/chicos_ciudadania.png" alt="ciudadania digital">
+						<img src="img/profesores_escuela.jpg" alt="Escuela 2.0">
 					
 				
 						<div class="slides-pager"></div>
