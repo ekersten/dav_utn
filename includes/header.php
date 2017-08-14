@@ -6,7 +6,7 @@
         <div class="column medium-8">
             <nav>
                 <ul>
-                    <li><a href="quienes_somos.php">Quienes<br/>Somos</a></li>
+                    <li><a href="quienes_somos.php">Quienes<br/>Somos2222</a></li>
                     <li>
                         <a href="#">Programas para<br/>Escuelas</a>
                         <ul>
